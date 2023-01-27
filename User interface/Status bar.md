@@ -1,9 +1,7 @@
-# Status bar
-
 To create a new block in the status bar, call the [[Plugin_2#addStatusBarItem|addStatusBarItem()]] in the `onload()` method. The `addStatusBarItem()` method returns an [[HTML elements|HTML element]] that you can add your own elements to.
 
 > [!tip] Obsidian mobile
-> Custom status bar items [is **not** supported](https://discord.com/channels/686053708261228577/707816848615407697/832321402106544179) on Obsidian mobile apps.
+> Custom status bar items [are **not** supported](https://discord.com/channels/686053708261228577/707816848615407697/832321402106544179) on Obsidian mobile apps.
 
 ```ts title="main.ts"
 import { Plugin } from "obsidian";

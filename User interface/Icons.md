@@ -1,5 +1,3 @@
-# Icons
-
 Several of the UI components in the Obsidian API lets you configure an accompanying icon. You can choose from one of the built-in icons, or you can add your own.
 
 ## Browse available icons

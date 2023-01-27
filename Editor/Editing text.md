@@ -1,4 +1,4 @@
-The [[Reference/typescript/classes/Editor]] class exposes operations for reading and manipulating an active Markdown document in edit mode.
+The [[Reference/typescript/classes/Editor|Editor]] class exposes operations for reading and manipulating an active Markdown document in edit mode.
 
 If you want to access the editor in a command, use [[Commands#Editor commands|editorCallback()]].
 
