@@ -7,7 +7,7 @@ By the end of this page, you'll understand the basic concepts of building a stat
 > [!note]
 > This page aims to distill the official CodeMirror 6 documentation for Obsidian plugin developers. For more detailed information on state fields, refer to [State Fields](https://codemirror.net/docs/guide/#state-fields).
 
-## Prerequisites
+## Before you begin
 
 - Basic understanding of [[State management]].
 

@@ -8,7 +8,7 @@ By the end of this page, you'll be able to:
 > [!note]
 > This page aims to distill the official CodeMirror 6 documentation for Obsidian plugin developers. For more detailed information on state fields, refer to [Decorating the Document](https://codemirror.net/docs/guide/#decorating-the-document).
 
-## Prerequisites
+## Before you begin
 
 - Basic understanding of [[State fields]].
 - Basic understanding of [[View plugins]].

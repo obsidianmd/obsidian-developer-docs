@@ -4,7 +4,7 @@ By the end of this tutorial, you'll be able to:
 
 - Use the [[TextFileView]] to display and edit text-based file formats.
 
-## Prerequisites
+## Before you begin
 
 - [[Create your first plugin]].
 - Understand how to create basic [[HTML elements]].

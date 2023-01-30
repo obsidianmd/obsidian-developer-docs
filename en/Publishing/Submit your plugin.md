@@ -3,7 +3,7 @@ If you want to share your plugin with the Obsidian community, the best way is to
 > [!caution]
 > The purpose of this guide is to provide richer instructions for how to submit a plugin. Before you submit your plugin however, make sure that you have reviewed the [official instructions](https://github.com/obsidianmd/obsidian-sample-plugin#adding-your-plugin-to-the-community-plugin-list).
 
-## Prerequisites
+## Before you begin
 
 To follow this guide, make sure you have the following files at the root of your repository:
 

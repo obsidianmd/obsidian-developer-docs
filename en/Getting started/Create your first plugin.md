@@ -3,7 +3,7 @@ In this guide, you'll build a plugin for Obsidian from a sample plugin.
 > [!warning] Before you start
 > **Don't develop plugins in your main vault.** When you develop a plugin, one mistake can lead to unintentional modifications to your vault. You also risk **permanently deleting your vault**.
 
-## Prerequisites
+## Before you begin
 
 To complete this guide, you will need:
 
