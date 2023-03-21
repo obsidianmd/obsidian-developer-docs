@@ -34,7 +34,98 @@ body {
 
 ---
 
-## Color mappings
+## Theme colors
+
+Theme color variables define the raw color values used throughout the app. These variables are mapped to semantic color names in the next section (see [[App CSS variables#Color mappings]])
+
+Each variable is applied to both `.theme-light` and `.theme-dark` classes with appropriate values for light and dark mode. For example:
+
+```css
+/* Set the background color for the app */
+.theme-light {
+  --color-base-00: #ffffff;
+}
+.theme-light {
+  --color-base-00: #000000;
+}
+```
+
+#### Base colors
+
+The base palette is a monochromatic set of color values from light to dark (in light mode). These raw values are mapped to semantic variable names.
+
+| Variable             | Property | Description |
+| -------------------- | ------------- | ----------- |
+| `--color-base-00`       |               |             |
+| `--color-base-05`       |               |             |
+| `--color-base-10`       |               |             |
+| `--color-base-20`       |               |             |
+| `--color-base-25`       |               |             |
+| `--color-base-30`       |               |             |
+| `--color-base-35`       |               |             |
+| `--color-base-40`       |               |             |
+| `--color-base-50`       |               |             |
+| `--color-base-60`       |               |             |
+| `--color-base-70`       |               |             |
+| `--color-base-100`       |               |             |
+
+#### Accent color
+
+Accent color can be defined by the theme, and overidden by the user in Obsidian Appearance Settings. The accent color is defined as three separate HSL variables so that these values can be modified with `calc()`. This allows themes to create a variety of shades from the user's accent color.
+
+| Variable     | Property | Description |
+| ------------ | -------- | ----------- |
+| `--accent-h` |          |             |
+| `--accent-s` |          |             |
+| `--accent-l` |          |             |
+
+#### Extended colors
+
+These variables define the breadth of extended colors used for status messages (errors, warnings, success), callouts, syntax highlighting, graph nodes, and Canvas elements.
+
+The variables can use any valid CSS color units, however an additional RGB variable is also stored for each color, that is used wherever semi-translucent RGBA colors are needed. For example:
+
+```css
+color: var(--color-red);
+background-color: rgba(var(--color-red-rgb), 0.2);
+```
+
+This uses the RGB variable to set a background color to red with 20% opacity, and the normal color variable to set the text color.
+
+| Variable             | Property | Description |
+| -------------------- | ------------- | ----------- |
+| `--color-red`        |               |             |
+| `--color-red-rgb`    |               |             |
+| `--color-orange`     |               |             |
+| `--color-orange-rgb` |               |             |
+| `--color-yellow`     |               |             |
+| `--color-yellow-rgb` |               |             |
+| `--color-green`      |               |             |
+| `--color-green-rgb`  |               |             |
+| `--color-cyan`       |               |             |
+| `--color-cyan-rgb`   |               |             |
+| `--color-blue`       |               |             |
+| `--color-blue-rgb`   |               |             |
+| `--color-purple`     |               |             |
+| `--color-purple-rgb` |               |             |
+| `--color-pink`       |               |             |
+| `--color-pink-rgb`   |               |             |
+
+
+#### Black and white
+
+These variables define RGB values for black and white. These are used primarily to create semi-translucent masks with RGBA. We do not recommend changing these variables.
+
+| Variable         |
+| ---------------- |
+| `--mono-rgb-0`   |
+| `--mono-rgb-100` |
+
+---
+
+## Semantic color mappings
+
+Color mappings are defined on the `body` element and are semantic names that refer to the [[App CSS variables#Theme colors|theme colors]] defined above.
 
 #### Background and border colors
 
@@ -82,91 +173,6 @@ body {
 | `--interactive-accent-hover` |               |             |
 
 ---
-
-## Theme colors
-
-Theme color variables define the color values used throughout the app.
-
-Each variable is applied to both `.theme-light` and `.theme-dark` classes with appropriate values for light and dark mode. For example:
-
-```css
-.theme-light {
-  --color-base-00: #ffffff;
-}
-.theme-light {
-  --color-base-00: #1e1e1e;
-}
-```
-
-#### Base palette
-
-The base palette is a monochromatic set of raw color values from light to dark (in light mode). These variables store the raw values used in the color mappings.
-
-| Variable             | Property | Description |
-| -------------------- | ------------- | ----------- |
-| `--color-base-00`       |               |             |
-| `--color-base-05`       |               |             |
-| `--color-base-10`       |               |             |
-| `--color-base-20`       |               |             |
-| `--color-base-25`       |               |             |
-| `--color-base-30`       |               |             |
-| `--color-base-35`       |               |             |
-| `--color-base-40`       |               |             |
-| `--color-base-50`       |               |             |
-| `--color-base-60`       |               |             |
-| `--color-base-70`       |               |             |
-| `--color-base-100`       |               |             |
-
-#### Accent color
-
-| Variable     | Property | Description |
-| ------------ | -------- | ----------- |
-| `--accent-h` |          |             |
-| `--accent-s` |          |             |
-| `--accent-l` |          |             |
-
-#### Extended palette
-
-These variables define the breadth of extended colors used for status messages (errors, warnings, success), callout types, syntax highlighting, graph nodes, and Canvas elements.
-
-The variables can use any valid CSS color units, however an additional RGB variable is also stored for each color, that is used wherever semi-translucent RGBA colors are needed. For example:
-
-```css
-color: var(--color-red);
-background-color: rgba(var(--color-red-rgb), 0.2);
-```
-
-This uses the RGB variable to set a background color to red with 20% opacity, and the normal color variable to set the text color.
-
-| Variable             | Property | Description |
-| -------------------- | ------------- | ----------- |
-| `--color-red`        |               |             |
-| `--color-red-rgb`    |               |             |
-| `--color-orange`     |               |             |
-| `--color-orange-rgb` |               |             |
-| `--color-yellow`     |               |             |
-| `--color-yellow-rgb` |               |             |
-| `--color-green`      |               |             |
-| `--color-green-rgb`  |               |             |
-| `--color-cyan`       |               |             |
-| `--color-cyan-rgb`   |               |             |
-| `--color-blue`       |               |             |
-| `--color-blue-rgb`   |               |             |
-| `--color-purple`     |               |             |
-| `--color-purple-rgb` |               |             |
-| `--color-pink`       |               |             |
-| `--color-pink-rgb`   |               |             |
-
----
-
-#### Mono colors
-
-These variables define RGB values for black and white. These are used primarily to create semi-translucent masks with RGBA. We do not recommend changing these variables.
-
-| Variable         |
-| ---------------- |
-| `--mono-rgb-0`   |
-| `--mono-rgb-100` |
 
 ## Foundations
 
@@ -589,7 +595,9 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ---
 
-## UI
+## Interface elements
+
+
 
 ### Canvas
 
