@@ -1,5 +1,3 @@
-## Padding, margins, and spacing
-
 Obsidian uses a 4 pixel grid. The 4 pixel grid is chosen because it enables the interface to scale up and down across high/low DPI screens, and also provides convenient ratios for layouts.
 
 UI elements use multiples of 4 for padding and spacing throughout the app. We recommend using the `--size` CSS variables to define all dimensions throughout your plugin.

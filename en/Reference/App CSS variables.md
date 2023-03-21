@@ -41,12 +41,14 @@ Theme color variables define the raw color values used throughout the app. These
 Each variable is applied to both `.theme-light` and `.theme-dark` classes with appropriate values for light and dark mode. For example:
 
 ```css
-/* Set the background color for the app */
+/* Set the base colors for light and dark mode */
 .theme-light {
   --color-base-00: #ffffff;
+  --color-base-100: #000000;
 }
 .theme-light {
   --color-base-00: #000000;
+  --color-base-100: #ffffff;
 }
 ```
 
@@ -71,7 +73,9 @@ The base palette is a monochromatic set of color values from light to dark (in l
 
 #### Accent color
 
-Accent color can be defined by the theme, and overidden by the user in Obsidian Appearance Settings. The accent color is defined as three separate HSL variables so that these values can be modified with `calc()`. This allows themes to create a variety of shades from the user's accent color.
+Accent color can be defined by the theme, and overidden by the user in Obsidian Appearance Settings. This color used to highlight interactive elements such as links, active states, buttons, etc.
+
+The accent color is defined as three separate HSL variables so that the values can be modified in CSS with `calc()`. Using CSS calculations allows themes to create a variety of shades from the user's accent color.
 
 | Variable     | Property | Description |
 | ------------ | -------- | ----------- |
@@ -81,9 +85,9 @@ Accent color can be defined by the theme, and overidden by the user in Obsidian 
 
 #### Extended colors
 
-These variables define the breadth of extended colors used for status messages (errors, warnings, success), callouts, syntax highlighting, graph nodes, and Canvas elements.
+Extended color variables define the broader range of colors used for status messages (errors, warnings, success), callouts, syntax highlighting, graph nodes, and Canvas elements.
 
-The variables can use any valid CSS color units, however an additional RGB variable is also stored for each color, that is used wherever semi-translucent RGBA colors are needed. For example:
+The variables can use any valid CSS color units, however an additional RGB variable is also defined for each color, that is used wherever semi-translucent RGBA colors are needed. For example:
 
 ```css
 color: var(--color-red);
@@ -149,18 +153,18 @@ Color mappings are defined on the `body` element and are semantic names that ref
 
 #### Text colors
 
-| Variable                    | Property | Description |
-| --------------------------- | ------------- | ----------- |
-| `--text-normal`             |               |             |
-| `--text-muted`              |               |             |
-| `--text-faint`              |               |             |
-| `--text-on-accent`          |               |             |
-| `--text-on-accent-inverted` |               |             |
-| `--text-error`              |               |             |
-| `--text-success`            |               |             |
-| `--text-selection`          |               |             |
-| `--text-accent`             |               |             |
-| `--text-accent-hover`       |               |             |
+| Variable                    | Description |
+| --------------------------- | ----------- |
+| `--text-normal`             |             |
+| `--text-muted`              |             |
+| `--text-faint`              |             |
+| `--text-on-accent`          |             |
+| `--text-on-accent-inverted` |             |
+| `--text-error`              |             |
+| `--text-success`            |             |
+| `--text-selection`          |             |
+| `--text-accent`             |             |
+| `--text-accent-hover`       |             |
 
 #### Buttons and interactive element colors
 
@@ -178,16 +182,16 @@ Color mappings are defined on the `body` element and are semantic names that ref
 
 ### Borders
 
-| Variable         | Property | Description |
-| ---------------- | ------------- | ----------- |
-| `--border-width` |               |             |
+| Variable         | Description |
+| ---------------- | ----------- |
+| `--border-width` |             |
 
 ### Cursors
 
-| Variable        | Property | Description                     |
-| --------------- | -------- | ------------------------------- |
-| `--cursor`      |          | Cursor for interactive elements |
-| `--cursor-link` |          | Cursor for links                |
+| Variable        | Description                     |
+| --------------- | ------------------------------- |
+| `--cursor`      | Cursor for interactive elements |
+| `--cursor-link` | Cursor for links                |
 
 ### Fonts
 
