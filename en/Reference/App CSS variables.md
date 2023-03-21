@@ -32,25 +32,13 @@ body {
 ```
 
 
-## Naming of variables
-
 ---
 
-## Colors
-
-### Color mappings
-
-#### Accent color
-
-| Variable     | Default value | Description |
-| ------------ | ------------- | ----------- |
-| `--accent-h` | `254`         |             |
-| `--accent-s` | `80%`         |             |
-| `--accent-l` | `68%`         |             |
+## Color mappings
 
 #### Background and border colors
 
-| Variable                             | Default value | Description |
+| Variable                             | Property | Description |
 | ------------------------------------ | ------------- | ----------- |
 | `--background-primary`               |               |             |
 | `--background-primary-alt`           |               |             |
@@ -70,7 +58,7 @@ body {
 
 #### Text colors
 
-| Variable                    | Default value | Description |
+| Variable                    | Property | Description |
 | --------------------------- | ------------- | ----------- |
 | `--text-normal`             |               |             |
 | `--text-muted`              |               |             |
@@ -85,7 +73,7 @@ body {
 
 #### Buttons and interactive element colors
 
-| Variable                     | Default value | Description |
+| Variable                     | Property | Description |
 | ---------------------------- | ------------- | ----------- |
 | `--interactive-normal`       |               |             |
 | `--interactive-hover`        |               |             |
@@ -95,62 +83,144 @@ body {
 
 ---
 
-## Generics
+## Theme colors
+
+Theme color variables define the color values used throughout the app.
+
+Each variable is applied to both `.theme-light` and `.theme-dark` classes with appropriate values for light and dark mode. For example:
+
+```css
+.theme-light {
+  --color-base-00: #ffffff;
+}
+.theme-light {
+  --color-base-00: #1e1e1e;
+}
+```
+
+#### Base palette
+
+The base palette is a monochromatic set of raw color values from light to dark (in light mode). These variables store the raw values used in the color mappings.
+
+| Variable             | Property | Description |
+| -------------------- | ------------- | ----------- |
+| `--color-base-00`       |               |             |
+| `--color-base-05`       |               |             |
+| `--color-base-10`       |               |             |
+| `--color-base-20`       |               |             |
+| `--color-base-25`       |               |             |
+| `--color-base-30`       |               |             |
+| `--color-base-35`       |               |             |
+| `--color-base-40`       |               |             |
+| `--color-base-50`       |               |             |
+| `--color-base-60`       |               |             |
+| `--color-base-70`       |               |             |
+| `--color-base-100`       |               |             |
+
+#### Accent color
+
+| Variable     | Property | Description |
+| ------------ | -------- | ----------- |
+| `--accent-h` |          |             |
+| `--accent-s` |          |             |
+| `--accent-l` |          |             |
+
+#### Extended palette
+
+These variables define the breadth of extended colors used for status messages (errors, warnings, success), callout types, syntax highlighting, graph nodes, and Canvas elements.
+
+The variables can use any valid CSS color units, however an additional RGB variable is also stored for each color, that is used wherever semi-translucent RGBA colors are needed. For example:
+
+```css
+color: var(--color-red);
+background-color: rgba(var(--color-red-rgb), 0.2);
+```
+
+This uses the RGB variable to set a background color to red with 20% opacity, and the normal color variable to set the text color.
+
+| Variable             | Property | Description |
+| -------------------- | ------------- | ----------- |
+| `--color-red`        |               |             |
+| `--color-red-rgb`    |               |             |
+| `--color-orange`     |               |             |
+| `--color-orange-rgb` |               |             |
+| `--color-yellow`     |               |             |
+| `--color-yellow-rgb` |               |             |
+| `--color-green`      |               |             |
+| `--color-green-rgb`  |               |             |
+| `--color-cyan`       |               |             |
+| `--color-cyan-rgb`   |               |             |
+| `--color-blue`       |               |             |
+| `--color-blue-rgb`   |               |             |
+| `--color-purple`     |               |             |
+| `--color-purple-rgb` |               |             |
+| `--color-pink`       |               |             |
+| `--color-pink-rgb`   |               |             |
+
+---
+
+#### Mono colors
+
+These variables define RGB values for black and white. These are used primarily to create semi-translucent masks with RGBA. We do not recommend changing these variables.
+
+| Variable         |
+| ---------------- |
+| `--mono-rgb-0`   |
+| `--mono-rgb-100` |
+
+## Foundations
 
 ### Borders
 
-| Variable         | Default value | Description |
+| Variable         | Property | Description |
 | ---------------- | ------------- | ----------- |
 | `--border-width` |               |             |
 
 ### Cursors
 
-| Variable        | Default value | Description              |
-| --------------- | ------------- | ------------------------ |
-| `--cursor`      | `default`     | Cursor for interactive elements |
-| `--cursor-link` | `pointer`     | Cursor for links                |
+| Variable        | Property | Description                     |
+| --------------- | -------- | ------------------------------- |
+| `--cursor`      |          | Cursor for interactive elements |
+| `--cursor-link` |          | Cursor for links                |
 
 ### Fonts
 
-| Variable            | Default value | Description |
-| ------------------- | ------------- | ----------- |
-| `--font-smallest`   |               |             |
-| `--font-smaller`    |               |             |
-| `--font-small`      |               |             |
+#### Font sizes
 
-#### UI fonts
-
-| Variable            | Default value | Description |
-| ------------------- | ------------- | ----------- |
-| `--font-ui-smaller` |               |             |
-| `--font-ui-small`   |               |             |
-| `--font-ui-medium`  |               |             |
-| `--font-ui-larger`  |               |             |
+| Variable            | Property    | Description |
+| ------------------- | ----------- | ----------- |
+| `--font-smallest`   | `font-size` |             |
+| `--font-smaller`    | `font-size` |             |
+| `--font-small`      | `font-size` |             |
+| `--font-ui-smaller` | `font-size` |             |
+| `--font-ui-small`   | `font-size` |             |
+| `--font-ui-medium`  | `font-size` |             |
+| `--font-ui-larger`  | `font-size` |             |
 
 #### Font weights
 
-| Variable            | Default value | Description |
+| Variable            | Property      | Description |
 | ------------------- | ------------- | ----------- |
-| `--font-thin`       |               |             |
-| `--font-extralight` |               |             |
-| `--font-light`      |               |             |
-| `--font-normal`     |               |             |
-| `--font-medium`     |               |             |
-| `--font-semibold`   |               |             |
-| `--font-bold`       |               |             |
-| `--font-extrabold`  |               |             |
-| `--font-black`      |               |             |
+| `--font-thin`       | `font-weight` |             |
+| `--font-extralight` | `font-weight` |             |
+| `--font-light`      | `font-weight` |             |
+| `--font-normal`     | `font-weight` |             |
+| `--font-medium`     | `font-weight` |             |
+| `--font-semibold`   | `font-weight` |             |
+| `--font-bold`       | `font-weight` |             |
+| `--font-extrabold`  | `font-weight` |             |
+| `--font-black`      | `font-weight` |             |
 
 ### Line heights
 
-| Variable               | Default value | Description |
+| Variable               | Property      | Description |
 | ---------------------- | ------------- | ----------- |
-| `--line-height-normal` |               |             |
-| `--line-height-tight`                       |               |             |
+| `--line-height-normal` | `line-height` |             |
+| `--line-height-tight`  | `line-height` |             |
 
 ### Spacing and padding
 
-| Variable      | Default value | Description |
+| Variable      | Property | Description |
 | ------------- | ------------- | ----------- |
 | `--size-2-1`  |               |             |
 | `--size-2-2`  |               |             |
@@ -169,7 +239,7 @@ body {
 
 ### Radiuses
 
-| Variable      | Default value | Description |
+| Variable      | Property | Description |
 | ------------- | ------------- | ----------- |
 | `--radius-s`  |               |             |
 | `--radius-m`  |               |             |
@@ -178,7 +248,7 @@ body {
 
 ### Z-index
 
-| Variable               | Default value | Description |
+| Variable               | Property | Description |
 | ---------------------- | ------------- | ----------- |
 | `--layer-cover`        |               |             |
 | `--layer-sidedock`     |               |             |
@@ -197,7 +267,7 @@ body {
 
 ### Blockquotes
 
-| Variable                        | Default value | Description |
+| Variable                        | Property | Description |
 | ------------------------------- | ------------- | ----------- |
 | `--blockquote-border-thickness` |               |             |
 | `--blockquote-border-color`     |               |             |
@@ -207,29 +277,29 @@ body {
 
 ### Bold
 
-| Variable        | Default value     | Description |
-| --------------- | ----------------- | ----------- |
-| `--bold-weight` | `--font-semibold` |             |
-| `--bold-color`  | `inherit`         |             |
+| Variable        | Property | Description |
+| --------------- | -------- | ----------- |
+| `--bold-weight` |          |             |
+| `--bold-color`  |          |             |
 
 ### Callouts
 
-| Variable                       | Default value | Description |
-| ------------------------------ | ------------- | ----------- |
-| `--callout-border-width`       | `0`           |             |
-| `--callout-border-opacity`     |               |             |
-| `--callout-padding`            |               |             |
-| `--callout-radius`             |               |             |
-| `--callout-blend-mode`         |               |             |
-| `--callout-title-color`        |               |             |
-| `--callout-title-padding`      |               |             |
-| `--callout-title-size`         |               |             |
-| `--callout-content-padding`    |               |             |
-| `--callout-content-background` |               |             |
+| Variable                       | Property | Description |
+| ------------------------------ | -------- | ----------- |
+| `--callout-border-width`       |          |             |
+| `--callout-border-opacity`     |          |             |
+| `--callout-padding`            |          |             |
+| `--callout-radius`             |          |             |
+| `--callout-blend-mode`         |          |             |
+| `--callout-title-color`        |          |             |
+| `--callout-title-padding`      |          |             |
+| `--callout-title-size`         |          |             |
+| `--callout-content-padding`    |          |             |
+| `--callout-content-background` |          |             |
 
 #### Callout type colors
 
-| Variable              | Default value | Description |
+| Variable              | Property | Description |
 | --------------------- | ------------- | ----------- |
 | `--callout-bug`       |               |             |
 | `--callout-default`   |               |             |
@@ -248,7 +318,7 @@ body {
 
 ### Checkboxes
 
-| Variable                        | Default value | Description |
+| Variable                        | Property | Description |
 | ------------------------------- | ------------- | ----------- |
 | `--checkbox-radius`             |               |             |
 | `--checkbox-size`               |               |             |
@@ -262,7 +332,7 @@ body {
 
 ### Code
 
-| Variable             | Default value | Description |
+| Variable             | Property | Description |
 | -------------------- | ------------- | ----------- |
 | `--code-white-space` |               |             |
 | `--code-size`        |               |             |
@@ -272,7 +342,7 @@ body {
 
 Note that for technical reasons Obsidian currently uses two different syntax highlighting libraries for Edit and Read mode. The syntax highlighting does not perfectly match between the two modes.
 
-| Variable             | Default value | Description |
+| Variable             | Property | Description |
 | -------------------- | ------------- | ----------- |
 | `--code-normal`      |               |             |
 | `--code-comment`     |               |             |
@@ -288,7 +358,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Embeds
 
-| Variable                    | Default value | Description |
+| Variable                    | Property | Description |
 | --------------------------- | ------------- | ----------- |
 | `--embed-max-height`        |               |             |
 | `--embed-canvas-max-height` |               |             |
@@ -302,13 +372,13 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Footnotes
 
-| Variable         | Default value | Description |
+| Variable         | Property | Description |
 | ---------------- | ------------- | ----------- |
 | `--footnote-size` |               |             |
 
 ### Headings
 
-| Variable               | Default value | Description |
+| Variable               | Property | Description |
 | ---------------------- | ------------- | ----------- |
 | `--heading-formatting` |               |             |
 | `--h1-color`           |               |             |
@@ -356,20 +426,20 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Horizontal rules
 
-| Variable         | Default value | Description |
+| Variable         | Property | Description |
 | ---------------- | ------------- | ----------- |
 | `--hr-color`     |               |             |
 | `--hr-thickness` |               |             |
 
 ### Italic
 
-| Variable | Default value | Description |
+| Variable | Property | Description |
 | -------- | ------------- | ----------- |
 | `--italic-color`     |               |             |
 
 ### Inline titles
 
-| Variable                     | Default value | Description |
+| Variable                     | Property | Description |
 | ---------------------------- | ------------- | ----------- |
 | `--inline-title-color`       |               |             |
 | `--inline-title-font`        |               |             |
@@ -381,7 +451,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Links
 
-| Variable                             | Default value | Description |
+| Variable                             | Property | Description |
 | ------------------------------------ | ------------- | ----------- |
 | `--link-color`                       |               |             |
 | `--link-color-hover`                 |               |             |
@@ -401,7 +471,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Lists
 
-| Variable                        | Default value | Description |
+| Variable                        | Property | Description |
 | ------------------------------- | ------------- | ----------- |
 | `--list-indent`                 |               |             |
 | `--list-spacing`                |               |             |
@@ -416,7 +486,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Tables
 
-| Variable                            | Default value | Description |
+| Variable                            | Property | Description |
 | ----------------------------------- | ------------- | ----------- |
 | `--table-background`                |               |             |
 | `--table-border-width`              |               |             |
@@ -442,7 +512,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Tags
 
-| Variable                   | Default value | Description |
+| Variable                   | Property | Description |
 | -------------------------- | ------------- | ----------- |
 | `--tag-size`               |               |             |
 | `--tag-color`              |               |             |
@@ -464,13 +534,13 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Buttons
 
-| Variable          | Default value | Description |
+| Variable          | Property | Description |
 | ----------------- | ------------- | ----------- |
 | `--button-radius` |               |             |
 
 ### Color swatch inputs
 
-| Variable          | Default value | Description |
+| Variable          | Property | Description |
 | ----------------- | ------------- | ----------- |
 | `--swatch-radius` |               |             |
 | `--swatch-height` |               |             |
@@ -479,7 +549,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Sliders
 
-| Variable                      | Default value | Description |
+| Variable                      | Property | Description |
 | ----------------------------- | ------------- | ----------- |
 | `--slider-thumb-border-width` |               |             |
 | `--slider-thumb-border-color` |               |             |
@@ -494,7 +564,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Text inputs
 
-| Variable               | Default value | Description |
+| Variable               | Property | Description |
 | ---------------------- | ------------- | ----------- |
 | `--input-height`       |               |             |
 | `--input-radius`       |               |             |
@@ -503,7 +573,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Toggles
 
-| Variable                  | Default value | Description |
+| Variable                  | Property | Description |
 | ------------------------- | ------------- | ----------- |
 | `--toggle-border-width`   |               |             |
 | `--toggle-width`          |               |             |
@@ -523,7 +593,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Canvas
 
-| Variable                    | Default value | Description |
+| Variable                    | Property | Description |
 | --------------------------- | ------------- | ----------- |
 | `--canvas-background`       |               |             |
 | `--canvas-card-label-color` |               |             |
@@ -537,7 +607,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Dividers
 
-| Variable                    | Default value | Description |
+| Variable                    | Property | Description |
 | --------------------------- | ------------- | ----------- |
 | `--divider-color`           |               |             |
 | `--divider-color-hover`     |               |             |
@@ -547,20 +617,20 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Dragging
 
-| Variable                  | Default value | Description |
+| Variable                  | Property | Description |
 | ------------------------- | ------------- | ----------- |
 | `--drag-ghost-background` |               |             |
 | `--drag-ghost-text-color` |               |             |
 
 ### Blocks
 
-| Variable | Default value | Description |
+| Variable | Property | Description |
 | -------- | ------------- | ----------- |
 | `--embed-block-shadow-hover`     |               |             |
 
 ### File layout
 
-| Variable                    | Default value | Description |
+| Variable                    | Property | Description |
 | --------------------------- | ------------- | ----------- |
 | `--file-line-width`         |               |             |
 | `--file-folding-offset`     |               |             |
@@ -574,7 +644,7 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 Applies to local and global graphs
 
-| Variable                  | Default value | Description |
+| Variable                  | Property | Description |
 | ------------------------- | ------------- | ----------- |
 | `--graph-controls-width`  |               |             |
 | `--graph-text`            |               |             |
@@ -587,13 +657,13 @@ Applies to local and global graphs
 
 ### View header
 
-| Variable          | Default value | Description |
+| Variable          | Property | Description |
 | ----------------- | ------------- | ----------- |
 | `--header-height` |               |             |
 
 ### Icons
 
-| Variable                  | Default value | Description |
+| Variable                  | Property | Description |
 | ------------------------- | ------------- | ----------- |
 | `--icon-size`             |               |             |
 | `--icon-stroke`           |               |             |
@@ -618,7 +688,7 @@ Applies to local and global graphs
 
 ### Indentation guides
 
-| Variable                           | Default value | Description |
+| Variable                           | Property | Description |
 | ---------------------------------- | ------------- | ----------- |
 | `--indentation-guide-width`        |               |             |
 | `--indentation-guide-color`        |               |             |
@@ -626,7 +696,7 @@ Applies to local and global graphs
 
 ### File navigator
 
-| Variable                              | Default value | Description |
+| Variable                              | Property | Description |
 | ------------------------------------- | ------------- | ----------- |
 | `--nav-item-size`                     |               |             |
 | `--nav-item-color`                    |               |             |
@@ -652,7 +722,7 @@ Applies to local and global graphs
 
 #### Vault name
 
-| Variable                   | Default value | Description |
+| Variable                   | Property | Description |
 | -------------------------- | ------------- | ----------- |
 | `--vault-name-font-size`   |               |             |
 | `--vault-name-font-weight` |               |             |
@@ -660,7 +730,7 @@ Applies to local and global graphs
 
 ### Modals
 
-| Variable                          | Default value | Description |
+| Variable                          | Property | Description |
 | --------------------------------- | ------------- | ----------- |
 | `--modal-background`              |               |             |
 | `--modal-width`                   |               |             |
@@ -677,7 +747,7 @@ Applies to local and global graphs
 
 Smaller modals primarily used for confirmations
 
-| Variable              | Default value | Description |
+| Variable              | Property | Description |
 | --------------------- | ------------- | ----------- |
 | `--dialog-width`      |               |             |
 | `--dialog-max-width`  |               |             |
@@ -685,7 +755,7 @@ Smaller modals primarily used for confirmations
 
 ### File preview popovers
 
-| Variable               | Default value | Description |
+| Variable               | Property | Description |
 | ---------------------- | ------------- | ----------- |
 | `--popover-width`      |               |             |
 | `--popover-height`     |               |             |
@@ -698,7 +768,7 @@ Smaller modals primarily used for confirmations
 
 E.g. quick switcher, command palette
 
-| Variable                | Default value | Description |
+| Variable                | Property | Description |
 | ----------------------- | ------------- | ----------- |
 | `--prompt-width`        |               |             |
 | `--prompt-max-width`    |               |             |
@@ -710,7 +780,7 @@ E.g. quick switcher, command palette
 
 Controls styling of the [[Ribbon]] element
 
-| Variable                        | Default value | Description |
+| Variable                        | Property | Description |
 | ------------------------------- | ------------- | ----------- |
 | `--ribbon-background`           |               |             |
 | `--ribbon-background-collapsed` |               |             |
@@ -719,7 +789,7 @@ Controls styling of the [[Ribbon]] element
 
 ### Scrollbars
 
-| Variable                      | Default value | Description |
+| Variable                      | Property | Description |
 | ----------------------------- | ------------- | ----------- |
 | `--scrollbar-active-thumb-bg` |               |             |
 | `--scrollbar-bg`              |               |             |
@@ -727,7 +797,7 @@ Controls styling of the [[Ribbon]] element
 
 ### Search
 
-| Variable                      | Default value | Description |
+| Variable                      | Property | Description |
 | ----------------------------- | ------------- | ----------- |
 | `--search-clear-button-color` |               |             |
 | `--search-clear-button-size`  |               |             |
@@ -737,14 +807,14 @@ Controls styling of the [[Ribbon]] element
 
 ### Sidebar
 
-| Variable                       | Default value | Description |
+| Variable                       | Property | Description |
 | ------------------------------ | ------------- | ----------- |
 | `--sidebar-markdown-font-size` |               |             |
 | `--sidebar-tab-text-display`   |               |             |
 
 ### Status bar
 
-| Variable                      | Default value | Description |
+| Variable                      | Property | Description |
 | ----------------------------- | ------------- | ----------- |
 | `--status-bar-background`     |               |             |
 | `--status-bar-border-color`   |               |             |
@@ -757,7 +827,7 @@ Controls styling of the [[Ribbon]] element
 
 ### Tabs
 
-| Variable                                  | Default value | Description |
+| Variable                                  | Property | Description |
 | ----------------------------------------- | ------------- | ----------- |
 | `--tab-background-active`                 |               |             |
 | `--tab-text-color`                        |               |             |
@@ -781,7 +851,7 @@ Controls styling of the [[Ribbon]] element
 
 ### Tab stacks
 
-| Variable                          | Default value | Description |
+| Variable                          | Property | Description |
 | --------------------------------- | ------------- | ----------- |
 | `--tab-stacked-pane-width`        |               |             |
 | `--tab-stacked-header-width`      |               |             |
@@ -794,7 +864,7 @@ Controls styling of the [[Ribbon]] element
 
 ### Window frame
 
-| Variable                        | Default value | Description |
+| Variable                        | Property | Description |
 | ------------------------------- | ------------- | ----------- |
 | `--titlebar-background`         |               |             |
 | `--titlebar-background-focused` |               |             |
@@ -806,6 +876,6 @@ Controls styling of the [[Ribbon]] element
 
 ### Workspace
 
-| Variable                             | Default value | Description |
+| Variable                             | Property | Description |
 | ------------------------------------ | ------------- | ----------- |
 | `--workspace-background-translucent` |               |             |
