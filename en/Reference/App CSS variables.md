@@ -1,3 +1,7 @@
+---
+cssClass: reference
+---
+
 #reference
 
 ## Overview
@@ -20,7 +24,7 @@ body {
 
 }
 .theme-light {
-
+  --background-primary: white;
 }
 .theme-dark {
 
@@ -34,9 +38,70 @@ body {
 
 ## Colors
 
+### Color mappings
+
+#### Accent color
+
+| Variable     | Default value | Description |
+| ------------ | ------------- | ----------- |
+| `--accent-h` | `254`         |             |
+| `--accent-s` | `80%`         |             |
+| `--accent-l` | `68%`         |             |
+
+#### Background and border colors
+
+| Variable                             | Default value | Description |
+| ------------------------------------ | ------------- | ----------- |
+| `--background-primary`               |               |             |
+| `--background-primary-alt`           |               |             |
+| `--background-secondary`             |               |             |
+| `--background-modifier-hover`        |               |             |
+| `--background-modifier-active-hover` |               |             |
+| `--background-modifier-border`       |               |             |
+| `--background-modifier-border-hover` |               |             |
+| `--background-modifier-border-focus` |               |             |
+| `--background-modifier-error-rgb`    |               |             |
+| `--background-modifier-error`        |               |             |
+| `--background-modifier-error-hover`  |               |             |
+| `--background-modifier-success-rgb`  |               |             |
+| `--background-modifier-success`      |               |             |
+| `--background-modifier-message`      |               |             |
+| `--background-modifier-form-field`   |               |             |
+
+#### Text colors
+
+| Variable                    | Default value | Description |
+| --------------------------- | ------------- | ----------- |
+| `--text-normal`             |               |             |
+| `--text-muted`              |               |             |
+| `--text-faint`              |               |             |
+| `--text-on-accent`          |               |             |
+| `--text-on-accent-inverted` |               |             |
+| `--text-error`              |               |             |
+| `--text-success`            |               |             |
+| `--text-selection`          |               |             |
+| `--text-accent`             |               |             |
+| `--text-accent-hover`       |               |             |
+
+#### Buttons and interactive element colors
+
+| Variable                     | Default value | Description |
+| ---------------------------- | ------------- | ----------- |
+| `--interactive-normal`       |               |             |
+| `--interactive-hover`        |               |             |
+| `--interactive-accent-hsl`   |               |             |
+| `--interactive-accent`       |               |             |
+| `--interactive-accent-hover` |               |             |
+
 ---
 
 ## Generics
+
+### Borders
+
+| Variable         | Default value | Description |
+| ---------------- | ------------- | ----------- |
+| `--border-width` |               |             |
 
 ### Cursors
 
@@ -47,13 +112,84 @@ body {
 
 ### Fonts
 
+| Variable            | Default value | Description |
+| ------------------- | ------------- | ----------- |
+| `--font-smallest`   |               |             |
+| `--font-smaller`    |               |             |
+| `--font-small`      |               |             |
+
+#### UI fonts
+
+| Variable            | Default value | Description |
+| ------------------- | ------------- | ----------- |
+| `--font-ui-smaller` |               |             |
+| `--font-ui-small`   |               |             |
+| `--font-ui-medium`  |               |             |
+| `--font-ui-larger`  |               |             |
+
+#### Font weights
+
+| Variable            | Default value | Description |
+| ------------------- | ------------- | ----------- |
+| `--font-thin`       |               |             |
+| `--font-extralight` |               |             |
+| `--font-light`      |               |             |
+| `--font-normal`     |               |             |
+| `--font-medium`     |               |             |
+| `--font-semibold`   |               |             |
+| `--font-bold`       |               |             |
+| `--font-extrabold`  |               |             |
+| `--font-black`      |               |             |
+
 ### Line heights
+
+| Variable               | Default value | Description |
+| ---------------------- | ------------- | ----------- |
+| `--line-height-normal` |               |             |
+| `--line-height-tight`                       |               |             |
 
 ### Spacing and padding
 
+| Variable      | Default value | Description |
+| ------------- | ------------- | ----------- |
+| `--size-2-1`  |               |             |
+| `--size-2-2`  |               |             |
+| `--size-2-3`  |               |             |
+| `--size-4-1`  |               |             |
+| `--size-4-2`  |               |             |
+| `--size-4-3`  |               |             |
+| `--size-4-4`  |               |             |
+| `--size-4-5`  |               |             |
+| `--size-4-6`  |               |             |
+| `--size-4-8`  |               |             |
+| `--size-4-9`  |               |             |
+| `--size-4-12` |               |             |
+| `--size-4-16` |               |             |
+| `--size-4-18` |               |             |
+
 ### Radiuses
 
+| Variable      | Default value | Description |
+| ------------- | ------------- | ----------- |
+| `--radius-s`  |               |             |
+| `--radius-m`  |               |             |
+| `--radius-l`  |               |             |
+| `--radius-xl` |               |             |
+
 ### Z-index
+
+| Variable               | Default value | Description |
+| ---------------------- | ------------- | ----------- |
+| `--layer-cover`        |               |             |
+| `--layer-sidedock`     |               |             |
+| `--layer-status-bar`   |               |             |
+| `--layer-popover`      |               |             |
+| `--layer-slides`       |               |             |
+| `--layer-modal`        |               |             |
+| `--layer-notice`       |               |             |
+| `--layer-menu`         |               |             |
+| `--layer-tooltip`      |               |             |
+| `--layer-dragged-item` |               |             |
 
 ---
 
@@ -332,6 +468,30 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 | ----------------- | ------------- | ----------- |
 | `--button-radius` |               |             |
 
+### Color swatch inputs
+
+| Variable          | Default value | Description |
+| ----------------- | ------------- | ----------- |
+| `--swatch-radius` |               |             |
+| `--swatch-height` |               |             |
+| `--swatch-width`  |               |             |
+| `--swatch-shadow` |               |             |
+
+### Sliders
+
+| Variable                      | Default value | Description |
+| ----------------------------- | ------------- | ----------- |
+| `--slider-thumb-border-width` |               |             |
+| `--slider-thumb-border-color` |               |             |
+| `--slider-thumb-height`       |               |             |
+| `--slider-thumb-width`        |               |             |
+| `--slider-thumb-y`            |               |             |
+| `--slider-thumb-radius`       |               |             |
+| `--slider-s-thumb-size`       |               |             |
+| `--slider-s-thumb-position`   |               |             |
+| `--slider-track-background`   |               |             |
+| `--slider-track-height`       |               |             |
+
 ### Text inputs
 
 | Variable               | Default value | Description |
@@ -357,98 +517,295 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 | `--toggle-s-thumb-height` |               |             |
 | `--toggle-s-thumb-width`  |               |             |
 
-
-### Sliders
-
-| Variable                      | Default value | Description |
-| ----------------------------- | ------------- | ----------- |
-| `--slider-thumb-border-width` |               |             |
-| `--slider-thumb-border-color` |               |             |
-| `--slider-thumb-height`       |               |             |
-| `--slider-thumb-width`        |               |             |
-| `--slider-thumb-y`            |               |             |
-| `--slider-thumb-radius`       |               |             |
-| `--slider-s-thumb-size`       |               |             |
-| `--slider-s-thumb-position`   |               |             |
-| `--slider-track-background`   |               |             |
-| `--slider-track-height`       |               |             |
-
-### Color swatches
-
-| Variable | Default value | Description |
-| -------- | ------------- | ----------- |
-| `--`     |               |             |
-
 ---
 
 ## UI
 
-| Variable | Default value | Description |
-| -------- | ------------- | ----------- |
-| `--`     |               |             |
-
-### Borders
-
-| Variable | Default value | Description |
-| -------- | ------------- | ----------- |
-| `--`     |               |             |
-
 ### Canvas
 
-| Variable | Default value | Description |
-| -------- | ------------- | ----------- |
-| `--`     |               |             |
-
-### Dialogs
-
-| Variable | Default value | Description |
-| -------- | ------------- | ----------- |
-| `--`     |               |             |
+| Variable                    | Default value | Description |
+| --------------------------- | ------------- | ----------- |
+| `--canvas-background`       |               |             |
+| `--canvas-card-label-color` |               |             |
+| `--canvas-color-1`          |               |             |
+| `--canvas-color-2`          |               |             |
+| `--canvas-color-3`          |               |             |
+| `--canvas-color-4`          |               |             |
+| `--canvas-color-5`          |               |             |
+| `--canvas-color-6`          |               |             |
+| `--canvas-dot-pattern`      |               |             |
 
 ### Dividers
 
-| Variable | Default value | Description |
-| -------- | ------------- | ----------- |
-| `--`     |               |             |
+| Variable                    | Default value | Description |
+| --------------------------- | ------------- | ----------- |
+| `--divider-color`           |               |             |
+| `--divider-color-hover`     |               |             |
+| `--divider-width`           |               |             |
+| `--divider-width-hover`     |               |             |
+| `--divider-vertical-height` |               |             |
 
 ### Dragging
 
+| Variable                  | Default value | Description |
+| ------------------------- | ------------- | ----------- |
+| `--drag-ghost-background` |               |             |
+| `--drag-ghost-text-color` |               |             |
+
 ### Blocks
+
+| Variable | Default value | Description |
+| -------- | ------------- | ----------- |
+| `--embed-block-shadow-hover`     |               |             |
 
 ### File layout
 
-### Graph
+| Variable                    | Default value | Description |
+| --------------------------- | ------------- | ----------- |
+| `--file-line-width`         |               |             |
+| `--file-folding-offset`     |               |             |
+| `--file-margins`            |               |             |
+| `--file-header-font-size`   |               |             |
+| `--file-header-font-weight` |               |             |
+| `--file-header-border`      |               |             |
+| `--file-header-justify`     |               |             |
+
+### Graphs
+
+Applies to local and global graphs
+
+| Variable                  | Default value | Description |
+| ------------------------- | ------------- | ----------- |
+| `--graph-controls-width`  |               |             |
+| `--graph-text`            |               |             |
+| `--graph-line`            |               |             |
+| `--graph-node`            |               |             |
+| `--graph-node-unresolved` |               |             |
+| `--graph-node-focused`    |               |             |
+| `--graph-node-tag`        |               |             |
+| `--graph-node-attachment` |               |             |
 
 ### View header
 
+| Variable          | Default value | Description |
+| ----------------- | ------------- | ----------- |
+| `--header-height` |               |             |
+
 ### Icons
+
+| Variable                  | Default value | Description |
+| ------------------------- | ------------- | ----------- |
+| `--icon-size`             |               |             |
+| `--icon-stroke`           |               |             |
+| `--icon-xs`               |               |             |
+| `--icon-s`                |               |             |
+| `--icon-m`                |               |             |
+| `--icon-l`                |               |             |
+| `--icon-xl`               |               |             |
+| `--icon-xs-stroke-width`  |               |             |
+| `--icon-s-stroke-width`   |               |             |
+| `--icon-m-stroke-width`   |               |             |
+| `--icon-l-stroke-width`   |               |             |
+| `--icon-xl-stroke-width`  |               |             |
+| `--icon-color`            |               |             |
+| `--icon-color-hover`      |               |             |
+| `--icon-color-active`     |               |             |
+| `--icon-color-focused`    |               |             |
+| `--icon-opacity`          |               |             |
+| `--icon-opacity-hover`    |               |             |
+| `--icon-opacity-active`   |               |             |
+| `--clickable-icon-radius` |               |             |
 
 ### Indentation guides
 
+| Variable                           | Default value | Description |
+| ---------------------------------- | ------------- | ----------- |
+| `--indentation-guide-width`        |               |             |
+| `--indentation-guide-color`        |               |             |
+| `--indentation-guide-color-active` |               |             |
+
 ### File navigator
+
+| Variable                              | Default value | Description |
+| ------------------------------------- | ------------- | ----------- |
+| `--nav-item-size`                     |               |             |
+| `--nav-item-color`                    |               |             |
+| `--nav-item-color-hover`              |               |             |
+| `--nav-item-color-active`             |               |             |
+| `--nav-item-color-selected`           |               |             |
+| `--nav-item-color-highlighted`        |               |             |
+| `--nav-item-background-hover`         |               |             |
+| `--nav-item-background-active`        |               |             |
+| `--nav-item-background-selected`      |               |             |
+| `--nav-item-padding`                  |               |             |
+| `--nav-item-parent-padding`           |               |             |
+| `--nav-item-children-padding-left`    |               |             |
+| `--nav-item-children-margin-left`     |               |             |
+| `--nav-item-weight`                   |               |             |
+| `--nav-item-weight-hover`             |               |             |
+| `--nav-item-weight-active`            |               |             |
+| `--nav-item-white-space`              |               |             |
+| `--nav-indentation-guide-width`       |               |             |
+| `--nav-indetation-guide-color`        |               |             |
+| `--nav-collapse-icon-color`           |               |             |
+| `--nav-collapse-icon-color-collapsed` |               |             |
 
 #### Vault name
 
+| Variable                   | Default value | Description |
+| -------------------------- | ------------- | ----------- |
+| `--vault-name-font-size`   |               |             |
+| `--vault-name-font-weight` |               |             |
+| `--vault-name-color`       |               |             |
+
 ### Modals
 
+| Variable                          | Default value | Description |
+| --------------------------------- | ------------- | ----------- |
+| `--modal-background`              |               |             |
+| `--modal-width`                   |               |             |
+| `--modal-height`                  |               |             |
+| `--modal-max-width`               |               |             |
+| `--modal-max-height`              |               |             |
+| `--modal-max-width-narrow`        |               |             |
+| `--modal-border-width`            |               |             |
+| `--modal-border-color`            |               |             |
+| `--modal-radius`                  |               |             |
+| `--modal-community-sidebar-width` |               |             |
+
+#### Dialogs
+
+Smaller modals primarily used for confirmations
+
+| Variable              | Default value | Description |
+| --------------------- | ------------- | ----------- |
+| `--dialog-width`      |               |             |
+| `--dialog-max-width`  |               |             |
+| `--dialog-max-height` |               |             |
+
 ### File preview popovers
+
+| Variable               | Default value | Description |
+| ---------------------- | ------------- | ----------- |
+| `--popover-width`      |               |             |
+| `--popover-height`     |               |             |
+| `--popover-max-height` |               |             |
+| `--popover-pdf-width`  |               |             |
+| `--popover-pdf-height` |               |             |
+| `--popover-font-size`  |               |             |
 
 ### Prompts
 
 E.g. quick switcher, command palette
 
+| Variable                | Default value | Description |
+| ----------------------- | ------------- | ----------- |
+| `--prompt-width`        |               |             |
+| `--prompt-max-width`    |               |             |
+| `--prompt-max-height`   |               |             |
+| `--prompt-border-width` |               |             |
+| `--prompt-border-color` |               |             |
+
 ### Ribbon
+
+Controls styling of the [[Ribbon]] element
+
+| Variable                        | Default value | Description |
+| ------------------------------- | ------------- | ----------- |
+| `--ribbon-background`           |               |             |
+| `--ribbon-background-collapsed` |               |             |
+| `--ribbon-width`                |               |             |
+| `--ribbon-padding`              |               |             |
 
 ### Scrollbars
 
+| Variable                      | Default value | Description |
+| ----------------------------- | ------------- | ----------- |
+| `--scrollbar-active-thumb-bg` |               |             |
+| `--scrollbar-bg`              |               |             |
+| `--scrollbar-thumb-bg`        |               |             |
+
 ### Search
+
+| Variable                      | Default value | Description |
+| ----------------------------- | ------------- | ----------- |
+| `--search-clear-button-color` |               |             |
+| `--search-clear-button-size`  |               |             |
+| `--search-icon-color`         |               |             |
+| `--search-icon-size`          |               |             |
+| `--search-result-background`  |               |             |
+
+### Sidebar
+
+| Variable                       | Default value | Description |
+| ------------------------------ | ------------- | ----------- |
+| `--sidebar-markdown-font-size` |               |             |
+| `--sidebar-tab-text-display`   |               |             |
 
 ### Status bar
 
+| Variable                      | Default value | Description |
+| ----------------------------- | ------------- | ----------- |
+| `--status-bar-background`     |               |             |
+| `--status-bar-border-color`   |               |             |
+| `--status-bar-border-width`   |               |             |
+| `--status-bar-font-size`      |               |             |
+| `--status-bar-text-color`     |               |             |
+| `--status-bar-position`       |               |             |
+| `--status-bar-radius`         |               |             |
+| `--status-bar-scroll-padding` |               |             |
+
 ### Tabs
+
+| Variable                                  | Default value | Description |
+| ----------------------------------------- | ------------- | ----------- |
+| `--tab-background-active`                 |               |             |
+| `--tab-text-color`                        |               |             |
+| `--tab-text-color-active`                 |               |             |
+| `--tab-text-color-focused`                |               |             |
+| `--tab-text-color-focused-active`         |               |             |
+| `--tab-text-color-focused-highlighted`    |               |             |
+| `--tab-text-color-focused-active-current` |               |             |
+| `--tab-font-size`                         |               |             |
+| `--tab-font-weight`                       |               |             |
+| `--tab-container-background`              |               |             |
+| `--tab-divider-color`                     |               |             |
+| `--tab-outline-color`                     |               |             |
+| `--tab-outline-width`                     |               |             |
+| `--tab-curve`                             |               |             |
+| `--tab-radius`                            |               |             |
+| `--tab-radius-active`                     |               |             |
+| `--tab-width`                             |               |             |
+| `--tab-max-width`                         |               |             |
+
 
 ### Tab stacks
 
+| Variable                          | Default value | Description |
+| --------------------------------- | ------------- | ----------- |
+| `--tab-stacked-pane-width`        |               |             |
+| `--tab-stacked-header-width`      |               |             |
+| `--tab-stacked-font-size`         |               |             |
+| `--tab-stacked-font-weight`       |               |             |
+| `--tab-stacked-text-align`        |               |             |
+| `--tab-stacked-text-transform`    |               |             |
+| `--tab-stacked-text-writing-mode` |               |             |
+| `--text-stacked-shadow`           |               |             |
+
 ### Window frame
 
+| Variable                        | Default value | Description |
+| ------------------------------- | ------------- | ----------- |
+| `--titlebar-background`         |               |             |
+| `--titlebar-background-focused` |               |             |
+| `--titlebar-border-width`       |               |             |
+| `--titlebar-border-color`       |               |             |
+| `--titlebar-text-color`         |               |             |
+| `--titlebar-text-color-focused` |               |             |
+| `--titlebar-text-weight`        |               |             |
+
 ### Workspace
+
+| Variable                             | Default value | Description |
+| ------------------------------------ | ------------- | ----------- |
+| `--workspace-background-translucent` |               |             |
