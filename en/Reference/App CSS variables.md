@@ -6,31 +6,22 @@ cssClass: reference
 
 ## Overview
 
+
+
+## CSS structure
+
 Variables inherited from the Obsidian App fall into the following categories.
 
 Defined on the `.theme-light` and `.theme-dark` classes:
 
-- **Colors** for light and dark mode backgrounds, borders, text and accents
+- **Theme colors** store the raw color values for light and dark mode
 
 Defined on the `body` element:
 
-- **Components** such as inputs, buttons, and popovers
-- **Content types** such as blockquotes, callouts, code blocks, syntax highlighting, embeds, footnotes, headings, links, lists, tables, tags, and task lists
-
-### Example
-
-```css
-body {
-
-}
-.theme-light {
-  --background-primary: white;
-}
-.theme-dark {
-
-}
-```
-
+- **Semantic color mappings** apply the theme colors to named variables for backgrounds, borders, text, etc
+- **Foundations** define abstracted values for font sizes, spacing, radiuses, layout
+- **Content types** define styling for blockquotes, callouts, code blocks, syntax highlighting, embeds, footnotes, headings, links, lists, tables, tags, and task lists
+- **Components** define styling for user interface elements such as inputs, buttons, popovers
 
 ---
 
@@ -54,47 +45,47 @@ Each variable is applied to both `.theme-light` and `.theme-dark` classes with a
 
 #### Base colors
 
-The base palette is a monochromatic set of color values from light to dark (in light mode). These raw values are mapped to semantic variable names.
+The base color palette is a monochromatic set of values from light to dark, used for the backgrounds and borders throughout the app.
 
-| Variable             | Property | Description |
-| -------------------- | ------------- | ----------- |
-| `--color-base-00`       |               |             |
-| `--color-base-05`       |               |             |
-| `--color-base-10`       |               |             |
-| `--color-base-20`       |               |             |
-| `--color-base-25`       |               |             |
-| `--color-base-30`       |               |             |
-| `--color-base-35`       |               |             |
-| `--color-base-40`       |               |             |
-| `--color-base-50`       |               |             |
-| `--color-base-60`       |               |             |
-| `--color-base-70`       |               |             |
-| `--color-base-100`       |               |             |
+| Variable           | Description                                              |
+| ------------------ | -------------------------------------------------------- |
+| `--color-base-00`  | Lightest color in light mode, darkest color in dark mode |
+| `--color-base-05`  |                                                          |
+| `--color-base-10`  |                                                          |
+| `--color-base-20`  |                                                          |
+| `--color-base-25`  |                                                          |
+| `--color-base-30`  |                                                          |
+| `--color-base-35`  |                                                          |
+| `--color-base-40`  |                                                          |
+| `--color-base-50`  |                                                          |
+| `--color-base-60`  |                                                          |
+| `--color-base-70`  |                                                          |
+| `--color-base-100` | Darkest color in light mode, lightest color in dark mode | 
 
 #### Accent color
 
-Accent color can be defined by the theme, and overidden by the user in Obsidian Appearance Settings. This color used to highlight interactive elements such as links, active states, buttons, etc.
+Accent color can be defined by the theme, and overidden by the user in Obsidian Appearance Settings. The accent color used to draw attention to interactive elements such as links, active states, and primary buttons.
 
-The accent color is defined as three separate HSL variables so that the values can be modified in CSS with `calc()`. Using CSS calculations allows themes to create a variety of shades from the user's accent color.
+The accent color is defined as three HSL variables (hue, saturation, lightness) that can be modified in CSS with `calc()`. Using [CSS calculations](https://developer.mozilla.org/en-US/docs/Web/CSS/calc) allows themes to create a variety of shades from the user's accent color.
 
-| Variable     | Property | Description |
-| ------------ | -------- | ----------- |
-| `--accent-h` |          |             |
-| `--accent-s` |          |             |
-| `--accent-l` |          |             |
+| Variable     | Default value | Description       |
+| ------------ | ------------- | ----------------- |
+| `--accent-h` | `254`           | Accent hue        |
+| `--accent-s` | `80%`           | Accent saturation |
+| `--accent-l` | `68%`           | Accent lightness  |
 
 #### Extended colors
 
 Extended color variables define the broader range of colors used for status messages (errors, warnings, success), callouts, syntax highlighting, graph nodes, and Canvas elements.
 
-The variables can use any valid CSS color units, however an additional RGB variable is also defined for each color, that is used wherever semi-translucent RGBA colors are needed. For example:
+The variables can use any valid CSS color units, however an additional RGB variable is also defined for each color. The RGB variable is used wherever semi-translucent RGBA colors are needed. For example:
 
 ```css
 color: var(--color-red);
 background-color: rgba(var(--color-red-rgb), 0.2);
 ```
 
-This uses the RGB variable to set a background color to red with 20% opacity, and the normal color variable to set the text color.
+This example uses the standard color variable to set the text color, and the RGB variable to set a background color to red with 20% opacity.
 
 | Variable             | Property | Description |
 | -------------------- | ------------- | ----------- |
@@ -114,7 +105,6 @@ This uses the RGB variable to set a background color to red with 20% opacity, an
 | `--color-purple-rgb` |               |             |
 | `--color-pink`       |               |             |
 | `--color-pink-rgb`   |               |             |
-
 
 #### Black and white
 
@@ -182,70 +172,77 @@ Color mappings are defined on the `body` element and are semantic names that ref
 
 ### Borders
 
-| Variable         | Description |
-| ---------------- | ----------- |
-| `--border-width` |             |
+| Variable         | Default value | Description |
+| ---------------- | ------------- | ----------- |
+| `--border-width` | `1px`         |             |
 
 ### Cursors
 
-| Variable        | Description                     |
-| --------------- | ------------------------------- |
-| `--cursor`      | Cursor for interactive elements |
-| `--cursor-link` | Cursor for links                |
+Variables for [[Cursor|cursors]] used in the app. Note that in the App context, Obsidian follows operating system conventions for cursors, not web conventions. This means interactive elements use the default arrow cursor (not the pointer). The pointer cursor is only used for links.
+
+| Variable        | Default value | Description                     |
+| --------------- | ------------- | ------------------------------- |
+| `--cursor`      | `default`     | Cursor for interactive elements |
+| `--cursor-link` | `pointer`     | Cursor for links                |
 
 ### Fonts
 
 #### Font sizes
 
-| Variable            | Property    | Description |
-| ------------------- | ----------- | ----------- |
-| `--font-smallest`   | `font-size` |             |
-| `--font-smaller`    | `font-size` |             |
-| `--font-small`      | `font-size` |             |
-| `--font-ui-smaller` | `font-size` |             |
-| `--font-ui-small`   | `font-size` |             |
-| `--font-ui-medium`  | `font-size` |             |
-| `--font-ui-larger`  | `font-size` |             |
+The Editor font size is defined by the user in Obsidian Appearance Settings and uses `--font-text-size` variable. Relative font sizes are primarily used in the Editor context, whereas fixed font sizes are used for UI elements.
+
+| Variable            | Default value | Description |
+| ------------------- | ------------- | ----------- |
+| `--font-text-size`  | `16px`          | Defined by user in Appearance Settings            |
+| `--font-smallest`   | `0.8em`       |             |
+| `--font-smaller`    | `0.875em`     |             |
+| `--font-small`      | `0.933em`     |             |
+| `--font-ui-smaller` | `12px`        |             |
+| `--font-ui-small`   | `13px`        |             |
+| `--font-ui-medium`  | `15px`        |             |
+| `--font-ui-larger`  | `20px`        |             |
 
 #### Font weights
 
-| Variable            | Property      | Description |
-| ------------------- | ------------- | ----------- |
-| `--font-thin`       | `font-weight` |             |
-| `--font-extralight` | `font-weight` |             |
-| `--font-light`      | `font-weight` |             |
-| `--font-normal`     | `font-weight` |             |
-| `--font-medium`     | `font-weight` |             |
-| `--font-semibold`   | `font-weight` |             |
-| `--font-bold`       | `font-weight` |             |
-| `--font-extrabold`  | `font-weight` |             |
-| `--font-black`      | `font-weight` |             |
+| Variable            | Default value |
+| ------------------- | ------------- |
+| `--font-thin`       | `100`           |
+| `--font-extralight` | `200`           |
+| `--font-light`      | `300`           |
+| `--font-normal`     | `400`           |
+| `--font-medium`     | `500`           |
+| `--font-semibold`   | `600`           |
+| `--font-bold`       | `700`           |
+| `--font-extrabold`  | `800`           |
+| `--font-black`      | `900`              |
 
 ### Line heights
 
-| Variable               | Property      | Description |
-| ---------------------- | ------------- | ----------- |
-| `--line-height-normal` | `line-height` |             |
-| `--line-height-tight`  | `line-height` |             |
+| Variable               | Default value | Description                                                            |
+| ---------------------- | ------------- | ---------------------------------------------------------------------- |
+| `--line-height-normal` | `1.5`         | Default line height                                                    | 
+| `--line-height-tight`  | `1.3`         | Used in search results, tree items, tooltips, and other smaller spaces |
 
 ### Spacing and padding
 
-| Variable      | Property | Description |
-| ------------- | ------------- | ----------- |
-| `--size-2-1`  |               |             |
-| `--size-2-2`  |               |             |
-| `--size-2-3`  |               |             |
-| `--size-4-1`  |               |             |
-| `--size-4-2`  |               |             |
-| `--size-4-3`  |               |             |
-| `--size-4-4`  |               |             |
-| `--size-4-5`  |               |             |
-| `--size-4-6`  |               |             |
-| `--size-4-8`  |               |             |
-| `--size-4-9`  |               |             |
-| `--size-4-12` |               |             |
-| `--size-4-16` |               |             |
-| `--size-4-18` |               |             |
+See [[Padding, margins, and spacing]]
+
+| Variable      | Default value |
+| ------------- | ------------- |
+| `--size-2-1`  | `2px`         |
+| `--size-2-2`  | `4px`         |
+| `--size-2-3`  | `6px`         |
+| `--size-4-1`  | `4px`         |
+| `--size-4-2`  | `8px`         |
+| `--size-4-3`  | `12px`        |
+| `--size-4-4`  | `16px`        |
+| `--size-4-5`  | `20px`        |
+| `--size-4-6`  | `24px`        |
+| `--size-4-8`  | `32px`        |
+| `--size-4-9`  | `36px`        |
+| `--size-4-12` | `48px`        |
+| `--size-4-16` | `64px`        |
+| `--size-4-18` | `72px`        | 
 
 ### Radiuses
 

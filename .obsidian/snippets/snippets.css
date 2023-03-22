@@ -20,6 +20,9 @@
 	--code-normal: var(--color-cyan);
 }
 
-.reference table td:first-child {
-	min-width: 250px;
+.reference table th {
+	--table-white-space: nowrap;
+}
+.reference table th:first-child {
+	min-width: 200px;
 }
