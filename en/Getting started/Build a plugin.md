@@ -18,7 +18,7 @@ To complete this tutorial, you'll need:
 - A local development environment for [Node.js](https://Node.js.org/en/about/).
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/).
 
-## Step 1: Download the sample plugin
+## Step 1: Create an empty vault
 
 When developing plugins, one mistake can lead to unintended changes to your vault. To prevent data loss, you should never develop plugins in your main vault. Always use a separate vault dedicated to plugin development.
 
