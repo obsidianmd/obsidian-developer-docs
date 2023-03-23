@@ -18,10 +18,13 @@ To complete this tutorial, you'll need:
 - A local development environment for [Node.js](https://Node.js.org/en/about/).
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/).
 
-> [!caution] Always develop plugins in a separate vault
-> When developing plugins, one mistake can lead to unintended changes to your vault. To prevent data loss, you should never develop plugins in your main vault. Always use a separate vault dedicated to plugin development.
-
 ## Step 1: Download the sample plugin
+
+When developing plugins, one mistake can lead to unintended changes to your vault. To prevent data loss, you should never develop plugins in your main vault. Always use a separate vault dedicated to plugin development.
+
+[Create an empty vault](https://help.obsidian.md/Getting+started/Create+a+vault#Create+empty+vault).
+
+## Step 2: Download the sample plugin
 
 In this step, you'll download a sample plugin to the `plugins` directory in your vault's [`.obsidian` directory](https://help.obsidian.md/Advanced+topics/How+Obsidian+stores+data#Per+vault+data) so that Obsidian can find it.
 
@@ -44,7 +47,7 @@ The sample plugin you'll use in this tutorial is available in a [GitHub reposito
 >
 > Remember to use the URL of your own repository when cloning the sample plugin.
 
-## Step 2: Build the plugin
+## Step 3: Build the plugin
 
 In this step, you'll compile the sample plugin so that Obsidian can load it.
 
@@ -68,7 +71,7 @@ In this step, you'll compile the sample plugin so that Obsidian can load it.
 
 Notice that the plugin directory now has a `main.js` file that contains a compiled version of the plugin.
 
-## Step 3: Enable the plugin
+## Step 4: Enable the plugin
 
 To load a plugin in Obsidian, you first need to enable it.
 
@@ -79,7 +82,7 @@ To load a plugin in Obsidian, you first need to enable it.
 
 You're now ready to use the plugin in Obsidian. Next, we'll make some changes to the plugin.
 
-## Step 4: Update the plugin manifest
+## Step 5: Update the plugin manifest
 
 In this step, you'll rename the plugin by updating the plugin manifest, `manifest.json`. The manifest contains information about your plugin, such as its name and description.
 
@@ -92,7 +95,7 @@ Go back to **Installed plugins** and notice that the name of the plugin has been
 
 Remember to restart Obsidian whenever you make changes to `manifest.json`.
 
-## Step 5: Update the source code
+## Step 6: Update the source code
 
 To let the user interact with your plugin, add a _ribbon icon_ that greets the user when they select it.
 
