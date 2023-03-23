@@ -42,7 +42,7 @@ The sample plugin you'll use in this tutorial is available in a [GitHub reposito
 > [!tip] GitHub template repository
 > The repository for the sample plugin is a GitHub template repository, which means you can create your own repository from the sample plugin. To learn how, refer to [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
 >
-> Remember to use the URL to your own repository when cloning the sample plugin.
+> Remember to use the URL of your own repository when cloning the sample plugin.
 
 ## Step 2: Build the plugin
 
@@ -112,10 +112,7 @@ To let the user interact with your plugin, add a _ribbon icon_ that greets the u
    });
    ```
 
-To load the new changes, you need to reload the plugin:
-
-1. In Obsidian, open **Settings**.
-2. Under **Community plugins** → **Installed plugins**, disable the plugin and then re-enable it.
+5. In the **Command palette**, select **Reload app without saving** to reload the plugin.
 
 You can now see a dice icon in the ribbon on the left side of the Obsidian window. Select it to display a message in the upper-right corner.
 
