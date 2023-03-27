@@ -31,7 +31,7 @@ Defined on the `body` element:
 
 ## Theme colors
 
-Theme color variables define the raw color values used throughout the app. These variables are mapped to semantic color names in the next section (see [[App CSS variables#Color mappings]])
+Theme color variables define the raw color values used throughout the app. These variables are mapped to semantic color names.
 
 Each variable is applied to both `.theme-light` and `.theme-dark` classes with appropriate values for light and dark mode. For example:
 
@@ -169,13 +169,13 @@ Color mappings are defined on the `body` element and are semantic names that ref
 
 #### Buttons and interactive element colors
 
-| Variable                     | Default value | Description |
-| ---------------------------- | ------------- | ----------- |
-| `--interactive-normal`       |               |             |
-| `--interactive-hover`        |               |             |
-| `--interactive-accent-hsl`   |               |             |
-| `--interactive-accent`       |               |             |
-| `--interactive-accent-hover` |               |             |
+| Variable                     | Description                                             |
+| ---------------------------- | ------------------------------------------------------- |
+| `--interactive-normal`       | Background for standard interactive elements            |
+| `--interactive-hover`        | Background for standard interactive elements (hover)    |
+| `--interactive-accent`       | Background for accented interactive elements            |
+| `--interactive-accent-hsl`   | Background for accented interactive elements, HSL units | 
+| `--interactive-accent-hover` | Background for accented interactive elements (hover)    |
 
 ---
 
@@ -257,6 +257,8 @@ See [[Padding, margins, and spacing]]
 
 ### Radiuses
 
+Styling for radiused corners used on buttons, inputs, modals, etc
+
 | Variable      | Default value |
 | ------------- | ------------- |
 | `--radius-s`  | `4px`         |
@@ -265,6 +267,8 @@ See [[Padding, margins, and spacing]]
 | `--radius-xl` | `16px`        |
 
 ### Z-index
+
+Controls the z-index position of elements, to defined the stacking order
 
 | Variable               | Default value |
 | ---------------------- | ------------- |
@@ -285,266 +289,302 @@ See [[Padding, margins, and spacing]]
 
 ### Blockquotes
 
-| Variable                        | Default value | Description |
-| ------------------------------- | ------------- | ----------- |
-| `--blockquote-border-thickness` |               |             |
-| `--blockquote-border-color`     |               |             |
-| `--blockquote-font-style`       |               |             |
-| `--blockquote-color`            |               |             |
-| `--blockquote-background-color` |               |             |
+Styling for blockquotes
 
-### Bold
+| Variable                        | Description                                 |
+| ------------------------------- | ------------------------------------------- |
+| `--blockquote-background-color` | Blockquote background color                 |
+| `--blockquote-border-thickness` | Blockquote left border thickness            |
+| `--blockquote-border-color`     | Blockquote left border color                | 
+| `--blockquote-font-style`       | Blockquote font style (e.g. normal, italic) |
+| `--blockquote-color`            | Blockquote text color                       |
 
-| Variable        | Default value | Description |
-| --------------- | -------- | ----------- |
-| `--bold-weight` |          |             |
-| `--bold-color`  |          |             |
+### Bold text
+
+Styling for bolded text
+
+| Variable        | Description             |
+| --------------- | ----------------------- |
+| `--bold-weight` | Bolded text font weight |
+| `--bold-color`  | Bolded text color       | 
 
 ### Callouts
 
-| Variable                       | Default value | Description |
-| ------------------------------ | -------- | ----------- |
-| `--callout-border-width`       |          |             |
-| `--callout-border-opacity`     |          |             |
-| `--callout-padding`            |          |             |
-| `--callout-radius`             |          |             |
-| `--callout-blend-mode`         |          |             |
-| `--callout-title-color`        |          |             |
-| `--callout-title-padding`      |          |             |
-| `--callout-title-size`         |          |             |
-| `--callout-content-padding`    |          |             |
-| `--callout-content-background` |          |             |
+[Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts) have a title and content that can be styled independently
+
+| Variable                       | Description                                                 |
+| ------------------------------ | ----------------------------------------------------------- |
+| `--callout-border-width`       | Callout border width                                        |
+| `--callout-border-opacity`     | Callout border opacity                                      |
+| `--callout-padding`            | Callout padding                                             |
+| `--callout-radius`             | Callout radius                                              |
+| `--callout-blend-mode`         | Callout blend mode, allows color mixing for nested callouts |
+| `--callout-title-color`        | Callout title text color                                    |
+| `--callout-title-padding`      | Callout title padding                                       |
+| `--callout-title-size`         | Callout title font size                                     |
+| `--callout-content-padding`    | Callout content padding                                     |
+| `--callout-content-background` | Callout content background color                            | 
 
 #### Callout type colors
 
-| Variable              | Default value | Description |
-| --------------------- | ------------- | ----------- |
-| `--callout-bug`       |               |             |
-| `--callout-default`   |               |             |
-| `--callout-error`     |               |             |
-| `--callout-example`   |               |             |
-| `--callout-fail`      |               |             |
-| `--callout-important` |               |             |
-| `--callout-info`      |               |             |
-| `--callout-question`  |               |             |
-| `--callout-success`   |               |             |
-| `--callout-summary`   |               |             |
-| `--callout-tip`       |               |             |
-| `--callout-todo`      |               |             |
-| `--callout-warning`   |               |             |
-| `--callout-quote`     |               |             |
+Callout types have unique icons and colors. Types also have aliases, listed in description below.
+
+| Variable              | Callout type                      |
+| --------------------- | --------------------------------- |
+| `--callout-bug`       | `bug`                             |
+| `--callout-default`   | `default`, `note`                 |
+| `--callout-error`     | `error`, `danger`                 |
+| `--callout-example`   | `example`                         |
+| `--callout-fail`      | `fail`, `failure`, `missing`      |
+| `--callout-important` | `important`                       |
+| `--callout-info`      | `info`                            |
+| `--callout-question`  | `question`, `help`, `faq`         |
+| `--callout-success`   | `success`, `check`, `done`        |
+| `--callout-summary`   | `summary`, `abstract`, `tldr`     |
+| `--callout-tip`       | `tip`, `hint`                     |
+| `--callout-todo`      | `todo`                            |
+| `--callout-warning`   | `warning`, `caution`, `attention` | 
+| `--callout-quote`     | `quote`, `cite`                   |
 
 ### Checkboxes
 
-| Variable                        | Default value | Description |
-| ------------------------------- | ------------- | ----------- |
-| `--checkbox-radius`             |               |             |
-| `--checkbox-size`               |               |             |
-| `--checkbox-marker-color`       |               |             |
-| `--checkbox-color`              |               |             |
-| `--checkbox-color-hover`        |               |             |
-| `--checkbox-border-color`       |               |             |
-| `--checkbox-border-color-hover` |               |             |
-| `--checklist-done-decoration`   |               |             |
-| `--checklist-done-color`        |               |             |
+Styling for checkboxes and text inside of task lists
+
+| Variable                        | Description                                |
+| ------------------------------- | ------------------------------------------ |
+| `--checkbox-radius`             | Checkbox radius                            |
+| `--checkbox-size`               | Checkbox height and width                  |
+| `--checkbox-marker-color`       | Checkbox marker color for the check itself |
+| `--checkbox-color`              | Checkbox background color                  |
+| `--checkbox-color-hover`        | Checkbox background color (hover)          |
+| `--checkbox-border-color`       | Checkbox unchecked border color            |
+| `--checkbox-border-color-hover` | Checkbox unchecked border color (hover)    |
+| `--checklist-done-decoration`   | Checkbox checked text decoration           |
+| `--checklist-done-color`        | Checkbox checked text color                | 
 
 ### Code
 
-| Variable             | Default value | Description |
-| -------------------- | ------------- | ----------- |
-| `--code-white-space` |               |             |
-| `--code-size`        |               |             |
-| `--code-background`  |               |             |
+Styling for code and preformatted text elements
+
+| Variable             | Description           |
+| -------------------- | --------------------- |
+| `--code-background`  | Code background color | 
+| `--code-white-space` | Code `white-space`    |
+| `--code-size`        | Code font size        |
 
 #### Syntax highlighting colors
 
 Note that for technical reasons Obsidian currently uses two different syntax highlighting libraries for Edit and Read mode. The syntax highlighting does not perfectly match between the two modes.
 
-| Variable             | Default value | Description |
-| -------------------- | ------------- | ----------- |
-| `--code-normal`      |               |             |
-| `--code-comment`     |               |             |
-| `--code-function`    |               |             |
-| `--code-important`   |               |             |
-| `--code-keyword`     |               |             |
-| `--code-operator`    |               |             |
-| `--code-property`    |               |             |
-| `--code-punctuation` |               |             |
-| `--code-string`      |               |             |
-| `--code-tag`         |               |             |
-| `--code-value`       |               |             |
+| Variable             | Description              |
+| -------------------- | ------------------------ |
+| `--code-normal`      | Non-highlighted syntax   |
+| `--code-comment`     | Comments                 |
+| `--code-function`    | Functions                |
+| `--code-important`   | Important, regex         |
+| `--code-keyword`     | Keywords                 |
+| `--code-operator`    | Operators                |
+| `--code-property`    | Properties               |
+| `--code-punctuation` | Punctuation              |
+| `--code-string`      | Strings                  | 
+| `--code-tag`         | Tags, symbols, constants |
+| `--code-value`       | Values                   |
 
 ### Embeds
 
-| Variable                    | Default value | Description |
-| --------------------------- | ------------- | ----------- |
-| `--embed-max-height`        |               |             |
-| `--embed-canvas-max-height` |               |             |
-| `--embed-background`        |               |             |
-| `--embed-border-left`       |               |             |
-| `--embed-border-right`      |               |             |
-| `--embed-border-top`        |               |             |
-| `--embed-border-bottom`     |               |             |
-| `--embed-padding`           |               |             |
-| `--embed-font-style`        |               |             |
+Styling for embeds and transclusions
+
+| Variable                    | Description                             |
+| --------------------------- | --------------------------------------- |
+| `--embed-max-height`        | Embed max height                        |
+| `--embed-canvas-max-height` | Embedded Canvas element max height      |
+| `--embed-background`        | Embed background color                  |
+| `--embed-border-left`       | Embed left border, shorthand property   |
+| `--embed-border-right`      | Embed right border, shorthand property  |
+| `--embed-border-top`        | Embed top border, shorthand property    |
+| `--embed-border-bottom`     | Embed bottom border, shorthand property |
+| `--embed-padding`           | Embedd padding                          |
+| `--embed-font-style`        | Embed `font-style`                      | 
 
 ### Footnotes
 
-| Variable         | Default value | Description |
-| ---------------- | ------------- | ----------- |
-| `--footnote-size` |               |             |
+Styling for footnotes
+
+| Variable          | Description        |
+| ----------------- | ------------------ |
+| `--footnote-size` | Footnote font size | 
 
 ### Headings
 
-| Variable               | Default value | Description |
-| ---------------------- | ------------- | ----------- |
-| `--heading-formatting` |               |             |
-| `--h1-color`           |               |             |
-| `--h2-color`           |               |             |
-| `--h3-color`           |               |             |
-| `--h4-color`           |               |             |
-| `--h5-color`           |               |             |
-| `--h6-color`           |               |             |
-| `--h1-font`            |               |             |
-| `--h2-font`            |               |             |
-| `--h3-font`            |               |             |
-| `--h4-font`            |               |             |
-| `--h5-font`            |               |             |
-| `--h6-font`            |               |             |
-| `--h1-line-height`     |               |             |
-| `--h2-line-height`     |               |             |
-| `--h3-line-height`     |               |             |
-| `--h4-line-height`     |               |             |
-| `--h5-line-height`     |               |             |
-| `--h6-line-height`     |               |             |
-| `--h1-size`            |               |             |
-| `--h2-size`            |               |             |
-| `--h3-size`            |               |             |
-| `--h4-size`            |               |             |
-| `--h5-size`            |               |             |
-| `--h6-size`            |               |             |
-| `--h1-style`           |               |             |
-| `--h2-style`           |               |             |
-| `--h3-style`           |               |             |
-| `--h4-style`           |               |             |
-| `--h5-style`           |               |             |
-| `--h6-style`           |               |             |
-| `--h1-variant`         |               |             |
-| `--h2-variant`         |               |             |
-| `--h3-variant`         |               |             |
-| `--h4-variant`         |               |             |
-| `--h5-variant`         |               |             |
-| `--h6-variant`         |               |             |
-| `--h1-weight`          |               |             |
-| `--h2-weight`          |               |             |
-| `--h3-weight`          |               |             |
-| `--h4-weight`          |               |             |
-| `--h5-weight`          |               |             |
-| `--h6-weight`          |               |             |
+Styling for headings, from H1 to H6
+
+| Variable               | Description                                  |
+| ---------------------- | -------------------------------------------- |
+| `--heading-formatting` | Text color for Markdown heading depth syntax |
+| `--h1-color`           | H1 text color                                |
+| `--h2-color`           | H2 text color                                |
+| `--h3-color`           | H3 text color                                |
+| `--h4-color`           | H4 text color                                |
+| `--h5-color`           | H5 text color                                |
+| `--h6-color`           | H6 text color                                |
+| `--h1-font`            | H1 font family                               |
+| `--h2-font`            | H2 font family                               |
+| `--h3-font`            | H3 font family                               |
+| `--h4-font`            | H4 font family                               |
+| `--h5-font`            | H5 font family                               |
+| `--h6-font`            | H6 font family                               |
+| `--h1-line-height`     | H1 line height                               |
+| `--h2-line-height`     | H2 line height                               |
+| `--h3-line-height`     | H3 line height                               |
+| `--h4-line-height`     | H4 line height                               |
+| `--h5-line-height`     | H5 line height                               |
+| `--h6-line-height`     | H6 line height                               |
+| `--h1-size`            | H1 font size                                 |
+| `--h2-size`            | H2 font size                                 |
+| `--h3-size`            | H3 font size                                 |
+| `--h4-size`            | H4 font size                                 |
+| `--h5-size`            | H5 font size                                 |
+| `--h6-size`            | H6 font size                                 |
+| `--h1-style`           | H1 font style                                |
+| `--h2-style`           | H2 font style                                |
+| `--h3-style`           | H3 font style                                |
+| `--h4-style`           | H4 font style                                |
+| `--h5-style`           | H5 font style                                |
+| `--h6-style`           | H6 font style                                |
+| `--h1-variant`         | H1 font variant                              |
+| `--h2-variant`         | H2 font variant                              |
+| `--h3-variant`         | H3 font variant                              |
+| `--h4-variant`         | H4 font variant                              |
+| `--h5-variant`         | H5 font variant                              |
+| `--h6-variant`         | H6 font variant                              |
+| `--h1-weight`          | H1 font weight                               |
+| `--h2-weight`          | H2 font weight                               |
+| `--h3-weight`          | H3 font weight                               |
+| `--h4-weight`          | H4 font weight                               |
+| `--h5-weight`          | H5 font weight                               |
+| `--h6-weight`          | H6 font weight                               | 
 
 ### Horizontal rules
 
-| Variable         | Default value | Description |
-| ---------------- | ------------- | ----------- |
-| `--hr-color`     |               |             |
-| `--hr-thickness` |               |             |
+Styling for horizontal rules
+
+| Variable         | Description                      |
+| ---------------- | -------------------------------- |
+| `--hr-color`     | Horizontal rule border color     |
+| `--hr-thickness` | Horizontal rule border thickness | 
 
 ### Italic
 
-| Variable | Default value | Description |
-| -------- | ------------- | ----------- |
-| `--italic-color`     |               |             |
+Styling for italic text
+
+| Variable         | Description       |
+| ---------------- | ----------------- |
+| `--italic-color` | Italic text color | 
 
 ### Inline titles
 
-| Variable                     | Default value | Description |
-| ---------------------------- | ------------- | ----------- |
-| `--inline-title-color`       |               |             |
-| `--inline-title-font`        |               |             |
-| `--inline-title-line-height` |               |             |
-| `--inline-title-size`        |               |             |
-| `--inline-title-style`       |               |             |
-| `--inline-title-variant`     |               |             |
-| `--inline-title-weight`      |               |             |
+Styling for inline titles. Inline titles can be activated by the user in Appearance Settings to show the filename inline (can be used instead of an H1).
+
+| Variable                     | Description               |
+| ---------------------------- | ------------------------- |
+| `--inline-title-color`       | Inline title text color   |
+| `--inline-title-font`        | Inline title font family  |
+| `--inline-title-line-height` | Inline title line height  |
+| `--inline-title-size`        | Inline title font size    |
+| `--inline-title-style`       | Inline title font style   |
+| `--inline-title-variant`     | Inline title font variant |
+| `--inline-title-weight`      | Inline title font weight  | 
 
 ### Links
 
-| Variable                             | Default value | Description |
-| ------------------------------------ | ------------- | ----------- |
-| `--link-color`                       |               |             |
-| `--link-color-hover`                 |               |             |
-| `--link-decoration`                  |               |             |
-| `--link-decoration-hover`            |               |             |
-| `--link-decoration-thickness`        |               |             |
-| `--link-external-color`              |               |             |
-| `--link-external-color-hover`        |               |             |
-| `--link-external-decoration`         |               |             |
-| `--link-external-decoration-hover`   |               |             |
-| `--link-unresolved-color`            |               |             |
-| `--link-unresolved-opacity`          |               |             |
-| `--link-unresolved-filter`           |               |             |
-| `--link-unresolved-decoration-style` |               |             |
-| `--link-unresolved-decoration-color` |               |             |
+Obsidian supports three different types of links: 
+
+- **Resolved internal links** link to an existing note in Obsidian
+- **Unresolved internal links** link to a non-existing note in Obsidian
+- **External links** link to an external URL/URI
+
+| Variable                             | Description                               |
+| ------------------------------------ | ----------------------------------------- |
+| `--link-color`                       | Resolved link text color                  |
+| `--link-color-hover`                 | Resolved link text color (hover)          |
+| `--link-decoration`                  | Resolved link text decoration             |
+| `--link-decoration-hover`            | Resolved link text decoration (hover)     |
+| `--link-decoration-thickness`        | Resolved link text decoration thickness   |
+| `--link-unresolved-color`            | Unresolved link text color                |
+| `--link-unresolved-opacity`          | Unresolved link opacity                   |
+| `--link-unresolved-filter`           | Unresolved link filter, e.g. `hue-rotate` |
+| `--link-unresolved-decoration-style` | Unresolved link text decoration style     |
+| `--link-unresolved-decoration-color` | Unresolved link text decoration color     |
+| `--link-external-color`              | External link text color                  |
+| `--link-external-color-hover`        | External link text color (hover)          |
+| `--link-external-decoration`         | External link text decoration             |
+| `--link-external-decoration-hover`   | External link text decoration (hover)     | 
 
 
 ### Lists
 
-| Variable                        | Default value | Description |
-| ------------------------------- | ------------- | ----------- |
-| `--list-indent`                 |               |             |
-| `--list-spacing`                |               |             |
-| `--list-marker-color`           |               |             |
-| `--list-marker-color-hover`     |               |             |
-| `--list-marker-color-collapsed` |               |             |
-| `--list-bullet-border`          |               |             |
-| `--list-bullet-radius`          |               |             |
-| `--list-bullet-size`            |               |             |
-| `--list-bullet-transform`       |               |             |
-| `--list-numbered-style`         |               |             |
+Styling for numbered (ordered) and bullet (unordered) lists
+
+| Variable                        | Description                                   |
+| ------------------------------- | --------------------------------------------- |
+| `--list-indent`                 | Horizontal indentation depth for nested items |
+| `--list-spacing`                | Vertical spacing between list items           |
+| `--list-marker-color`           | List marker color                             |
+| `--list-marker-color-hover`     | List marker color (hover)                     |
+| `--list-marker-color-collapsed` | List marker color for collapsed items         |
+| `--list-bullet-border`          | List bullet border                            |
+| `--list-bullet-radius`          | List bullet radius                            |
+| `--list-bullet-size`            | List bullet width/height                      | 
+| `--list-bullet-transform`       | List bullet `transform` property                                              |
+| `--list-numbered-style`         | `list-style-type` for numbered lists                                          |
 
 ### Tables
 
-| Variable                            | Default value | Description |
-| ----------------------------------- | ------------- | ----------- |
-| `--table-background`                |               |             |
-| `--table-border-width`              |               |             |
-| `--table-border-color`              |               |             |
-| `--table-white-space`               |               |             |
-| `--table-header-background`         |               |             |
-| `--table-header-background-hover`   |               |             |
-| `--table-header-border-width`       |               |             |
-| `--table-header-border-color`       |               |             |
-| `--table-header-font`               |               |             |
-| `--table-header-size`               |               |             |
-| `--table-header-weight`             |               |             |
-| `--table-header-color`              |               |             |
-| `--table-text-size`                 |               |             |
-| `--table-text-color`                |               |             |
-| `--table-column-max-width`          |               |             |
-| `--table-column-alt-background`     |               |             |
-| `--table-column-first-border-width` |               |             |
-| `--table-column-last-border-width`  |               |             |
-| `--table-row-background-hover`      |               |             |
-| `--table-row-alt-background`        |               |             |
-| `--table-last-border-width`         |               |             |
+Styling for tables
+
+| Variable                            | Description                           |
+| ----------------------------------- | ------------------------------------- |
+| `--table-background`                | Table background color                |
+| `--table-border-width`              | Table border width                    |
+| `--table-border-color`              | Table border color                    |
+| `--table-white-space`               | Table `white-space` property          |
+| `--table-header-background`         | Table header background color         |
+| `--table-header-background-hover`   | Table header background color (hover) |
+| `--table-header-border-width`       | Table header border width             |
+| `--table-header-border-color`       | Table header border color             |
+| `--table-header-font`               | Table header font family              |
+| `--table-header-size`               | Table header font size                |
+| `--table-header-weight`             | Table header font weight              |
+| `--table-header-color`              | Table header text color               |
+| `--table-text-size`                 | Cell font size                        |
+| `--table-text-color`                | Cell text color                       |
+| `--table-column-max-width`          | Column maximum width                  |
+| `--table-column-alt-background`     | Alternating column background color   |
+| `--table-column-first-border-width` | First column left border width        |
+| `--table-column-last-border-width`  | Last column right border width        |
+| `--table-row-background-hover`      | Row background color (hover)          |
+| `--table-row-alt-background`        | Alternating row background color      |
+| `--table-last-border-width`         | Last row bottom border width          | 
 
 ### Tags
 
-| Variable                   | Default value | Description |
-| -------------------------- | ------------- | ----------- |
-| `--tag-size`               |               |             |
-| `--tag-color`              |               |             |
-| `--tag-color-hover`        |               |             |
-| `--tag-decoration`         |               |             |
-| `--tag-decoration-hover`   |               |             |
-| `--tag-background`         |               |             |
-| `--tag-background-hover`   |               |             |
-| `--tag-border-color`       |               |             |
-| `--tag-border-color-hover` |               |             |
-| `--tag-border-width`       |               |             |
-| `--tag-padding-x`          |               |             |
-| `--tag-padding-y`          |               |             |
-| `--tag-radius`             |               |             |
+Styling for tags
+
+| Variable                   | Description                  |
+| -------------------------- | ---------------------------- |
+| `--tag-size`               | Tag font size                |
+| `--tag-color`              | Tag text color               |
+| `--tag-color-hover`        | Tag text color (hover)       |
+| `--tag-decoration`         | Tag text decoration          |
+| `--tag-decoration-hover`   | Tag text decoration (hover)  |
+| `--tag-background`         | Tag background color         |
+| `--tag-background-hover`   | Tag background color (hover) |
+| `--tag-border-color`       | Tag border color             |
+| `--tag-border-color-hover` | Tag border color (hover)     |
+| `--tag-border-width`       | Tag border thickness         |
+| `--tag-padding-x`          | Tag left/right padding       |
+| `--tag-padding-y`          | Tag top/down padding         |
+| `--tag-radius`             | Tag radius                   | 
 
 ---
 
@@ -554,346 +594,346 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 ### Canvas
 
-| Variable                    | Default value | Description |
-| --------------------------- | ------------- | ----------- |
-| `--canvas-background`       |               |             |
-| `--canvas-card-label-color` |               |             |
-| `--canvas-color-1`          |               |             |
-| `--canvas-color-2`          |               |             |
-| `--canvas-color-3`          |               |             |
-| `--canvas-color-4`          |               |             |
-| `--canvas-color-5`          |               |             |
-| `--canvas-color-6`          |               |             |
-| `--canvas-dot-pattern`      |               |             |
+| Variable                    | Description |
+| --------------------------- | ----------- |
+| `--canvas-background`       |             |
+| `--canvas-card-label-color` |             |
+| `--canvas-color-1`          |             |
+| `--canvas-color-2`          |             |
+| `--canvas-color-3`          |             |
+| `--canvas-color-4`          |             |
+| `--canvas-color-5`          |             |
+| `--canvas-color-6`          |             |
+| `--canvas-dot-pattern`      |             |
 
 ### Dividers
 
-| Variable                    | Default value | Description |
-| --------------------------- | ------------- | ----------- |
-| `--divider-color`           |               |             |
-| `--divider-color-hover`     |               |             |
-| `--divider-width`           |               |             |
-| `--divider-width-hover`     |               |             |
-| `--divider-vertical-height` |               |             |
+| Variable                    | Description |
+| --------------------------- | ----------- |
+| `--divider-color`           |             |
+| `--divider-color-hover`     |             |
+| `--divider-width`           |             |
+| `--divider-width-hover`     |             |
+| `--divider-vertical-height` |             |
 
 ### Dragging
 
-| Variable                  | Default value | Description |
-| ------------------------- | ------------- | ----------- |
-| `--drag-ghost-background` |               |             |
-| `--drag-ghost-text-color` |               |             |
+| Variable                  | Description |
+| ------------------------- | ----------- |
+| `--drag-ghost-background` |             |
+| `--drag-ghost-text-color` |             |
 
 ### Blocks
 
-| Variable | Default value | Description |
-| -------- | ------------- | ----------- |
-| `--embed-block-shadow-hover`     |               |             |
+| Variable                     | Description |
+| ---------------------------- | ----------- |
+| `--embed-block-shadow-hover` |             |
 
 ### File layout
 
-| Variable                    | Default value | Description |
-| --------------------------- | ------------- | ----------- |
-| `--file-line-width`         |               |             |
-| `--file-folding-offset`     |               |             |
-| `--file-margins`            |               |             |
-| `--file-header-font-size`   |               |             |
-| `--file-header-font-weight` |               |             |
-| `--file-header-border`      |               |             |
-| `--file-header-justify`     |               |             |
+| Variable                    | Description |
+| --------------------------- | ----------- |
+| `--file-line-width`         |             |
+| `--file-folding-offset`     |             |
+| `--file-margins`            |             |
+| `--file-header-font-size`   |             |
+| `--file-header-font-weight` |             |
+| `--file-header-border`      |             |
+| `--file-header-justify`     |             |
 
 ### Graphs
 
 Applies to local and global graphs
 
-| Variable                  | Default value | Description |
-| ------------------------- | ------------- | ----------- |
-| `--graph-controls-width`  |               |             |
-| `--graph-text`            |               |             |
-| `--graph-line`            |               |             |
-| `--graph-node`            |               |             |
-| `--graph-node-unresolved` |               |             |
-| `--graph-node-focused`    |               |             |
-| `--graph-node-tag`        |               |             |
-| `--graph-node-attachment` |               |             |
+| Variable                  | Description |
+| ------------------------- | ----------- |
+| `--graph-controls-width`  |             |
+| `--graph-text`            |             |
+| `--graph-line`            |             |
+| `--graph-node`            |             |
+| `--graph-node-unresolved` |             |
+| `--graph-node-focused`    |             |
+| `--graph-node-tag`        |             |
+| `--graph-node-attachment` |             |
 
 ### View header
 
-| Variable          | Default value | Description |
-| ----------------- | ------------- | ----------- |
-| `--header-height` |               |             |
+| Variable          | Description |
+| ----------------- | ----------- |
+| `--header-height` |             |
 
 ### Icons
 
-| Variable                  | Default value | Description |
-| ------------------------- | ------------- | ----------- |
-| `--icon-size`             |               |             |
-| `--icon-stroke`           |               |             |
-| `--icon-xs`               |               |             |
-| `--icon-s`                |               |             |
-| `--icon-m`                |               |             |
-| `--icon-l`                |               |             |
-| `--icon-xl`               |               |             |
-| `--icon-xs-stroke-width`  |               |             |
-| `--icon-s-stroke-width`   |               |             |
-| `--icon-m-stroke-width`   |               |             |
-| `--icon-l-stroke-width`   |               |             |
-| `--icon-xl-stroke-width`  |               |             |
-| `--icon-color`            |               |             |
-| `--icon-color-hover`      |               |             |
-| `--icon-color-active`     |               |             |
-| `--icon-color-focused`    |               |             |
-| `--icon-opacity`          |               |             |
-| `--icon-opacity-hover`    |               |             |
-| `--icon-opacity-active`   |               |             |
-| `--clickable-icon-radius` |               |             |
+| Variable                  | Description |
+| ------------------------- | ----------- |
+| `--icon-size`             |             |
+| `--icon-stroke`           |             |
+| `--icon-xs`               |             |
+| `--icon-s`                |             |
+| `--icon-m`                |             |
+| `--icon-l`                |             |
+| `--icon-xl`               |             |
+| `--icon-xs-stroke-width`  |             |
+| `--icon-s-stroke-width`   |             |
+| `--icon-m-stroke-width`   |             |
+| `--icon-l-stroke-width`   |             |
+| `--icon-xl-stroke-width`  |             |
+| `--icon-color`            |             |
+| `--icon-color-hover`      |             |
+| `--icon-color-active`     |             |
+| `--icon-color-focused`    |             |
+| `--icon-opacity`          |             |
+| `--icon-opacity-hover`    |             |
+| `--icon-opacity-active`   |             |
+| `--clickable-icon-radius` |             |
 
 ### Indentation guides
 
-| Variable                           | Default value | Description |
-| ---------------------------------- | ------------- | ----------- |
-| `--indentation-guide-width`        |               |             |
-| `--indentation-guide-color`        |               |             |
-| `--indentation-guide-color-active` |               |             |
+| Variable                           | Description |
+| ---------------------------------- | ----------- |
+| `--indentation-guide-width`        |             |
+| `--indentation-guide-color`        |             |
+| `--indentation-guide-color-active` |             |
 
 ### File navigator
 
-| Variable                              | Default value | Description |
-| ------------------------------------- | ------------- | ----------- |
-| `--nav-item-size`                     |               |             |
-| `--nav-item-color`                    |               |             |
-| `--nav-item-color-hover`              |               |             |
-| `--nav-item-color-active`             |               |             |
-| `--nav-item-color-selected`           |               |             |
-| `--nav-item-color-highlighted`        |               |             |
-| `--nav-item-background-hover`         |               |             |
-| `--nav-item-background-active`        |               |             |
-| `--nav-item-background-selected`      |               |             |
-| `--nav-item-padding`                  |               |             |
-| `--nav-item-parent-padding`           |               |             |
-| `--nav-item-children-padding-left`    |               |             |
-| `--nav-item-children-margin-left`     |               |             |
-| `--nav-item-weight`                   |               |             |
-| `--nav-item-weight-hover`             |               |             |
-| `--nav-item-weight-active`            |               |             |
-| `--nav-item-white-space`              |               |             |
-| `--nav-indentation-guide-width`       |               |             |
-| `--nav-indetation-guide-color`        |               |             |
-| `--nav-collapse-icon-color`           |               |             |
-| `--nav-collapse-icon-color-collapsed` |               |             |
+| Variable                              | Description |
+| ------------------------------------- | ----------- |
+| `--nav-item-size`                     |             |
+| `--nav-item-color`                    |             |
+| `--nav-item-color-hover`              |             |
+| `--nav-item-color-active`             |             |
+| `--nav-item-color-selected`           |             |
+| `--nav-item-color-highlighted`        |             |
+| `--nav-item-background-hover`         |             |
+| `--nav-item-background-active`        |             |
+| `--nav-item-background-selected`      |             |
+| `--nav-item-padding`                  |             |
+| `--nav-item-parent-padding`           |             |
+| `--nav-item-children-padding-left`    |             |
+| `--nav-item-children-margin-left`     |             |
+| `--nav-item-weight`                   |             |
+| `--nav-item-weight-hover`             |             |
+| `--nav-item-weight-active`            |             |
+| `--nav-item-white-space`              |             |
+| `--nav-indentation-guide-width`       |             |
+| `--nav-indetation-guide-color`        |             |
+| `--nav-collapse-icon-color`           |             |
+| `--nav-collapse-icon-color-collapsed` |             |
 
 #### Vault name
 
-| Variable                   | Default value | Description |
-| -------------------------- | ------------- | ----------- |
-| `--vault-name-font-size`   |               |             |
-| `--vault-name-font-weight` |               |             |
-| `--vault-name-color`       |               |             |
+| Variable                   | Description |
+| -------------------------- | ----------- |
+| `--vault-name-font-size`   |             |
+| `--vault-name-font-weight` |             |
+| `--vault-name-color`       |             |
 
 ### Modals
 
-| Variable                          | Default value | Description |
-| --------------------------------- | ------------- | ----------- |
-| `--modal-background`              |               |             |
-| `--modal-width`                   |               |             |
-| `--modal-height`                  |               |             |
-| `--modal-max-width`               |               |             |
-| `--modal-max-height`              |               |             |
-| `--modal-max-width-narrow`        |               |             |
-| `--modal-border-width`            |               |             |
-| `--modal-border-color`            |               |             |
-| `--modal-radius`                  |               |             |
-| `--modal-community-sidebar-width` |               |             |
+| Variable                          | Description |
+| --------------------------------- | ----------- |
+| `--modal-background`              |             |
+| `--modal-width`                   |             |
+| `--modal-height`                  |             |
+| `--modal-max-width`               |             |
+| `--modal-max-height`              |             |
+| `--modal-max-width-narrow`        |             |
+| `--modal-border-width`            |             |
+| `--modal-border-color`            |             |
+| `--modal-radius`                  |             |
+| `--modal-community-sidebar-width` |             |
 
 #### Dialogs
 
 Smaller modals primarily used for confirmations
 
-| Variable              | Default value | Description |
-| --------------------- | ------------- | ----------- |
-| `--dialog-width`      |               |             |
-| `--dialog-max-width`  |               |             |
-| `--dialog-max-height` |               |             |
+| Variable              | Description |
+| --------------------- | ----------- |
+| `--dialog-width`      |             |
+| `--dialog-max-width`  |             |
+| `--dialog-max-height` |             |
 
 ### Inputs
 
 #### Buttons
 
-| Variable          | Default value | Description |
-| ----------------- | ------------- | ----------- |
-| `--button-radius` |               |             |
+| Variable          | Description |
+| ----------------- | ----------- |
+| `--button-radius` |             |
 
 #### Color inputs
 
-| Variable          | Default value | Description |
-| ----------------- | ------------- | ----------- |
-| `--swatch-radius` |               |             |
-| `--swatch-height` |               |             |
-| `--swatch-width`  |               |             |
-| `--swatch-shadow` |               |             |
+| Variable          | Description |
+| ----------------- | ----------- |
+| `--swatch-radius` |             |
+| `--swatch-height` |             |
+| `--swatch-width`  |             |
+| `--swatch-shadow` |             |
 
 #### Sliders
 
-| Variable                      | Default value | Description |
-| ----------------------------- | ------------- | ----------- |
-| `--slider-thumb-border-width` |               |             |
-| `--slider-thumb-border-color` |               |             |
-| `--slider-thumb-height`       |               |             |
-| `--slider-thumb-width`        |               |             |
-| `--slider-thumb-y`            |               |             |
-| `--slider-thumb-radius`       |               |             |
-| `--slider-s-thumb-size`       |               |             |
-| `--slider-s-thumb-position`   |               |             |
-| `--slider-track-background`   |               |             |
-| `--slider-track-height`       |               |             |
+| Variable                      | Description |
+| ----------------------------- | ----------- |
+| `--slider-thumb-border-width` |             |
+| `--slider-thumb-border-color` |             |
+| `--slider-thumb-height`       |             |
+| `--slider-thumb-width`        |             |
+| `--slider-thumb-y`            |             |
+| `--slider-thumb-radius`       |             |
+| `--slider-s-thumb-size`       |             |
+| `--slider-s-thumb-position`   |             |
+| `--slider-track-background`   |             |
+| `--slider-track-height`       |             |
 
 #### Text inputs
 
-| Variable               | Default value | Description |
-| ---------------------- | ------------- | ----------- |
-| `--input-height`       |               |             |
-| `--input-radius`       |               |             |
-| `--input-font-weight`  |               |             |
-| `--input-border-width` |               |             |
+| Variable               | Description |
+| ---------------------- | ----------- |
+| `--input-height`       |             |
+| `--input-radius`       |             |
+| `--input-font-weight`  |             |
+| `--input-border-width` |             |
 
 #### Toggles
 
-| Variable                  | Default value | Description |
-| ------------------------- | ------------- | ----------- |
-| `--toggle-border-width`   |               |             |
-| `--toggle-width`          |               |             |
-| `--toggle-radius`         |               |             |
-| `--toggle-thumb-color`    |               |             |
-| `--toggle-thumb-radius`   |               |             |
-| `--toggle-thumb-height`   |               |             |
-| `--toggle-thumb-width`    |               |             |
-| `--toggle-s-border-width` |               |             |
-| `--toggle-s-width`        |               |             |
-| `--toggle-s-thumb-height` |               |             |
-| `--toggle-s-thumb-width`  |               |             |
+| Variable                  | Description |
+| ------------------------- | ----------- |
+| `--toggle-border-width`   |             |
+| `--toggle-width`          |             |
+| `--toggle-radius`         |             |
+| `--toggle-thumb-color`    |             |
+| `--toggle-thumb-radius`   |             |
+| `--toggle-thumb-height`   |             |
+| `--toggle-thumb-width`    |             |
+| `--toggle-s-border-width` |             |
+| `--toggle-s-width`        |             |
+| `--toggle-s-thumb-height` |             |
+| `--toggle-s-thumb-width`  |             |
 
 ### Popovers (file previews)
 
-| Variable               | Default value | Description |
-| ---------------------- | ------------- | ----------- |
-| `--popover-width`      |               |             |
-| `--popover-height`     |               |             |
-| `--popover-max-height` |               |             |
-| `--popover-pdf-width`  |               |             |
-| `--popover-pdf-height` |               |             |
-| `--popover-font-size`  |               |             |
+| Variable               | Description |
+| ---------------------- | ----------- |
+| `--popover-width`      |             |
+| `--popover-height`     |             |
+| `--popover-max-height` |             |
+| `--popover-pdf-width`  |             |
+| `--popover-pdf-height` |             |
+| `--popover-font-size`  |             |
 
 ### Prompts
 
 E.g. quick switcher, command palette
 
-| Variable                | Default value | Description |
-| ----------------------- | ------------- | ----------- |
-| `--prompt-width`        |               |             |
-| `--prompt-max-width`    |               |             |
-| `--prompt-max-height`   |               |             |
-| `--prompt-border-width` |               |             |
-| `--prompt-border-color` |               |             |
+| Variable                | Description |
+| ----------------------- | ----------- |
+| `--prompt-width`        |             |
+| `--prompt-max-width`    |             |
+| `--prompt-max-height`   |             |
+| `--prompt-border-width` |             |
+| `--prompt-border-color` |             |
 
 ### Ribbon
 
 Controls styling of the [[Ribbon]] element
 
-| Variable                        | Default value | Description |
-| ------------------------------- | ------------- | ----------- |
-| `--ribbon-background`           |               |             |
-| `--ribbon-background-collapsed` |               |             |
-| `--ribbon-width`                |               |             |
-| `--ribbon-padding`              |               |             |
+| Variable                        | Description |
+| ------------------------------- | ----------- |
+| `--ribbon-background`           |             |
+| `--ribbon-background-collapsed` |             |
+| `--ribbon-width`                |             |
+| `--ribbon-padding`              |             |
 
 ### Scrollbars
 
-| Variable                      | Default value | Description |
-| ----------------------------- | ------------- | ----------- |
-| `--scrollbar-active-thumb-bg` |               |             |
-| `--scrollbar-bg`              |               |             |
-| `--scrollbar-thumb-bg`        |               |             |
+| Variable                      | Description |
+| ----------------------------- | ----------- |
+| `--scrollbar-active-thumb-bg` |             |
+| `--scrollbar-bg`              |             |
+| `--scrollbar-thumb-bg`        |             |
 
 ### Search
 
-| Variable                      | Default value | Description |
-| ----------------------------- | ------------- | ----------- |
-| `--search-clear-button-color` |               |             |
-| `--search-clear-button-size`  |               |             |
-| `--search-icon-color`         |               |             |
-| `--search-icon-size`          |               |             |
-| `--search-result-background`  |               |             |
+| Variable                      | Description |
+| ----------------------------- | ----------- |
+| `--search-clear-button-color` |             |
+| `--search-clear-button-size`  |             |
+| `--search-icon-color`         |             |
+| `--search-icon-size`          |             |
+| `--search-result-background`  |             |
 
 ### Sidebar
 
-| Variable                       | Default value | Description |
-| ------------------------------ | ------------- | ----------- |
-| `--sidebar-markdown-font-size` |               |             |
-| `--sidebar-tab-text-display`   |               |             |
+| Variable                       | Description |
+| ------------------------------ | ----------- |
+| `--sidebar-markdown-font-size` |             |
+| `--sidebar-tab-text-display`   |             |
 
 ### Status bar
 
-| Variable                      | Default value | Description |
-| ----------------------------- | ------------- | ----------- |
-| `--status-bar-background`     |               |             |
-| `--status-bar-border-color`   |               |             |
-| `--status-bar-border-width`   |               |             |
-| `--status-bar-font-size`      |               |             |
-| `--status-bar-text-color`     |               |             |
-| `--status-bar-position`       |               |             |
-| `--status-bar-radius`         |               |             |
-| `--status-bar-scroll-padding` |               |             |
+| Variable                      | Description |
+| ----------------------------- | ----------- |
+| `--status-bar-background`     |             |
+| `--status-bar-border-color`   |             |
+| `--status-bar-border-width`   |             |
+| `--status-bar-font-size`      |             |
+| `--status-bar-text-color`     |             |
+| `--status-bar-position`       |             |
+| `--status-bar-radius`         |             |
+| `--status-bar-scroll-padding` |             |
 
 ### Tabs
 
-| Variable                                  | Default value | Description |
-| ----------------------------------------- | ------------- | ----------- |
-| `--tab-background-active`                 |               |             |
-| `--tab-text-color`                        |               |             |
-| `--tab-text-color-active`                 |               |             |
-| `--tab-text-color-focused`                |               |             |
-| `--tab-text-color-focused-active`         |               |             |
-| `--tab-text-color-focused-highlighted`    |               |             |
-| `--tab-text-color-focused-active-current` |               |             |
-| `--tab-font-size`                         |               |             |
-| `--tab-font-weight`                       |               |             |
-| `--tab-container-background`              |               |             |
-| `--tab-divider-color`                     |               |             |
-| `--tab-outline-color`                     |               |             |
-| `--tab-outline-width`                     |               |             |
-| `--tab-curve`                             |               |             |
-| `--tab-radius`                            |               |             |
-| `--tab-radius-active`                     |               |             |
-| `--tab-width`                             |               |             |
-| `--tab-max-width`                         |               |             |
+| Variable                                  | Description |
+| ----------------------------------------- | ----------- |
+| `--tab-background-active`                 |             |
+| `--tab-text-color`                        |             |
+| `--tab-text-color-active`                 |             |
+| `--tab-text-color-focused`                |             |
+| `--tab-text-color-focused-active`         |             |
+| `--tab-text-color-focused-highlighted`    |             |
+| `--tab-text-color-focused-active-current` |             |
+| `--tab-font-size`                         |             |
+| `--tab-font-weight`                       |             |
+| `--tab-container-background`              |             |
+| `--tab-divider-color`                     |             |
+| `--tab-outline-color`                     |             |
+| `--tab-outline-width`                     |             |
+| `--tab-curve`                             |             |
+| `--tab-radius`                            |             |
+| `--tab-radius-active`                     |             |
+| `--tab-width`                             |             |
+| `--tab-max-width`                         |             |
 
 
 ### Tab stacks
 
-| Variable                          | Default value | Description |
-| --------------------------------- | ------------- | ----------- |
-| `--tab-stacked-pane-width`        |               |             |
-| `--tab-stacked-header-width`      |               |             |
-| `--tab-stacked-font-size`         |               |             |
-| `--tab-stacked-font-weight`       |               |             |
-| `--tab-stacked-text-align`        |               |             |
-| `--tab-stacked-text-transform`    |               |             |
-| `--tab-stacked-text-writing-mode` |               |             |
-| `--text-stacked-shadow`           |               |             |
+| Variable                          | Description |
+| --------------------------------- | ----------- |
+| `--tab-stacked-pane-width`        |             |
+| `--tab-stacked-header-width`      |             |
+| `--tab-stacked-font-size`         |             |
+| `--tab-stacked-font-weight`       |             |
+| `--tab-stacked-text-align`        |             |
+| `--tab-stacked-text-transform`    |             |
+| `--tab-stacked-text-writing-mode` |             |
+| `--text-stacked-shadow`           |             |
 
 ### Window frame
 
-| Variable                        | Default value | Description |
-| ------------------------------- | ------------- | ----------- |
-| `--titlebar-background`         |               |             |
-| `--titlebar-background-focused` |               |             |
-| `--titlebar-border-width`       |               |             |
-| `--titlebar-border-color`       |               |             |
-| `--titlebar-text-color`         |               |             |
-| `--titlebar-text-color-focused` |               |             |
-| `--titlebar-text-weight`        |               |             |
+| Variable                        | Description |
+| ------------------------------- | ----------- |
+| `--titlebar-background`         |             |
+| `--titlebar-background-focused` |             |
+| `--titlebar-border-width`       |             |
+| `--titlebar-border-color`       |             |
+| `--titlebar-text-color`         |             |
+| `--titlebar-text-color-focused` |             |
+| `--titlebar-text-weight`        |             |
 
 ### Workspace
 
-| Variable                             | Default value | Description |
-| ------------------------------------ | ------------- | ----------- |
-| `--workspace-background-translucent` |               |             |
+| Variable                             | Description |
+| ------------------------------------ | ----------- |
+| `--workspace-background-translucent` |             |
