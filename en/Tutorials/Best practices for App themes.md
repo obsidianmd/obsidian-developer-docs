@@ -18,7 +18,9 @@ The most common source of issues comes from broken selectors. New versions of Ob
 
 Obsidian is designed to be used with local files, and prioritizes user privacy. It's important to consider that Obsidian can be used offline, and therefore you should avoid loading remote resources such as fonts and images.
 
-## Plugin compatibility
+## Compatibility
 
-- Compatibility with plugins and snippets
-	- Avoid `!important` declarations
+Obsidian is designed for extensibility with community plugins and snippets. We encourage you to write your theme code to maximize compatibility with plugins and Obsidian features.
+
+- Avoid `!important` declarations
+- Avoid using very high specificity selectors
