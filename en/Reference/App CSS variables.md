@@ -227,6 +227,23 @@ The Editor font size is defined by the user in Obsidian Appearance Settings and 
 | `--font-extrabold`  | `800`           |
 | `--font-black`      | `900`              |
 
+### Icon sizes
+
+Variables for icon sizes. Should be used in conjuction with Icon variables.
+
+| Variable                 | Default value |
+| ------------------------ | ------------- |
+| `--icon-xs`              | `14px`        |
+| `--icon-s`               | `16px`        |
+| `--icon-m`               | `18px`        |
+| `--icon-l`               | `18px`        |
+| `--icon-xl`              | `32px`        |
+| `--icon-xs-stroke-width` | `2px`         |
+| `--icon-s-stroke-width`  | `2px`         |
+| `--icon-m-stroke-width`  | `1.75px`      | 
+| `--icon-l-stroke-width`  | `1.75px`      |
+| `--icon-xl-stroke-width` | `1.25px`      |
+
 ### Line heights
 
 | Variable               | Default value | Description                                                            |
@@ -394,17 +411,17 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 
 Styling for embeds and transclusions
 
-| Variable                    | Description                             |
-| --------------------------- | --------------------------------------- |
-| `--embed-max-height`        | Embed max height                        |
-| `--embed-canvas-max-height` | Embedded Canvas element max height      |
-| `--embed-background`        | Embed background color                  |
-| `--embed-border-left`       | Embed left border, shorthand property   |
-| `--embed-border-right`      | Embed right border, shorthand property  |
-| `--embed-border-top`        | Embed top border, shorthand property    |
-| `--embed-border-bottom`     | Embed bottom border, shorthand property |
-| `--embed-padding`           | Embedd padding                          |
-| `--embed-font-style`        | Embed `font-style`                      | 
+| Variable                     | Description                                            |
+| ---------------------------- | ------------------------------------------------------ |
+| `--embed-max-height`         | Embed max height                                       |
+| `--embed-canvas-max-height`  | Embedded Canvas element max height                     |
+| `--embed-background`         | Embed background color                                 |
+| `--embed-border-left`        | Embed left border, shorthand property                  |
+| `--embed-border-right`       | Embed right border, shorthand property                 |
+| `--embed-border-top`         | Embed top border, shorthand property                   |
+| `--embed-border-bottom`      | Embed bottom border, shorthand property                |
+| `--embed-padding`            | Embedd padding                                         |
+| `--embed-font-style`         | Embed `font-style`                                     | 
 
 ### Footnotes
 
@@ -581,7 +598,7 @@ Styling for tags
 | `--tag-background-hover`   | Tag background color (hover) |
 | `--tag-border-color`       | Tag border color             |
 | `--tag-border-color-hover` | Tag border color (hover)     |
-| `--tag-border-width`       | Tag border thickness         |
+| `--tag-border-width`       | Tag border width         |
 | `--tag-padding-x`          | Tag left/right padding       |
 | `--tag-padding-y`          | Tag top/down padding         |
 | `--tag-radius`             | Tag radius                   | 
@@ -594,346 +611,375 @@ Styling for tags
 
 ### Canvas
 
-| Variable                    | Description |
-| --------------------------- | ----------- |
-| `--canvas-background`       |             |
-| `--canvas-card-label-color` |             |
-| `--canvas-color-1`          |             |
-| `--canvas-color-2`          |             |
-| `--canvas-color-3`          |             |
-| `--canvas-color-4`          |             |
-| `--canvas-color-5`          |             |
-| `--canvas-color-6`          |             |
-| `--canvas-dot-pattern`      |             |
+Styling for Canvas plugin
 
-### Dividers
-
-| Variable                    | Description |
-| --------------------------- | ----------- |
-| `--divider-color`           |             |
-| `--divider-color-hover`     |             |
-| `--divider-width`           |             |
-| `--divider-width-hover`     |             |
-| `--divider-vertical-height` |             |
-
-### Dragging
-
-| Variable                  | Description |
-| ------------------------- | ----------- |
-| `--drag-ghost-background` |             |
-| `--drag-ghost-text-color` |             |
+| Variable                    | Description                  |
+| --------------------------- | ---------------------------- |
+| `--canvas-background`       | Canvas background color      |
+| `--canvas-card-label-color` | Canvas card label text color |
+| `--canvas-dot-pattern`      | Canvas dot pattern color     |
+| `--canvas-color-1`          | Canvas card color 1          |
+| `--canvas-color-2`          | Canvas card color 2          |
+| `--canvas-color-3`          | Canvas card color 3          |
+| `--canvas-color-4`          | Canvas card color 4          |
+| `--canvas-color-5`          | Canvas card color 5          |
+| `--canvas-color-6`          | Canvas card color 6          |
 
 ### Blocks
 
-| Variable                     | Description |
-| ---------------------------- | ----------- |
-| `--embed-block-shadow-hover` |             |
+Styling for rendered blocks in Live Preview
+
+| Variable                     | Description                                            |     |
+| ---------------------------- | ------------------------------------------------------ | --- |
+| `--embed-block-shadow-hover` | Hover shadow for rendered embed blocks in Live Preview |     | 
+
+### Dividers
+
+Styling for dividers and resize handles between interface elements such as sidebars, tabs, and split panes. Vertical height variable is present to accomodate Obsidian's various window frame modes.
+
+| Variable                    | Description                  |
+| --------------------------- | ---------------------------- |
+| `--divider-color`           | Divider border color         |
+| `--divider-color-hover`     | Divider border color (hover) |
+| `--divider-width`           | Divider border width         |
+| `--divider-width-hover`     | Divider border width (hover) |
+| `--divider-vertical-height` | Divider vertical height      | 
+
+### Dragging
+
+Styling for the drag ghost element that follows the cursor, e.g. dragging files in the file navigator, or items in the outline.
+
+| Variable                  | Description                 |
+| ------------------------- | --------------------------- |
+| `--drag-ghost-background` | Drag ghost background color |
+| `--drag-ghost-text-color` | Drag ghost text color       | 
 
 ### File layout
 
-| Variable                    | Description |
-| --------------------------- | ----------- |
-| `--file-line-width`         |             |
-| `--file-folding-offset`     |             |
-| `--file-margins`            |             |
-| `--file-header-font-size`   |             |
-| `--file-header-font-weight` |             |
-| `--file-header-border`      |             |
-| `--file-header-justify`     |             |
+Styling for open files in the Editor
+
+| Variable                    | Description                                           |
+| --------------------------- | ----------------------------------------------------- |
+| `--file-line-width`         | Width of a line when readable line width is turned on |
+| `--file-folding-offset`     | Width of the line offset for fold indicators          |
+| `--file-margins`            | File margins                                          |
+| `--file-header-font-size`   | File header font size                                 |
+| `--file-header-font-weight` | File header font weight                               |
+| `--file-header-border`      | File header `border-bottom` property                  |
+| `--file-header-justify`     | File header text alignment, uses `justify-content`    | 
 
 ### Graphs
 
-Applies to local and global graphs
+Styling for local and global graphs
 
-| Variable                  | Description |
-| ------------------------- | ----------- |
-| `--graph-controls-width`  |             |
-| `--graph-text`            |             |
-| `--graph-line`            |             |
-| `--graph-node`            |             |
-| `--graph-node-unresolved` |             |
-| `--graph-node-focused`    |             |
-| `--graph-node-tag`        |             |
-| `--graph-node-attachment` |             |
-
-### View header
-
-| Variable          | Description |
-| ----------------- | ----------- |
-| `--header-height` |             |
+| Variable                  | Description           |
+| ------------------------- | --------------------- |
+| `--graph-controls-width`  | Graph controls width  |
+| `--graph-text`            | Node text color       |
+| `--graph-line`            | Line color            |
+| `--graph-node`            | Resolved node color   | 
+| `--graph-node-unresolved` | Unresolved node color |
+| `--graph-node-focused`    | Focused node color    |
+| `--graph-node-tag`        | Tag node color        |
+| `--graph-node-attachment` | Attachment node color |
 
 ### Icons
 
-| Variable                  | Description |
-| ------------------------- | ----------- |
-| `--icon-size`             |             |
-| `--icon-stroke`           |             |
-| `--icon-xs`               |             |
-| `--icon-s`                |             |
-| `--icon-m`                |             |
-| `--icon-l`                |             |
-| `--icon-xl`               |             |
-| `--icon-xs-stroke-width`  |             |
-| `--icon-s-stroke-width`   |             |
-| `--icon-m-stroke-width`   |             |
-| `--icon-l-stroke-width`   |             |
-| `--icon-xl-stroke-width`  |             |
-| `--icon-color`            |             |
-| `--icon-color-hover`      |             |
-| `--icon-color-active`     |             |
-| `--icon-color-focused`    |             |
-| `--icon-opacity`          |             |
-| `--icon-opacity-hover`    |             |
-| `--icon-opacity-active`   |             |
-| `--clickable-icon-radius` |             |
+Icons are used throughout the Obsidian interface, particularly for [[Clickable Icon]] buttons.
+
+| Variable                  | Description                         |
+| ------------------------- | ----------------------------------- |
+| `--icon-size`             | Shorthand for icon width and length |
+| `--icon-stroke`           | Shorthand for icon stroke width     |
+| `--icon-color`            | Icon color                          |
+| `--icon-color-hover`      | Icon color (hovered)                |
+| `--icon-color-active`     | Icon color (active)                 |
+| `--icon-color-focused`    | Icon color (focused)                |
+| `--icon-opacity`          | Icon opacity                        |
+| `--icon-opacity-hover`    | Icon opacity (hovered)              |
+| `--icon-opacity-active`   | Icon opacity (active)               |
+| `--clickable-icon-radius` | Clickable icon button radius        | 
 
 ### Indentation guides
 
-| Variable                           | Description |
-| ---------------------------------- | ----------- |
-| `--indentation-guide-width`        |             |
-| `--indentation-guide-color`        |             |
-| `--indentation-guide-color-active` |             |
+Indentation guides are lines present in nested lists, such as bulleted lists, and in file navigator.
 
-### File navigator
+| Variable                           | Description                             |
+| ---------------------------------- | --------------------------------------- |
+| `--indentation-guide-width`        | Indentation guide border width          |
+| `--indentation-guide-color`        | Indentation guide border color          |
+| `--indentation-guide-color-active` | Indentation guide border color (active) | 
 
-| Variable                              | Description |
-| ------------------------------------- | ----------- |
-| `--nav-item-size`                     |             |
-| `--nav-item-color`                    |             |
-| `--nav-item-color-hover`              |             |
-| `--nav-item-color-active`             |             |
-| `--nav-item-color-selected`           |             |
-| `--nav-item-color-highlighted`        |             |
-| `--nav-item-background-hover`         |             |
-| `--nav-item-background-active`        |             |
-| `--nav-item-background-selected`      |             |
-| `--nav-item-padding`                  |             |
-| `--nav-item-parent-padding`           |             |
-| `--nav-item-children-padding-left`    |             |
-| `--nav-item-children-margin-left`     |             |
-| `--nav-item-weight`                   |             |
-| `--nav-item-weight-hover`             |             |
-| `--nav-item-weight-active`            |             |
-| `--nav-item-white-space`              |             |
-| `--nav-indentation-guide-width`       |             |
-| `--nav-indetation-guide-color`        |             |
-| `--nav-collapse-icon-color`           |             |
-| `--nav-collapse-icon-color-collapsed` |             |
+### Navigation
+
+Styling for items and folders within file navigation and outline
+
+| Variable                              | Description                                 |
+| ------------------------------------- | ------------------------------------------- |
+| `--nav-item-size`                     | Nav item font size                          |
+| `--nav-item-color`                    | Nav item text color                         |
+| `--nav-item-color-hover`              | Nav item text color (hover)                 |
+| `--nav-item-color-active`             | Nav item text color (active)                |
+| `--nav-item-color-selected`           | Nav item text color (selected)              |
+| `--nav-item-color-highlighted`        | Nav item text color (highlighted)           |
+| `--nav-item-background-hover`         | Nav item background color (hover)           |
+| `--nav-item-background-active`        | Nav item background color (active)          |
+| `--nav-item-background-selected`      | Nav item background color (selected)        |
+| `--nav-item-padding`                  | Nav item padding                            |
+| `--nav-item-parent-padding`           | Nav item padding for parent elements        |
+| `--nav-item-children-padding-left`    | Nav item children left padding              |
+| `--nav-item-children-margin-left`     | Nav item children left margin               |
+| `--nav-item-weight`                   | Nav item font weight                        |
+| `--nav-item-weight-hover`             | Nav item font weight (hover)                |
+| `--nav-item-weight-active`            | Nav item font weight (active)               |
+| `--nav-item-white-space`              | Nav item `white-space`                      |
+| `--nav-indentation-guide-width`       | Nav item indentation guide border width     |
+| `--nav-indetation-guide-color`        | Nav item indentation guide border color     |
+| `--nav-collapse-icon-color`           | Nav item collapse chevron color             | 
+| `--nav-collapse-icon-color-collapsed` | Nav item collapse chevron color (collapsed) |
 
 #### Vault name
 
+Styling for vault name in the file navigator
+
 | Variable                   | Description |
 | -------------------------- | ----------- |
-| `--vault-name-font-size`   |             |
-| `--vault-name-font-weight` |             |
-| `--vault-name-color`       |             |
+| `--vault-name-font-size`   | Font size   |
+| `--vault-name-font-weight` | Font weight |
+| `--vault-name-color`       | Text color  | 
 
 ### Modals
 
-| Variable                          | Description |
-| --------------------------------- | ----------- |
-| `--modal-background`              |             |
-| `--modal-width`                   |             |
-| `--modal-height`                  |             |
-| `--modal-max-width`               |             |
-| `--modal-max-height`              |             |
-| `--modal-max-width-narrow`        |             |
-| `--modal-border-width`            |             |
-| `--modal-border-color`            |             |
-| `--modal-radius`                  |             |
-| `--modal-community-sidebar-width` |             |
+Modals such as Settings, Community Plugins, Community Themes, Dialog boxes.
+
+| Variable                          | Description                          |
+| --------------------------------- | ------------------------------------ |
+| `--modal-background`              | Modal background color               |
+| `--modal-width`                   | Modal default width                  |
+| `--modal-height`                  | Modal default height                 |
+| `--modal-max-width`               | Modal maximum width                  |
+| `--modal-max-height`              | Modal maximum height                 |
+| `--modal-max-width-narrow`        | Narrow modal maximum width           |
+| `--modal-border-width`            | Modal border thickness               |
+| `--modal-border-color`            | Modal border color                   |
+| `--modal-radius`                  | Modal radius                         |
+| `--modal-community-sidebar-width` | Community plugin/theme sidebar width | 
 
 #### Dialogs
 
 Smaller modals primarily used for confirmations
 
-| Variable              | Description |
-| --------------------- | ----------- |
-| `--dialog-width`      |             |
-| `--dialog-max-width`  |             |
-| `--dialog-max-height` |             |
+| Variable              | Description           |
+| --------------------- | --------------------- |
+| `--dialog-width`      | Dialog default width  |
+| `--dialog-max-width`  | Dialog maximum width  |
+| `--dialog-max-height` | Dialog maximum height | 
 
 ### Inputs
 
 #### Buttons
 
-| Variable          | Description |
-| ----------------- | ----------- |
-| `--button-radius` |             |
+Styling for standard buttons
+
+| Variable          | Description   |
+| ----------------- | ------------- |
+| `--button-radius` | Button radius | 
 
 #### Color inputs
 
-| Variable          | Description |
-| ----------------- | ----------- |
-| `--swatch-radius` |             |
-| `--swatch-height` |             |
-| `--swatch-width`  |             |
-| `--swatch-shadow` |             |
+Styling for color inputs, e.g. accent color picker
+
+| Variable          | Description         |
+| ----------------- | ------------------- |
+| `--swatch-radius` | Color swatch radius |
+| `--swatch-height` | Color swatch height |
+| `--swatch-width`  | Color swatch width  |
+| `--swatch-shadow` | Color swatch shadow | 
 
 #### Sliders
 
-| Variable                      | Description |
-| ----------------------------- | ----------- |
-| `--slider-thumb-border-width` |             |
-| `--slider-thumb-border-color` |             |
-| `--slider-thumb-height`       |             |
-| `--slider-thumb-width`        |             |
-| `--slider-thumb-y`            |             |
-| `--slider-thumb-radius`       |             |
-| `--slider-s-thumb-size`       |             |
-| `--slider-s-thumb-position`   |             |
-| `--slider-track-background`   |             |
-| `--slider-track-height`       |             |
+Styling for slider controls, e.g. font size and zoom
+
+| Variable                      | Description                     |
+| ----------------------------- | ------------------------------- |
+| `--slider-thumb-border-width` | Slider thumb border width       |
+| `--slider-thumb-border-color` | Slider thumb border color       |
+| `--slider-thumb-height`       | Slider thumb height             |
+| `--slider-thumb-width`        | Slider thumb width              |
+| `--slider-thumb-y`            | Slider thumb Y position         |
+| `--slider-thumb-radius`       | Slider thumb radius             |
+| `--slider-track-background`   | Slider track background color   |
+| `--slider-track-height`       | Slider track height             | 
 
 #### Text inputs
 
-| Variable               | Description |
-| ---------------------- | ----------- |
-| `--input-height`       |             |
-| `--input-radius`       |             |
-| `--input-font-weight`  |             |
-| `--input-border-width` |             |
+Styling for text inputs
+
+| Variable               | Description        |
+| ---------------------- | ------------------ |
+| `--input-height`       | Input height       |
+| `--input-radius`       | Input radius       |
+| `--input-font-weight`  | Input font weight  |
+| `--input-border-width` | Input border width | 
 
 #### Toggles
 
-| Variable                  | Description |
-| ------------------------- | ----------- |
-| `--toggle-border-width`   |             |
-| `--toggle-width`          |             |
-| `--toggle-radius`         |             |
-| `--toggle-thumb-color`    |             |
-| `--toggle-thumb-radius`   |             |
-| `--toggle-thumb-height`   |             |
-| `--toggle-thumb-width`    |             |
-| `--toggle-s-border-width` |             |
-| `--toggle-s-width`        |             |
-| `--toggle-s-thumb-height` |             |
-| `--toggle-s-thumb-width`  |             |
+Styling for toggle inputs
+
+| Variable                  | Description                   |
+| ------------------------- | ----------------------------- |
+| `--toggle-border-width`   | Toggle border width           |
+| `--toggle-width`          | Toggle width                  |
+| `--toggle-radius`         | Toggle radius                 |
+| `--toggle-thumb-color`    | Toggle thumb background color |
+| `--toggle-thumb-radius`   | Toggle thumb radius           |
+| `--toggle-thumb-height`   | Toggle thumb height           |
+| `--toggle-thumb-width`    | Toggle thumb width            |
+| `--toggle-s-border-width` | Small toggle border width     |
+| `--toggle-s-width`        | Small toggle width            |
+| `--toggle-s-thumb-height` | Small toggle thumb height     |
+| `--toggle-s-thumb-width`  | Small toggle thumb width      | 
 
 ### Popovers (file previews)
 
-| Variable               | Description |
-| ---------------------- | ----------- |
-| `--popover-width`      |             |
-| `--popover-height`     |             |
-| `--popover-max-height` |             |
-| `--popover-pdf-width`  |             |
-| `--popover-pdf-height` |             |
-| `--popover-font-size`  |             |
+Styling for popovers and file previews
+
+| Variable               | Description             |
+| ---------------------- | ----------------------- |
+| `--popover-width`      | Popover default width   |
+| `--popover-height`     | Popover default height  |
+| `--popover-max-height` | Popover maximum height  |
+| `--popover-font-size`  | Popover font size       |
+| `--popover-pdf-width`  | PDF file preview width  |
+| `--popover-pdf-height` | PDF file preview height |
 
 ### Prompts
 
 E.g. quick switcher, command palette
 
-| Variable                | Description |
-| ----------------------- | ----------- |
-| `--prompt-width`        |             |
-| `--prompt-max-width`    |             |
-| `--prompt-max-height`   |             |
-| `--prompt-border-width` |             |
-| `--prompt-border-color` |             |
+| Variable                | Description                           |
+| ----------------------- | ------------------------------------- |
+| `--prompt-width`        | Prompt width                          |
+| `--prompt-max-width`    | Prompt max width (for narrow windows) |
+| `--prompt-max-height`   | Prompt max height                     |
+| `--prompt-border-width` | Prompt border width                   |
+| `--prompt-border-color` | Prompt border color                  | 
 
 ### Ribbon
 
 Controls styling of the [[Ribbon]] element
 
-| Variable                        | Description |
-| ------------------------------- | ----------- |
-| `--ribbon-background`           |             |
-| `--ribbon-background-collapsed` |             |
-| `--ribbon-width`                |             |
-| `--ribbon-padding`              |             |
+| Variable                        | Description                                 |
+| ------------------------------- | ------------------------------------------- |
+| `--ribbon-background`           | Ribbon background color                     |
+| `--ribbon-background-collapsed` | Ribbon background color (collapsed sidebar) |
+| `--ribbon-width`                | Ribbon width                                |
+| `--ribbon-padding`              | Ribbon padding                              | 
 
 ### Scrollbars
 
-| Variable                      | Description |
-| ----------------------------- | ----------- |
-| `--scrollbar-active-thumb-bg` |             |
-| `--scrollbar-bg`              |             |
-| `--scrollbar-thumb-bg`        |             |
+Styling for non-native scrollbars. Note that custom scrollbars are only used on Windows and Linux.
+
+| Variable                      | Description                               |
+| ----------------------------- | ----------------------------------------- |
+| `--scrollbar-bg`              | Scrollbar background color                |
+| `--scrollbar-thumb-bg`        | Scrollbar thumb background color          |
+| `--scrollbar-active-thumb-bg` | Scrollbar thumb background color (active) | 
 
 ### Search
 
-| Variable                      | Description |
-| ----------------------------- | ----------- |
-| `--search-clear-button-color` |             |
-| `--search-clear-button-size`  |             |
-| `--search-icon-color`         |             |
-| `--search-icon-size`          |             |
-| `--search-result-background`  |             |
+Styling for search inputs and search results in search pane
+
+| Variable                      | Description                        |
+| ----------------------------- | ---------------------------------- |
+| `--search-clear-button-color` | Clear search button color          |
+| `--search-clear-button-size`  | Clear search button size           |
+| `--search-icon-color`         | Search magnifying glass icon color |
+| `--search-icon-size`          | Search icon size                   |
+| `--search-result-background`  | Search result background color     | 
 
 ### Sidebar
 
-| Variable                       | Description |
-| ------------------------------ | ----------- |
-| `--sidebar-markdown-font-size` |             |
-| `--sidebar-tab-text-display`   |             |
+Styling for sidebar elements
+
+| Variable                       | Description                                 |
+| ------------------------------ | ------------------------------------------- |
+| `--sidebar-markdown-font-size` | Font size for Markdown files in sidebars    |
+| `--sidebar-tab-text-display`   | `display` property for tab text in sidebars | 
 
 ### Status bar
 
-| Variable                      | Description |
-| ----------------------------- | ----------- |
-| `--status-bar-background`     |             |
-| `--status-bar-border-color`   |             |
-| `--status-bar-border-width`   |             |
-| `--status-bar-font-size`      |             |
-| `--status-bar-text-color`     |             |
-| `--status-bar-position`       |             |
-| `--status-bar-radius`         |             |
-| `--status-bar-scroll-padding` |             |
+Styling for [[Status bar]] element
+
+| Variable                      | Description                    |
+| ----------------------------- | ------------------------------ |
+| `--status-bar-background`     | Status bar background color    |
+| `--status-bar-border-color`   | Status bar border color        |
+| `--status-bar-border-width`   | Status bar border width        |
+| `--status-bar-font-size`      | Status bar font size           |
+| `--status-bar-text-color`     | Status bar text color          |
+| `--status-bar-position`       | Status bar `position` property |
+| `--status-bar-radius`         | Status bar radius              | 
+| `--status-bar-scroll-padding` | Status bar scroll padding      |
 
 ### Tabs
 
-| Variable                                  | Description |
-| ----------------------------------------- | ----------- |
-| `--tab-background-active`                 |             |
-| `--tab-text-color`                        |             |
-| `--tab-text-color-active`                 |             |
-| `--tab-text-color-focused`                |             |
-| `--tab-text-color-focused-active`         |             |
-| `--tab-text-color-focused-highlighted`    |             |
-| `--tab-text-color-focused-active-current` |             |
-| `--tab-font-size`                         |             |
-| `--tab-font-weight`                       |             |
-| `--tab-container-background`              |             |
-| `--tab-divider-color`                     |             |
-| `--tab-outline-color`                     |             |
-| `--tab-outline-width`                     |             |
-| `--tab-curve`                             |             |
-| `--tab-radius`                            |             |
-| `--tab-radius-active`                     |             |
-| `--tab-width`                             |             |
-| `--tab-max-width`                         |             |
+Styling for [[Tabs]]
+
+| Variable                                  | Description                                  |
+| ----------------------------------------- | -------------------------------------------- |
+| `--tab-background-active`                 | Tab background color (active tab)            |
+| `--tab-text-color`                        | Tab text color                               |
+| `--tab-text-color-active`                 | Tab text color (non-focused window, active)  |
+| `--tab-text-color-focused`                | Tab text color (focused window)              |
+| `--tab-text-color-focused-active`         | Tab text color (focused window, active)      |
+| `--tab-text-color-focused-highlighted`    | Tab text color (focused window, highlighted) |
+| `--tab-text-color-focused-active-current` | Tab text color (focused window, current tab) |
+| `--tab-font-size`                         | Tab font size                                |
+| `--tab-font-weight`                       | Tab font weight                              |
+| `--tab-container-background`              | Tab container background color               |
+| `--tab-divider-color`                     | Tab divider color                            |
+| `--tab-outline-color`                     | Tab outline color                            |
+| `--tab-outline-width`                     | Tab outline width                            |
+| `--tab-curve`                             | Tab curve radius                             |
+| `--tab-radius`                            | Tab outer radius                             |
+| `--tab-radius-active`                     | Tab outer radius (active tab)                |
+| `--tab-width`                             | Tab default width                            |
+| `--tab-max-width`                         | Tab maximum width                            | 
 
 
 ### Tab stacks
 
-| Variable                          | Description |
-| --------------------------------- | ----------- |
-| `--tab-stacked-pane-width`        |             |
-| `--tab-stacked-header-width`      |             |
-| `--tab-stacked-font-size`         |             |
-| `--tab-stacked-font-weight`       |             |
-| `--tab-stacked-text-align`        |             |
-| `--tab-stacked-text-transform`    |             |
-| `--tab-stacked-text-writing-mode` |             |
-| `--text-stacked-shadow`           |             |
+Styling for stacked tabs
+
+| Variable                          | Description                   |
+| --------------------------------- | ----------------------------- |
+| `--tab-stacked-pane-width`        | Stacked pane width            |
+| `--tab-stacked-header-width`      | Stacked header width          |
+| `--tab-stacked-font-size`         | Stacked tab font size         |
+| `--tab-stacked-font-weight`       | Stacked tab font weight       |
+| `--tab-stacked-text-align`        | Stacked tab text alignment    |
+| `--tab-stacked-text-transform`    | Stacked tab text transform    |
+| `--tab-stacked-text-writing-mode` | Stacked tab text writing mode |
+| `--tab-stacked-shadow`            | Stacked tab shadow            | 
 
 ### Window frame
 
-| Variable                        | Description |
-| ------------------------------- | ----------- |
-| `--titlebar-background`         |             |
-| `--titlebar-background-focused` |             |
-| `--titlebar-border-width`       |             |
-| `--titlebar-border-color`       |             |
-| `--titlebar-text-color`         |             |
-| `--titlebar-text-color-focused` |             |
-| `--titlebar-text-weight`        |             |
+Custom titlebar can be turned on by user with `Appearance Settings → Window frame style` set to **Obsidian frame**
+
+| Variable                        | Description                                |
+| ------------------------------- | ------------------------------------------ |
+| `--titlebar-background`         | Titlebar background color                  |
+| `--titlebar-background-focused` | Titlebar background color (focused window) |
+| `--titlebar-border-width`       | Titlebar border width                      |
+| `--titlebar-border-color`       | Titlebar border color                      |
+| `--titlebar-text-color`         | Titlebar text color                        |
+| `--titlebar-text-color-focused` | Titlebar text color (focused window)       |
+| `--titlebar-text-weight`        | Titlebar font weight                       |
+| `--header-height`               | Default height for frame elements          | 
 
 ### Workspace
 
-| Variable                             | Description |
-| ------------------------------------ | ----------- |
-| `--workspace-background-translucent` |             |
+| Variable                             | Description                        |
+| ------------------------------------ | ---------------------------------- |
+| `--workspace-background-translucent` | Background for translucent windows | 
