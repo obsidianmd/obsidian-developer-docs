@@ -123,7 +123,7 @@ Obsidian exposes more than 400 different CSS variables for customizing different
 
 One of the results is `--ribbon-background`, which sounds promising. To be sure, you can also inspect the HTML to find the CSS variable used by a specific element.
 
-1. In the upper-right corner of the **Developer Tool**, select the icon that looks like a cursor on top of a rectangle.
+1. In the upper-left corner of the **Developer Tool**, select the icon that looks like a cursor on top of a rectangle.
 2. Select the middle of the ribbon on the left side of the Obsidian window.
 
 In the **Styles** tab, on the right side of the **Developer Tools**, you can now see the CSS that is applied to the element you selected, such as `background-color: var(--ribbon-background)`.
