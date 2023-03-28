@@ -1,4 +1,8 @@
-Styling for sidebar elements
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                       | Description                                 |
 | ------------------------------ | ------------------------------------------- |

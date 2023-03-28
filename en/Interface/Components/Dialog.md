@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Smaller modals primarily used for confirmations
 
 | Variable              | Description           |

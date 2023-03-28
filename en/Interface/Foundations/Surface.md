@@ -1,4 +1,8 @@
-## Radiuses
+---
+cssClass: reference
+---
+
+## Theming variables
 
 Styling for radiused corners used on buttons, inputs, modals, etc
 
@@ -9,13 +13,13 @@ Styling for radiused corners used on buttons, inputs, modals, etc
 | `--radius-l`  | `12px`        | 
 | `--radius-xl` | `16px`        |
 
-## Borders
+### Borders
 
 | Variable         | Default value |
 | ---------------- | ------------- |
 | `--border-width` | `1px`         |
 
-## Dragging
+### Dragging
 
 Styling for the drag ghost element that follows the cursor, e.g. dragging files in the file navigator, or items in the outline.
 

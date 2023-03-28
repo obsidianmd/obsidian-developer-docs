@@ -1,10 +1,12 @@
-See also: [[App CSS variables#Icons|CSS variables]] for icons
+---
+cssClass: reference
+---
 
-### Included icons
+## Using included icons
 
 Obsidian uses the [Lucide](https://lucide.dev/) icon library, which has over 800 icons that you can use for your plugin.
 
-### Making new icons
+## Creating new icons
 
 If you are looking to use an icon that is not available in the Lucide library, you can create your own. For best compatibility and cohesiveness with Obsidian, your icons should [follow Lucide’s guidelines](https://github.com/lucide-icons/lucide/blob/main/docs/ICON_DESIGN_GUIDE.md)
 
@@ -19,7 +21,7 @@ If you are looking to use an icon that is not available in the Lucide library, y
 
 Lucide also [provides templates and guides](https://github.com/lucide-icons/lucide/blob/main/CONTRIBUTING.md) for vector editors such as Illustrator, Figma, and Inkscape.
 
-### Icons
+## Theming variables
 
 Icons are used throughout the Obsidian interface, particularly for [[Clickable Icon]] buttons.
 

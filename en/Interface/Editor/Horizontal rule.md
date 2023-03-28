@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for horizontal rules
 
 | Variable         | Description                      |

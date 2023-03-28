@@ -1,3 +1,8 @@
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                             | Description                        |
 | ------------------------------------ | ---------------------------------- |

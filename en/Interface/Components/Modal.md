@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Modals such as Settings, Community Plugins, Community Themes, Dialog boxes.
 
 | Variable                          | Description                          |

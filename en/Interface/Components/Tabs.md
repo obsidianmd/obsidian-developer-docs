@@ -1,4 +1,8 @@
-Styling for [[Tabs]]
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                                  | Description                                  |
 | ----------------------------------------- | -------------------------------------------- |

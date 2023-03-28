@@ -1,5 +1,8 @@
-Styling for text inputs
+---
+cssClass: reference
+---
 
+## Theming variables
 | Variable               | Description        |
 | ---------------------- | ------------------ |
 | `--input-height`       | Input height       |

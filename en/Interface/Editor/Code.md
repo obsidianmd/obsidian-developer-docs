@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for code and preformatted text elements
 
 | Variable             | Description           |
@@ -6,7 +12,7 @@ Styling for code and preformatted text elements
 | `--code-white-space` | Code `white-space`    |
 | `--code-size`        | Code font size        |
 
-## Syntax highlighting
+### Syntax highlighting
 
 Note that for technical reasons Obsidian currently uses two different syntax highlighting libraries for Edit and Read mode. The syntax highlighting does not perfectly match between the two modes.
 

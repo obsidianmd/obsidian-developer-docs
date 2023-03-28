@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for items and folders within file explorer and outline
 
 | Variable                              | Description                                 |
@@ -21,5 +27,5 @@ Styling for items and folders within file explorer and outline
 | `--nav-item-white-space`              | Nav item `white-space`                      |
 | `--nav-indentation-guide-width`       | Nav item indentation guide border width     |
 | `--nav-indetation-guide-color`        | Nav item indentation guide border color     |
-| `--nav-collapse-icon-color`           | Nav item collapse chevron color             | 
+| `--nav-collapse-icon-color`           | Nav item collapse chevron color             |
 | `--nav-collapse-icon-color-collapsed` | Nav item collapse chevron color (collapsed) |

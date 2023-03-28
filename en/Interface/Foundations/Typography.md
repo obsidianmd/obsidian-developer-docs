@@ -1,3 +1,7 @@
+---
+cssClass: reference
+---
+
 ## Font sizes
 
 The Editor font size is defined by the user in Obsidian Appearance Settings and uses `--font-text-size` variable. Relative font sizes are primarily used in the Editor context, whereas fixed font sizes are used for UI elements.

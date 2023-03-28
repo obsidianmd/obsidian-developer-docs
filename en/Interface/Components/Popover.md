@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for popovers and file previews
 
 | Variable               | Description             |

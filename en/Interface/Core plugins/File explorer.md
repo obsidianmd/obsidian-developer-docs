@@ -1,4 +1,8 @@
-## Vault name
+---
+cssClass: reference
+---
+
+## Theming variables
 
 Styling for vault name in the file navigator
 

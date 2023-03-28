@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for numbered (ordered) and bullet (unordered) lists
 
 | Variable                        | Description                                   |

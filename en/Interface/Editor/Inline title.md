@@ -1,4 +1,10 @@
-Styling for inline titles. Inline titles can be activated by the user in Appearance Settings to show the filename inline (can be used instead of an H1).
+---
+cssClass: reference
+---
+
+Inline titles can be activated by the user in Appearance Settings to show the filename inline (can be used instead of an H1).
+
+## Theming variables
 
 | Variable                     | Description               |
 | ---------------------------- | ------------------------- |

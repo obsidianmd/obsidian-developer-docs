@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for local and global graphs
 
 | Variable                  | Description           |

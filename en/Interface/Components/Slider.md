@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for slider controls, e.g. font size and zoom
 
 | Variable                      | Description                     |

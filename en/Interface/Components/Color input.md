@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for color inputs, e.g. accent color picker
 
 | Variable          | Description         |

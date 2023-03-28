@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for open files in the Editor
 
 | Variable                    | Description                                           |

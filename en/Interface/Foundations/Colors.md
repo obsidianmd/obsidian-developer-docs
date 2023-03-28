@@ -1,3 +1,7 @@
+---
+cssClass: reference
+---
+
 Theme color variables define the raw color values used throughout the app. These variables are mapped to semantic color names.
 
 Each variable is applied to both `.theme-light` and `.theme-dark` classes with appropriate values for light and dark mode. For example:

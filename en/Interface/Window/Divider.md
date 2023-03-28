@@ -1,4 +1,10 @@
+---
+cssClass: reference
+---
+
 Styling for dividers and resize handles between interface elements such as sidebars, tabs, and split panes. Vertical height variable is present to accomodate Obsidian's various window frame modes.
+
+## Theming variables
 
 | Variable                    | Description                  |
 | --------------------------- | ---------------------------- |

@@ -1,3 +1,7 @@
+---
+cssClass: reference
+---
+
 Obsidian uses a 4 pixel grid. The 4 pixel grid is chosen because it enables the interface to scale up and down across high/low DPI screens, and also provides convenient ratios for layouts.
 
 UI elements use multiples of 4 for padding and spacing throughout the app. We recommend using the `--size` CSS variables to define all dimensions throughout your plugin.
@@ -10,7 +14,7 @@ Each size variable contains two numbers which represent the base and the multipl
 
 A few `--size-2-x` variables are available for small spaces where fractions of 4 can be useful, e.g. `--size-2-1` represents `2*1 = 2px`
 
-### Spacing and padding
+## Theming variables
 
 See [[Spacing]]
 
@@ -30,13 +34,3 @@ See [[Spacing]]
 | `--size-4-12` | `48px`        |
 | `--size-4-16` | `64px`        |
 | `--size-4-18` | `72px`        | 
-
-### Indentation guides
-
-Indentation guides are lines present in nested lists, such as bulleted lists, and in file navigator.
-
-| Variable                           | Description                             |
-| ---------------------------------- | --------------------------------------- |
-| `--indentation-guide-width`        | Indentation guide border width          |
-| `--indentation-guide-color`        | Indentation guide border color          |
-| `--indentation-guide-color-active` | Indentation guide border color (active) | 

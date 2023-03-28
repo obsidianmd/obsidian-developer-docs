@@ -1,4 +1,8 @@
-Styling for tags
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                   | Description                  |
 | -------------------------- | ---------------------------- |

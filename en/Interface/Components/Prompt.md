@@ -1,3 +1,10 @@
+
+---
+cssClass: reference
+---
+
+## Theming variables
+
 E.g. quick switcher, command palette
 
 | Variable                | Description                           |

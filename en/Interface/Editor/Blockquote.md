@@ -1,4 +1,8 @@
-Styling for blockquotes
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                        | Description                                 |
 | ------------------------------- | ------------------------------------------- |

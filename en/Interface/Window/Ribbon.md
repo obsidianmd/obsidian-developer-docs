@@ -1,4 +1,9 @@
-Controls styling of the [[Ribbon]] element
+---
+cssClass: reference
+---
+
+## Theming variables
+
 
 | Variable                        | Description                                 |
 | ------------------------------- | ------------------------------------------- |

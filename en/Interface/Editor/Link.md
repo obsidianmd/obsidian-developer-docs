@@ -1,8 +1,14 @@
+---
+cssClass: reference
+---
+
 Obsidian supports three different types of links: 
 
 - **Resolved internal links** link to an existing note in Obsidian
 - **Unresolved internal links** link to a non-existing note in Obsidian
 - **External links** link to an external URL/URI
+
+## Theming variables
 
 | Variable                             | Description                               |
 | ------------------------------------ | ----------------------------------------- |

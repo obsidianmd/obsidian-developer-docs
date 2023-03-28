@@ -1,4 +1,10 @@
+---
+cssClass: reference
+---
+
 Custom titlebar can be turned on by user with `Appearance Settings → Window frame style` set to **Obsidian frame**
+
+## Theming variables
 
 | Variable                        | Description                                |
 | ------------------------------- | ------------------------------------------ |

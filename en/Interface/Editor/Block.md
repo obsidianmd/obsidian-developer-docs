@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for rendered blocks in Live Preview
 
 | Variable                     | Description                                            |     |

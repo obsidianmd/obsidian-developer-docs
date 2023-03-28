@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for search inputs and search results in search pane
 
 | Variable                      | Description                        |

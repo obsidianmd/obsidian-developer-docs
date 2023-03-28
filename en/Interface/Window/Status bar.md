@@ -1,4 +1,8 @@
-Styling for [[Status bar]] element
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                      | Description                    |
 | ----------------------------- | ------------------------------ |

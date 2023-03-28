@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for embeds and transclusions
 
 | Variable                     | Description                                            |

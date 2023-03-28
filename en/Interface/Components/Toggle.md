@@ -1,4 +1,8 @@
-Styling for toggle inputs
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                  | Description                   |
 | ------------------------- | ----------------------------- |

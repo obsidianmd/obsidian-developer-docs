@@ -1,4 +1,8 @@
-Styling for Canvas plugin
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                    | Description                  |
 | --------------------------- | ---------------------------- |

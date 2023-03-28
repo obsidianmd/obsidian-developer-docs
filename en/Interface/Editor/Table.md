@@ -1,4 +1,8 @@
-Styling for tables
+---
+cssClass: reference
+---
+
+## Theming variables
 
 | Variable                            | Description                           |
 | ----------------------------------- | ------------------------------------- |

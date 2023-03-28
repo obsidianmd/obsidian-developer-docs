@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 [Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts) have a title and content that can be styled independently
 
 | Variable                       | Description                                                 |

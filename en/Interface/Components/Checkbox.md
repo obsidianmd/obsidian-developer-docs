@@ -1,3 +1,8 @@
+---
+cssClass: reference
+---
+
+## Theming variables
 Styling for checkboxes and text inside of task lists
 
 | Variable                        | Description                                |

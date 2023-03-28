@@ -1,3 +1,9 @@
+---
+cssClass: reference
+---
+
+## Theming variables
+
 Styling for non-native scrollbars. Note that custom scrollbars are only used on Windows and Linux.
 
 | Variable                      | Description                               |
