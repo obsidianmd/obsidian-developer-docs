@@ -1,4 +1,4 @@
-Styling for items and folders within file navigation and outline
+Styling for items and folders within file explorer and outline
 
 | Variable                              | Description                                 |
 | ------------------------------------- | ------------------------------------------- |
