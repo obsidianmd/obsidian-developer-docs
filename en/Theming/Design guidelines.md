@@ -1,12 +1,10 @@
-## Overview
-
-Most Obsidian UI elements are abstracted into [[App CSS variables]]. Variables make it possible to create expressive themes with low specificity in your CSS selectors. Most themes should be able to completely customize the interface by only targeting `body` for interface styling, and `.theme-light`/`.theme-dark` for colors.
+Most Obsidian UI elements are abstracted into CSS variables. Variables make it possible to create expressive themes with low specificity in your CSS selectors. Most themes should be able to completely customize the interface by only targeting `body` for interface styling, and `.theme-light`/`.theme-dark` for colors.
 
 If you are developing a complex theme, consider simplifying your selectors and using the built-in CSS variables to do the heavy lifting.
 
 ## Future-proofing your theme
 
-As new versions of Obsidian are released, new interface patterns and design tweaks may affect your theme. You can minimize maintenance work by following these best practices.
+As new versions of Obsidian are released, new interface patterns and design tweaks may affect your theme. You can minimize maintenance work by following these guidelines.
 
 - Use [[App CSS variables]] rather than 
 - Use low-specificity selectors

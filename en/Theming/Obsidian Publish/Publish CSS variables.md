@@ -6,10 +6,6 @@ cssClass: reference
 
 ## Overview
 
-Obsidian Publish can be customized with CSS. See [[Best practices for Publish themes]].
-
-Obsidian Publish shares CSS with Obsidian App, see [[App CSS variables]]. 
-
 The following are Publish-specific CSS variables that can be defined on the `.published-container` element.
 
 ## Fonts
