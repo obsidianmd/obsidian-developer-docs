@@ -7,9 +7,5 @@
 ehthumbs.db
 Thumbs.db
 
-.obsidian
-*.css
-
-.idea/
-
-Reference
+.obsidian/*
+!.obsidian/snippets

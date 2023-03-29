@@ -1,0 +1,28 @@
+.reference {
+	--table-column-first-border-width: 0;
+	--table-column-last-border-width: 0;
+	--table-row-last-border-width: 0;
+	--table-header-border-width: 0;
+	--table-row-background-hover: var(--background-secondary);
+}
+
+.reference .HyperMD-table-row,
+.reference table {
+	--code-background: transparent;
+}
+
+.reference table {
+	width: 100%;
+}
+
+.reference .HyperMD-table-row,
+.reference table td:first-child {
+	--code-normal: var(--color-cyan);
+}
+
+.reference table th {
+	--table-white-space: nowrap;
+}
+.reference table th:first-child {
+	min-width: 200px;
+}
