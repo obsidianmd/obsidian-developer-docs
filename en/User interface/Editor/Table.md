@@ -26,4 +26,4 @@ cssClass: reference
 | `--table-column-last-border-width`  | Last column right border width        |
 | `--table-row-background-hover`      | Row background color (hover)          |
 | `--table-row-alt-background`        | Alternating row background color      |
-| `--table-last-border-width`         | Last row bottom border width          | 
+| `--table-last-border-width`         | Last row bottom border width          |

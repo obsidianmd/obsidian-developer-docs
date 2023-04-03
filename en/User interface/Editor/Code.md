@@ -8,7 +8,7 @@ Styling for code and preformatted text elements
 
 | Variable             | Description           |
 | -------------------- | --------------------- |
-| `--code-background`  | Code background color | 
+| `--code-background`  | Code background color |
 | `--code-white-space` | Code `white-space`    |
 | `--code-size`        | Code font size        |
 
@@ -26,6 +26,6 @@ Note that for technical reasons Obsidian currently uses two different syntax hig
 | `--code-operator`    | Operators                |
 | `--code-property`    | Properties               |
 | `--code-punctuation` | Punctuation              |
-| `--code-string`      | Strings                  | 
+| `--code-string`      | Strings                  |
 | `--code-tag`         | Tags, symbols, constants |
 | `--code-value`       | Values                   |

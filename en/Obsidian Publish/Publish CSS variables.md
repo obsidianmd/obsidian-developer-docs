@@ -18,7 +18,7 @@ To load remote fonts we recommend using CSS with `@import` or defining your font
 | `--font-text-theme`      | Font family for page text                             |
 | `--font-monospace-theme` | Font family for code                                  |
 | `--font-interface-theme` | Font family for interface elements such as navigation |
-| `--font-mermaid`         | Font family for Mermaid diagrams                      | 
+| `--font-mermaid`         | Font family for Mermaid diagrams                      |
 
 ## Site header, site logo, and site name
 
@@ -41,7 +41,7 @@ The site header appears as a horizontal header at the top of the page on mobile 
 | `--site-name-weight`           | Site name font weight          |
 | `--site-menu-icon-color`       | Mobile menu icon color         |
 | `--site-menu-icon-color-hover` | Mobile menu hovered icon color |
-| `--site-menu-icon-size`        | Mobile menu icon size          | 
+| `--site-menu-icon-size`        | Mobile menu icon size          |
 
 
 ## Page width and padding
@@ -49,7 +49,7 @@ The site header appears as a horizontal header at the top of the page on mobile 
 | Variable                | Description                                    |
 | ----------------------- | ---------------------------------------------- |
 | `--page-width`          | Width of a note when readable line width is on |
-| `--page-padding`        | Padding around a note                          | 
+| `--page-padding`        | Padding around a note                          |
 
 ## Page title
 
@@ -78,7 +78,7 @@ The left sidebar is present when **Navigation** is turned on. The right sidebar 
 | `--sidebar-right-width`        | Width of the right sidebar         |
 | `--sidebar-right-background`   | Background color of right sidebar  |
 | `--sidebar-right-border-width` | Left border width of right sidebar |
-| `--sidebar-right-border-color` | Left border color of right sidebar | 
+| `--sidebar-right-border-color` | Left border color of right sidebar |
 
 ## Navigation
 
@@ -96,7 +96,7 @@ When activated in Publish settings, navigation is placed in the left sidebar and
 | `--nav-item-color-active`         | Font color for active nested items         |
 | `--nav-item-border-color`         | Border color for nested items              |
 | `--nav-item-border-color-hover`   | Border color for hovered nested items      |
-| `--nav-item-border-color-active`  | Border color for active nested items       | 
+| `--nav-item-border-color-active`  | Border color for active nested items       |
 | `--nav-item-weight-active`        | Font weight for active nested items        |
 
 ## Outline

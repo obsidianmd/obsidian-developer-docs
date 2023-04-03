@@ -14,4 +14,4 @@ Inline titles can be activated by the user in Appearance Settings to show the fi
 | `--inline-title-size`        | Inline title font size    |
 | `--inline-title-style`       | Inline title font style   |
 | `--inline-title-variant`     | Inline title font variant |
-| `--inline-title-weight`      | Inline title font weight  | 
+| `--inline-title-weight`      | Inline title font weight  |

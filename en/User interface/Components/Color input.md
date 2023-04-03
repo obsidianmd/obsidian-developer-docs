@@ -11,4 +11,4 @@ Styling for color inputs, e.g. accent color picker
 | `--swatch-radius` | Color swatch radius |
 | `--swatch-height` | Color swatch height |
 | `--swatch-width`  | Color swatch width  |
-| `--swatch-shadow` | Color swatch shadow | 
+| `--swatch-shadow` | Color swatch shadow |

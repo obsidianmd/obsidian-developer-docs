@@ -15,4 +15,4 @@ Styling for checkboxes and text inside of task lists
 | `--checkbox-border-color`       | Checkbox unchecked border color            |
 | `--checkbox-border-color-hover` | Checkbox unchecked border color (hover)    |
 | `--checklist-done-decoration`   | Checkbox checked text decoration           |
-| `--checklist-done-color`        | Checkbox checked text color                | 
+| `--checklist-done-color`        | Checkbox checked text color                |

@@ -10,4 +10,4 @@ Indentation guides are lines present in nested lists, such as bulleted lists, an
 | ---------------------------------- | --------------------------------------- |
 | `--indentation-guide-width`        | Indentation guide border width          |
 | `--indentation-guide-color`        | Indentation guide border color          |
-| `--indentation-guide-color-active` | Indentation guide border color (active) | 
+| `--indentation-guide-color-active` | Indentation guide border color (active) |

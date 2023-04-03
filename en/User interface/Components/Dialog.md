@@ -10,6 +10,4 @@ Smaller modals primarily used for confirmations
 | --------------------- | --------------------- |
 | `--dialog-width`      | Dialog default width  |
 | `--dialog-max-width`  | Dialog maximum width  |
-| `--dialog-max-height` | Dialog maximum height | 
-
-
+| `--dialog-max-height` | Dialog maximum height |

@@ -16,4 +16,4 @@ cssClass: reference
 | `--toggle-s-border-width` | Small toggle border width     |
 | `--toggle-s-width`        | Small toggle width            |
 | `--toggle-s-thumb-height` | Small toggle thumb height     |
-| `--toggle-s-thumb-width`  | Small toggle thumb width      | 
+| `--toggle-s-thumb-width`  | Small toggle thumb width      |

@@ -15,4 +15,4 @@ Styling for slider controls, e.g. font size and zoom
 | `--slider-thumb-y`            | Slider thumb Y position         |
 | `--slider-thumb-radius`       | Slider thumb radius             |
 | `--slider-track-background`   | Slider track background color   |
-| `--slider-track-height`       | Slider track height             | 
+| `--slider-track-height`       | Slider track height             |

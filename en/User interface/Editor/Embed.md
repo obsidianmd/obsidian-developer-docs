@@ -16,5 +16,4 @@ Styling for embeds and transclusions
 | `--embed-border-top`         | Embed top border, shorthand property                   |
 | `--embed-border-bottom`      | Embed bottom border, shorthand property                |
 | `--embed-padding`            | Embedd padding                                         |
-| `--embed-font-style`         | Embed `font-style`                                     | 
-
+| `--embed-font-style`         | Embed `font-style`                                     |

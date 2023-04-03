@@ -10,4 +10,4 @@ Styling for non-native scrollbars. Note that custom scrollbars are only used on 
 | ----------------------------- | ----------------------------------------- |
 | `--scrollbar-bg`              | Scrollbar background color                |
 | `--scrollbar-thumb-bg`        | Scrollbar thumb background color          |
-| `--scrollbar-active-thumb-bg` | Scrollbar thumb background color (active) | 
+| `--scrollbar-active-thumb-bg` | Scrollbar thumb background color (active) |

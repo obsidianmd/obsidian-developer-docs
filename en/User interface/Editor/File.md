@@ -14,4 +14,4 @@ Styling for open files in the Editor
 | `--file-header-font-size`   | File header font size                                 |
 | `--file-header-font-weight` | File header font weight                               |
 | `--file-header-border`      | File header `border-bottom` property                  |
-| `--file-header-justify`     | File header text alignment, uses `justify-content`    | 
+| `--file-header-justify`     | File header text alignment, uses `justify-content`    |

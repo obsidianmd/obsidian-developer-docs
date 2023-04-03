@@ -6,7 +6,7 @@ If you are developing a complex theme, consider simplifying your selectors and u
 
 As new versions of Obsidian are released, new interface patterns and design tweaks may affect your theme. You can minimize maintenance work by following these guidelines.
 
-- Use [[App CSS variables]] rather than 
+- Use [[App CSS variables]] rather than
 - Use low-specificity selectors
 - Keep it simple
 

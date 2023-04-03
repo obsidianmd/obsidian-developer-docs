@@ -10,4 +10,4 @@ Styling for vault name in the file navigator
 | -------------------------- | ----------- |
 | `--vault-name-font-size`   | Font size   |
 | `--vault-name-font-weight` | Font weight |
-| `--vault-name-color`       | Text color  | 
+| `--vault-name-color`       | Text color  |

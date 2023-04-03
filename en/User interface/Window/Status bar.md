@@ -12,5 +12,5 @@ cssClass: reference
 | `--status-bar-font-size`      | Status bar font size           |
 | `--status-bar-text-color`     | Status bar text color          |
 | `--status-bar-position`       | Status bar `position` property |
-| `--status-bar-radius`         | Status bar radius              | 
+| `--status-bar-radius`         | Status bar radius              |
 | `--status-bar-scroll-padding` | Status bar scroll padding      |

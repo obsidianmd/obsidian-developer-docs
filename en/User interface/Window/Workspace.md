@@ -6,4 +6,4 @@ cssClass: reference
 
 | Variable                             | Description                        |
 | ------------------------------------ | ---------------------------------- |
-| `--workspace-background-translucent` | Background for translucent windows | 
+| `--workspace-background-translucent` | Background for translucent windows |

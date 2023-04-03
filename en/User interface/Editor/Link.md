@@ -2,7 +2,7 @@
 cssClass: reference
 ---
 
-Obsidian supports three different types of links: 
+Obsidian supports three different types of links:
 
 - **Resolved internal links** link to an existing note in Obsidian
 - **Unresolved internal links** link to a non-existing note in Obsidian
@@ -25,4 +25,4 @@ Obsidian supports three different types of links:
 | `--link-external-color`              | External link text color                  |
 | `--link-external-color-hover`        | External link text color (hover)          |
 | `--link-external-decoration`         | External link text decoration             |
-| `--link-external-decoration-hover`   | External link text decoration (hover)     | 
+| `--link-external-decoration-hover`   | External link text decoration (hover)     |

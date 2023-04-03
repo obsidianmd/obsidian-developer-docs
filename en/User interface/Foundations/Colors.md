@@ -22,7 +22,7 @@ Each variable is applied to both `.theme-light` and `.theme-dark` classes with a
 
 The base color palette is a monochromatic set of values from light to dark, used for the backgrounds and borders throughout the app.
 
-| Variable           | Default value (light mode) | Default value (dark mode) | 
+| Variable           | Default value (light mode) | Default value (dark mode) |
 | ------------------ | -------------------------- | ------------------------- |
 | `--color-base-00`  | `#ffffff`                  | `#1e1e1e`                 |
 | `--color-base-05`  | `#fcfcfc`                  | `#212121`                 |
@@ -79,21 +79,20 @@ The example above uses the standard color variable to set the text color, and th
 | `--color-cyan-rgb`   | `0, 191, 188`              | `83, 223, 221`            |
 | `--color-blue-rgb`   | `8, 109, 221`              | `2, 122, 255`             |
 | `--color-purple-rgb` | `120, 82, 238`             | `168, 130, 255`           |
-| `--color-pink-rgb`   | `213, 57, 132`             | `250, 153, 205`           | 
+| `--color-pink-rgb`   | `213, 57, 132`             | `250, 153, 205`           |
 
 ## Black and white
 
 These variables define RGB values for black and white. These are used primarily to create semi-translucent masks with RGBA. We do not recommend changing these variables.
 
-
 | Variable         | Default value (light mode) | Default value (dark mode) |
 | ---------------- | -------------------------- | ------------------------- |
 | `--mono-rgb-0`   | `255, 255, 255`            | `0, 0, 0`                 |
-| `--mono-rgb-100` | `0, 0, 0`                  | `255, 255, 255`           | 
+| `--mono-rgb-100` | `0, 0, 0`                  | `255, 255, 255`           |
 
 ## Semantic color mappings
 
-Color mappings are defined on the `body` element and are semantic names that refer to the [[App CSS variables#Theme colors|theme colors]] defined above. These semantic color names are used 
+Color mappings are defined on the `body` element and are semantic names that refer to the [[App CSS variables#Theme colors|theme colors]] defined above. These semantic color names are used
 
 #### Background and border colors
 
@@ -111,10 +110,9 @@ Color mappings are defined on the `body` element and are semantic names that ref
 | `--background-modifier-error`        | Error background              |
 | `--background-modifier-error-hover`  | Error background (hovered)    |
 | `--background-modifier-success-rgb`  | Success background, RGB value |
-| `--background-modifier-success`      | Success background            | 
+| `--background-modifier-success`      | Success background            |
 | `--background-modifier-message`      | Messages background           |
 | `--background-modifier-form-field`   | Form field background         |
-
 
 #### Buttons and interactive element colors
 
@@ -123,7 +121,7 @@ Color mappings are defined on the `body` element and are semantic names that ref
 | `--interactive-normal`       | Background for standard interactive elements            |
 | `--interactive-hover`        | Background for standard interactive elements (hover)    |
 | `--interactive-accent`       | Background for accented interactive elements            |
-| `--interactive-accent-hsl`   | Background for accented interactive elements, HSL units | 
+| `--interactive-accent-hsl`   | Background for accented interactive elements, HSL units |
 | `--interactive-accent-hover` | Background for accented interactive elements (hover)    |
 
 ## Text colors
@@ -145,4 +143,4 @@ Color mappings are defined on the `body` element and are semantic names that ref
 | Variable              | Description                 |
 | --------------------- | --------------------------- |
 | `--text-selection`    | Selected text background    |
-| `--text-highlight-bg` | Highlighted text background | 
+| `--text-highlight-bg` | Highlighted text background |

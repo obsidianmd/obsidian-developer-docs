@@ -18,4 +18,4 @@ cssClass: reference
 | `--tag-border-width`       | Tag border width         |
 | `--tag-padding-x`          | Tag left/right padding       |
 | `--tag-padding-y`          | Tag top/down padding         |
-| `--tag-radius`             | Tag radius                   | 
+| `--tag-radius`             | Tag radius                   |

@@ -23,8 +23,7 @@ cssClass: reference
 | `--tab-radius`                            | Tab outer radius                             |
 | `--tab-radius-active`                     | Tab outer radius (active tab)                |
 | `--tab-width`                             | Tab default width                            |
-| `--tab-max-width`                         | Tab maximum width                            | 
-
+| `--tab-max-width`                         | Tab maximum width                            |
 
 ### Tab stacks
 
@@ -39,4 +38,4 @@ Styling for stacked tabs
 | `--tab-stacked-text-align`        | Stacked tab text alignment    |
 | `--tab-stacked-text-transform`    | Stacked tab text transform    |
 | `--tab-stacked-text-writing-mode` | Stacked tab text writing mode |
-| `--tab-stacked-shadow`            | Stacked tab shadow            | 
+| `--tab-stacked-shadow`            | Stacked tab shadow            |

@@ -12,4 +12,4 @@ Styling for dividers and resize handles between interface elements such as sideb
 | `--divider-color-hover`     | Divider border color (hover) |
 | `--divider-width`           | Divider border width         |
 | `--divider-width-hover`     | Divider border width (hover) |
-| `--divider-vertical-height` | Divider vertical height      | 
+| `--divider-vertical-height` | Divider vertical height      |

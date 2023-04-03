@@ -38,7 +38,7 @@ Styling for bolded text
 | Variable        | Description             |
 | --------------- | ----------------------- |
 | `--bold-weight` | Bolded text font weight |
-| `--bold-color`  | Bolded text color       | 
+| `--bold-color`  | Bolded text color       |
 
 ## Italic
 
@@ -46,13 +46,13 @@ Styling for italic text
 
 | Variable         | Description       |
 | ---------------- | ----------------- |
-| `--italic-color` | Italic text color | 
+| `--italic-color` | Italic text color |
 
 ## Line heights
 
 | Variable               | Default value | Description                                                            |
 | ---------------------- | ------------- | ---------------------------------------------------------------------- |
-| `--line-height-normal` | `1.5`         | Default line height                                                    | 
+| `--line-height-normal` | `1.5`         | Default line height                                                    |
 | `--line-height-tight`  | `1.3`         | Used in search results, tree items, tooltips, and other smaller spaces |
 
 ## Headings
@@ -103,4 +103,4 @@ Styling for headings, from H1 to H6
 | `--h3-weight`          | H3 font weight                               |
 | `--h4-weight`          | H4 font weight                               |
 | `--h5-weight`          | H5 font weight                               |
-| `--h6-weight`          | H6 font weight                               | 
+| `--h6-weight`          | H6 font weight                               |

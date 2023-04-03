@@ -13,4 +13,4 @@ E.g. quick switcher, command palette
 | `--prompt-max-width`    | Prompt max width (for narrow windows) |
 | `--prompt-max-height`   | Prompt max height                     |
 | `--prompt-border-width` | Prompt border width                   |
-| `--prompt-border-color` | Prompt border color                  | 
+| `--prompt-border-color` | Prompt border color                  |

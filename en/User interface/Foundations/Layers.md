@@ -16,5 +16,5 @@ Controls the z-index position of elements, to defined the stacking order
 | `--layer-modal`        | `50`          |
 | `--layer-notice`       | `60`          |
 | `--layer-menu`         | `65`          |
-| `--layer-tooltip`      | `70`          | 
+| `--layer-tooltip`      | `70`          |
 | `--layer-dragged-item` | `80`          |

@@ -17,4 +17,4 @@ Modals such as Settings, Community Plugins, Community Themes, Dialog boxes.
 | `--modal-border-width`            | Modal border thickness               |
 | `--modal-border-color`            | Modal border color                   |
 | `--modal-radius`                  | Modal radius                         |
-| `--modal-community-sidebar-width` | Community plugin/theme sidebar width | 
+| `--modal-community-sidebar-width` | Community plugin/theme sidebar width |

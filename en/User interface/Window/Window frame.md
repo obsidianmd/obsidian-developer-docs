@@ -15,4 +15,4 @@ Custom titlebar can be turned on by user with `Appearance Settings → Window fr
 | `--titlebar-text-color`         | Titlebar text color                        |
 | `--titlebar-text-color-focused` | Titlebar text color (focused window)       |
 | `--titlebar-text-weight`        | Titlebar font weight                       |
-| `--header-height`               | Default height for frame elements          | 
+| `--header-height`               | Default height for frame elements          |

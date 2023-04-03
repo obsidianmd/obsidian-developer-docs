@@ -17,7 +17,7 @@ cssClass: reference
 | `--callout-title-padding`      | Callout title padding                                       |
 | `--callout-title-size`         | Callout title font size                                     |
 | `--callout-content-padding`    | Callout content padding                                     |
-| `--callout-content-background` | Callout content background color                            | 
+| `--callout-content-background` | Callout content background color                            |
 
 #### Callout type colors
 
@@ -37,5 +37,5 @@ Callout types have unique icons and colors. Types also have aliases, listed in d
 | `--callout-summary`   | `summary`, `abstract`, `tldr`     |
 | `--callout-tip`       | `tip`, `hint`                     |
 | `--callout-todo`      | `todo`                            |
-| `--callout-warning`   | `warning`, `caution`, `attention` | 
+| `--callout-warning`   | `warning`, `caution`, `attention` |
 | `--callout-quote`     | `quote`, `cite`                   |

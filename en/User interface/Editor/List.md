@@ -15,6 +15,6 @@ Styling for numbered (ordered) and bullet (unordered) lists
 | `--list-marker-color-collapsed` | List marker color for collapsed items         |
 | `--list-bullet-border`          | List bullet border                            |
 | `--list-bullet-radius`          | List bullet radius                            |
-| `--list-bullet-size`            | List bullet width/height                      | 
+| `--list-bullet-size`            | List bullet width/height                      |
 | `--list-bullet-transform`       | List bullet `transform` property                                              |
 | `--list-numbered-style`         | `list-style-type` for numbered lists                                          |
