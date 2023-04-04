@@ -1,11 +1,13 @@
-Obsidian Publish allows you to customize the look of your site using CSS. This guide explains how you can create a custom Publish theme.
+Obsidian Publish gives you several options for customizing how your Publish site looks.
+
+Obsidian Publish allows you to customize the look of your site using CSS.
 
 The following elements can be turned on or off in the Publish site settings and influence the layout of the site.
 
 #### Reading experience
 
 - **Readable line length** sets a maximum width for notes and centers the content on wide screens.
-- **Theme toggle** displays a switch for light/dark mode.
+- **Theme toggle** displays a switch for light and dark mode.
 - **Stacked notes** enables notes to stack and scroll horizontally when links are clicked, similar to [Tab stacks](https://help.obsidian.md/User+interface/Use+tabs+in+Obsidian#Stack+tab+groups) in the Obsidian app.
 
 #### Components
@@ -23,4 +25,4 @@ Theming for Obsidian Publish is made simple with CSS variables. [Learn more abou
 The list of CSS variables available for customization fall into two groups:
 
 - [[App CSS variables]] are inherited from the Obsidian app theme. These primarily control the colors and styling of the content.
-- [[Publish CSS variables]] control the elements specific to Obsidian Publish.
+- [[CSS variables for Obsidian Publish]] control the elements specific to Obsidian Publish.
