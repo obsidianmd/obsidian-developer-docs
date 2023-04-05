@@ -1,10 +1,10 @@
 The Obsidian app uses [Cascading Style Sheets](https://en.wikipedia.org/wiki/CSS) (CSS) to control the design of the user interface. CSS is the same markup language used for websites and web-based apps, which means you can find many resources online to help you learn how to use and edit CSS.
 
-Obsidian includes hundreds of [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) that enable consistently beautiful user interfaces.
+Obsidian includes hundreds of [[CSS variables]] that enable consistently beautiful user interfaces.
 
-## I'm building a plugin
+## For plugins
 
-By using the built-in CSS variables for you own custom elements, you can create native-looking user interfaces in your plugin that look beautiful no matter the theme.
+By using the built-in CSS variables for you own custom elements, you can create native-looking user interfaces in your plugin that look beautiful and are compatible with community themes.
 
 **styles.css**:
 
@@ -14,7 +14,7 @@ By using the built-in CSS variables for you own custom elements, you can create 
 }
 ```
 
-## I'm building a theme
+## For themes and snippets
 
 By overriding the default values for the Obsidian CSS variables, you can create beautiful themes without the need for complex CSS selectors.
 

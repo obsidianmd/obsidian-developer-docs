@@ -22,7 +22,7 @@ The following elements can be turned on or off in the Publish site settings and 
 
 Theming for Obsidian Publish is made simple with CSS variables. [Learn more about CSS variables and how to use them.](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
-The list of CSS variables available for customization fall into two groups:
+The list of [[CSS variables]] available for customization fall into two groups:
 
-- [[App CSS variables]] are inherited from the Obsidian app theme. These primarily control the colors and styling of the content.
-- [[CSS variables for Obsidian Publish]] control the elements specific to Obsidian Publish.
+- **App variables** are inherited from the Obsidian app theme. These primarily control the colors and styling of the content.
+- **Publish-specific variables** control the elements specific to Obsidian Publish.

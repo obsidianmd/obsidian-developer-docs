@@ -1,5 +1,7 @@
 This page lists our recommendations for building themes that are both reliable and maintainable. By following these guidelines, you can minimize the maintenance work to keep your theme updated with future versions of Obsidian.
 
+See also [[Best practices for Publish themes]].
+
 ## Use CSS variables
 
 Since most of Obsidian's user interface uses CSS variables, you can create highly expressive themes by merely overriding the built-in CSS variables.
@@ -28,9 +30,9 @@ The most common issues when maintaining a theme are due to broken selectors as a
 
 ## Keep resources local
 
-Avoid loading remote resources, such as fonts and images, that are unavailable when the user is offline. Even if the user has access to the internet, loading remote resources may violate user privacy.
+Avoid loading remote assets, such as fonts and images, that are unavailable when the user is offline. Even if the user has access to the internet, loading remote assets may violate user privacy.
 
-If you wish to submit your theme to the official Community Themes directory, your theme must not make network calls, and therefore all resources must be bundled into your theme. Learn [[How to embed fonts and images into a theme]].
+If you wish to submit your theme to the official Community Themes directory, your theme must not make network calls, and therefore all assets must be bundled into your theme. Learn [[How to embed fonts and images into a theme]].
 
 ## Avoid `!important` declarations
 
