@@ -28,9 +28,9 @@ The most common issues when maintaining a theme are due to broken selectors as a
 
 ## Keep resources local
 
-Avoid loading remote resources, such as fonts and images, that are unavailable when the user is offline.
+Avoid loading remote resources, such as fonts and images, that are unavailable when the user is offline. Even if the user has access to the internet, loading remote resources may violate user privacy.
 
-Even if the user has access to the internet, loading remote resources may violate user privacy.
+If you wish to submit your theme to the official Community Themes directory, your theme must not make network calls, and therefore all resources must be bundled into your theme. Learn [[How to embed fonts and images into a theme]].
 
 ## Avoid `!important` declarations
 
