@@ -28,14 +28,14 @@
 }
 
 .hide-title .page-header {
-  display:none;
+	display:none;
 }
 .hide-title.markdown-preview-view div:nth-child(4) h1 {
-  font-weight: var(--inline-title-weight);
-  font-size: var(--inline-title-size);
-  letter-spacing: -0.02em;
-  margin-top: 0;
-  padding-bottom: 0;
-  border: none;
-  line-height: 1.1;
+	font-weight: var(--inline-title-weight);
+	font-size: var(--inline-title-size);
+	letter-spacing: -0.02em;
+	margin-top: 0;
+	padding-bottom: 0;
+	border: none;
+	line-height: 1.1;
 }
