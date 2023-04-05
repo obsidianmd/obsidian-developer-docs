@@ -31,11 +31,15 @@
 	display:none;
 }
 .hide-title.markdown-preview-view div:nth-child(4) h1 {
-	font-weight: var(--inline-title-weight);
-	font-size: var(--inline-title-size);
-	letter-spacing: -0.02em;
-	margin-top: 0;
-	padding-bottom: 0;
-	border: none;
-	line-height: 1.1;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+    font-variant: var(--page-title-variant);
+    letter-spacing: -0.015em;
+    line-height: var(--page-title-line-height);
+    font-size: var(--page-title-size);
+    color: var(--page-title-color);
+    font-weight: var(--page-title-weight);
+    font-style: var(--page-title-style);
+    font-family: var(--page-title-font);
+    border: none;
 }
