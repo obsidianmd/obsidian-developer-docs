@@ -1,3 +1,7 @@
+---
+cssClass: reference
+---
+
 ### Obsidian App and Obsidian Publish are different contexts
 
 Obsidian Publish shares common code and UI principles with Obsidian App, but also has some important differences that you should consider when creating themes. A few rules of thumb to keep in mind:
