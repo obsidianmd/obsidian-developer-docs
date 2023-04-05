@@ -1,3 +1,9 @@
+---
+cssClass: hide-title
+---
+
+# Obsidian developer documentation
+
 Learn how to build plugins and themes for Obsidian. Improve your personal experience or share your creations with the community.
 
 ## Plugins
