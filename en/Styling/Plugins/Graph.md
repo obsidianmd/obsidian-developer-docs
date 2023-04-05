@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables used by the [Graph view](https://help.obsidian.md/Plugins/Graph+view) plugin.
 
+## CSS variables
+
 | Variable                  | Description           |
 | ------------------------- | --------------------- |
 | `--graph-controls-width`  | Graph controls width  |

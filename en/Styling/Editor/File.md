@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for open files in the editor.
 
+## CSS variables
+
 | Variable                    | Description                                           |
 | --------------------------- | ----------------------------------------------------- |
 | `--file-line-width`         | Width of a line when readable line width is turned on |

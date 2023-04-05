@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for indentation guides. Indentation guides visualize the indentation level in nested lists.
 
+## CSS variables
+
 | Variable                           | Description                             |
 | ---------------------------------- | --------------------------------------- |
 | `--indentation-guide-width`        | Indentation guide border width          |

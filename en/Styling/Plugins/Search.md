@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables used by the [Search](https://help.obsidian.md/Plugins/Search) plugin.
 
+## CSS variables
+
 | Variable                      | Description                        |
 | ----------------------------- | ---------------------------------- |
 | `--search-clear-button-color` | Clear search button color          |

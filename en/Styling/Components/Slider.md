@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for slider controls.
 
+## CSS variables
+
 | Variable                      | Description                     |
 | ----------------------------- | ------------------------------- |
 | `--slider-thumb-border-width` | Slider thumb border width       |

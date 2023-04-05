@@ -2,13 +2,15 @@
 cssClass: reference
 ---
 
-This page lists CSS variables for links. 
+This page lists CSS variables for links.
 
 Obsidian supports three different types of links:
 
 - **Resolved internal links** link to an existing note.
 - **Unresolved internal links** link to a non-existing note.
 - **External links** link to an external URL or URI.
+
+## CSS variables
 
 | Variable                             | Description                               |
 | ------------------------------------ | ----------------------------------------- |

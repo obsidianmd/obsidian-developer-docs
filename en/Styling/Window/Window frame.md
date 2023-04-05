@@ -7,6 +7,8 @@ This page lists CSS variables for the window frame, including the title bar.
 > [!note]
 > To see the title bar, you need to change **Settings → Appearance → Window frame style** to **Obsidian frame**.
 
+## CSS variables
+
 | Variable                        | Description                                |
 | ------------------------------- | ------------------------------------------ |
 | `--titlebar-background`         | Titlebar background color                  |

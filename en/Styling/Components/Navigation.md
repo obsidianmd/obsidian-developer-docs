@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for navigational items, such as files and folders in [[File explorer]].
 
+## CSS variables
+
 | Variable                              | Description                                 |
 | ------------------------------------- | ------------------------------------------- |
 | `--nav-item-size`                     | Nav item font size                          |

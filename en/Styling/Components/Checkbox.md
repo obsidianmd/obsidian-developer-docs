@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for checkboxes and text inside of task lists.
 
+## CSS variables
+
 | Variable                        | Description                                |
 | ------------------------------- | ------------------------------------------ |
 | `--checkbox-radius`             | Checkbox radius                            |

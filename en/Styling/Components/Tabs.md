@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for tabs.
 
+## CSS variables
+
 | Variable                                  | Description                                  |
 | ----------------------------------------- | -------------------------------------------- |
 | `--tab-background-active`                 | Tab background color (active tab)            |

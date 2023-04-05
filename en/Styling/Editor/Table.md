@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for tables.
 
+## CSS variables
+
 | Variable                            | Description                           |
 | ----------------------------------- | ------------------------------------- |
 | `--table-background`                | Table background color                |

@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for popovers and file previews.
 
+## CSS variables
+
 | Variable               | Description             |
 | ---------------------- | ----------------------- |
 | `--popover-width`      | Popover default width   |

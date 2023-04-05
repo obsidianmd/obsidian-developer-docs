@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables used by the [Canvas](https://help.obsidian.md/Plugins/Canvas) plugin.
 
+## CSS variables
+
 | Variable                    | Description                  |
 | --------------------------- | ---------------------------- |
 | `--canvas-background`       | Canvas background color      |

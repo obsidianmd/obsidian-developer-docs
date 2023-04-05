@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for the [Ribbon](https://help.obsidian.md/User+interface/Workspace/Ribbon).
 
+## CSS variables
+
 | Variable                        | Description                                 |
 | ------------------------------- | ------------------------------------------- |
 | `--ribbon-background`           | Ribbon background color                     |

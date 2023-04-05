@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for code.
 
+## CSS variables
+
 | Variable             | Description           |
 | -------------------- | --------------------- |
 | `--code-background`  | Code background color |

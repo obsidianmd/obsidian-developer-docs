@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for modals, such as the settings window and [[Dialog|dialogs]].
 
+## CSS variables
+
 | Variable                          | Description                          |
 | --------------------------------- | ------------------------------------ |
 | `--modal-background`              | Modal background color               |

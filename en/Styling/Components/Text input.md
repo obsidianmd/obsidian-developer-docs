@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for text inputs.
 
+## CSS variables
+
 | Variable               | Description        |
 | ---------------------- | ------------------ |
 | `--input-height`       | Input height       |

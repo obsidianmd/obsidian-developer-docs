@@ -2,10 +2,12 @@
 cssClass: reference
 ---
 
-This page lists CSS variables for inline titles. 
+This page lists CSS variables for inline titles.
 
 > [!note]
 > To see inline titles, you need to enable **Settings → Appearance → Show inline title**.
+
+## CSS variables
 
 | Variable                     | Description               |
 | ---------------------------- | ------------------------- |

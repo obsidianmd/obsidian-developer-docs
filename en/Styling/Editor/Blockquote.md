@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for blockquotes.
 
+## CSS variables
+
 | Variable                        | Description                                 |
 | ------------------------------- | ------------------------------------------- |
 | `--blockquote-background-color` | Blockquote background color                 |

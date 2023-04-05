@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables toggles.
 
+## CSS variables
+
 | Variable                  | Description                   |
 | ------------------------- | ----------------------------- |
 | `--toggle-border-width`   | Toggle border width           |

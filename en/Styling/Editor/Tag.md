@@ -4,6 +4,8 @@ cssClass: reference
 
 This page lists CSS variables for tags.
 
+## CSS variables
+
 | Variable                   | Description                  |
 | -------------------------- | ---------------------------- |
 | `--tag-size`               | Tag font size                |

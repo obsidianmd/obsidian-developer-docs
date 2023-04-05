@@ -2,7 +2,9 @@
 cssClass: reference
 ---
 
-This page lists CSS variables for ordered and unordered lists. 
+This page lists CSS variables for ordered and unordered lists.
+
+## CSS variables
 
 | Variable                        | Description                                   |
 | ------------------------------- | --------------------------------------------- |
