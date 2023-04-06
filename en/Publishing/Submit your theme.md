@@ -29,8 +29,7 @@ To review your theme, we need to access to the source code on GitHub. If you're 
 
 In this step, you'll submit your theme to the Obsidian team for review.
 
-1. Fork the [obsidian-releases](https://github.com/obsidianmd/obsidian-releases) repository on GitHub. For more information on how to fork a repository, refer to [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-2. In `community-css-themes.json`, create a new entry in the JSON array. The following example shows the entry for the [Minimal](https://github.com/kepano/obsidian-minimal) theme.
+1. In [community-plugins.json](https://github.com/obsidianmd/obsidian-releases/edit/master/community-plugins.json), add a new entry at the end of the JSON array. The following example shows the entry for the [Minimal](https://github.com/kepano/obsidian-minimal) theme.
 
    ```json
    {
@@ -38,32 +37,36 @@ In this step, you'll submit your theme to the Obsidian team for review.
      "author": "kepano",
      "repo": "kepano/obsidian-minimal",
      "screenshot": "dark-simple.png",
-     "modes": ["dark", "light"],
-     "branch": "master"
+     "modes": ["dark", "light"]
    },
    ```
 
    - `name` and `author` determines how your plugin appears to the user, and should match the corresponding properties in your [[Manifest]].
    - `repo` is the path to your GitHub repository. For example, if your GitHub repo is located at https://github.com/your-username/your-repo-name, the path is `your-username/your-repo-name`.
-   - `screenshot` is the path to a screenshot of your theme.
+   - `screenshot` is the path to a screenshot of your theme. The screenshot looks best with a 16:9 aspect ratio. We recommend an image size of 512px by 288px for fast loading.
    - `modes` lists the color modes that your theme supports.
-   - (Optional) `branch` lets you specify the Git branch you want to use. It defaults to `master`, if omitted.
 
    Remember to add a comma after the closing brace, `}`, of the previous entry.
 
-3. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
-4. Follow the instructions in the description field for the pull request to create a pull request from the required template.
-5. Click **Create pull request**.
-6. Fill in the details in the description for the pull request. For the checkboxes, insert an `x` between the brackets, `[x]`, to mark them as done.
-7. Click **Create pull request** (for the last time 🤞).
+2. Select **Commit changes...** in the upper-right corner.
+3. Select **Propose changes**.
+4. Select **Create pull request**.
+5. Select **Preview**, and then select **Community Theme**.
+6. Click **Create pull request**.
+7. In the name of the pull request, enter "Add [...] theme", where [...] is the name of your theme.
+8. Fill in the details in the description for the pull request. For the checkboxes, insert an `x` between the brackets, `[x]`, to mark them as done.
+9. Click **Create pull request** (for the last time 🤞).
 
-You've now submitted your theme to the Obsidian theme directory. Sit back and wait for the team to review your plugin. The time it takes to review your theme depends on the current workload of the Obsidian team. The team is still small, so please be patient while you wait for your plugin to be reviewed.
+You've now submitted your theme to the Obsidian theme directory. Sit back and wait for us to review your submission.
 
-## Step 3: Address review comments
+> [!question] How long does it take to review my theme?
+> The time it takes to review your submission depends on the current workload of the Obsidian team. The team is still small, so please be patient while you wait for your theme to be reviewed. We're currently unable to give any estimates on when we'll be able to review your submission.
+
+## Step 4: Address review comments
 
 Once a reviewer has reviewed your theme, they'll add a comment to your pull request with the result of the review. The reviewer may require that you update your theme, or they can offer suggestions on how you can improve it.
 
-Address any required changes and update the GitHub release with the new changes.
+Address any required changes and update the GitHub release with the new changes. Leave a comment on the PR to let us know you've addressed the feedback. Don't open a new PR.
 
 We'll publish the theme as soon we've verified that all required changes have been addressed.
 

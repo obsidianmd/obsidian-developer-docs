@@ -28,54 +28,61 @@ To review your plugin, we need to access to the source code on GitHub. If you're
 
 In this step, you'll prepare a release for your plugin that's ready to be submitted.
 
-1. In `manifest.json`, update `version` to a new version that follows the [Semantic Versioning](https://semver.org/) specification.
-2. [Create a GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release).
-   - The  "Tag version" of the release must match the version in your `manifest.json`.
-   - Don't include a `v` in the tag version.
-3. Enter a name for the release, and describe it in the description field.
-4. Upload the following plugin assets to the release, as binary attachments:
-	- `main.js`
-	- `manifest.json`
-	- `styles.css` (optional)
+1. In `manifest.json`, update `version` to a new version that follows the [Semantic Versioning](https://semver.org/) specification, for example `1.0.0` for your initial release. You can only use numbers and periods (`.`).
+2. [Create a GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release). The "Tag version" of the release must match the version in your `manifest.json`.
+3. Enter a name for the release, and describe it in the description field. Obsidian doesn't use the release name for anything, so feel free to name it however you like.
+4. Upload the following plugin assets to the release as binary attachments:
+
+   - `main.js`
+   - `manifest.json`
+   - `styles.css` (optional)
 
 ## Step 3: Submit your plugin for review
 
 In this step, you'll submit your plugin to the Obsidian team for review.
 
-1. Fork the [obsidian-releases](https://github.com/obsidianmd/obsidian-releases) repository on GitHub. For more information on how to fork a repository, refer to [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-2. In `community-plugins.json`, create a new entry in the JSON array. The following example shows the entry for the [Recent Files](https://github.com/tgrosinger/recent-files-obsidian) plugin.
+1. In [community-plugins.json](https://github.com/obsidianmd/obsidian-releases/edit/master/community-plugins.json), add a new entry at the end of the JSON array.
 
    ```json
    {
-     "id": "recent-files-obsidian",
-     "name": "Recent Files",
-     "author": "Tony Grosinger",
-     "description": "Display a list of recently opened files",
-     "repo": "tgrosinger/recent-files-obsidian",
-     "branch": "main"
+     "id": "doggo-dictation",
+     "name": "Doggo Dictation",
+     "author": "John Dolittle",
+     "description": "Transcribes dog speech into notes.",
+     "repo": "drdolittle/doggo-dictation"
    }
    ```
 
    - `id`, `name`, `author`, and `description` determines how your plugin appears to the user, and should match the corresponding properties in your [[Manifest]].
    - `id` is unique to your plugin. Search `community-plugins.json` to confirm that there's no existing plugin with the same id.
    - `repo` is the path to your GitHub repository. For example, if your GitHub repo is located at https://github.com/your-username/your-repo-name, the path is `your-username/your-repo-name`.
-   - (Optional) `branch` lets you specify the Git branch you want to use. It defaults to `master`, if omitted.
 
    Remember to add a comma after the closing brace, `}`, of the previous entry.
 
-3. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
-4. Follow the instructions in the description field for the pull request to create a pull request from the required template.
-5. Click **Create pull request**.
-6. Fill in the details in the description for the pull request. For the checkboxes, insert an `x` between the brackets, `[x]`, to mark them as done.
-7. Click **Create pull request** (for the last time 🤞).
+2. Select **Commit changes...** in the upper-right corner.
+3. Select **Propose changes**.
+4. Select **Create pull request**.
+5. Select **Preview**, and then select **Community Plugin**.
+6. Click **Create pull request**.
+7. In the name of the pull request, enter "Add [...] plugin", where [...] is the name of your plugin.
+8. Fill in the details in the description for the pull request. For the checkboxes, insert an `x` between the brackets, `[x]`, to mark them as done.
+9. Click **Create pull request** (for the last time 🤞).
 
-You've now submitted your plugin to the Obsidian plugin directory. Sit back and wait for the team to review your plugin. The time it takes to review your plugin depends on the current workload of the Obsidian team. The team is still small, so please be patient while you wait for your plugin to be reviewed.
+You've now submitted your plugin to the Obsidian plugin directory. Sit back and wait for an initial validation by our friendly bot. It may take a few minutes before the results are ready.
+
+- If you see a **Ready to review** label on your PR, your submission has passed the automatic validation.
+- If you see a **Validation failed** label on your PR, you need to address all listed issues until the bot assigns a **Ready to review** label.
+
+Once your submission is ready to review, you can sit back and wait for the Obsidian team to review it.
+
+> [!question] How long does it take to review my plugin?
+> The time it takes to review your submission depends on the current workload of the Obsidian team. The team is still small, so please be patient while you wait for your plugin to be reviewed. We're currently unable to give any estimates on when we'll be able to review your submission.
 
 ## Step 4: Address review comments
 
 Once a reviewer has reviewed your plugin, they'll add a comment to your pull request with the result of the review. The reviewer may require that you update your plugin, or they can offer suggestions on how you can improve it.
 
-Address any required changes and update the GitHub release with the new changes.
+Address any required changes and update the GitHub release with the new changes. Leave a comment on the PR to let us know you've addressed the feedback. Don't open a new PR.
 
 We'll publish the plugin as soon we've verified that all required changes have been addressed.
 
