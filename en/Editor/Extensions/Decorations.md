@@ -5,7 +5,7 @@ By the end of this page, you'll be able to:
 - Understand how to use decorations to change the editor appearance.
 - Understand the difference between providing decoration using state fields and view plugins.
 
-> ![note]
+> [!note]
 > This page aims to distill the official CodeMirror 6 documentation for Obsidian plugin developers. For more detailed information on state fields, refer to [Decorating the Document](https://codemirror.net/docs/guide/#decorating-the-document).
 
 ## Prerequisites
