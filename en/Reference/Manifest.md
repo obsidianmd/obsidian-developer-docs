@@ -1,3 +1,7 @@
+---
+cssClass: reference
+---
+
 This page describe the schema for the manifest, `manifest.json`.
 
 ## Properties
