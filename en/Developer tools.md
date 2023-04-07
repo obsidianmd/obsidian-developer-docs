@@ -14,6 +14,6 @@ If you run into a problem, it can be helpful to see how others have solved it. B
 
 ## Beta testing
 
-Before you [publish](publishing/submit-your-plugin.md) your plugin, you may want to let users try it out first.
+Before you [[Submit your plugin|submit your plugin]], you may want to let users try it out first.
 
 With the [BRAT](https://github.com/TfTHacker/obsidian42-brat) plugin, your beta testers can install the plugin even if it's not published yet.

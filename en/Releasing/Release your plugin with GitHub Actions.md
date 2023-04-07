@@ -119,7 +119,7 @@ Manually creating your plugin release can be time-consuming and error-prone. In 
 
 You've set up your plugin to automatically create a GitHub release whenever you create a new tag.
 
-- If this is the first release for this plugin, you're now ready to [submit your plugin](submit-your-plugin.md).
+- If this is the first release for this plugin, you're now ready to [[Submit your plugin]].
 - If this is an update to an already published plugin, your users can now update to the latest version.
 
 ## Use standard-version to automatically tag your release
