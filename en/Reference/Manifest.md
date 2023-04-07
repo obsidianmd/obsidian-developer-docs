@@ -4,24 +4,24 @@ This page describe the schema for the manifest, `manifest.json`.
 
 The following properties are available for both plugins and themes.
 
-| Property        | Type                                 | Required | Description                                                             |
-|-----------------|--------------------------------------|----------|-------------------------------------------------------------------------|
-| `author`        | `string`                             | **Yes**  | The author's name.                                                      |
-| `minAppVersion` | `string`                             | **Yes**  | The minimum required Obsidian version.                                  |
-| `name`          | `string`                             | **Yes**  | The display name.                                                       |
-| `version`       | `string`                             | **Yes**  | The version, using [Semantic Versioning](https://semver.org/).          |
-| `authorUrl`     | `string`                             | No       | A URL to the author's website.                                          |
-| `fundingUrl`    | `string` or [`object`](#fundingurl)  | No       | A URL or multiple URLs to where the users can support your project.     |
+| Property        | Type                                | Required | Description                                                                     |
+| --------------- | ----------------------------------- | -------- | ------------------------------------------------------------------------------- |
+| `author`        | `string`                            | **Yes**  | The author's name.                                                              |
+| `minAppVersion` | `string`                            | **Yes**  | The minimum required Obsidian version.                                          |
+| `name`          | `string`                            | **Yes**  | The display name.                                                               |
+| `version`       | `string`                            | **Yes**  | The version, using [Semantic Versioning](https://semver.org/).                  |
+| `authorUrl`     | `string`                            | No       | A URL to the author's website.                                                  |
+| `fundingUrl`    | `string` or [`object`](#fundingurl) | No       | A URL or multiple URLs to where the users can support your project financially. |
 
 ## Plugin-specific properties
 
 The following properties are only available to plugins.
 
-| Property        | Type      | Required | Description                                            |
-|-----------------|-----------|----------|--------------------------------------------------------|
-| `description`   | `string`  | **Yes**  | A description of your plugin.                          |
-| `id`            | `string`  | **Yes**  | The ID of your plugin.                                 |
-| `isDesktopOnly` | `boolean` | **Yes**  | Whether your plugin uses NodeJS or Electron APIs.      |
+| Property        | Type      | Required | Description                                       |
+| --------------- | --------- | -------- | ------------------------------------------------- |
+| `description`   | `string`  | **Yes**  | A description of your plugin.                     |
+| `id`            | `string`  | **Yes**  | The ID of your plugin.                            |
+| `isDesktopOnly` | `boolean` | **Yes**  | Whether your plugin uses NodeJS or Electron APIs. |
 
 ## fundingUrl
 
@@ -31,7 +31,7 @@ The following properties are only available to plugins.
 
 ```json
 {
-  "fundingUrl": "https://buymeacoffee.com"
+	"fundingUrl": "https://buymeacoffee.com"
 }
 ```
 
@@ -39,10 +39,10 @@ The following properties are only available to plugins.
 
 ```json
 {
-  "fundingUrl": {
-    "Buy Me a Coffee": "https://buymeacoffee.com",
-    "GitHub Sponsor": "https://github.com/sponsors",
-    "Patreon": "https://www.patreon.com/"
-  }
+	"fundingUrl": {
+		"Buy Me a Coffee": "https://buymeacoffee.com",
+		"GitHub Sponsor": "https://github.com/sponsors",
+		"Patreon": "https://www.patreon.com/"
+	}
 }
 ```
