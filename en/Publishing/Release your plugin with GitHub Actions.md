@@ -1,8 +1,7 @@
 Manually creating your plugin release can be time-consuming and error-prone. In this guide, you'll configure your plugin to use [GitHub Actions](https://github.com/features/actions) to automatically create a release when you create a new tag.
 
-:::note
-The GitHub Action workflow was originally created and shared by [argentum](https://forum.obsidian.md/u/argentum). For more information and other variations, refer to the [forum announcement](https://forum.obsidian.md/t/using-github-actions-to-release-plugins/7877/3).
-:::
+> [!note]
+> The GitHub Action workflow was originally created and shared by [argentum](https://forum.obsidian.md/u/argentum). For more information and other variations, refer to the [forum announcement](https://forum.obsidian.md/t/using-github-actions-to-release-plugins/7877/3).
 
 1. In the root directory of your plugin, create a file called `release.yml` under `.github/workflows` with the following content:
 
@@ -133,9 +132,8 @@ standard-version uses [Conventional Commits](https://www.conventionalcommits.org
 - If your commit message starts with `feat:`, it bumps the minor version.
 - If the third line of your commit message starts with `BREAKING CHANGE:`, it bumps the major version.
 
-:::tip
-If you're using Visual Studio Code, the [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) extension helps you to create Conventional Commits.
-:::
+> [!tip]
+> If you're using Visual Studio Code, the [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) extension helps you to create Conventional Commits.
 
 To enable standard-version for your plugin:
 
@@ -175,8 +173,8 @@ To make a release:
    npm run release
    ```
 
-   :::note
-   By default, if the major version is below **1**, for example in 0.3.4, `feat:` and `BREAKING CHANGE:` bump the patch and minor versions, respectively, rather than the minor and major versions. To bump the minor and major version:
+   > [!note]
+   > By default, if the major version is below **1**, for example in 0.3.4, `feat:` and `BREAKING CHANGE:` bump the patch and minor versions, respectively, rather than the minor and major versions. To bump the minor and major version:
 
    ```bash npm2yarn
    # Release as minor
@@ -184,8 +182,6 @@ To make a release:
    # Release as major
    npm run release -- --release-as major
    ```
-
-   :::
 
 1. Push the new tag to GitHub.
 
