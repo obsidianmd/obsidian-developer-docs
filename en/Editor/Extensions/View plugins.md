@@ -16,7 +16,7 @@ View plugins are editor extensions that run _after_ the viewport has been recomp
 
 To create a view plugin, create a class that implements [PluginValue](https://codemirror.net/docs/ref/#view.PluginValue) and pass it to the [ViewPlugin.fromClass()](https://codemirror.net/docs/ref/#view.ViewPlugin^fromClass) function.
 
-```ts title="plugin.ts"
+```ts
 import {
   ViewUpdate,
   PluginValue,

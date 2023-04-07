@@ -29,7 +29,7 @@ There are two methods for reading the content of a file: [[obsidian.vault.read|r
 
 The following example reads the content of all Markdown files in the Vault and returns the average document size:
 
-```ts title="main.ts"
+```ts
 import { Notice, Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {

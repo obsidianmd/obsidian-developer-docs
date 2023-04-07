@@ -92,7 +92,7 @@ To provide decorations from a state field:
    },
    ```
 
-```ts title="field.ts"
+```ts
 import { syntaxTree } from "@codemirror/language";
 import {
   Extension,
@@ -151,7 +151,7 @@ To manage your decorations using a view plugin:
 
 Not all updates are reasons to rebuild your decorations. The following example only rebuilds decorations whenever the underlying document or the viewport changes.
 
-```ts title="plugin.ts"
+```ts
 import { syntaxTree } from "@codemirror/language";
 import { RangeSetBuilder } from "@codemirror/state";
 import {

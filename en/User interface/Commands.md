@@ -4,12 +4,11 @@ Commands are actions that the user can perform from the [Command Palette](https:
 
 To register a new command for your plugin, call the [[obsidian.plugin_2.addcommand|addCommand()]] method inside the `onload()` method:
 
-```ts title="main.ts"
+```ts
 import { Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    // highlight-start
     this.addCommand({
       id: "print-greeting-to-console",
       name: "Print greeting to console",
@@ -17,7 +16,6 @@ export default class ExamplePlugin extends Plugin {
         console.log("Hey, you!");
       },
     });
-    // highlight-end
   }
 }
 ```
@@ -66,7 +64,6 @@ If your command needs access to the editor, you can also use the [[obsidian.comm
 this.addCommand({
   id: 'example-command',
   name: 'Example command',
-  // highlight-next-line
   editorCallback: (editor: Editor, view: MarkdownView) => {
     const sel = editor.getSelection()
 
@@ -84,7 +81,6 @@ If the editor callback can only run given under certain conditions, consider usi
 this.addCommand({
   id: 'example-command',
   name: 'Example command',
-  // highlight-next-line
   editorCheckCallback: (checking: boolean, editor: Editor, view: MarkdownView) => {
     const value = getRequiredValue();
 
@@ -114,7 +110,6 @@ In this example, the user can run the command by pressing and holding Ctrl (or C
 this.addCommand({
   id: 'example-command',
   name: 'Example command',
-  // highlight-next-line
   hotkeys: [{ modifiers: ["Mod", "Shift"], key: "a" }],
   callback: () => {
     console.log('Hey, you!');

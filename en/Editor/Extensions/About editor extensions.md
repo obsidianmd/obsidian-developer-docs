@@ -12,8 +12,8 @@ The API for building editor extensions is a bit unconventional and requires that
 
 Building editor extensions can be challenging, so before you start building one, consider whether you really need it.
 
--   If you want to change how to convert Markdown to HTML in the Reading view, consider building a [[Markdown post processing|Markdown post processor]].
--   If you want to change how the document looks and feels in Live Preview, you need to build an editor extension.
+- If you want to change how to convert Markdown to HTML in the Reading view, consider building a [[Markdown post processing|Markdown post processor]].
+- If you want to change how the document looks and feels in Live Preview, you need to build an editor extension.
 
 ## Registering editor extensions
 

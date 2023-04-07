@@ -22,7 +22,7 @@ While you don't need to use a separate framework to build a plugin, there are a 
 
 1. In `tsconfig.json`, enable JSX support on the `compilerOptions` object:
 
-   ```ts title="tsconfig.json"
+   ```ts
    {
      "compilerOptions": {
        "jsx": "react"
@@ -46,12 +46,10 @@ export const ReactView = () => {
 
 To use the React component, it needs to be mounted on a [[HTML elements]]. The following example mounts the `ReactView` component on the `this.containerEl.children[1]` element:
 
-```tsx title="view.tsx"
+```tsx
 import { ItemView, WorkspaceLeaf } from "obsidian";
-// highlight-start
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-// highlight-end
 import { ReactView } from "./ReactView";
 import { createRoot } from "react-dom/client";
 
@@ -71,18 +69,15 @@ class ExampleView extends ItemView {
   }
 
   async onOpen() {
-    // highlight-start
     const root = createRoot(this.containerEl.children[1]);
     root.render(
       <React.StrictMode>
         <ReactView />,
       </React.StrictMode>
     );
-    // highlight-end
   }
 
   async onClose() {
-    // highlight-next-line
     ReactDOM.unmountComponentAtNode(this.containerEl.children[1]);
   }
 }

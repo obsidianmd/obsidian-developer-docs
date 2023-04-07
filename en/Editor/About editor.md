@@ -9,7 +9,6 @@ const view = this.app.workspace.getActiveViewOfType(MarkdownView);
 
 // Make sure the user is editing a Markdown file.
 if (view) {
-	// highlight-next-line
 	const cursor = view.editor.getCursor();
 
 	// ...
@@ -25,23 +24,22 @@ The [[obsidian.editor.replacerange|replaceRange()]] method replaces the text bet
 
 The following command inserts today's date at the cursor position:
 
-```ts title="main.ts"
+```ts
 import { Editor, moment, Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
-	async onload() {
-		this.addCommand({
-			id: "insert-todays-date",
-			name: "Insert today's date",
-			editorCallback: (editor: Editor) => {
-				// highlight-next-line
-				editor.replaceRange(
-					moment().format("YYYY-MM-DD"),
-					editor.getCursor()
-				);
-			},
-		});
-	}
+  async onload() {
+    this.addCommand({
+      id: "insert-todays-date",
+      name: "Insert today's date",
+      editorCallback: (editor: Editor) => {
+        editor.replaceRange(
+          moment().format("YYYY-MM-DD"),
+          editor.getCursor()
+        );
+      },
+    });
+  }
 }
 ```
 
@@ -53,22 +51,20 @@ If you want to modify the selected text, use [[obsidian.editor.replaceselection|
 
 The following command reads the current selection and converts it to uppercase:
 
-```ts title="main.ts"
+```ts
 import { Editor, Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
-	async onload() {
-		this.addCommand({
-			id: "convert-to-uppercase",
-			name: "Convert to uppercase",
-			editorCallback: (editor: Editor) => {
-				// highlight-start
-				const selection = editor.getSelection();
-				editor.replaceSelection(selection.toUpperCase());
-				// highlight-end
-			},
-		});
-	}
+  async onload() {
+    this.addCommand({
+      id: "convert-to-uppercase",
+      name: "Convert to uppercase",
+      editorCallback: (editor: Editor) => {
+        const selection = editor.getSelection();
+        editor.replaceSelection(selection.toUpperCase());
+      },
+    });
+  }
 }
 ```
 

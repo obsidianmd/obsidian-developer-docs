@@ -8,7 +8,7 @@ Here's what you'll create:
 
 Here's the full source code:
 
-```ts title="main.ts"
+```ts
 import { Editor, Plugin } from "obsidian";
 import { InsertLinkModal } from "./modal";
 
@@ -31,7 +31,7 @@ export default class InsertLinkPlugin extends Plugin {
 }
 ```
 
-```ts title="modal.ts"
+```ts
 import { App, Modal, Setting } from "obsidian";
 
 export class InsertLinkModal extends Modal {

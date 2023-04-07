@@ -6,7 +6,7 @@ In this guide, you'll learn how to create a settings page like this 👇
 
 The main reason to add settings to a plugin is to store configuration that persists even after the user quits Obsidian. The following example demonstrates how to save and load settings from disk:
 
-```ts title="main.ts"
+```ts
 import { Plugin } from "obsidian";
 import { ExampleSettingTab } from "./settings";
 
@@ -115,7 +115,7 @@ this.addSettingTab(new ExampleSettingTab(this.app, this));
 
 Here, the `ExampleSettingTab` is a class that extends [[obsidian.pluginsettingtab|PluginSettingTab]]:
 
-```ts title="settings.ts"
+```ts
 import ExamplePlugin from "./main";
 import { App, PluginSettingTab, Setting } from "obsidian";
 
@@ -154,12 +154,10 @@ export class ExampleSettingTab extends PluginSettingTab {
 
 Update the settings object whenever the value of the text field changes, and then save it to disk:
 
-```ts {2,3}
+```ts
 .onChange(async (value) => {
-  // highlight-start
   this.plugin.settings.dateFormat = value;
   await this.plugin.saveSettings();
-  // highlight-end
 })
 ```
 

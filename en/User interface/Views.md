@@ -2,7 +2,7 @@ Views determine how Obsidian displays content. The file explorer, graph view, an
 
 To create a custom view, create a class that extends the [[obsidian.itemview|ItemView]] interface:
 
-```ts title="view.ts"
+```ts
 import { ItemView, WorkspaceLeaf } from "obsidian";
 
 export const VIEW_TYPE_EXAMPLE = "example-view";
@@ -44,18 +44,16 @@ Each view is uniquely identified by a text string and several operations require
 
 Custom views need to be registered when the plugin is enabled, and cleaned up when the plugin is disabled:
 
-```ts title="main.ts"
+```ts
 import { Plugin } from "obsidian";
 import { ExampleView, VIEW_TYPE_EXAMPLE } from "./view";
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    // highlight-start
     this.registerView(
       VIEW_TYPE_EXAMPLE,
       (leaf) => new ExampleView(leaf)
     );
-    // highlight-end
 
     this.addRibbonIcon("dice", "Activate view", () => {
       this.activateView();
@@ -63,7 +61,6 @@ export default class ExamplePlugin extends Plugin {
   }
 
   async onunload() {
-    // highlight-next-line
     this.app.workspace.detachLeavesOfType(VIEW_TYPE_EXAMPLE);
   }
 
@@ -86,7 +83,7 @@ The second argument to [[obsidian.plugin_2.registerview|registerView()]] is a fa
 
 > [!warning]
 > Never manage references to views in your plugin. Obsidian may call the view factory function multiple times. Avoid side effects in your view, and use `getLeavesOfType()` whenever you need to access your view instances.
-> 
+>
 > ```ts
 > this.app.workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE).forEach((leaf) => {
 >   if (leaf.view instanceof ExampleView) {

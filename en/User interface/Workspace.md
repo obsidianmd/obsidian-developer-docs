@@ -98,7 +98,7 @@ flowchart TD
 
 You can access the workspace through the [[obsidian.app|App]] object. The following example prints the type of every leaf in the workspace:
 
-```ts title="main.ts" {6-8}
+```ts
 import { Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {

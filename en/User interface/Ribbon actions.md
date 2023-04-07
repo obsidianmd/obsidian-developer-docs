@@ -2,16 +2,14 @@ The sidebar on the left side of the Obsidian interface is mainly known as the _r
 
 To add a action to the ribbon, use the [[obsidian.plugin_2.addribbonicon|addRibbonIcon()]] method:
 
-```ts title="main.ts"
+```ts
 import { Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    // highlight-start
     this.addRibbonIcon("dice", "Print to console", () => {
       console.log("Hello, you!");
     });
-    // highlight-end
   }
 }
 ```

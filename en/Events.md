@@ -2,16 +2,14 @@ Many of the interfaces in the Obsidian lets you subscribe to events throughout t
 
 Any registered event handlers need to be detached whenever the plugin unloads. The safest way to make sure this happens is to use the [[obsidian.component.registerevent|registerEvent()]] method.
 
-```ts title="main.ts"
+```ts
 import { Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    // highlight-start
     this.registerEvent(this.app.vault.on('create', () => {
       console.log('a new file has entered the arena')
     }));
-    // highlight-end
   }
 }
 ```
@@ -22,7 +20,7 @@ If you want to repeatedly call a function with a fixed delay, use the [`window.s
 
 The following example displays the current time in the status bar, updated every second:
 
-```ts {11-13}
+```ts
 import { moment, Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
@@ -33,11 +31,9 @@ export default class ExamplePlugin extends Plugin {
 
     this.updateStatusBar();
 
-    // highlight-start
     this.registerInterval(
       window.setInterval(() => this.updateStatusBar(), 1000)
     );
-    // highlight-end
   }
 
   updateStatusBar() {
@@ -48,7 +44,7 @@ export default class ExamplePlugin extends Plugin {
 
 > [!tip] Date and time
 > [Moment](https://momentjs.com/) is a popular JavaScript library for working with dates and time. Obsidian uses Moment internally, so you don't need to install it yourself. You can import it from the Obsidian API instead:
-> 
+>
 > ```ts
 > import { moment } from "obsidian";
 > ```

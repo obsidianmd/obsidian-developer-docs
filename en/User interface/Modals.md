@@ -1,6 +1,6 @@
 Modals display information and accept input from the user. To create a modal, create a class that extends [[obsidian.modal|Modal]]:
 
-```ts title="modal.ts"
+```ts
 import { App, Modal } from "obsidian";
 
 export class ExampleModal extends Modal {
@@ -25,7 +25,7 @@ export class ExampleModal extends Modal {
 
 To open a modal, create a new instance of `ExampleModal` and call [[obsidian.modal.open|open()]] on it:
 
-```ts title="main.ts"
+```ts
 import { Plugin } from "obsidian";
 import { ExampleModal } from "./modal";
 
@@ -48,7 +48,7 @@ The modal in the previous example only displayed some text. Let's look at a litt
 
 ![[modal-input.png]]
 
-```ts title="modal.ts"
+```ts
 import { App, Modal, Setting } from "obsidian";
 
 export class ExampleModal extends Modal {
@@ -69,7 +69,6 @@ export class ExampleModal extends Modal {
       .setName("Name")
       .addText((text) =>
         text.onChange((value) => {
-          // highlight-next-line
           this.result = value
         }));
 
@@ -79,10 +78,8 @@ export class ExampleModal extends Modal {
           .setButtonText("Submit")
           .setCta()
           .onClick(() => {
-            // highlight-start
             this.close();
             this.onSubmit(this.result);
-            // highlight-end
           }));
   }
 
@@ -107,7 +104,7 @@ new ExampleModal(this.app, (result) => {
 
 ![[suggest-modal.gif]]
 
-```ts title="modal.ts"
+```ts
 import { App, Notice, SuggestModal } from "obsidian";
 
 interface Book {

@@ -21,7 +21,7 @@ To build a Svelte application, you need to install the dependencies and configur
 
 1. Extend the `tsconfig.json` to enable additional type checking for common Svelte issues. The `types` property is important for TypeScript to recognize `.svelte` files.
 
-   ```json title="tsconfig.json"
+   ```json
    {
      "extends": "@tsconfig/svelte/tsconfig.json",
      "compilerOptions": {
@@ -34,20 +34,20 @@ To build a Svelte application, you need to install the dependencies and configur
 
 1. Remove the following line from your `tsconfig.json` as it conflicts with the Svelte configuration.
 
-   ```json title="tsconfig.json"
+   ```json
    "inlineSourceMap": true,
    ```
 
 1. In `esbuild.config.mjs`, add the following imports to the top of the file:
 
-   ```js title="esbuild.config.mjs"
+   ```js
    import esbuildSvelte from "esbuild-svelte";
    import sveltePreprocess from "svelte-preprocess";
    ```
 
 1. Add Svelte to the list of plugins.
 
-   ```js title="esbuild.config.mjs" {15}
+   ```js
     esbuild
     .build({
       plugins: [
@@ -65,7 +65,7 @@ To build a Svelte application, you need to install the dependencies and configur
 
 In the root directory of the plugin, create a new file called `Component.svelte`:
 
-```tsx title="Component.svelte"
+```tsx
 <script lang="ts">
   export let variable: number;
 </script>
@@ -85,7 +85,7 @@ In the root directory of the plugin, create a new file called `Component.svelte`
 
 To use the Svelte component, it needs to be mounted on an existing [[HTML elements|HTML element]]. For example, if you are mounting on a custom [[obsidian.itemview|ItemView]] in Obsidian:
 
-```ts title="view.ts"
+```ts
 import { ItemView, WorkspaceLeaf } from "obsidian";
 
 import Component from "./Component.svelte";
@@ -141,7 +141,7 @@ To create a store for your plugin and access it from within a generic Svelte com
 
 1. Create a file called `store.ts`:
 
-   ```jsx title="store.ts"
+   ```jsx
    import { writable } from "svelte/store";
    import type ExamplePlugin from "./main";
 
@@ -151,7 +151,7 @@ To create a store for your plugin and access it from within a generic Svelte com
 
 1. Configure the store:
 
-   ```ts title="view.ts" {}
+   ```ts
    import { ItemView, WorkspaceLeaf } from "obsidian";
    import type ExamplePlugin from "./main";
    import store from "./store";
@@ -177,7 +177,7 @@ To create a store for your plugin and access it from within a generic Svelte com
 
 1. To use the store in your component:
 
-   ```jsx title="Component.svelte" {}
+   ```jsx
    <script lang="ts">
      import type MyPlugin from "./main";
 

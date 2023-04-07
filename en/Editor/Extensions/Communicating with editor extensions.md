@@ -13,7 +13,7 @@ const editorView = view.editor.cm as EditorView;
 
 You can access the [[View plugins|view plugin]] instance from the `EditorView.plugin()` method.
 
-```ts title="main.ts" {8-12}
+```ts
 this.addCommand({
 	id: "example-editor-command",
 	name: "Example editor command",
@@ -34,7 +34,7 @@ this.addCommand({
 
 You can dispatch changes and [[State fields#Dispatching state effects|dispatch state effects]] directly on the editor view.
 
-```ts title="main.ts" {8-12}
+```ts
 this.addCommand({
 	id: "example-editor-command",
 	name: "Example editor command",

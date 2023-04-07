@@ -1,6 +1,6 @@
 The [[obsidian.plugin_2|Plugin]] class defines the lifecycle of a plugin and exposes the operations available to all plugins:
 
-```ts title="main.ts"
+```ts
 import { Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
@@ -26,16 +26,14 @@ To view the console:
 1. Toggle the Developer Tools by pressing Ctrl+Shift+I in Windows and Linux, or Cmd-Option-I on macOS.
 1. Click on the Console tab in the Developer Tools window.
 
-```ts title="main.ts"
+```ts
 import { Plugin } from "obsidian";
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    // highlight-next-line
     console.log('loading plugin')
   }
   async onunload() {
-    // highlight-next-line
     console.log('unloading plugin')
   }
 }
