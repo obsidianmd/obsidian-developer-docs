@@ -28,11 +28,11 @@ Avoid overly complex selectors targeting specific classes. [[#Use CSS variables]
 
 The most common issues when maintaining a theme are due to broken selectors as a result of new versions of Obsidian, which may change class names and how elements are nested.
 
-## Keep resources local
+## Keep assets local
 
 Avoid loading remote assets, such as fonts and images, that are unavailable when the user is offline. Even if the user has access to the internet, loading remote assets may violate user privacy.
 
-If you wish to submit your theme to the official Community Themes directory, your theme must not make network calls, and therefore all assets must be bundled into your theme. Learn [[How to embed fonts and images into a theme]].
+If you wish to submit your theme to the official Community Themes directory, your theme must not make network calls, and therefore all resources must be bundled into your theme. See our guide [[Embed fonts and images in your theme]].
 
 ## Avoid `!important` declarations
 
