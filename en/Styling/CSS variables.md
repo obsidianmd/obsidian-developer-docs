@@ -4,7 +4,7 @@ Abstracted variables for colors, spacing, typography and more
 
 - [[Colors]]
 - [[Cursor]]
-- [[Icons]]
+- [[Styling/Foundations/Icons]]
 - [[Layers]]
 - [[Spacing]]
 - [[Surfaces]]
@@ -62,9 +62,9 @@ Variables related to the window chrome for the Obsidian app
 - [[Divider]]
 - [[Ribbon]]
 - [[Scrollbar]]
-- [[Status bar]]
+- [[Styling/Window/Status bar]]
 - [[Window frame]]
-- [[Workspace]]
+- [[Styling/Window/Workspace]]
 
 ### Obsidian Publish
 
