@@ -1,7 +1,7 @@
 Learn how to include assets, such as fonts and images, in your theme.
 
 > [!warning] Loading remote content
-> For Obsidian to work offline and to preserve user privacy, themes aren't allowed to load remote content over the network. For more information, refer to [[Theme guidelines#Keep resources local]]
+> For Obsidian to work offline and to preserve user privacy, themes [[Developer policies|aren't allowed]] to load remote content over the network. For more information, refer to [[Theme guidelines#Keep resources local]]
 
 ## Use data URLs
 
