@@ -2,12 +2,13 @@
 
 Abstracted variables for colors, spacing, typography and more
 
+- [[Borders]]
 - [[Colors]]
 - [[Cursor]]
-- [[en/Reference/CSS variables/Foundations/Icons]]
+- [[en/Reference/CSS variables/Foundations/Icons|Icons]]
 - [[Layers]]
+- [[Radiuses]]
 - [[Spacing]]
-- [[Surfaces]]
 - [[Typography]]
 
 ### Components
@@ -18,6 +19,7 @@ Interactive components used throughout the app
 - [[Checkbox]]
 - [[Color input]]
 - [[Dialog]]
+- [[Dragging]]
 - [[Indentation guides]]
 - [[Modal]]
 - [[Navigation]]
@@ -62,9 +64,9 @@ Variables related to the window chrome for the Obsidian app
 - [[Divider]]
 - [[Ribbon]]
 - [[Scrollbar]]
-- [[en/Reference/CSS variables/Window/Status bar]]
+- [[en/Reference/CSS variables/Window/Status bar|Status bar]]
 - [[Window frame]]
-- [[en/Reference/CSS variables/Window/Workspace]]
+- [[en/Reference/CSS variables/Window/Workspace|Workspace]]
 
 ### Obsidian Publish
 

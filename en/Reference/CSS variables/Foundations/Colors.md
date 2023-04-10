@@ -6,7 +6,7 @@ The Obsidian color palette defines a range of colors used in the app.
 
 ## Base colors
 
-The base colors is a neutral color palette ranging from light to dark.
+The base colors is a neutral color palette ranging from light to dark. These values should typically only be defined by themes.
 
 | Variable           | Default value (light mode) | Default value (dark mode) |
 | ------------------ | -------------------------- | ------------------------- |
@@ -77,7 +77,7 @@ Black and white colors let you create masks with opacity.
 | `--mono-rgb-0`   | `255, 255, 255`            | `0, 0, 0`                 |
 | `--mono-rgb-100` | `0, 0, 0`                  | `255, 255, 255`           |
 
-> [!important]
+> [!warning]
 > Avoid changing the value of black and white variables.
 
 ## Semantic colors
