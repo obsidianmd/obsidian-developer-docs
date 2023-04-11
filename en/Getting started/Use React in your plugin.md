@@ -99,7 +99,7 @@ Another alternative is to create a React context for the app to make it globally
    import * as React from "react";
    import { App } from 'obsidian';
 
-   export const AppContext = React.createContext<App>(undefined);
+   export const AppContext = React.createContext<App | undefined>(undefined);
    ```
 
 1. Wrap the `ReactView` with a context provider and pass the app as the value.
