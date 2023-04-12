@@ -5,7 +5,7 @@ Abstracted variables for colors, spacing, typography and more
 - [[Borders]]
 - [[Colors]]
 - [[Cursor]]
-- [[en/Reference/CSS variables/Foundations/Icons|Icons]]
+- [[Reference/CSS variables/Foundations/Icons|Icons]]
 - [[Layers]]
 - [[Radiuses]]
 - [[Spacing]]
@@ -64,9 +64,9 @@ Variables related to the window chrome for the Obsidian app
 - [[Divider]]
 - [[Ribbon]]
 - [[Scrollbar]]
-- [[en/Reference/CSS variables/Window/Status bar|Status bar]]
+- [[Reference/CSS variables/Window/Status bar|Status bar]]
 - [[Window frame]]
-- [[en/Reference/CSS variables/Window/Workspace|Workspace]]
+- [[Reference/CSS variables/Window/Workspace|Workspace]]
 
 ### Obsidian Publish
 
