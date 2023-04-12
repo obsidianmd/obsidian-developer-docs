@@ -14,13 +14,13 @@ While you don't need to use a separate framework to build a plugin, there are a 
    npm install react react-dom
    ```
 
-1. Add type definitions for React:
+2. Add type definitions for React:
 
    ```bash
    npm install --save-dev @types/react @types/react-dom
    ```
 
-1. In `tsconfig.json`, enable JSX support on the `compilerOptions` object:
+3. In `tsconfig.json`, enable JSX support on the `compilerOptions` object:
 
    ```ts
    {
@@ -102,7 +102,7 @@ Another alternative is to create a React context for the app to make it globally
    export const AppContext = React.createContext<App | undefined>(undefined);
    ```
 
-1. Wrap the `ReactView` with a context provider and pass the app as the value.
+2. Wrap the `ReactView` with a context provider and pass the app as the value.
 
    ```tsx title="view.tsx"
    const root = createRoot(this.containerEl.children[1]);
@@ -114,7 +114,7 @@ Another alternative is to create a React context for the app to make it globally
    );
    ```
 
-1. Create a custom hook to make it easier to use the context in your components.
+3. Create a custom hook to make it easier to use the context in your components.
 
    ```tsx title="hooks.ts"
    import { AppContext } from "./context";
@@ -124,7 +124,7 @@ Another alternative is to create a React context for the app to make it globally
    };
    ```
 
-1. Use the hook in any React component within `ReactView` to access the app.
+4. Use the hook in any React component within `ReactView` to access the app.
 
    ```tsx title="ReactView.tsx"
    import * as React from "react";

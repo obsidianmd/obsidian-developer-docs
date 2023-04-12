@@ -24,7 +24,7 @@ To better understand when these methods are called, you can print a message to t
 To view the console:
 
 1. Toggle the Developer Tools by pressing Ctrl+Shift+I in Windows and Linux, or Cmd-Option-I on macOS.
-1. Click on the Console tab in the Developer Tools window.
+2. Click on the Console tab in the Developer Tools window.
 
 ```ts
 import { Plugin } from "obsidian";

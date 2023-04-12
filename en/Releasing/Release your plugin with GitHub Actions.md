@@ -95,7 +95,7 @@ Manually creating your plugin release can be time-consuming and error-prone. In 
              asset_content_type: text/css
    ```
 
-1. In your terminal, commit the workflow.
+2. In your terminal, commit the workflow.
 
    ```bash
    git add .github/workflows/release.yml
@@ -103,7 +103,7 @@ Manually creating your plugin release can be time-consuming and error-prone. In 
    git push origin main
    ```
 
-1. Create a tag that matches the version in the `manifest.json` file.
+3. Create a tag that matches the version in the `manifest.json` file.
 
    ```bash
    git tag -a 1.0.1 -m "1.0.1"
@@ -113,9 +113,9 @@ Manually creating your plugin release can be time-consuming and error-prone. In 
    - `-a` creates an [annotated tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_creating_tags).
    - `-m` specifies the name of your release. For Obsidian plugins, this must be the same as the version.
 
-1. Browse to your repository on GitHub and click the **Actions** tab. Your workflow might still be running, or it might have finished already.
+4. Browse to your repository on GitHub and click the **Actions** tab. Your workflow might still be running, or it might have finished already.
 
-1. When the workflow finishes, go back to the main page for your repository and click **Releases** in the side bar on the right-hand side. The workflow has created a GitHub release and uploaded the required assets as binary attachments.
+5. When the workflow finishes, go back to the main page for your repository and click **Releases** in the side bar on the right-hand side. The workflow has created a GitHub release and uploaded the required assets as binary attachments.
 
 You've set up your plugin to automatically create a GitHub release whenever you create a new tag.
 
@@ -167,7 +167,7 @@ To make a release:
    git commit -m "feat: Add settings"
    ```
 
-1. Create a release and update the changelog.
+2. Create a release and update the changelog.
 
    ```bash npm2yarn
    npm run release
@@ -183,7 +183,7 @@ To make a release:
    npm run release -- --release-as major
    ```
 
-1. Push the new tag to GitHub.
+3. Push the new tag to GitHub.
 
    ```bash
    git push --follow-tags origin main

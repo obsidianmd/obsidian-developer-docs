@@ -5,8 +5,8 @@ Learn how you can develop your plugin for mobile devices.
 You can emulate Obsidian running a mobile device directly from the Developer Tools.
 
 1. Open the **Developer Tools**.
-1. Select the **Console** tab.
-1. Enter the following and then press `Enter`.
+2. Select the **Console** tab.
+3. Enter the following and then press `Enter`.
 
    ```ts
    this.app.emulateMobile(true);

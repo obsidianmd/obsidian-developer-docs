@@ -19,7 +19,7 @@ To build a Svelte application, you need to install the dependencies and configur
    npm install --save-dev svelte svelte-preprocess @tsconfig/svelte esbuild-svelte
    ```
 
-1. Extend the `tsconfig.json` to enable additional type checking for common Svelte issues. The `types` property is important for TypeScript to recognize `.svelte` files.
+2. Extend the `tsconfig.json` to enable additional type checking for common Svelte issues. The `types` property is important for TypeScript to recognize `.svelte` files.
 
    ```json
    {
@@ -32,20 +32,20 @@ To build a Svelte application, you need to install the dependencies and configur
    }
    ```
 
-1. Remove the following line from your `tsconfig.json` as it conflicts with the Svelte configuration.
+3. Remove the following line from your `tsconfig.json` as it conflicts with the Svelte configuration.
 
    ```json
    "inlineSourceMap": true,
    ```
 
-1. In `esbuild.config.mjs`, add the following imports to the top of the file:
+4. In `esbuild.config.mjs`, add the following imports to the top of the file:
 
    ```js
    import esbuildSvelte from "esbuild-svelte";
    import sveltePreprocess from "svelte-preprocess";
    ```
 
-1. Add Svelte to the list of plugins.
+5. Add Svelte to the list of plugins.
 
    ```js
     esbuild
@@ -149,7 +149,7 @@ To create a store for your plugin and access it from within a generic Svelte com
    export default { plugin };
    ```
 
-1. Configure the store:
+2. Configure the store:
 
    ```ts
    import { ItemView, WorkspaceLeaf } from "obsidian";
@@ -175,7 +175,7 @@ To create a store for your plugin and access it from within a generic Svelte com
    }
    ```
 
-1. To use the store in your component:
+3. To use the store in your component:
 
    ```jsx
    <script lang="ts">

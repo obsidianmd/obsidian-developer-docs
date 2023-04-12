@@ -1,6 +1,4 @@
-From the official documentation on [Working with multiple Vaults](https://help.obsidian.md/How+to/Working+with+multiple+vaults):
-
-> Each collection of notes in Obsidian is known as a Vault. A Vault consists of a folder, and any sub-folders within it.
+Each collection of notes in Obsidian is known as a Vault. A Vault consists of a folder, and any sub-folders within it.
 
 While your plugin can access the file system like any other Node.js application, the [[obsidian.vault|Vault]] module aims to make it easier to work with files and folders within a Vault.
 
@@ -14,7 +12,7 @@ for (let i = 0; i < files.length; i++) {
 }
 ```
 
-> [tip]
+> [!tip]
 > If you want to list _all_ files, and not just Markdown documents, use [[obsidian.vault.getfiles|getFiles()]] instead.
 
 ## Read files

@@ -49,7 +49,7 @@ Imagine that you want to build an editor extension that replaces the bullet list
 Both implementations share the same core logic:
 
 1. Use [syntaxTree](https://codemirror.net/docs/ref/#language.syntaxTree) to find list items.
-1. For every list item, replace leading hyphens, `-`, with a _widget_.
+2. For every list item, replace leading hyphens, `-`, with a _widget_.
 
 ### Widgets
 
@@ -84,7 +84,7 @@ const decoration = Decoration.replace({
 To provide decorations from a state field:
 
 1. [[State fields#Defining a state field|Define a state field]] with a `DecorationSet` type.
-1. Add the `provide` property to the state field.
+2. Add the `provide` property to the state field.
 
    ```ts
    provide(field: StateField<DecorationSet>): Extension {
@@ -145,9 +145,9 @@ export const emojiListField = StateField.define<DecorationSet>({
 To manage your decorations using a view plugin:
 
 1. [[View plugins#Creating a view plugin|Create a view plugin]].
-1. Add a `DecorationSet` member property to your plugin.
-1. Initialize the decorations in the `constructor()`.
-1. Rebuild decorations in `update()`.
+2. Add a `DecorationSet` member property to your plugin.
+3. Initialize the decorations in the `constructor()`.
+4. Rebuild decorations in `update()`.
 
 Not all updates are reasons to rebuild your decorations. The following example only rebuilds decorations whenever the underlying document or the viewport changes.
 

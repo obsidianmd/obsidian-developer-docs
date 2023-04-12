@@ -48,7 +48,7 @@ export default class ExamplePlugin extends Plugin {
 `addIcon` takes two arguments:
 
 1. A name to uniquely identify your icon.
-1. The SVG content for the icon, without the surrounding `<svg>` tag.
+2. The SVG content for the icon, without the surrounding `<svg>` tag.
 
 Note that your icon needs to fit within a `0 0 100 100` view box to be drawn properly.
 

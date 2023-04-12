@@ -1,4 +1,4 @@
-This page lists tools for plugin developers. While they're not required for building plugins, they can simplify plugin development.
+This page lists tools for plugin developers by the Obsidian community. While they're not required for building plugins, they can simplify plugin development.
 
 ## Obsidian Tools
 
