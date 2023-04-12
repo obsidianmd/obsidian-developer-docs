@@ -1,6 +1,6 @@
 Our goal for community plugins and themes is to make it easy for users to safely modify and expand the capabilities of Obsidian, while prioritizing private and offline usage of the app.
 
-All community plugins and themes added to the Obsidian directory must respect the following policies. Every plugin and theme is individually vetted before being included in the directory. Plugins and themes that do not follow these policies will be removed from the directory.
+All community plugins and themes added to the Obsidian directory must respect the following policies. Every plugin and theme is individually vetted before being included in the directory. Plugins and themes that don't follow these policies will be removed from the directory.
 
 ## Policies
 
@@ -32,7 +32,7 @@ All community plugins and themes must follow these requirements:
 
 - Include a [LICENSE file](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) and clearly indicate the license of your plugin or theme.
 - Comply with the original licenses of any code your plugin or theme makes use of, including attribution in the README if required.
-- Respect Obsidian's trademark policy. Do not use the "Obsidian" trademark in a way that could confuse users into thinking your plugin or theme is a first-party creation.
+- Respect Obsidian's trademark policy. Don't use the "Obsidian" trademark in a way that could confuse users into thinking your plugin or theme is a first-party creation.
 
 ## Reporting violations
 
@@ -44,7 +44,7 @@ If the developer doesn’t response after 7 days, [contact the Obsidian team](ht
 
 In case of a policy violation, we may attempt to contact the developer and provide a reasonable timeframe for them to resolve the problem.
 
-If the problem is not resolved by then, we will remove plugins or themes from our directory.
+If the problem isn't resolved by then, we'll remove plugins or themes from our directory.
 
 We may immediately remove a plugin or theme if:
 
