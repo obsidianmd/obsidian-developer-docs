@@ -7,5 +7,6 @@
 ehthumbs.db
 Thumbs.db
 
+.obsidian
 .obsidian/*
 !.obsidian/snippets
