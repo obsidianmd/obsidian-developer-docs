@@ -79,7 +79,7 @@ Obsidian uses [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/U
 
    ```css
    body {
-     --font-text: Georgia, serif;
+     --font-text-theme: Georgia, serif;
    }
    ```
 
