@@ -37,6 +37,9 @@ export default class ExamplePlugin extends Plugin {
 }
 ```
 
+> [!warning] Nested properties in settings
+> `Object.assign()` copies the references to any nested properties (shallow copy). If your settings object contains nested properties, you need to copy each nested property recursively (deep copy). Otherwise, any changes to a nested property will apply do all objects that were copied using `Object.assign()`.
+
 There's a lot going on here 🤯, so let's look closer at each part.
 
 ## Create a settings definition
