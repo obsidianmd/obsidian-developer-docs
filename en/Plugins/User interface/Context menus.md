@@ -37,7 +37,7 @@ export default class ExamplePlugin extends Plugin {
 > [!tip]
 > If you need more control of where the menu appears, you can use `menu.showAtPosition({ x: 20, y: 20 })` to open the menu at a position relative to the top-left corner of the Obsidian window.
 
-For more information on what icons you can use, refer to [[Developing/Icons|Icons]].
+For more information on what icons you can use, refer to [[Plugins/User interface/Icons|Icons]].
 
 You can also add an item to the file menu, or the editor menu, by subscribing to the `file-menu` and `editor-menu` workspace events:
 
