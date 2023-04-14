@@ -14,4 +14,4 @@ export default class ExamplePlugin extends Plugin {
 }
 ```
 
-The first argument specifies which icon to use. For more information on the available icons, and how to add your own, refer to [[Developing/Icons|Icons]].
+The first argument specifies which icon to use. For more information on the available icons, and how to add your own, refer to [[Plugins/User interface/Icons|Icons]].

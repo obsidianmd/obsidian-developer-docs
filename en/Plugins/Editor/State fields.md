@@ -1,4 +1,4 @@
-A state field is an [[About editor extensions|editor extension]] that lets you manage custom editor state. This page walks you through building a state field by implementing a calculator extension.
+A state field is an [[Editor extensions|editor extension]] that lets you manage custom editor state. This page walks you through building a state field by implementing a calculator extension.
 
 The calculator should be able to add and subtract a number from the current state, and to reset the state when you want to start over.
 

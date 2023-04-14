@@ -1,5 +1,7 @@
 This page lists common review comments plugin authors get when submitting their plugin.
 
+For more information about general guidelines for developers, refer to [[Developer policies]].
+
 ## Use `normalizePath()` to clean up user-defined paths
 
 Use [[obsidian.normalizepath|normalizePath()]] whenever you accept user-defined paths to files or folders in the vault, or when you construct your own paths in the plugin code.

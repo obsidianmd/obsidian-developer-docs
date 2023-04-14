@@ -1,4 +1,4 @@
-A view plugin is an [[About editor extensions|editor extension]] that gives you access to the editor [[Viewport]].
+A view plugin is an [[Editor extensions|editor extension]] that gives you access to the editor [[Viewport]].
 
 > [!note]
 > This page aims to distill the official CodeMirror 6 documentation for Obsidian plugin developers. For more information on state management, refer to [Affecting the View](https://codemirror.net/docs/guide/#affecting-the-view).

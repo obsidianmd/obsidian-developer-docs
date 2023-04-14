@@ -1,6 +1,6 @@
 This page lists our recommendations for building themes that are both reliable and maintainable. By following these guidelines, you can minimize the maintenance work to keep your theme updated with future versions of Obsidian.
 
-See also [[Best practices for Publish themes]].
+For more information about general guidelines for developers, refer to [[Developer policies]].
 
 ## Use CSS variables
 

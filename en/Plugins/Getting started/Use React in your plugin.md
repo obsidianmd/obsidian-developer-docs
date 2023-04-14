@@ -85,7 +85,7 @@ class ExampleView extends ItemView {
 
 For more information on `ReactDOM.render()` and `ReactDOM.unmountComponentAtNode()`, refer to the documentation on [ReactDOM](https://reactjs.org/docs/react-dom.html).
 
-You can mount your React component on any `HTMLElement`, for example [[Developing/Status bar|status bar items]]. Just make sure to clean up properly by calling `ReactDOM.unmountComponentAtNode()` when you're done.
+You can mount your React component on any `HTMLElement`, for example [[Plugins/User interface/Status bar|status bar items]]. Just make sure to clean up properly by calling `ReactDOM.unmountComponentAtNode()` when you're done.
 
 ## Create an App context
 

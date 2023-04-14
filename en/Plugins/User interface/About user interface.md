@@ -4,8 +4,8 @@ You can see some of the user interface components when you first open Obsidian.
 
 - [[Ribbon actions]]
 - [[Views]]
-- [[Developing/Status bar|Status bar]]
+- [[Plugins/User interface/Status bar|Status bar]]
 
-To modify the editor, refer to [[Editor]] and [[About editor extensions]].
+To modify the editor, refer to [[Editor]] and [[Editor extensions]].
 
 ![User interface](user-interface.png)
