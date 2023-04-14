@@ -1,4 +1,4 @@
-Decorations let you control how to draw or style content in [[About editor extensions|editor extensions]]. If you intend to change the look and feel by adding, replacing, or styling elements in the editor, you most likely need to use decorations.
+Decorations let you control how to draw or style content in [[Editor extensions|editor extensions]]. If you intend to change the look and feel by adding, replacing, or styling elements in the editor, you most likely need to use decorations.
 
 By the end of this page, you'll be able to:
 

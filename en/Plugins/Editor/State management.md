@@ -1,4 +1,4 @@
-This page aims to give an introduction to state management for [[About editor extensions|editor extensions]].
+This page aims to give an introduction to state management for [[Editor extensions|editor extensions]].
 
 > [!note]
 > This page aims to distill the official CodeMirror 6 documentation for Obsidian plugin developers. For more detailed information on state management, refer to [State and Updates](https://codemirror.net/docs/guide/#state-and-updates).
