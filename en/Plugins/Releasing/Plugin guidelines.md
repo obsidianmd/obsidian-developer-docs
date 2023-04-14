@@ -1,3 +1,5 @@
+See also [[Developer policies]]
+
 This page lists common review comments plugin authors get when submitting their plugin.
 
 ## Use `normalizePath()` to clean up user-defined paths
