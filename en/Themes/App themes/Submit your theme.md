@@ -6,7 +6,6 @@ You only need to submit the initial version of your theme. After your theme has 
 
 To complete this guide, you'll need:
 
-- [Git](https://git-scm.com/) installed on your local machine.
 - A [GitHub](https://github.com/signup) account.
 
 ## Before you begin
