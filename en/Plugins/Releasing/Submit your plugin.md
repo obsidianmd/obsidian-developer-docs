@@ -6,7 +6,6 @@ You only need to submit the initial version of your plugin. After your plugin ha
 
 To complete this guide, you'll need:
 
-- [Git](https://git-scm.com/) installed on your local machine.
 - A [GitHub](https://github.com/signup) account.
 
 ## Before you begin
@@ -45,11 +44,11 @@ In this step, you'll submit your plugin to the Obsidian team for review.
 
    ```json
    {
-   	"id": "doggo-dictation",
-   	"name": "Doggo Dictation",
-   	"author": "John Dolittle",
-   	"description": "Transcribes dog speech into notes.",
-   	"repo": "drdolittle/doggo-dictation"
+     "id": "doggo-dictation",
+     "name": "Doggo Dictation",
+     "author": "John Dolittle",
+     "description": "Transcribes dog speech into notes.",
+     "repo": "drdolittle/doggo-dictation"
    }
    ```
 
@@ -95,4 +94,3 @@ Once we've reviewed and published your plugin, it's time to announce it to the c
 
 - Announce in [Share & showcase](https://forum.obsidian.md/c/share-showcase/9) in the forums.
 - Announce in the `#updates` channel on [Discord](https://discord.gg/veuWUTm). You need the [`developer` role](https://discord.com/channels/686053708261228577/702717892533157999/830492034807758859) to post in `#updates`.
-
