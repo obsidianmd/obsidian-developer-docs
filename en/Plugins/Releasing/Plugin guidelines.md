@@ -2,6 +2,228 @@ This page lists common review comments plugin authors get when submitting their 
 
 For more information about general guidelines for developers, refer to [[Developer policies]].
 
+## Resource management
+
+### Clean up resources when plugin unloads
+
+Any resources created by the plugin, such as event listeners, must be destroyed or released when the plugin unloads.
+
+The following example registers an `onChange()` function for all CodeMirror instances when the plugin loads, and then unregisters it for all instances when the plugin unloads.
+
+```ts
+export default class MyPlugin extends Plugin {
+  onload() {
+    // Hook the 'change' event.
+    this.registerCodeMirror(cm => {
+      cm.on('change', this.onChange);
+    });
+  }
+
+  onunload() {
+    // Unhook the 'change' event
+    this.app.workspace.iterateCodeMirrors(cm => {
+      cm.off('change', this.onChange);
+    });
+  }
+
+  onChange: () => {
+    // ...
+  }
+}
+```
+
+If you register resources using methods such as [[obsidian.component.registerevent|registerEvent()]] or [[obsidian.plugin_2.addcommand|addCommand()]] from the [[obsidian.plugin_2|Plugin]] class, they'll be cleaned up automatically when the plugin unloads.
+
+You don't need to clean up resources that are guaranteed to be removed when your plugin unloads. For example, if you register a `mouseenter` listener on a DOM element, the event listener will be garbage-collected when the element goes out of scope.
+
+## Naming
+
+### Rename placeholder class names
+
+The sample plugin contains placeholder names for common classes, such as `MyPlugin`, `MyPluginSettings`, and `SampleSettingTab`. Rename these to reflect the name of your plugin.
+
+## Node.js and Electron API
+
+The Node.js and Electron APIs are only available in the desktop version of Obsidian. If your plugin uses any of these APIs, you need to set `isDesktopOnly` to `true` in the `manifest.json`. Otherwise, the plugin will fail to load on mobile devices.
+
+For example, Node.js packages like `fs`, `crypto`, and `os`, are only available on desktop.
+
+If possible, use alternative features that are available in the Web API. For example:
+
+- [`SubtleCrypto`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) instead of [`crypto`](https://nodejs.org/api/crypto.html).
+- `navigator.clipboard.readText()` and `navigator.clipboard.writeText()` to access clipboard contents.
+
+## Commands
+
+When you add a command in your plugin, use the appropriate callback type.
+
+- Use `callback` if the command runs unconditionally.
+- Use `checkCallback` if the command only runs under certain conditions.
+
+If the command requires an open and active Markdown editor, use `editorCallback`, or the corresponding `editorCheckCallback`.
+
+## Workspace
+
+### Avoid accessing `Workspace.activeLeaf` directly
+
+If you want to access the editor in the active view, use `Workspace.getActiveViewOfType()` instead:
+
+```ts
+const view = app.workspace.getActiveViewOfType(MarkdownView);
+// getActiveViewOfType will return null if the active view is null,
+// or is not of type MarkdownView.
+if (view) {
+  const editor = view.editor;
+
+  // Do something with editor
+}
+```
+
+### Avoid managing references to custom views
+
+Managing references to custom view can cause memory leaks or unintended consequences.
+
+**Don't** do this:
+
+```ts
+this.registerViewType(MY_VIEW_TYPE, () => this.view = new MyCustomView());
+```
+
+Do this instead:
+
+```ts
+this.registerViewType(MY_VIEW_TYPE, () => new MyCustomView());
+```
+
+To access the view from your plugin, use `Workspace.getActiveLeavesOfType()`:
+
+```ts
+for (let leaf of app.workspace.getActiveLeavesOfType(MY_VIEW_TYPE)) {
+  let view = leaf.view;
+  if (view instanceof MyCustomView) {
+    // ...
+  }
+}
+```
+
+## Vault
+
+### Prefer the Vault API over the Adapter API
+
+Obsidian exposes two APIs for file operations: the Vault API (`app.vault`) and the Adapter API (`app.vault.adapter`).
+
+While the file operations in the Adapter API are often more familiar to many developers, the Vault API has two main advantages over the adapter.
+
+- **Performance:** The Vault API has a caching layer that can speed up file reads when the file is already known to Obsidian.
+- **Safety:** The Vault API performs file operations serially to avoid any race conditions, for example when reading a file that is being written to at the same time.
+
+### Avoid iterating all files to find a file by its path
+
+This is inefficient, especially for large vaults. Use [[obsidian.vault.getabstractfilebypath|getAbstractFileByPath()]] instead.
+
+**Don't** do this:
+
+```ts
+vault.getAllFiles().find(file => file.path === filePath)
+```
+
+Do this instead:
+
+```ts
+const filePath = 'folder/file.md';
+
+const file = app.vault.getAbstractFileByPath(filePath);
+
+// Check if it exists and is of the correct type
+if (file instanceof TFile) {
+  // file is automatically casted to TFile within this scope.
+}
+```
+
+## Editor
+
+### How to change or reconfigure your CM6 extensions
+
+If you want to change or reconfigure an [[Editor extensions|editor extension]] after you've registered using [[obsidian.plugin_2.registereditorextension|registerEditorExtension()]], use [[obsidian.workspace.updateoptions|updateOptions()]] to update all editors.
+
+```ts
+class MyPlugin extends Plugin {
+  private editorExtension: Extension[] = [];
+
+  onload() {
+    //...
+
+    this.registerEditorExtension(this.editorExtension);
+  }
+
+  updateEditorExtension() {
+    // Empty the array while keeping the same reference
+    // (Don't create a new array here)
+    this.editorExtension.length = 0;
+
+    // Create new editor extension
+    let myNewExtension = this.createEditorExtension();
+    // Add it to the array
+    this.editorExtension.push(myNewExtension);
+
+    // Flush the changes to all editors
+    this.app.workspace.updateOptions();
+  }
+}
+
+```
+
+## TypeScript
+
+### Avoid `innerHTML`, `outerHTML` and `insertAdjacentHTML`
+
+Building DOM elements from user-defined input, using `innerHTML`, `outerHTML` and `insertAdjacentHTML` can pose a security risk.
+
+The following example builds a DOM element using a string that contains user input, `${name}`. `name` can contain other DOM elements, such as `<script>alert()</script>`, and can allow a potential attacker to execute arbitrary code on the user's computer.
+
+```ts
+function showName(name: string) {
+  let containerElement = document.querySelector('.my-container');
+  // DON'T DO THIS
+  containerElement.innerHTML = `<div class="my-class"><b>Your name is: </b>${name}</div>`;
+}
+```
+
+Instead, use the DOM API or the Obsidian helper functions, such as `createEl()`, `createDiv()` and `createSpan()` to build the DOM element programmatically. For more information, refer to [[HTML elements]].
+
+### Prefer async/await over Promise
+
+Recent versions of JavaScript and TypeScript support the `async` and `await` keywords to run code asynchronously, which allow for more readable code than using Promises.
+
+**Don't** do this:
+
+```ts
+function test(): Promise<string | null> {
+  return fetch('https://example.com')
+    .then(res => res.text())
+    .catch(e => {
+      console.log(e);
+      return null;
+    });
+}
+```
+
+Do this instead:
+
+```ts
+async function AsyncTest(): Promise<string | null> {
+  try {
+    let res = await fetch('https://example.com');
+    let text = await r.text();
+    return text;
+  }
+  catch (e) {
+    console.log(e);
+    return null;
+  }
+}
+```
+
 ## Use `normalizePath()` to clean up user-defined paths
 
 Use [[obsidian.normalizepath|normalizePath()]] whenever you accept user-defined paths to files or folders in the vault, or when you construct your own paths in the plugin code.
