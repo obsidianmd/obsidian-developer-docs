@@ -101,6 +101,16 @@ for (let leaf of app.workspace.getActiveLeavesOfType(MY_VIEW_TYPE)) {
 
 ## Vault
 
+### Prefer the Editor API instead of `Vault.modify`
+
+If you want to edit an active note, use [[Editor]] instead of [[obsidian.vault.modify|Vault.modify()]].
+
+Editor maintains information about the active note, such as cursor position, selection, and folded content. When you use [[obsidian.vault.modify|Vault.modify()]] to edit the note, all that information is lost, which leads to a poor experience for the user.
+
+Editor is also more efficient when making small changes to parts of the note.
+
+Only use [[obsidian.vault.modify|Vault.modify()]] if you're editing a file in the background.
+
 ### Prefer the Vault API over the Adapter API
 
 Obsidian exposes two APIs for file operations: the Vault API (`app.vault`) and the Adapter API (`app.vault.adapter`).
