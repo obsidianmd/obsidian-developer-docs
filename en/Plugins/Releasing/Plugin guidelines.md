@@ -31,6 +31,12 @@ export default class MyPlugin extends Plugin {
 
 The sample plugin contains placeholder names for common classes, such as `MyPlugin`, `MyPluginSettings`, and `SampleSettingTab`. Rename these to reflect the name of your plugin.
 
+## Manifest
+
+### Only use `fundingUrl` to link to services for financial support
+
+Use [[Manifest#fundingUrl|fundingUrl]] if you accept financial support for your plugin, using services like Buy Me A Coffee or GitHub Sponsors. If you don't accept donations, remove `fundingUrl` from your manifest.
+
 ## Node.js and Electron API
 
 The Node.js and Electron APIs are only available in the desktop version of Obsidian. If your plugin uses any of these APIs, you need to set `isDesktopOnly` to `true` in the `manifest.json`. Otherwise, the plugin will fail to load on mobile devices.
