@@ -145,7 +145,7 @@ if (file instanceof TFile) {
 
 ## Editor
 
-### How to change or reconfigure your CM6 extensions
+### Change or reconfigure editor extensions
 
 If you want to change or reconfigure an [[Editor extensions|editor extension]] after you've registered using [[obsidian.plugin_2.registereditorextension|registerEditorExtension()]], use [[obsidian.workspace.updateoptions|updateOptions()]] to update all editors.
 
