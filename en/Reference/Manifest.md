@@ -35,7 +35,7 @@ The following properties are only available to plugins.
 
 ```json
 {
-	"fundingUrl": "https://buymeacoffee.com"
+  "fundingUrl": "https://buymeacoffee.com"
 }
 ```
 
@@ -43,10 +43,10 @@ The following properties are only available to plugins.
 
 ```json
 {
-	"fundingUrl": {
-		"Buy Me a Coffee": "https://buymeacoffee.com",
-		"GitHub Sponsor": "https://github.com/sponsors",
-		"Patreon": "https://www.patreon.com/"
-	}
+  "fundingUrl": {
+    "Buy Me a Coffee": "https://buymeacoffee.com",
+    "GitHub Sponsor": "https://github.com/sponsors",
+    "Patreon": "https://www.patreon.com/"
+  }
 }
 ```
