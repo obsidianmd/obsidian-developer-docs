@@ -15,7 +15,7 @@ Before you submit your theme, make sure you have the following files in the root
 
 - A `README.md` that describes the theme.
 - A `LICENSE` that determines how others are allowed to use the theme and its source code. If you need help to pick a license for your theme, refer to [Choose a License](https://choosealicense.com/).
-- A screenshot of your theme to be displayed in the community theme store. We recommend using an image of 1920×1080px.
+- A screenshot of your theme to be displayed in the community theme store. Recommended image dimensions: 512 x 288 pixels.
 - A `manifest.json` that describes your theme. For more information, refer to [[Manifest]].
 
 ## Step 1: Publish your theme to GitHub
@@ -43,7 +43,7 @@ In this step, you'll submit your theme to the Obsidian team for review.
 
    - `name` and `author` determines how your plugin appears to the user, and should match the corresponding properties in your [[Manifest]].
    - `repo` is the path to your GitHub repository. For example, if your GitHub repo is located at https://github.com/your-username/your-repo-name, the path is `your-username/your-repo-name`.
-   - `screenshot` is the path to a screenshot of your theme. The screenshot looks best with a 16:9 aspect ratio. We recommend an image size of 512px by 288px for fast loading.
+   - `screenshot` is the path to a screenshot of your theme. The screenshot looks best with a 16:9 aspect ratio. Recommended image dimensions: 512 x 288 pixels.
    - `modes` lists the color modes that your theme supports.
 
    Remember to add a comma after the closing brace, `}`, of the previous entry.
