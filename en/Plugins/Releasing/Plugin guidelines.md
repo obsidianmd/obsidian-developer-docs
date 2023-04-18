@@ -8,33 +8,22 @@ For more information about general guidelines for developers, refer to [[Develop
 
 Any resources created by the plugin, such as event listeners, must be destroyed or released when the plugin unloads.
 
-The following example registers an `onChange()` function for all CodeMirror instances when the plugin loads, and then unregisters it for all instances when the plugin unloads.
+When possible, use methods like [[obsidian.component.registerevent|registerEvent()]] or [[obsidian.plugin_2.addcommand|addCommand()]] to automatically clean up resources when the plugin unloads.
 
 ```ts
 export default class MyPlugin extends Plugin {
   onload() {
-    // Hook the 'change' event.
-    this.registerCodeMirror(cm => {
-      cm.on('change', this.onChange);
-    });
+    this.registerEvent(this.app.vault.on("create", this.onCreate));
   }
 
-  onunload() {
-    // Unhook the 'change' event
-    this.app.workspace.iterateCodeMirrors(cm => {
-      cm.off('change', this.onChange);
-    });
-  }
-
-  onChange: () => {
+  onCreate: (file: TAbstractFile) => {
     // ...
   }
 }
 ```
 
-If you register resources using methods such as [[obsidian.component.registerevent|registerEvent()]] or [[obsidian.plugin_2.addcommand|addCommand()]] from the [[obsidian.plugin_2|Plugin]] class, they'll be cleaned up automatically when the plugin unloads.
-
-You don't need to clean up resources that are guaranteed to be removed when your plugin unloads. For example, if you register a `mouseenter` listener on a DOM element, the event listener will be garbage-collected when the element goes out of scope.
+> [!note]
+> You don't need to clean up resources that are guaranteed to be removed when your plugin unloads. For example, if you register a `mouseenter` listener on a DOM element, the event listener will be garbage-collected when the element goes out of scope.
 
 ## Naming
 
@@ -66,16 +55,14 @@ If the command requires an open and active Markdown editor, use `editorCallback`
 
 ### Avoid accessing `Workspace.activeLeaf` directly
 
-If you want to access the editor in the active view, use `Workspace.getActiveViewOfType()` instead:
+If you want to access the editor in the active view, use [[obsidian.workspace.getactiveviewoftype|getActiveViewOfType()]] instead.
 
 ```ts
 const view = app.workspace.getActiveViewOfType(MarkdownView);
-// getActiveViewOfType will return null if the active view is null,
-// or is not of type MarkdownView.
-if (view) {
-  const editor = view.editor;
 
-  // Do something with editor
+// getActiveViewOfType will return null if the active view is null, or if it's not a MarkdownView.
+if (view) {
+  // ...
 }
 ```
 
@@ -199,7 +186,7 @@ Recent versions of JavaScript and TypeScript support the `async` and `await` key
 
 ```ts
 function test(): Promise<string | null> {
-  return fetch('https://example.com')
+  return requestUrl('https://example.com')
     .then(res => res.text())
     .catch(e => {
       console.log(e);
@@ -213,7 +200,7 @@ Do this instead:
 ```ts
 async function AsyncTest(): Promise<string | null> {
   try {
-    let res = await fetch('https://example.com');
+    let res = await requestUrl('https://example.com');
     let text = await r.text();
     return text;
   }
