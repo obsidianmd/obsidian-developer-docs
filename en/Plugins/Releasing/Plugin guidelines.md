@@ -1,6 +1,35 @@
 This page lists common review comments plugin authors get when submitting their plugin.
 
-For more information about general guidelines for developers, refer to [[Developer policies]].
+While the guidelines on this page are recommendations, depending on their severity, we may still require you to address any violations.
+
+> [!important] Policies for plugin developers
+> Make sure that you've read our [[Developer policies]] as well as the [[Submission requirements for plugins]].
+
+## General
+
+### Avoid using global app instance
+
+Avoid using the global app object, `window.app`. Instead, use the reference in your plugin instance, `this.app`.
+
+`window.app` is intended for debugging purposes and might be removed in the future.
+
+## Security
+
+### Avoid `innerHTML`, `outerHTML` and `insertAdjacentHTML`
+
+Building DOM elements from user-defined input, using `innerHTML`, `outerHTML` and `insertAdjacentHTML` can pose a security risk.
+
+The following example builds a DOM element using a string that contains user input, `${name}`. `name` can contain other DOM elements, such as `<script>alert()</script>`, and can allow a potential attacker to execute arbitrary code on the user's computer.
+
+```ts
+function showName(name: string) {
+  let containerElement = document.querySelector('.my-container');
+  // DON'T DO THIS
+  containerElement.innerHTML = `<div class="my-class"><b>Your name is: </b>${name}</div>`;
+}
+```
+
+Instead, use the DOM API or the Obsidian helper functions, such as `createEl()`, `createDiv()` and `createSpan()` to build the DOM element programmatically. For more information, refer to [[HTML elements]].
 
 ## Resource management
 
@@ -25,30 +54,19 @@ export default class MyPlugin extends Plugin {
 > [!note]
 > You don't need to clean up resources that are guaranteed to be removed when your plugin unloads. For example, if you register a `mouseenter` listener on a DOM element, the event listener will be garbage-collected when the element goes out of scope.
 
-## Naming
+### Don't detach leaves in `onunload`
 
-### Rename placeholder class names
-
-The sample plugin contains placeholder names for common classes, such as `MyPlugin`, `MyPluginSettings`, and `SampleSettingTab`. Rename these to reflect the name of your plugin.
-
-## Manifest
-
-### Only use `fundingUrl` to link to services for financial support
-
-Use [[Manifest#fundingUrl|fundingUrl]] if you accept financial support for your plugin, using services like Buy Me A Coffee or GitHub Sponsors. If you don't accept donations, remove `fundingUrl` from your manifest.
-
-## Node.js and Electron API
-
-The Node.js and Electron APIs are only available in the desktop version of Obsidian. If your plugin uses any of these APIs, you need to set `isDesktopOnly` to `true` in the `manifest.json`. Otherwise, the plugin will fail to load on mobile devices.
-
-For example, Node.js packages like `fs`, `crypto`, and `os`, are only available on desktop.
-
-If possible, use alternative features that are available in the Web API. For example:
-
-- [`SubtleCrypto`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) instead of [`crypto`](https://nodejs.org/api/crypto.html).
-- `navigator.clipboard.readText()` and `navigator.clipboard.writeText()` to access clipboard contents.
+When the user updates your plugin, any open leaves will be reinitialized and may lead to a jarring user experience.
 
 ## Commands
+
+### Avoid setting a default hotkey for commands
+
+Setting a default hotkey may lead to conflicts between plugins and may override hotkeys that the user has already configured.
+
+It's also difficult to choose a default hotkey that is available on all operating systems.
+
+### Use the appropriate callback type for commands
 
 When you add a command in your plugin, use the appropriate callback type.
 
@@ -59,7 +77,7 @@ If the command requires an open and active Markdown editor, use `editorCallback`
 
 ## Workspace
 
-### Avoid accessing `Workspace.activeLeaf` directly
+### Avoid accessing `workspace.activeLeaf` directly
 
 If you want to access the editor in the active view, use [[obsidian.workspace.getactiveviewoftype|getActiveViewOfType()]] instead.
 
@@ -143,6 +161,23 @@ if (file instanceof TFile) {
 }
 ```
 
+### Use `normalizePath()` to clean up user-defined paths
+
+Use [[obsidian.normalizepath|normalizePath()]] whenever you accept user-defined paths to files or folders in the vault, or when you construct your own paths in the plugin code.
+
+`normalizePath()` takes a path and scrubs it to be safe for the file system and for cross-platform use. This function:
+
+- Cleans up the use of forward and backward slashes, such as replacing 1 or more of `\` or `/` with a single `/`.
+- Removes leading and trailing forward and backward slashes.
+- Replaces any non-breaking spaces, `\u00A0`, with a regular space.
+- Runs the path through [String.prototype.normalize](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize).
+
+```ts
+import { normalizePath } from "obsidian";
+const pathToPlugin = normalizePath(app.vault.configDir + "//plugins/my-plugin");
+// pathToPlugin contains ".obsidian/plugins/my-plugin" not .obsidian//plugins/my-plugin
+```
+
 ## Editor
 
 ### Change or reconfigure editor extensions
@@ -178,21 +213,9 @@ class MyPlugin extends Plugin {
 
 ## TypeScript
 
-### Avoid `innerHTML`, `outerHTML` and `insertAdjacentHTML`
+### Prefer `const` and `let` over `var`
 
-Building DOM elements from user-defined input, using `innerHTML`, `outerHTML` and `insertAdjacentHTML` can pose a security risk.
-
-The following example builds a DOM element using a string that contains user input, `${name}`. `name` can contain other DOM elements, such as `<script>alert()</script>`, and can allow a potential attacker to execute arbitrary code on the user's computer.
-
-```ts
-function showName(name: string) {
-  let containerElement = document.querySelector('.my-container');
-  // DON'T DO THIS
-  containerElement.innerHTML = `<div class="my-class"><b>Your name is: </b>${name}</div>`;
-}
-```
-
-Instead, use the DOM API or the Obsidian helper functions, such as `createEl()`, `createDiv()` and `createSpan()` to build the DOM element programmatically. For more information, refer to [[HTML elements]].
+For more information, refer to [4 Reasons Why var is Considered Obsolete in Modern JavaScript](https://javascript.plainenglish.io/4-reasons-why-var-is-considered-obsolete-in-modern-javascript-a30296b5f08f).
 
 ### Prefer async/await over Promise
 
@@ -203,7 +226,7 @@ Recent versions of JavaScript and TypeScript support the `async` and `await` key
 ```ts
 function test(): Promise<string | null> {
   return requestUrl('https://example.com')
-    .then(res => res.text())
+    .then(res => res.text
     .catch(e => {
       console.log(e);
       return null;
@@ -217,7 +240,7 @@ Do this instead:
 async function AsyncTest(): Promise<string | null> {
   try {
     let res = await requestUrl('https://example.com');
-    let text = await r.text();
+    let text = await r.text;
     return text;
   }
   catch (e) {
@@ -227,19 +250,10 @@ async function AsyncTest(): Promise<string | null> {
 }
 ```
 
-## Use `normalizePath()` to clean up user-defined paths
+### Consider organizing your code base using folders
 
-Use [[obsidian.normalizepath|normalizePath()]] whenever you accept user-defined paths to files or folders in the vault, or when you construct your own paths in the plugin code.
+If your plugin uses more than one `.ts` file, consider organizing them into folders to make it easier to review and maintain.
 
-`normalizePath()` takes a path and scrubs it to be safe for the file system and for cross-platform use. This function:
+### Rename placeholder class names
 
-- Cleans up the use of forward and backward slashes, such as replacing 1 or more of `\` or `/` with a single `/`.
-- Removes leading and trailing forward and backward slashes.
-- Replaces any non-breaking spaces, `\u00A0`, with a regular space.
-- Runs the path through [String.prototype.normalize](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize).
-
-```ts
-import { normalizePath } from "obsidian";
-const pathToPlugin = normalizePath(app.vault.configDir + "//plugins/my-plugin");
-// pathToPlugin contains ".obsidian/plugins/my-plugin" not .obsidian//plugins/my-plugin
-```
+The sample plugin contains placeholder names for common classes, such as `MyPlugin`, `MyPluginSettings`, and `SampleSettingTab`. Rename these to reflect the name of your plugin.
