@@ -18,12 +18,16 @@ Manually releasing your theme can be time-consuming and error-prone. In this gui
          - uses: actions/checkout@v3
 
          - name: Create release
-           uses: softprops/action-gh-release@v1
-           with:
-             draft: true
-             files: |
-               manifest.json
-               theme.css
+           env:
+             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+           run: |
+             tag="${GITHUB_REF#refs/tags/}"
+
+             gh release create "$tag" \
+               --title="$tag" \
+               --generate-notes \
+               --draft \
+               manifest.json theme.css
    ```
 
 2. In your terminal, commit the workflow.

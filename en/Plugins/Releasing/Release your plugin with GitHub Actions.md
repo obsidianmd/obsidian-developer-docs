@@ -28,13 +28,15 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
              npm run build
 
          - name: Create release
-           uses: softprops/action-gh-release@v1
-           with:
-             draft: true
-             files: |
-               main.js
-               manifest.json
-               styles.css
+           env:
+             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+           run: |
+             tag="${GITHUB_REF#refs/tags/}"
+
+             gh release create "$tag" \
+               --title="$tag" \
+               --draft \
+               main.js manifest.json styles.css
    ```
 
 2. In your terminal, commit the workflow.
