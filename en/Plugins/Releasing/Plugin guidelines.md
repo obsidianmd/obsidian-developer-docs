@@ -9,9 +9,9 @@ While the guidelines on this page are recommendations, depending on their severi
 
 ### Avoid using global app instance
 
-Avoid using the global app object, `window.app`. Instead, use the reference in your plugin instance, `this.app`.
+Avoid using the global app object, `app` (or `window.app`). Instead, use the reference provided by your plugin instance, `this.app`.
 
-`window.app` is intended for debugging purposes and might be removed in the future.
+The global app object is intended for debugging purposes and might be removed in the future.
 
 ## Security
 
@@ -56,7 +56,7 @@ export default class MyPlugin extends Plugin {
 
 ### Don't detach leaves in `onunload`
 
-When the user updates your plugin, any open leaves will be reinitialized and may lead to a jarring user experience.
+When the user updates your plugin, any open leaves will be reinitialized at their original position, regardless of where the user had moved them.
 
 ## Commands
 
@@ -79,15 +79,21 @@ If the command requires an open and active Markdown editor, use `editorCallback`
 
 ### Avoid accessing `workspace.activeLeaf` directly
 
-If you want to access the editor in the active view, use [[obsidian.workspace.getactiveviewoftype|getActiveViewOfType()]] instead.
+If you want to access the active view, use [[obsidian.workspace.getactiveviewoftype|getActiveViewOfType()]] instead:
 
 ```ts
-const view = app.workspace.getActiveViewOfType(MarkdownView);
+const view = this.app.workspace.getActiveViewOfType(MarkdownView);
 
 // getActiveViewOfType will return null if the active view is null, or if it's not a MarkdownView.
 if (view) {
   // ...
 }
+```
+
+If you want to access the editor in the active note, use `activeEditor` instead:
+
+```ts
+const editor = this.app.workspace.activeEditor;
 ```
 
 ### Avoid managing references to custom views
@@ -121,7 +127,7 @@ for (let leaf of app.workspace.getActiveLeavesOfType(MY_VIEW_TYPE)) {
 
 ### Prefer the Editor API instead of `Vault.modify`
 
-If you want to edit an active note, use [[Editor]] instead of [[obsidian.vault.modify|Vault.modify()]].
+If you want to edit an active note, use the [[Editor]] interface instead of [[obsidian.vault.modify|Vault.modify()]].
 
 Editor maintains information about the active note, such as cursor position, selection, and folded content. When you use [[obsidian.vault.modify|Vault.modify()]] to edit the note, all that information is lost, which leads to a poor experience for the user.
 
