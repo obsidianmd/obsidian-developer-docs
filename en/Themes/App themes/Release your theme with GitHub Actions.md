@@ -1,9 +1,9 @@
-Manually releasing your plugin can be time-consuming and error-prone. In this guide, you'll configure your plugin to use [GitHub Actions](https://github.com/features/actions) to automatically create a release when you create a new tag.
+Manually releasing your theme can be time-consuming and error-prone. In this guide, you'll configure your theme to use [GitHub Actions](https://github.com/features/actions) to automatically create a release when you create a new tag.
 
-1. In the root directory of your plugin, create a file called `release.yml` under `.github/workflows` with the following content:
+1. In the root directory of your theme, create a file called `release.yml` under `.github/workflows` with the following content:
 
    ```yml
-   name: Release Obsidian plugin
+   name: Release Obsidian theme
 
    on:
      push:
@@ -17,16 +17,6 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
        steps:
          - uses: actions/checkout@v3
 
-         - name: Use Node.js
-           uses: actions/setup-node@v3
-           with:
-             node-version: "18.x"
-
-         - name: Build plugin
-           run: |
-             npm install
-             npm run build
-
          - name: Create release
            env:
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,8 +25,9 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
 
              gh release create "$tag" \
                --title="$tag" \
+               --generate-notes \
                --draft \
-               main.js manifest.json styles.css
+               manifest.json theme.css
    ```
 
 2. In your terminal, commit the workflow.
@@ -65,7 +56,7 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
 
 7. Add release notes to let users know what happened in this release, and then select **Publish release**.
 
-You've successfully set up your plugin to automatically create a GitHub release whenever you create a new tag.
+You've successfully set up your theme to automatically create a GitHub release whenever you create a new tag.
 
-- If this is the first release for this plugin, you're now ready to [[Submit your plugin]].
-- If this is an update to an already published plugin, your users can now update to the latest version.
+- If this is the first release for this theme, you're now ready to [[Submit your theme]].
+- If this is an update to an already published theme, your users can now update to the latest version.
