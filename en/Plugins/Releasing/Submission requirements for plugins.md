@@ -8,7 +8,7 @@ If you don't accept donations, remove `fundingUrl` from your manifest.
 
 ## Keep plugin descriptions short and simple
 
-Good plugin descriptions help users understand your plugin quickly and succinctly. Good descriptions often start with a an action statement such as:
+Good plugin descriptions help users understand your plugin quickly and succinctly. Good descriptions often start with an action statement such as:
 
 - "Translate selected text into..."
 - "Generate notes automatically from..."
