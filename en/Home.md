@@ -12,7 +12,6 @@ Build plugins to extend the existing functionality in Obsidian using TypeScript.
 
 - [[Build a plugin|Build your first plugin]]
 - [[Submit your plugin]]
-- [[obsidian|API reference]]
 
 ## Themes
 
@@ -21,6 +20,7 @@ Design beautiful themes and snippets for Obsidian using CSS.
 - [[Build a theme|Build your first theme]]
 - [[Submit your theme]]
 - [[CSS variables]]
+
 
 ## Join the developer community
 

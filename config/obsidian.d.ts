@@ -531,6 +531,10 @@ export class ColorComponent extends ValueComponent<string> {
     /**
      * @public
      */
+    setDisabled(disabled: boolean): this;
+    /**
+     * @public
+     */
     getValue(): HexString;
     /**
      * @public
@@ -624,6 +628,7 @@ export interface Command {
      * @public
      */
     hotkeys?: Hotkey[];
+
 }
 
 /**
@@ -688,11 +693,7 @@ export class Component {
      * @public
      */
     registerDomEvent<K extends keyof HTMLElementEventMap>(el: HTMLElement, type: K, callback: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
-    /**
-     * Registers an key event to be detached when unloading
-     * @public
-     */
-    registerScopeEvent(keyHandler: KeymapEventHandler): void;
+
     /**
      * Registers an interval (from setInterval) to be cancelled when unloading
      * Use {@link window.setInterval} instead of {@link setInterval} to avoid TypeScript confusing between NodeJS vs Browser API
@@ -1238,7 +1239,7 @@ export class FileManager {
      * @throws any errors that your callback function throws
      * @public
      */
-    processFrontMatter(file: TFile, fn: (frontMatter: any) => void): Promise<void>;
+    processFrontMatter(file: TFile, fn: (frontmatter: any) => void): Promise<void>;
 
 }
 
@@ -1515,6 +1516,7 @@ export interface HeadingCache extends CacheItem {
      * @public
      */
     heading: string;
+
     /**
      * @public
      */
@@ -2498,8 +2500,8 @@ export class Modal implements CloseableComponent {
 export type Modifier = 'Mod' | 'Ctrl' | 'Meta' | 'Shift' | 'Alt';
 
 /** @public */
-export const moment_2: typeof Moment;
-export { moment_2 as moment }
+export const moment: typeof Moment;
+
 
 /**
  * @public
@@ -2539,14 +2541,21 @@ export class MomentFormatComponent extends TextComponent {
 export function normalizePath(path: string): string;
 
 /**
+ * Notification component. Use to present timely, high-value information.
  * @public
  */
 export class Notice {
-
     /**
      * @public
      */
-    constructor(message: string | DocumentFragment, timeout?: number);
+    noticeEl: HTMLElement;
+    /**
+     * @param message
+     * @param duration - Time in milliseconds to show the notice for. If this is 0, the
+     * Notice will stay visible until the user manually dismisses it.
+     * @public
+     */
+    constructor(message: string | DocumentFragment, duration?: number);
     /**
      * Change the message of this notice.
      * @public
@@ -2661,14 +2670,32 @@ export const Platform: {
      * @public
      */
     isAndroidApp: boolean;
-
+    /**
+     * We're in a mobile app that has very limited screen space.
+     * @public
+     */
+    isPhone: boolean;
+    /**
+     * We're in a mobile app that has sufficiently large screen space.
+     * @public
+     */
+    isTablet: boolean;
     /**
      * We're on a macOS device, or a device that pretends to be one (like iPhones and iPads).
      * Typically used to detect whether to use command-based hotkeys vs ctrl-based hotkeys.
      * @public
      */
     isMacOS: boolean;
-
+    /**
+     * We're on a Windows device.
+     * @public
+     */
+    isWin: boolean;
+    /**
+     * We're on a Linux device.
+     * @public
+     */
+    isLinux: boolean;
     /**
      * We're running in Safari.
      * Typically used to provide workarounds for Safari bugs.
@@ -2681,7 +2708,8 @@ export const Platform: {
 /**
  * @public
  */
-export abstract class Plugin_2 extends Component {
+export abstract class Plugin extends Component {
+
     /**
      * @public
      */
@@ -2743,6 +2771,8 @@ export abstract class Plugin_2 extends Component {
      * Runs callback on all currently loaded instances of CodeMirror,
      * then registers the callback for all future CodeMirror instances.
      * @public
+     * @deprecated - This is only used with the legacy editor, which is no longer maintained,
+     * and will be removed in a future update.
      */
     registerCodeMirror(callback: (cm: CodeMirror.Editor) => any): void;
     /**
@@ -2776,7 +2806,7 @@ export abstract class Plugin_2 extends Component {
     saveData(data: any): Promise<void>;
 
 }
-export { Plugin_2 as Plugin }
+
 
 /**
  * @public
@@ -2829,7 +2859,7 @@ export abstract class PluginSettingTab extends SettingTab {
     /**
      * @public
      */
-    constructor(app: App, plugin: Plugin_2);
+    constructor(app: App, plugin: Plugin);
 }
 
 /**
@@ -4198,10 +4228,6 @@ export class Workspace extends Events {
     /**
      * @public
      */
-    on(name: 'click', callback: (evt: MouseEvent) => any, ctx?: any): EventRef;
-    /**
-     * @public
-     */
     on(name: 'active-leaf-change', callback: (leaf: WorkspaceLeaf | null) => any, ctx?: any): EventRef;
     /**
      * @public
@@ -4501,12 +4527,13 @@ export { }
 
 /** @public */
 declare global {
-	/**
-	 * Global reference to the app.
-	 * @public
-	 */
-	var app: App;
+    /**
+     * Global reference to the app.
+     * @public
+     */
+    var app: App;
 }
 
 /** @public */
 type IconName = string;
+
