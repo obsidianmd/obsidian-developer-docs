@@ -12,7 +12,6 @@ Build plugins to extend the existing functionality in Obsidian using TypeScript.
 
 - [[Build a plugin|Build your first plugin]]
 - [[Submit your plugin]]
-- [[obsidian|API reference]]
 
 ## Themes
 
