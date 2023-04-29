@@ -12,17 +12,22 @@ async function renameFiles(folderPath) {
     const files = await fs.readdir(folderPath);
 
     for (const file of files) {
-      // STep 1: Replace " > " with " › "
+      // Step 1: Replace escaped backtick with normal backtick
       try {
         let filePath = path.join(folderPath, file);
         const fileContent = await fs.readFile(filePath, 'utf-8');
-        const newContent = fileContent.replace(/ &gt; /g, ' › ');
+        const newContent = fileContent.replace(/\\`/g, '`');
         await fs.writeFile(filePath, newContent, 'utf-8');
-        console.log(`Replaced all occurrences of " > " with " › " in: ${filePath}`);
+        console.log(`Replaced all occurrences of escaped backtick with backtick in: ${filePath}`);
       } catch (err) {
         console.error(`Error processing file: ${err.message}`);
       }
-      
+
+      // Remove index
+      if (file === 'index.md') {
+        await fs.unlink(folderPath + file);
+      }
+
       // Step 2: Remove all "obsidian." prefixes
       if (file.startsWith('obsidian.') && file.endsWith('.md')) {
         const newFileName = file.replace('obsidian.', '');
@@ -33,6 +38,16 @@ async function renameFiles(folderPath) {
         try {
           await fs.rename(oldFilePath, newFilePath);
           console.log(`Successfully renamed: ${file} to ${newFileName}`);
+
+          // Step 2: add alias so links still work
+          const fileContent = await fs.readFile(newFilePath, 'utf-8');
+          const newFileContent = `---
+alias: "${file}"
+cssClass: hide-title
+---
+
+`+ fileContent;
+          await fs.writeFile(newFilePath, newFileContent, 'utf-8');
         } catch (err) {
           console.error(`Error renaming file: ${err.message}`);
         }

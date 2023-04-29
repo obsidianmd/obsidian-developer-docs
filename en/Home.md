@@ -22,6 +22,7 @@ Design beautiful themes and snippets for Obsidian using CSS.
 - [[Submit your theme]]
 - [[CSS variables]]
 
+
 ## Join the developer community
 
 If you get stuck, or if you're looking for feedback, [join the community](https://obsidian.md/community).
