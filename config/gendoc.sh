@@ -9,6 +9,7 @@ mkdir -p ../en/Reference/TypeScript\ API
 
 # 2. Run api-documenter and ensure it finishes before proceeding
 # The absolute path is not a bug; this is Silver's fork of api-documenter
+# Ths fork is available at here if you want to bulid your own: https://github.com/ericaxu/rushstack-obsidian
 D:\\Dropbox\\Projects\\rushstack\\apps\\api-documenter\\bin\\api-documenter markdown --output ../en/Reference/TypeScript\ API && \
 
 # 3. Run post-process.js with Node.js
