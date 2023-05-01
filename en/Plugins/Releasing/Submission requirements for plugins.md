@@ -16,14 +16,14 @@ Good plugin descriptions help users understand your plugin quickly and succinctl
 - "Sync highlights and annotations from..."
 - "Open links in..."
 
-Avoid starting your description with "This is a plugin", because that will be obvious to users in the context of the Community Plugins directory.
+Avoid starting your description with "This is a plugin", because it'll be obvious to users in the context of the Community Plugins directory.
 
 Your description should:
 
-- Follow the [Obsidian style guide](https://help.obsidian.md/Contributing+to+Obsidian/Style+guide)
-- Have 250 characters maximum
-- End with a period `.`
-- Avoid using emoji or special characters
+- Follow the [Obsidian style guide](https://help.obsidian.md/Contributing+to+Obsidian/Style+guide).
+- Have 250 characters maximum.
+- End with a period `.`.
+- Avoid using emoji or special characters.
 - Use correct capitalization for acronyms, proper nouns and trademarks such as "Obsidian", "Markdown", "PDF". If you are not sure how to capitalize a term, refer to its website or Wikipedia description.
 
 ## Node.js and Electron APIs are only allowed on desktop
