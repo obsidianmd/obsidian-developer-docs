@@ -1,8 +1,8 @@
 Obsidian lets you configure what content is visible to you at any given time. Hide the file explorer when you don't need it, display multiple documents side by side, or show an outline of your document while you're working on it. The configuration of visible content within your application window is known as the _workspace_.
 
-The workspace is implemented as a [tree data structure](https://en.wikipedia.org/wiki/Tree_(data_structure)), where each node in the tree is referred to as a [[obsidian.workspaceitem|workspace item]]. There are two types of workspace items: [[obsidian.workspaceparent|parents]] and [[obsidian.workspaceleaf|leaves]]. The main difference is that parent items can contain _child_ items, including other parent items, whereas leaf items can't contain any workspace items at all.
+The workspace is implemented as a [tree data structure](https://en.wikipedia.org/wiki/Tree_(data_structure)), where each node in the tree is referred to as a [[WorkspaceItem|workspace item]]. There are two types of workspace items: [[WorkspaceParent|parents]] and [[WorkspaceLeaf|leaves]]. The main difference is that parent items can contain _child_ items, including other parent items, whereas leaf items can't contain any workspace items at all.
 
-There are two types of parent items, [[obsidian.workspacesplit|splits]] and [[obsidian.workspacetabs|tabs]], which determine how the children are presented to the user:
+There are two types of parent items, [[WorkspaceSplit|splits]] and [[WorkspaceTabs|tabs]], which determine how the children are presented to the user:
 
 ```mermaid
 flowchart TD
@@ -96,7 +96,7 @@ flowchart TD
 
 ## Inspect the workspace
 
-You can access the workspace through the [[obsidian.app|App]] object. The following example prints the type of every leaf in the workspace:
+You can access the workspace through the [[App|App]] object. The following example prints the type of every leaf in the workspace:
 
 ```ts
 import { Plugin } from "obsidian";
@@ -114,20 +114,20 @@ export default class ExamplePlugin extends Plugin {
 
 ## Leaf lifecycle
 
-Plugins can add leaves of any type to the workspace, as well as define new leaf types through [[Views|custom views]]. Here are a few ways to add a leaf to the workspace. For more ways, refer to [[obsidian.workspace|Workspace]].
+Plugins can add leaves of any type to the workspace, as well as define new leaf types through [[Views|custom views]]. Here are a few ways to add a leaf to the workspace. For more ways, refer to [[Reference/TypeScript API/Workspace/Workspace|Workspace]].
 
-- If you want to add a new leaf in the root split, use [[obsidian.workspace.getleaf|getLeaf(true)]].
-- If you want to add a new leaf in any of the side bars, use [[obsidian.workspace.getleftleaf|getLeftLeaf()]] and [[obsidian.workspace.getrightleaf|getRightLeaf()]]. Both let you decide whether to add the leaf to a new split.
+- If you want to add a new leaf in the root split, use [[getLeaf|getLeaf(true)]].
+- If you want to add a new leaf in any of the side bars, use [[getLeftLeaf|getLeftLeaf()]] and [[getRightLeaf|getRightLeaf()]]. Both let you decide whether to add the leaf to a new split.
 
-You can also explicitly add the leaf in the split of your choice, using [[obsidian.workspace.createleafinparent|createLeafInParent()]].
+You can also explicitly add the leaf in the split of your choice, using [[createLeafInParent|createLeafInParent()]].
 
 Unless explicitly removed, any leaves that a plugin add to the workspace remain even after the plugin is disabled. Plugins are responsible for removing any leaves they add to the workspace.
 
-To remove a leaf from the workspace, call [[obsidian.workspaceleaf.detach|detach()]] on the leaf you want to remove. You can also remove all leaves of a certain type, by using [[obsidian.workspace.detachleavesoftype|detachLeavesOfType()]].
+To remove a leaf from the workspace, call [[detach|detach()]] on the leaf you want to remove. You can also remove all leaves of a certain type, by using [[detachLeavesOfType|detachLeavesOfType()]].
 
 ## Leaf groups
 
-You can create [linked panes](https://help.obsidian.md/User+interface/Workspace/Panes/Linked+pane) by assigning multiple leaves to the same group, using [[obsidian.workspaceleaf.setgroup|setGroup()]].
+You can create [linked panes](https://help.obsidian.md/User+interface/Workspace/Panes/Linked+pane) by assigning multiple leaves to the same group, using [[setGroup|setGroup()]].
 
 ```ts
 leaves.forEach((leaf) => leaf.setGroup("group1");

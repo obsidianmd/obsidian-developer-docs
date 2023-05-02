@@ -19,7 +19,7 @@ Building editor extensions can be challenging, so before you start building one,
 
 CodeMirror 6 (CM6) is a powerful engine for editing code using web technologies. At its core, the editor itself has a minimal set of features. Any features you'd expect from a modern editor are available as _extensions_ that you can pick and choose. While Obsidian comes with many of these extensions out-of-the-box, you can also register your own.
 
-To register an editor extension, use [[obsidian.plugin_2.registereditorextension|registerEditorExtension()]] in the `onload` method of your Obsidian plugin:
+To register an editor extension, use [[registerEditorExtension|registerEditorExtension()]] in the `onload` method of your Obsidian plugin:
 
 ```ts
 onload() {

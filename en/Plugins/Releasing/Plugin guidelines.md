@@ -37,7 +37,7 @@ Instead, use the DOM API or the Obsidian helper functions, such as `createEl()`,
 
 Any resources created by the plugin, such as event listeners, must be destroyed or released when the plugin unloads.
 
-When possible, use methods like [[obsidian.component.registerevent|registerEvent()]] or [[obsidian.plugin_2.addcommand|addCommand()]] to automatically clean up resources when the plugin unloads.
+When possible, use methods like [[registerEvent|registerEvent()]] or [[addCommand|addCommand()]] to automatically clean up resources when the plugin unloads.
 
 ```ts
 export default class MyPlugin extends Plugin {
@@ -79,7 +79,7 @@ If the command requires an open and active Markdown editor, use `editorCallback`
 
 ### Avoid accessing `workspace.activeLeaf` directly
 
-If you want to access the active view, use [[obsidian.workspace.getactiveviewoftype|getActiveViewOfType()]] instead:
+If you want to access the active view, use [[getActiveViewOfType|getActiveViewOfType()]] instead:
 
 ```ts
 const view = this.app.workspace.getActiveViewOfType(MarkdownView);
@@ -127,13 +127,13 @@ for (let leaf of app.workspace.getActiveLeavesOfType(MY_VIEW_TYPE)) {
 
 ### Prefer the Editor API instead of `Vault.modify`
 
-If you want to edit an active note, use the [[Editor]] interface instead of [[obsidian.vault.modify|Vault.modify()]].
+If you want to edit an active note, use the [[Editor]] interface instead of [[Vault/modify|Vault.modify()]].
 
-Editor maintains information about the active note, such as cursor position, selection, and folded content. When you use [[obsidian.vault.modify|Vault.modify()]] to edit the note, all that information is lost, which leads to a poor experience for the user.
+Editor maintains information about the active note, such as cursor position, selection, and folded content. When you use [[Vault/modify|Vault.modify()]] to edit the note, all that information is lost, which leads to a poor experience for the user.
 
 Editor is also more efficient when making small changes to parts of the note.
 
-Only use [[obsidian.vault.modify|Vault.modify()]] if you're editing a file in the background.
+Only use [[Vault/modify|Vault.modify()]] if you're editing a file in the background.
 
 ### Prefer the Vault API over the Adapter API
 
@@ -146,7 +146,7 @@ While the file operations in the Adapter API are often more familiar to many dev
 
 ### Avoid iterating all files to find a file by its path
 
-This is inefficient, especially for large vaults. Use [[obsidian.vault.getabstractfilebypath|getAbstractFileByPath()]] instead.
+This is inefficient, especially for large vaults. Use [[Vault/getAbstractFileByPath|getAbstractFileByPath()]] instead.
 
 **Don't** do this:
 
@@ -169,7 +169,7 @@ if (file instanceof TFile) {
 
 ### Use `normalizePath()` to clean up user-defined paths
 
-Use [[obsidian.normalizepath|normalizePath()]] whenever you accept user-defined paths to files or folders in the vault, or when you construct your own paths in the plugin code.
+Use [[normalizePath|normalizePath()]] whenever you accept user-defined paths to files or folders in the vault, or when you construct your own paths in the plugin code.
 
 `normalizePath()` takes a path and scrubs it to be safe for the file system and for cross-platform use. This function:
 
@@ -188,7 +188,7 @@ const pathToPlugin = normalizePath(app.vault.configDir + "//plugins/my-plugin");
 
 ### Change or reconfigure editor extensions
 
-If you want to change or reconfigure an [[Editor extensions|editor extension]] after you've registered using [[obsidian.plugin_2.registereditorextension|registerEditorExtension()]], use [[obsidian.workspace.updateoptions|updateOptions()]] to update all editors.
+If you want to change or reconfigure an [[Editor extensions|editor extension]] after you've registered using [[registerEditorExtension|registerEditorExtension()]], use [[updateOptions|updateOptions()]] to update all editors.
 
 ```ts
 class MyPlugin extends Plugin {

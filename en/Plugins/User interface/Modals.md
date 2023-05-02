@@ -1,4 +1,4 @@
-Modals display information and accept input from the user. To create a modal, create a class that extends [[obsidian.modal|Modal]]:
+Modals display information and accept input from the user. To create a modal, create a class that extends [[Reference/TypeScript API/Modal/Modal|Modal]]:
 
 ```ts
 import { App, Modal } from "obsidian";
@@ -20,10 +20,10 @@ export class ExampleModal extends Modal {
 }
 ```
 
-- [[obsidian.modal.onopen|onOpen()]] is called when the modal is opened and is responsible for building the content of your modal. For more information, refer to [HTML elements](HTML%20elements.md).
-- [[obsidian.modal.onclose|onClose()]] is called when the modal is closed and is responsible for cleaning up any resources used by the modal.
+- [[Reference/TypeScript API/View/onOpen|onOpen()]] is called when the modal is opened and is responsible for building the content of your modal. For more information, refer to [HTML elements](HTML%20elements.md).
+- [[Reference/TypeScript API/Modal/onClose|onClose()]] is called when the modal is closed and is responsible for cleaning up any resources used by the modal.
 
-To open a modal, create a new instance of `ExampleModal` and call [[obsidian.modal.open|open()]] on it:
+To open a modal, create a new instance of `ExampleModal` and call [[Reference/TypeScript API/Modal/open|open()]] on it:
 
 ```ts
 import { Plugin } from "obsidian";
@@ -100,7 +100,7 @@ new ExampleModal(this.app, (result) => {
 
 ## Select from list of suggestions
 
-[[obsidian.suggestmodal|SuggestModal]] is a special modal that lets you display a list of suggestions to the user.
+[[SuggestModal|SuggestModal]] is a special modal that lets you display a list of suggestions to the user.
 
 ![[suggest-modal.gif]]
 
@@ -148,7 +148,7 @@ export class ExampleModal extends SuggestModal<Book> {
 }
 ```
 
-In addition to `SuggestModal`, the Obsidian API provides an even more specialized type of modal for suggestions: the [[obsidian.fuzzysuggestmodal|FuzzySuggestModal]]. While it doesn't give you the same control of how each item is rendered, you get [fuzzy string search](https://en.wikipedia.org/wiki/Approximate_string_matching) out-of-the-box.
+In addition to `SuggestModal`, the Obsidian API provides an even more specialized type of modal for suggestions: the [[FuzzySuggestModal|FuzzySuggestModal]]. While it doesn't give you the same control of how each item is rendered, you get [fuzzy string search](https://en.wikipedia.org/wiki/Approximate_string_matching) out-of-the-box.
 
 ![[fuzzy-suggestion-modal.png]]
 

@@ -1,4 +1,4 @@
-The [[obsidian.editor|Editor]] class exposes operations for reading and manipulating an active Markdown document in edit mode.
+The [[Reference/TypeScript API/Editor/Editor|Editor]] class exposes operations for reading and manipulating an active Markdown document in edit mode.
 
 If you want to access the editor in a command, use the [[Commands#Editor commands|editorCallback]].
 
@@ -20,7 +20,7 @@ if (view) {
 
 ## Insert text at cursor position
 
-The [[obsidian.editor.replacerange|replaceRange()]] method replaces the text between two cursor positions. If you only give it one position, it inserts the new text between that position and the next.
+The [[replaceRange|replaceRange()]] method replaces the text between two cursor positions. If you only give it one position, it inserts the new text between that position and the next.
 
 The following command inserts today's date at the cursor position:
 
@@ -47,7 +47,7 @@ export default class ExamplePlugin extends Plugin {
 
 ## Replace current selection
 
-If you want to modify the selected text, use [[obsidian.editor.replaceselection|replaceSelection()]] to replace the current selection with a new text.
+If you want to modify the selected text, use [[replaceRange|replaceSelection()]] to replace the current selection with a new text.
 
 The following command reads the current selection and converts it to uppercase:
 

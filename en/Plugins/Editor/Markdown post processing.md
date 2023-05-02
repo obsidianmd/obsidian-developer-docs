@@ -26,7 +26,7 @@ export default class ExamplePlugin extends Plugin {
 }
 ```
 
-The `Emoji` class extends [[obsidian.markdownrenderchild|MarkdownRenderChild]], and replaces the code block with a `span` element with the emoji:
+The `Emoji` class extends [[MarkdownRenderChild|MarkdownRenderChild]], and replaces the code block with a `span` element with the emoji:
 
 ```ts
 import { MarkdownRenderChild } from "obsidian";
@@ -73,7 +73,7 @@ flowchart LR
     Start --> Stop
 ```
 
-If you want to add your own custom code blocks like the Mermaid one, you can use [[obsidian.plugin_2.registermarkdowncodeblockprocessor|registerMarkdownCodeBlockProcessor()]]. The following example renders a code block with CSV data, as a table:
+If you want to add your own custom code blocks like the Mermaid one, you can use [[registerMarkdownCodeBlockProcessor|registerMarkdownCodeBlockProcessor()]]. The following example renders a code block with CSV data, as a table:
 
 ```ts
 import { Plugin } from "obsidian";

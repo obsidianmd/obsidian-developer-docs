@@ -1,6 +1,6 @@
 Views determine how Obsidian displays content. The file explorer, graph view, and the Markdown view are all examples of views, but you can also create your own custom views that display content in a way that makes sense for your plugin.
 
-To create a custom view, create a class that extends the [[obsidian.itemview|ItemView]] interface:
+To create a custom view, create a class that extends the [[ItemView|ItemView]] interface:
 
 ```ts
 import { ItemView, WorkspaceLeaf } from "obsidian";
@@ -79,7 +79,7 @@ export default class ExamplePlugin extends Plugin {
 }
 ```
 
-The second argument to [[obsidian.plugin_2.registerview|registerView()]] is a factory function that returns an instance of the view you want to register.
+The second argument to [[registerView|registerView()]] is a factory function that returns an instance of the view you want to register.
 
 > [!warning]
 > Never manage references to views in your plugin. Obsidian may call the view factory function multiple times. Avoid side effects in your view, and use `getLeavesOfType()` whenever you need to access your view instances.

@@ -6,7 +6,7 @@ Browse to [lucide.dev](https://lucide.dev/) to see all available icons and their
 
 ## Draw icons
 
-If you'd like to use icons in your custom interfaces, use the [[obsidian.seticon|setIcon()]] utility function to add an icon to an [[HTML elements|HTML element]]. The following example adds icon to the status bar:
+If you'd like to use icons in your custom interfaces, use the [[setIcon|setIcon()]] utility function to add an icon to an [[HTML elements|HTML element]]. The following example adds icon to the status bar:
 
 ```ts
 import { Plugin, setIcon } from "obsidian";
@@ -29,7 +29,7 @@ div {
 
 ## Add your own icon
 
-To add a custom icon for your plugin, use the [[obsidian.addicon|addIcon()]] utility:
+To add a custom icon for your plugin, use the [[addIcon|addIcon()]] utility:
 
 ```ts
 import { addIcon, Plugin } from "obsidian";

@@ -60,7 +60,7 @@ export default class ExamplePlugin extends Plugin {
 
 ## Save and load the settings object
 
-[[obsidian.plugin_2.loaddata|loadData()]] and [[obsidian.plugin_2.savedata|saveData()]] provide an easy way to store and retrieve data from disk. The example also introduces two helper methods that makes it easier to use `loadData()` and `saveData()` from other parts of the plugin.
+[[loadData|loadData()]] and [[saveData|saveData()]] provide an easy way to store and retrieve data from disk. The example also introduces two helper methods that makes it easier to use `loadData()` and `saveData()` from other parts of the plugin.
 
 ```ts
 export default class ExamplePlugin extends Plugin {
@@ -116,7 +116,7 @@ The plugin can now save and load plugin configuration, but the user doesn't yet 
 this.addSettingTab(new ExampleSettingTab(this.app, this));
 ```
 
-Here, the `ExampleSettingTab` is a class that extends [[obsidian.pluginsettingtab|PluginSettingTab]]:
+Here, the `ExampleSettingTab` is a class that extends [[PluginSettingTab|PluginSettingTab]]:
 
 ```ts
 import ExamplePlugin from "./main";

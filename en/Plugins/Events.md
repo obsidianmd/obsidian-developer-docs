@@ -1,6 +1,6 @@
 Many of the interfaces in the Obsidian lets you subscribe to events throughout the application, for example when the user makes changes to a file.
 
-Any registered event handlers need to be detached whenever the plugin unloads. The safest way to make sure this happens is to use the [[obsidian.component.registerevent|registerEvent()]] method.
+Any registered event handlers need to be detached whenever the plugin unloads. The safest way to make sure this happens is to use the [[registerEvent|registerEvent()]] method.
 
 ```ts
 import { Plugin } from "obsidian";
@@ -16,7 +16,7 @@ export default class ExamplePlugin extends Plugin {
 
 ## Timing events
 
-If you want to repeatedly call a function with a fixed delay, use the [`window.setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) function with the [`registerInterval()`](./reference/typescript/classes/Component.md#registerinterval) method.
+If you want to repeatedly call a function with a fixed delay, use the [`window.setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) function with the [[registerInterval|registerInterval()]] method.
 
 The following example displays the current time in the status bar, updated every second:
 
