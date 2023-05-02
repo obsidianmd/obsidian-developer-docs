@@ -82,6 +82,18 @@ async function moveFileToHierarchy(filePath) {
   await fs.rename(filePath, targetPath);
 }
 
+async function folderExists(folderPath) {
+  try {
+    const stats = await fs.stat(folderPath);
+    return stats.isDirectory();
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return false;
+    }
+    throw error;
+  }
+}
+
 async function organizeIntoFolders() {
   await createDirectoryIfNotExists(targetDir);
 
@@ -94,6 +106,23 @@ async function organizeIntoFolders() {
         await moveFileToHierarchy(filePath);
       }
     }
+
+    const remainingFiles = await fs.readdir(sourceDir);
+    for (const file of remainingFiles) {
+      if (!file.endsWith('.md')) {
+        continue;
+      }
+
+      const fileName = path.basename(file, '.md');
+
+      if (await folderExists(path.join(sourceDir, fileName))) {
+        const filePath = path.join(sourceDir, file);
+        const targetPath = path.join(sourceDir, fileName, file)
+        await fs.rename(filePath, targetPath);
+        console.log('Moved ', filePath, ' to ', targetPath);
+      }
+    }
+
   } catch (err) {
     console.error(`Error reading directory: ${err.message}`);
   }
