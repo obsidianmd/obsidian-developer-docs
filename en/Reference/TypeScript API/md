@@ -71,7 +71,7 @@ cssClass: hide-title
 |  [`FuzzySuggestModal`](obsidian.FuzzySuggestModal.md) |  |
 |  [`ItemView`](obsidian.ItemView.md) |  |
 |  [`MarkdownRenderer`](obsidian.MarkdownRenderer.md) |  |
-|  [`Plugin\_2`](obsidian.Plugin_2.md) |  |
+|  [`Plugin\_2`](obsidian.Plugin.md) |  |
 |  [`PluginSettingTab`](obsidian.PluginSettingTab.md) |  |
 |  [`PopoverSuggest`](obsidian.PopoverSuggest.md) |  |
 |  [`SettingTab`](obsidian.SettingTab.md) |  |

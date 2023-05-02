@@ -1,5 +1,5 @@
 ---
-alias: "obsidian.Plugin_2.addRibbonIcon.md"
+alias: "obsidian.Plugin.addRibbonIcon.md"
 cssClass: hide-title
 ---
 

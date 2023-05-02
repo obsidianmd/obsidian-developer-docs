@@ -22,5 +22,5 @@ constructor(app: App, plugin: Plugin);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>app</code> | [`App`](obsidian.App.md) |  |
-|  <code>plugin</code> | [`Plugin`](obsidian.Plugin_2.md) |  |
+|  <code>plugin</code> | [`Plugin`](obsidian.Plugin.md) |  |
 

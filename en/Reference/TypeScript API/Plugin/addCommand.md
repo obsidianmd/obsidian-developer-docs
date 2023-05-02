@@ -1,5 +1,5 @@
 ---
-alias: "obsidian.Plugin_2.addCommand.md"
+alias: "obsidian.Plugin.addCommand.md"
 cssClass: hide-title
 ---
 

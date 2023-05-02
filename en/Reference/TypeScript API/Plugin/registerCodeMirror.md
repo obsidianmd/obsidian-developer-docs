@@ -1,5 +1,5 @@
 ---
-alias: "obsidian.Plugin_2.registerCodeMirror.md"
+alias: "obsidian.Plugin.registerCodeMirror.md"
 cssClass: hide-title
 ---
 

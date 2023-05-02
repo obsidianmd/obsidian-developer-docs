@@ -1,5 +1,5 @@
 ---
-alias: "obsidian.Plugin_2.registerObsidianProtocolHandler.md"
+alias: "obsidian.Plugin.registerObsidianProtocolHandler.md"
 cssClass: hide-title
 ---
 

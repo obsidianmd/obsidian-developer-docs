@@ -1,5 +1,5 @@
 ---
-alias: "obsidian.Plugin_2.(constructor).md"
+alias: "obsidian.Plugin.(constructor).md"
 cssClass: hide-title
 ---
 

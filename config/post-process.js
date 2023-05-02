@@ -30,7 +30,7 @@ async function renameFiles(folderPath) {
 
       // Step 2: Remove all "obsidian." prefixes
       if (file.startsWith('obsidian.') && file.endsWith('.md')) {
-        const newFileName = file.replace('obsidian.', '');
+        const newFileName = file.replace('obsidian.', '').replace('Plugin_2', 'Plugin');
         const oldFilePath = path.join(folderPath, file);
         const newFilePath = path.join(folderPath, newFileName);
 
@@ -41,12 +41,15 @@ async function renameFiles(folderPath) {
 
           // Step 2: add alias so links still work
           const fileContent = await fs.readFile(newFilePath, 'utf-8');
-          const newFileContent = `---
+          let newFileContent = `---
 alias: "${file}"
 cssClass: hide-title
 ---
 
 `+ fileContent;
+
+          // Somehow we still get Plugin_2 even if `obsidian.d.ts` doesn't contain any reference to it
+          newFileContent = newFileContent.replace('Plugin_2', 'Plugin');
           await fs.writeFile(newFilePath, newFileContent, 'utf-8');
         } catch (err) {
           console.error(`Error renaming file: ${err.message}`);

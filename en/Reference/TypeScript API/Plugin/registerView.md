@@ -1,5 +1,5 @@
 ---
-alias: "obsidian.Plugin_2.registerView.md"
+alias: "obsidian.Plugin.registerView.md"
 cssClass: hide-title
 ---
 

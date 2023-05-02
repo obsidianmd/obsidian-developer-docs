@@ -1,5 +1,5 @@
 ---
-alias: "obsidian.Plugin_2.saveData.md"
+alias: "obsidian.Plugin.saveData.md"
 cssClass: hide-title
 ---
 
