@@ -31,9 +31,9 @@ jobs:
         run: npm install -g @microsoft/rush
 
       - name: Build Rushstack
+        working-directory: ./rushstack-obsidian
         continue-on-error: true
         run: |
-          cd ./rushstack-obsidian
           rush update --bypass-policy
           rush build
 
@@ -43,5 +43,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Build API Documenter
-        run: |
-          ./apps/api-documenter/bin/api-documenter markdown --output ../../en/Reference/TypeScript\ API
+        working-directory: ./config
+        run: ../rushstack-obsidian/apps/api-documenter/bin/api-documenter markdown --output ../en/Reference/TypeScript\ API
+
+      - name: Post-process Markdown
+        working-directory: ./config
+        run: node post-process.js
