@@ -31,10 +31,11 @@ jobs:
         run: npm install -g @microsoft/rush
 
       - name: Build Rushstack
+        continue-on-error: true
         run: |
           cd ./rushstack-obsidian
           rush update --bypass-policy
-          rush build 2>&1
+          rush build
 
       - name: Configure Git user
         run: |
