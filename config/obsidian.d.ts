@@ -2702,6 +2702,14 @@ export const Platform: {
      * @public
      */
     isSafari: boolean;
+    /**
+     * The path prefix for resolving local files on this platform.
+     * This returns:
+     * - `file:///` on mobile
+     * - `app://random-id/` on desktop (Replaces the old format of `app://local/`)
+     * @public
+     */
+    resourcePathPrefix: string;
 
 };
 
@@ -4527,13 +4535,12 @@ export { }
 
 /** @public */
 declare global {
-    /**
-     * Global reference to the app.
-     * @public
-     */
-    var app: App;
+	/**
+	 * Global reference to the app.
+	 * @public
+	 */
+	var app: App;
 }
 
 /** @public */
 type IconName = string;
-
