@@ -16,11 +16,6 @@ jobs:
         with:
           node-version: "16.x"
 
-      - name: Configure Git user
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
       - name: Install API Extractor
         run: npm install -g @microsoft/api-extractor
 
@@ -38,8 +33,13 @@ jobs:
       - name: Build Rushstack
         run: |
           cd ./rushstack-obsidian
-          rush update
+          rush update --bypass-policy
           rush build
+
+      - name: Configure Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Build API Documenter
         run: |
