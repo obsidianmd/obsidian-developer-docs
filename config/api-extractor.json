@@ -3,7 +3,7 @@
 	"projectFolder": ".",
 	"mainEntryPointFilePath": "<projectFolder>/obsidian.d.ts",
 	"bundledPackages": [],
-	"newlineKind": "lf",
+	"newlineKind": "os",
 	"compiler": {
 		"overrideTsconfig": {}
 	},
