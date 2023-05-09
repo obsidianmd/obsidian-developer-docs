@@ -34,7 +34,7 @@ jobs:
         run: |
           cd ./rushstack-obsidian
           rush update --bypass-policy
-          rush build
+          rush build 2>&1
 
       - name: Configure Git user
         run: |
