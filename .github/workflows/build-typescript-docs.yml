@@ -42,10 +42,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Build API Documenter
+      - name: Generate API docs
         working-directory: ./config
         run: ../rushstack-obsidian/apps/api-documenter/bin/api-documenter markdown --output ../en/Reference/TypeScript\ API
 
       - name: Post-process Markdown
         working-directory: ./config
         run: node post-process.js
+
+      - name: Print results
+        run: git diff
