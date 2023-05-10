@@ -37,11 +37,6 @@ jobs:
           rush update --bypass-policy
           rush build
 
-      - name: Configure Git user
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
       - name: Generate API docs
         working-directory: ./config
         run: ../rushstack-obsidian/apps/api-documenter/bin/api-documenter markdown --output ../en/Reference/TypeScript\ API
@@ -50,5 +45,25 @@ jobs:
         working-directory: ./config
         run: node post-process.js
 
-      - name: Print results
+      - name: Print changes
         run: git diff
+
+      - name: Configure Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git checkout -b $GITHUB_RUN_ID
+          git add en/Reference
+          git commit -m "Auto-generate docs for obsidian.d.ts"
+          git push -u origin $GITHUB_RUN_ID
+
+      - name: Create pull request
+        run: |
+          gh pr create \
+            --title "Auto-generate docs for obsidian.d.ts" \
+            --body "This PR has been automatically created by GitHub Actions." \
+            --base main \
+            --head $GITHUB_RUN_ID
