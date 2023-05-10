@@ -2,7 +2,8 @@ name: Build TypeScript docs
 
 on:
   push:
-    branches: [main]
+    paths:
+    - 'config/**' # Only run this workflow whenever a file in ./config has changed.
 
 jobs:
   build:
