@@ -26,6 +26,7 @@ Platform: {
     isWin: boolean;
     isLinux: boolean;
     isSafari: boolean;
+    resourcePathPrefix: string;
 
 }
 ```
