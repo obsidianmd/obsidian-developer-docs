@@ -61,6 +61,8 @@ jobs:
           git push -u origin $GITHUB_RUN_ID
 
       - name: Create pull request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create \
             --title "Auto-generate docs for obsidian.d.ts" \
