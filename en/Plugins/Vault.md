@@ -55,6 +55,39 @@ export default class ExamplePlugin extends Plugin {
 }
 ```
 
+## Modify files
+
+To write text content to an existing file, use [[modify|Vault.modify()]].
+
+```ts
+function writeCurrentDate(vault: Vault, file: TFile): Promise<void> {
+  return vault.modify(file, `Today is ${new Intl.DateTimeFormat().format(new Date())}.`);
+}
+```
+
+If you want to modify a file based on its current content, use [[process|Vault.process()]] instead. The second argument is a callback that provides the current file content and returns the modified content.
+
+```ts
+// emojify replaces all occurrences of :) with 🙂.
+function emojify(vault: Vault, file: TFile): Promise<string> {
+  return vault.process(file, (data) => {
+    return data.replace(":)", 🙂);
+  })
+}
+```
+
+`Vault.process()` is an abstraction on top of [[Reference/TypeScript API/Vault/read|Vault.read()]] and [[modify|Vault.modify()]] that guarantees that the file doesn't change between reading the current content and writing the updated content. Always prefer `Vault.process()` over `Vault.read()`/`Vault.modify()` to avoid unintentional loss of data.
+
+### Asynchronous modifications
+
+[[process|Vault.process()]] only supports synchronous modifications. If you need to modify a file asynchronously:
+
+1. Read the file using [[cachedRead|Vault.cachedRead()]].
+2. Perform the async operations.
+3. Update the file using [[Reference/TypeScript API/Vault/process|Vault.process()]].
+
+Remember to check that the `data` in the `process()` callback is the same as the data returned by `cachedRead()`. If they aren't the same, that means that the file was changed by a different process, and you may want to ask the user for confirmation.
+
 ## Delete files
 
 There are two methods to delete a file, [[delete|delete()]], and [[trash|trash()]]. Which one you should use depends on if you want to allow the user to change their mind.
