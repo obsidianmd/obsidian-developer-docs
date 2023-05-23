@@ -71,7 +71,7 @@ If you want to modify a file based on its current content, use [[process|Vault.p
 // emojify replaces all occurrences of :) with 🙂.
 function emojify(vault: Vault, file: TFile): Promise<string> {
   return vault.process(file, (data) => {
-    return data.replace(":)", 🙂);
+    return data.replace(":)", "🙂");
   })
 }
 ```
