@@ -86,7 +86,7 @@ function emojify(vault: Vault, file: TFile): Promise<string> {
 2. Perform the async operations.
 3. Update the file using [[Reference/TypeScript API/Vault/process|Vault.process()]].
 
-Remember to check that the `data` in the `process()` callback is the same as the data returned by `cachedRead()`. If they aren't the same, that means that the file was changed by a different process, and you may want to ask the user for confirmation.
+Remember to check that the `data` in the `process()` callback is the same as the data returned by `cachedRead()`. If they aren't the same, that means that the file was changed by a different process, and you may want to ask the user for confirmation, or try again.
 
 ## Delete files
 
