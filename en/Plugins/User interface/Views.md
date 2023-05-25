@@ -61,7 +61,6 @@ export default class ExamplePlugin extends Plugin {
   }
 
   async onunload() {
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE_EXAMPLE);
   }
 
   async activateView() {
