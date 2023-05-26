@@ -46,15 +46,8 @@ In the settings tab, you can add headings to organize settings. Avoid including 
 
 Any text in UI elements should be using [Sentence case](https://en.wiktionary.org/wiki/sentence_case) instead of [Title Case](https://en.wikipedia.org/wiki/Title_case).
 
-**Prefer**:
-
-- Template folder location
-- Create new note
-
-**Avoid**:
-
-- Template Folder Location
-- Create New Note
+- Prefer "Template folder location" over "Template Folder Location".
+- Prefer "Create new note" over "Create New Note".
 
 ## Security
 
