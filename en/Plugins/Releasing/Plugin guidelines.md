@@ -15,7 +15,7 @@ The global app object is intended for debugging purposes and might be removed in
 
 ## UI text
 
-This section lists guidelines for formatting text in the user interface, such as settings and buttons.
+This section lists guidelines for formatting text in the user interface, such as settings, commands, and buttons.
 
 The example below from **Settings → Appearance** demonstrates the guidelines for text in the user interface.
 
@@ -44,7 +44,7 @@ In the settings tab, you can add headings to organize settings. Avoid including 
 
 ### Use sentence case in UI
 
-Any text in UI elements should be using [Sentence case](https://en.wiktionary.org/wiki/sentence_case) instead of [Title Case](https://en.wikipedia.org/wiki/Title_case).
+Any text in UI elements should be using [Sentence case](https://en.wiktionary.org/wiki/sentence_case) instead of [Title Case](https://en.wikipedia.org/wiki/Title_case), where only the first word in a sentence, and proper nouns, should be capitalized.
 
 - Prefer "Template folder location" over "Template Folder Location".
 - Prefer "Create new note" over "Create New Note".
