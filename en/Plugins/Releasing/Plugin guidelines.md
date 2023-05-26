@@ -13,6 +13,42 @@ Avoid using the global app object, `app` (or `window.app`). Instead, use the ref
 
 The global app object is intended for debugging purposes and might be removed in the future.
 
+## UI text
+
+This section lists guidelines for formatting text in the user interface, such as settings, commands, and buttons.
+
+The example below from **Settings → Appearance** demonstrates the guidelines for text in the user interface.
+
+![[settings-headings.png]]
+
+1. [[#Only use headings under settings if you have more than one section.|General settings are at the top and don't have a heading]].
+2. [[#Avoid "settings" in settings headings|Section headings don't have "settings" in the heading text]].
+3. [[#Use Sentence case in UI]].
+
+For more information on writing and formatting text for Obsidian, refer to our [Style guide](https://help.obsidian.md/Contributing+to+Obsidian/Style+guide).
+
+### Only use headings under settings if you have more than one section.
+
+Avoid adding a top-level heading in the settings tab, such as "General", "Settings", or the name of your plugin.
+
+If you have more than one section under settings, and one contains general settings, keep them at the top without adding a heading.
+
+For example, look at the settings under **Settings → Appearance**:
+
+### Avoid "settings" in settings headings
+
+In the settings tab, you can add headings to organize settings. Avoid including the word "settings" to these headings. Since everything in under the settings tab is settings, repeating it for every heading becomes redundant.
+
+- Prefer "Advanced" over "Advanced settings".
+- Prefer "Templates" over "Settings for templates".
+
+### Use sentence case in UI
+
+Any text in UI elements should be using [Sentence case](https://en.wiktionary.org/wiki/sentence_case) instead of [Title Case](https://en.wikipedia.org/wiki/Title_case), where only the first word in a sentence, and proper nouns, should be capitalized.
+
+- Prefer "Template folder location" over "Template Folder Location".
+- Prefer "Create new note" over "Create New Note".
+
 ## Security
 
 ### Avoid `innerHTML`, `outerHTML` and `insertAdjacentHTML`
