@@ -39,19 +39,12 @@ For example, look at the settings under **Settings → Appearance**:
 
 In the settings tab, you can add headings to organize settings. Avoid including the word "settings" to these headings. Since everything in under the settings tab is settings, repeating it for every heading becomes redundant.
 
-**Prefer**:
+- Prefer "Advanced" over "Advanced settings".
+- Prefer "Templates" over "Settings for templates".
 
-- Advanced
-- Templates
+### Use sentence case in UI
 
-**Avoid**:
-
-- Advanced settings
-- Settings for templates
-
-### Use Sentence case in UI
-
-Any text in UI elements should be using Sentence case instead of Title Case.
+Any text in UI elements should be using [Sentence case](https://en.wiktionary.org/wiki/sentence_case) instead of [Title Case](https://en.wikipedia.org/wiki/Title_case).
 
 **Prefer**:
 
