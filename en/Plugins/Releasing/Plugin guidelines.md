@@ -25,6 +25,8 @@ The example below from **Settings → Appearance** demonstrates the guidelines f
 2. [[#Avoid "settings" in settings headings|Section headings don't have "settings" in the heading text]].
 3. [[#Use Sentence case in UI]].
 
+For more information on writing and formatting text for Obsidian, refer to our [Style guide](https://help.obsidian.md/Contributing+to+Obsidian/Style+guide).
+
 ### Only use headings under settings if you have more than one section.
 
 Avoid adding a top-level heading in the settings tab, such as "General", "Settings", or the name of your plugin.
