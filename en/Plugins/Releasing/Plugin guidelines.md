@@ -13,6 +13,54 @@ Avoid using the global app object, `app` (or `window.app`). Instead, use the ref
 
 The global app object is intended for debugging purposes and might be removed in the future.
 
+## UI text
+
+This section lists guidelines for formatting text in the user interface, such as settings and buttons.
+
+The example below from **Settings → Appearance** demonstrates the guidelines for text in the user interface.
+
+![[settings-headings.png]]
+
+1. [[#Only use headings under settings if you have more than one section.|General settings are at the top and don't have a heading]].
+2. [[#Avoid "settings" in settings headings|Section headings don't have "settings" in the heading text]].
+3. [[#Use Sentence case in UI]].
+
+### Only use headings under settings if you have more than one section.
+
+Avoid adding a top-level heading in the settings tab, such as "General", "Settings", or the name of your plugin.
+
+If you have more than one section under settings, and one contains general settings, keep them at the top without adding a heading.
+
+For example, look at the settings under **Settings → Appearance**:
+
+### Avoid "settings" in settings headings
+
+In the settings tab, you can add headings to organize settings. Avoid including the word "settings" to these headings. Since everything in under the settings tab is settings, repeating it for every heading becomes redundant.
+
+**Prefer**:
+
+- Advanced
+- Templates
+
+**Avoid**:
+
+- Advanced settings
+- Settings for templates
+
+### Use Sentence case in UI
+
+Any text in UI elements should be using Sentence case instead of Title Case.
+
+**Prefer**:
+
+- Template folder location
+- Create new note
+
+**Avoid**:
+
+- Template Folder Location
+- Create New Note
+
 ## Security
 
 ### Avoid `innerHTML`, `outerHTML` and `insertAdjacentHTML`
