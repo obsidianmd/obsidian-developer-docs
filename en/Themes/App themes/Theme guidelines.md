@@ -9,6 +9,10 @@ Since most of Obsidian's user interface uses CSS variables, you can create highl
 Override general variables under `body`, and colors under `.theme-light` or `.theme-dark`.
 
 ```css
+:root {
+  --input-focus-border-color: Highlight;
+}
+
 body {
   --font-text-size: 18px;
 }
