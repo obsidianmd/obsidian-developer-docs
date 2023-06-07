@@ -22,7 +22,7 @@ The note title displayed at the top of the page. This title can be hidden in the
 | Variable                   | Description                       |
 | -------------------------- | --------------------------------- |
 | `--page-title-color`       | Font color                        |
-| `--page-title-font`        | Font family                       |
+| `--page-title-font`        | Font family, see [[Site fonts]]                       |
 | `--page-title-line-height` | Line height                       |
 | `--page-title-size`        | Font size                         |
 | `--page-title-style`       | Font style, e.g. normal or italic |
