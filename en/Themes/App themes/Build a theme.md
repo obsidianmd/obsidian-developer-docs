@@ -108,10 +108,46 @@ Themes can support both light and dark color schemes. Define your CSS variables 
 
 You'll see that Obsidian picks the colors based on the color scheme you've selected. Try changing the colors to `red`, `green`, or `blue` for a more dramatic change.
 
-> [!tip]
-> Define any style that should be the same for both light and dark under `body`. Only define styles under `.theme-dark` or `.theme-light` if they are specific to that base color scheme.
+## Step 6: Change the input hover border color
 
-## Step 6: Discover CSS variables in use
+The `:root` selector is commonly used when you want a variable to be accessible by every child element within the theme. This selector is often filled with Plugin variables.
+
+Here's an example to illustrate its usage:
+
+> [!example]
+> Let's consider an input field that can be found in various places within Obsidian, such as settings and note content. To define the variables specific to this input field, we can use the `:root` selector.
+>
+> ```css
+> :root {
+>    --input-focus-border-color: Highlight;
+>    --input-focus-outline: 1px solid Canvas;
+>    --input-unfocused-border-color: transparent;
+>    --input-disabled-border-color: transparent;
+>    --input-hover-border-color: black;
+>    /* Default Input Variables for Root */
+ > }
+ > ```
+
+
+Now, let's modify the hover border color in our CSS:
+
+```css
+:root {
+   --input-hover-border-color: red;
+/* Change from Black to Red */
+}
+```
+
+With this update, when you hover over any input field, the border color will change to a bright red.
+
+> [!tip]
+> When defining styles that should remain the same for both light and dark themes, it is recommended to use the `body` selector.
+>
+> Only use `.theme-dark` or `.theme-light` selectors if you want the styles to change when switching between light and dark themes.
+>
+> It's also important to use `:root` with caution and consideration. If your variable can be placed within `body`, `.theme-dark`, or `.theme-light` selectors instead, it is recommended to do so.
+
+## Step 7: Discover CSS variables in use
 
 Obsidian exposes more than 400 different CSS variables for customizing different parts of the user interface. In this step, you'll find the CSS variable for changing the ribbon background.
 
