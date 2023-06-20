@@ -49,6 +49,50 @@ The three methods of the view plugin control its lifecycle:
 
 While the view plugin in the example works, it doesn't do much. If you want to better understand what causes the plugin to update, you can add a `console.log(update);` line to the `update()` method to print all updates to the console.
 
+## Passing parent plugin settings to a view plugin
+
+The example above can be modified by using a class expression instead of a class declaration in order to bind your plugin settings to the view plugin. Here's an example pulled from [Dataview](https://github.com/blacksmithgu/obsidian-dataview).
+
+
+```JS
+export function inlinePlugin(index: FullIndex, settings: DataviewSettings, api: DataviewApi) {
+	return ViewPlugin.fromClass(
+		class {
+			decorations: DecorationSet;
+			constructor(view: EditorView) {
+				this.decorations = 
+					inlineRender(view, index, settings, api) ?? 
+					Decoration.none;
+			}
+
+			update(update: ViewUpdate) {
+				// only activate in LP and not source mode
+				// @ts-ignore
+				if (!update.state.field(editorLivePreviewField)) {
+					this.decorations = Decoration.none;
+					return;
+				}
+				if (update.docChanged || update.viewportChanged || update.selectionSet) {
+					this.decorations = 
+						inlineRender(update.view, index, settings, api) ??
+						Decoration.none;
+				}
+			}
+		},
+		{ decorations: v => v.decorations }
+	);
+}
+```
+
++
+
+`onload()`
+```JS
+// editor extension for inline queries
+this.cmExtension = [inlinePlugin(this.index, this.settings, this.api)];
+this.registerEditorExtension(this.cmExtension);
+```
+
 ## Next steps
 
 Provide [[Decorations]] from your view plugin to change how to display the document.
