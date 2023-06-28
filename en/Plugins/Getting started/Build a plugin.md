@@ -33,7 +33,9 @@ The sample plugin you'll use in this tutorial is available in a [GitHub reposito
 1. Open a terminal window and change the project directory to the `plugins` directory.
 
    ```bash
-   cd path/to/vault/.obsidian/plugins
+   cd path/to/vault
+   mkdir .obsidian/plugins
+   cd .obsidian/plugins
    ```
 
 2. Clone the sample plugin using Git.
