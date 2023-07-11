@@ -7,7 +7,7 @@ Icons communicate messages at a glance, and draw attention to important informat
 Obsidian uses the [Lucide](https://lucide.dev/) icon library, which includes more than 800 icons. You can find all available icons on their website.
 
 > [!important] Custom icons
-> If you want to create your own icons for Obsidian, you need to follow the [Icon Design Principles](https://github.com/lucide-icons/lucide/blob/main/docs/icon-design-guide.md). You can find [templates and guides](https://github.com/lucide-icons/lucide/blob/main/CONTRIBUTING.md) for vector editors, such as Illustrator, Figma, and Inkscape.
+> If you want to create your own icons for Obsidian, you need to follow the [Icon Design Principles](https://github.com/lucide-icons/lucide/blob/main/docs/guide/design/icon-design-guide.md). You can find [templates and guides](https://github.com/lucide-icons/lucide/blob/main/CONTRIBUTING.md) for vector editors, such as Illustrator, Figma, and Inkscape.
 
 | Variable                  | Description                         |
 | ------------------------- | ----------------------------------- |
