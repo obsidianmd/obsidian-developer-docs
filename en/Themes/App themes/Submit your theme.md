@@ -28,7 +28,7 @@ To review your theme, we need to access to the source code on GitHub. If you're 
 
 In this step, you'll submit your theme to the Obsidian team for review.
 
-1. In [community-plugins.json](https://github.com/obsidianmd/obsidian-releases/edit/master/community-plugins.json), add a new entry at the end of the JSON array. The following example shows the entry for the [Minimal](https://github.com/kepano/obsidian-minimal) theme.
+1. In [community-css-themes.json](https://github.com/obsidianmd/obsidian-releases/edit/master/community-css-themes.json), add a new entry at the end of the JSON array. The following example shows the entry for the [Minimal](https://github.com/kepano/obsidian-minimal) theme.
 
    ```json
    {
