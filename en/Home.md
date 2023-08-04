@@ -21,10 +21,13 @@ Design beautiful themes and snippets for Obsidian using CSS.
 - [[Submit your theme]]
 - [[CSS variables]]
 
-
 ## Join the developer community
 
 If you get stuck, or if you're looking for feedback, [join the community](https://obsidian.md/community).
 
 - `#plugin-dev` and `#theme-dev` channels on Discord.
 - [Developers & API](https://forum.obsidian.md/c/developers-api/14) and [Share & showcase](https://forum.obsidian.md/c/share-showcase/9) on the forum.
+
+## Contributing
+
+If you see any errors or room for improvement on this site, feel free to open an issue or pull request on [our GitHub repository](https://github.com/obsidianmd/obsidian-developer-docs). Thank you in advance for contributing!
