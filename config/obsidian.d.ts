@@ -4179,7 +4179,7 @@ export class Workspace extends Events {
     /**
      * Returns the file for the current view if it's a FileView.
      *
-     * Otherwise, it will recent the most recently active file.
+     * Otherwise, it will return the most recently active file.
      *
      * @public
      */
