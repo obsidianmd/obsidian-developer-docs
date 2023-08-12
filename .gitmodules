@@ -1,0 +1,3 @@
+[submodule "config/obsidian-api"]
+	path = config/obsidian-api
+	url = https://github.com/LBF38/obsidian-api
