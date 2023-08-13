@@ -16,18 +16,11 @@ mkdir -p ../../en/Reference/TypeScript\ API
 # The absolute path is not a bug; this is Silver's fork of api-documenter
 # Ths fork is available at here if you want to bulid your own: https://github.com/ericaxu/rushstack-obsidian
 echo "Installing the forked api-documenter..."
-if ! (node --version | grep -q "v16"); then
-	echo "Use NodeJS 16 or above"
-	exit 1
-fi
-git clone https://github.com/ericaxu/rushstack-obsidian.git rushstack-obsidian
-npm install -g @microsoft/rush
-cd ./rushstack-obsidian || exit
-rush update --bypass-policy
-rush build
-cd ..
+# Download the binary from the releases in the forked repo
+gh release -R LBF38/rushstack-obsidian download -p -- *
+# The api-documenter binary should now be in the current directory
 echo "Running api-documenter..."
-./rushstack-obsidian/apps/api-documenter/bin/api-documenter markdown --output ../../en/Reference/TypeScript\ API
+./api-documenter markdown --output ../../en/Reference/TypeScript\ API
 
 # 3. Run post-process.js with Node.js
 echo "Moving to config folder..."
