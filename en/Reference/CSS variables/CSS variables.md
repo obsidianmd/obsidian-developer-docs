@@ -22,6 +22,7 @@ Interactive components used throughout the app
 - [[Dragging]]
 - [[Indentation guides]]
 - [[Modal]]
+- [[Multi-select]]
 - [[Navigation]]
 - [[Popover]]
 - [[Slider]]
@@ -45,6 +46,7 @@ Content types and variables used for editing and reading text files
 - [[Inline title]]
 - [[Link]]
 - [[List]]
+- [[Properties]]
 - [[Table]]
 - [[Tag]]
 
