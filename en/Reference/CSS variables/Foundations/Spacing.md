@@ -1,5 +1,10 @@
 ---
-cssClass: reference
+cssclasses:
+  - reference
+aliases:
+  - Padding
+  - Margins
+  - Size
 ---
 
 Obsidian uses a 4-pixel grid to structure UI elements. By using multiples of 4 for padding and margin, the grid provides convenient ratios for layouts and allows the interface to scale up and down across high and low DPI screens.
