@@ -1,4 +1,4 @@
-In this guide, you'll configure your plugin to use [React](https://reactjs.org/). It assumes that you already have a plugin with a [[Views|custom view]] that you want to convert to use React.
+In this guide, you'll configure your plugin to use [React](https://react.dev/). It assumes that you already have a plugin with a [[Views|custom view]] that you want to convert to use React.
 
 While you don't need to use a separate framework to build a plugin, there are a few reasons why you'd want to use React:
 
@@ -25,7 +25,7 @@ While you don't need to use a separate framework to build a plugin, there are a 
    ```ts
    {
      "compilerOptions": {
-       "jsx": "react"
+       "jsx": "preserve"
      }
    }
    ```
@@ -35,8 +35,6 @@ While you don't need to use a separate framework to build a plugin, there are a 
 Create a new file called `ReactView.tsx` in the plugin root directory, with the following content:
 
 ```tsx title="ReactView.tsx"
-import * as React from "react";
-
 export const ReactView = () => {
   return <h4>Hello, React!</h4>;
 };
@@ -47,45 +45,46 @@ export const ReactView = () => {
 To use the React component, it needs to be mounted on a [[HTML elements]]. The following example mounts the `ReactView` component on the `this.containerEl.children[1]` element:
 
 ```tsx
+import { StrictMode } from "react";
 import { ItemView, WorkspaceLeaf } from "obsidian";
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { Root, createRoot } from "react-dom/client";
 import { ReactView } from "./ReactView";
-import { createRoot } from "react-dom/client";
 
 const VIEW_TYPE_EXAMPLE = "example-view";
 
 class ExampleView extends ItemView {
-  constructor(leaf: WorkspaceLeaf) {
-    super(leaf);
-  }
+	root: Root | null = null;
 
-  getViewType() {
-    return VIEW_TYPE_EXAMPLE;
-  }
+	constructor(leaf: WorkspaceLeaf) {
+		super(leaf);
+	}
 
-  getDisplayText() {
-    return "Example view";
-  }
+	getViewType() {
+		return VIEW_TYPE_EXAMPLE;
+	}
 
-  async onOpen() {
-    const root = createRoot(this.containerEl.children[1]);
-    root.render(
-      <React.StrictMode>
-        <ReactView />,
-      </React.StrictMode>
-    );
-  }
+	getDisplayText() {
+		return "Example view";
+	}
 
-  async onClose() {
-    ReactDOM.unmountComponentAtNode(this.containerEl.children[1]);
-  }
+	async onOpen() {
+		this.root = createRoot(this.containerEl.children[1]);
+		this.root.render(
+			<StrictMode>
+				<ReactView />,
+			</StrictMode>,
+		);
+	}
+
+	async onClose() {
+		this.root?.unmount();
+	}
 }
 ```
 
-For more information on `ReactDOM.render()` and `ReactDOM.unmountComponentAtNode()`, refer to the documentation on [ReactDOM](https://reactjs.org/docs/react-dom.html).
+For more information on `createRoot` and `unmount()`, refer to the documentation on [ReactDOM](https://react.dev/reference/react-dom/client/createRoot#root-render).
 
-You can mount your React component on any `HTMLElement`, for example [[Plugins/User interface/Status bar|status bar items]]. Just make sure to clean up properly by calling `ReactDOM.unmountComponentAtNode()` when you're done.
+You can mount your React component on any `HTMLElement`, for example [[Plugins/User interface/Status bar|status bar items]]. Just make sure to clean up properly by calling `this.root.unmount()` when you're done.
 
 ## Create an App context
 
@@ -93,41 +92,40 @@ If you want to access the [[Reference/TypeScript API/App/App|App]] object from o
 
 Another alternative is to create a React context for the app to make it globally available to all components inside your React view.
 
-1. Use `React.createContext()` to create a new app context.
+1. Use `createContext()` to create a new app context.
 
    ```tsx title="context.ts"
-   import * as React from "react";
-   import { App } from 'obsidian';
+   import { createContext } from "react";
+   import { App } from "obsidian";
 
-   export const AppContext = React.createContext<App | undefined>(undefined);
+   export const AppContext = createContext<App | undefined>(undefined);
    ```
 
 2. Wrap the `ReactView` with a context provider and pass the app as the value.
 
    ```tsx title="view.tsx"
-   const root = createRoot(this.containerEl.children[1]);
-   root.render(
+   this.root = createRoot(this.containerEl.children[1]);
+   this.root.render(
      <AppContext.Provider value={this.app}>
        <ReactView />
-     </AppContext.Provider>,
-     this.containerEl.children[1]
+     </AppContext.Provider>
    );
    ```
 
 3. Create a custom hook to make it easier to use the context in your components.
 
    ```tsx title="hooks.ts"
+   import { useContext } from "react";
    import { AppContext } from "./context";
 
    export const useApp = (): App | undefined => {
-     return React.useContext(AppContext);
+     return useContext(AppContext);
    };
    ```
 
 4. Use the hook in any React component within `ReactView` to access the app.
 
    ```tsx title="ReactView.tsx"
-   import * as React from "react";
    import { useApp } from "./hooks";
 
    export const ReactView = () => {
@@ -137,4 +135,4 @@ Another alternative is to create a React context for the app to make it globally
    };
    ```
 
-For more information, refer to the React documentation for [Context](https://reactjs.org/docs/context.html) and [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html).
+For more information, refer to the React documentation for [Passing Data Deeply with Context](https://react.dev/learn/passing-data-deeply-with-context) and [Reusing Logic with Custom Hooks](https://react.dev/learn/reusing-logic-with-custom-hooks).
