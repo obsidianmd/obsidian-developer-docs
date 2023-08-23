@@ -7,6 +7,7 @@ echo "Running api-extractor..."
 api-extractor run --local --verbose
 
 # Remove everything under ../en/Reference/TypeScript API before doing step 2
+# clear
 echo "current directory : $(pwd)"
 echo "Removing old files in ../../en/Reference/TypeScript API..."
 rm -rf ../../en/Reference/TypeScript\ API/*
@@ -17,10 +18,10 @@ mkdir -p ../../en/Reference/TypeScript\ API
 # Ths fork is available at here if you want to bulid your own: https://github.com/ericaxu/rushstack-obsidian
 echo "Installing the forked api-documenter..."
 # Download the binary from the releases in the forked repo
-gh release -R LBF38/rushstack-obsidian download -p -- *
+gh release download -R LBF38/rushstack-obsidian -p "*"
 # The api-documenter binary should now be in the current directory
 echo "Running api-documenter..."
-./api-documenter markdown --output ../../en/Reference/TypeScript\ API
+./api-documenter markdown --output ../../en/Reference/TypeScript\ API # TODO: fix this. It's not working.
 
 # 3. Run post-process.js with Node.js
 echo "Moving to config folder..."
