@@ -4,6 +4,8 @@ Several of the UI components in the Obsidian API lets you configure an accompany
 
 Browse to [lucide.dev](https://lucide.dev/) to see all available icons and their corresponding names.
 
+**Please note:** Only icons up to v0.171.0 are supported at this time.
+
 ## Draw icons
 
 If you'd like to use icons in your custom interfaces, use the [[setIcon|setIcon()]] utility function to add an icon to an [[HTML elements|HTML element]]. The following example adds icon to the status bar:
