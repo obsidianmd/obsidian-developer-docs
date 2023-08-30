@@ -1,6 +1,10 @@
 body {
-  --popover-width: 600px;
-  --popover-height: 600px;
+	--popover-width: 600px;
+	--popover-height: 600px;
+}
+.theme-dark {
+	--color-base-00:#151515;
+	--color-base-20:#222222;
 }
 
 .reference {
