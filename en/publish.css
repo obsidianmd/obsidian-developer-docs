@@ -41,7 +41,6 @@ body {
 }
 .hide-title.markdown-preview-view div:nth-child(4) h1 {
 	margin-top: 0.25em;
-	margin-bottom: 1em;
 	font-variant: var(--page-title-variant);
 	letter-spacing: -0.015em;
 	line-height: var(--page-title-line-height);
