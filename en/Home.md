@@ -3,7 +3,7 @@ cssClass: hide-title
 ---
 # Obsidian Developer Docs
 
-Learn how to build plugins and themes for [Obsidian](https://obsidian.md/). For tips on how to use Obsidian, visit [the official Help site](https://help.obsidian.md/).
+Welcome to the official Obsidian Developer Documentation, where you can learn how to build plugins and themes for [Obsidian](https://obsidian.md/). For tips on how to use Obsidian, visit [the official Help site](https://help.obsidian.md/).
 
 ## Plugins
 
