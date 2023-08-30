@@ -2,14 +2,20 @@
 
 We generate the reference documentation for the `obsidian` TypeScript API using the [API Extractor](https://api-extractor.com/).
 
-> **Note**: This folder maintains unchanged copies of the following files from the [obsidianmd/obsidian-api](https://github.com/obsidianmd/obsidian-api):
->
-> - obsidian.d.ts
-> - package.json
->
-> To update the reference docs, you first need to sync these files with the original. To avoid maintaining copies, we should consider moving the `api-extractor.json` file to [obsidianmd/obsidian-api](https://github.com/obsidianmd/obsidian-api) and add the repository as a Git submodule for this repository.
+> [!NOTE]
+> This folder is linked to the [obsidianmd/obsidian-api](https://github.com/obsidianmd/obsidian-api) package via the `package.json` file.
+> It automatically retrieves the package with all its files and allows to generate the reference documentation.
 
 ## Generate docs
+
+### Manually
+
+> [!IMPORTANT]
+> You should use the `api-documenter` from the forked repository for Obsidian needs.
+> You can find a version of this [here](https://github.com/LBF38/rushstack-obsidian).
+> A GitHub Package is present for easy installation.
+>
+> The `api-extractor` comes from the official repository (`@microsoft/api-extractor`).
 
 1. In your terminal, change your working directory to `config`:
 
@@ -28,3 +34,14 @@ We generate the reference documentation for the `obsidian` TypeScript API using 
    ```bash
    api-documenter markdown --output ../en/Reference/TypeScript\ API
    ```
+
+### Automatically
+
+You can use the `gendoc.sh` script to generate the documentation automatically.
+
+```bash
+cd config && ./gendoc.sh
+```
+
+> [!NOTE]
+> The script runs approximately 3-5 minutes before completion.

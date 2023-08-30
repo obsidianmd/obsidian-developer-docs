@@ -11,7 +11,7 @@ How to install the documentation locally from the source:
 1. Clone this repository using the following command :
 
 ```bash
-git clone --recurse-submodules obsidianmd/obsidian-developer-docs
+git clone obsidianmd/obsidian-developer-docs
 ```
 
 2. Go to the `config` folder and run the `gendoc.sh` script to generate the TypeScript API documentation generated.
@@ -26,5 +26,3 @@ cd obsidian-developer-docs/config && ./gendoc.sh
 > The `en/Reference/TypeScript API` folder is ignored by git as it is automatically generated.
 
 Another way to install the documentation locally is to download it from the [releases page](https://github.com/obsidianmd/obsidian-developer-docs/releases).
-
-For more information about Git submodules, please see the [Git documentation](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
