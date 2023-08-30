@@ -11,3 +11,6 @@ Thumbs.db
 .obsidian/*
 !.obsidian/snippets
 en/Reference/TypeScript API
+api-documenter
+node_modules
+config/input
