@@ -1,0 +1,41 @@
+{
+	"$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+	"projectFolder": "node_modules/obsidian",
+	"mainEntryPointFilePath": "<projectFolder>/obsidian.d.ts",
+	"bundledPackages": [],
+	"newlineKind": "os",
+	"compiler": {
+		"overrideTsconfig": {}
+	},
+	"docModel": {
+		"enabled": true,
+		"apiJsonFilePath": "./input/<packageName>.api.json"
+	},
+	"apiReport": {
+		"enabled": false
+	},
+	"dtsRollup": {
+		"enabled": false
+	},
+	"tsdocMetadata": {
+		"enabled": false
+	},
+	"messages": {
+		"compilerMessageReporting": {
+			"default": {
+				"logLevel": "warning"
+			}
+		},
+		"extractorMessageReporting": {
+			"default": {
+				"logLevel": "warning"
+			}
+		},
+		"tsdocMessageReporting": {
+			"default": {
+				"logLevel": "warning"
+			}
+		}
+	}
+}
+

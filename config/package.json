@@ -1,0 +1,20 @@
+{
+    "name": "obsidian",
+    "version": "0.0.1",
+    "description": "Developer documentation for Obsidian API",
+    "keywords": [
+        "documentation",
+        "obsidian",
+        "api"
+    ],
+    "homepage": "https://docs.obsidian.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/obsidianmd/obsidian-api.git"
+    },
+    "license": "MIT",
+    "main": "",
+    "dependencies": {
+        "obsidian": "latest"
+    }
+}

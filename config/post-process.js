@@ -49,7 +49,7 @@ cssClass: hide-title
 `+ fileContent;
 
           // Somehow we still get Plugin_2 even if `obsidian.d.ts` doesn't contain any reference to it
-          newFileContent = newFileContent.replaceAll('Plugin_2', 'Plugin').replaceAll('Plugin\_2', 'Plugin');
+          newFileContent = newFileContent.replaceAll('Plugin_2', 'Plugin').replaceAll('Plugin\_2', 'Plugin').replaceAll("obsidian.","");
           await fs.writeFile(newFilePath, newFileContent, 'utf-8');
         } catch (err) {
           console.error(`Error renaming file: ${err.message}`);
