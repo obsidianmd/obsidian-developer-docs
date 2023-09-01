@@ -1,8 +1,7 @@
 ---
 cssClass: reference
 ---
-
-This page lists CSS variables for properties, i.e. the YAML metadata editor for frontmatter. See also [[Checkbox]], [[Text input]] and [[Multi-select]] for variables related to the input types.
+This page lists CSS variables for [Properties](https://help.obsidian.md/Editing+and+formatting/Properties), the YAML metadata editor for frontmatter. See also [[Checkbox]], [[Text input]] and [[Multi-select]] for variables related to the input types.
 
 ## CSS variables
 
