@@ -10,15 +10,17 @@ This page lists CSS variables for properties, i.e. the YAML metadata editor for 
 
 These variables apply to the entire Properties container.
 
-| Variable                   | Description            |
-| -------------------------- | ---------------------- |
-| `--metadata-background`    | Background color       |
-| `--metadata-max-width`     | Max width              |
-| `--metadata-padding`       | Padding                |
-| `--metadata-border-color`  | Border color           |
-| `--metadata-border-radius` | Corner radius          |
-| `--metadata-border-width`  | Border width           |
-| `--metadata-gap`           | Gap between properties | 
+| Variable                     | Description             |
+| ---------------------------- | ----------------------- |
+| `--metadata-background`      | Background color        |
+| `--metadata-display-editing` | Display in editing mode |
+| `--metadata-display-reading` | Display in reading mode |
+| `--metadata-max-width`       | Max width               |
+| `--metadata-padding`         | Padding                 |
+| `--metadata-border-color`    | Border color            |
+| `--metadata-border-radius`   | Corner radius           |
+| `--metadata-border-width`    | Border width            |
+| `--metadata-gap`             | Gap between properties  |
 
 ### Individual properties
 
