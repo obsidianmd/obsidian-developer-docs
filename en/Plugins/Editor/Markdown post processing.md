@@ -1,56 +1,31 @@
-If you want to change how a Markdown document is rendered in Preview mode, you can add your own _Markdown post processor_. As indicated by the name, the post processor runs _after_ the Markdown has been processed into HTML. It lets you add, remove, or replace [[HTML elements]] to the rendered document.
+If you want to change how a Markdown document is rendered in Reading view, you can add your own _Markdown post processor_. As indicated by the name, the post processor runs _after_ the Markdown has been processed into HTML. It lets you add, remove, or replace [[HTML elements]] to the rendered document.
 
 The following example looks for any code block that contains a text between two colons, `:`, and replaces it with an appropriate emoji:
 
 ```ts
 import { Plugin } from "obsidian";
-import { Emoji } from "./emoji";
+
+const ALL_EMOJIS: Record<string, string> = {
+  ":+1:": "👍",
+  ":sunglasses:": "😎",
+  ":smile:": "😄",
+};
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
     this.registerMarkdownPostProcessor((element, context) => {
-      const codeblocks = element.querySelectorAll("code");
+      const codeblocks = element.findAll("code");
 
-      for (let index = 0; index < codeblocks.length; index++) {
-        const codeblock = codeblocks.item(index);
+      for (let codeblock of codeblocks) {
         const text = codeblock.innerText.trim();
-        const isEmoji =
-          text[0] === ":" && text[text.length - 1] === ":";
-
-        if (isEmoji) {
-          context.addChild(new Emoji(codeblock, text));
+        if (text[0] === ":" && text[text.length - 1] === ":") {
+          const emojiEl = codeblock.createSpan({
+            text: ALL_EMOJIS[text] ?? text,
+          });
+          codeblock.replaceWith(emojiEl);
         }
       }
     });
-  }
-}
-```
-
-The `Emoji` class extends [[MarkdownRenderChild|MarkdownRenderChild]], and replaces the code block with a `span` element with the emoji:
-
-```ts
-import { MarkdownRenderChild } from "obsidian";
-
-export class Emoji extends MarkdownRenderChild {
-  static ALL_EMOJIS: Record<string, string> = {
-    ":+1:": "👍",
-    ":sunglasses:": "😎",
-    ":smile:": "😄",
-  };
-
-  text: string;
-
-  constructor(containerEl: HTMLElement, text: string) {
-    super(containerEl);
-
-    this.text = text;
-  }
-
-  onload() {
-    const emojiEl = this.containerEl.createSpan({
-    	text: Emoji.ALL_EMOJIS[this.text] ?? this.text,
-    });
-    this.containerEl.replaceWith(emojiEl);
   }
 }
 ```
