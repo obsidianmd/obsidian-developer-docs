@@ -58,7 +58,7 @@ After the call to `addIcon`, you can use the icon just like any of the built-in 
 
 ### Icon design guidelines
 
-For compatibility and cohesiveness with the Obsidian interface, your icons should [follow Lucide’s guidelines](https://github.com/lucide-icons/lucide/blob/main/docs/ICON_DESIGN_GUIDE.md) 
+For compatibility and cohesiveness with the Obsidian interface, your icons should [follow Lucide’s guidelines](https://lucide.dev/guide/design/icon-design-guide):
 
 - Icons must be designed on a 24 by 24 pixels canvas
 - Icons must have at least 1 pixel padding within the canvas
