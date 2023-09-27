@@ -16,3 +16,26 @@ Complex callback, overrides the simple callback. Used to "check" whether your co
 ```typescript
 checkCallback?: (checking: boolean) => boolean | void;
 ```
+
+### Example
+
+```javascript
+addCommand({
+  id: 'some-id',
+  name: 'Some command',
+  checkCallback: (checking: boolean) => {
+	if (checking) {
+	  // Obsidian is checking to see whether the command should be
+	  // shown in the command palette.
+	  //
+	  // Perform a function which returns true/false depending on
+	  // whether the command should be shown in the command palette
+	  return shouldTheCommandBeShown()
+	} else {
+	  // Obsidian is not checking whether to show your command -
+	  // this is the place to execute your code
+	  runSomeFunctionInYourPlugin()
+	}
+  }
+})
+```
