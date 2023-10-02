@@ -11,3 +11,4 @@ Thumbs.db
 .obsidian/*
 !.obsidian/snippets
 .idea/
+.vscode/
