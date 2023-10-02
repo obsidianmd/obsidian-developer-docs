@@ -4,7 +4,9 @@ Several of the UI components in the Obsidian API lets you configure an accompany
 
 Browse to [lucide.dev](https://lucide.dev/) to see all available icons and their corresponding names.
 
-## Draw icons
+**Please note:** Only icons up to v0.171.0 are supported at this time.
+
+## Use icons
 
 If you'd like to use icons in your custom interfaces, use the [[setIcon|setIcon()]] utility function to add an icon to an [[HTML elements|HTML element]]. The following example adds icon to the status bar:
 
@@ -19,11 +21,11 @@ export default class ExamplePlugin extends Plugin {
 }
 ```
 
-To change the size of the icon, set the `--icon-size` CSS variable on the element containing the icon:
+To change the size of the icon, set the `--icon-size` [[Reference/CSS variables/Foundations/Icons|CSS variable]] on the element containing the icon using preset sizes:
 
 ```css
 div {
-  --icon-size: 18px;
+  --icon-size: var(--icon-size-m);
 }
 ```
 
@@ -53,3 +55,18 @@ export default class ExamplePlugin extends Plugin {
 Note that your icon needs to fit within a `0 0 100 100` view box to be drawn properly.
 
 After the call to `addIcon`, you can use the icon just like any of the built-in icons.
+
+### Icon design guidelines
+
+For compatibility and cohesiveness with the Obsidian interface, your icons should [follow Lucide’s guidelines](https://lucide.dev/guide/design/icon-design-guide):
+
+- Icons must be designed on a 24 by 24 pixels canvas
+- Icons must have at least 1 pixel padding within the canvas
+- Icons must have a stroke width of 2 pixels
+- Icons must use round joins
+- Icons must use round caps
+- Icons must use centered strokes
+- Shapes (such as rectangles) in icons must have border radius of 2 pixels
+- Distinct elements must have 2 pixels of spacing between each other
+
+Lucide also [provides templates and guides](https://github.com/lucide-icons/lucide/blob/main/CONTRIBUTING.md) for vector editors such as Illustrator, Figma, and Inkscape.

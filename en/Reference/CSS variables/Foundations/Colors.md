@@ -134,8 +134,9 @@ Semantic colors are derived from the base color palette based on their intended 
 | `--text-faint`              | Faint text                                     |
 | `--text-on-accent`          | Text on accent background when accent is dark  |
 | `--text-on-accent-inverted` | Text on accent background when accent is light |
-| `--text-error`              | Error text                                     |
 | `--text-success`            | Success text                                   |
+| `--text-warning`            | Warning text                                   | 
+| `--text-error`              | Error text                                     |
 | `--text-accent`             | Accent text                                    |
 | `--text-accent-hover`       | Accent text (hover)                            |
 

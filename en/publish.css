@@ -1,3 +1,12 @@
+body {
+	--popover-width: 600px;
+	--popover-height: 600px;
+}
+.theme-dark {
+	--color-base-00:#151515;
+	--color-base-20:#222222;
+}
+
 .reference {
 	--table-column-first-border-width: 0;
 	--table-column-last-border-width: 0;
@@ -31,40 +40,48 @@
 	display:none;
 }
 .hide-title.markdown-preview-view div:nth-child(4) h1 {
-    margin-top: 0.25em;
-    margin-bottom: 1em;
-    font-variant: var(--page-title-variant);
-    letter-spacing: -0.015em;
-    line-height: var(--page-title-line-height);
-    font-size: var(--page-title-size);
-    color: var(--page-title-color);
-    font-weight: var(--page-title-weight);
-    font-style: var(--page-title-style);
-    font-family: var(--page-title-font);
-    border: none;
-}
-
-.site-body-left-column-site-name {
-    display: flex;
-    align-items: center;
-    gap: var(--size-4-2);
-}
-
-.theme-light .site-body-left-column-site-name::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='36' height='36' fill='none' stroke='currentColor' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.theme-dark .site-body-left-column-site-name::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='36' height='36' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M 30.91 17.52 L 34.43 35.7 M 61.44 14.41 L 62.61 0 M 34.43 35.7 L 37.57 90.47 M 81 26.39 L 61.44 14.41 L 34.43 35.7 L 65.35 100 M 62.61 0 L 30.91 17.52 L 18 45.45 L 37.57 90.47 L 65.35 100 L 70.44 89.8 L 81 26.39 L 62.61 0 Z'%3E%3C/path%3E%3C/svg%3E");
+	margin-top: 0.25em;
+	font-variant: var(--page-title-variant);
+	letter-spacing: -0.015em;
+	line-height: var(--page-title-line-height);
+	font-size: var(--page-title-size);
+	color: var(--page-title-color);
+	font-weight: var(--page-title-weight);
+	font-style: var(--page-title-style);
+	font-family: var(--page-title-font);
+	border: none;
 }
 
 .internal-link code {
-    font-size: 0.95em;
-    color: var(--link-color);
-    background-color: transparent;
+	font-size: 0.95em;
+	color: var(--link-color);
+	background-color: transparent;
 }
 
-body {
-  --popover-width: 600px;
-  --popover-height: 600px;
+
+/* Same lockup as Obsidian Help */
+/* Hide site name and display logo instead */
+.site-body-left-column-site-logo {
+	text-align: left;
+	margin-bottom: 24px;
+}
+.site-header-logo {
+	display: flex;
+	align-items: center;
+}
+.site-header-logo img,
+.site-body-left-column-site-logo img {
+	height: 25px;
+}
+.theme-light .site-header-logo,
+.theme-light .site-body-left-column-site-logo {
+	filter: invert(1) hue-rotate(180deg);
+}
+.site-body-left-column-site-name {
+	display: none;
+}
+@media screen and (max-width: 750px) {
+	.site-header-text {
+		display: none;
+	}
 }

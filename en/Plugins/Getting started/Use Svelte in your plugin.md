@@ -15,7 +15,7 @@ To build a Svelte application, you need to install the dependencies and configur
 
 1. Add Svelte to your plugin dependencies:
 
-   ```bash npm2yarn
+   ```bash
    npm install --save-dev svelte svelte-preprocess @tsconfig/svelte esbuild-svelte
    ```
 
@@ -132,7 +132,7 @@ export class ExampleView extends ItemView {
 > To fix the error, run the following in your terminal:
 >
 > ```bash
-> yarn upgrade typescript@~4.5.0
+> npm update typescript@~4.5.0
 > ```
 
 ## Create a Svelte store

@@ -57,6 +57,6 @@ The Node.js API and the Electron API aren't available on mobile devices. Any cal
 
 ### Lookbehind in regular expressions
 
-Lookbehind in regular expressions is currently not supported on iOS. To implement a fallback for iOS users, refer to [[#Platform-specific features]].
+Lookbehind in regular expressions is only supported on iOS 16.4 and above, and some iPhone and iPad users may still use earlier versions. To implement a fallback for iOS users, either refer to [[#Platform-specific features]], or use a JavaScript library to detect specific browser versions.
 
-Refer to [Can I Use](https://caniuse.com/js-regexp-lookbehind) for an up-to-date status. Look for "Safari on iOS".
+Refer to [Can I Use](https://caniuse.com/js-regexp-lookbehind) for more information and exact version statistics. Look for "Safari on iOS".

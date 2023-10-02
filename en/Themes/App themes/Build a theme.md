@@ -30,7 +30,7 @@ The sample theme you'll use in this tutorial is available in a [GitHub repositor
 2. Clone the sample theme using Git.
 
    ```bash
-   git clone https://github.com/obsidianmd/obsidian-sample-theme.git "Sample theme"
+   git clone https://github.com/obsidianmd/obsidian-sample-theme.git "Sample Theme"
    ```
 
 > [!tip] GitHub template repository
