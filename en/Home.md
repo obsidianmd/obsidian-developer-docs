@@ -28,3 +28,11 @@ If you get stuck, or if you're looking for feedback, [join the community](https:
 
 - `#plugin-dev` and `#theme-dev` channels on Discord.
 - [Developers & API](https://forum.obsidian.md/c/developers-api/14) and [Share & showcase](https://forum.obsidian.md/c/share-showcase/9) on the forum.
+
+## Contributing
+
+If you see any errors or room for improvement on this site,
+or want to submit a PR, feel free to open an issue on [our GitHub repository](https://github.com/obsidianmd/obsidian-developer-docs).
+Additional details are available on our [readme](https://github.com/obsidianmd/obsidian-developer-docs#readme).
+
+Thank you in advance for contributing!
