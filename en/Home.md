@@ -29,4 +29,7 @@ If you get stuck, or if you're looking for feedback, [join the community](https:
 
 ## Contributing
 
-If you see any errors or room for improvement on this site, feel free to open an issue or pull request on [our GitHub repository](https://github.com/obsidianmd/obsidian-developer-docs). Thank you in advance for contributing!
+If you see any errors or room for improvement on this site, or want to submit a PR, feel free to open an issue on [our GitHub repository](https://github.com/obsidianmd/obsidian-developer-docs).
+Additional details are available on our [readme](https://github.com/obsidianmd/obsidian-developer-docs#readme).
+
+Thank you in advance for contributing!

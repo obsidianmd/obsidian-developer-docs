@@ -26,5 +26,3 @@ Publish-specific variables should be defined on the `.published-container`.
 | `--font-interface-theme` | Font family for interface elements such as navigation |
 | `--font-mermaid`         | Font family for Mermaid diagrams                      |
 | `--page-title-font`      | Font family for [[Site pages\|page titles]]                                                       |
-
-
