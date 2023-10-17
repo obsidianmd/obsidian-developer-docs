@@ -17,15 +17,8 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-getUnpinnedLeaf(type?: string): WorkspaceLeaf;
+getUnpinnedLeaf(): WorkspaceLeaf;
 ```
-
-## Parameters
-
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  <code>type</code> | <code>string</code> | _(Optional)_ |
-
 **Returns:**
 
 [`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md)

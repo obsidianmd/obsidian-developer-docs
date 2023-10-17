@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## PluginManifest.minAppVersion property
 
+The minimum required Obsidian version to run this plugin.
 
 **Signature:**
 

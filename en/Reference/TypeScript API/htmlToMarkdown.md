@@ -14,14 +14,14 @@ Converts HTML to Markdown using Turndown Service.
 **Signature:**
 
 ```typescript
-export function htmlToMarkdown(html: string): string;
+export function htmlToMarkdown(html: string | HTMLElement | Document | DocumentFragment): string;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>html</code> | <code>string</code> |  |
+|  <code>html</code> | <code>string &#124; </code><code>HTMLElement</code><code> &#124; </code><code>Document</code><code> &#124; </code><code>DocumentFragment</code> |  |
 
 **Returns:**
 

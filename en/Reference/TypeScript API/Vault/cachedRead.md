@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.cachedRead() method
 
+Read the content of a plaintext file stored inside the vault Use this if you only want to display the content to the user. If you want to modify the file content afterward use [Vault.read()](obsidian.Vault.read.md)
 
 **Signature:**
 

@@ -34,19 +34,19 @@ export abstract class Plugin extends Component
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`addCommand(command)`](obsidian.Plugin.addCommand.md) |  | Register a command globally. The command id and name will be automatically prefixed with this plugin's id and name. |
+|  [`addCommand(command)`](obsidian.Plugin.addCommand.md) |  | Register a command globally. Registered commands will be available from the @<!-- -->{<!-- -->link https://help.obsidian.md/Plugins/Command+palette Command pallete<!-- -->}<!-- -->. The command id and name will be automatically prefixed with this plugin's id and name. |
 |  [`addRibbonIcon(icon, title, callback)`](obsidian.Plugin.addRibbonIcon.md) |  | Adds a ribbon icon to the left bar. |
-|  [`addSettingTab(settingTab)`](obsidian.Plugin.addSettingTab.md) |  |  |
-|  [`addStatusBarItem()`](obsidian.Plugin.addStatusBarItem.md) |  |  |
-|  [`loadData()`](obsidian.Plugin.loadData.md) |  |  |
+|  [`addSettingTab(settingTab)`](obsidian.Plugin.addSettingTab.md) |  | Register a settings tab, which allows users to change settings. |
+|  [`addStatusBarItem()`](obsidian.Plugin.addStatusBarItem.md) |  | Adds a status bar item to the bottom of the app. Not available on mobile. |
+|  [`loadData()`](obsidian.Plugin.loadData.md) |  | Load settings data from disk. Data is stored in <code>data.json</code> in the plugin folder. |
 |  [`registerCodeMirror(callback)`](obsidian.Plugin.registerCodeMirror.md) |  | Runs callback on all currently loaded instances of CodeMirror, then registers the callback for all future CodeMirror instances. |
-|  [`registerEditorExtension(extension)`](obsidian.Plugin.registerEditorExtension.md) |  | Registers a CodeMirror 6 extension. To reconfigure cm6 extensions for your plugin on the fly, you can pass an array here and dynamically modify it. Once this array is modified, call <code>Workspace.updateOptions()</code> to have the changes applied. |
+|  [`registerEditorExtension(extension)`](obsidian.Plugin.registerEditorExtension.md) |  | Registers a CodeMirror 6 extension. To reconfigure cm6 extensions for a plugin on the fly, an array should be passed in, and modified dynamically. Once this array is modified, calling [Workspace.updateOptions()](obsidian.Workspace.updateOptions.md) will apply the changes. |
 |  [`registerEditorSuggest(editorSuggest)`](obsidian.Plugin.registerEditorSuggest.md) |  | Register an EditorSuggest which can provide live suggestions while the user is typing. |
 |  [`registerExtensions(extensions, viewType)`](obsidian.Plugin.registerExtensions.md) |  |  |
-|  [`registerHoverLinkSource(id, info)`](obsidian.Plugin.registerHoverLinkSource.md) |  | Register your view with the 'Page preview' core plugin as an emitter of the 'hover-link' on the event. |
-|  [`registerMarkdownCodeBlockProcessor(language, handler, sortOrder)`](obsidian.Plugin.registerMarkdownCodeBlockProcessor.md) |  | Register a special post processor that handles fenced code given a language and a handler. This special post processor takes care of removing the <pre><code> and create a <div> that will be passed to your handler, and is expected to be filled with your custom elements. |
-|  [`registerMarkdownPostProcessor(postProcessor, sortOrder)`](obsidian.Plugin.registerMarkdownPostProcessor.md) |  |  |
+|  [`registerHoverLinkSource(id, info)`](obsidian.Plugin.registerHoverLinkSource.md) |  | Registers a view with the 'Page preview' core plugin as an emitter of the 'hover-link' on the event. |
+|  [`registerMarkdownCodeBlockProcessor(language, handler, sortOrder)`](obsidian.Plugin.registerMarkdownCodeBlockProcessor.md) |  | Register a special post processor that handles fenced code given a language and a handler. This special post processor takes care of removing the <pre><code> and create a <div> that will be passed to the handler, and is expected to be filled with custom elements. |
+|  [`registerMarkdownPostProcessor(postProcessor, sortOrder)`](obsidian.Plugin.registerMarkdownPostProcessor.md) |  | Registers a post processor, to change how the document looks in reading mode. |
 |  [`registerObsidianProtocolHandler(action, handler)`](obsidian.Plugin.registerObsidianProtocolHandler.md) |  | Register a handler for obsidian:// URLs. |
 |  [`registerView(type, viewCreator)`](obsidian.Plugin.registerView.md) |  |  |
-|  [`saveData(data)`](obsidian.Plugin.saveData.md) |  |  |
+|  [`saveData(data)`](obsidian.Plugin.saveData.md) |  | Write settings data to disk. Data is stored in <code>data.json</code> in the plugin folder. |
 

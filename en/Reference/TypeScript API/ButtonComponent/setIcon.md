@@ -20,7 +20,7 @@ setIcon(icon: IconName): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>icon</code> | <code>IconName</code> |  |
+|  <code>icon</code> | [`IconName`](obsidian.IconName.md) |  |
 
 **Returns:**
 

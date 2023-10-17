@@ -24,6 +24,6 @@ export interface RequestUrlParam
 |  [`contentType?`](obsidian.RequestUrlParam.contentType.md) |  | <code>string</code> | _(Optional)_ |
 |  [`headers?`](obsidian.RequestUrlParam.headers.md) |  | <code>Record</code><code>&lt;string, string&gt;</code> | _(Optional)_ |
 |  [`method?`](obsidian.RequestUrlParam.method.md) |  | <code>string</code> | _(Optional)_ |
-|  [`throw?`](obsidian.RequestUrlParam.throw.md) |  | <code>boolean</code> | _(Optional)_ Whether to throw an error when the status code is &gt;<!-- -->= 400 Defaults to true |
+|  [`throw?`](obsidian.RequestUrlParam.throw.md) |  | <code>boolean</code> | _(Optional)_ Whether to throw an error when the status code is 400+ Defaults to true |
 |  [`url`](obsidian.RequestUrlParam.url.md) |  | <code>string</code> |  |
 

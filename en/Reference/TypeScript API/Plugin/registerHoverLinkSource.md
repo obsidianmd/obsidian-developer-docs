@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Plugin\_2.registerHoverLinkSource() method
 
-Register your view with the 'Page preview' core plugin as an emitter of the 'hover-link' on the event.
+Registers a view with the 'Page preview' core plugin as an emitter of the 'hover-link' on the event.
 
 **Signature:**
 

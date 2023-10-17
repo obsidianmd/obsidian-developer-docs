@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SettingTab.containerEl property
 
+Outermost HTML element on the setting tab.
 
 **Signature:**
 

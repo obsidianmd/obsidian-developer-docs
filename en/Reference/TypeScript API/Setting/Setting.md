@@ -42,6 +42,7 @@ export class Setting
 |  [`addDropdown(cb)`](obsidian.Setting.addDropdown.md) |  |  |
 |  [`addExtraButton(cb)`](obsidian.Setting.addExtraButton.md) |  |  |
 |  [`addMomentFormat(cb)`](obsidian.Setting.addMomentFormat.md) |  |  |
+|  [`addProgressBar(cb)`](obsidian.Setting.addProgressBar.md) |  |  |
 |  [`addSearch(cb)`](obsidian.Setting.addSearch.md) |  |  |
 |  [`addSlider(cb)`](obsidian.Setting.addSlider.md) |  |  |
 |  [`addText(cb)`](obsidian.Setting.addText.md) |  |  |

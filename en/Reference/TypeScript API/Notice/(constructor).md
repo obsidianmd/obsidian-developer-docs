@@ -21,6 +21,6 @@ constructor(message: string | DocumentFragment, duration?: number);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>message</code> | <code>string &#124; </code><code>DocumentFragment</code> |  |
+|  <code>message</code> | <code>string &#124; </code><code>DocumentFragment</code> | The message to be displayed, can either be a simple string or a  |
 |  <code>duration</code> | <code>number</code> | _(Optional)_ Time in milliseconds to show the notice for. If this is 0, the Notice will stay visible until the user manually dismisses it. |
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.readBinary() method
 
+Read the content of a binary file stored inside the vault.
 
 **Signature:**
 

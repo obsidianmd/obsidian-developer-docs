@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SearchMatchPart type
 
+Text position offsets within text file. Represents a text range \[from offset, to offset\].
 
 **Signature:**
 

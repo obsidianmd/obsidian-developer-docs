@@ -9,7 +9,6 @@ cssclasses: hide-title
 
 ## SettingTab class
 
-
 **Signature:**
 
 ```typescript
@@ -20,13 +19,13 @@ export abstract class SettingTab
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`app`](obsidian.SettingTab.app.md) |  | [`App`](obsidian.App.md) |  |
-|  [`containerEl`](obsidian.SettingTab.containerEl.md) |  | <code>HTMLElement</code> |  |
+|  [`app`](obsidian.SettingTab.app.md) |  | [`App`](obsidian.App.md) | Reference to the app instance. |
+|  [`containerEl`](obsidian.SettingTab.containerEl.md) |  | <code>HTMLElement</code> | Outermost HTML element on the setting tab. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`display()`](obsidian.SettingTab.display.md) | <code>abstract</code> |  |
-|  [`hide()`](obsidian.SettingTab.hide.md) |  |  |
+|  [`display()`](obsidian.SettingTab.display.md) | <code>abstract</code> | Called when the settings tab should be rendered. |
+|  [`hide()`](obsidian.SettingTab.hide.md) |  | Hides the contents of the setting tab. Any registered components should be unloaded when the view is hidden. Override this if you need to perform additional cleanup. |
 

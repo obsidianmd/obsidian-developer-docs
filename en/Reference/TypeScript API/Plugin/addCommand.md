@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Plugin\_2.addCommand() method
 
-Register a command globally. The command id and name will be automatically prefixed with this plugin's id and name.
+Register a command globally. Registered commands will be available from the @<!-- -->{<!-- -->link https://help.obsidian.md/Plugins/Command+palette Command pallete<!-- -->}<!-- -->. The command id and name will be automatically prefixed with this plugin's id and name.
 
 **Signature:**
 

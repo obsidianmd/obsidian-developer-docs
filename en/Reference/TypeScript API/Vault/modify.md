@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.modify() method
 
+Modify the contents of a plaintext file.
 
 **Signature:**
 
@@ -20,9 +21,9 @@ modify(file: TFile, data: string, options?: DataWriteOptions): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>file</code> | [`TFile`](obsidian.TFile.md) |  |
-|  <code>data</code> | <code>string</code> |  |
-|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ |
+|  <code>file</code> | [`TFile`](obsidian.TFile.md) | The file |
+|  <code>data</code> | <code>string</code> | The new file content |
+|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ (Optional) |
 
 **Returns:**
 

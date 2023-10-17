@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.rename() method
 
+Rename a file or folder.
 
 **Signature:**
 
@@ -20,8 +21,8 @@ rename(normalizedPath: string, normalizedNewPath: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
-|  <code>normalizedNewPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | current path to file/folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
+|  <code>normalizedNewPath</code> | <code>string</code> | new path to file/folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

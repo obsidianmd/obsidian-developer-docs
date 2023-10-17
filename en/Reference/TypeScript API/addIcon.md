@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## addIcon() function
 
-Adds an icon to the library
+Adds an icon to the library.
 
 **Signature:**
 

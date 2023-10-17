@@ -20,5 +20,6 @@ export interface TooltipOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`delay?`](obsidian.TooltipOptions.delay.md) |  | <code>number</code> | _(Optional)_ |
 |  [`placement?`](obsidian.TooltipOptions.placement.md) |  | [`TooltipPlacement`](obsidian.TooltipPlacement.md) | _(Optional)_ |
 

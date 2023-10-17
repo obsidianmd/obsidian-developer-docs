@@ -9,7 +9,6 @@ cssclasses: hide-title
 
 ## MenuItem.setIcon() method
 
-
 **Signature:**
 
 ```typescript
@@ -20,7 +19,7 @@ setIcon(icon: IconName | null): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>icon</code> | <code>IconName</code><code> &#124; null</code> |  |
+|  <code>icon</code> | [`IconName`](obsidian.IconName.md)<code> &#124; null</code> | ID of the icon, can use any icon loaded with [addIcon()](obsidian.addIcon.md) or from the built-in lucide library. |
 
 **Returns:**
 

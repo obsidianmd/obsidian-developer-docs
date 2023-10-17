@@ -18,7 +18,7 @@ Indicates the currently focused leaf, if one exists.
 
 Please avoid using `activeLeaf` directly, especially without checking whether `activeLeaf` is null.
 
-The recommended alternatives are: - If you need information about the current view, use . - If you need to open a new file or navigate a view, use .
+The recommended alternatives are: - If you need information about the current view, use [Workspace.getActiveViewOfType()](obsidian.Workspace.getActiveViewOfType.md)<!-- -->. - If you need to open a new file or navigate a view, use .
 
 **Signature:**
 

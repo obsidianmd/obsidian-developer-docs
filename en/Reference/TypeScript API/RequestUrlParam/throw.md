@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## RequestUrlParam.throw property
 
-Whether to throw an error when the status code is &gt;<!-- -->= 400 Defaults to true
+Whether to throw an error when the status code is 400+ Defaults to true
 
 **Signature:**
 

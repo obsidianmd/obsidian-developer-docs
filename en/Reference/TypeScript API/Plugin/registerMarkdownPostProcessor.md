@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Plugin\_2.registerMarkdownPostProcessor() method
 
+Registers a post processor, to change how the document looks in reading mode.
 
 **Signature:**
 

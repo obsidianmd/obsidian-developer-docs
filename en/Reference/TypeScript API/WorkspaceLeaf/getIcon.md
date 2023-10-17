@@ -17,5 +17,5 @@ getIcon(): IconName;
 ```
 **Returns:**
 
-`IconName`
+[`IconName`](obsidian.IconName.md)
 

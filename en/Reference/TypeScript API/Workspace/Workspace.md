@@ -22,7 +22,7 @@ export class Workspace extends Events
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`activeEditor`](obsidian.Workspace.activeEditor.md) |  | [`MarkdownFileInfo`](obsidian.MarkdownFileInfo.md)<code> &#124; null</code> | A component managing the current editor. This can be null if the active view has no editor. |
-|  [`activeLeaf`](obsidian.Workspace.activeLeaf.md) |  | [`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md)<code> &#124; null</code> | <p>Indicates the currently focused leaf, if one exists.</p><p>Please avoid using <code>activeLeaf</code> directly, especially without checking whether <code>activeLeaf</code> is null.</p><p>The recommended alternatives are: - If you need information about the current view, use . - If you need to open a new file or navigate a view, use .</p> |
+|  [`activeLeaf`](obsidian.Workspace.activeLeaf.md) |  | [`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md)<code> &#124; null</code> | <p>Indicates the currently focused leaf, if one exists.</p><p>Please avoid using <code>activeLeaf</code> directly, especially without checking whether <code>activeLeaf</code> is null.</p><p>The recommended alternatives are: - If you need information about the current view, use [Workspace.getActiveViewOfType()](obsidian.Workspace.getActiveViewOfType.md)<!-- -->. - If you need to open a new file or navigate a view, use .</p> |
 |  [`containerEl`](obsidian.Workspace.containerEl.md) |  | <code>HTMLElement</code> |  |
 |  [`layoutReady`](obsidian.Workspace.layoutReady.md) |  | <code>boolean</code> |  |
 |  [`leftRibbon`](obsidian.Workspace.leftRibbon.md) |  | [`WorkspaceRibbon`](obsidian.WorkspaceRibbon.md) |  |
@@ -54,18 +54,19 @@ export class Workspace extends Events
 |  [`getLeftLeaf(split)`](obsidian.Workspace.getLeftLeaf.md) |  |  |
 |  [`getMostRecentLeaf(root)`](obsidian.Workspace.getMostRecentLeaf.md) |  |  |
 |  [`getRightLeaf(split)`](obsidian.Workspace.getRightLeaf.md) |  |  |
-|  [`getUnpinnedLeaf(type)`](obsidian.Workspace.getUnpinnedLeaf.md) |  |  |
+|  [`getUnpinnedLeaf()`](obsidian.Workspace.getUnpinnedLeaf.md) |  |  |
 |  [`iterateAllLeaves(callback)`](obsidian.Workspace.iterateAllLeaves.md) |  | Iterate through all leaves, including main area leaves, floating leaves, and sidebar leaves. |
 |  [`iterateCodeMirrors(callback)`](obsidian.Workspace.iterateCodeMirrors.md) |  |  |
 |  [`iterateRootLeaves(callback)`](obsidian.Workspace.iterateRootLeaves.md) |  | Iterate through all leaves in the main area of the workspace. |
 |  [`moveLeafToPopout(leaf, data)`](obsidian.Workspace.moveLeafToPopout.md) |  | Migrates this leaf to a new popout window. Only works on the desktop app. |
 |  [`on(name, callback, ctx)`](obsidian.Workspace.on.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_9.md) |  | Triggered when the user opens the context menu on an editor. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_10.md) |  | Triggered when changes to an editor has been applied, either programmatically or from a user event. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_11.md) |  | Triggered when the editor receives a paste event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_12.md) |  | Triggered when the editor receives a drop event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_13.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_14.md) |  | Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here. |
+|  [`on(name, callback, ctx)`](obsidian.Workspace.on_9.md) |  | Triggered when the user opens the context menu with multiple files selected in the File Explorer. |
+|  [`on(name, callback, ctx)`](obsidian.Workspace.on_10.md) |  | Triggered when the user opens the context menu on an editor. |
+|  [`on(name, callback, ctx)`](obsidian.Workspace.on_11.md) |  | Triggered when changes to an editor has been applied, either programmatically or from a user event. |
+|  [`on(name, callback, ctx)`](obsidian.Workspace.on_12.md) |  | Triggered when the editor receives a paste event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
+|  [`on(name, callback, ctx)`](obsidian.Workspace.on_13.md) |  | Triggered when the editor receives a drop event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
+|  [`on(name, callback, ctx)`](obsidian.Workspace.on_14.md) |  |  |
+|  [`on(name, callback, ctx)`](obsidian.Workspace.on_15.md) |  | Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here. |
 |  [`on(name, callback, ctx)`](obsidian.Workspace.on_1.md) |  |  |
 |  [`on(name, callback, ctx)`](obsidian.Workspace.on_2.md) |  |  |
 |  [`on(name, callback, ctx)`](obsidian.Workspace.on_3.md) |  |  |

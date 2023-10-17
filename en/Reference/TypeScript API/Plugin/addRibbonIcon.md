@@ -21,7 +21,7 @@ addRibbonIcon(icon: IconName, title: string, callback: (evt: MouseEvent) => any)
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>icon</code> | <code>IconName</code> | The icon name to be used. See [addIcon()](obsidian.addIcon.md) |
+|  <code>icon</code> | [`IconName`](obsidian.IconName.md) | The icon name to be used. See [addIcon()](obsidian.addIcon.md) |
 |  <code>title</code> | <code>string</code> | The title to be displayed in the tooltip. |
 |  <code>callback</code> | <code>(evt: </code><code>MouseEvent</code><code>) =&gt; any</code> | The <code>click</code> callback. |
 

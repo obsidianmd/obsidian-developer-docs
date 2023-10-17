@@ -9,6 +9,10 @@ cssclasses: hide-title
 
 ## iterateCacheRefs() function
 
+> Warning: This API is now obsolete.
+> 
+> 
+
 Iterate links and embeds. If callback returns true, the iteration process will be interrupted.
 
 **Signature:**

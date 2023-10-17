@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.copy() method
 
+Create a copy of a file. This will fail if there is already a file at `normalizedNewPath`<!-- -->.
 
 **Signature:**
 
@@ -20,8 +21,8 @@ copy(normalizedPath: string, normalizedNewPath: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
-|  <code>normalizedNewPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to file, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
+|  <code>normalizedNewPath</code> | <code>string</code> | path to file, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

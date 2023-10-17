@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.createBinary() method
 
+Create a new binary file inside the vault.
 
 **Signature:**
 
@@ -20,11 +21,15 @@ createBinary(path: string, data: ArrayBuffer, options?: DataWriteOptions): Promi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>path</code> | <code>string</code> |  |
-|  <code>data</code> | <code>ArrayBuffer</code> |  |
-|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ |
+|  <code>path</code> | <code>string</code> | Vault absolute path for the new file, with extension. |
+|  <code>data</code> | <code>ArrayBuffer</code> | content for the new file. |
+|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ (Optional) |
 
 **Returns:**
 
 `Promise``<`[`TFile`](obsidian.TFile.md)`>`
+
+## Exceptions
+
+Error if file already exists
 

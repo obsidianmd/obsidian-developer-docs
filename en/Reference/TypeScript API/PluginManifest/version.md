@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## PluginManifest.version property
 
+The current version, using .
 
 **Signature:**
 

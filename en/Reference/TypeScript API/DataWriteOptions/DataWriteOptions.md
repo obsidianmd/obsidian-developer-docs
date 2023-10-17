@@ -20,6 +20,6 @@ export interface DataWriteOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`ctime?`](obsidian.DataWriteOptions.ctime.md) |  | <code>number</code> | _(Optional)_ |
-|  [`mtime?`](obsidian.DataWriteOptions.mtime.md) |  | <code>number</code> | _(Optional)_ |
+|  [`ctime?`](obsidian.DataWriteOptions.ctime.md) |  | <code>number</code> | _(Optional)_ Time of creation, represented as a unix timestamp, in milliseconds. Omit this if you want to keep the default behaviour. |
+|  [`mtime?`](obsidian.DataWriteOptions.mtime.md) |  | <code>number</code> | _(Optional)_ Time of last modification, represented as a unix timestamp, in milliseconds. Omit this if you want to keep the default behaviour. |
 

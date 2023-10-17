@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Stat.ctime property
 
+Time of creation, represented as a unix timestamp.
 
 **Signature:**
 

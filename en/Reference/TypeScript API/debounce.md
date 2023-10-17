@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## debounce() function
 
-A standard debounce function.
+A standard debounce function. Use this to have a time-delayed function only be called once in a given timeframe.
 
 **Signature:**
 
@@ -22,7 +22,7 @@ export function debounce<T extends unknown[], V>(cb: (...args: [...T]) => V, tim
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>cb</code> | <code>(...args: [...T]) =&gt; V</code> | The function to call. |
-|  <code>timeout</code> | <code>number</code> | _(Optional)_ The timeout to wait. |
+|  <code>timeout</code> | <code>number</code> | _(Optional)_ The timeout to wait, in milliseconds |
 |  <code>resetTimer</code> | <code>boolean</code> | _(Optional)_ Whether to reset the timeout when the debouncer is called again. |
 
 **Returns:**
@@ -30,4 +30,16 @@ export function debounce<T extends unknown[], V>(cb: (...args: [...T]) => V, tim
 [`Debouncer`](obsidian.Debouncer.md)`<T, V>`
 
 a debounced function that takes the same parameter as the original function.
+
+## Example
+
+
+```ts
+const debounced = debounce((text: string) => {
+    console.log(text);
+}, 1000, true);
+debounced("Hello world"); // this will not be printed
+sleep(500);
+debounced("World, hello"); // this will be printed to the console.
+```
 

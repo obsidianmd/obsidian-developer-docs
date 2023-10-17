@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Plugin\_2.saveData() method
 
+Write settings data to disk. Data is stored in `data.json` in the plugin folder.
 
 **Signature:**
 

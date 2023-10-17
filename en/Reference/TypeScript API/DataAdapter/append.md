@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.append() method
 
+Add text to the end of a plaintext file.
 
 **Signature:**
 
@@ -20,9 +21,9 @@ append(normalizedPath: string, data: string, options?: DataWriteOptions): Promis
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
-|  <code>data</code> | <code>string</code> |  |
-|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ |
+|  <code>normalizedPath</code> | <code>string</code> | path to file, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
+|  <code>data</code> | <code>string</code> | the text to append. |
+|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ (Optional) |
 
 **Returns:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.exists() method
 
+Check if something exists at the given path.
 
 **Signature:**
 
@@ -20,8 +21,8 @@ exists(normalizedPath: string, sensitive?: boolean): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
-|  <code>sensitive</code> | <code>boolean</code> | _(Optional)_ |
+|  <code>normalizedPath</code> | <code>string</code> | path to file/folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
+|  <code>sensitive</code> | <code>boolean</code> | _(Optional)_ Some file systems/operating systems are case-insensitive, set to true to force a case-sensitivity check. |
 
 **Returns:**
 

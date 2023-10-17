@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FileStats.ctime property
 
+Time of creation, represented as a unix timestamp, in milliseconds.
 
 **Signature:**
 

@@ -28,7 +28,7 @@ export abstract class FileView extends ItemView
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`allowNoFile`](obsidian.FileView.allowNoFile.md) |  | <code>boolean</code> |  |
-|  [`file`](obsidian.FileView.file.md) |  | [`TFile`](obsidian.TFile.md) |  |
+|  [`file`](obsidian.FileView.file.md) |  | [`TFile`](obsidian.TFile.md)<code> &#124; null</code> |  |
 |  [`navigation`](obsidian.FileView.navigation.md) |  | <code>boolean</code> | File views can be navigated by default.  |
 
 ## Methods

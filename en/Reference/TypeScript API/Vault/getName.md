@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Vault.getName() method
 
-Gets the name of the vault
+Gets the name of the vault.
 
 **Signature:**
 

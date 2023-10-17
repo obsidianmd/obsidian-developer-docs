@@ -21,4 +21,5 @@ export interface Debouncer<T extends unknown[], V>
 |  Method | Description |
 |  --- | --- |
 |  [`cancel()`](obsidian.Debouncer.cancel.md) |  |
+|  [`run()`](obsidian.Debouncer.run.md) |  |
 

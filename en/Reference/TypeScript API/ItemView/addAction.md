@@ -20,7 +20,7 @@ addAction(icon: IconName, title: string, callback: (evt: MouseEvent) => any): HT
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>icon</code> | <code>IconName</code> |  |
+|  <code>icon</code> | [`IconName`](obsidian.IconName.md) |  |
 |  <code>title</code> | <code>string</code> |  |
 |  <code>callback</code> | <code>(evt: </code><code>MouseEvent</code><code>) =&gt; any</code> |  |
 

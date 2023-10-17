@@ -13,7 +13,5 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-export interface FrontMatterCache extends CacheItem 
+export interface FrontMatterCache 
 ```
-**Extends:** [`CacheItem`](obsidian.CacheItem.md)
-

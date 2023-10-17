@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SettingTab.app property
 
+Reference to the app instance.
 
 **Signature:**
 

@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Plugin\_2.registerMarkdownCodeBlockProcessor() method
 
-Register a special post processor that handles fenced code given a language and a handler. This special post processor takes care of removing the <pre><code> and create a <div> that will be passed to your handler, and is expected to be filled with your custom elements.
+Register a special post processor that handles fenced code given a language and a handler. This special post processor takes care of removing the <pre><code> and create a <div> that will be passed to the handler, and is expected to be filled with custom elements.
 
 **Signature:**
 

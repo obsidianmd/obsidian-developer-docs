@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## PluginSettingTab class
 
+Provides a unified interface for users to configure the plugin.
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter interface
 
+Work directly with files and folders inside a vault. If possible prefer using the [Vault](obsidian.Vault.md) API over this.
 
 **Signature:**
 
@@ -20,22 +21,22 @@ export interface DataAdapter
 
 |  Method | Description |
 |  --- | --- |
-|  [`append(normalizedPath, data, options)`](obsidian.DataAdapter.append.md) |  |
-|  [`copy(normalizedPath, normalizedNewPath)`](obsidian.DataAdapter.copy.md) |  |
-|  [`exists(normalizedPath, sensitive)`](obsidian.DataAdapter.exists.md) |  |
+|  [`append(normalizedPath, data, options)`](obsidian.DataAdapter.append.md) | Add text to the end of a plaintext file. |
+|  [`copy(normalizedPath, normalizedNewPath)`](obsidian.DataAdapter.copy.md) | Create a copy of a file. This will fail if there is already a file at <code>normalizedNewPath</code>. |
+|  [`exists(normalizedPath, sensitive)`](obsidian.DataAdapter.exists.md) | Check if something exists at the given path. |
 |  [`getName()`](obsidian.DataAdapter.getName.md) |  |
-|  [`getResourcePath(normalizedPath)`](obsidian.DataAdapter.getResourcePath.md) |  |
-|  [`list(normalizedPath)`](obsidian.DataAdapter.list.md) |  |
-|  [`mkdir(normalizedPath)`](obsidian.DataAdapter.mkdir.md) |  |
-|  [`process(normalizedPath, fn, options)`](obsidian.DataAdapter.process.md) |  |
+|  [`getResourcePath(normalizedPath)`](obsidian.DataAdapter.getResourcePath.md) | Returns an URI for the browser engine to use, for example to embed an image. |
+|  [`list(normalizedPath)`](obsidian.DataAdapter.list.md) | Retrieve a list of all files and folders inside the given folder, non-recursive. |
+|  [`mkdir(normalizedPath)`](obsidian.DataAdapter.mkdir.md) | Create a directory. |
+|  [`process(normalizedPath, fn, options)`](obsidian.DataAdapter.process.md) | Atomically read, modify, and save the contents of a plaintext file. |
 |  [`read(normalizedPath)`](obsidian.DataAdapter.read.md) |  |
 |  [`readBinary(normalizedPath)`](obsidian.DataAdapter.readBinary.md) |  |
-|  [`remove(normalizedPath)`](obsidian.DataAdapter.remove.md) |  |
-|  [`rename(normalizedPath, normalizedNewPath)`](obsidian.DataAdapter.rename.md) |  |
-|  [`rmdir(normalizedPath, recursive)`](obsidian.DataAdapter.rmdir.md) |  |
-|  [`stat(normalizedPath)`](obsidian.DataAdapter.stat.md) |  |
-|  [`trashLocal(normalizedPath)`](obsidian.DataAdapter.trashLocal.md) |  |
-|  [`trashSystem(normalizedPath)`](obsidian.DataAdapter.trashSystem.md) |  |
-|  [`write(normalizedPath, data, options)`](obsidian.DataAdapter.write.md) |  |
-|  [`writeBinary(normalizedPath, data, options)`](obsidian.DataAdapter.writeBinary.md) |  |
+|  [`remove(normalizedPath)`](obsidian.DataAdapter.remove.md) | Delete a file. |
+|  [`rename(normalizedPath, normalizedNewPath)`](obsidian.DataAdapter.rename.md) | Rename a file or folder. |
+|  [`rmdir(normalizedPath, recursive)`](obsidian.DataAdapter.rmdir.md) | Remove a directory. |
+|  [`stat(normalizedPath)`](obsidian.DataAdapter.stat.md) | Retrieve metadata about the given file/folder. |
+|  [`trashLocal(normalizedPath)`](obsidian.DataAdapter.trashLocal.md) | Move to local trash. Files will be moved into the <code>.trash</code> folder at the root of the vault. |
+|  [`trashSystem(normalizedPath)`](obsidian.DataAdapter.trashSystem.md) | Try moving to system trash. |
+|  [`write(normalizedPath, data, options)`](obsidian.DataAdapter.write.md) | Write to a plaintext file. If the file exists its content will be overwritten, otherwise the file will be created. |
+|  [`writeBinary(normalizedPath, data, options)`](obsidian.DataAdapter.writeBinary.md) | Write to a binary file. If the file exists its content will be overwritten, otherwise the file will be created. |
 

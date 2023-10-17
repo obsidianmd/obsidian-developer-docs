@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataWriteOptions.mtime property
 
+Time of last modification, represented as a unix timestamp, in milliseconds. Omit this if you want to keep the default behaviour.
 
 **Signature:**
 

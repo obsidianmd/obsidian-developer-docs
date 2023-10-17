@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Plugin\_2.addStatusBarItem() method
 
+Adds a status bar item to the bottom of the app. Not available on mobile.
 
 **Signature:**
 

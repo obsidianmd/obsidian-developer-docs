@@ -9,20 +9,20 @@ cssclasses: hide-title
 
 ## Workspace.on() method
 
-Triggered when the user opens the context menu on an editor.
+Triggered when the user opens the context menu with multiple files selected in the File Explorer.
 
 **Signature:**
 
 ```typescript
-on(name: 'editor-menu', callback: (menu: Menu, editor: Editor, info: MarkdownView | MarkdownFileInfo) => any, ctx?: any): EventRef;
+on(name: 'files-menu', callback: (menu: Menu, files: TAbstractFile[], source: string, leaf?: WorkspaceLeaf) => any, ctx?: any): EventRef;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>name</code> | <code>'editor-menu'</code> |  |
-|  <code>callback</code> | <code>(menu: </code>[`Menu`](obsidian.Menu.md)<code>, editor: </code>[`Editor`](obsidian.Editor.md)<code>, info: </code>[`MarkdownView`](obsidian.MarkdownView.md)<code> &#124; </code>[`MarkdownFileInfo`](obsidian.MarkdownFileInfo.md)<code>) =&gt; any</code> |  |
+|  <code>name</code> | <code>'files-menu'</code> |  |
+|  <code>callback</code> | <code>(menu: </code>[`Menu`](obsidian.Menu.md)<code>, files: </code>[`TAbstractFile`](obsidian.TAbstractFile.md)<code>[], source: string, leaf?: </code>[`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md)<code>) =&gt; any</code> |  |
 |  <code>ctx</code> | <code>any</code> | _(Optional)_ |
 
 **Returns:**

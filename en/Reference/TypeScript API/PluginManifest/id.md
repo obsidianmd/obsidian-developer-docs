@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## PluginManifest.id property
 
+The plugin ID.
 
 **Signature:**
 

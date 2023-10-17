@@ -12,15 +12,15 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-export function iterateRefs(refs: ReferenceCache[], cb: (ref: ReferenceCache) => boolean | void): boolean;
+export function iterateRefs(refs: Reference[], cb: (ref: Reference) => boolean | void): boolean;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>refs</code> | [`ReferenceCache`](obsidian.ReferenceCache.md)<code>[]</code> |  |
-|  <code>cb</code> | <code>(ref: </code>[`ReferenceCache`](obsidian.ReferenceCache.md)<code>) =&gt; boolean &#124; void</code> |  |
+|  <code>refs</code> | [`Reference`](obsidian.Reference.md)<code>[]</code> |  |
+|  <code>cb</code> | <code>(ref: </code>[`Reference`](obsidian.Reference.md)<code>) =&gt; boolean &#124; void</code> |  |
 
 **Returns:**
 

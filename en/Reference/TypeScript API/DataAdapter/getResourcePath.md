@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.getResourcePath() method
 
+Returns an URI for the browser engine to use, for example to embed an image.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ getResourcePath(normalizedPath: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to file/folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

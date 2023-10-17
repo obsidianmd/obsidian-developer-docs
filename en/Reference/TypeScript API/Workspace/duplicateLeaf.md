@@ -11,6 +11,7 @@ cssclasses: hide-title
 
 > Warning: This API is now obsolete.
 > 
+> - Use the new form of this method instead
 > 
 
 **Signature:**

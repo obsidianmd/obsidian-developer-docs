@@ -24,7 +24,7 @@ setActiveLeaf(leaf: WorkspaceLeaf, params?: {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>leaf</code> | [`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md) | The new active leaf |
-|  <code>params</code> | <code>{         focus?: boolean;     }</code> | _(Optional)_ |
+|  <code>params</code> | <code>{         focus?: boolean;     }</code> | _(Optional)_ Parameter object of whether to set the focus. |
 
 **Returns:**
 

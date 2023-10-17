@@ -31,5 +31,6 @@ export abstract class MarkdownRenderer extends MarkdownRenderChild implements Ma
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [`render(app, markdown, el, sourcePath, component)`](obsidian.MarkdownRenderer.render.md) | <code>static</code> | Renders markdown string to an HTML element. |
 |  [`renderMarkdown(markdown, el, sourcePath, component)`](obsidian.MarkdownRenderer.renderMarkdown.md) | <code>static</code> | Renders markdown string to an HTML element. |
 

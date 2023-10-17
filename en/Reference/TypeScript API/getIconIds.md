@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## getIconIds() function
 
-Get the list of registered icons
+Get the list of registered icons.
 
 **Signature:**
 
@@ -18,5 +18,5 @@ export function getIconIds(): IconName[];
 ```
 **Returns:**
 
-`IconName``[]`
+[`IconName`](obsidian.IconName.md)`[]`
 
