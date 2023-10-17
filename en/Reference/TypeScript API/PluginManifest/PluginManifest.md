@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## PluginManifest interface
 
+Metadata about a Community plugin.
 
 **Signature:**
 
@@ -20,13 +21,13 @@ export interface PluginManifest
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`author`](obsidian.PluginManifest.author.md) |  | <code>string</code> |  |
-|  [`authorUrl?`](obsidian.PluginManifest.authorUrl.md) |  | <code>string</code> | _(Optional)_ |
-|  [`description`](obsidian.PluginManifest.description.md) |  | <code>string</code> |  |
-|  [`dir?`](obsidian.PluginManifest.dir.md) |  | <code>string</code> | _(Optional)_ |
-|  [`id`](obsidian.PluginManifest.id.md) |  | <code>string</code> |  |
-|  [`isDesktopOnly?`](obsidian.PluginManifest.isDesktopOnly.md) |  | <code>boolean</code> | _(Optional)_ |
-|  [`minAppVersion`](obsidian.PluginManifest.minAppVersion.md) |  | <code>string</code> |  |
-|  [`name`](obsidian.PluginManifest.name.md) |  | <code>string</code> |  |
-|  [`version`](obsidian.PluginManifest.version.md) |  | <code>string</code> |  |
+|  [`author`](obsidian.PluginManifest.author.md) |  | <code>string</code> | The author's name. |
+|  [`authorUrl?`](obsidian.PluginManifest.authorUrl.md) |  | <code>string</code> | _(Optional)_ A URL to the author's website. |
+|  [`description`](obsidian.PluginManifest.description.md) |  | <code>string</code> | A description of the plugin. |
+|  [`dir?`](obsidian.PluginManifest.dir.md) |  | <code>string</code> | _(Optional)_ Vault path to the plugin folder in the config directory. |
+|  [`id`](obsidian.PluginManifest.id.md) |  | <code>string</code> | The plugin ID. |
+|  [`isDesktopOnly?`](obsidian.PluginManifest.isDesktopOnly.md) |  | <code>boolean</code> | _(Optional)_ Whether the plugin can be used only on desktop. |
+|  [`minAppVersion`](obsidian.PluginManifest.minAppVersion.md) |  | <code>string</code> | The minimum required Obsidian version to run this plugin. |
+|  [`name`](obsidian.PluginManifest.name.md) |  | <code>string</code> | The display name. |
+|  [`version`](obsidian.PluginManifest.version.md) |  | <code>string</code> | The current version, using . |
 

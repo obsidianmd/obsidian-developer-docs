@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Plugin\_2.registerEditorExtension() method
 
-Registers a CodeMirror 6 extension. To reconfigure cm6 extensions for your plugin on the fly, you can pass an array here and dynamically modify it. Once this array is modified, call `Workspace.updateOptions()` to have the changes applied.
+Registers a CodeMirror 6 extension. To reconfigure cm6 extensions for a plugin on the fly, an array should be passed in, and modified dynamically. Once this array is modified, calling [Workspace.updateOptions()](obsidian.Workspace.updateOptions.md) will apply the changes.
 
 **Signature:**
 

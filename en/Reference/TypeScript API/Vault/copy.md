@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.copy() method
 
+Create a copy of the selected file.
 
 **Signature:**
 
@@ -20,8 +21,8 @@ copy(file: TFile, newPath: string): Promise<TFile>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>file</code> | [`TFile`](obsidian.TFile.md) |  |
-|  <code>newPath</code> | <code>string</code> |  |
+|  <code>file</code> | [`TFile`](obsidian.TFile.md) | The file |
+|  <code>newPath</code> | <code>string</code> | Vault absolute path for the new copy. |
 
 **Returns:**
 

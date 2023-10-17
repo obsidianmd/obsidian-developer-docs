@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.getRoot() method
 
+Get the root folder of the current vault.
 
 **Signature:**
 

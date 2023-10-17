@@ -20,8 +20,8 @@ export interface Stat
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`ctime`](obsidian.Stat.ctime.md) |  | <code>number</code> |  |
-|  [`mtime`](obsidian.Stat.mtime.md) |  | <code>number</code> |  |
-|  [`size`](obsidian.Stat.size.md) |  | <code>number</code> |  |
+|  [`ctime`](obsidian.Stat.ctime.md) |  | <code>number</code> | Time of creation, represented as a unix timestamp. |
+|  [`mtime`](obsidian.Stat.mtime.md) |  | <code>number</code> | Time of last modification, represented as a unix timestamp. |
+|  [`size`](obsidian.Stat.size.md) |  | <code>number</code> | Size on disk, as bytes. |
 |  [`type`](obsidian.Stat.type.md) |  | <code>'file' &#124; 'folder'</code> |  |
 

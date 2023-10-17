@@ -11,6 +11,7 @@ cssclasses: hide-title
 
 > Warning: This API is now obsolete.
 > 
+> use [editorInfoField](obsidian.editorInfoField.md) instead.
 > 
 
 Use this StateField to get a reference to the MarkdownView. This is now deprecated because it is possible for an editor to not be associated with a MarkdownView.

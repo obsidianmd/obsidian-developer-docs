@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.trashSystem() method
 
+Try moving to system trash.
 
 **Signature:**
 
@@ -20,9 +21,11 @@ trashSystem(normalizedPath: string): Promise<boolean>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to file/folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 
 `Promise``<boolean>`
+
+Returns true if succeeded. This can fail due to system trash being disabled.
 

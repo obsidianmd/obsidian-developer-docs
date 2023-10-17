@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Stat.mtime property
 
+Time of last modification, represented as a unix timestamp.
 
 **Signature:**
 

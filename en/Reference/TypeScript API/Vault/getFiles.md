@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.getFiles() method
 
+Get all files in the vault.
 
 **Signature:**
 

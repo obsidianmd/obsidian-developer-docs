@@ -22,7 +22,7 @@ export function setIcon(parent: HTMLElement, iconId: IconName): void;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>parent</code> | <code>HTMLElement</code> | the HTML element to insert the icon |
-|  <code>iconId</code> | <code>IconName</code> | the icon ID |
+|  <code>iconId</code> | [`IconName`](obsidian.IconName.md) | the icon ID |
 
 **Returns:**
 

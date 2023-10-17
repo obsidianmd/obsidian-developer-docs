@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## PluginManifest.dir property
 
+Vault path to the plugin folder in the config directory.
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.rename() method
 
+Rename or move a file.
 
 **Signature:**
 
@@ -20,8 +21,8 @@ rename(file: TAbstractFile, newPath: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>file</code> | [`TAbstractFile`](obsidian.TAbstractFile.md) |  |
-|  <code>newPath</code> | <code>string</code> |  |
+|  <code>file</code> | [`TAbstractFile`](obsidian.TAbstractFile.md) | the file to rename/move |
+|  <code>newPath</code> | <code>string</code> | vault absolute path to move file to. |
 
 **Returns:**
 

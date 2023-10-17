@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.process() method
 
+Atomically read, modify, and save the contents of a plaintext file.
 
 **Signature:**
 
@@ -20,11 +21,13 @@ process(normalizedPath: string, fn: (data: string) => string, options?: DataWrit
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
-|  <code>fn</code> | <code>(data: string) =&gt; string</code> |  |
-|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ |
+|  <code>normalizedPath</code> | <code>string</code> | path to file/folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
+|  <code>fn</code> | <code>(data: string) =&gt; string</code> | a callback function which returns the new content of the file synchronously. |
+|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ write options. |
 
 **Returns:**
 
 `Promise``<string>`
+
+string - the text value of the file that was written.
 

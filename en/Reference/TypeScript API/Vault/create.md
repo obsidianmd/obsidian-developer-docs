@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.create() method
 
+Create a new plaintext file inside the vault.
 
 **Signature:**
 
@@ -20,9 +21,9 @@ create(path: string, data: string, options?: DataWriteOptions): Promise<TFile>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>path</code> | <code>string</code> |  |
-|  <code>data</code> | <code>string</code> |  |
-|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ |
+|  <code>path</code> | <code>string</code> | Vault absolute path for the new file, with extension. |
+|  <code>data</code> | <code>string</code> | text content for the new file. |
+|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ (Optional) |
 
 **Returns:**
 

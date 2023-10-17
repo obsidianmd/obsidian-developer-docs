@@ -9,6 +9,11 @@ cssclasses: hide-title
 
 ## MarkdownRenderer.renderMarkdown() method
 
+> Warning: This API is now obsolete.
+> 
+> - use [MarkdownRenderer.render()](obsidian.MarkdownRenderer.render.md)
+> 
+
 Renders markdown string to an HTML element.
 
 **Signature:**
@@ -21,10 +26,10 @@ static renderMarkdown(markdown: string, el: HTMLElement, sourcePath: string, com
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>markdown</code> | <code>string</code> | The markdown source code |
-|  <code>el</code> | <code>HTMLElement</code> | The element to append to |
-|  <code>sourcePath</code> | <code>string</code> | The normalized path of this markdown file, used to resolve relative internal links |
-|  <code>component</code> | [`Component`](obsidian.Component.md) | A parent component to manage the lifecycle of the rendered child components, if any |
+|  <code>markdown</code> | <code>string</code> |  |
+|  <code>el</code> | <code>HTMLElement</code> |  |
+|  <code>sourcePath</code> | <code>string</code> |  |
+|  <code>component</code> | [`Component`](obsidian.Component.md) |  |
 
 **Returns:**
 

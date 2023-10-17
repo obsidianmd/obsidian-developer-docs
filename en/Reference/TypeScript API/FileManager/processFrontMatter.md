@@ -16,7 +16,7 @@ Remember to handle errors thrown by this method.
 **Signature:**
 
 ```typescript
-processFrontMatter(file: TFile, fn: (frontmatter: any) => void): Promise<void>;
+processFrontMatter(file: TFile, fn: (frontmatter: any) => void, options?: DataWriteOptions): Promise<void>;
 ```
 
 ## Parameters
@@ -25,6 +25,7 @@ processFrontMatter(file: TFile, fn: (frontmatter: any) => void): Promise<void>;
 |  --- | --- | --- |
 |  <code>file</code> | [`TFile`](obsidian.TFile.md) | the file to be modified. Must be a markdown file. |
 |  <code>fn</code> | <code>(frontmatter: any) =&gt; void</code> | a callback function which mutates the frontMatter object synchronously. |
+|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ write options. |
 
 **Returns:**
 

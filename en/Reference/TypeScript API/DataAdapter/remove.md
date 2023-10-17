@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.remove() method
 
+Delete a file.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ remove(normalizedPath: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to file, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SettingTab.display() method
 
+Called when the settings tab should be rendered.
 
 **Signature:**
 

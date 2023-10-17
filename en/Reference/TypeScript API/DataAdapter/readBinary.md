@@ -9,7 +9,6 @@ cssclasses: hide-title
 
 ## DataAdapter.readBinary() method
 
-
 **Signature:**
 
 ```typescript
@@ -20,7 +19,7 @@ readBinary(normalizedPath: string): Promise<ArrayBuffer>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to file, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.stat() method
 
+Retrieve metadata about the given file/folder.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ stat(normalizedPath: string): Promise<Stat | null>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to file/folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

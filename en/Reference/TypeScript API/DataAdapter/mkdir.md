@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.mkdir() method
 
+Create a directory.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ mkdir(normalizedPath: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to use for new folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

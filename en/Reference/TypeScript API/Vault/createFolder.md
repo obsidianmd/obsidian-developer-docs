@@ -9,20 +9,25 @@ cssclasses: hide-title
 
 ## Vault.createFolder() method
 
+Create a new folder inside the vault.
 
 **Signature:**
 
 ```typescript
-createFolder(path: string): Promise<void>;
+createFolder(path: string): Promise<TFolder>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>path</code> | <code>string</code> |  |
+|  <code>path</code> | <code>string</code> | Vault absolute path for the new folder. |
 
 **Returns:**
 
-`Promise``<void>`
+`Promise``<`[`TFolder`](obsidian.TFolder.md)`>`
+
+## Exceptions
+
+Error if folder already exists
 

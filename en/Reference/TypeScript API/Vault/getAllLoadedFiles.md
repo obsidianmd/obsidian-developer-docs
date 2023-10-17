@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.getAllLoadedFiles() method
 
+Get all files and folders in the vault.
 
 **Signature:**
 

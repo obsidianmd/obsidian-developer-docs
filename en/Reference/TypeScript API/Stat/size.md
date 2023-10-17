@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Stat.size property
 
+Size on disk, as bytes.
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## PluginManifest.isDesktopOnly property
 
+Whether the plugin can be used only on desktop.
 
 **Signature:**
 

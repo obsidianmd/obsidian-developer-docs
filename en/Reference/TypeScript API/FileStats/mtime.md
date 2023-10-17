@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FileStats.mtime property
 
+Time of last modification, represented as a unix timestamp, in milliseconds.
 
 **Signature:**
 

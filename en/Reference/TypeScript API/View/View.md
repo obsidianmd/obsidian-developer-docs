@@ -29,7 +29,7 @@ export abstract class View extends Component
 |  --- | --- | --- | --- |
 |  [`app`](obsidian.View.app.md) |  | [`App`](obsidian.App.md) |  |
 |  [`containerEl`](obsidian.View.containerEl.md) |  | <code>HTMLElement</code> |  |
-|  [`icon`](obsidian.View.icon.md) |  | <code>IconName</code> |  |
+|  [`icon`](obsidian.View.icon.md) |  | [`IconName`](obsidian.IconName.md) |  |
 |  [`leaf`](obsidian.View.leaf.md) |  | [`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md) |  |
 |  [`navigation`](obsidian.View.navigation.md) |  | <code>boolean</code> | Whether or not the view is intended for navigation. If your view is a static view that is not intended to be navigated away, set this to false. (For example: File explorer, calendar, etc.) If your view opens a file or can be otherwise navigated, set this to true. (For example: Markdown editor view, Kanban view, PDF view, etc.) |
 

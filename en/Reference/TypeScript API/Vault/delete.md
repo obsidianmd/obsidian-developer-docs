@@ -9,6 +9,8 @@ cssclasses: hide-title
 
 ## Vault.delete() method
 
+Deletes the file completely.
+
 **Signature:**
 
 ```typescript

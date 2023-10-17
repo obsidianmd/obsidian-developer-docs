@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault class
 
+Work with files and folders stored inside a vault.
 
 **Signature:**
 
@@ -28,31 +29,30 @@ export class Vault extends Events
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`append(file, data, options)`](obsidian.Vault.append.md) |  |  |
-|  [`cachedRead(file)`](obsidian.Vault.cachedRead.md) |  |  |
-|  [`copy(file, newPath)`](obsidian.Vault.copy.md) |  |  |
-|  [`create(path, data, options)`](obsidian.Vault.create.md) |  |  |
-|  [`createBinary(path, data, options)`](obsidian.Vault.createBinary.md) |  |  |
-|  [`createFolder(path)`](obsidian.Vault.createFolder.md) |  |  |
-|  [`delete(file, force)`](obsidian.Vault.delete.md) |  |  |
-|  [`getAbstractFileByPath(path)`](obsidian.Vault.getAbstractFileByPath.md) |  |  |
-|  [`getAllLoadedFiles()`](obsidian.Vault.getAllLoadedFiles.md) |  |  |
-|  [`getFiles()`](obsidian.Vault.getFiles.md) |  |  |
-|  [`getMarkdownFiles()`](obsidian.Vault.getMarkdownFiles.md) |  |  |
-|  [`getName()`](obsidian.Vault.getName.md) |  | Gets the name of the vault |
-|  [`getResourcePath(file)`](obsidian.Vault.getResourcePath.md) |  |  |
-|  [`getRoot()`](obsidian.Vault.getRoot.md) |  |  |
-|  [`modify(file, data, options)`](obsidian.Vault.modify.md) |  |  |
-|  [`modifyBinary(file, data, options)`](obsidian.Vault.modifyBinary.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on_1.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on_2.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on_3.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on_4.md) |  |  |
+|  [`append(file, data, options)`](obsidian.Vault.append.md) |  | Add text to the end of a plaintext file inside the vault. |
+|  [`cachedRead(file)`](obsidian.Vault.cachedRead.md) |  | Read the content of a plaintext file stored inside the vault Use this if you only want to display the content to the user. If you want to modify the file content afterward use [Vault.read()](obsidian.Vault.read.md) |
+|  [`copy(file, newPath)`](obsidian.Vault.copy.md) |  | Create a copy of the selected file. |
+|  [`create(path, data, options)`](obsidian.Vault.create.md) |  | Create a new plaintext file inside the vault. |
+|  [`createBinary(path, data, options)`](obsidian.Vault.createBinary.md) |  | Create a new binary file inside the vault. |
+|  [`createFolder(path)`](obsidian.Vault.createFolder.md) |  | Create a new folder inside the vault. |
+|  [`delete(file, force)`](obsidian.Vault.delete.md) |  | Deletes the file completely. |
+|  [`getAbstractFileByPath(path)`](obsidian.Vault.getAbstractFileByPath.md) |  | Get a file or folder inside the vault. If you need a file, you should test the returned object with <code>instanceof TFile</code>. Otherwise, if you need a folder, you should test it with <code>instanceof TFolder</code>. |
+|  [`getAllLoadedFiles()`](obsidian.Vault.getAllLoadedFiles.md) |  | Get all files and folders in the vault. |
+|  [`getFiles()`](obsidian.Vault.getFiles.md) |  | Get all files in the vault. |
+|  [`getMarkdownFiles()`](obsidian.Vault.getMarkdownFiles.md) |  | Get all markdown files in the vault. |
+|  [`getName()`](obsidian.Vault.getName.md) |  | Gets the name of the vault. |
+|  [`getResourcePath(file)`](obsidian.Vault.getResourcePath.md) |  | Returns an URI for the browser engine to use, for example to embed an image. |
+|  [`getRoot()`](obsidian.Vault.getRoot.md) |  | Get the root folder of the current vault. |
+|  [`modify(file, data, options)`](obsidian.Vault.modify.md) |  | Modify the contents of a plaintext file. |
+|  [`modifyBinary(file, data, options)`](obsidian.Vault.modifyBinary.md) |  | Modify the contents of a binary file. |
+|  [`on(name, callback, ctx)`](obsidian.Vault.on.md) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](obsidian.Workspace.onLayoutReady.md)<!-- -->. |
+|  [`on(name, callback, ctx)`](obsidian.Vault.on_1.md) |  | Called when a file is modified. |
+|  [`on(name, callback, ctx)`](obsidian.Vault.on_2.md) |  | Called when a file is deleted. |
+|  [`on(name, callback, ctx)`](obsidian.Vault.on_3.md) |  | Called when a file is renamed. |
 |  [`process(file, fn, options)`](obsidian.Vault.process.md) |  | Atomically read, modify, and save the contents of a note. |
-|  [`read(file)`](obsidian.Vault.read.md) |  |  |
-|  [`readBinary(file)`](obsidian.Vault.readBinary.md) |  |  |
+|  [`read(file)`](obsidian.Vault.read.md) |  | Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](obsidian.Vault.cachedRead.md) otherwise for better performance. |
+|  [`readBinary(file)`](obsidian.Vault.readBinary.md) |  | Read the content of a binary file stored inside the vault. |
 |  [`recurseChildren(root, cb)`](obsidian.Vault.recurseChildren.md) | <code>static</code> |  |
-|  [`rename(file, newPath)`](obsidian.Vault.rename.md) |  |  |
+|  [`rename(file, newPath)`](obsidian.Vault.rename.md) |  | Rename or move a file. |
 |  [`trash(file, system)`](obsidian.Vault.trash.md) |  | Tries to move to system trash. If that isn't successful/allowed, use local trash |
 

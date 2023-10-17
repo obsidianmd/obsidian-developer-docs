@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.on() method
 
+Called when a file is modified.
 
 **Signature:**
 

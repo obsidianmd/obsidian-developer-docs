@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SettingTab.hide() method
 
+Hides the contents of the setting tab. Any registered components should be unloaded when the view is hidden. Override this if you need to perform additional cleanup.
 
 **Signature:**
 

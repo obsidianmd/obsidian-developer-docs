@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Plugin\_2.addSettingTab() method
 
+Register a settings tab, which allows users to change settings.
 
 **Signature:**
 

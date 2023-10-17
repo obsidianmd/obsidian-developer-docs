@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.list() method
 
+Retrieve a list of all files and folders inside the given folder, non-recursive.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ list(normalizedPath: string): Promise<ListedFiles>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

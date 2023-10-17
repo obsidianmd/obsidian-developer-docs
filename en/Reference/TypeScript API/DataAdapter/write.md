@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.write() method
 
+Write to a plaintext file. If the file exists its content will be overwritten, otherwise the file will be created.
 
 **Signature:**
 
@@ -20,9 +21,9 @@ write(normalizedPath: string, data: string, options?: DataWriteOptions): Promise
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
-|  <code>data</code> | <code>string</code> |  |
-|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ |
+|  <code>normalizedPath</code> | <code>string</code> | path to file, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
+|  <code>data</code> | <code>string</code> | new file content |
+|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ (Optional) |
 
 **Returns:**
 

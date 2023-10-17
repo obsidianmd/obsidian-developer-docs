@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## removeIcon() function
 
-Remove a custom icon from the library
+Remove a custom icon from the library.
 
 **Signature:**
 

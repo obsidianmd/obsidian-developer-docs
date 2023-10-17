@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## PopoverSuggest class
 
+Base class for adding a type-ahead popover.
 
 **Signature:**
 
@@ -22,6 +23,13 @@ export abstract class PopoverSuggest<T> implements ISuggestOwner<T>, CloseableCo
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
 |  [`(constructor)(app, scope)`](obsidian.PopoverSuggest.(constructor).md) |  | Constructs a new instance of the <code>PopoverSuggest</code> class |
+
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`app`](obsidian.PopoverSuggest.app.md) |  | [`App`](obsidian.App.md) |  |
+|  [`scope`](obsidian.PopoverSuggest.scope.md) |  | [`Scope`](obsidian.Scope.md) |  |
 
 ## Methods
 

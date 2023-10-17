@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.getAbstractFileByPath() method
 
+Get a file or folder inside the vault. If you need a file, you should test the returned object with `instanceof TFile`<!-- -->. Otherwise, if you need a folder, you should test it with `instanceof TFolder`<!-- -->.
 
 **Signature:**
 
@@ -20,9 +21,11 @@ getAbstractFileByPath(path: string): TAbstractFile | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>path</code> | <code>string</code> |  |
+|  <code>path</code> | <code>string</code> | vault absolute path to the folder or file, with extension, case sensitive. |
 
 **Returns:**
 
 [`TAbstractFile`](obsidian.TAbstractFile.md)` | null`
+
+the abstract file, if it's found.
 

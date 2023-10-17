@@ -20,7 +20,7 @@ export interface FileStats
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`ctime`](obsidian.FileStats.ctime.md) |  | <code>number</code> |  |
-|  [`mtime`](obsidian.FileStats.mtime.md) |  | <code>number</code> |  |
-|  [`size`](obsidian.FileStats.size.md) |  | <code>number</code> |  |
+|  [`ctime`](obsidian.FileStats.ctime.md) |  | <code>number</code> | Time of creation, represented as a unix timestamp, in milliseconds. |
+|  [`mtime`](obsidian.FileStats.mtime.md) |  | <code>number</code> | Time of last modification, represented as a unix timestamp, in milliseconds. |
+|  [`size`](obsidian.FileStats.size.md) |  | <code>number</code> | Size on disk, as bytes. |
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.read() method
 
+Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](obsidian.Vault.cachedRead.md) otherwise for better performance.
 
 **Signature:**
 

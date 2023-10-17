@@ -13,5 +13,5 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-file: TFile;
+file: TFile | null;
 ```

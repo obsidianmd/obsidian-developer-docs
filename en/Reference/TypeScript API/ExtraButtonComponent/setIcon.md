@@ -9,7 +9,6 @@ cssclasses: hide-title
 
 ## ExtraButtonComponent.setIcon() method
 
-
 **Signature:**
 
 ```typescript
@@ -20,7 +19,7 @@ setIcon(icon: IconName): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>icon</code> | <code>IconName</code> |  |
+|  <code>icon</code> | [`IconName`](obsidian.IconName.md) | ID of the icon, can use any icon loaded with [addIcon()](obsidian.addIcon.md) or from the inbuilt library. |
 
 **Returns:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.trashLocal() method
 
+Move to local trash. Files will be moved into the `.trash` folder at the root of the vault.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ trashLocal(normalizedPath: string): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> |  |
+|  <code>normalizedPath</code> | <code>string</code> | path to file/folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
 
 **Returns:**
 

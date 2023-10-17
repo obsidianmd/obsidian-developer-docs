@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.append() method
 
+Add text to the end of a plaintext file inside the vault.
 
 **Signature:**
 
@@ -20,9 +21,9 @@ append(file: TFile, data: string, options?: DataWriteOptions): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>file</code> | [`TFile`](obsidian.TFile.md) |  |
-|  <code>data</code> | <code>string</code> |  |
-|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ |
+|  <code>file</code> | [`TFile`](obsidian.TFile.md) | The file |
+|  <code>data</code> | <code>string</code> | the text to add |
+|  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ (Optional) |
 
 **Returns:**
 
