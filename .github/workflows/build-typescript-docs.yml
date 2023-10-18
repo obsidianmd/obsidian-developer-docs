@@ -1,6 +1,7 @@
 name: Build TypeScript docs
 
 on:
+  workflow_dispatch:
   push:
     paths:
     - 'config/**' # Only run this workflow whenever a file in ./config has changed.
