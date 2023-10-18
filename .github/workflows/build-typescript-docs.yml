@@ -25,6 +25,9 @@ jobs:
           cd config
           api-extractor run --local --verbose
 
+      - name: Pre-Process API Extractor output
+        run: node pre-process.js
+
       - name: Clone API Documenter fork
         run: git clone https://github.com/ericaxu/rushstack-obsidian.git
 

@@ -2,6 +2,7 @@
 
 # 1. Run api-extractor
 api-extractor run --local --verbose
+node pre-process.js
 
 # Remove everything under ../en/Reference/TypeScript API before doing step 2
 rm -rf ../en/Reference/TypeScript\ API/*

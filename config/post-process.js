@@ -112,10 +112,6 @@ async function organizeIntoFolders() {
 
     const remainingFiles = await fs.readdir(sourceDir);
     for (const file of remainingFiles) {
-      if (!file.endsWith('.md')) {
-        continue;
-      }
-
       const fileName = path.basename(file, '.md');
 
       if (await folderExists(path.join(sourceDir, fileName))) {
@@ -131,9 +127,56 @@ async function organizeIntoFolders() {
   }
 }
 
+async function updateFileLinks(folderPath) {
+	try {
+		const files = await fs.readdir(folderPath);
+
+		for (const file of files) {
+			if(!file.endsWith('.md')) {
+				const joined = path.join(sourceDir, file);
+				if(await folderExists(joined)) {
+					await updateFileLinks(joined);
+				}
+				continue;
+			}
+
+			try {
+				let filePath = path.join(folderPath, file);
+				let fileContent = await fs.readFile(filePath, 'utf-8');
+				const regex = /::(.*)::(.*)::/g;
+				const matches = fileContent.matchAll(regex);
+				for(const match of matches) {
+					let alias = match[2];
+					if(match[2] === '') {
+						alias = match[1];
+					}
+					let filename = match[1].split('.').pop().toLowerCase();
+
+					//prefer specific API class
+					if(filename === 'getleaf') {
+						filename = 'workspace.getleaf_1';
+					}
+					//remove any backslashes in links.
+					filename = filename.replace('\\', '');
+					alias = alias.replace('\\', '');
+
+					fileContent = fileContent.replaceAll(regex, `[${alias}](obsidian.${filename}.md)`);
+				}
+				await fs.writeFile(filePath, fileContent, 'utf-8');
+				console.log(`Replaced files: ${filePath}`);
+			} catch (err) {
+				console.error(`Error processing file: ${err.message}`);
+			}
+		}
+	} catch (err) {
+		console.error(`Error reading directory: ${err.message}`);
+	}
+}
+
 async function main() {
-  await renameFiles(folderPath);;
+  await renameFiles(folderPath);
   await organizeIntoFolders();
+  await updateFileLinks(folderPath);
 }
 
 main();
