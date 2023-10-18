@@ -26,6 +26,7 @@ jobs:
           api-extractor run --local --verbose
 
       - name: Pre-Process API Extractor output
+        working-directory: ./config
         run: node pre-process.js
 
       - name: Clone API Documenter fork
