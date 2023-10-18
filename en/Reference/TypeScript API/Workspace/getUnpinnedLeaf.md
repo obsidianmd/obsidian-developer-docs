@@ -11,7 +11,7 @@ cssclasses: hide-title
 
 > Warning: This API is now obsolete.
 > 
-> - You should use  instead which does the same thing.
+> - You should use [ | getLeaf(false)](obsidian.workspace.getleaf_1.md) instead which does the same thing.
 > 
 
 **Signature:**
