@@ -48,7 +48,7 @@ If the problem isn't resolved by then, we'll remove plugins or themes from our d
 
 We may immediately remove a plugin or theme if:
 
-- The plugin or theme appears to malicious.
+- The plugin or theme appears to be malicious.
 - The developer is uncooperative.
 - This is a repeated violation.
 
