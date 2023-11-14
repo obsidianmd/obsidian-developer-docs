@@ -26,7 +26,7 @@ You can inspect Obsidian running on an Android device if you enable USB Debuggin
 
 ### iOS
 
-You can inspect Obsidian running on an iOS device by pluggin in your device to macOS computer and going into Safari -> Develop. It requires the Web Inspector toggle setting to be turned on in the Settings -> Safari -> Advanced
+You can inspect Obsidian on an iOS device running 16.4 or later and a macOS based computer. Instructions on how to set it up can be found here: https://webkit.org/web-inspector/enabling-web-inspector/
 
 
 > [!tip]
