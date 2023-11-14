@@ -18,6 +18,14 @@ To disable mobile emulation, enter the following and press `Enter`:
 this.app.emulateMobile(false);
 ```
 
+
+> [!tip]
+> To instead toggle mobile emulation back and forth, you can use the `this.app.isMobile` flag:
+>
+> ```ts
+> this.app.emulateMobile(!this.app.isMobile);
+> ```
+
 ## Inspecting the webview on the actual mobile device
 
 ### Android
@@ -27,14 +35,6 @@ You can inspect Obsidian running on an Android device if you enable USB Debuggin
 ### iOS
 
 You can inspect Obsidian on an iOS device running 16.4 or later and a macOS based computer. Instructions on how to set it up can be found here: https://webkit.org/web-inspector/enabling-web-inspector/
-
-
-> [!tip]
-> To instead toggle mobile emulation back and forth, you can use the `this.app.isMobile` flag:
->
-> ```ts
-> this.app.emulateMobile(!this.app.isMobile);
-> ```
 
 ## Platform-specific features
 
