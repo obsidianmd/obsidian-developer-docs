@@ -64,10 +64,10 @@ export default class ExamplePlugin extends Plugin {
   }
 
   async activateView() {
-	let { workspace }  = this.app;
+	const { workspace }  = this.app;
 
 	let leaf: WorkspaceLeaf | null = null;
-	let leaves = workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE);
+	const leaves = workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE);
 
 	if (leaves.length > 0) {
 		// A leaf with our view already exists, use that
@@ -75,7 +75,7 @@ export default class ExamplePlugin extends Plugin {
 	} else {
 		// Our view could not be found in the workspace, create a new leaf
 		// in the right sidebar for it
-		let leaf = workspace.getRightLeaf(false);
+		leaf = workspace.getRightLeaf(false);
 		await leaf.setViewState({ type: VIEW_TYPE_EXAMPLE, active: true });
 	}
 
