@@ -1,4 +1,4 @@
-Modals display information and accept input from the user. To create a modal, create a class that extends [[Reference/TypeScript API/Modal/Modal|Modal]]:
+Modals display information and accept input from the user. To create a modal, create a class that extends [[Reference/TypeScript API/Modal|Modal]]:
 
 ```ts
 import { App, Modal } from "obsidian";

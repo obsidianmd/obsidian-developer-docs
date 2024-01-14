@@ -88,7 +88,7 @@ You can mount your React component on any `HTMLElement`, for example [[Plugins/U
 
 ## Create an App context
 
-If you want to access the [[Reference/TypeScript API/App/App|App]] object from one of your React components, you need to pass it as a dependency. As your plugin grows, even though you're only using the `App` object in a few places, you start passing it through the whole component tree.
+If you want to access the [[Reference/TypeScript API/App|App]] object from one of your React components, you need to pass it as a dependency. As your plugin grows, even though you're only using the `App` object in a few places, you start passing it through the whole component tree.
 
 Another alternative is to create a React context for the app to make it globally available to all components inside your React view.
 
