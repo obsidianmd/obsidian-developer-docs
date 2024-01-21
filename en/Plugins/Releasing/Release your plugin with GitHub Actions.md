@@ -47,7 +47,9 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
    git push origin main
    ```
 
-3. Create a tag that matches the version in the `manifest.json` file.
+3. Browse to your repository on GitHub and select the **Settings** tab. Expand the **Actions** menu in the left sidebar, navigate to the **General** menu, scroll to the **Workflow permissions** section, select the **Read and write permissions** option, and save.
+
+4. Create a tag that matches the version in the `manifest.json` file.
 
    ```bash
    git tag -a 1.0.1 -m "1.0.1"
@@ -57,13 +59,13 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
    - `-a` creates an [annotated tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_creating_tags).
    - `-m` specifies the name of your release. For Obsidian plugins, this must be the same as the version.
 
-4. Browse to your repository on GitHub and select the **Actions** tab. Your workflow might still be running, or it might have finished already.
+5. Browse to your repository on GitHub and select the **Actions** tab. Your workflow might still be running, or it might have finished already.
 
-5. When the workflow finishes, go back to the main page for your repository and select **Releases** in the sidebar on the right side. The workflow has created a draft GitHub release and uploaded the required assets as binary attachments.
+6. When the workflow finishes, go back to the main page for your repository and select **Releases** in the sidebar on the right side. The workflow has created a draft GitHub release and uploaded the required assets as binary attachments.
 
-6. Select **Edit** (pencil icon) on the right side of the release name.
+7. Select **Edit** (pencil icon) on the right side of the release name.
 
-7. Add release notes to let users know what happened in this release, and then select **Publish release**.
+8. Add release notes to let users know what happened in this release, and then select **Publish release**.
 
 You've successfully set up your plugin to automatically create a GitHub release whenever you create a new tag.
 
