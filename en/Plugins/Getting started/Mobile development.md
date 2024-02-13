@@ -64,7 +64,7 @@ This section lists common issues when developing for mobile devices.
 
 ### Node and Electron APIs
 
-The Node.js API and the Electron API aren't available on mobile devices. Any calls to these libraries result cause your plugin to crash.
+The Node.js API and the Electron API aren't available on mobile devices. Any calls to these libraries can cause your plugin to crash.
 
 ### Lookbehind in regular expressions
 
