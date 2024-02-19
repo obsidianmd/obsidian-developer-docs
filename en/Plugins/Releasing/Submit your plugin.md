@@ -69,10 +69,10 @@ In this step, you'll submit your plugin to the Obsidian team for review.
 
 You've now submitted your plugin to the Obsidian plugin directory. Sit back and wait for an initial validation by our friendly bot. It may take a few minutes before the results are ready.
 
-- If you see a **Ready to review** label on your PR, your submission has passed the automatic validation.
-- If you see a **Validation failed** label on your PR, you need to address all listed issues until the bot assigns a **Ready to review** label.
+- If you see a **Ready for review** label on your PR, your submission has passed the automatic validation.
+- If you see a **Validation failed** label on your PR, you need to address all listed issues until the bot assigns a **Ready for review** label.
 
-Once your submission is ready to review, you can sit back and wait for the Obsidian team to review it.
+Once your submission is ready for review, you can sit back and wait for the Obsidian team to review it.
 
 > [!question] How long does it take to review my plugin?
 > The time it takes to review your submission depends on the current workload of the Obsidian team. The team is still small, so please be patient while you wait for your plugin to be reviewed. We're currently unable to give any estimates on when we'll be able to review your submission.
