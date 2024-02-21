@@ -9,7 +9,7 @@ const targetDir = folderPath;
 // Read the folder contents
 async function renameFiles(folderPath) {
   try {
-    const files = await fs.readdir(folderPath);
+    const files = await fs.readdir(folderPath, {recursive: true});
 
     for (const file of files) {
       // Step 1: Replace escaped backtick with normal backtick
@@ -30,7 +30,7 @@ async function renameFiles(folderPath) {
 
       // Step 2: Remove all "obsidian." prefixes
       if (file.startsWith('obsidian.') && file.endsWith('.md')) {
-        const newFileName = file.replace('obsidian.', '').replace('Plugin_2', 'Plugin').replaceAll('Plugin\_2', 'Plugin');
+        const newFileName = file.replace('obsidian.', '').replace('Plugin_2', 'Plugin').replace('Plugin\_2', 'Plugin');
         const oldFilePath = path.join(folderPath, file);
         const newFilePath = path.join(folderPath, newFileName);
 
