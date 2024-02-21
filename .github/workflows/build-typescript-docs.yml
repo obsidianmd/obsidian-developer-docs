@@ -18,34 +18,31 @@ jobs:
         with:
           node-version: "16.x"
 
-      - name: Install API Extractor
-        run: npm install -g @microsoft/api-extractor
-
-      - name: Run API Extractor
-        run: |
-          cd config
-          api-extractor run --local --verbose
-
-      - name: Pre-Process API Extractor output
-        working-directory: ./config
-        run: node pre-process.js
-
-      - name: Clone API Documenter fork
-        run: git clone https://github.com/ericaxu/rushstack-obsidian.git
+      - name: Clone rushstack fork
+        run: git clone https://github.com/joethei/rushstack.git
 
       - name: Install Rush
         run: npm install -g @microsoft/rush
 
       - name: Build Rushstack
-        working-directory: ./rushstack-obsidian
+        working-directory: ./rushstack
         continue-on-error: true
         run: |
           rush update --bypass-policy
           rush build
 
+      - name: Run API Extractor
+        run: |
+          cd config
+          ../rushstack/apps/api-extractor/bin/api-extractor run --local --verbose
+
+      - name: Pre-Process API Extractor output
+        working-directory: ./config
+        run: node pre-process.js
+
       - name: Generate API docs
         working-directory: ./config
-        run: ../rushstack-obsidian/apps/api-documenter/bin/api-documenter markdown --output ../en/Reference/TypeScript\ API
+        run: ../rushstack/apps/api-documenter/bin/api-documenter markdown --output ../en/Reference/TypeScript\ API
 
       - name: Post-process Markdown
         working-directory: ./config
