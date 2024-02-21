@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-getRightLeaf(split: boolean): WorkspaceLeaf;
+getRightLeaf(split: boolean): WorkspaceLeaf | null;
 ```
 
 ## Parameters
@@ -24,5 +24,5 @@ getRightLeaf(split: boolean): WorkspaceLeaf;
 
 **Returns:**
 
-[`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md)
+[`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md)` | null`
 

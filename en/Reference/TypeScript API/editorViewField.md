@@ -14,10 +14,10 @@ cssclasses: hide-title
 > use [editorInfoField](obsidian.editorInfoField.md) instead.
 > 
 
-Use this StateField to get a reference to the MarkdownView. This is now deprecated because it is possible for an editor to not be associated with a MarkdownView.
+This is now deprecated - it is now mapped directly to `editorInfoField`<!-- -->, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily.
 
 **Signature:**
 
 ```typescript
-editorViewField: StateField<MarkdownView>
+editorViewField: StateField<MarkdownFileInfo>
 ```

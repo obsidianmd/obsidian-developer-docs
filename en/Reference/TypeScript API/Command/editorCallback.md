@@ -16,3 +16,19 @@ A command callback that is only triggered when the user is in an editor. Overrid
 ```typescript
 editorCallback?: (editor: Editor, ctx: MarkdownView | MarkdownFileInfo) => any;
 ```
+
+## Example
+
+
+```ts
+this.addCommand({
+  id: 'example-command',
+  name: 'Example command',
+  editorCallback: (editor: Editor, view: MarkdownView) => {
+    const sel = editor.getSelection();
+
+    console.log(`You have selected: ${sel}`);
+  }
+});
+```
+

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Keymap class
 
+Manages keymap lifecycle for different [Scope](obsidian.Scope.md)<!-- -->s.
 
 **Signature:**
 
@@ -21,7 +22,7 @@ export class Keymap
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`isModEvent(evt)`](obsidian.Keymap.isModEvent.md) | <code>static</code> | Translates an event into the type of pane that should open. Returns 'tab' if the modifier key Cmd/Ctrl is pressed OR if this is a middle-click MouseEvent. Returns 'split' if Cmd/Ctrl+Alt is pressed. Returns 'window' if Cmd/Ctrl+Alt+Shift is pressed. |
-|  [`isModifier(evt, modifier)`](obsidian.Keymap.isModifier.md) | <code>static</code> | Checks whether the modifier key is pressed during this event |
-|  [`popScope(scope)`](obsidian.Keymap.popScope.md) |  |  |
-|  [`pushScope(scope)`](obsidian.Keymap.pushScope.md) |  |  |
+|  [`isModifier(evt, modifier)`](obsidian.Keymap.isModifier.md) | <code>static</code> | Checks whether the modifier key is pressed during this event. |
+|  [`popScope(scope)`](obsidian.Keymap.popScope.md) |  | Remove a scope from the scope stack. If the given scope is active, the next scope in the stack will be made active. |
+|  [`pushScope(scope)`](obsidian.Keymap.pushScope.md) |  | Push a scope onto the scope stack, setting it as the active scope to handle all key events. |
 

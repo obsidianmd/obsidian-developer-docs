@@ -43,4 +43,6 @@ export class Modal implements CloseableComponent
 |  [`onClose()`](obsidian.Modal.onClose.md) |  |  |
 |  [`onOpen()`](obsidian.Modal.onOpen.md) |  |  |
 |  [`open()`](obsidian.Modal.open.md) |  |  |
+|  [`setContent(content)`](obsidian.Modal.setContent.md) |  |  |
+|  [`setTitle(title)`](obsidian.Modal.setTitle.md) |  |  |
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Scope.unregister() method
 
+Remove an existing keymap event handler.
 
 **Signature:**
 

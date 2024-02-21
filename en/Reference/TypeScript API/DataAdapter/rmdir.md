@@ -22,7 +22,7 @@ rmdir(normalizedPath: string, recursive: boolean): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>normalizedPath</code> | <code>string</code> | path to folder, use [normalizePath()](obsidian.normalizePath.md) to normalize beforehand. |
-|  <code>recursive</code> | <code>boolean</code> | If <code>true</code>, delete folders under this folder recursively, if `<!-- -->false´ the folder needs to be empty. |
+|  <code>recursive</code> | <code>boolean</code> | If <code>true</code>, delete folders under this folder recursively, if <code>false</code> the folder needs to be empty. |
 
 **Returns:**
 

@@ -39,7 +39,7 @@ export abstract class Plugin extends Component
 |  [`addSettingTab(settingTab)`](obsidian.Plugin.addSettingTab.md) |  | Register a settings tab, which allows users to change settings. |
 |  [`addStatusBarItem()`](obsidian.Plugin.addStatusBarItem.md) |  | Adds a status bar item to the bottom of the app. Not available on mobile. |
 |  [`loadData()`](obsidian.Plugin.loadData.md) |  | Load settings data from disk. Data is stored in <code>data.json</code> in the plugin folder. |
-|  [`registerCodeMirror(callback)`](obsidian.Plugin.registerCodeMirror.md) |  | Runs callback on all currently loaded instances of CodeMirror, then registers the callback for all future CodeMirror instances. |
+|  [`onExternalSettingsChange()?`](obsidian.Plugin.onExternalSettingsChange.md) |  | <p>_(Optional)_ Called when the <code>data.json</code> file is modified on disk externally from Obsidian. This usually means that a Sync service or external program has modified the plugin settings.</p><p>Implement this method to reload plugin settings when they have changed externally.</p> |
 |  [`registerEditorExtension(extension)`](obsidian.Plugin.registerEditorExtension.md) |  | Registers a CodeMirror 6 extension. To reconfigure cm6 extensions for a plugin on the fly, an array should be passed in, and modified dynamically. Once this array is modified, calling [Workspace.updateOptions()](obsidian.Workspace.updateOptions.md) will apply the changes. |
 |  [`registerEditorSuggest(editorSuggest)`](obsidian.Plugin.registerEditorSuggest.md) |  | Register an EditorSuggest which can provide live suggestions while the user is typing. |
 |  [`registerExtensions(extensions, viewType)`](obsidian.Plugin.registerExtensions.md) |  |  |

@@ -23,12 +23,11 @@ cssclasses: hide-title
 |  [`FileManager`](obsidian.FileManager.md) | Manage the creation, deletion and renaming of files from the UI. |
 |  [`FileSystemAdapter`](obsidian.FileSystemAdapter.md) |  |
 |  [`HoverPopover`](obsidian.HoverPopover.md) |  |
-|  [`Keymap`](obsidian.Keymap.md) |  |
+|  [`Keymap`](obsidian.Keymap.md) | Manages keymap lifecycle for different [Scope](obsidian.Scope.md)<!-- -->s. |
 |  [`MarkdownEditView`](obsidian.MarkdownEditView.md) | This is the editor for Obsidian Mobile as well as the upcoming WYSIWYG editor. |
 |  [`MarkdownPreviewRenderer`](obsidian.MarkdownPreviewRenderer.md) |  |
 |  [`MarkdownPreviewView`](obsidian.MarkdownPreviewView.md) |  |
 |  [`MarkdownRenderChild`](obsidian.MarkdownRenderChild.md) |  |
-|  [`MarkdownSourceView`](obsidian.MarkdownSourceView.md) |  |
 |  [`MarkdownView`](obsidian.MarkdownView.md) |  |
 |  [`Menu`](obsidian.Menu.md) |  |
 |  [`MenuItem`](obsidian.MenuItem.md) |  |
@@ -38,7 +37,7 @@ cssclasses: hide-title
 |  [`MomentFormatComponent`](obsidian.MomentFormatComponent.md) |  |
 |  [`Notice`](obsidian.Notice.md) | Notification component. Use to present timely, high-value information. |
 |  [`ProgressBarComponent`](obsidian.ProgressBarComponent.md) |  |
-|  [`Scope`](obsidian.Scope.md) |  |
+|  [`Scope`](obsidian.Scope.md) | A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys. |
 |  [`SearchComponent`](obsidian.SearchComponent.md) |  |
 |  [`Setting`](obsidian.Setting.md) |  |
 |  [`SliderComponent`](obsidian.SliderComponent.md) |  |
@@ -64,7 +63,7 @@ cssclasses: hide-title
 
 |  Abstract Class | Description |
 |  --- | --- |
-|  [`AbstractInputSuggest`](obsidian.AbstractInputSuggest.md) | Attach to an <input> element or a &lt;<!-- -->div contentEditable<!-- -->&gt; to add type-ahead support. |
+|  [`AbstractInputSuggest`](obsidian.AbstractInputSuggest.md) | Attach to an <code>&lt;input&gt;</code> element or a <code>&lt;div contentEditable&gt;</code> to add type-ahead support. |
 |  [`BaseComponent`](obsidian.BaseComponent.md) |  |
 |  [`EditableFileView`](obsidian.EditableFileView.md) |  |
 |  [`Editor`](obsidian.Editor.md) | A common interface that bridges the gap between CodeMirror 5 and CodeMirror 6. |
@@ -105,6 +104,7 @@ cssclasses: hide-title
 |  [`fuzzySearch(q, text)`](obsidian.fuzzySearch.md) |  |
 |  [`getAllTags(cache)`](obsidian.getAllTags.md) |  |
 |  [`getBlobArrayBuffer(blob)`](obsidian.getBlobArrayBuffer.md) |  |
+|  [`getFrontMatterInfo(content)`](obsidian.getFrontMatterInfo.md) | Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text. |
 |  [`getIcon(iconId)`](obsidian.getIcon.md) | Create an SVG from an iconId. Returns null if no icon associated with the iconId. |
 |  [`getIconIds()`](obsidian.getIconIds.md) | Get the list of registered icons. |
 |  [`getLinkpath(linktext)`](obsidian.getLinkpath.md) |  |
@@ -169,6 +169,7 @@ cssclasses: hide-title
 |  [`EventRef`](obsidian.EventRef.md) |  |
 |  [`FileStats`](obsidian.FileStats.md) |  |
 |  [`FrontMatterCache`](obsidian.FrontMatterCache.md) |  |
+|  [`FrontMatterInfo`](obsidian.FrontMatterInfo.md) |  |
 |  [`FrontmatterLinkCache`](obsidian.FrontmatterLinkCache.md) |  |
 |  [`FuzzyMatch`](obsidian.FuzzyMatch.md) |  |
 |  [`HeadingCache`](obsidian.HeadingCache.md) |  |
@@ -225,7 +226,7 @@ cssclasses: hide-title
 |  [`editorEditorField`](obsidian.editorEditorField.md) | Use this StateField to get a reference to the EditorView |
 |  [`editorInfoField`](obsidian.editorInfoField.md) | Use this StateField to get information about this markdown editor, such as the associated file, or the Editor. |
 |  [`editorLivePreviewField`](obsidian.editorLivePreviewField.md) | Use this StateField to check whether Live Preview is active |
-|  [`editorViewField`](obsidian.editorViewField.md) | Use this StateField to get a reference to the MarkdownView. This is now deprecated because it is possible for an editor to not be associated with a MarkdownView. |
+|  [`editorViewField`](obsidian.editorViewField.md) | This is now deprecated - it is now mapped directly to <code>editorInfoField</code>, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily. |
 |  [`livePreviewState`](obsidian.livePreviewState.md) |  |
 |  [`moment`](obsidian.moment.md) |  |
 |  [`Platform`](obsidian.Platform.md) |  |

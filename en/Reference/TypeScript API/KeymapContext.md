@@ -21,5 +21,5 @@ export interface KeymapContext extends KeymapInfo
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`vkey`](obsidian.KeymapContext.vkey.md) |  | <code>string</code> |  |
+|  [`vkey`](obsidian.KeymapContext.vkey.md) |  | <code>string</code> | Interpreted virtual key. |
 

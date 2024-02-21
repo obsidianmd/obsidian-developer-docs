@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## KeymapContext.vkey property
 
+Interpreted virtual key.
 
 **Signature:**
 

@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Command.repeatable property
 
-Whether holding the hotkey should repeatedly trigger this command. Defaults to false.
+Whether holding the hotkey should repeatedly trigger this command.
 
 **Signature:**
 

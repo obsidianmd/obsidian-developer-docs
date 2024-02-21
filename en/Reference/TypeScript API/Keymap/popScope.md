@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Keymap.popScope() method
 
+Remove a scope from the scope stack. If the given scope is active, the next scope in the stack will be made active.
 
 **Signature:**
 
