@@ -12,242 +12,242 @@ cssclasses: hide-title
 
 |  Class | Description |
 |  --- | --- |
-|  [`AbstractTextComponent`](obsidian.AbstractTextComponent.md) |  |
-|  [`App`](obsidian.App.md) |  |
-|  [`ButtonComponent`](obsidian.ButtonComponent.md) |  |
-|  [`ColorComponent`](obsidian.ColorComponent.md) | Color picker component. Values are by default 6-digit hash-prefixed hex strings like <code>#000000</code>. |
-|  [`Component`](obsidian.Component.md) |  |
-|  [`DropdownComponent`](obsidian.DropdownComponent.md) |  |
-|  [`Events`](obsidian.Events.md) |  |
-|  [`ExtraButtonComponent`](obsidian.ExtraButtonComponent.md) |  |
-|  [`FileManager`](obsidian.FileManager.md) | Manage the creation, deletion and renaming of files from the UI. |
-|  [`FileSystemAdapter`](obsidian.FileSystemAdapter.md) |  |
-|  [`HoverPopover`](obsidian.HoverPopover.md) |  |
-|  [`Keymap`](obsidian.Keymap.md) | Manages keymap lifecycle for different [Scope](obsidian.Scope.md)<!-- -->s. |
-|  [`MarkdownEditView`](obsidian.MarkdownEditView.md) | This is the editor for Obsidian Mobile as well as the upcoming WYSIWYG editor. |
-|  [`MarkdownPreviewRenderer`](obsidian.MarkdownPreviewRenderer.md) |  |
-|  [`MarkdownPreviewView`](obsidian.MarkdownPreviewView.md) |  |
-|  [`MarkdownRenderChild`](obsidian.MarkdownRenderChild.md) |  |
-|  [`MarkdownView`](obsidian.MarkdownView.md) |  |
-|  [`Menu`](obsidian.Menu.md) |  |
-|  [`MenuItem`](obsidian.MenuItem.md) |  |
-|  [`MenuSeparator`](obsidian.MenuSeparator.md) |  |
-|  [`MetadataCache`](obsidian.MetadataCache.md) | Linktext is any internal link that is composed of a path and a subpath, such as "My note\#Heading" Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext. |
-|  [`Modal`](obsidian.Modal.md) |  |
-|  [`MomentFormatComponent`](obsidian.MomentFormatComponent.md) |  |
-|  [`Notice`](obsidian.Notice.md) | Notification component. Use to present timely, high-value information. |
-|  [`ProgressBarComponent`](obsidian.ProgressBarComponent.md) |  |
-|  [`Scope`](obsidian.Scope.md) | A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys. |
-|  [`SearchComponent`](obsidian.SearchComponent.md) |  |
-|  [`Setting`](obsidian.Setting.md) |  |
-|  [`SliderComponent`](obsidian.SliderComponent.md) |  |
-|  [`Tasks`](obsidian.Tasks.md) |  |
-|  [`TextAreaComponent`](obsidian.TextAreaComponent.md) |  |
-|  [`TextComponent`](obsidian.TextComponent.md) |  |
-|  [`TFile`](obsidian.TFile.md) |  |
-|  [`TFolder`](obsidian.TFolder.md) |  |
-|  [`ToggleComponent`](obsidian.ToggleComponent.md) |  |
-|  [`Vault`](obsidian.Vault.md) | Work with files and folders stored inside a vault. |
-|  [`Workspace`](obsidian.Workspace.md) |  |
-|  [`WorkspaceFloating`](obsidian.WorkspaceFloating.md) |  |
-|  [`WorkspaceLeaf`](obsidian.WorkspaceLeaf.md) |  |
-|  [`WorkspaceMobileDrawer`](obsidian.WorkspaceMobileDrawer.md) |  |
-|  [`WorkspaceRibbon`](obsidian.WorkspaceRibbon.md) |  |
-|  [`WorkspaceRoot`](obsidian.WorkspaceRoot.md) |  |
-|  [`WorkspaceSidedock`](obsidian.WorkspaceSidedock.md) |  |
-|  [`WorkspaceSplit`](obsidian.WorkspaceSplit.md) |  |
-|  [`WorkspaceTabs`](obsidian.WorkspaceTabs.md) |  |
-|  [`WorkspaceWindow`](obsidian.WorkspaceWindow.md) |  |
+|  [`AbstractTextComponent`](AbstractTextComponent.md) |  |
+|  [`App`](App.md) |  |
+|  [`ButtonComponent`](ButtonComponent.md) |  |
+|  [`ColorComponent`](ColorComponent.md) | Color picker component. Values are by default 6-digit hash-prefixed hex strings like <code>#000000</code>. |
+|  [`Component`](Component.md) |  |
+|  [`DropdownComponent`](DropdownComponent.md) |  |
+|  [`Events`](Events.md) |  |
+|  [`ExtraButtonComponent`](ExtraButtonComponent.md) |  |
+|  [`FileManager`](FileManager.md) | Manage the creation, deletion and renaming of files from the UI. |
+|  [`FileSystemAdapter`](FileSystemAdapter.md) |  |
+|  [`HoverPopover`](HoverPopover.md) |  |
+|  [`Keymap`](Keymap.md) | Manages keymap lifecycle for different [Scope](Scope.md)<!-- -->s. |
+|  [`MarkdownEditView`](MarkdownEditView.md) | This is the editor for Obsidian Mobile as well as the upcoming WYSIWYG editor. |
+|  [`MarkdownPreviewRenderer`](MarkdownPreviewRenderer.md) |  |
+|  [`MarkdownPreviewView`](MarkdownPreviewView.md) |  |
+|  [`MarkdownRenderChild`](MarkdownRenderChild.md) |  |
+|  [`MarkdownView`](MarkdownView.md) |  |
+|  [`Menu`](Menu.md) |  |
+|  [`MenuItem`](MenuItem.md) |  |
+|  [`MenuSeparator`](MenuSeparator.md) |  |
+|  [`MetadataCache`](MetadataCache.md) | Linktext is any internal link that is composed of a path and a subpath, such as "My note\#Heading" Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext. |
+|  [`Modal`](Modal.md) |  |
+|  [`MomentFormatComponent`](MomentFormatComponent.md) |  |
+|  [`Notice`](Notice.md) | Notification component. Use to present timely, high-value information. |
+|  [`ProgressBarComponent`](ProgressBarComponent.md) |  |
+|  [`Scope`](Scope.md) | A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys. |
+|  [`SearchComponent`](SearchComponent.md) |  |
+|  [`Setting`](Setting.md) |  |
+|  [`SliderComponent`](SliderComponent.md) |  |
+|  [`Tasks`](Tasks.md) |  |
+|  [`TextAreaComponent`](TextAreaComponent.md) |  |
+|  [`TextComponent`](TextComponent.md) |  |
+|  [`TFile`](TFile.md) |  |
+|  [`TFolder`](TFolder.md) |  |
+|  [`ToggleComponent`](ToggleComponent.md) |  |
+|  [`Vault`](Vault.md) | Work with files and folders stored inside a vault. |
+|  [`Workspace`](Workspace.md) |  |
+|  [`WorkspaceFloating`](WorkspaceFloating.md) |  |
+|  [`WorkspaceLeaf`](WorkspaceLeaf.md) |  |
+|  [`WorkspaceMobileDrawer`](WorkspaceMobileDrawer.md) |  |
+|  [`WorkspaceRibbon`](WorkspaceRibbon.md) |  |
+|  [`WorkspaceRoot`](WorkspaceRoot.md) |  |
+|  [`WorkspaceSidedock`](WorkspaceSidedock.md) |  |
+|  [`WorkspaceSplit`](WorkspaceSplit.md) |  |
+|  [`WorkspaceTabs`](WorkspaceTabs.md) |  |
+|  [`WorkspaceWindow`](WorkspaceWindow.md) |  |
 
 ## Abstract Classes
 
 |  Abstract Class | Description |
 |  --- | --- |
-|  [`AbstractInputSuggest`](obsidian.AbstractInputSuggest.md) | Attach to an <code>&lt;input&gt;</code> element or a <code>&lt;div contentEditable&gt;</code> to add type-ahead support. |
-|  [`BaseComponent`](obsidian.BaseComponent.md) |  |
-|  [`EditableFileView`](obsidian.EditableFileView.md) |  |
-|  [`Editor`](obsidian.Editor.md) | A common interface that bridges the gap between CodeMirror 5 and CodeMirror 6. |
-|  [`EditorSuggest`](obsidian.EditorSuggest.md) |  |
-|  [`FileView`](obsidian.FileView.md) |  |
-|  [`FuzzySuggestModal`](obsidian.FuzzySuggestModal.md) |  |
-|  [`ItemView`](obsidian.ItemView.md) |  |
-|  [`MarkdownRenderer`](obsidian.MarkdownRenderer.md) |  |
-|  [`Plugin\_2`](obsidian.Plugin.md) |  |
-|  [`PluginSettingTab`](obsidian.PluginSettingTab.md) | Provides a unified interface for users to configure the plugin. |
-|  [`PopoverSuggest`](obsidian.PopoverSuggest.md) | Base class for adding a type-ahead popover. |
-|  [`SettingTab`](obsidian.SettingTab.md) |  |
-|  [`SuggestModal`](obsidian.SuggestModal.md) |  |
-|  [`TAbstractFile`](obsidian.TAbstractFile.md) | This can be either a <code>TFile</code> or a <code>TFolder</code>. |
-|  [`TextFileView`](obsidian.TextFileView.md) | <p>This class implements a plaintext-based editable file view, which can be loaded and saved given an editor.</p><p>Note that by default, this view only saves when it's closing. To implement auto-save, your editor should call <code>this.requestSave()</code> when the content is changed.</p> |
-|  [`ValueComponent`](obsidian.ValueComponent.md) |  |
-|  [`View`](obsidian.View.md) |  |
-|  [`WorkspaceContainer`](obsidian.WorkspaceContainer.md) |  |
-|  [`WorkspaceItem`](obsidian.WorkspaceItem.md) |  |
-|  [`WorkspaceParent`](obsidian.WorkspaceParent.md) |  |
+|  [`AbstractInputSuggest`](AbstractInputSuggest.md) | Attach to an <code>&lt;input&gt;</code> element or a <code>&lt;div contentEditable&gt;</code> to add type-ahead support. |
+|  [`BaseComponent`](BaseComponent.md) |  |
+|  [`EditableFileView`](EditableFileView.md) |  |
+|  [`Editor`](Editor.md) | A common interface that bridges the gap between CodeMirror 5 and CodeMirror 6. |
+|  [`EditorSuggest`](EditorSuggest.md) |  |
+|  [`FileView`](FileView.md) |  |
+|  [`FuzzySuggestModal`](FuzzySuggestModal.md) |  |
+|  [`ItemView`](ItemView.md) |  |
+|  [`MarkdownRenderer`](MarkdownRenderer.md) |  |
+|  [`Plugin\_2`](Plugin.md) |  |
+|  [`PluginSettingTab`](PluginSettingTab.md) | Provides a unified interface for users to configure the plugin. |
+|  [`PopoverSuggest`](PopoverSuggest.md) | Base class for adding a type-ahead popover. |
+|  [`SettingTab`](SettingTab.md) |  |
+|  [`SuggestModal`](SuggestModal.md) |  |
+|  [`TAbstractFile`](TAbstractFile.md) | This can be either a <code>TFile</code> or a <code>TFolder</code>. |
+|  [`TextFileView`](TextFileView.md) | <p>This class implements a plaintext-based editable file view, which can be loaded and saved given an editor.</p><p>Note that by default, this view only saves when it's closing. To implement auto-save, your editor should call <code>this.requestSave()</code> when the content is changed.</p> |
+|  [`ValueComponent`](ValueComponent.md) |  |
+|  [`View`](View.md) |  |
+|  [`WorkspaceContainer`](WorkspaceContainer.md) |  |
+|  [`WorkspaceItem`](WorkspaceItem.md) |  |
+|  [`WorkspaceParent`](WorkspaceParent.md) |  |
 
 ## Enumerations
 
 |  Enumeration | Description |
 |  --- | --- |
-|  [`PopoverState`](obsidian.PopoverState.md) |  |
+|  [`PopoverState`](PopoverState.md) |  |
 
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
-|  [`addIcon(iconId, svgContent)`](obsidian.addIcon.md) | Adds an icon to the library. |
-|  [`arrayBufferToBase64(buffer)`](obsidian.arrayBufferToBase64.md) |  |
-|  [`arrayBufferToHex(data)`](obsidian.arrayBufferToHex.md) |  |
-|  [`base64ToArrayBuffer(base64)`](obsidian.base64ToArrayBuffer.md) |  |
-|  [`debounce(cb, timeout, resetTimer)`](obsidian.debounce.md) | A standard debounce function. Use this to have a time-delayed function only be called once in a given timeframe. |
-|  [`finishRenderMath()`](obsidian.finishRenderMath.md) | Flush the MathJax stylesheet. |
-|  [`fuzzySearch(q, text)`](obsidian.fuzzySearch.md) |  |
-|  [`getAllTags(cache)`](obsidian.getAllTags.md) |  |
-|  [`getBlobArrayBuffer(blob)`](obsidian.getBlobArrayBuffer.md) |  |
-|  [`getFrontMatterInfo(content)`](obsidian.getFrontMatterInfo.md) | Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text. |
-|  [`getIcon(iconId)`](obsidian.getIcon.md) | Create an SVG from an iconId. Returns null if no icon associated with the iconId. |
-|  [`getIconIds()`](obsidian.getIconIds.md) | Get the list of registered icons. |
-|  [`getLinkpath(linktext)`](obsidian.getLinkpath.md) |  |
-|  [`hexToArrayBuffer(hex)`](obsidian.hexToArrayBuffer.md) |  |
-|  [`htmlToMarkdown(html)`](obsidian.htmlToMarkdown.md) | Converts HTML to Markdown using Turndown Service. |
-|  [`iterateCacheRefs(cache, cb)`](obsidian.iterateCacheRefs.md) | Iterate links and embeds. If callback returns true, the iteration process will be interrupted. |
-|  [`iterateRefs(refs, cb)`](obsidian.iterateRefs.md) |  |
-|  [`loadMathJax()`](obsidian.loadMathJax.md) | Load MathJax. |
-|  [`loadMermaid()`](obsidian.loadMermaid.md) | Load Mermaid and return a promise to the global mermaid object. Can also use <code>mermaid</code> after this promise resolves to get the same reference. |
-|  [`loadPdfJs()`](obsidian.loadPdfJs.md) | Load PDF.js and return a promise to the global pdfjsLib object. Can also use <code>window.pdfjsLib</code> after this promise resolves to get the same reference. |
-|  [`loadPrism()`](obsidian.loadPrism.md) | Load Prism.js and return a promise to the global Prism object. Can also use <code>Prism</code> after this promise resolves to get the same reference. |
-|  [`normalizePath(path)`](obsidian.normalizePath.md) |  |
-|  [`parseFrontMatterAliases(frontmatter)`](obsidian.parseFrontMatterAliases.md) |  |
-|  [`parseFrontMatterEntry(frontmatter, key)`](obsidian.parseFrontMatterEntry.md) |  |
-|  [`parseFrontMatterStringArray(frontmatter, key, nospaces)`](obsidian.parseFrontMatterStringArray.md) |  |
-|  [`parseFrontMatterTags(frontmatter)`](obsidian.parseFrontMatterTags.md) |  |
-|  [`parseLinktext(linktext)`](obsidian.parseLinktext.md) |  |
-|  [`parseYaml(yaml)`](obsidian.parseYaml.md) |  |
-|  [`prepareFuzzySearch(query)`](obsidian.prepareFuzzySearch.md) | Construct a fuzzy search callback that runs on a target string. Performance may be an issue if you are running the search for more than a few thousand times. If performance is a problem, consider using <code>prepareSimpleSearch</code> instead. |
-|  [`prepareQuery(query)`](obsidian.prepareQuery.md) |  |
-|  [`prepareSimpleSearch(query)`](obsidian.prepareSimpleSearch.md) | Construct a simple search callback that runs on a target string. |
-|  [`removeIcon(iconId)`](obsidian.removeIcon.md) | Remove a custom icon from the library. |
-|  [`renderMatches(el, text, matches, offset)`](obsidian.renderMatches.md) |  |
-|  [`renderMath(source, display)`](obsidian.renderMath.md) | Render some LaTeX math using the MathJax engine. Returns an HTMLElement. Requires calling <code>finishRenderMath</code> when rendering is all done to flush the MathJax stylesheet. |
-|  [`renderResults(el, text, result, offset)`](obsidian.renderResults.md) |  |
-|  [`request(request)`](obsidian.request.md) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. Returns the text value of the response. |
-|  [`requestUrl(request)`](obsidian.requestUrl.md) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. |
-|  [`requireApiVersion(version)`](obsidian.requireApiVersion.md) | Returns true if the API version is equal or higher than the requested version. Use this to limit functionality that require specific API versions to avoid crashing on older Obsidian builds. |
-|  [`resolveSubpath(cache, subpath)`](obsidian.resolveSubpath.md) |  |
-|  [`sanitizeHTMLToDom(html)`](obsidian.sanitizeHTMLToDom.md) |  |
-|  [`setIcon(parent, iconId)`](obsidian.setIcon.md) | Insert an SVG into the element from an iconId. Does nothing if no icon associated with the iconId. |
-|  [`setTooltip(el, tooltip, options)`](obsidian.setTooltip.md) |  |
-|  [`sortSearchResults(results)`](obsidian.sortSearchResults.md) |  |
-|  [`stringifyYaml(obj)`](obsidian.stringifyYaml.md) |  |
-|  [`stripHeading(heading)`](obsidian.stripHeading.md) | This function normalizes headings for link matching by stripping out special characters and shrinking consecutive spaces. |
-|  [`stripHeadingForLink(heading)`](obsidian.stripHeadingForLink.md) | This function prepares headings for linking. It strips out some bad combinations of special characters that could break links. |
+|  [`addIcon(iconId, svgContent)`](addIcon.md) | Adds an icon to the library. |
+|  [`arrayBufferToBase64(buffer)`](arrayBufferToBase64.md) |  |
+|  [`arrayBufferToHex(data)`](arrayBufferToHex.md) |  |
+|  [`base64ToArrayBuffer(base64)`](base64ToArrayBuffer.md) |  |
+|  [`debounce(cb, timeout, resetTimer)`](debounce.md) | A standard debounce function. Use this to have a time-delayed function only be called once in a given timeframe. |
+|  [`finishRenderMath()`](finishRenderMath.md) | Flush the MathJax stylesheet. |
+|  [`fuzzySearch(q, text)`](fuzzySearch.md) |  |
+|  [`getAllTags(cache)`](getAllTags.md) |  |
+|  [`getBlobArrayBuffer(blob)`](getBlobArrayBuffer.md) |  |
+|  [`getFrontMatterInfo(content)`](getFrontMatterInfo.md) | Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text. |
+|  [`getIcon(iconId)`](getIcon.md) | Create an SVG from an iconId. Returns null if no icon associated with the iconId. |
+|  [`getIconIds()`](getIconIds.md) | Get the list of registered icons. |
+|  [`getLinkpath(linktext)`](getLinkpath.md) |  |
+|  [`hexToArrayBuffer(hex)`](hexToArrayBuffer.md) |  |
+|  [`htmlToMarkdown(html)`](htmlToMarkdown.md) | Converts HTML to Markdown using Turndown Service. |
+|  [`iterateCacheRefs(cache, cb)`](iterateCacheRefs.md) | Iterate links and embeds. If callback returns true, the iteration process will be interrupted. |
+|  [`iterateRefs(refs, cb)`](iterateRefs.md) |  |
+|  [`loadMathJax()`](loadMathJax.md) | Load MathJax. |
+|  [`loadMermaid()`](loadMermaid.md) | Load Mermaid and return a promise to the global mermaid object. Can also use <code>mermaid</code> after this promise resolves to get the same reference. |
+|  [`loadPdfJs()`](loadPdfJs.md) | Load PDF.js and return a promise to the global pdfjsLib object. Can also use <code>window.pdfjsLib</code> after this promise resolves to get the same reference. |
+|  [`loadPrism()`](loadPrism.md) | Load Prism.js and return a promise to the global Prism object. Can also use <code>Prism</code> after this promise resolves to get the same reference. |
+|  [`normalizePath(path)`](normalizePath.md) |  |
+|  [`parseFrontMatterAliases(frontmatter)`](parseFrontMatterAliases.md) |  |
+|  [`parseFrontMatterEntry(frontmatter, key)`](parseFrontMatterEntry.md) |  |
+|  [`parseFrontMatterStringArray(frontmatter, key, nospaces)`](parseFrontMatterStringArray.md) |  |
+|  [`parseFrontMatterTags(frontmatter)`](parseFrontMatterTags.md) |  |
+|  [`parseLinktext(linktext)`](parseLinktext.md) |  |
+|  [`parseYaml(yaml)`](parseYaml.md) |  |
+|  [`prepareFuzzySearch(query)`](prepareFuzzySearch.md) | Construct a fuzzy search callback that runs on a target string. Performance may be an issue if you are running the search for more than a few thousand times. If performance is a problem, consider using <code>prepareSimpleSearch</code> instead. |
+|  [`prepareQuery(query)`](prepareQuery.md) |  |
+|  [`prepareSimpleSearch(query)`](prepareSimpleSearch.md) | Construct a simple search callback that runs on a target string. |
+|  [`removeIcon(iconId)`](removeIcon.md) | Remove a custom icon from the library. |
+|  [`renderMatches(el, text, matches, offset)`](renderMatches.md) |  |
+|  [`renderMath(source, display)`](renderMath.md) | Render some LaTeX math using the MathJax engine. Returns an HTMLElement. Requires calling <code>finishRenderMath</code> when rendering is all done to flush the MathJax stylesheet. |
+|  [`renderResults(el, text, result, offset)`](renderResults.md) |  |
+|  [`request(request)`](request.md) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. Returns the text value of the response. |
+|  [`requestUrl(request)`](requestUrl.md) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. |
+|  [`requireApiVersion(version)`](requireApiVersion.md) | Returns true if the API version is equal or higher than the requested version. Use this to limit functionality that require specific API versions to avoid crashing on older Obsidian builds. |
+|  [`resolveSubpath(cache, subpath)`](resolveSubpath.md) |  |
+|  [`sanitizeHTMLToDom(html)`](sanitizeHTMLToDom.md) |  |
+|  [`setIcon(parent, iconId)`](setIcon.md) | Insert an SVG into the element from an iconId. Does nothing if no icon associated with the iconId. |
+|  [`setTooltip(el, tooltip, options)`](setTooltip.md) |  |
+|  [`sortSearchResults(results)`](sortSearchResults.md) |  |
+|  [`stringifyYaml(obj)`](stringifyYaml.md) |  |
+|  [`stripHeading(heading)`](stripHeading.md) | This function normalizes headings for link matching by stripping out special characters and shrinking consecutive spaces. |
+|  [`stripHeadingForLink(heading)`](stripHeadingForLink.md) | This function prepares headings for linking. It strips out some bad combinations of special characters that could break links. |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [`BlockCache`](obsidian.BlockCache.md) |  |
-|  [`BlockSubpathResult`](obsidian.BlockSubpathResult.md) |  |
-|  [`CachedMetadata`](obsidian.CachedMetadata.md) |  |
-|  [`CacheItem`](obsidian.CacheItem.md) |  |
-|  [`CloseableComponent`](obsidian.CloseableComponent.md) |  |
-|  [`Command`](obsidian.Command.md) |  |
-|  [`DataAdapter`](obsidian.DataAdapter.md) | Work directly with files and folders inside a vault. If possible prefer using the [Vault](obsidian.Vault.md) API over this. |
-|  [`DataWriteOptions`](obsidian.DataWriteOptions.md) |  |
-|  [`Debouncer`](obsidian.Debouncer.md) |  |
-|  [`EditorChange`](obsidian.EditorChange.md) |  |
-|  [`EditorPosition`](obsidian.EditorPosition.md) |  |
-|  [`EditorRange`](obsidian.EditorRange.md) |  |
-|  [`EditorRangeOrCaret`](obsidian.EditorRangeOrCaret.md) |  |
-|  [`EditorScrollInfo`](obsidian.EditorScrollInfo.md) |  |
-|  [`EditorSelection`](obsidian.EditorSelection.md) |  |
-|  [`EditorSelectionOrCaret`](obsidian.EditorSelectionOrCaret.md) |  |
-|  [`EditorSuggestContext`](obsidian.EditorSuggestContext.md) |  |
-|  [`EditorSuggestTriggerInfo`](obsidian.EditorSuggestTriggerInfo.md) |  |
-|  [`EditorTransaction`](obsidian.EditorTransaction.md) |  |
-|  [`EmbedCache`](obsidian.EmbedCache.md) |  |
-|  [`EventRef`](obsidian.EventRef.md) |  |
-|  [`FileStats`](obsidian.FileStats.md) |  |
-|  [`FrontMatterCache`](obsidian.FrontMatterCache.md) |  |
-|  [`FrontMatterInfo`](obsidian.FrontMatterInfo.md) |  |
-|  [`FrontmatterLinkCache`](obsidian.FrontmatterLinkCache.md) |  |
-|  [`FuzzyMatch`](obsidian.FuzzyMatch.md) |  |
-|  [`HeadingCache`](obsidian.HeadingCache.md) |  |
-|  [`HeadingSubpathResult`](obsidian.HeadingSubpathResult.md) |  |
-|  [`Hotkey`](obsidian.Hotkey.md) |  |
-|  [`HoverLinkSource`](obsidian.HoverLinkSource.md) |  |
-|  [`HoverParent`](obsidian.HoverParent.md) |  |
-|  [`HSL`](obsidian.HSL.md) |  |
-|  [`Instruction`](obsidian.Instruction.md) |  |
-|  [`ISuggestOwner`](obsidian.ISuggestOwner.md) |  |
-|  [`KeymapContext`](obsidian.KeymapContext.md) |  |
-|  [`KeymapEventHandler`](obsidian.KeymapEventHandler.md) |  |
-|  [`KeymapInfo`](obsidian.KeymapInfo.md) |  |
-|  [`LinkCache`](obsidian.LinkCache.md) |  |
-|  [`ListedFiles`](obsidian.ListedFiles.md) |  |
-|  [`ListItemCache`](obsidian.ListItemCache.md) |  |
-|  [`LivePreviewState`](obsidian.LivePreviewState.md) |  |
-|  [`Loc`](obsidian.Loc.md) |  |
-|  [`MarkdownFileInfo`](obsidian.MarkdownFileInfo.md) |  |
-|  [`MarkdownPostProcessor`](obsidian.MarkdownPostProcessor.md) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into </p> |
-|  [`MarkdownPostProcessorContext`](obsidian.MarkdownPostProcessorContext.md) |  |
-|  [`MarkdownPreviewEvents`](obsidian.MarkdownPreviewEvents.md) | \* |
-|  [`MarkdownSectionInformation`](obsidian.MarkdownSectionInformation.md) |  |
-|  [`MarkdownSubView`](obsidian.MarkdownSubView.md) |  |
-|  [`MenuPositionDef`](obsidian.MenuPositionDef.md) |  |
-|  [`ObsidianProtocolData`](obsidian.ObsidianProtocolData.md) |  |
-|  [`OpenViewState`](obsidian.OpenViewState.md) |  |
-|  [`PluginManifest`](obsidian.PluginManifest.md) | Metadata about a Community plugin. |
-|  [`Point`](obsidian.Point.md) |  |
-|  [`Pos`](obsidian.Pos.md) |  |
-|  [`PreparedQuery`](obsidian.PreparedQuery.md) |  |
-|  [`Reference`](obsidian.Reference.md) |  |
-|  [`ReferenceCache`](obsidian.ReferenceCache.md) |  |
-|  [`RequestUrlParam`](obsidian.RequestUrlParam.md) |  |
-|  [`RequestUrlResponse`](obsidian.RequestUrlResponse.md) |  |
-|  [`RequestUrlResponsePromise`](obsidian.RequestUrlResponsePromise.md) |  |
-|  [`RGB`](obsidian.RGB.md) |  |
-|  [`SearchResult`](obsidian.SearchResult.md) |  |
-|  [`SearchResultContainer`](obsidian.SearchResultContainer.md) |  |
-|  [`SectionCache`](obsidian.SectionCache.md) |  |
-|  [`Stat`](obsidian.Stat.md) |  |
-|  [`SubpathResult`](obsidian.SubpathResult.md) |  |
-|  [`TagCache`](obsidian.TagCache.md) |  |
-|  [`TooltipOptions`](obsidian.TooltipOptions.md) |  |
-|  [`ViewState`](obsidian.ViewState.md) |  |
-|  [`ViewStateResult`](obsidian.ViewStateResult.md) |  |
-|  [`WorkspaceWindowInitData`](obsidian.WorkspaceWindowInitData.md) |  |
+|  [`BlockCache`](BlockCache.md) |  |
+|  [`BlockSubpathResult`](BlockSubpathResult.md) |  |
+|  [`CachedMetadata`](CachedMetadata.md) |  |
+|  [`CacheItem`](CacheItem.md) |  |
+|  [`CloseableComponent`](CloseableComponent.md) |  |
+|  [`Command`](Command.md) |  |
+|  [`DataAdapter`](DataAdapter.md) | Work directly with files and folders inside a vault. If possible prefer using the [Vault](Vault.md) API over this. |
+|  [`DataWriteOptions`](DataWriteOptions.md) |  |
+|  [`Debouncer`](Debouncer.md) |  |
+|  [`EditorChange`](EditorChange.md) |  |
+|  [`EditorPosition`](EditorPosition.md) |  |
+|  [`EditorRange`](EditorRange.md) |  |
+|  [`EditorRangeOrCaret`](EditorRangeOrCaret.md) |  |
+|  [`EditorScrollInfo`](EditorScrollInfo.md) |  |
+|  [`EditorSelection`](EditorSelection.md) |  |
+|  [`EditorSelectionOrCaret`](EditorSelectionOrCaret.md) |  |
+|  [`EditorSuggestContext`](EditorSuggestContext.md) |  |
+|  [`EditorSuggestTriggerInfo`](EditorSuggestTriggerInfo.md) |  |
+|  [`EditorTransaction`](EditorTransaction.md) |  |
+|  [`EmbedCache`](EmbedCache.md) |  |
+|  [`EventRef`](EventRef.md) |  |
+|  [`FileStats`](FileStats.md) |  |
+|  [`FrontMatterCache`](FrontMatterCache.md) |  |
+|  [`FrontMatterInfo`](FrontMatterInfo.md) |  |
+|  [`FrontmatterLinkCache`](FrontmatterLinkCache.md) |  |
+|  [`FuzzyMatch`](FuzzyMatch.md) |  |
+|  [`HeadingCache`](HeadingCache.md) |  |
+|  [`HeadingSubpathResult`](HeadingSubpathResult.md) |  |
+|  [`Hotkey`](Hotkey.md) |  |
+|  [`HoverLinkSource`](HoverLinkSource.md) |  |
+|  [`HoverParent`](HoverParent.md) |  |
+|  [`HSL`](HSL.md) |  |
+|  [`Instruction`](Instruction.md) |  |
+|  [`ISuggestOwner`](ISuggestOwner.md) |  |
+|  [`KeymapContext`](KeymapContext.md) |  |
+|  [`KeymapEventHandler`](KeymapEventHandler.md) |  |
+|  [`KeymapInfo`](KeymapInfo.md) |  |
+|  [`LinkCache`](LinkCache.md) |  |
+|  [`ListedFiles`](ListedFiles.md) |  |
+|  [`ListItemCache`](ListItemCache.md) |  |
+|  [`LivePreviewState`](LivePreviewState.md) |  |
+|  [`Loc`](Loc.md) |  |
+|  [`MarkdownFileInfo`](MarkdownFileInfo.md) |  |
+|  [`MarkdownPostProcessor`](MarkdownPostProcessor.md) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into </p> |
+|  [`MarkdownPostProcessorContext`](MarkdownPostProcessorContext.md) |  |
+|  [`MarkdownPreviewEvents`](MarkdownPreviewEvents.md) | \* |
+|  [`MarkdownSectionInformation`](MarkdownSectionInformation.md) |  |
+|  [`MarkdownSubView`](MarkdownSubView.md) |  |
+|  [`MenuPositionDef`](MenuPositionDef.md) |  |
+|  [`ObsidianProtocolData`](ObsidianProtocolData.md) |  |
+|  [`OpenViewState`](OpenViewState.md) |  |
+|  [`PluginManifest`](PluginManifest.md) | Metadata about a Community plugin. |
+|  [`Point`](Point.md) |  |
+|  [`Pos`](Pos.md) |  |
+|  [`PreparedQuery`](PreparedQuery.md) |  |
+|  [`Reference`](Reference.md) |  |
+|  [`ReferenceCache`](ReferenceCache.md) |  |
+|  [`RequestUrlParam`](RequestUrlParam.md) |  |
+|  [`RequestUrlResponse`](RequestUrlResponse.md) |  |
+|  [`RequestUrlResponsePromise`](RequestUrlResponsePromise.md) |  |
+|  [`RGB`](RGB.md) |  |
+|  [`SearchResult`](SearchResult.md) |  |
+|  [`SearchResultContainer`](SearchResultContainer.md) |  |
+|  [`SectionCache`](SectionCache.md) |  |
+|  [`Stat`](Stat.md) |  |
+|  [`SubpathResult`](SubpathResult.md) |  |
+|  [`TagCache`](TagCache.md) |  |
+|  [`TooltipOptions`](TooltipOptions.md) |  |
+|  [`ViewState`](ViewState.md) |  |
+|  [`ViewStateResult`](ViewStateResult.md) |  |
+|  [`WorkspaceWindowInitData`](WorkspaceWindowInitData.md) |  |
 
 ## Variables
 
 |  Variable | Description |
 |  --- | --- |
-|  [`apiVersion`](obsidian.apiVersion.md) | This is the API version of the app, which follows the release cycle of the desktop app. Example: "0.13.21" |
-|  [`editorEditorField`](obsidian.editorEditorField.md) | Use this StateField to get a reference to the EditorView |
-|  [`editorInfoField`](obsidian.editorInfoField.md) | Use this StateField to get information about this markdown editor, such as the associated file, or the Editor. |
-|  [`editorLivePreviewField`](obsidian.editorLivePreviewField.md) | Use this StateField to check whether Live Preview is active |
-|  [`editorViewField`](obsidian.editorViewField.md) | This is now deprecated - it is now mapped directly to <code>editorInfoField</code>, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily. |
-|  [`livePreviewState`](obsidian.livePreviewState.md) |  |
-|  [`moment`](obsidian.moment.md) |  |
-|  [`Platform`](obsidian.Platform.md) |  |
+|  [`apiVersion`](apiVersion.md) | This is the API version of the app, which follows the release cycle of the desktop app. Example: "0.13.21" |
+|  [`editorEditorField`](editorEditorField.md) | Use this StateField to get a reference to the EditorView |
+|  [`editorInfoField`](editorInfoField.md) | Use this StateField to get information about this markdown editor, such as the associated file, or the Editor. |
+|  [`editorLivePreviewField`](editorLivePreviewField.md) | Use this StateField to check whether Live Preview is active |
+|  [`editorViewField`](editorViewField.md) | This is now deprecated - it is now mapped directly to <code>editorInfoField</code>, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily. |
+|  [`livePreviewState`](livePreviewState.md) |  |
+|  [`moment`](moment.md) |  |
+|  [`Platform`](Platform.md) |  |
 
 ## Type Aliases
 
 |  Type Alias | Description |
 |  --- | --- |
-|  [`Constructor`](obsidian.Constructor.md) |  |
-|  [`EditorCommandName`](obsidian.EditorCommandName.md) |  |
-|  [`HexString`](obsidian.HexString.md) | Hex strings are 6-digit hash-prefixed rgb strings in lowercase form. Example: \#ffffff |
-|  [`IconName`](obsidian.IconName.md) |  |
-|  [`KeymapEventListener`](obsidian.KeymapEventListener.md) | Return <code>false</code> to automatically preventDefault |
-|  [`MarkdownViewModeType`](obsidian.MarkdownViewModeType.md) |  |
-|  [`Modifier`](obsidian.Modifier.md) | Mod = Cmd on MacOS and Ctrl on other OS Ctrl = Ctrl key for every OS Meta = Cmd on MacOS and Win key on other OS |
-|  [`ObsidianProtocolHandler`](obsidian.ObsidianProtocolHandler.md) |  |
-|  [`PaneType`](obsidian.PaneType.md) |  |
-|  [`SearchMatches`](obsidian.SearchMatches.md) |  |
-|  [`SearchMatchPart`](obsidian.SearchMatchPart.md) | Text position offsets within text file. Represents a text range \[from offset, to offset\]. |
-|  [`SplitDirection`](obsidian.SplitDirection.md) |  |
-|  [`TooltipPlacement`](obsidian.TooltipPlacement.md) |  |
-|  [`UserEvent`](obsidian.UserEvent.md) |  |
-|  [`ViewCreator`](obsidian.ViewCreator.md) |  |
+|  [`Constructor`](Constructor.md) |  |
+|  [`EditorCommandName`](EditorCommandName.md) |  |
+|  [`HexString`](HexString.md) | Hex strings are 6-digit hash-prefixed rgb strings in lowercase form. Example: \#ffffff |
+|  [`IconName`](IconName.md) |  |
+|  [`KeymapEventListener`](KeymapEventListener.md) | Return <code>false</code> to automatically preventDefault |
+|  [`MarkdownViewModeType`](MarkdownViewModeType.md) |  |
+|  [`Modifier`](Modifier.md) | Mod = Cmd on MacOS and Ctrl on other OS Ctrl = Ctrl key for every OS Meta = Cmd on MacOS and Win key on other OS |
+|  [`ObsidianProtocolHandler`](ObsidianProtocolHandler.md) |  |
+|  [`PaneType`](PaneType.md) |  |
+|  [`SearchMatches`](SearchMatches.md) |  |
+|  [`SearchMatchPart`](SearchMatchPart.md) | Text position offsets within text file. Represents a text range \[from offset, to offset\]. |
+|  [`SplitDirection`](SplitDirection.md) |  |
+|  [`TooltipPlacement`](TooltipPlacement.md) |  |
+|  [`UserEvent`](UserEvent.md) |  |
+|  [`ViewCreator`](ViewCreator.md) |  |
 
