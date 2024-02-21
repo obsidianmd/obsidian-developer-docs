@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.loadMathJax.md"
+aliases: "loadMathJax.md"
 cssclasses: hide-title
 ---
 

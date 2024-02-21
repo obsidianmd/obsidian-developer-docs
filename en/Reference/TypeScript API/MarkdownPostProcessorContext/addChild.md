@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownPostProcessorContext.addChild.md"
+aliases: "MarkdownPostProcessorContext.addChild.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileManager.processFrontMatter.md"
+aliases: "FileManager.processFrontMatter.md"
 cssclasses: hide-title
 ---
 

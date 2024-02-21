@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.getViewType.md"
+aliases: "View.getViewType.md"
 cssclasses: hide-title
 ---
 

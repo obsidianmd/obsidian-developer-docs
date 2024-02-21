@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Events.tryTrigger.md"
+aliases: "Events.tryTrigger.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Command.hotkeys.md"
+aliases: "Command.hotkeys.md"
 cssclasses: hide-title
 ---
 

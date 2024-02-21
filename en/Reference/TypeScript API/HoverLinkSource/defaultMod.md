@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.HoverLinkSource.defaultMod.md"
+aliases: "HoverLinkSource.defaultMod.md"
 cssclasses: hide-title
 ---
 

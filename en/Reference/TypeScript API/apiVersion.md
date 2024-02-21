@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.apiVersion.md"
+aliases: "apiVersion.md"
 cssclasses: hide-title
 ---
 

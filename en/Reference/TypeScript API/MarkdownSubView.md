@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownSubView.md"
+aliases: "MarkdownSubView.md"
 cssclasses: hide-title
 ---
 

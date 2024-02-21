@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.splitActiveLeaf.md"
+aliases: "Workspace.splitActiveLeaf.md"
 cssclasses: hide-title
 ---
 

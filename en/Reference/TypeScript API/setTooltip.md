@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.setTooltip.md"
+aliases: "setTooltip.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SearchResult.matches.md"
+aliases: "SearchResult.matches.md"
 cssclasses: hide-title
 ---
 

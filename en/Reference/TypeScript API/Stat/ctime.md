@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Stat.ctime.md"
+aliases: "Stat.ctime.md"
 cssclasses: hide-title
 ---
 

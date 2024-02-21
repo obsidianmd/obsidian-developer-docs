@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ValueComponent.getValue.md"
+aliases: "ValueComponent.getValue.md"
 cssclasses: hide-title
 ---
 

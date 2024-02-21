@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.redo.md"
+aliases: "Editor.redo.md"
 cssclasses: hide-title
 ---
 

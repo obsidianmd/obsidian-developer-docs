@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.addToggle.md"
+aliases: "Setting.addToggle.md"
 cssclasses: hide-title
 ---
 

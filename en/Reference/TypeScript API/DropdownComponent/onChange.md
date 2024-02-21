@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.DropdownComponent.onChange.md"
+aliases: "DropdownComponent.onChange.md"
 cssclasses: hide-title
 ---
 

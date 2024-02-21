@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.DataWriteOptions.mtime.md"
+aliases: "DataWriteOptions.mtime.md"
 cssclasses: hide-title
 ---
 

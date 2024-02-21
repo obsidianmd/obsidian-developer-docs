@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Keymap.pushScope.md"
+aliases: "Keymap.pushScope.md"
 cssclasses: hide-title
 ---
 

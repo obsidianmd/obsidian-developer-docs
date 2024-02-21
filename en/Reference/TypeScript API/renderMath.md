@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.renderMath.md"
+aliases: "renderMath.md"
 cssclasses: hide-title
 ---
 

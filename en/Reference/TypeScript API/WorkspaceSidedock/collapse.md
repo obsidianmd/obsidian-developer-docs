@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceSidedock.collapse.md"
+aliases: "WorkspaceSidedock.collapse.md"
 cssclasses: hide-title
 ---
 

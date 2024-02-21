@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceItem.getRoot.md"
+aliases: "WorkspaceItem.getRoot.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.createBinary.md"
+aliases: "Vault.createBinary.md"
 cssclasses: hide-title
 ---
 

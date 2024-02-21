@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.RGB.b.md"
+aliases: "RGB.b.md"
 cssclasses: hide-title
 ---
 

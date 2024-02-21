@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.setEphemeralState.md"
+aliases: "View.setEphemeralState.md"
 cssclasses: hide-title
 ---
 

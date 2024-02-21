@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.updateOptions.md"
+aliases: "Workspace.updateOptions.md"
 cssclasses: hide-title
 ---
 

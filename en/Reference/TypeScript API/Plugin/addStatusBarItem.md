@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Plugin.addStatusBarItem.md"
+aliases: "Plugin.addStatusBarItem.md"
 cssclasses: hide-title
 ---
 

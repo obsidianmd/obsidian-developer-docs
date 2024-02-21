@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MetadataCache.fileToLinktext.md"
+aliases: "MetadataCache.fileToLinktext.md"
 cssclasses: hide-title
 ---
 

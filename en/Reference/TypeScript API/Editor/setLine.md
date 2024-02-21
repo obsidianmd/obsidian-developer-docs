@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.setLine.md"
+aliases: "Editor.setLine.md"
 cssclasses: hide-title
 ---
 

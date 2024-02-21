@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorSuggest.onTrigger.md"
+aliases: "EditorSuggest.onTrigger.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.arrayBufferToBase64.md"
+aliases: "arrayBufferToBase64.md"
 cssclasses: hide-title
 ---
 

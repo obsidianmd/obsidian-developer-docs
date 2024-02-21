@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.undo.md"
+aliases: "Editor.undo.md"
 cssclasses: hide-title
 ---
 

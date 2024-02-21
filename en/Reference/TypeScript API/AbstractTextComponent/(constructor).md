@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.AbstractTextComponent.(constructor).md"
+aliases: "AbstractTextComponent.(constructor).md"
 cssclasses: hide-title
 ---
 

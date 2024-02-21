@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.duplicateLeaf_1.md"
+aliases: "Workspace.duplicateLeaf_1.md"
 cssclasses: hide-title
 ---
 

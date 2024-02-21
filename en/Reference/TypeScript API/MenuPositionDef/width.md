@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MenuPositionDef.width.md"
+aliases: "MenuPositionDef.width.md"
 cssclasses: hide-title
 ---
 

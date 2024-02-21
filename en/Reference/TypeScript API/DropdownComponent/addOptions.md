@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.DropdownComponent.addOptions.md"
+aliases: "DropdownComponent.addOptions.md"
 cssclasses: hide-title
 ---
 

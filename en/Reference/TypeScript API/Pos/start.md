@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Pos.start.md"
+aliases: "Pos.start.md"
 cssclasses: hide-title
 ---
 

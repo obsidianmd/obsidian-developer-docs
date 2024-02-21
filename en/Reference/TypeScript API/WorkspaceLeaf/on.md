@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceLeaf.on.md"
+aliases: "WorkspaceLeaf.on.md"
 cssclasses: hide-title
 ---
 

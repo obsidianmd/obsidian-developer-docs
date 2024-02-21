@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.descEl.md"
+aliases: "Setting.descEl.md"
 cssclasses: hide-title
 ---
 

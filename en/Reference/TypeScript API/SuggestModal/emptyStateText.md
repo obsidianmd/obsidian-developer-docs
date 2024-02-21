@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SuggestModal.emptyStateText.md"
+aliases: "SuggestModal.emptyStateText.md"
 cssclasses: hide-title
 ---
 

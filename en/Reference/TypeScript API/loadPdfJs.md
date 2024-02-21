@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.loadPdfJs.md"
+aliases: "loadPdfJs.md"
 cssclasses: hide-title
 ---
 

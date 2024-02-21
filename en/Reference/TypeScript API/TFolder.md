@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.TFolder.md"
+aliases: "TFolder.md"
 cssclasses: hide-title
 ---
 

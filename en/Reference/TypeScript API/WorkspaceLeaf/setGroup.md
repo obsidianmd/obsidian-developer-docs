@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceLeaf.setGroup.md"
+aliases: "WorkspaceLeaf.setGroup.md"
 cssclasses: hide-title
 ---
 

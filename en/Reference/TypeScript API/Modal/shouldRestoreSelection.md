@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Modal.shouldRestoreSelection.md"
+aliases: "Modal.shouldRestoreSelection.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.editorEditorField.md"
+aliases: "editorEditorField.md"
 cssclasses: hide-title
 ---
 

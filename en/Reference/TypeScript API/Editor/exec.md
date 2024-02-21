@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.exec.md"
+aliases: "Editor.exec.md"
 cssclasses: hide-title
 ---
 

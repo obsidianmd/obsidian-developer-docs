@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.TextFileView.onUnloadFile.md"
+aliases: "TextFileView.onUnloadFile.md"
 cssclasses: hide-title
 ---
 

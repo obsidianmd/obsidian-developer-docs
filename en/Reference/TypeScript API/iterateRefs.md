@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.iterateRefs.md"
+aliases: "iterateRefs.md"
 cssclasses: hide-title
 ---
 

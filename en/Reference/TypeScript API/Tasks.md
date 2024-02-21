@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Tasks.md"
+aliases: "Tasks.md"
 cssclasses: hide-title
 ---
 

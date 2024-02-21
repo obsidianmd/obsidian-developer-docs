@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorSuggestTriggerInfo.start.md"
+aliases: "EditorSuggestTriggerInfo.start.md"
 cssclasses: hide-title
 ---
 

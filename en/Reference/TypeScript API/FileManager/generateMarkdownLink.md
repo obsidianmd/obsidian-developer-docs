@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileManager.generateMarkdownLink.md"
+aliases: "FileManager.generateMarkdownLink.md"
 cssclasses: hide-title
 ---
 

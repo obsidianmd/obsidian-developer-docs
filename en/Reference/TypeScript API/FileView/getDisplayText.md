@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileView.getDisplayText.md"
+aliases: "FileView.getDisplayText.md"
 cssclasses: hide-title
 ---
 

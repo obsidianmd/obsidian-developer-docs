@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.containerEl.md"
+aliases: "Workspace.containerEl.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.request.md"
+aliases: "request.md"
 cssclasses: hide-title
 ---
 

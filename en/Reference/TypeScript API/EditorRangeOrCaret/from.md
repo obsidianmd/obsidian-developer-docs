@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorRangeOrCaret.from.md"
+aliases: "EditorRangeOrCaret.from.md"
 cssclasses: hide-title
 ---
 

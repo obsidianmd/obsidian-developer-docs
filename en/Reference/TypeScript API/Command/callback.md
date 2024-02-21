@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Command.callback.md"
+aliases: "Command.callback.md"
 cssclasses: hide-title
 ---
 

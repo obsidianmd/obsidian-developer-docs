@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.TagCache.md"
+aliases: "TagCache.md"
 cssclasses: hide-title
 ---
 

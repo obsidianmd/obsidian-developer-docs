@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Keymap.md"
+aliases: "Keymap.md"
 cssclasses: hide-title
 ---
 

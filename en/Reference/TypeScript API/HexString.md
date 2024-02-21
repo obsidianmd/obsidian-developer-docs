@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.HexString.md"
+aliases: "HexString.md"
 cssclasses: hide-title
 ---
 

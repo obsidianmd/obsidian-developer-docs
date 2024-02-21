@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ViewState.active.md"
+aliases: "ViewState.active.md"
 cssclasses: hide-title
 ---
 

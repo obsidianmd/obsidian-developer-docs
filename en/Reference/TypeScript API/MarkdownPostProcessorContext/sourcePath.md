@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownPostProcessorContext.sourcePath.md"
+aliases: "MarkdownPostProcessorContext.sourcePath.md"
 cssclasses: hide-title
 ---
 

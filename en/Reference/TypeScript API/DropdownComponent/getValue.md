@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.DropdownComponent.getValue.md"
+aliases: "DropdownComponent.getValue.md"
 cssclasses: hide-title
 ---
 

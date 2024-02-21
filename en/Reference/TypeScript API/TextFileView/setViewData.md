@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.TextFileView.setViewData.md"
+aliases: "TextFileView.setViewData.md"
 cssclasses: hide-title
 ---
 

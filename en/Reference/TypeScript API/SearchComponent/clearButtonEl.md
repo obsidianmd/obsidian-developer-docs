@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SearchComponent.clearButtonEl.md"
+aliases: "SearchComponent.clearButtonEl.md"
 cssclasses: hide-title
 ---
 

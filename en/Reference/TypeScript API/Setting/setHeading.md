@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.setHeading.md"
+aliases: "Setting.setHeading.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.stringifyYaml.md"
+aliases: "stringifyYaml.md"
 cssclasses: hide-title
 ---
 

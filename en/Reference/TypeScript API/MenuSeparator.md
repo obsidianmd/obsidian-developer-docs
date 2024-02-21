@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MenuSeparator.md"
+aliases: "MenuSeparator.md"
 cssclasses: hide-title
 ---
 

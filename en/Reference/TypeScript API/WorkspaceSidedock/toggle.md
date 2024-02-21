@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceSidedock.toggle.md"
+aliases: "WorkspaceSidedock.toggle.md"
 cssclasses: hide-title
 ---
 

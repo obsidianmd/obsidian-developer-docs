@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SliderComponent.getValuePretty.md"
+aliases: "SliderComponent.getValuePretty.md"
 cssclasses: hide-title
 ---
 

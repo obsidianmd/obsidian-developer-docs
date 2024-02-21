@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownPostProcessor.sortOrder.md"
+aliases: "MarkdownPostProcessor.sortOrder.md"
 cssclasses: hide-title
 ---
 

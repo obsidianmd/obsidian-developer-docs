@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceLeaf.getDisplayText.md"
+aliases: "WorkspaceLeaf.getDisplayText.md"
 cssclasses: hide-title
 ---
 

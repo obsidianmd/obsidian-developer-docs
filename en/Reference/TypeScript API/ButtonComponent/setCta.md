@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ButtonComponent.setCta.md"
+aliases: "ButtonComponent.setCta.md"
 cssclasses: hide-title
 ---
 

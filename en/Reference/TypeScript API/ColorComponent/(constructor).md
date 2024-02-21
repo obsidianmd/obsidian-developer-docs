@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ColorComponent.(constructor).md"
+aliases: "ColorComponent.(constructor).md"
 cssclasses: hide-title
 ---
 

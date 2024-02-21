@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.addSlider.md"
+aliases: "Setting.addSlider.md"
 cssclasses: hide-title
 ---
 

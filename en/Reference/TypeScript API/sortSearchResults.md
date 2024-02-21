@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.sortSearchResults.md"
+aliases: "sortSearchResults.md"
 cssclasses: hide-title
 ---
 

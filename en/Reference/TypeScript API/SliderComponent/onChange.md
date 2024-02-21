@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SliderComponent.onChange.md"
+aliases: "SliderComponent.onChange.md"
 cssclasses: hide-title
 ---
 

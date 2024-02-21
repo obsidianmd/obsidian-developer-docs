@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SearchComponent.(constructor).md"
+aliases: "SearchComponent.(constructor).md"
 cssclasses: hide-title
 ---
 

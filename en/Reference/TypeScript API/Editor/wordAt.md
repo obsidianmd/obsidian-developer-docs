@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.wordAt.md"
+aliases: "Editor.wordAt.md"
 cssclasses: hide-title
 ---
 

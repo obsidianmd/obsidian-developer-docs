@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceFloating.md"
+aliases: "WorkspaceFloating.md"
 cssclasses: hide-title
 ---
 

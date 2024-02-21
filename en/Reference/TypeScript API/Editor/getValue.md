@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.getValue.md"
+aliases: "Editor.getValue.md"
 cssclasses: hide-title
 ---
 

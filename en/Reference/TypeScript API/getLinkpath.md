@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.getLinkpath.md"
+aliases: "getLinkpath.md"
 cssclasses: hide-title
 ---
 

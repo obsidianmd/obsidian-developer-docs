@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownRenderer.file.md"
+aliases: "MarkdownRenderer.file.md"
 cssclasses: hide-title
 ---
 

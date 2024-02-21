@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.onClose.md"
+aliases: "View.onClose.md"
 cssclasses: hide-title
 ---
 

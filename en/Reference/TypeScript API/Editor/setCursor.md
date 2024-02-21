@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.setCursor.md"
+aliases: "Editor.setCursor.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.App.md"
+aliases: "App.md"
 cssclasses: hide-title
 ---
 

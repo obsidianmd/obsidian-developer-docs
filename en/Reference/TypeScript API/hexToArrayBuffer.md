@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.hexToArrayBuffer.md"
+aliases: "hexToArrayBuffer.md"
 cssclasses: hide-title
 ---
 

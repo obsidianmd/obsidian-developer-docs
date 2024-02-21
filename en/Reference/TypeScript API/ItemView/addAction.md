@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ItemView.addAction.md"
+aliases: "ItemView.addAction.md"
 cssclasses: hide-title
 ---
 

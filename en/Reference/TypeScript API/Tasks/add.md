@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Tasks.add.md"
+aliases: "Tasks.add.md"
 cssclasses: hide-title
 ---
 

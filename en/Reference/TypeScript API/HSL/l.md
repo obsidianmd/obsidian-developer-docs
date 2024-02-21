@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.HSL.l.md"
+aliases: "HSL.l.md"
 cssclasses: hide-title
 ---
 

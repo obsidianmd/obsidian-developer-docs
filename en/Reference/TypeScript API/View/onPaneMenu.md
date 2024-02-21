@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.onPaneMenu.md"
+aliases: "View.onPaneMenu.md"
 cssclasses: hide-title
 ---
 

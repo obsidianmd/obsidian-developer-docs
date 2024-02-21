@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.append.md"
+aliases: "Vault.append.md"
 cssclasses: hide-title
 ---
 

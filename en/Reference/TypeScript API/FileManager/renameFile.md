@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileManager.renameFile.md"
+aliases: "FileManager.renameFile.md"
 cssclasses: hide-title
 ---
 

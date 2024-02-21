@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileSystemAdapter.list.md"
+aliases: "FileSystemAdapter.list.md"
 cssclasses: hide-title
 ---
 

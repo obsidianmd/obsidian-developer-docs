@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.TFile.extension.md"
+aliases: "TFile.extension.md"
 cssclasses: hide-title
 ---
 

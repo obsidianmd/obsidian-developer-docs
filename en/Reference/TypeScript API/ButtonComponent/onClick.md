@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ButtonComponent.onClick.md"
+aliases: "ButtonComponent.onClick.md"
 cssclasses: hide-title
 ---
 

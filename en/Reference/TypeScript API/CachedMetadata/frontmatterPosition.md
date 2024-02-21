@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.CachedMetadata.frontmatterPosition.md"
+aliases: "CachedMetadata.frontmatterPosition.md"
 cssclasses: hide-title
 ---
 

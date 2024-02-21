@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.onResize.md"
+aliases: "View.onResize.md"
 cssclasses: hide-title
 ---
 

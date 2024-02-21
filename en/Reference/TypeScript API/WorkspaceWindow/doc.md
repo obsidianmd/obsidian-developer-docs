@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceWindow.doc.md"
+aliases: "WorkspaceWindow.doc.md"
 cssclasses: hide-title
 ---
 

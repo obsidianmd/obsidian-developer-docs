@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.AbstractInputSuggest.onSelect.md"
+aliases: "AbstractInputSuggest.onSelect.md"
 cssclasses: hide-title
 ---
 

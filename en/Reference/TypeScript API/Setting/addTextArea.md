@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.addTextArea.md"
+aliases: "Setting.addTextArea.md"
 cssclasses: hide-title
 ---
 

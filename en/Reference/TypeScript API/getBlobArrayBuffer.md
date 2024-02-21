@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.getBlobArrayBuffer.md"
+aliases: "getBlobArrayBuffer.md"
 cssclasses: hide-title
 ---
 

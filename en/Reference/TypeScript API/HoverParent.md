@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.HoverParent.md"
+aliases: "HoverParent.md"
 cssclasses: hide-title
 ---
 

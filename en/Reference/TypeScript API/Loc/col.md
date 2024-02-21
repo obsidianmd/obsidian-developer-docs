@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Loc.col.md"
+aliases: "Loc.col.md"
 cssclasses: hide-title
 ---
 

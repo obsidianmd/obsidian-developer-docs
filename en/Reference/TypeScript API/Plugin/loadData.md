@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Plugin.loadData.md"
+aliases: "Plugin.loadData.md"
 cssclasses: hide-title
 ---
 

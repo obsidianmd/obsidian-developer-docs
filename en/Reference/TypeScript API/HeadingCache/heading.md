@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.HeadingCache.heading.md"
+aliases: "HeadingCache.heading.md"
 cssclasses: hide-title
 ---
 

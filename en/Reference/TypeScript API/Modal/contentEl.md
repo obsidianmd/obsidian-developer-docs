@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Modal.contentEl.md"
+aliases: "Modal.contentEl.md"
 cssclasses: hide-title
 ---
 

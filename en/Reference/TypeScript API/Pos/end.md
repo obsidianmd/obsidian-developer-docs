@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Pos.end.md"
+aliases: "Pos.end.md"
 cssclasses: hide-title
 ---
 

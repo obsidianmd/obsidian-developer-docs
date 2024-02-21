@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MenuPositionDef.y.md"
+aliases: "MenuPositionDef.y.md"
 cssclasses: hide-title
 ---
 

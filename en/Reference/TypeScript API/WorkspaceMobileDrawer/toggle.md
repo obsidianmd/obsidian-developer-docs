@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceMobileDrawer.toggle.md"
+aliases: "WorkspaceMobileDrawer.toggle.md"
 cssclasses: hide-title
 ---
 

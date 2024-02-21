@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.TAbstractFile.md"
+aliases: "TAbstractFile.md"
 cssclasses: hide-title
 ---
 

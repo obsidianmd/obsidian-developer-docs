@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Loc.offset.md"
+aliases: "Loc.offset.md"
 cssclasses: hide-title
 ---
 

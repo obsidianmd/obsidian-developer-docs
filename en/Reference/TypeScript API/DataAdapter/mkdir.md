@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.DataAdapter.mkdir.md"
+aliases: "DataAdapter.mkdir.md"
 cssclasses: hide-title
 ---
 

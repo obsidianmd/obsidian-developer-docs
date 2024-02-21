@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ProgressBarComponent.getValue.md"
+aliases: "ProgressBarComponent.getValue.md"
 cssclasses: hide-title
 ---
 

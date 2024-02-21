@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorPosition.line.md"
+aliases: "EditorPosition.line.md"
 cssclasses: hide-title
 ---
 

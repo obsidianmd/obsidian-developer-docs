@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.loadPrism.md"
+aliases: "loadPrism.md"
 cssclasses: hide-title
 ---
 

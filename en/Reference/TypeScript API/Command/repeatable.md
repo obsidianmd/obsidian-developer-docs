@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Command.repeatable.md"
+aliases: "Command.repeatable.md"
 cssclasses: hide-title
 ---
 

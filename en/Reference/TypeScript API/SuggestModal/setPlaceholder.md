@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SuggestModal.setPlaceholder.md"
+aliases: "SuggestModal.setPlaceholder.md"
 cssclasses: hide-title
 ---
 

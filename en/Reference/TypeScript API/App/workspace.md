@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.App.workspace.md"
+aliases: "App.workspace.md"
 cssclasses: hide-title
 ---
 

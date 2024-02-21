@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.PreparedQuery.fuzzy.md"
+aliases: "PreparedQuery.fuzzy.md"
 cssclasses: hide-title
 ---
 

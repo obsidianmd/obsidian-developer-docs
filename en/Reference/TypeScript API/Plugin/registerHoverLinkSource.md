@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Plugin.registerHoverLinkSource.md"
+aliases: "Plugin.registerHoverLinkSource.md"
 cssclasses: hide-title
 ---
 

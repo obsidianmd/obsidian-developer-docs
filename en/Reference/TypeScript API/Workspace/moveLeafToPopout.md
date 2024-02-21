@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.moveLeafToPopout.md"
+aliases: "Workspace.moveLeafToPopout.md"
 cssclasses: hide-title
 ---
 

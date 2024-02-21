@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.PluginManifest.isDesktopOnly.md"
+aliases: "PluginManifest.isDesktopOnly.md"
 cssclasses: hide-title
 ---
 

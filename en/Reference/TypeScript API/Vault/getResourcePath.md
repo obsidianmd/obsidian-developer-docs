@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.getResourcePath.md"
+aliases: "Vault.getResourcePath.md"
 cssclasses: hide-title
 ---
 

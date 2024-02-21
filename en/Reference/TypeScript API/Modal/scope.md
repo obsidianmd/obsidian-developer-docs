@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Modal.scope.md"
+aliases: "Modal.scope.md"
 cssclasses: hide-title
 ---
 

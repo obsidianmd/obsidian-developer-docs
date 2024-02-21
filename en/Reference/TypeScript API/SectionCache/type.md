@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SectionCache.type.md"
+aliases: "SectionCache.type.md"
 cssclasses: hide-title
 ---
 

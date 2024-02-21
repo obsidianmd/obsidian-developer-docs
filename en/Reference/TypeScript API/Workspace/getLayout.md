@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.getLayout.md"
+aliases: "Workspace.getLayout.md"
 cssclasses: hide-title
 ---
 

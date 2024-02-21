@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.CachedMetadata.links.md"
+aliases: "CachedMetadata.links.md"
 cssclasses: hide-title
 ---
 

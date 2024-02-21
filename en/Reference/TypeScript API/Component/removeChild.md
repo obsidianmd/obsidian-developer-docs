@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Component.removeChild.md"
+aliases: "Component.removeChild.md"
 cssclasses: hide-title
 ---
 

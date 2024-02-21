@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileSystemAdapter.readBinary.md"
+aliases: "FileSystemAdapter.readBinary.md"
 cssclasses: hide-title
 ---
 

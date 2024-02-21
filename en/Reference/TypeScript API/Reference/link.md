@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Reference.link.md"
+aliases: "Reference.link.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.moment.md"
+aliases: "moment.md"
 cssclasses: hide-title
 ---
 

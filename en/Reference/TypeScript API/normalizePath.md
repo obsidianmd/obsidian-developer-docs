@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.normalizePath.md"
+aliases: "normalizePath.md"
 cssclasses: hide-title
 ---
 

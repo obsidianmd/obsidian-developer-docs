@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ButtonComponent.setWarning.md"
+aliases: "ButtonComponent.setWarning.md"
 cssclasses: hide-title
 ---
 

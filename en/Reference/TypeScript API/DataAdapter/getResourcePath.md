@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.DataAdapter.getResourcePath.md"
+aliases: "DataAdapter.getResourcePath.md"
 cssclasses: hide-title
 ---
 

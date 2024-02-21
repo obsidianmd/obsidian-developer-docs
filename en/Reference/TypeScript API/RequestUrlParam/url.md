@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.RequestUrlParam.url.md"
+aliases: "RequestUrlParam.url.md"
 cssclasses: hide-title
 ---
 

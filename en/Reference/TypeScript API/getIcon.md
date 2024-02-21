@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.getIcon.md"
+aliases: "getIcon.md"
 cssclasses: hide-title
 ---
 

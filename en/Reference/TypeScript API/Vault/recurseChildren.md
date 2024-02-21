@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.recurseChildren.md"
+aliases: "Vault.recurseChildren.md"
 cssclasses: hide-title
 ---
 

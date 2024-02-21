@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.blur.md"
+aliases: "Editor.blur.md"
 cssclasses: hide-title
 ---
 

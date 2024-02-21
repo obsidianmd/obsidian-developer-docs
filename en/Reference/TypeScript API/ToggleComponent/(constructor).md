@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ToggleComponent.(constructor).md"
+aliases: "ToggleComponent.(constructor).md"
 cssclasses: hide-title
 ---
 

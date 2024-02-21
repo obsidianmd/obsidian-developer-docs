@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ColorComponent.setValueHsl.md"
+aliases: "ColorComponent.setValueHsl.md"
 cssclasses: hide-title
 ---
 

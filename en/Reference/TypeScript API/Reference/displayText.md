@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Reference.displayText.md"
+aliases: "Reference.displayText.md"
 cssclasses: hide-title
 ---
 

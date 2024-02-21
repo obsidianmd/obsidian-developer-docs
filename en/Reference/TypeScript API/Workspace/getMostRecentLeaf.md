@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.getMostRecentLeaf.md"
+aliases: "Workspace.getMostRecentLeaf.md"
 cssclasses: hide-title
 ---
 

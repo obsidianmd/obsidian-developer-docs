@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.getUnpinnedLeaf.md"
+aliases: "Workspace.getUnpinnedLeaf.md"
 cssclasses: hide-title
 ---
 

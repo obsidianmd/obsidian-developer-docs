@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Scope.md"
+aliases: "Scope.md"
 cssclasses: hide-title
 ---
 
