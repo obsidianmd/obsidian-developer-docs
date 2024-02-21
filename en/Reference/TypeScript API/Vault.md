@@ -47,10 +47,10 @@ export class Vault extends Events
 |  [`getRoot()`](obsidian.Vault.getRoot.md) |  | Get the root folder of the current vault. |
 |  [`modify(file, data, options)`](obsidian.Vault.modify.md) |  | Modify the contents of a plaintext file. |
 |  [`modifyBinary(file, data, options)`](obsidian.Vault.modifyBinary.md) |  | Modify the contents of a binary file. |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on.md) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](obsidian.Workspace.onLayoutReady.md)<!-- -->. |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on_1.md) |  | Called when a file is modified. |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on_2.md) |  | Called when a file is deleted. |
-|  [`on(name, callback, ctx)`](obsidian.Vault.on_3.md) |  | Called when a file is renamed. |
+|  [`on(name: 'create', callback, ctx)`](obsidian.Vault.on.md) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](obsidian.Workspace.onLayoutReady.md)<!-- -->. |
+|  [`on(name: 'modify', callback, ctx)`](obsidian.Vault.on_1.md) |  | Called when a file is modified. |
+|  [`on(name: 'delete', callback, ctx)`](obsidian.Vault.on_2.md) |  | Called when a file is deleted. |
+|  [`on(name: 'rename', callback, ctx)`](obsidian.Vault.on_3.md) |  | Called when a file is renamed. |
 |  [`process(file, fn, options)`](obsidian.Vault.process.md) |  | Atomically read, modify, and save the contents of a note. |
 |  [`read(file)`](obsidian.Vault.read.md) |  | Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](obsidian.Vault.cachedRead.md) otherwise for better performance. |
 |  [`readBinary(file)`](obsidian.Vault.readBinary.md) |  | Read the content of a binary file stored inside the vault. |

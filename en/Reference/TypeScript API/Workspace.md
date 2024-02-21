@@ -58,22 +58,22 @@ export class Workspace extends Events
 |  [`iterateAllLeaves(callback)`](obsidian.Workspace.iterateAllLeaves.md) |  | Iterate through all leaves, including main area leaves, floating leaves, and sidebar leaves. |
 |  [`iterateRootLeaves(callback)`](obsidian.Workspace.iterateRootLeaves.md) |  | Iterate through all leaves in the main area of the workspace. |
 |  [`moveLeafToPopout(leaf, data)`](obsidian.Workspace.moveLeafToPopout.md) |  | Migrates this leaf to a new popout window. Only works on the desktop app. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_9.md) |  | Triggered when the user opens the context menu with multiple files selected in the File Explorer. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_10.md) |  | Triggered when the user opens the context menu on an external URL. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_11.md) |  | Triggered when the user opens the context menu on an editor. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_12.md) |  | Triggered when changes to an editor has been applied, either programmatically or from a user event. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_13.md) |  | Triggered when the editor receives a paste event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_14.md) |  | Triggered when the editor receives a drop event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_15.md) |  | Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_1.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_2.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_3.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_4.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_5.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_6.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_7.md) |  | Triggered when the CSS of the app has changed. |
-|  [`on(name, callback, ctx)`](obsidian.Workspace.on_8.md) |  | Triggered when the user opens the context menu on a file. |
+|  [`on(name: 'quick-preview', callback, ctx)`](obsidian.Workspace.on.md) |  |  |
+|  [`on(name: 'files-menu', callback, ctx)`](obsidian.Workspace.on_9.md) |  | Triggered when the user opens the context menu with multiple files selected in the File Explorer. |
+|  [`on(name: 'url-menu', callback, ctx)`](obsidian.Workspace.on_10.md) |  | Triggered when the user opens the context menu on an external URL. |
+|  [`on(name: 'editor-menu', callback, ctx)`](obsidian.Workspace.on_11.md) |  | Triggered when the user opens the context menu on an editor. |
+|  [`on(name: 'editor-change', callback, ctx)`](obsidian.Workspace.on_12.md) |  | Triggered when changes to an editor has been applied, either programmatically or from a user event. |
+|  [`on(name: 'editor-paste', callback, ctx)`](obsidian.Workspace.on_13.md) |  | Triggered when the editor receives a paste event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
+|  [`on(name: 'editor-drop', callback, ctx)`](obsidian.Workspace.on_14.md) |  | Triggered when the editor receives a drop event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
+|  [`on(name: 'quit', callback, ctx)`](obsidian.Workspace.on_15.md) |  | Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here. |
+|  [`on(name: 'resize', callback, ctx)`](obsidian.Workspace.on_1.md) |  |  |
+|  [`on(name: 'active-leaf-change', callback, ctx)`](obsidian.Workspace.on_2.md) |  |  |
+|  [`on(name: 'file-open', callback, ctx)`](obsidian.Workspace.on_3.md) |  |  |
+|  [`on(name: 'layout-change', callback, ctx)`](obsidian.Workspace.on_4.md) |  |  |
+|  [`on(name: 'window-open', callback, ctx)`](obsidian.Workspace.on_5.md) |  |  |
+|  [`on(name: 'window-close', callback, ctx)`](obsidian.Workspace.on_6.md) |  |  |
+|  [`on(name: 'css-change', callback, ctx)`](obsidian.Workspace.on_7.md) |  | Triggered when the CSS of the app has changed. |
+|  [`on(name: 'file-menu', callback, ctx)`](obsidian.Workspace.on_8.md) |  | Triggered when the user opens the context menu on a file. |
 |  [`onLayoutReady(callback)`](obsidian.Workspace.onLayoutReady.md) |  | Runs the callback function right away if layout is already ready, or push it to a queue to be called later when layout is ready. |
 |  [`openLinkText(linktext, sourcePath, newLeaf, openViewState)`](obsidian.Workspace.openLinkText.md) |  |  |
 |  [`openPopoutLeaf(data)`](obsidian.Workspace.openPopoutLeaf.md) |  | Open a new popout window with a single new leaf and return that leaf. Only works on the desktop app. |

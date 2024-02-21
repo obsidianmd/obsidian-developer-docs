@@ -22,7 +22,7 @@ export class Events
 |  --- | --- | --- |
 |  [`off(name, callback)`](obsidian.Events.off.md) |  |  |
 |  [`offref(ref)`](obsidian.Events.offref.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.Events.on.md) |  |  |
+|  [`on(name: string, callback, ctx)`](obsidian.Events.on.md) |  |  |
 |  [`trigger(name, data)`](obsidian.Events.trigger.md) |  |  |
 |  [`tryTrigger(evt, args)`](obsidian.Events.tryTrigger.md) |  |  |
 
