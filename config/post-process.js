@@ -42,7 +42,7 @@ async function renameFiles(folderPath) {
           // Step 2: add alias so links still work
           const fileContent = await fs.readFile(newFilePath, 'utf-8');
           let newFileContent = `---
-aliases: "${file}"
+aliases: "${newFileName}"
 cssclasses: hide-title
 ---
 
