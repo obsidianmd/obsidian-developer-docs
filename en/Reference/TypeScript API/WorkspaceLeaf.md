@@ -32,8 +32,8 @@ export class WorkspaceLeaf extends WorkspaceItem
 |  [`getEphemeralState()`](obsidian.WorkspaceLeaf.getEphemeralState.md) |  |  |
 |  [`getIcon()`](obsidian.WorkspaceLeaf.getIcon.md) |  |  |
 |  [`getViewState()`](obsidian.WorkspaceLeaf.getViewState.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.WorkspaceLeaf.on.md) |  |  |
-|  [`on(name, callback, ctx)`](obsidian.WorkspaceLeaf.on_1.md) |  |  |
+|  [`on(name: 'pinned-change', callback, ctx)`](obsidian.WorkspaceLeaf.on.md) |  |  |
+|  [`on(name: 'group-change', callback, ctx)`](obsidian.WorkspaceLeaf.on_1.md) |  |  |
 |  [`onResize()`](obsidian.WorkspaceLeaf.onResize.md) |  |  |
 |  [`open(view)`](obsidian.WorkspaceLeaf.open.md) |  |  |
 |  [`openFile(file, openState)`](obsidian.WorkspaceLeaf.openFile.md) |  | By default, <code>openFile</code> will also make the leaf active. Pass in <code>{ active: false }</code> to override. |
