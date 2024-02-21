@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractInputSuggest.md"
+aliases: "AbstractInputSuggest"
 cssclasses: hide-title
 ---
 

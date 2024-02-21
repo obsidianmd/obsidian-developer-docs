@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPreviewView.rerender.md"
+aliases: "MarkdownPreviewView.rerender"
 cssclasses: hide-title
 ---
 

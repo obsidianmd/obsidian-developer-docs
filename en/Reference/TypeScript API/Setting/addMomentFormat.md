@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addMomentFormat.md"
+aliases: "Setting.addMomentFormat"
 cssclasses: hide-title
 ---
 

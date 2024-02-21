@@ -1,5 +1,5 @@
 ---
-aliases: "BaseComponent.then.md"
+aliases: "BaseComponent.then"
 cssclasses: hide-title
 ---
 

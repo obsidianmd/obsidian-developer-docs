@@ -1,5 +1,5 @@
 ---
-aliases: "TagCache.tag.md"
+aliases: "TagCache.tag"
 cssclasses: hide-title
 ---
 

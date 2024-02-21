@@ -1,5 +1,5 @@
 ---
-aliases: "SliderComponent.getValuePretty.md"
+aliases: "SliderComponent.getValuePretty"
 cssclasses: hide-title
 ---
 

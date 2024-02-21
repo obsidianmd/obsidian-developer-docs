@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.transaction.md"
+aliases: "Editor.transaction"
 cssclasses: hide-title
 ---
 

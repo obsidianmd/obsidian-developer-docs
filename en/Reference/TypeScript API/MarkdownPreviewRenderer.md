@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPreviewRenderer.md"
+aliases: "MarkdownPreviewRenderer"
 cssclasses: hide-title
 ---
 

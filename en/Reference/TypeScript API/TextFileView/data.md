@@ -1,5 +1,5 @@
 ---
-aliases: "TextFileView.data.md"
+aliases: "TextFileView.data"
 cssclasses: hide-title
 ---
 

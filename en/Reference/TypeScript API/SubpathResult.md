@@ -1,5 +1,5 @@
 ---
-aliases: "SubpathResult.md"
+aliases: "SubpathResult"
 cssclasses: hide-title
 ---
 

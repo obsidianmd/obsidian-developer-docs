@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.controlEl.md"
+aliases: "Setting.controlEl"
 cssclasses: hide-title
 ---
 

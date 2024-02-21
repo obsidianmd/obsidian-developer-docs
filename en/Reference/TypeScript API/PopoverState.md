@@ -1,5 +1,5 @@
 ---
-aliases: "PopoverState.md"
+aliases: "PopoverState"
 cssclasses: hide-title
 ---
 

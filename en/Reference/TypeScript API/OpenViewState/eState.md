@@ -1,5 +1,5 @@
 ---
-aliases: "OpenViewState.eState.md"
+aliases: "OpenViewState.eState"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addProgressBar.md"
+aliases: "Setting.addProgressBar"
 cssclasses: hide-title
 ---
 

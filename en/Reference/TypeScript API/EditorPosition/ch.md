@@ -1,5 +1,5 @@
 ---
-aliases: "EditorPosition.ch.md"
+aliases: "EditorPosition.ch"
 cssclasses: hide-title
 ---
 

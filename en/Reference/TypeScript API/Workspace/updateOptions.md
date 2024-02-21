@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.updateOptions.md"
+aliases: "Workspace.updateOptions"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractTextComponent.inputEl.md"
+aliases: "AbstractTextComponent.inputEl"
 cssclasses: hide-title
 ---
 

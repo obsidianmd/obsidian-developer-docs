@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.copy.md"
+aliases: "Vault.copy"
 cssclasses: hide-title
 ---
 

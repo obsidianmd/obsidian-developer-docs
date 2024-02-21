@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.createFolder.md"
+aliases: "Vault.createFolder"
 cssclasses: hide-title
 ---
 

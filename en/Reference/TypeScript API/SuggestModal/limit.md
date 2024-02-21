@@ -1,5 +1,5 @@
 ---
-aliases: "SuggestModal.limit.md"
+aliases: "SuggestModal.limit"
 cssclasses: hide-title
 ---
 

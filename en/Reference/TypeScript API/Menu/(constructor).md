@@ -1,5 +1,5 @@
 ---
-aliases: "Menu.(constructor).md"
+aliases: "Menu.(constructor)"
 cssclasses: hide-title
 ---
 

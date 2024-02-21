@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.layoutReady.md"
+aliases: "Workspace.layoutReady"
 cssclasses: hide-title
 ---
 

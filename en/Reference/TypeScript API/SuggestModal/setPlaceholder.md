@@ -1,5 +1,5 @@
 ---
-aliases: "SuggestModal.setPlaceholder.md"
+aliases: "SuggestModal.setPlaceholder"
 cssclasses: hide-title
 ---
 

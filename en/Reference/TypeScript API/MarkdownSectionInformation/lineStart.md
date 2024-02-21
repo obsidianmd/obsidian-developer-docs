@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownSectionInformation.lineStart.md"
+aliases: "MarkdownSectionInformation.lineStart"
 cssclasses: hide-title
 ---
 

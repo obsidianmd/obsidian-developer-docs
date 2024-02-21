@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.getDoc.md"
+aliases: "Editor.getDoc"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "View.app.md"
+aliases: "View.app"
 cssclasses: hide-title
 ---
 

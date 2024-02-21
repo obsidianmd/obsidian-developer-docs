@@ -1,5 +1,5 @@
 ---
-aliases: "Menu.setUseNativeMenu.md"
+aliases: "Menu.setUseNativeMenu"
 cssclasses: hide-title
 ---
 

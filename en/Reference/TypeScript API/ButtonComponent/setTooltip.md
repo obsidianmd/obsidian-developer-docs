@@ -1,5 +1,5 @@
 ---
-aliases: "ButtonComponent.setTooltip.md"
+aliases: "ButtonComponent.setTooltip"
 cssclasses: hide-title
 ---
 

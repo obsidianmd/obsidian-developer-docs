@@ -1,5 +1,5 @@
 ---
-aliases: "ValueComponent.registerOptionListener.md"
+aliases: "ValueComponent.registerOptionListener"
 cssclasses: hide-title
 ---
 

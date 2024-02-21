@@ -1,5 +1,5 @@
 ---
-aliases: "FuzzySuggestModal.onChooseItem.md"
+aliases: "FuzzySuggestModal.onChooseItem"
 cssclasses: hide-title
 ---
 

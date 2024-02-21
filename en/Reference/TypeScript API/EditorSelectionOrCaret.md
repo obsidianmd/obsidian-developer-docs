@@ -1,5 +1,5 @@
 ---
-aliases: "EditorSelectionOrCaret.md"
+aliases: "EditorSelectionOrCaret"
 cssclasses: hide-title
 ---
 

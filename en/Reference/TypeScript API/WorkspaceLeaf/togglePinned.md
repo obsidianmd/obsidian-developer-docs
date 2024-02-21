@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceLeaf.togglePinned.md"
+aliases: "WorkspaceLeaf.togglePinned"
 cssclasses: hide-title
 ---
 

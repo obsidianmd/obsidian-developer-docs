@@ -1,5 +1,5 @@
 ---
-aliases: "ColorComponent.setValueHsl.md"
+aliases: "ColorComponent.setValueHsl"
 cssclasses: hide-title
 ---
 

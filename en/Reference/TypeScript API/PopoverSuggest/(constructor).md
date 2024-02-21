@@ -1,5 +1,5 @@
 ---
-aliases: "PopoverSuggest.(constructor).md"
+aliases: "PopoverSuggest.(constructor)"
 cssclasses: hide-title
 ---
 

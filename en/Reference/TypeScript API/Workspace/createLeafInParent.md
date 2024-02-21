@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.createLeafInParent.md"
+aliases: "Workspace.createLeafInParent"
 cssclasses: hide-title
 ---
 

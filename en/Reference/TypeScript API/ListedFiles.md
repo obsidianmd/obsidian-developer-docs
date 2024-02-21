@@ -1,5 +1,5 @@
 ---
-aliases: "ListedFiles.md"
+aliases: "ListedFiles"
 cssclasses: hide-title
 ---
 

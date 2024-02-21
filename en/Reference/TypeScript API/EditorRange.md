@@ -1,5 +1,5 @@
 ---
-aliases: "EditorRange.md"
+aliases: "EditorRange"
 cssclasses: hide-title
 ---
 

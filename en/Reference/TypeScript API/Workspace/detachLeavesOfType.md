@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.detachLeavesOfType.md"
+aliases: "Workspace.detachLeavesOfType"
 cssclasses: hide-title
 ---
 

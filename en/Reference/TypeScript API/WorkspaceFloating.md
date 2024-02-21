@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceFloating.md"
+aliases: "WorkspaceFloating"
 cssclasses: hide-title
 ---
 

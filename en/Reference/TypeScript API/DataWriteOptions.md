@@ -1,5 +1,5 @@
 ---
-aliases: "DataWriteOptions.md"
+aliases: "DataWriteOptions"
 cssclasses: hide-title
 ---
 

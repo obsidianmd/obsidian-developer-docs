@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.blur.md"
+aliases: "Editor.blur"
 cssclasses: hide-title
 ---
 

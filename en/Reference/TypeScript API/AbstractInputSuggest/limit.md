@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractInputSuggest.limit.md"
+aliases: "AbstractInputSuggest.limit"
 cssclasses: hide-title
 ---
 

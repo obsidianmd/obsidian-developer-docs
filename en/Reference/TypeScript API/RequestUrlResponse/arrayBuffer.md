@@ -1,5 +1,5 @@
 ---
-aliases: "RequestUrlResponse.arrayBuffer.md"
+aliases: "RequestUrlResponse.arrayBuffer"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "FileManager.renameFile.md"
+aliases: "FileManager.renameFile"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Events.offref.md"
+aliases: "Events.offref"
 cssclasses: hide-title
 ---
 

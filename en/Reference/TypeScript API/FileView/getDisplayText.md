@@ -1,5 +1,5 @@
 ---
-aliases: "FileView.getDisplayText.md"
+aliases: "FileView.getDisplayText"
 cssclasses: hide-title
 ---
 

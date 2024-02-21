@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.getScrollInfo.md"
+aliases: "Editor.getScrollInfo"
 cssclasses: hide-title
 ---
 

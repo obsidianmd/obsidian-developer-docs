@@ -1,5 +1,5 @@
 ---
-aliases: "ExtraButtonComponent.setIcon.md"
+aliases: "ExtraButtonComponent.setIcon"
 cssclasses: hide-title
 ---
 

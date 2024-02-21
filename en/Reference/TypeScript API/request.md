@@ -1,5 +1,5 @@
 ---
-aliases: "request.md"
+aliases: "request"
 cssclasses: hide-title
 ---
 

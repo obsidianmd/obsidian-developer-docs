@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.getActiveFile.md"
+aliases: "Workspace.getActiveFile"
 cssclasses: hide-title
 ---
 

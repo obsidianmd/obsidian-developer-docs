@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceSplit.md"
+aliases: "WorkspaceSplit"
 cssclasses: hide-title
 ---
 

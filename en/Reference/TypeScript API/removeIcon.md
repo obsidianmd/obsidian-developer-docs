@@ -1,5 +1,5 @@
 ---
-aliases: "removeIcon.md"
+aliases: "removeIcon"
 cssclasses: hide-title
 ---
 

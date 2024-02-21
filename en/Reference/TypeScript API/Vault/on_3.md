@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.on_3.md"
+aliases: "Vault.on_3"
 cssclasses: hide-title
 ---
 

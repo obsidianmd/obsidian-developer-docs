@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractInputSuggest.getValue.md"
+aliases: "AbstractInputSuggest.getValue"
 cssclasses: hide-title
 ---
 

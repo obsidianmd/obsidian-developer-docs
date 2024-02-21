@@ -1,5 +1,5 @@
 ---
-aliases: "Reference.original.md"
+aliases: "Reference.original"
 cssclasses: hide-title
 ---
 

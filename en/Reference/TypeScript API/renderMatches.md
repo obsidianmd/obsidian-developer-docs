@@ -1,5 +1,5 @@
 ---
-aliases: "renderMatches.md"
+aliases: "renderMatches"
 cssclasses: hide-title
 ---
 

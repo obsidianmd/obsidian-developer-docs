@@ -1,5 +1,5 @@
 ---
-aliases: "Menu.md"
+aliases: "Menu"
 cssclasses: hide-title
 ---
 

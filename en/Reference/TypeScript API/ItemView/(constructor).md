@@ -1,5 +1,5 @@
 ---
-aliases: "ItemView.(constructor).md"
+aliases: "ItemView.(constructor)"
 cssclasses: hide-title
 ---
 

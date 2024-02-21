@@ -1,5 +1,5 @@
 ---
-aliases: "PluginManifest.id.md"
+aliases: "PluginManifest.id"
 cssclasses: hide-title
 ---
 

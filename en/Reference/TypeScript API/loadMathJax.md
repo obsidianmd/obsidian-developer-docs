@@ -1,5 +1,5 @@
 ---
-aliases: "loadMathJax.md"
+aliases: "loadMathJax"
 cssclasses: hide-title
 ---
 

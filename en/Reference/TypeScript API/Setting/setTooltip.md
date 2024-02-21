@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.setTooltip.md"
+aliases: "Setting.setTooltip"
 cssclasses: hide-title
 ---
 

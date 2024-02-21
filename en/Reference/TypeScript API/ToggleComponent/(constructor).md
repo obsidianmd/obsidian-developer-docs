@@ -1,5 +1,5 @@
 ---
-aliases: "ToggleComponent.(constructor).md"
+aliases: "ToggleComponent.(constructor)"
 cssclasses: hide-title
 ---
 

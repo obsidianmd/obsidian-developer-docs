@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.createLeafBySplit.md"
+aliases: "Workspace.createLeafBySplit"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "FileView.onRename.md"
+aliases: "FileView.onRename"
 cssclasses: hide-title
 ---
 

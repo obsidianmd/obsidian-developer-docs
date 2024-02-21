@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.trashLocal.md"
+aliases: "FileSystemAdapter.trashLocal"
 cssclasses: hide-title
 ---
 

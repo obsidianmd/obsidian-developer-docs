@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.stat.md"
+aliases: "FileSystemAdapter.stat"
 cssclasses: hide-title
 ---
 

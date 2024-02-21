@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.setDesc.md"
+aliases: "Setting.setDesc"
 cssclasses: hide-title
 ---
 

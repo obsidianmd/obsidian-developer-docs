@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.rmdir.md"
+aliases: "DataAdapter.rmdir"
 cssclasses: hide-title
 ---
 

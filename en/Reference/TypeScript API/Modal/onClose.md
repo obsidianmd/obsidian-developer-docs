@@ -1,5 +1,5 @@
 ---
-aliases: "Modal.onClose.md"
+aliases: "Modal.onClose"
 cssclasses: hide-title
 ---
 

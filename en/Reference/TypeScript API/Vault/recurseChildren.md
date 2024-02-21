@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.recurseChildren.md"
+aliases: "Vault.recurseChildren"
 cssclasses: hide-title
 ---
 

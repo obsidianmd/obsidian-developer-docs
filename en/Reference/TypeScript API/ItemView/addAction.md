@@ -1,5 +1,5 @@
 ---
-aliases: "ItemView.addAction.md"
+aliases: "ItemView.addAction"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "HeadingSubpathResult.current.md"
+aliases: "HeadingSubpathResult.current"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Menu.onHide.md"
+aliases: "Menu.onHide"
 cssclasses: hide-title
 ---
 

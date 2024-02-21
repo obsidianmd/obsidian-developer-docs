@@ -1,5 +1,5 @@
 ---
-aliases: "UserEvent.md"
+aliases: "UserEvent"
 cssclasses: hide-title
 ---
 

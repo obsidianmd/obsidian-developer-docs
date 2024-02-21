@@ -1,5 +1,5 @@
 ---
-aliases: "SectionCache.md"
+aliases: "SectionCache"
 cssclasses: hide-title
 ---
 

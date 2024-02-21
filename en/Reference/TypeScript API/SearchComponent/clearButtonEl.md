@@ -1,5 +1,5 @@
 ---
-aliases: "SearchComponent.clearButtonEl.md"
+aliases: "SearchComponent.clearButtonEl"
 cssclasses: hide-title
 ---
 

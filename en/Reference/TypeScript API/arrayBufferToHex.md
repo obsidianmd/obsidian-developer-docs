@@ -1,5 +1,5 @@
 ---
-aliases: "arrayBufferToHex.md"
+aliases: "arrayBufferToHex"
 cssclasses: hide-title
 ---
 

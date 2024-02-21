@@ -1,5 +1,5 @@
 ---
-aliases: "DropdownComponent.getValue.md"
+aliases: "DropdownComponent.getValue"
 cssclasses: hide-title
 ---
 

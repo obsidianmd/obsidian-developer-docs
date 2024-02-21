@@ -1,5 +1,5 @@
 ---
-aliases: "Stat.type.md"
+aliases: "Stat.type"
 cssclasses: hide-title
 ---
 

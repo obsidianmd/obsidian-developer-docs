@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceItem.getContainer.md"
+aliases: "WorkspaceItem.getContainer"
 cssclasses: hide-title
 ---
 

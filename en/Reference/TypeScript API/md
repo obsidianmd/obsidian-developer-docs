@@ -1,5 +1,5 @@
 ---
-aliases: "md"
+aliases: ""
 cssclasses: hide-title
 ---
 
@@ -72,7 +72,7 @@ cssclasses: hide-title
 |  [`FuzzySuggestModal`](FuzzySuggestModal.md) |  |
 |  [`ItemView`](ItemView.md) |  |
 |  [`MarkdownRenderer`](MarkdownRenderer.md) |  |
-|  [`Plugin\_2`](Plugin.md) |  |
+|  [`Plugin`](Plugin.md) |  |
 |  [`PluginSettingTab`](PluginSettingTab.md) | Provides a unified interface for users to configure the plugin. |
 |  [`PopoverSuggest`](PopoverSuggest.md) | Base class for adding a type-ahead popover. |
 |  [`SettingTab`](SettingTab.md) |  |

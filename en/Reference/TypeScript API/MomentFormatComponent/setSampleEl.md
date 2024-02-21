@@ -1,5 +1,5 @@
 ---
-aliases: "MomentFormatComponent.setSampleEl.md"
+aliases: "MomentFormatComponent.setSampleEl"
 cssclasses: hide-title
 ---
 

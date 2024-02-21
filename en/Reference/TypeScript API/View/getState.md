@@ -1,5 +1,5 @@
 ---
-aliases: "View.getState.md"
+aliases: "View.getState"
 cssclasses: hide-title
 ---
 

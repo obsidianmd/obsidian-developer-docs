@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownRenderChild.(constructor).md"
+aliases: "MarkdownRenderChild.(constructor)"
 cssclasses: hide-title
 ---
 

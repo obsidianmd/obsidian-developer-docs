@@ -1,5 +1,5 @@
 ---
-aliases: "EditorScrollInfo.left.md"
+aliases: "EditorScrollInfo.left"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "ToggleComponent.setTooltip.md"
+aliases: "ToggleComponent.setTooltip"
 cssclasses: hide-title
 ---
 

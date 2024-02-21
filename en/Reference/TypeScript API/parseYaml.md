@@ -1,5 +1,5 @@
 ---
-aliases: "parseYaml.md"
+aliases: "parseYaml"
 cssclasses: hide-title
 ---
 

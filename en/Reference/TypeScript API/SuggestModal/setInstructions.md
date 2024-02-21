@@ -1,5 +1,5 @@
 ---
-aliases: "SuggestModal.setInstructions.md"
+aliases: "SuggestModal.setInstructions"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.modifyBinary.md"
+aliases: "Vault.modifyBinary"
 cssclasses: hide-title
 ---
 

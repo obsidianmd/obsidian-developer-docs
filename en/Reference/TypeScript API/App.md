@@ -1,5 +1,5 @@
 ---
-aliases: "App.md"
+aliases: "App"
 cssclasses: hide-title
 ---
 

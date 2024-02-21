@@ -1,5 +1,5 @@
 ---
-aliases: "SettingTab.md"
+aliases: "SettingTab"
 cssclasses: hide-title
 ---
 

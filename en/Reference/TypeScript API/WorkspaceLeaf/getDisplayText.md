@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceLeaf.getDisplayText.md"
+aliases: "WorkspaceLeaf.getDisplayText"
 cssclasses: hide-title
 ---
 

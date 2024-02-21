@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.md"
+aliases: "Setting"
 cssclasses: hide-title
 ---
 

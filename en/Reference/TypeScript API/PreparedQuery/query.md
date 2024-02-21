@@ -1,5 +1,5 @@
 ---
-aliases: "PreparedQuery.query.md"
+aliases: "PreparedQuery.query"
 cssclasses: hide-title
 ---
 

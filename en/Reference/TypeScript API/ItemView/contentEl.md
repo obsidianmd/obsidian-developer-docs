@@ -1,5 +1,5 @@
 ---
-aliases: "ItemView.contentEl.md"
+aliases: "ItemView.contentEl"
 cssclasses: hide-title
 ---
 

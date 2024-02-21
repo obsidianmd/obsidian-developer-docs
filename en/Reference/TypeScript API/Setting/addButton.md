@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addButton.md"
+aliases: "Setting.addButton"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "DropdownComponent.selectEl.md"
+aliases: "DropdownComponent.selectEl"
 cssclasses: hide-title
 ---
 

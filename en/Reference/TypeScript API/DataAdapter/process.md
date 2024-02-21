@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.process.md"
+aliases: "DataAdapter.process"
 cssclasses: hide-title
 ---
 

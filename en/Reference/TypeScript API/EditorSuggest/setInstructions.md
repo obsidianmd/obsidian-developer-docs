@@ -1,5 +1,5 @@
 ---
-aliases: "EditorSuggest.setInstructions.md"
+aliases: "EditorSuggest.setInstructions"
 cssclasses: hide-title
 ---
 

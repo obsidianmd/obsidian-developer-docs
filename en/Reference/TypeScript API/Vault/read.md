@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.read.md"
+aliases: "Vault.read"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Component.registerDomEvent.md"
+aliases: "Component.registerDomEvent"
 cssclasses: hide-title
 ---
 

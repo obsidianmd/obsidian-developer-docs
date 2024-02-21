@@ -1,5 +1,5 @@
 ---
-aliases: "PluginSettingTab.md"
+aliases: "PluginSettingTab"
 cssclasses: hide-title
 ---
 

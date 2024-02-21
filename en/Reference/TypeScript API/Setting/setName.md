@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.setName.md"
+aliases: "Setting.setName"
 cssclasses: hide-title
 ---
 

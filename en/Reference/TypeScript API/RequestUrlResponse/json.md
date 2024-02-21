@@ -1,5 +1,5 @@
 ---
-aliases: "RequestUrlResponse.json.md"
+aliases: "RequestUrlResponse.json"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "loadPdfJs.md"
+aliases: "loadPdfJs"
 cssclasses: hide-title
 ---
 

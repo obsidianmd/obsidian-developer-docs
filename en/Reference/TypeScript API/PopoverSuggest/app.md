@@ -1,5 +1,5 @@
 ---
-aliases: "PopoverSuggest.app.md"
+aliases: "PopoverSuggest.app"
 cssclasses: hide-title
 ---
 

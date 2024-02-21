@@ -1,5 +1,5 @@
 ---
-aliases: "sortSearchResults.md"
+aliases: "sortSearchResults"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.undo.md"
+aliases: "Editor.undo"
 cssclasses: hide-title
 ---
 

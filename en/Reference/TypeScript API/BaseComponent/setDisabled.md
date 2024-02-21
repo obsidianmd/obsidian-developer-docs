@@ -1,5 +1,5 @@
 ---
-aliases: "BaseComponent.setDisabled.md"
+aliases: "BaseComponent.setDisabled"
 cssclasses: hide-title
 ---
 

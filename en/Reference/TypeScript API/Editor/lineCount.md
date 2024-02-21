@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.lineCount.md"
+aliases: "Editor.lineCount"
 cssclasses: hide-title
 ---
 

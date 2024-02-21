@@ -1,5 +1,5 @@
 ---
-aliases: "Modal.(constructor).md"
+aliases: "Modal.(constructor)"
 cssclasses: hide-title
 ---
 

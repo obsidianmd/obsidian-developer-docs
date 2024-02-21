@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.then.md"
+aliases: "Setting.then"
 cssclasses: hide-title
 ---
 

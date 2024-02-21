@@ -1,5 +1,5 @@
 ---
-aliases: "FileView.canAcceptExtension.md"
+aliases: "FileView.canAcceptExtension"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "TextComponent.(constructor).md"
+aliases: "TextComponent.(constructor)"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "View.containerEl.md"
+aliases: "View.containerEl"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownView.getMode.md"
+aliases: "MarkdownView.getMode"
 cssclasses: hide-title
 ---
 

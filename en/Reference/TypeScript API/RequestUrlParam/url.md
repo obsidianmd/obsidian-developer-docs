@@ -1,5 +1,5 @@
 ---
-aliases: "RequestUrlParam.url.md"
+aliases: "RequestUrlParam.url"
 cssclasses: hide-title
 ---
 

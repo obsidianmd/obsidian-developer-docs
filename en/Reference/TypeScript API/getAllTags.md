@@ -1,5 +1,5 @@
 ---
-aliases: "getAllTags.md"
+aliases: "getAllTags"
 cssclasses: hide-title
 ---
 

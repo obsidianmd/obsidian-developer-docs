@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPreviewRenderer.unregisterPostProcessor.md"
+aliases: "MarkdownPreviewRenderer.unregisterPostProcessor"
 cssclasses: hide-title
 ---
 

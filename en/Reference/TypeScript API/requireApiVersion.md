@@ -1,5 +1,5 @@
 ---
-aliases: "requireApiVersion.md"
+aliases: "requireApiVersion"
 cssclasses: hide-title
 ---
 

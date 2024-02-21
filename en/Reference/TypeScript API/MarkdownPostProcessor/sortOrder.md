@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPostProcessor.sortOrder.md"
+aliases: "MarkdownPostProcessor.sortOrder"
 cssclasses: hide-title
 ---
 

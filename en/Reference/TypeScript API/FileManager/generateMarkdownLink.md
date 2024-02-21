@@ -1,5 +1,5 @@
 ---
-aliases: "FileManager.generateMarkdownLink.md"
+aliases: "FileManager.generateMarkdownLink"
 cssclasses: hide-title
 ---
 

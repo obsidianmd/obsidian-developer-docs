@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.redo.md"
+aliases: "Editor.redo"
 cssclasses: hide-title
 ---
 

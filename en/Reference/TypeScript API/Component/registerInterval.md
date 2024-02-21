@@ -1,5 +1,5 @@
 ---
-aliases: "Component.registerInterval.md"
+aliases: "Component.registerInterval"
 cssclasses: hide-title
 ---
 

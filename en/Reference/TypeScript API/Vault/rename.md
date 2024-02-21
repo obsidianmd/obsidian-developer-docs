@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.rename.md"
+aliases: "Vault.rename"
 cssclasses: hide-title
 ---
 

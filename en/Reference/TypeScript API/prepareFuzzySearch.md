@@ -1,5 +1,5 @@
 ---
-aliases: "prepareFuzzySearch.md"
+aliases: "prepareFuzzySearch"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "ViewStateResult.md"
+aliases: "ViewStateResult"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Component.register.md"
+aliases: "Component.register"
 cssclasses: hide-title
 ---
 

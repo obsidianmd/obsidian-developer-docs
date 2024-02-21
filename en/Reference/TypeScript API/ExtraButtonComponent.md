@@ -1,5 +1,5 @@
 ---
-aliases: "ExtraButtonComponent.md"
+aliases: "ExtraButtonComponent"
 cssclasses: hide-title
 ---
 

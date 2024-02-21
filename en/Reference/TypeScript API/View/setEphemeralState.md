@@ -1,5 +1,5 @@
 ---
-aliases: "View.setEphemeralState.md"
+aliases: "View.setEphemeralState"
 cssclasses: hide-title
 ---
 

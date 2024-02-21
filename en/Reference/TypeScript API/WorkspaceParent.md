@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceParent.md"
+aliases: "WorkspaceParent"
 cssclasses: hide-title
 ---
 

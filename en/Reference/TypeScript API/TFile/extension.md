@@ -1,5 +1,5 @@
 ---
-aliases: "TFile.extension.md"
+aliases: "TFile.extension"
 cssclasses: hide-title
 ---
 

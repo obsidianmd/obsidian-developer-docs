@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.(constructor).md"
+aliases: "Setting.(constructor)"
 cssclasses: hide-title
 ---
 

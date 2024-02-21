@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.on_5.md"
+aliases: "Workspace.on_5"
 cssclasses: hide-title
 ---
 

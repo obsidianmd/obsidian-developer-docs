@@ -1,5 +1,5 @@
 ---
-aliases: "MenuItem.onClick.md"
+aliases: "MenuItem.onClick"
 cssclasses: hide-title
 ---
 

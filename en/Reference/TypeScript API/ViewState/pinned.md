@@ -1,5 +1,5 @@
 ---
-aliases: "ViewState.pinned.md"
+aliases: "ViewState.pinned"
 cssclasses: hide-title
 ---
 

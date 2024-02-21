@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.rename.md"
+aliases: "DataAdapter.rename"
 cssclasses: hide-title
 ---
 

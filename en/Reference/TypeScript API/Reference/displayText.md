@@ -1,5 +1,5 @@
 ---
-aliases: "Reference.displayText.md"
+aliases: "Reference.displayText"
 cssclasses: hide-title
 ---
 

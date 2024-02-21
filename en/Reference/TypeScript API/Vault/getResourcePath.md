@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.getResourcePath.md"
+aliases: "Vault.getResourcePath"
 cssclasses: hide-title
 ---
 

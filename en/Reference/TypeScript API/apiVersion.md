@@ -1,5 +1,5 @@
 ---
-aliases: "apiVersion.md"
+aliases: "apiVersion"
 cssclasses: hide-title
 ---
 

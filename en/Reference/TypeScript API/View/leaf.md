@@ -1,5 +1,5 @@
 ---
-aliases: "View.leaf.md"
+aliases: "View.leaf"
 cssclasses: hide-title
 ---
 

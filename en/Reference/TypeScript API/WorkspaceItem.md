@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceItem.md"
+aliases: "WorkspaceItem"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "CachedMetadata.frontmatterLinks.md"
+aliases: "CachedMetadata.frontmatterLinks"
 cssclasses: hide-title
 ---
 

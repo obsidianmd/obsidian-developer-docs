@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.process.md"
+aliases: "FileSystemAdapter.process"
 cssclasses: hide-title
 ---
 

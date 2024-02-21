@@ -1,5 +1,5 @@
 ---
-aliases: "View.scope.md"
+aliases: "View.scope"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "CachedMetadata.blocks.md"
+aliases: "CachedMetadata.blocks"
 cssclasses: hide-title
 ---
 

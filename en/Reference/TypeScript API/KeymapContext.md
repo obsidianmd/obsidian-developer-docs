@@ -1,5 +1,5 @@
 ---
-aliases: "KeymapContext.md"
+aliases: "KeymapContext"
 cssclasses: hide-title
 ---
 

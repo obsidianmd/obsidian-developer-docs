@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addTextArea.md"
+aliases: "Setting.addTextArea"
 cssclasses: hide-title
 ---
 

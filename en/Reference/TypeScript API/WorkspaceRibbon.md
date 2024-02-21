@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceRibbon.md"
+aliases: "WorkspaceRibbon"
 cssclasses: hide-title
 ---
 

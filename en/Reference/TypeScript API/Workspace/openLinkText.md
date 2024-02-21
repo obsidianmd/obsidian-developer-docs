@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.openLinkText.md"
+aliases: "Workspace.openLinkText"
 cssclasses: hide-title
 ---
 

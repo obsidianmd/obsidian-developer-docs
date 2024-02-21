@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.setLine.md"
+aliases: "Editor.setLine"
 cssclasses: hide-title
 ---
 

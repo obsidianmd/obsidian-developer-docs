@@ -1,5 +1,5 @@
 ---
-aliases: "MenuSeparator.md"
+aliases: "MenuSeparator"
 cssclasses: hide-title
 ---
 

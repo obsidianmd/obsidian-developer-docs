@@ -1,5 +1,5 @@
 ---
-aliases: "Modal.app.md"
+aliases: "Modal.app"
 cssclasses: hide-title
 ---
 

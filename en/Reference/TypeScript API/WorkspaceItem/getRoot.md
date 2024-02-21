@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceItem.getRoot.md"
+aliases: "WorkspaceItem.getRoot"
 cssclasses: hide-title
 ---
 

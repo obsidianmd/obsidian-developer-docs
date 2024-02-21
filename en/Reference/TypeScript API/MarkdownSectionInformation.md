@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownSectionInformation.md"
+aliases: "MarkdownSectionInformation"
 cssclasses: hide-title
 ---
 

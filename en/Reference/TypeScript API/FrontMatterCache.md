@@ -1,5 +1,5 @@
 ---
-aliases: "FrontMatterCache.md"
+aliases: "FrontMatterCache"
 cssclasses: hide-title
 ---
 

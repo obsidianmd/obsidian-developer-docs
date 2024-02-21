@@ -1,5 +1,5 @@
 ---
-aliases: "ToggleComponent.toggleEl.md"
+aliases: "ToggleComponent.toggleEl"
 cssclasses: hide-title
 ---
 

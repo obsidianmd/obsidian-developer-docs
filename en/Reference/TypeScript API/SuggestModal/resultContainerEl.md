@@ -1,5 +1,5 @@
 ---
-aliases: "SuggestModal.resultContainerEl.md"
+aliases: "SuggestModal.resultContainerEl"
 cssclasses: hide-title
 ---
 

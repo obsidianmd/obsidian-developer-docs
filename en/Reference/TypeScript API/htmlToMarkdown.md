@@ -1,5 +1,5 @@
 ---
-aliases: "htmlToMarkdown.md"
+aliases: "htmlToMarkdown"
 cssclasses: hide-title
 ---
 

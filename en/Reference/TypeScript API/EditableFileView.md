@@ -1,5 +1,5 @@
 ---
-aliases: "EditableFileView.md"
+aliases: "EditableFileView"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "SearchResultContainer.match.md"
+aliases: "SearchResultContainer.match"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.setSelection.md"
+aliases: "Editor.setSelection"
 cssclasses: hide-title
 ---
 

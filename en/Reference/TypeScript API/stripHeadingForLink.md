@@ -1,5 +1,5 @@
 ---
-aliases: "stripHeadingForLink.md"
+aliases: "stripHeadingForLink"
 cssclasses: hide-title
 ---
 

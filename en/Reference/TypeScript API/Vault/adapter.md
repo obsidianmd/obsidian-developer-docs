@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.adapter.md"
+aliases: "Vault.adapter"
 cssclasses: hide-title
 ---
 

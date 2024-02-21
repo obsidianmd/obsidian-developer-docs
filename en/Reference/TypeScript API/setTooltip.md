@@ -1,5 +1,5 @@
 ---
-aliases: "setTooltip.md"
+aliases: "setTooltip"
 cssclasses: hide-title
 ---
 

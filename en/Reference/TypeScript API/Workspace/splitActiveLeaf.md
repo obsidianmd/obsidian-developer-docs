@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.splitActiveLeaf.md"
+aliases: "Workspace.splitActiveLeaf"
 cssclasses: hide-title
 ---
 

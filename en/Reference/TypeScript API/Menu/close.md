@@ -1,5 +1,5 @@
 ---
-aliases: "Menu.close.md"
+aliases: "Menu.close"
 cssclasses: hide-title
 ---
 

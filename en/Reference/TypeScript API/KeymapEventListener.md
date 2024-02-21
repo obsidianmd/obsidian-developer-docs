@@ -1,5 +1,5 @@
 ---
-aliases: "KeymapEventListener.md"
+aliases: "KeymapEventListener"
 cssclasses: hide-title
 ---
 

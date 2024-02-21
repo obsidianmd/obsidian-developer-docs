@@ -1,5 +1,5 @@
 ---
-aliases: "Reference.md"
+aliases: "Reference"
 cssclasses: hide-title
 ---
 

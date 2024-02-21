@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractTextComponent.setDisabled.md"
+aliases: "AbstractTextComponent.setDisabled"
 cssclasses: hide-title
 ---
 

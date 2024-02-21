@@ -1,5 +1,5 @@
 ---
-aliases: "EventRef.md"
+aliases: "EventRef"
 cssclasses: hide-title
 ---
 

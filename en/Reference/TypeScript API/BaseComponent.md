@@ -1,5 +1,5 @@
 ---
-aliases: "BaseComponent.md"
+aliases: "BaseComponent"
 cssclasses: hide-title
 ---
 

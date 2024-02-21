@@ -1,5 +1,5 @@
 ---
-aliases: "TextFileView.(constructor).md"
+aliases: "TextFileView.(constructor)"
 cssclasses: hide-title
 ---
 

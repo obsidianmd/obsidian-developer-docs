@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.getValue.md"
+aliases: "Editor.getValue"
 cssclasses: hide-title
 ---
 

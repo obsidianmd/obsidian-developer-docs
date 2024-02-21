@@ -1,5 +1,5 @@
 ---
-aliases: "BlockSubpathResult.block.md"
+aliases: "BlockSubpathResult.block"
 cssclasses: hide-title
 ---
 

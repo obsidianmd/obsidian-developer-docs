@@ -1,5 +1,5 @@
 ---
-aliases: "View.onResize.md"
+aliases: "View.onResize"
 cssclasses: hide-title
 ---
 

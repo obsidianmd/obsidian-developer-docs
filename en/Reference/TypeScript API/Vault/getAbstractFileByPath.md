@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.getAbstractFileByPath.md"
+aliases: "Vault.getAbstractFileByPath"
 cssclasses: hide-title
 ---
 

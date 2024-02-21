@@ -1,5 +1,5 @@
 ---
-aliases: "ISuggestOwner.renderSuggestion.md"
+aliases: "ISuggestOwner.renderSuggestion"
 cssclasses: hide-title
 ---
 

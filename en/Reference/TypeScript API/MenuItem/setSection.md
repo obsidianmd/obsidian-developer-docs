@@ -1,5 +1,5 @@
 ---
-aliases: "MenuItem.setSection.md"
+aliases: "MenuItem.setSection"
 cssclasses: hide-title
 ---
 

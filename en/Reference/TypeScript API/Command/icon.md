@@ -1,5 +1,5 @@
 ---
-aliases: "Command.icon.md"
+aliases: "Command.icon"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "FileManager.processFrontMatter.md"
+aliases: "FileManager.processFrontMatter"
 cssclasses: hide-title
 ---
 

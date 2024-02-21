@@ -1,5 +1,5 @@
 ---
-aliases: "EmbedCache.md"
+aliases: "EmbedCache"
 cssclasses: hide-title
 ---
 

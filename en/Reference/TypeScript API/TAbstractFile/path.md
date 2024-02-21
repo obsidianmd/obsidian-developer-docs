@@ -1,5 +1,5 @@
 ---
-aliases: "TAbstractFile.path.md"
+aliases: "TAbstractFile.path"
 cssclasses: hide-title
 ---
 

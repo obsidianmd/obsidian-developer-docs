@@ -1,5 +1,5 @@
 ---
-aliases: "RGB.b.md"
+aliases: "RGB.b"
 cssclasses: hide-title
 ---
 

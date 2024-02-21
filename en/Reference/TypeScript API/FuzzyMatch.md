@@ -1,5 +1,5 @@
 ---
-aliases: "FuzzyMatch.md"
+aliases: "FuzzyMatch"
 cssclasses: hide-title
 ---
 

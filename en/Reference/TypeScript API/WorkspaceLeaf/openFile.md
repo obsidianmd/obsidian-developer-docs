@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceLeaf.openFile.md"
+aliases: "WorkspaceLeaf.openFile"
 cssclasses: hide-title
 ---
 

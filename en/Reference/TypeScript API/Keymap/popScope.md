@@ -1,5 +1,5 @@
 ---
-aliases: "Keymap.popScope.md"
+aliases: "Keymap.popScope"
 cssclasses: hide-title
 ---
 

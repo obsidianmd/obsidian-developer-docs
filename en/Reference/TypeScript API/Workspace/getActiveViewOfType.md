@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.getActiveViewOfType.md"
+aliases: "Workspace.getActiveViewOfType"
 cssclasses: hide-title
 ---
 

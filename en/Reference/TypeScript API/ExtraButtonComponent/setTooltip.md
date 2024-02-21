@@ -1,5 +1,5 @@
 ---
-aliases: "ExtraButtonComponent.setTooltip.md"
+aliases: "ExtraButtonComponent.setTooltip"
 cssclasses: hide-title
 ---
 

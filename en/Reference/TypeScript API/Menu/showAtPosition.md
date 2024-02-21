@@ -1,5 +1,5 @@
 ---
-aliases: "Menu.showAtPosition.md"
+aliases: "Menu.showAtPosition"
 cssclasses: hide-title
 ---
 

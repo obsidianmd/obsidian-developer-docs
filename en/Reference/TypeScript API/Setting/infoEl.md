@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.infoEl.md"
+aliases: "Setting.infoEl"
 cssclasses: hide-title
 ---
 

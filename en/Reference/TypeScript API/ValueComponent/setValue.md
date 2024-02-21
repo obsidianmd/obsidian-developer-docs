@@ -1,5 +1,5 @@
 ---
-aliases: "ValueComponent.setValue.md"
+aliases: "ValueComponent.setValue"
 cssclasses: hide-title
 ---
 

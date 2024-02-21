@@ -1,5 +1,5 @@
 ---
-aliases: "SliderComponent.setDynamicTooltip.md"
+aliases: "SliderComponent.setDynamicTooltip"
 cssclasses: hide-title
 ---
 

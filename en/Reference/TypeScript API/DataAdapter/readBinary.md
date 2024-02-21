@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.readBinary.md"
+aliases: "DataAdapter.readBinary"
 cssclasses: hide-title
 ---
 

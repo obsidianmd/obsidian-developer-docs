@@ -1,5 +1,5 @@
 ---
-aliases: "sanitizeHTMLToDom.md"
+aliases: "sanitizeHTMLToDom"
 cssclasses: hide-title
 ---
 

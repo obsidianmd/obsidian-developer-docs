@@ -1,5 +1,5 @@
 ---
-aliases: "ViewState.md"
+aliases: "ViewState"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "MomentFormatComponent.onChanged.md"
+aliases: "MomentFormatComponent.onChanged"
 cssclasses: hide-title
 ---
 

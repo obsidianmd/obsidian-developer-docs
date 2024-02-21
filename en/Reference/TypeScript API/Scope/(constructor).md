@@ -1,5 +1,5 @@
 ---
-aliases: "Scope.(constructor).md"
+aliases: "Scope.(constructor)"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "TooltipOptions.md"
+aliases: "TooltipOptions"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.copy.md"
+aliases: "FileSystemAdapter.copy"
 cssclasses: hide-title
 ---
 

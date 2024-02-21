@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.getLeaf.md"
+aliases: "Workspace.getLeaf"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.offsetToPos.md"
+aliases: "Editor.offsetToPos"
 cssclasses: hide-title
 ---
 

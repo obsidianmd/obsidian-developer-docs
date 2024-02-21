@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.readLocalFile.md"
+aliases: "FileSystemAdapter.readLocalFile"
 cssclasses: hide-title
 ---
 

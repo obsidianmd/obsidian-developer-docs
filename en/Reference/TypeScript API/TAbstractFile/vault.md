@@ -1,5 +1,5 @@
 ---
-aliases: "TAbstractFile.vault.md"
+aliases: "TAbstractFile.vault"
 cssclasses: hide-title
 ---
 

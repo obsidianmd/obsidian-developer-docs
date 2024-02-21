@@ -1,5 +1,5 @@
 ---
-aliases: "SearchComponent.(constructor).md"
+aliases: "SearchComponent.(constructor)"
 cssclasses: hide-title
 ---
 

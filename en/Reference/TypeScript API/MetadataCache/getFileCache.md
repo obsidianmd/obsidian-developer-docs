@@ -1,5 +1,5 @@
 ---
-aliases: "MetadataCache.getFileCache.md"
+aliases: "MetadataCache.getFileCache"
 cssclasses: hide-title
 ---
 

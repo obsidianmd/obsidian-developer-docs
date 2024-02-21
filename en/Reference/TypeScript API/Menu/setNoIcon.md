@@ -1,5 +1,5 @@
 ---
-aliases: "Menu.setNoIcon.md"
+aliases: "Menu.setNoIcon"
 cssclasses: hide-title
 ---
 

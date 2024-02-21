@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.trash.md"
+aliases: "Vault.trash"
 cssclasses: hide-title
 ---
 

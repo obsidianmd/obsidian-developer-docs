@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.process.md"
+aliases: "Vault.process"
 cssclasses: hide-title
 ---
 

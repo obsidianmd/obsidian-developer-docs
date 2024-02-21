@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addToggle.md"
+aliases: "Setting.addToggle"
 cssclasses: hide-title
 ---
 

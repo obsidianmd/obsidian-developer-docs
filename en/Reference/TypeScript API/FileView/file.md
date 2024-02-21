@@ -1,5 +1,5 @@
 ---
-aliases: "FileView.file.md"
+aliases: "FileView.file"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.getResourcePath.md"
+aliases: "DataAdapter.getResourcePath"
 cssclasses: hide-title
 ---
 

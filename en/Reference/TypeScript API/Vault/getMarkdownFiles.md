@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.getMarkdownFiles.md"
+aliases: "Vault.getMarkdownFiles"
 cssclasses: hide-title
 ---
 

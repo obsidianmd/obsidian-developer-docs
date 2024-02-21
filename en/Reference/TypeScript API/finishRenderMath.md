@@ -1,5 +1,5 @@
 ---
-aliases: "finishRenderMath.md"
+aliases: "finishRenderMath"
 cssclasses: hide-title
 ---
 
