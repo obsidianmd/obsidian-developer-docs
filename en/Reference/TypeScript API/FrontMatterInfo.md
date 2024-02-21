@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FrontMatterInfo.md"
+aliases: "FrontMatterInfo.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Tasks.isEmpty.md"
+aliases: "Tasks.isEmpty.md"
 cssclasses: hide-title
 ---
 

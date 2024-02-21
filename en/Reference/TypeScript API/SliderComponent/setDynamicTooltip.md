@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SliderComponent.setDynamicTooltip.md"
+aliases: "SliderComponent.setDynamicTooltip.md"
 cssclasses: hide-title
 ---
 

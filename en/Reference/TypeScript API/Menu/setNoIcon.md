@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Menu.setNoIcon.md"
+aliases: "Menu.setNoIcon.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.htmlToMarkdown.md"
+aliases: "htmlToMarkdown.md"
 cssclasses: hide-title
 ---
 

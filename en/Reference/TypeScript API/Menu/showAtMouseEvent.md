@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Menu.showAtMouseEvent.md"
+aliases: "Menu.showAtMouseEvent.md"
 cssclasses: hide-title
 ---
 

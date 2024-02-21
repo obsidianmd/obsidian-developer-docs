@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.editorViewField.md"
+aliases: "editorViewField.md"
 cssclasses: hide-title
 ---
 

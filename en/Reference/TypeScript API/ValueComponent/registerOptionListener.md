@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ValueComponent.registerOptionListener.md"
+aliases: "ValueComponent.registerOptionListener.md"
 cssclasses: hide-title
 ---
 

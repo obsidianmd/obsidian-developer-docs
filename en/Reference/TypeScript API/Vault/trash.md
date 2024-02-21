@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.trash.md"
+aliases: "Vault.trash.md"
 cssclasses: hide-title
 ---
 

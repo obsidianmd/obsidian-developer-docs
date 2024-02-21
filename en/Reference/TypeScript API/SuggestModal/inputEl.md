@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SuggestModal.inputEl.md"
+aliases: "SuggestModal.inputEl.md"
 cssclasses: hide-title
 ---
 

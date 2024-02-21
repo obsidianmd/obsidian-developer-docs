@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.renderResults.md"
+aliases: "renderResults.md"
 cssclasses: hide-title
 ---
 

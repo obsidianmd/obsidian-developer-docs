@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Plugin.onExternalSettingsChange.md"
+aliases: "Plugin.onExternalSettingsChange.md"
 cssclasses: hide-title
 ---
 

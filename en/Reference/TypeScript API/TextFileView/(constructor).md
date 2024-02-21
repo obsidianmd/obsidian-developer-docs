@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.TextFileView.(constructor).md"
+aliases: "TextFileView.(constructor).md"
 cssclasses: hide-title
 ---
 

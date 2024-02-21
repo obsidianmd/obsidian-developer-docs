@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SuggestModal.onChooseSuggestion.md"
+aliases: "SuggestModal.onChooseSuggestion.md"
 cssclasses: hide-title
 ---
 

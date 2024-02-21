@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.BaseComponent.disabled.md"
+aliases: "BaseComponent.disabled.md"
 cssclasses: hide-title
 ---
 

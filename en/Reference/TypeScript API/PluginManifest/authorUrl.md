@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.PluginManifest.authorUrl.md"
+aliases: "PluginManifest.authorUrl.md"
 cssclasses: hide-title
 ---
 

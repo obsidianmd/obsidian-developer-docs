@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.processLines.md"
+aliases: "Editor.processLines.md"
 cssclasses: hide-title
 ---
 

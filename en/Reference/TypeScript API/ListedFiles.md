@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ListedFiles.md"
+aliases: "ListedFiles.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.rootSplit.md"
+aliases: "Workspace.rootSplit.md"
 cssclasses: hide-title
 ---
 

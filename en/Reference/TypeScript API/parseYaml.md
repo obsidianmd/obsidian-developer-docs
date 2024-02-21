@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.parseYaml.md"
+aliases: "parseYaml.md"
 cssclasses: hide-title
 ---
 

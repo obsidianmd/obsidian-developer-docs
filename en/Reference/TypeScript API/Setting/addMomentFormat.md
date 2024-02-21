@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.addMomentFormat.md"
+aliases: "Setting.addMomentFormat.md"
 cssclasses: hide-title
 ---
 

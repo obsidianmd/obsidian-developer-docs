@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.createFolder.md"
+aliases: "Vault.createFolder.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.somethingSelected.md"
+aliases: "Editor.somethingSelected.md"
 cssclasses: hide-title
 ---
 

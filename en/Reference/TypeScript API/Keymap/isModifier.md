@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Keymap.isModifier.md"
+aliases: "Keymap.isModifier.md"
 cssclasses: hide-title
 ---
 

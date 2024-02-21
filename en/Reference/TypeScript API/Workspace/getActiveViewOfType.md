@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.getActiveViewOfType.md"
+aliases: "Workspace.getActiveViewOfType.md"
 cssclasses: hide-title
 ---
 

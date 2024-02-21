@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.nameEl.md"
+aliases: "Setting.nameEl.md"
 cssclasses: hide-title
 ---
 

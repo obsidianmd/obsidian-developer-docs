@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SliderComponent.showTooltip.md"
+aliases: "SliderComponent.showTooltip.md"
 cssclasses: hide-title
 ---
 

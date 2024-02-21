@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ButtonComponent.setIcon.md"
+aliases: "ButtonComponent.setIcon.md"
 cssclasses: hide-title
 ---
 

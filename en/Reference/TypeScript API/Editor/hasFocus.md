@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.hasFocus.md"
+aliases: "Editor.hasFocus.md"
 cssclasses: hide-title
 ---
 

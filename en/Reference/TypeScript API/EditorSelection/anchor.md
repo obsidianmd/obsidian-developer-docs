@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorSelection.anchor.md"
+aliases: "EditorSelection.anchor.md"
 cssclasses: hide-title
 ---
 

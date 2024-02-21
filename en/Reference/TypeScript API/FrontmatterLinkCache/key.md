@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FrontmatterLinkCache.key.md"
+aliases: "FrontmatterLinkCache.key.md"
 cssclasses: hide-title
 ---
 

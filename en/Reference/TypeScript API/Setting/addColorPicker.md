@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.addColorPicker.md"
+aliases: "Setting.addColorPicker.md"
 cssclasses: hide-title
 ---
 

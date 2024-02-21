@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Command.mobileOnly.md"
+aliases: "Command.mobileOnly.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.addSearch.md"
+aliases: "Setting.addSearch.md"
 cssclasses: hide-title
 ---
 

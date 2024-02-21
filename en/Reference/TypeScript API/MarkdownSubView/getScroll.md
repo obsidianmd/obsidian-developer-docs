@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownSubView.getScroll.md"
+aliases: "MarkdownSubView.getScroll.md"
 cssclasses: hide-title
 ---
 

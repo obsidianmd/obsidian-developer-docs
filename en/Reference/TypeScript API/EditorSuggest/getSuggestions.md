@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorSuggest.getSuggestions.md"
+aliases: "EditorSuggest.getSuggestions.md"
 cssclasses: hide-title
 ---
 

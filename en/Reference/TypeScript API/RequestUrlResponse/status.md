@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.RequestUrlResponse.status.md"
+aliases: "RequestUrlResponse.status.md"
 cssclasses: hide-title
 ---
 

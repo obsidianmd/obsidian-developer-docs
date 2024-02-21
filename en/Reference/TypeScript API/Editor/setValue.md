@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.setValue.md"
+aliases: "Editor.setValue.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.prepareSimpleSearch.md"
+aliases: "prepareSimpleSearch.md"
 cssclasses: hide-title
 ---
 

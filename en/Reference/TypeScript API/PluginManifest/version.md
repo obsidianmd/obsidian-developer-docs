@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.PluginManifest.version.md"
+aliases: "PluginManifest.version.md"
 cssclasses: hide-title
 ---
 

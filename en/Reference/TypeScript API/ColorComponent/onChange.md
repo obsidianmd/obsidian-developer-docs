@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ColorComponent.onChange.md"
+aliases: "ColorComponent.onChange.md"
 cssclasses: hide-title
 ---
 

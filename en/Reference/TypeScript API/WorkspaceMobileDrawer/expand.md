@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceMobileDrawer.expand.md"
+aliases: "WorkspaceMobileDrawer.expand.md"
 cssclasses: hide-title
 ---
 

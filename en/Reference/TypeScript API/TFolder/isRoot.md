@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.TFolder.isRoot.md"
+aliases: "TFolder.isRoot.md"
 cssclasses: hide-title
 ---
 

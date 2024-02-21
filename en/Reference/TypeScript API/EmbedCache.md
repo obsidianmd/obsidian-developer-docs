@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EmbedCache.md"
+aliases: "EmbedCache.md"
 cssclasses: hide-title
 ---
 

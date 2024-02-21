@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.CacheItem.md"
+aliases: "CacheItem.md"
 cssclasses: hide-title
 ---
 

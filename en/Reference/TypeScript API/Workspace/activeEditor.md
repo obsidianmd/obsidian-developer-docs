@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.activeEditor.md"
+aliases: "Workspace.activeEditor.md"
 cssclasses: hide-title
 ---
 

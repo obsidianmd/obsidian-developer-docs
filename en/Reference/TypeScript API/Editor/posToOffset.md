@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.posToOffset.md"
+aliases: "Editor.posToOffset.md"
 cssclasses: hide-title
 ---
 

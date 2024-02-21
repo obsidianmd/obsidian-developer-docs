@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileView.canAcceptExtension.md"
+aliases: "FileView.canAcceptExtension.md"
 cssclasses: hide-title
 ---
 

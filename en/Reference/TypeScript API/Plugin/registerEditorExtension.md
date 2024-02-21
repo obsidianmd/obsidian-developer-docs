@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Plugin.registerEditorExtension.md"
+aliases: "Plugin.registerEditorExtension.md"
 cssclasses: hide-title
 ---
 

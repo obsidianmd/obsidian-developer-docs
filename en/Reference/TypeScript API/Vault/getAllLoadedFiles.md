@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.getAllLoadedFiles.md"
+aliases: "Vault.getAllLoadedFiles.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.fuzzySearch.md"
+aliases: "fuzzySearch.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.RequestUrlResponsePromise.json.md"
+aliases: "RequestUrlResponsePromise.json.md"
 cssclasses: hide-title
 ---
 

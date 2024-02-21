@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.LinkCache.md"
+aliases: "LinkCache.md"
 cssclasses: hide-title
 ---
 

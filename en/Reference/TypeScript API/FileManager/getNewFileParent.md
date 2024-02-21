@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileManager.getNewFileParent.md"
+aliases: "FileManager.getNewFileParent.md"
 cssclasses: hide-title
 ---
 

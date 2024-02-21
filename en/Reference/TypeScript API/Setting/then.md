@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Setting.then.md"
+aliases: "Setting.then.md"
 cssclasses: hide-title
 ---
 

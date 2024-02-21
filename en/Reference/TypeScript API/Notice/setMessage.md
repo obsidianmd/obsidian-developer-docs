@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Notice.setMessage.md"
+aliases: "Notice.setMessage.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Component.registerInterval.md"
+aliases: "Component.registerInterval.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.AbstractTextComponent.setPlaceholder.md"
+aliases: "AbstractTextComponent.setPlaceholder.md"
 cssclasses: hide-title
 ---
 

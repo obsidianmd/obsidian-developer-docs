@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.BlockCache.id.md"
+aliases: "BlockCache.id.md"
 cssclasses: hide-title
 ---
 

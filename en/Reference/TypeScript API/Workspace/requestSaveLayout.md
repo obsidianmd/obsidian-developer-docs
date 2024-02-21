@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.requestSaveLayout.md"
+aliases: "Workspace.requestSaveLayout.md"
 cssclasses: hide-title
 ---
 

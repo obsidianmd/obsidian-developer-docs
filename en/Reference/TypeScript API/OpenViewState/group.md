@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.OpenViewState.group.md"
+aliases: "OpenViewState.group.md"
 cssclasses: hide-title
 ---
 

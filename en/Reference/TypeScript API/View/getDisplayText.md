@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.getDisplayText.md"
+aliases: "View.getDisplayText.md"
 cssclasses: hide-title
 ---
 

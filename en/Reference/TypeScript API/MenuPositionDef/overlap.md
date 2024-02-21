@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MenuPositionDef.overlap.md"
+aliases: "MenuPositionDef.overlap.md"
 cssclasses: hide-title
 ---
 

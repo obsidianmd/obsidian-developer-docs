@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Point.x.md"
+aliases: "Point.x.md"
 cssclasses: hide-title
 ---
 

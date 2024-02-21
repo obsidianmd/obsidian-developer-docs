@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.getLastOpenFiles.md"
+aliases: "Workspace.getLastOpenFiles.md"
 cssclasses: hide-title
 ---
 

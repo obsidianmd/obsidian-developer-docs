@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SuggestModal.limit.md"
+aliases: "SuggestModal.limit.md"
 cssclasses: hide-title
 ---
 

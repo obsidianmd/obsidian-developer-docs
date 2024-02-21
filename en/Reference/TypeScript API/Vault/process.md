@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.process.md"
+aliases: "Vault.process.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.AbstractInputSuggest.limit.md"
+aliases: "AbstractInputSuggest.limit.md"
 cssclasses: hide-title
 ---
 

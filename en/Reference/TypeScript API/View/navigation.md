@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.navigation.md"
+aliases: "View.navigation.md"
 cssclasses: hide-title
 ---
 

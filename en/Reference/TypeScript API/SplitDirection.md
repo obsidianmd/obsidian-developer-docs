@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SplitDirection.md"
+aliases: "SplitDirection.md"
 cssclasses: hide-title
 ---
 

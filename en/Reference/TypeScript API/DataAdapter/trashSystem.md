@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.DataAdapter.trashSystem.md"
+aliases: "DataAdapter.trashSystem.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.openLinkText.md"
+aliases: "Workspace.openLinkText.md"
 cssclasses: hide-title
 ---
 

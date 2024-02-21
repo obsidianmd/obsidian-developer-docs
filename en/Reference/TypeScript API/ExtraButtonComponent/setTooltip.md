@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ExtraButtonComponent.setTooltip.md"
+aliases: "ExtraButtonComponent.setTooltip.md"
 cssclasses: hide-title
 ---
 

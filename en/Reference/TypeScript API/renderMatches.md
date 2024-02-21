@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.renderMatches.md"
+aliases: "renderMatches.md"
 cssclasses: hide-title
 ---
 

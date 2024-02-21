@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SubpathResult.end.md"
+aliases: "SubpathResult.end.md"
 cssclasses: hide-title
 ---
 

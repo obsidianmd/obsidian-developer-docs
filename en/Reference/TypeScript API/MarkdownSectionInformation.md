@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownSectionInformation.md"
+aliases: "MarkdownSectionInformation.md"
 cssclasses: hide-title
 ---
 

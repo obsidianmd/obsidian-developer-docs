@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.configDir.md"
+aliases: "Vault.configDir.md"
 cssclasses: hide-title
 ---
 

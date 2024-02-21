@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.leaf.md"
+aliases: "View.leaf.md"
 cssclasses: hide-title
 ---
 

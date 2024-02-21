@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceLeaf.togglePinned.md"
+aliases: "WorkspaceLeaf.togglePinned.md"
 cssclasses: hide-title
 ---
 

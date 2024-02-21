@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.AbstractInputSuggest.getValue.md"
+aliases: "AbstractInputSuggest.getValue.md"
 cssclasses: hide-title
 ---
 

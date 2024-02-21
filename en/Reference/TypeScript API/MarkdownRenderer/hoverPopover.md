@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownRenderer.hoverPopover.md"
+aliases: "MarkdownRenderer.hoverPopover.md"
 cssclasses: hide-title
 ---
 

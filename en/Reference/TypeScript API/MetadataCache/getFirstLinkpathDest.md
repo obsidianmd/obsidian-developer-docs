@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MetadataCache.getFirstLinkpathDest.md"
+aliases: "MetadataCache.getFirstLinkpathDest.md"
 cssclasses: hide-title
 ---
 

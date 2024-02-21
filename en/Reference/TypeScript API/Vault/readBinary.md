@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.readBinary.md"
+aliases: "Vault.readBinary.md"
 cssclasses: hide-title
 ---
 

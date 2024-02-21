@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Component.registerDomEvent_2.md"
+aliases: "Component.registerDomEvent_2.md"
 cssclasses: hide-title
 ---
 

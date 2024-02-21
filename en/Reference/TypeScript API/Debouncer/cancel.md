@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Debouncer.cancel.md"
+aliases: "Debouncer.cancel.md"
 cssclasses: hide-title
 ---
 

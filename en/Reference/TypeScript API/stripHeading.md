@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.stripHeading.md"
+aliases: "stripHeading.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.LivePreviewState.mousedown.md"
+aliases: "LivePreviewState.mousedown.md"
 cssclasses: hide-title
 ---
 

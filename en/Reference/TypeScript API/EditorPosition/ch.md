@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorPosition.ch.md"
+aliases: "EditorPosition.ch.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MetadataCache.on.md"
+aliases: "MetadataCache.on.md"
 cssclasses: hide-title
 ---
 

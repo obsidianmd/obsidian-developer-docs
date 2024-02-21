@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.loadMermaid.md"
+aliases: "loadMermaid.md"
 cssclasses: hide-title
 ---
 

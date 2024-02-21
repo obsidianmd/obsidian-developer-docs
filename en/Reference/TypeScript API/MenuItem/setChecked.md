@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MenuItem.setChecked.md"
+aliases: "MenuItem.setChecked.md"
 cssclasses: hide-title
 ---
 

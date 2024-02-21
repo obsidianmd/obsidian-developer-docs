@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ISuggestOwner.renderSuggestion.md"
+aliases: "ISuggestOwner.renderSuggestion.md"
 cssclasses: hide-title
 ---
 

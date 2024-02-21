@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FuzzyMatch.item.md"
+aliases: "FuzzyMatch.item.md"
 cssclasses: hide-title
 ---
 

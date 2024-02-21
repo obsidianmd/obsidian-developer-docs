@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorTransaction.replaceSelection.md"
+aliases: "EditorTransaction.replaceSelection.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileManager.getAvailablePathForAttachment.md"
+aliases: "FileManager.getAvailablePathForAttachment.md"
 cssclasses: hide-title
 ---
 

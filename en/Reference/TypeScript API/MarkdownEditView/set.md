@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownEditView.set.md"
+aliases: "MarkdownEditView.set.md"
 cssclasses: hide-title
 ---
 

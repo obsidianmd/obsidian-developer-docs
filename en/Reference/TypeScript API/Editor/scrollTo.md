@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.scrollTo.md"
+aliases: "Editor.scrollTo.md"
 cssclasses: hide-title
 ---
 

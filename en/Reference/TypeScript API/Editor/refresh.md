@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.refresh.md"
+aliases: "Editor.refresh.md"
 cssclasses: hide-title
 ---
 

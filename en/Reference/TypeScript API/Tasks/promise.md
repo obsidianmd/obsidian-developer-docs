@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Tasks.promise.md"
+aliases: "Tasks.promise.md"
 cssclasses: hide-title
 ---
 

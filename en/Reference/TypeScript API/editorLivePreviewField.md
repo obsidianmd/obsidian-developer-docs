@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.editorLivePreviewField.md"
+aliases: "editorLivePreviewField.md"
 cssclasses: hide-title
 ---
 

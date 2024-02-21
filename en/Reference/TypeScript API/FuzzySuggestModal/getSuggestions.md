@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FuzzySuggestModal.getSuggestions.md"
+aliases: "FuzzySuggestModal.getSuggestions.md"
 cssclasses: hide-title
 ---
 

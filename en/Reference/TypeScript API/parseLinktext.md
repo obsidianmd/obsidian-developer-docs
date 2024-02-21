@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.parseLinktext.md"
+aliases: "parseLinktext.md"
 cssclasses: hide-title
 ---
 

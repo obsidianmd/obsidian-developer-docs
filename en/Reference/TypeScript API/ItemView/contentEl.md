@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ItemView.contentEl.md"
+aliases: "ItemView.contentEl.md"
 cssclasses: hide-title
 ---
 

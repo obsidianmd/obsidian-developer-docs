@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.getGroupLeaves.md"
+aliases: "Workspace.getGroupLeaves.md"
 cssclasses: hide-title
 ---
 

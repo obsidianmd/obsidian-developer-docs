@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.PopoverSuggest.close.md"
+aliases: "PopoverSuggest.close.md"
 cssclasses: hide-title
 ---
 

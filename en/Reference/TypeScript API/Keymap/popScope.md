@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Keymap.popScope.md"
+aliases: "Keymap.popScope.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.WorkspaceLeaf.getEphemeralState.md"
+aliases: "WorkspaceLeaf.getEphemeralState.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MarkdownViewModeType.md"
+aliases: "MarkdownViewModeType.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.PopoverState.md"
+aliases: "PopoverState.md"
 cssclasses: hide-title
 ---
 

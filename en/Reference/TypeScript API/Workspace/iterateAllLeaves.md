@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Workspace.iterateAllLeaves.md"
+aliases: "Workspace.iterateAllLeaves.md"
 cssclasses: hide-title
 ---
 

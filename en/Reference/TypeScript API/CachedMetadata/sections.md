@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.CachedMetadata.sections.md"
+aliases: "CachedMetadata.sections.md"
 cssclasses: hide-title
 ---
 

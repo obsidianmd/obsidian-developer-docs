@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FileManager.md"
+aliases: "FileManager.md"
 cssclasses: hide-title
 ---
 

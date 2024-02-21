@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Plugin.registerMarkdownCodeBlockProcessor.md"
+aliases: "Plugin.registerMarkdownCodeBlockProcessor.md"
 cssclasses: hide-title
 ---
 

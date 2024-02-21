@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ExtraButtonComponent.setDisabled.md"
+aliases: "ExtraButtonComponent.setDisabled.md"
 cssclasses: hide-title
 ---
 

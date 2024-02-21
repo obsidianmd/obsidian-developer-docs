@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.getAllTags.md"
+aliases: "getAllTags.md"
 cssclasses: hide-title
 ---
 

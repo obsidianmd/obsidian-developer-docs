@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SliderComponent.setLimits.md"
+aliases: "SliderComponent.setLimits.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Editor.getDoc.md"
+aliases: "Editor.getDoc.md"
 cssclasses: hide-title
 ---
 

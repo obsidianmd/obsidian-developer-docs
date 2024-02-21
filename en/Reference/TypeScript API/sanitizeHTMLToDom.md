@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.sanitizeHTMLToDom.md"
+aliases: "sanitizeHTMLToDom.md"
 cssclasses: hide-title
 ---
 

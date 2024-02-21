@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.PaneType.md"
+aliases: "PaneType.md"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SearchComponent.onChanged.md"
+aliases: "SearchComponent.onChanged.md"
 cssclasses: hide-title
 ---
 

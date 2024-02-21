@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.FuzzySuggestModal.onChooseItem.md"
+aliases: "FuzzySuggestModal.onChooseItem.md"
 cssclasses: hide-title
 ---
 

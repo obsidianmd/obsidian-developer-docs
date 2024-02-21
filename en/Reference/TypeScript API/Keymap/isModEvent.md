@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Keymap.isModEvent.md"
+aliases: "Keymap.isModEvent.md"
 cssclasses: hide-title
 ---
 

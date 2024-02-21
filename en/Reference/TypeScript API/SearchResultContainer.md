@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SearchResultContainer.md"
+aliases: "SearchResultContainer.md"
 cssclasses: hide-title
 ---
 

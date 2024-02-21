@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.AbstractTextComponent.onChanged.md"
+aliases: "AbstractTextComponent.onChanged.md"
 cssclasses: hide-title
 ---
 

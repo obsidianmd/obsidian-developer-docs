@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.DataAdapter.read.md"
+aliases: "DataAdapter.read.md"
 cssclasses: hide-title
 ---
 

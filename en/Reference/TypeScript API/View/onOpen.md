@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.View.onOpen.md"
+aliases: "View.onOpen.md"
 cssclasses: hide-title
 ---
 

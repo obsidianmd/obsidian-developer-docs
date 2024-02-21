@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.SettingTab.md"
+aliases: "SettingTab.md"
 cssclasses: hide-title
 ---
 

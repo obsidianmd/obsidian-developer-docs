@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.ColorComponent.setDisabled.md"
+aliases: "ColorComponent.setDisabled.md"
 cssclasses: hide-title
 ---
 

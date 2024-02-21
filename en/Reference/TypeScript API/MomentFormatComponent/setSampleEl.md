@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.MomentFormatComponent.setSampleEl.md"
+aliases: "MomentFormatComponent.setSampleEl.md"
 cssclasses: hide-title
 ---
 

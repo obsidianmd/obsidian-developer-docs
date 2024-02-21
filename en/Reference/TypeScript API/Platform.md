@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Platform.md"
+aliases: "Platform.md"
 cssclasses: hide-title
 ---
 

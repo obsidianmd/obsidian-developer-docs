@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.KeymapEventHandler.scope.md"
+aliases: "KeymapEventHandler.scope.md"
 cssclasses: hide-title
 ---
 

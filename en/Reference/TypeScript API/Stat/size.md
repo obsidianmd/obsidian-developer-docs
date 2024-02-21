@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Stat.size.md"
+aliases: "Stat.size.md"
 cssclasses: hide-title
 ---
 

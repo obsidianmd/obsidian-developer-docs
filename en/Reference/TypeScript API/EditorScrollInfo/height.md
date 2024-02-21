@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.EditorScrollInfo.height.md"
+aliases: "EditorScrollInfo.height.md"
 cssclasses: hide-title
 ---
 

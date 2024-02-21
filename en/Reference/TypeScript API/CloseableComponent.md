@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.CloseableComponent.md"
+aliases: "CloseableComponent.md"
 cssclasses: hide-title
 ---
 

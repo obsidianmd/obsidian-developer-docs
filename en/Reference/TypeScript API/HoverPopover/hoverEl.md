@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.HoverPopover.hoverEl.md"
+aliases: "HoverPopover.hoverEl.md"
 cssclasses: hide-title
 ---
 

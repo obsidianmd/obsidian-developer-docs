@@ -1,5 +1,5 @@
 ---
-aliases: "obsidian.Vault.getFolderByPath.md"
+aliases: "Vault.getFolderByPath.md"
 cssclasses: hide-title
 ---
 
