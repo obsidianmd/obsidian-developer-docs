@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Keymap.pushScope() method
 
+Push a scope onto the scope stack, setting it as the active scope to handle all key events.
 
 **Signature:**
 

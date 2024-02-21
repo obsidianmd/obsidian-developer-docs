@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Scope class
 
+A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys.
 
 **Signature:**
 
@@ -26,6 +27,6 @@ export class Scope
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`register(modifiers, key, func)`](obsidian.Scope.register.md) |  |  |
-|  [`unregister(handler)`](obsidian.Scope.unregister.md) |  |  |
+|  [`register(modifiers, key, func)`](obsidian.Scope.register.md) |  | Add a keymap event handler to this scope. |
+|  [`unregister(handler)`](obsidian.Scope.unregister.md) |  | Remove an existing keymap event handler. |
 

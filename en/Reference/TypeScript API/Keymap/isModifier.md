@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Keymap.isModifier() method
 
-Checks whether the modifier key is pressed during this event
+Checks whether the modifier key is pressed during this event.
 
 **Signature:**
 

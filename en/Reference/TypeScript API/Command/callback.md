@@ -16,3 +16,17 @@ Simple callback, triggered globally.
 ```typescript
 callback?: () => any;
 ```
+
+## Example
+
+
+```ts
+this.addCommand({
+  id: "print-greeting-to-console",
+  name: "Print greeting to console",
+  callback: () => {
+    console.log("Hey, you!");
+  },
+});
+```
+

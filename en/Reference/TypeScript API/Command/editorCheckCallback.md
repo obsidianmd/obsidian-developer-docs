@@ -16,3 +16,27 @@ A command callback that is only triggered when the user is in an editor. Overrid
 ```typescript
 editorCheckCallback?: (checking: boolean, editor: Editor, ctx: MarkdownView | MarkdownFileInfo) => boolean | void;
 ```
+
+## Example
+
+
+```ts
+this.addCommand({
+  id: 'example-command',
+  name: 'Example command',
+  editorCheckCallback: (checking: boolean, editor: Editor, view: MarkdownView) => {
+    const value = getRequiredValue();
+
+    if (value) {
+      if (!checking) {
+        doCommand(value);
+      }
+
+      return true;
+    }
+
+    return false;
+  }
+});
+```
+

@@ -36,9 +36,11 @@ export class Vault extends Events
 |  [`createBinary(path, data, options)`](obsidian.Vault.createBinary.md) |  | Create a new binary file inside the vault. |
 |  [`createFolder(path)`](obsidian.Vault.createFolder.md) |  | Create a new folder inside the vault. |
 |  [`delete(file, force)`](obsidian.Vault.delete.md) |  | Deletes the file completely. |
-|  [`getAbstractFileByPath(path)`](obsidian.Vault.getAbstractFileByPath.md) |  | Get a file or folder inside the vault. If you need a file, you should test the returned object with <code>instanceof TFile</code>. Otherwise, if you need a folder, you should test it with <code>instanceof TFolder</code>. |
+|  [`getAbstractFileByPath(path)`](obsidian.Vault.getAbstractFileByPath.md) |  | Get a file or folder inside the vault at the given path. To check if the return type is a file, use <code>instanceof TFile</code>. To check if it is a folder, use <code>instanceof TFolder</code>. |
 |  [`getAllLoadedFiles()`](obsidian.Vault.getAllLoadedFiles.md) |  | Get all files and folders in the vault. |
+|  [`getFileByPath(path)`](obsidian.Vault.getFileByPath.md) |  | Get a file inside the vault at the given path. Returns <code>null</code> if the file does not exist. |
 |  [`getFiles()`](obsidian.Vault.getFiles.md) |  | Get all files in the vault. |
+|  [`getFolderByPath(path)`](obsidian.Vault.getFolderByPath.md) |  | Get a folder inside the vault at the given path. Returns <code>null</code> if the folder does not exist. |
 |  [`getMarkdownFiles()`](obsidian.Vault.getMarkdownFiles.md) |  | Get all markdown files in the vault. |
 |  [`getName()`](obsidian.Vault.getName.md) |  | Gets the name of the vault. |
 |  [`getResourcePath(file)`](obsidian.Vault.getResourcePath.md) |  | Returns an URI for the browser engine to use, for example to embed an image. |

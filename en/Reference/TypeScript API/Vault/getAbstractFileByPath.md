@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Vault.getAbstractFileByPath() method
 
-Get a file or folder inside the vault. If you need a file, you should test the returned object with `instanceof TFile`<!-- -->. Otherwise, if you need a folder, you should test it with `instanceof TFolder`<!-- -->.
+Get a file or folder inside the vault at the given path. To check if the return type is a file, use `instanceof TFile`<!-- -->. To check if it is a folder, use `instanceof TFolder`<!-- -->.
 
 **Signature:**
 

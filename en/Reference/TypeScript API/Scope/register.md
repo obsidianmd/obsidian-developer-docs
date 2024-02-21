@@ -9,6 +9,8 @@ cssclasses: hide-title
 
 ## Scope.register() method
 
+Add a keymap event handler to this scope.
+
 **Signature:**
 
 ```typescript
@@ -20,8 +22,8 @@ register(modifiers: Modifier[], key: string | null, func: KeymapEventListener): 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>modifiers</code> | [`Modifier`](obsidian.Modifier.md)<code>[]</code> | <code>Mod</code>, <code>Ctrl</code>, <code>Meta</code>, <code>Shift</code>, or <code>Alt</code>. <code>Mod</code> translates to <code>Meta</code> on macOS and <code>Ctrl</code> otherwise. |
-|  <code>key</code> | <code>string &#124; null</code> | Keycode from https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key\_Values |
-|  <code>func</code> | [`KeymapEventListener`](obsidian.KeymapEventListener.md) | the callback |
+|  <code>key</code> | <code>string &#124; null</code> | Keycode from https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key%5FValues |
+|  <code>func</code> | [`KeymapEventListener`](obsidian.KeymapEventListener.md) | the callback that will be called when a user triggers the keybind. |
 
 **Returns:**
 

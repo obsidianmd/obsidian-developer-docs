@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## AbstractInputSuggest class
 
-Attach to an <input> element or a &lt;<!-- -->div contentEditable<!-- -->&gt; to add type-ahead support.
+Attach to an `<input>` element or a `<div contentEditable>` to add type-ahead support.
 
 **Signature:**
 
@@ -34,6 +34,7 @@ export abstract class AbstractInputSuggest<T> extends PopoverSuggest<T>
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [`getSuggestions(query)`](obsidian.AbstractInputSuggest.getSuggestions.md) | <p><code>protected</code></p><p><code>abstract</code></p> |  |
 |  [`getValue()`](obsidian.AbstractInputSuggest.getValue.md) |  | Gets the value from the input element. |
 |  [`onSelect(callback)`](obsidian.AbstractInputSuggest.onSelect.md) |  | Registers a callback to handle when a suggestion is selected by the user. |
 |  [`setValue(value)`](obsidian.AbstractInputSuggest.setValue.md) |  | Sets the value into the input element. |

@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-export function resolveSubpath(cache: CachedMetadata, subpath: string): HeadingSubpathResult | BlockSubpathResult;
+export function resolveSubpath(cache: CachedMetadata, subpath: string): HeadingSubpathResult | BlockSubpathResult | null;
 ```
 
 ## Parameters
@@ -25,5 +25,5 @@ export function resolveSubpath(cache: CachedMetadata, subpath: string): HeadingS
 
 **Returns:**
 
-[`HeadingSubpathResult`](obsidian.HeadingSubpathResult.md)` | `[`BlockSubpathResult`](obsidian.BlockSubpathResult.md)
+[`HeadingSubpathResult`](obsidian.HeadingSubpathResult.md)` | `[`BlockSubpathResult`](obsidian.BlockSubpathResult.md)` | null`
 

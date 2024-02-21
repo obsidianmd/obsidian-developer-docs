@@ -24,7 +24,7 @@ processFrontMatter(file: TFile, fn: (frontmatter: any) => void, options?: DataWr
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>file</code> | [`TFile`](obsidian.TFile.md) | the file to be modified. Must be a markdown file. |
-|  <code>fn</code> | <code>(frontmatter: any) =&gt; void</code> | a callback function which mutates the frontMatter object synchronously. |
+|  <code>fn</code> | <code>(frontmatter: any) =&gt; void</code> | a callback function which mutates the frontmatter object synchronously. |
 |  <code>options</code> | [`DataWriteOptions`](obsidian.DataWriteOptions.md) | _(Optional)_ write options. |
 
 **Returns:**
