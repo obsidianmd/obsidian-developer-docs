@@ -96,7 +96,7 @@ declare global {
          * Returns whether this element is shown, when the element is attached to the DOM and
          * none of the parent and ancestor elements are hidden with `display: none`.
          *
-         * Exception: Does not work on <body> and <html>, or on elements with `position: fixed`.
+         * Exception: Does not work on `<body>` and `<html>`, or on elements with `position: fixed`.
          */
         isShown(): boolean;
         setCssStyles(styles: Partial<CSSStyleDeclaration>): void;
@@ -282,7 +282,7 @@ declare global {
 }
 
 /**
- * Attach to an <input> element or a <div contentEditable> to add type-ahead
+ * Attach to an `<input>` element or a `<div contentEditable>` to add type-ahead
  * support.
  *
  * @public
@@ -311,11 +311,15 @@ export abstract class AbstractInputSuggest<T> extends PopoverSuggest<T> {
      */
     getValue(): string;
 
+    /** @public */
+    protected abstract getSuggestions(query: string): T[] | Promise<T[]>;
+
     /**
      * Registers a callback to handle when a suggestion is selected by the user.
      * @public
      */
     onSelect(callback: (value: T, evt: MouseEvent | KeyboardEvent) => any): this;
+
 }
 
 /**
@@ -631,25 +635,37 @@ export interface Command {
     name: string;
     /**
      * Icon ID to be used in the toolbar.
+     * See {@link https://docs.obsidian.md/Plugins/User+interface/Icons} for available icons and how to add your own.
      * @public
      */
     icon?: IconName;
     /** @public */
     mobileOnly?: boolean;
     /**
-     * Whether holding the hotkey should repeatedly trigger this command. Defaults to false.
+     * Whether holding the hotkey should repeatedly trigger this command.
+     * @defaultValue false
      * @public
      */
     repeatable?: boolean;
     /**
      * Simple callback, triggered globally.
+     * @example
+     * ```ts
+     * this.addCommand({
+     *   id: "print-greeting-to-console",
+     *   name: "Print greeting to console",
+     *   callback: () => {
+     *     console.log("Hey, you!");
+     *   },
+     * });
+     * ```
      * @public
      */
     callback?: () => any;
     /**
      * Complex callback, overrides the simple callback.
      * Used to "check" whether your command can be performed in the current circumstances.
-     * For example, if your command requires the active focused pane to be a MarkdownSourceView, then
+     * For example, if your command requires the active focused pane to be a MarkdownView, then
      * you should only return true if the condition is satisfied. Returning false or undefined causes
      * the command to be hidden from the command palette.
      *
@@ -657,6 +673,27 @@ export interface Command {
      * If checking is true, then this function should not perform any action.
      * If checking is false, then this function should perform the action.
      * @returns Whether this command can be executed at the moment.
+     *
+     * @example
+     * ```ts
+     * this.addCommand({
+     *   id: 'example-command',
+     *   name: 'Example command',
+     *   checkCallback: (checking: boolean) => {
+     *     const value = getRequiredValue();
+     *
+     *     if (value) {
+     *       if (!checking) {
+     *         doCommand(value);
+     *       }
+     *       return true;
+     *     }
+     *
+     *     return false;
+     *   }
+     * });
+     * ```
+     *
      * @public
      */
     checkCallback?: (checking: boolean) => boolean | void;
@@ -664,12 +701,44 @@ export interface Command {
     /**
      * A command callback that is only triggered when the user is in an editor.
      * Overrides `callback` and `checkCallback`
+     * @example
+     * ```ts
+     * this.addCommand({
+     *   id: 'example-command',
+     *   name: 'Example command',
+     *   editorCallback: (editor: Editor, view: MarkdownView) => {
+     *     const sel = editor.getSelection();
+     *
+     *     console.log(`You have selected: ${sel}`);
+     *   }
+     * });
+     * ```
      * @public
      */
     editorCallback?: (editor: Editor, ctx: MarkdownView | MarkdownFileInfo) => any;
     /**
      * A command callback that is only triggered when the user is in an editor.
      * Overrides `editorCallback`, `callback` and `checkCallback`
+     * @example
+     * ```ts
+     * this.addCommand({
+     *   id: 'example-command',
+     *   name: 'Example command',
+     *   editorCheckCallback: (checking: boolean, editor: Editor, view: MarkdownView) => {
+     *     const value = getRequiredValue();
+     *
+     *     if (value) {
+     *       if (!checking) {
+     *         doCommand(value);
+     *       }
+     *
+     *       return true;
+     *     }
+     *
+     *     return false;
+     *   }
+     * });
+     * ```
      * @public
      */
     editorCheckCallback?: (checking: boolean, editor: Editor, ctx: MarkdownView | MarkdownFileInfo) => boolean | void;
@@ -861,7 +930,7 @@ export interface DataAdapter {
     /**
      * Remove a directory.
      * @param normalizedPath - path to folder, use {@link normalizePath} to normalize beforehand.
-     * @param recursive - If `true`, delete folders under this folder recursively, if `false´ the folder needs to be empty.
+     * @param recursive - If `true`, delete folders under this folder recursively, if `false` the folder needs to be empty.
      * @public
      */
     rmdir(normalizedPath: string, recursive: boolean): Promise<void>;
@@ -922,7 +991,7 @@ export interface DataWriteOptions {
  *     console.log(text);
  * }, 1000, true);
  * debounced("Hello world"); // this will not be printed
- * sleep(500);
+ * await sleep(500);
  * debounced("World, hello"); // this will be printed to the console.
  * ```
  * @public
@@ -1235,13 +1304,11 @@ export interface EditorTransaction {
 }
 
 /**
- * Use this StateField to get a reference to the MarkdownView.
- * This is now deprecated because it is possible for an editor to not be associated with a MarkdownView.
- * @see {@link editorInfoField} - for the new recommended field to use.
+ * This is now deprecated - it is now mapped directly to `editorInfoField`, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily.
  * @public
  * @deprecated use {@link editorInfoField} instead.
  */
-export const editorViewField: StateField<MarkdownView>;
+export const editorViewField: StateField<MarkdownFileInfo>;
 
 /**
  * @public
@@ -1358,14 +1425,25 @@ export class FileManager {
      * Remember to handle errors thrown by this method.
      *
      * @param file - the file to be modified. Must be a markdown file.
-     * @param fn - a callback function which mutates the frontMatter object synchronously.
+     * @param fn - a callback function which mutates the frontmatter object synchronously.
      * @param options - write options.
      * @throws YAMLParseError if the YAML parsing fails
      * @throws any errors that your callback function throws
      * @public
      */
-    processFrontMatter(file: TFile, fn: (frontmatter: any) => void, options?: DataWriteOptions): Promise<void>;
+    processFrontMatter(file: TFile, fn: (frontmatter: Frontmatter) => void, options?: DataWriteOptions): Promise<void>;
 
+    /**
+     * Resolves a unique path for the attachment file being saved.
+     * Ensures that the parent directory exists and dedupes the
+     * filename if the destination filename already exists.
+     *
+     * @param filename Name of the attachment being saved
+     * @param sourcePath The path to the note associated with this attachment, defaults to the workspace's active file.
+     * @returns Full path for where the attachment should be saved, according to the user's settings
+     * @public
+     */
+    getAvailablePathForAttachment(filename: string, sourcePath?: string): Promise<string>;
 }
 
 /**
@@ -1571,6 +1649,20 @@ export interface FrontMatterCache {
     [key: string]: any;
 }
 
+/** @public */
+export interface FrontMatterInfo {
+    /** @public Whether this file has a frontmatter block */
+    exists: boolean;
+    /** @public String representation of the frontmatter */
+    frontmatter: string;
+    /** @public Start of the frontmatter contents (excluding the ---) */
+    from: number;
+    /** @public End of the frontmatter contents (excluding the ---) */
+    to: number;
+    /** @public Offset where the frontmatter block ends (including the ---) */
+    contentStart: number;
+}
+
 /**
  * @public
  */
@@ -1633,6 +1725,14 @@ export function getAllTags(cache: CachedMetadata): string[] | null;
 
 /** @public */
 export function getBlobArrayBuffer(blob: Blob): Promise<ArrayBuffer>;
+
+/**
+ * Given the contents of a file, get information about the frontmatter of the file, including
+ * whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text.
+ *
+ * @public
+ */
+export function getFrontMatterInfo(content: string): FrontMatterInfo;
 
 /**
  * Create an SVG from an iconId. Returns null if no icon associated with the iconId.
@@ -1838,16 +1938,27 @@ export function iterateCacheRefs(cache: CachedMetadata, cb: (ref: ReferenceCache
  */
 export function iterateRefs(refs: Reference[], cb: (ref: Reference) => boolean | void): boolean;
 
-/** @public */
+/**
+ * Manages keymap lifecycle for different {@link Scope}s.
+ *
+ * @public
+ */
 export class Keymap {
 
-    /** @public */
+    /**
+     * Push a scope onto the scope stack, setting it as the active scope to handle all key events.
+     * @public
+     */
     pushScope(scope: Scope): void;
-    /** @public */
+    /**
+     * Remove a scope from the scope stack.
+     * If the given scope is active, the next scope in the stack will be made active.
+     * @public
+     */
     popScope(scope: Scope): void;
 
     /**
-     * Checks whether the modifier key is pressed during this event
+     * Checks whether the modifier key is pressed during this event.
      * @public
      */
     static isModifier(evt: MouseEvent | TouchEvent | KeyboardEvent, modifier: Modifier): boolean;
@@ -1866,7 +1977,10 @@ export class Keymap {
  * @public
  */
 export interface KeymapContext extends KeymapInfo {
-    /** @public */
+    /**
+     * Interpreted virtual key.
+     * @public
+     */
     vkey: string;
 }
 
@@ -1950,7 +2064,6 @@ export interface LivePreviewState {
      * @public
      */
     mousedown: boolean;
-
 }
 
 /**
@@ -2253,62 +2366,6 @@ export interface MarkdownSectionInformation {
     lineStart: number;
     /** @public */
     lineEnd: number;
-}
-
-/**
- * @public
- */
-export class MarkdownSourceView implements MarkdownSubView, HoverParent, MarkdownFileInfo {
-
-    /** @public */
-    app: App;
-    /**
-     * @deprecated - Please use {@link MarkdownView#editor} instead.
-     * If you have to use this because you're augmenting specific CodeMirror 5 implementations,
-     * be aware that it will only work in source code mode on the desktop app, and it will
-     * not work on Mobile, or once WYSIWYG mode is released.
-     * @public
-     */
-    cmEditor: CodeMirror.Editor;
-
-    /** @public */
-    hoverPopover: HoverPopover;
-
-    /**
-     * @public
-     */
-    constructor(view: MarkdownView);
-
-    /**
-     * @public
-     */
-    clear(): void;
-    /**
-     * @public
-     */
-    get(): string;
-    /**
-     * @public
-     */
-    set(data: string, clear: boolean): void;
-
-    /** @public */
-    get file(): TFile;
-
-    /**
-     * @public
-     */
-    getSelection(): string;
-
-    /**
-     * @public
-     */
-    getScroll(): number;
-    /**
-     * @public
-     */
-    applyScroll(scroll: number): void;
-
 }
 
 /**
@@ -2647,6 +2704,15 @@ export class Modal implements CloseableComponent {
      */
     onClose(): void;
 
+    /**
+     * @public
+     */
+    setTitle(title: string): this;
+    /**
+     * @public
+     */
+    setContent(content: string | DocumentFragment): this;
+
 }
 
 /**
@@ -2944,14 +3010,7 @@ export abstract class Plugin extends Component {
      * @public
      */
     registerMarkdownCodeBlockProcessor(language: string, handler: (source: string, el: HTMLElement, ctx: MarkdownPostProcessorContext) => Promise<any> | void, sortOrder?: number): MarkdownPostProcessor;
-    /**
-     * Runs callback on all currently loaded instances of CodeMirror,
-     * then registers the callback for all future CodeMirror instances.
-     * @public
-     * @deprecated - This is only used with the legacy editor, which is no longer maintained,
-     * and will be removed in a future update.
-     */
-    registerCodeMirror(callback: (cm: CodeMirror.Editor) => any): void;
+
     /**
      * Registers a CodeMirror 6 extension.
      * To reconfigure cm6 extensions for a plugin on the fly, an array should be passed in, and modified dynamically.
@@ -2988,6 +3047,16 @@ export abstract class Plugin extends Component {
      */
     saveData(data: any): Promise<void>;
 
+    /**
+     * Called when the `data.json` file is modified on disk externally from Obsidian.
+     * This usually means that a Sync service or external program has modified
+     * the plugin settings.
+     *
+     * Implement this method to reload plugin settings when they have changed externally.
+     *
+     * @public
+     */
+    onExternalSettingsChange?(): any;
 }
 
 
@@ -3175,6 +3244,7 @@ export class ProgressBarComponent extends ValueComponent<number> {
      * @public
      */
     setValue(value: number): this;
+
 }
 
 /**
@@ -3294,7 +3364,7 @@ export function requireApiVersion(version: string): boolean;
 /**
  * @public
  */
-export function resolveSubpath(cache: CachedMetadata, subpath: string): HeadingSubpathResult | BlockSubpathResult;
+export function resolveSubpath(cache: CachedMetadata, subpath: string): HeadingSubpathResult | BlockSubpathResult | null;
 
 /**
  * @public
@@ -3321,6 +3391,8 @@ export interface RGB {
 export function sanitizeHTMLToDom(html: string): DocumentFragment;
 
 /**
+ * A scope receives keyboard events and binds callbacks to given hotkeys.
+ * Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys.
  * @public
  */
 export class Scope {
@@ -3329,15 +3401,16 @@ export class Scope {
      * @public
      */
     constructor(parent?: Scope);
-
     /**
-     * @public
+     * Add a keymap event handler to this scope.
      * @param modifiers - `Mod`, `Ctrl`, `Meta`, `Shift`, or `Alt`. `Mod` translates to `Meta` on macOS and `Ctrl` otherwise.
-     * @param key - Keycode from https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values
-     * @param func - the callback
+     * @param key - Keycode from https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key%5FValues
+     * @param func - the callback that will be called when a user triggers the keybind.
+     * @public
      */
     register(modifiers: Modifier[], key: string | null, func: KeymapEventListener): KeymapEventHandler;
     /**
+     * Remove an existing keymap event handler.
      * @public
      */
     unregister(handler: KeymapEventHandler): void;
@@ -3998,7 +4071,24 @@ export class Vault extends Events {
     getName(): string;
 
     /**
-     * Get a file or folder inside the vault. If you need a file, you should test the returned object with `instanceof TFile`. Otherwise, if you need a folder, you should test it with `instanceof TFolder`.
+     * Get a file inside the vault at the given path.
+     * Returns `null` if the file does not exist.
+     *
+     * @param path
+     * @public
+     */
+    getFileByPath(path: string): TFile | null;
+    /**
+     * Get a folder inside the vault at the given path.
+     * Returns `null` if the folder does not exist.
+     *
+     * @param path
+     * @public
+     */
+    getFolderByPath(path: string): TFolder | null;
+    /**
+     * Get a file or folder inside the vault at the given path. To check if the return type is
+     * a file, use `instanceof TFile`. To check if it is a folder, use `instanceof TFolder`.
      * @param path - vault absolute path to the folder or file, with extension, case sensitive.
      * @returns the abstract file, if it's found.
      * @public
@@ -4189,6 +4279,7 @@ export abstract class View extends Component {
      * @public
      */
     navigation: boolean;
+
     /**
      * @public
      */
@@ -4197,7 +4288,18 @@ export abstract class View extends Component {
      * @public
      */
     containerEl: HTMLElement;
-
+    /**
+     * Assign an optional scope to your view to register hotkeys for when the view
+     * is in focus.
+     *
+     * @example
+     * ```ts
+     * this.scope = new Scope(this.app.scope);
+     * ```
+     * @default null
+     * @public
+     */
+    scope: Scope | null;
     /**
      * @public
      */
@@ -4463,7 +4565,7 @@ export class Workspace extends Events {
     /**
      * @public
      */
-    getLeafById(id: string): WorkspaceLeaf;
+    getLeafById(id: string): WorkspaceLeaf | null;
     /**
      * @public
      */
@@ -4476,11 +4578,11 @@ export class Workspace extends Events {
     /**
      * @public
      */
-    getLeftLeaf(split: boolean): WorkspaceLeaf;
+    getLeftLeaf(split: boolean): WorkspaceLeaf | null;
     /**
      * @public
      */
-    getRightLeaf(split: boolean): WorkspaceLeaf;
+    getRightLeaf(split: boolean): WorkspaceLeaf | null;
 
     /**
      * @public
@@ -4534,11 +4636,6 @@ export class Workspace extends Events {
     /**
      * @public
      */
-    iterateCodeMirrors(callback: (cm: CodeMirror.Editor) => any): void;
-
-    /**
-     * @public
-     */
     on(name: 'quick-preview', callback: (file: TFile, data: string) => any, ctx?: any): EventRef;
     /**
      * @public
@@ -4582,6 +4679,11 @@ export class Workspace extends Events {
     on(name: 'files-menu', callback: (menu: Menu, files: TAbstractFile[], source: string, leaf?: WorkspaceLeaf) => any, ctx?: any): EventRef;
 
     /**
+     * Triggered when the user opens the context menu on an external URL.
+     * @public
+     */
+    on(name: 'url-menu', callback: (menu: Menu, url: string) => any, ctx?: any): EventRef;
+    /**
      * Triggered when the user opens the context menu on an editor.
      * @public
      */
@@ -4591,6 +4693,7 @@ export class Workspace extends Events {
      * @public
      */
     on(name: 'editor-change', callback: (editor: Editor, info: MarkdownView | MarkdownFileInfo) => any, ctx?: any): EventRef;
+
     /**
      * Triggered when the editor receives a paste event.
      * Check for `evt.defaultPrevented` before attempting to handle this event, and return if it has been already handled.
@@ -4605,11 +4708,6 @@ export class Workspace extends Events {
      * @public
      */
     on(name: 'editor-drop', callback: (evt: DragEvent, editor: Editor, info: MarkdownView | MarkdownFileInfo) => any, ctx?: any): EventRef;
-
-    /**
-     * @public
-     */
-    on(name: 'codemirror', callback: (cm: CodeMirror.Editor) => any, ctx?: any): EventRef;
 
     /**
      * Triggered when the app is about to quit. Not guaranteed to actually run.
