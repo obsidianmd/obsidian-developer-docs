@@ -42,14 +42,14 @@ async function renameFiles(folderPath) {
           // Step 2: add alias so links still work
           const fileContent = await fs.readFile(newFilePath, 'utf-8');
           let newFileContent = `---
-aliases: "${newFileName}"
+aliases: "${newFileName.slice(0, -3)}"
 cssclasses: hide-title
 ---
 
 `+ fileContent;
 
           // Somehow we still get Plugin_2 even if `obsidian.d.ts` doesn't contain any reference to it
-          newFileContent = newFileContent.replaceAll('obsidian.', '').replaceAll('Plugin_2', 'Plugin').replaceAll('Plugin\_2', 'Plugin');
+          newFileContent = newFileContent.replaceAll('obsidian.', '').replaceAll('Plugin_2', 'Plugin').replaceAll('Plugin\_2', 'Plugin').replaceAll('Plugin\\_2', 'Plugin');
           await fs.writeFile(newFilePath, newFileContent, 'utf-8');
         } catch (err) {
           console.error(`Error renaming file: ${err.message}`);
