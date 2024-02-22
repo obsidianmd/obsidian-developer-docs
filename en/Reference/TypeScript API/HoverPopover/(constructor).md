@@ -1,5 +1,5 @@
 ---
-aliases: "HoverPopover.(constructor).md"
+aliases: "HoverPopover.(constructor)"
 cssclasses: hide-title
 ---
 

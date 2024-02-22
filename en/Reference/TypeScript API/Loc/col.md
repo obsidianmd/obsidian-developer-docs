@@ -1,5 +1,5 @@
 ---
-aliases: "Loc.col.md"
+aliases: "Loc.col"
 cssclasses: hide-title
 ---
 

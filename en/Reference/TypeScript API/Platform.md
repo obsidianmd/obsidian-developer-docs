@@ -1,5 +1,5 @@
 ---
-aliases: "Platform.md"
+aliases: "Platform"
 cssclasses: hide-title
 ---
 

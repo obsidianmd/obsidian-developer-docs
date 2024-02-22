@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.changeLayout.md"
+aliases: "Workspace.changeLayout"
 cssclasses: hide-title
 ---
 

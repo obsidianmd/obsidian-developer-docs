@@ -1,5 +1,5 @@
 ---
-aliases: "arrayBufferToBase64.md"
+aliases: "arrayBufferToBase64"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractInputSuggest.onSelect.md"
+aliases: "AbstractInputSuggest.onSelect"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Scope.md"
+aliases: "Scope"
 cssclasses: hide-title
 ---
 

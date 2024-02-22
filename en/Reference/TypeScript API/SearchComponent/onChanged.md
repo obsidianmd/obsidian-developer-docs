@@ -1,5 +1,5 @@
 ---
-aliases: "SearchComponent.onChanged.md"
+aliases: "SearchComponent.onChanged"
 cssclasses: hide-title
 ---
 

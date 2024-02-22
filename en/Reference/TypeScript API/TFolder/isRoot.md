@@ -1,5 +1,5 @@
 ---
-aliases: "TFolder.isRoot.md"
+aliases: "TFolder.isRoot"
 cssclasses: hide-title
 ---
 

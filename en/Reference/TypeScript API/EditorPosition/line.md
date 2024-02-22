@@ -1,5 +1,5 @@
 ---
-aliases: "EditorPosition.line.md"
+aliases: "EditorPosition.line"
 cssclasses: hide-title
 ---
 

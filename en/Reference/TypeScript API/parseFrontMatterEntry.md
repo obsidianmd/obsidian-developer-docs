@@ -1,5 +1,5 @@
 ---
-aliases: "parseFrontMatterEntry.md"
+aliases: "parseFrontMatterEntry"
 cssclasses: hide-title
 ---
 

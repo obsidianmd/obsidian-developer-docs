@@ -1,5 +1,5 @@
 ---
-aliases: "ButtonComponent.onClick.md"
+aliases: "ButtonComponent.onClick"
 cssclasses: hide-title
 ---
 

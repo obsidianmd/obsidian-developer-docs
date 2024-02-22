@@ -1,5 +1,5 @@
 ---
-aliases: "PluginSettingTab.(constructor).md"
+aliases: "PluginSettingTab.(constructor)"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "ButtonComponent.setCta.md"
+aliases: "ButtonComponent.setCta"
 cssclasses: hide-title
 ---
 

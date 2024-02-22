@@ -1,5 +1,5 @@
 ---
-aliases: "parseLinktext.md"
+aliases: "parseLinktext"
 cssclasses: hide-title
 ---
 

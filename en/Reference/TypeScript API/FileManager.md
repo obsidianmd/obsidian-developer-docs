@@ -1,5 +1,5 @@
 ---
-aliases: "FileManager.md"
+aliases: "FileManager"
 cssclasses: hide-title
 ---
 

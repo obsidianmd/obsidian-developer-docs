@@ -1,5 +1,5 @@
 ---
-aliases: "DataWriteOptions.ctime.md"
+aliases: "DataWriteOptions.ctime"
 cssclasses: hide-title
 ---
 

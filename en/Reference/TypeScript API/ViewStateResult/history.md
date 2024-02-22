@@ -1,5 +1,5 @@
 ---
-aliases: "ViewStateResult.history.md"
+aliases: "ViewStateResult.history"
 cssclasses: hide-title
 ---
 

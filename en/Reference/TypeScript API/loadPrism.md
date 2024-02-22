@@ -1,5 +1,5 @@
 ---
-aliases: "loadPrism.md"
+aliases: "loadPrism"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addColorPicker.md"
+aliases: "Setting.addColorPicker"
 cssclasses: hide-title
 ---
 

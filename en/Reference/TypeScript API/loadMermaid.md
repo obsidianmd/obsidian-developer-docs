@@ -1,5 +1,5 @@
 ---
-aliases: "loadMermaid.md"
+aliases: "loadMermaid"
 cssclasses: hide-title
 ---
 

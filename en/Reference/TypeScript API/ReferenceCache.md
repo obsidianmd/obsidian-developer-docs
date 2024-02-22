@@ -1,5 +1,5 @@
 ---
-aliases: "ReferenceCache.md"
+aliases: "ReferenceCache"
 cssclasses: hide-title
 ---
 

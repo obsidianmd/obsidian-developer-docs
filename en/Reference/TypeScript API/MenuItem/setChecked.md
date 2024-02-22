@@ -1,5 +1,5 @@
 ---
-aliases: "MenuItem.setChecked.md"
+aliases: "MenuItem.setChecked"
 cssclasses: hide-title
 ---
 

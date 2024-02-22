@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.hasFocus.md"
+aliases: "Editor.hasFocus"
 cssclasses: hide-title
 ---
 

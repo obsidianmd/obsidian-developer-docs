@@ -1,5 +1,5 @@
 ---
-aliases: "FileView.setState.md"
+aliases: "FileView.setState"
 cssclasses: hide-title
 ---
 

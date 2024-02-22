@@ -1,5 +1,5 @@
 ---
-aliases: "parseFrontMatterStringArray.md"
+aliases: "parseFrontMatterStringArray"
 cssclasses: hide-title
 ---
 

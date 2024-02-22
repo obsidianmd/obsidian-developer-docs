@@ -1,5 +1,5 @@
 ---
-aliases: "HoverParent.hoverPopover.md"
+aliases: "HoverParent.hoverPopover"
 cssclasses: hide-title
 ---
 

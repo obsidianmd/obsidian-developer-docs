@@ -1,5 +1,5 @@
 ---
-aliases: "App.vault.md"
+aliases: "App.vault"
 cssclasses: hide-title
 ---
 

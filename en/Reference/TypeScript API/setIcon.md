@@ -1,5 +1,5 @@
 ---
-aliases: "setIcon.md"
+aliases: "setIcon"
 cssclasses: hide-title
 ---
 

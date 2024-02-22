@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractTextComponent.md"
+aliases: "AbstractTextComponent"
 cssclasses: hide-title
 ---
 

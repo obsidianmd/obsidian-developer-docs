@@ -1,5 +1,5 @@
 ---
-aliases: "MetadataCache.fileToLinktext.md"
+aliases: "MetadataCache.fileToLinktext"
 cssclasses: hide-title
 ---
 

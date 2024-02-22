@@ -1,5 +1,5 @@
 ---
-aliases: "SliderComponent.setLimits.md"
+aliases: "SliderComponent.setLimits"
 cssclasses: hide-title
 ---
 

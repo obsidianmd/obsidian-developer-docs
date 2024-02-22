@@ -1,5 +1,5 @@
 ---
-aliases: "ViewState.type.md"
+aliases: "ViewState.type"
 cssclasses: hide-title
 ---
 

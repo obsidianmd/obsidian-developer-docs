@@ -1,5 +1,5 @@
 ---
-aliases: "ProgressBarComponent.(constructor).md"
+aliases: "ProgressBarComponent.(constructor)"
 cssclasses: hide-title
 ---
 

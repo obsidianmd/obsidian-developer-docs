@@ -1,5 +1,5 @@
 ---
-aliases: "Tasks.isEmpty.md"
+aliases: "Tasks.isEmpty"
 cssclasses: hide-title
 ---
 

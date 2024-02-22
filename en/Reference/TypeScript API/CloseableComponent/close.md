@@ -1,5 +1,5 @@
 ---
-aliases: "CloseableComponent.close.md"
+aliases: "CloseableComponent.close"
 cssclasses: hide-title
 ---
 

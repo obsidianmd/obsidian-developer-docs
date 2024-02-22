@@ -1,5 +1,5 @@
 ---
-aliases: "Component.addChild.md"
+aliases: "Component.addChild"
 cssclasses: hide-title
 ---
 

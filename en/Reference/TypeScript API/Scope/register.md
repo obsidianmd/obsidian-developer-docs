@@ -1,5 +1,5 @@
 ---
-aliases: "Scope.register.md"
+aliases: "Scope.register"
 cssclasses: hide-title
 ---
 

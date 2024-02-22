@@ -1,5 +1,5 @@
 ---
-aliases: "FuzzySuggestModal.getItemText.md"
+aliases: "FuzzySuggestModal.getItemText"
 cssclasses: hide-title
 ---
 

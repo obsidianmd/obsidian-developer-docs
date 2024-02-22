@@ -1,5 +1,5 @@
 ---
-aliases: "PaneType.md"
+aliases: "PaneType"
 cssclasses: hide-title
 ---
 

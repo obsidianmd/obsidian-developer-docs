@@ -1,5 +1,5 @@
 ---
-aliases: "RequestUrlResponsePromise.text.md"
+aliases: "RequestUrlResponsePromise.text"
 cssclasses: hide-title
 ---
 

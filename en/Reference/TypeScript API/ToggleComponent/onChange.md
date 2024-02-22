@@ -1,5 +1,5 @@
 ---
-aliases: "ToggleComponent.onChange.md"
+aliases: "ToggleComponent.onChange"
 cssclasses: hide-title
 ---
 

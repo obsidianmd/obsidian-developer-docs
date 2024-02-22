@@ -1,5 +1,5 @@
 ---
-aliases: "SearchResult.matches.md"
+aliases: "SearchResult.matches"
 cssclasses: hide-title
 ---
 

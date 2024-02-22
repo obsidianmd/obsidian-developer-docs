@@ -1,5 +1,5 @@
 ---
-aliases: "FileView.onUnloadFile.md"
+aliases: "FileView.onUnloadFile"
 cssclasses: hide-title
 ---
 

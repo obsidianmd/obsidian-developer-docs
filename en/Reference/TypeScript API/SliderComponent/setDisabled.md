@@ -1,5 +1,5 @@
 ---
-aliases: "SliderComponent.setDisabled.md"
+aliases: "SliderComponent.setDisabled"
 cssclasses: hide-title
 ---
 

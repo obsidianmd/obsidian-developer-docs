@@ -1,5 +1,5 @@
 ---
-aliases: "Modal.titleEl.md"
+aliases: "Modal.titleEl"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Notice.setMessage.md"
+aliases: "Notice.setMessage"
 cssclasses: hide-title
 ---
 

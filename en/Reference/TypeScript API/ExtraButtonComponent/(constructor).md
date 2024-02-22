@@ -1,5 +1,5 @@
 ---
-aliases: "ExtraButtonComponent.(constructor).md"
+aliases: "ExtraButtonComponent.(constructor)"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownSubView.applyScroll.md"
+aliases: "MarkdownSubView.applyScroll"
 cssclasses: hide-title
 ---
 

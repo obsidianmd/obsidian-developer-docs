@@ -1,5 +1,5 @@
 ---
-aliases: "Command.hotkeys.md"
+aliases: "Command.hotkeys"
 cssclasses: hide-title
 ---
 

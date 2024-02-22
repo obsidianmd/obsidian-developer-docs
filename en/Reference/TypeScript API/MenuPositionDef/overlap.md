@@ -1,5 +1,5 @@
 ---
-aliases: "MenuPositionDef.overlap.md"
+aliases: "MenuPositionDef.overlap"
 cssclasses: hide-title
 ---
 

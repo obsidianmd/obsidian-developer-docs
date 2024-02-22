@@ -1,5 +1,5 @@
 ---
-aliases: "App.metadataCache.md"
+aliases: "App.metadataCache"
 cssclasses: hide-title
 ---
 

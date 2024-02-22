@@ -1,5 +1,5 @@
 ---
-aliases: "HoverParent.md"
+aliases: "HoverParent"
 cssclasses: hide-title
 ---
 

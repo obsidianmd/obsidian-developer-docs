@@ -1,5 +1,5 @@
 ---
-aliases: "ColorComponent.md"
+aliases: "ColorComponent"
 cssclasses: hide-title
 ---
 

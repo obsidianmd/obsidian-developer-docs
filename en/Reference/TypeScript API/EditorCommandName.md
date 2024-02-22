@@ -1,5 +1,5 @@
 ---
-aliases: "EditorCommandName.md"
+aliases: "EditorCommandName"
 cssclasses: hide-title
 ---
 

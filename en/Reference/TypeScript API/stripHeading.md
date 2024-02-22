@@ -1,5 +1,5 @@
 ---
-aliases: "stripHeading.md"
+aliases: "stripHeading"
 cssclasses: hide-title
 ---
 

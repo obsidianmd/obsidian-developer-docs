@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.descEl.md"
+aliases: "Setting.descEl"
 cssclasses: hide-title
 ---
 

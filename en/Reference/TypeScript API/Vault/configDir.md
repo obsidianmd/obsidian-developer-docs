@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.configDir.md"
+aliases: "Vault.configDir"
 cssclasses: hide-title
 ---
 

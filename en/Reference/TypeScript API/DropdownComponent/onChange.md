@@ -1,5 +1,5 @@
 ---
-aliases: "DropdownComponent.onChange.md"
+aliases: "DropdownComponent.onChange"
 cssclasses: hide-title
 ---
 

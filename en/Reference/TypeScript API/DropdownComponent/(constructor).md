@@ -1,5 +1,5 @@
 ---
-aliases: "DropdownComponent.(constructor).md"
+aliases: "DropdownComponent.(constructor)"
 cssclasses: hide-title
 ---
 

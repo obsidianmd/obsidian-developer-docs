@@ -1,5 +1,5 @@
 ---
-aliases: "Keymap.isModifier.md"
+aliases: "Keymap.isModifier"
 cssclasses: hide-title
 ---
 

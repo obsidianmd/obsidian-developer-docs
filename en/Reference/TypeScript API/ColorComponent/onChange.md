@@ -1,5 +1,5 @@
 ---
-aliases: "ColorComponent.onChange.md"
+aliases: "ColorComponent.onChange"
 cssclasses: hide-title
 ---
 

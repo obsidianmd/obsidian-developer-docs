@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceLeaf.getEphemeralState.md"
+aliases: "WorkspaceLeaf.getEphemeralState"
 cssclasses: hide-title
 ---
 

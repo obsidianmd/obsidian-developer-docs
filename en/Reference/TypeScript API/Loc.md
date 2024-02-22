@@ -1,5 +1,5 @@
 ---
-aliases: "Loc.md"
+aliases: "Loc"
 cssclasses: hide-title
 ---
 

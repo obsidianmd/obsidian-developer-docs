@@ -1,5 +1,5 @@
 ---
-aliases: "DropdownComponent.setDisabled.md"
+aliases: "DropdownComponent.setDisabled"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "View.getIcon.md"
+aliases: "View.getIcon"
 cssclasses: hide-title
 ---
 

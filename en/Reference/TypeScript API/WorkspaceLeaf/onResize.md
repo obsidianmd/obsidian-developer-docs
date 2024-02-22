@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceLeaf.onResize.md"
+aliases: "WorkspaceLeaf.onResize"
 cssclasses: hide-title
 ---
 

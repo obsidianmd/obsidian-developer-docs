@@ -1,5 +1,5 @@
 ---
-aliases: "FileView.(constructor).md"
+aliases: "FileView.(constructor)"
 cssclasses: hide-title
 ---
 

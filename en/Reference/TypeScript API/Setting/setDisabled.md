@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.setDisabled.md"
+aliases: "Setting.setDisabled"
 cssclasses: hide-title
 ---
 

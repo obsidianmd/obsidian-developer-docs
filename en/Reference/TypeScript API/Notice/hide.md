@@ -1,5 +1,5 @@
 ---
-aliases: "Notice.hide.md"
+aliases: "Notice.hide"
 cssclasses: hide-title
 ---
 

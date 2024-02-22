@@ -1,5 +1,5 @@
 ---
-aliases: "fuzzySearch.md"
+aliases: "fuzzySearch"
 cssclasses: hide-title
 ---
 

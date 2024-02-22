@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.iterateRootLeaves.md"
+aliases: "Workspace.iterateRootLeaves"
 cssclasses: hide-title
 ---
 

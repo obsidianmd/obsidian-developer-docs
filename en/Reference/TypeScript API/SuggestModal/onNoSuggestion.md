@@ -1,5 +1,5 @@
 ---
-aliases: "SuggestModal.onNoSuggestion.md"
+aliases: "SuggestModal.onNoSuggestion"
 cssclasses: hide-title
 ---
 

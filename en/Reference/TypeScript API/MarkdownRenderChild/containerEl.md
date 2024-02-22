@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownRenderChild.containerEl.md"
+aliases: "MarkdownRenderChild.containerEl"
 cssclasses: hide-title
 ---
 

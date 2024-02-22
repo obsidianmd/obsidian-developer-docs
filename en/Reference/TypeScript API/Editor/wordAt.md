@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.wordAt.md"
+aliases: "Editor.wordAt"
 cssclasses: hide-title
 ---
 

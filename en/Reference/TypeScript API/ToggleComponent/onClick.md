@@ -1,5 +1,5 @@
 ---
-aliases: "ToggleComponent.onClick.md"
+aliases: "ToggleComponent.onClick"
 cssclasses: hide-title
 ---
 

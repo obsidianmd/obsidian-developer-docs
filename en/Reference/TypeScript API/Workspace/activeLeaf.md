@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.activeLeaf.md"
+aliases: "Workspace.activeLeaf"
 cssclasses: hide-title
 ---
 

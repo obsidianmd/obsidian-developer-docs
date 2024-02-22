@@ -1,5 +1,5 @@
 ---
-aliases: "Tasks.add.md"
+aliases: "Tasks.add"
 cssclasses: hide-title
 ---
 

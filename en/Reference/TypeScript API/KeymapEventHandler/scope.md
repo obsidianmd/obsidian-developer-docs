@@ -1,5 +1,5 @@
 ---
-aliases: "KeymapEventHandler.scope.md"
+aliases: "KeymapEventHandler.scope"
 cssclasses: hide-title
 ---
 

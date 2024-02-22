@@ -1,5 +1,5 @@
 ---
-aliases: "Tasks.addPromise.md"
+aliases: "Tasks.addPromise"
 cssclasses: hide-title
 ---
 

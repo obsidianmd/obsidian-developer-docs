@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.writeBinary.md"
+aliases: "FileSystemAdapter.writeBinary"
 cssclasses: hide-title
 ---
 

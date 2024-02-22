@@ -1,5 +1,5 @@
 ---
-aliases: "Command.mobileOnly.md"
+aliases: "Command.mobileOnly"
 cssclasses: hide-title
 ---
 

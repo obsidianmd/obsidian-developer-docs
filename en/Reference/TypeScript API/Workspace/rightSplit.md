@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.rightSplit.md"
+aliases: "Workspace.rightSplit"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Keymap.pushScope.md"
+aliases: "Keymap.pushScope"
 cssclasses: hide-title
 ---
 

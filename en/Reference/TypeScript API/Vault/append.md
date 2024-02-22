@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.append.md"
+aliases: "Vault.append"
 cssclasses: hide-title
 ---
 

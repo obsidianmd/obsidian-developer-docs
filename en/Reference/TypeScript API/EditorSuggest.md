@@ -1,5 +1,5 @@
 ---
-aliases: "EditorSuggest.md"
+aliases: "EditorSuggest"
 cssclasses: hide-title
 ---
 

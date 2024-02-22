@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.copy.md"
+aliases: "DataAdapter.copy"
 cssclasses: hide-title
 ---
 

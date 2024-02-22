@@ -1,5 +1,5 @@
 ---
-aliases: "FrontmatterLinkCache.key.md"
+aliases: "FrontmatterLinkCache.key"
 cssclasses: hide-title
 ---
 

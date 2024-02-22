@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.delete.md"
+aliases: "Vault.delete"
 cssclasses: hide-title
 ---
 

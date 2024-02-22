@@ -1,5 +1,5 @@
 ---
-aliases: "Command.callback.md"
+aliases: "Command.callback"
 cssclasses: hide-title
 ---
 

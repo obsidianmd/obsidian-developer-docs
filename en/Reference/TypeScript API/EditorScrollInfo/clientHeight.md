@@ -1,5 +1,5 @@
 ---
-aliases: "EditorScrollInfo.clientHeight.md"
+aliases: "EditorScrollInfo.clientHeight"
 cssclasses: hide-title
 ---
 

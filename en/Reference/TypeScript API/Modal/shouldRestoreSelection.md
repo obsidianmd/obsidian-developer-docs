@@ -1,5 +1,5 @@
 ---
-aliases: "Modal.shouldRestoreSelection.md"
+aliases: "Modal.shouldRestoreSelection"
 cssclasses: hide-title
 ---
 

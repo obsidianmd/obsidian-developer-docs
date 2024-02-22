@@ -1,5 +1,5 @@
 ---
-aliases: "ViewCreator.md"
+aliases: "ViewCreator"
 cssclasses: hide-title
 ---
 

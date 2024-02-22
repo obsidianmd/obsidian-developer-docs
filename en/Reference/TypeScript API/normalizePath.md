@@ -1,5 +1,5 @@
 ---
-aliases: "normalizePath.md"
+aliases: "normalizePath"
 cssclasses: hide-title
 ---
 

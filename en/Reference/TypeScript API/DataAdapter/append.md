@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.append.md"
+aliases: "DataAdapter.append"
 cssclasses: hide-title
 ---
 

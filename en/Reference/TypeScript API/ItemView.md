@@ -1,5 +1,5 @@
 ---
-aliases: "ItemView.md"
+aliases: "ItemView"
 cssclasses: hide-title
 ---
 

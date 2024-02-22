@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceSidedock.expand.md"
+aliases: "WorkspaceSidedock.expand"
 cssclasses: hide-title
 ---
 

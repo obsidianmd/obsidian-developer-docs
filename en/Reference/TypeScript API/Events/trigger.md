@@ -1,5 +1,5 @@
 ---
-aliases: "Events.trigger.md"
+aliases: "Events.trigger"
 cssclasses: hide-title
 ---
 

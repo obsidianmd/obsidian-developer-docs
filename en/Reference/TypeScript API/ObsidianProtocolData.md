@@ -1,5 +1,5 @@
 ---
-aliases: "ObsidianProtocolData.md"
+aliases: "ObsidianProtocolData"
 cssclasses: hide-title
 ---
 

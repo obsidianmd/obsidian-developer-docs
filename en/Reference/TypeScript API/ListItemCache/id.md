@@ -1,5 +1,5 @@
 ---
-aliases: "ListItemCache.id.md"
+aliases: "ListItemCache.id"
 cssclasses: hide-title
 ---
 

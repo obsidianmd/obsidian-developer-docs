@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.getRoot.md"
+aliases: "Vault.getRoot"
 cssclasses: hide-title
 ---
 

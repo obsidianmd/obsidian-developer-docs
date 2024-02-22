@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.requestSaveLayout.md"
+aliases: "Workspace.requestSaveLayout"
 cssclasses: hide-title
 ---
 

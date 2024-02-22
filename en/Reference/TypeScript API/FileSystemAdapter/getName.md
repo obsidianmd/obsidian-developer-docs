@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.getName.md"
+aliases: "FileSystemAdapter.getName"
 cssclasses: hide-title
 ---
 

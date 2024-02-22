@@ -1,5 +1,5 @@
 ---
-aliases: "SliderComponent.showTooltip.md"
+aliases: "SliderComponent.showTooltip"
 cssclasses: hide-title
 ---
 

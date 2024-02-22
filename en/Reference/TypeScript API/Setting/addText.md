@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addText.md"
+aliases: "Setting.addText"
 cssclasses: hide-title
 ---
 

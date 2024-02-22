@@ -1,5 +1,5 @@
 ---
-aliases: "getLinkpath.md"
+aliases: "getLinkpath"
 cssclasses: hide-title
 ---
 

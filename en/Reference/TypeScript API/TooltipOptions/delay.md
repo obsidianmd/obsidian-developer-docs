@@ -1,5 +1,5 @@
 ---
-aliases: "TooltipOptions.delay.md"
+aliases: "TooltipOptions.delay"
 cssclasses: hide-title
 ---
 

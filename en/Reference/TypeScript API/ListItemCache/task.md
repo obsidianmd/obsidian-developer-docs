@@ -1,5 +1,5 @@
 ---
-aliases: "ListItemCache.task.md"
+aliases: "ListItemCache.task"
 cssclasses: hide-title
 ---
 

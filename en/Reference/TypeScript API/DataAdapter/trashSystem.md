@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.trashSystem.md"
+aliases: "DataAdapter.trashSystem"
 cssclasses: hide-title
 ---
 

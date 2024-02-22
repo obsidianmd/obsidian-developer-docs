@@ -1,5 +1,5 @@
 ---
-aliases: "stringifyYaml.md"
+aliases: "stringifyYaml"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "editorInfoField.md"
+aliases: "editorInfoField"
 cssclasses: hide-title
 ---
 

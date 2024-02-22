@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceLeaf.getViewState.md"
+aliases: "WorkspaceLeaf.getViewState"
 cssclasses: hide-title
 ---
 

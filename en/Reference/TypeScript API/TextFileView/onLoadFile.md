@@ -1,5 +1,5 @@
 ---
-aliases: "TextFileView.onLoadFile.md"
+aliases: "TextFileView.onLoadFile"
 cssclasses: hide-title
 ---
 

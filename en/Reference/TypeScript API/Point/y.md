@@ -1,5 +1,5 @@
 ---
-aliases: "Point.y.md"
+aliases: "Point.y"
 cssclasses: hide-title
 ---
 

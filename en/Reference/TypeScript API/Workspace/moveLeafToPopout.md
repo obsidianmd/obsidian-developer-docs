@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.moveLeafToPopout.md"
+aliases: "Workspace.moveLeafToPopout"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "ButtonComponent.removeCta.md"
+aliases: "ButtonComponent.removeCta"
 cssclasses: hide-title
 ---
 

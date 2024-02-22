@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPostProcessorContext.getSectionInfo.md"
+aliases: "MarkdownPostProcessorContext.getSectionInfo"
 cssclasses: hide-title
 ---
 

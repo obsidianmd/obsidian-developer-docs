@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceWindowInitData.size.md"
+aliases: "WorkspaceWindowInitData.size"
 cssclasses: hide-title
 ---
 

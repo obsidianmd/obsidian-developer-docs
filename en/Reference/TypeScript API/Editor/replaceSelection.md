@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.replaceSelection.md"
+aliases: "Editor.replaceSelection"
 cssclasses: hide-title
 ---
 

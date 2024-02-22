@@ -1,5 +1,5 @@
 ---
-aliases: "View.icon.md"
+aliases: "View.icon"
 cssclasses: hide-title
 ---
 

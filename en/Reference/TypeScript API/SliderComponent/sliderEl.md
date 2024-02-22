@@ -1,5 +1,5 @@
 ---
-aliases: "SliderComponent.sliderEl.md"
+aliases: "SliderComponent.sliderEl"
 cssclasses: hide-title
 ---
 

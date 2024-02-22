@@ -1,5 +1,5 @@
 ---
-aliases: "Menu.showAtMouseEvent.md"
+aliases: "Menu.showAtMouseEvent"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.settingEl.md"
+aliases: "Setting.settingEl"
 cssclasses: hide-title
 ---
 

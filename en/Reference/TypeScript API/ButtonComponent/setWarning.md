@@ -1,5 +1,5 @@
 ---
-aliases: "ButtonComponent.setWarning.md"
+aliases: "ButtonComponent.setWarning"
 cssclasses: hide-title
 ---
 

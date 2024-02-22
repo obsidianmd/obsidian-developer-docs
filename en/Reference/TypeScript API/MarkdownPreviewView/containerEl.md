@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPreviewView.containerEl.md"
+aliases: "MarkdownPreviewView.containerEl"
 cssclasses: hide-title
 ---
 

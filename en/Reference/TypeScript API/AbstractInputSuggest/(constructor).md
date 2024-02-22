@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractInputSuggest.(constructor).md"
+aliases: "AbstractInputSuggest.(constructor)"
 cssclasses: hide-title
 ---
 

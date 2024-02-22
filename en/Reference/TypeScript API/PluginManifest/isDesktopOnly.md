@@ -1,5 +1,5 @@
 ---
-aliases: "PluginManifest.isDesktopOnly.md"
+aliases: "PluginManifest.isDesktopOnly"
 cssclasses: hide-title
 ---
 

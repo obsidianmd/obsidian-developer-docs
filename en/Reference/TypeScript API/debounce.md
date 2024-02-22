@@ -1,5 +1,5 @@
 ---
-aliases: "debounce.md"
+aliases: "debounce"
 cssclasses: hide-title
 ---
 

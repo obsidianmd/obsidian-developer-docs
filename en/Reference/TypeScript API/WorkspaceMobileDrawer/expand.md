@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceMobileDrawer.expand.md"
+aliases: "WorkspaceMobileDrawer.expand"
 cssclasses: hide-title
 ---
 

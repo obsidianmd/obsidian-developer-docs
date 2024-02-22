@@ -1,5 +1,5 @@
 ---
-aliases: "DropdownComponent.addOption.md"
+aliases: "DropdownComponent.addOption"
 cssclasses: hide-title
 ---
 

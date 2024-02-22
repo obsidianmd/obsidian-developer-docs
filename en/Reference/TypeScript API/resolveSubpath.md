@@ -1,5 +1,5 @@
 ---
-aliases: "resolveSubpath.md"
+aliases: "resolveSubpath"
 cssclasses: hide-title
 ---
 

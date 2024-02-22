@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.getRange.md"
+aliases: "Editor.getRange"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceSidedock.toggle.md"
+aliases: "WorkspaceSidedock.toggle"
 cssclasses: hide-title
 ---
 

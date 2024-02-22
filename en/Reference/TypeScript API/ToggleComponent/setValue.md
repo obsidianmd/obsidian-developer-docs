@@ -1,5 +1,5 @@
 ---
-aliases: "ToggleComponent.setValue.md"
+aliases: "ToggleComponent.setValue"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "SliderComponent.onChange.md"
+aliases: "SliderComponent.onChange"
 cssclasses: hide-title
 ---
 

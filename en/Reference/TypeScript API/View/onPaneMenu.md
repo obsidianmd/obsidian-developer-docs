@@ -1,5 +1,5 @@
 ---
-aliases: "View.onPaneMenu.md"
+aliases: "View.onPaneMenu"
 cssclasses: hide-title
 ---
 

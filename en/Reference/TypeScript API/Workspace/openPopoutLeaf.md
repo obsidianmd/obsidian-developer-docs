@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.openPopoutLeaf.md"
+aliases: "Workspace.openPopoutLeaf"
 cssclasses: hide-title
 ---
 

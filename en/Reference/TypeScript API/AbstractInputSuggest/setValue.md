@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractInputSuggest.setValue.md"
+aliases: "AbstractInputSuggest.setValue"
 cssclasses: hide-title
 ---
 

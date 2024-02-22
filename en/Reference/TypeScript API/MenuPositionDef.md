@@ -1,5 +1,5 @@
 ---
-aliases: "MenuPositionDef.md"
+aliases: "MenuPositionDef"
 cssclasses: hide-title
 ---
 

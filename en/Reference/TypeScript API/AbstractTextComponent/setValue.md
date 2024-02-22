@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractTextComponent.setValue.md"
+aliases: "AbstractTextComponent.setValue"
 cssclasses: hide-title
 ---
 

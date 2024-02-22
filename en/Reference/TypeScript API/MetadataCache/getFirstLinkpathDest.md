@@ -1,5 +1,5 @@
 ---
-aliases: "MetadataCache.getFirstLinkpathDest.md"
+aliases: "MetadataCache.getFirstLinkpathDest"
 cssclasses: hide-title
 ---
 

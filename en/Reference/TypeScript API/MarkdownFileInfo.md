@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownFileInfo.md"
+aliases: "MarkdownFileInfo"
 cssclasses: hide-title
 ---
 

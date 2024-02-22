@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.getGroupLeaves.md"
+aliases: "Workspace.getGroupLeaves"
 cssclasses: hide-title
 ---
 

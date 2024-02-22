@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPreviewRenderer.createCodeBlockPostProcessor.md"
+aliases: "MarkdownPreviewRenderer.createCodeBlockPostProcessor"
 cssclasses: hide-title
 ---
 

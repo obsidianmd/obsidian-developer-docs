@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPostProcessorContext.frontmatter.md"
+aliases: "MarkdownPostProcessorContext.frontmatter"
 cssclasses: hide-title
 ---
 

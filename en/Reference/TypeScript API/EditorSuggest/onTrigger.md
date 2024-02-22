@@ -1,5 +1,5 @@
 ---
-aliases: "EditorSuggest.onTrigger.md"
+aliases: "EditorSuggest.onTrigger"
 cssclasses: hide-title
 ---
 

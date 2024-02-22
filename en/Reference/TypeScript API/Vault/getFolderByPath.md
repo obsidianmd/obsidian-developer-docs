@@ -1,5 +1,5 @@
 ---
-aliases: "Vault.getFolderByPath.md"
+aliases: "Vault.getFolderByPath"
 cssclasses: hide-title
 ---
 

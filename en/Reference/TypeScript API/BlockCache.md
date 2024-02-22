@@ -1,5 +1,5 @@
 ---
-aliases: "BlockCache.md"
+aliases: "BlockCache"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "PreparedQuery.fuzzy.md"
+aliases: "PreparedQuery.fuzzy"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.refresh.md"
+aliases: "Editor.refresh"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownEditView.getSelection.md"
+aliases: "MarkdownEditView.getSelection"
 cssclasses: hide-title
 ---
 

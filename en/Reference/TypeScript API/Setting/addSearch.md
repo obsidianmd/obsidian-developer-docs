@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addSearch.md"
+aliases: "Setting.addSearch"
 cssclasses: hide-title
 ---
 

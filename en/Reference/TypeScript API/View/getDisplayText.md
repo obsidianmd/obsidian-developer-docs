@@ -1,5 +1,5 @@
 ---
-aliases: "View.getDisplayText.md"
+aliases: "View.getDisplayText"
 cssclasses: hide-title
 ---
 

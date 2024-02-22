@@ -1,5 +1,5 @@
 ---
-aliases: "renderResults.md"
+aliases: "renderResults"
 cssclasses: hide-title
 ---
 

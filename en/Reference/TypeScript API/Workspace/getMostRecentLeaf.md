@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.getMostRecentLeaf.md"
+aliases: "Workspace.getMostRecentLeaf"
 cssclasses: hide-title
 ---
 

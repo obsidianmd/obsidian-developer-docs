@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceSidedock.md"
+aliases: "WorkspaceSidedock"
 cssclasses: hide-title
 ---
 

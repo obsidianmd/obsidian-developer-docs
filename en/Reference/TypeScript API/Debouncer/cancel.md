@@ -1,5 +1,5 @@
 ---
-aliases: "Debouncer.cancel.md"
+aliases: "Debouncer.cancel"
 cssclasses: hide-title
 ---
 

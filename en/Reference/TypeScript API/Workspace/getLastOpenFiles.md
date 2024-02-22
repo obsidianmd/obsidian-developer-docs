@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.getLastOpenFiles.md"
+aliases: "Workspace.getLastOpenFiles"
 cssclasses: hide-title
 ---
 

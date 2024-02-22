@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.somethingSelected.md"
+aliases: "Editor.somethingSelected"
 cssclasses: hide-title
 ---
 

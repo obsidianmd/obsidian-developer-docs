@@ -1,5 +1,5 @@
 ---
-aliases: "ValueComponent.md"
+aliases: "ValueComponent"
 cssclasses: hide-title
 ---
 

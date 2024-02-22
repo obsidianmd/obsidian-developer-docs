@@ -1,5 +1,5 @@
 ---
-aliases: "View.onClose.md"
+aliases: "View.onClose"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "App.scope.md"
+aliases: "App.scope"
 cssclasses: hide-title
 ---
 

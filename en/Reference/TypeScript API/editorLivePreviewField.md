@@ -1,5 +1,5 @@
 ---
-aliases: "editorLivePreviewField.md"
+aliases: "editorLivePreviewField"
 cssclasses: hide-title
 ---
 

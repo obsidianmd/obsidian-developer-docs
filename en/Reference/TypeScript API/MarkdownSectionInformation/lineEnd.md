@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownSectionInformation.lineEnd.md"
+aliases: "MarkdownSectionInformation.lineEnd"
 cssclasses: hide-title
 ---
 

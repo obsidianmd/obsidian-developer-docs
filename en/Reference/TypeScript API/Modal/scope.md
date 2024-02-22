@@ -1,5 +1,5 @@
 ---
-aliases: "Modal.scope.md"
+aliases: "Modal.scope"
 cssclasses: hide-title
 ---
 

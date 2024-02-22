@@ -1,5 +1,5 @@
 ---
-aliases: "View.getViewType.md"
+aliases: "View.getViewType"
 cssclasses: hide-title
 ---
 

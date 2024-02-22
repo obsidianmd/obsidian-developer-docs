@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.exists.md"
+aliases: "DataAdapter.exists"
 cssclasses: hide-title
 ---
 

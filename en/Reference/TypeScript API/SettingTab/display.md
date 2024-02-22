@@ -1,5 +1,5 @@
 ---
-aliases: "SettingTab.display.md"
+aliases: "SettingTab.display"
 cssclasses: hide-title
 ---
 

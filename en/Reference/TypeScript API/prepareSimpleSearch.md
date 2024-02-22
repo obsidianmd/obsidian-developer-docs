@@ -1,5 +1,5 @@
 ---
-aliases: "prepareSimpleSearch.md"
+aliases: "prepareSimpleSearch"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.getBasePath.md"
+aliases: "FileSystemAdapter.getBasePath"
 cssclasses: hide-title
 ---
 

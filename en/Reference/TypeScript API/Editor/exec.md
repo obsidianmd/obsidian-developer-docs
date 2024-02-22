@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.exec.md"
+aliases: "Editor.exec"
 cssclasses: hide-title
 ---
 

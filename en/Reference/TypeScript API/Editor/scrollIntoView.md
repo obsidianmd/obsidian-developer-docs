@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.scrollIntoView.md"
+aliases: "Editor.scrollIntoView"
 cssclasses: hide-title
 ---
 

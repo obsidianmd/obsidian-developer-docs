@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addSlider.md"
+aliases: "Setting.addSlider"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "EditorChange.text.md"
+aliases: "EditorChange.text"
 cssclasses: hide-title
 ---
 

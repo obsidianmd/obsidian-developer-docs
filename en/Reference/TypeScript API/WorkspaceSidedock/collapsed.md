@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceSidedock.collapsed.md"
+aliases: "WorkspaceSidedock.collapsed"
 cssclasses: hide-title
 ---
 

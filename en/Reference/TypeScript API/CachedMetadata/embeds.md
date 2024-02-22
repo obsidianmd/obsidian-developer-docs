@@ -1,5 +1,5 @@
 ---
-aliases: "CachedMetadata.embeds.md"
+aliases: "CachedMetadata.embeds"
 cssclasses: hide-title
 ---
 

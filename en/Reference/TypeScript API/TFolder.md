@@ -1,5 +1,5 @@
 ---
-aliases: "TFolder.md"
+aliases: "TFolder"
 cssclasses: hide-title
 ---
 

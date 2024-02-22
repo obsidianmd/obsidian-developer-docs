@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.processLines.md"
+aliases: "Editor.processLines"
 cssclasses: hide-title
 ---
 

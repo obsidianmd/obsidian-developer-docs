@@ -1,5 +1,5 @@
 ---
-aliases: "Modal.onOpen.md"
+aliases: "Modal.onOpen"
 cssclasses: hide-title
 ---
 

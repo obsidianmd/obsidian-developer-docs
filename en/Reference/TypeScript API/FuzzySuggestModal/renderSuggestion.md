@@ -1,5 +1,5 @@
 ---
-aliases: "FuzzySuggestModal.renderSuggestion.md"
+aliases: "FuzzySuggestModal.renderSuggestion"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "moment.md"
+aliases: "moment"
 cssclasses: hide-title
 ---
 

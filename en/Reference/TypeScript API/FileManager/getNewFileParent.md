@@ -1,5 +1,5 @@
 ---
-aliases: "FileManager.getNewFileParent.md"
+aliases: "FileManager.getNewFileParent"
 cssclasses: hide-title
 ---
 

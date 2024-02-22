@@ -1,5 +1,5 @@
 ---
-aliases: "PopoverSuggest.scope.md"
+aliases: "PopoverSuggest.scope"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Notice.(constructor).md"
+aliases: "Notice.(constructor)"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "renderMath.md"
+aliases: "renderMath"
 cssclasses: hide-title
 ---
 

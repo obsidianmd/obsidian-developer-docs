@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceLeaf.setGroup.md"
+aliases: "WorkspaceLeaf.setGroup"
 cssclasses: hide-title
 ---
 

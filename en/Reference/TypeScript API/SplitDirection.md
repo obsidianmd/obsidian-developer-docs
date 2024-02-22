@@ -1,5 +1,5 @@
 ---
-aliases: "SplitDirection.md"
+aliases: "SplitDirection"
 cssclasses: hide-title
 ---
 

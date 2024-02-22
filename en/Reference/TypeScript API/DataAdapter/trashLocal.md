@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.trashLocal.md"
+aliases: "DataAdapter.trashLocal"
 cssclasses: hide-title
 ---
 

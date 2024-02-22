@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceContainer.md"
+aliases: "WorkspaceContainer"
 cssclasses: hide-title
 ---
 

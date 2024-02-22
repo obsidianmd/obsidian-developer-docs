@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownSubView.md"
+aliases: "MarkdownSubView"
 cssclasses: hide-title
 ---
 

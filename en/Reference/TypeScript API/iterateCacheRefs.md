@@ -1,5 +1,5 @@
 ---
-aliases: "iterateCacheRefs.md"
+aliases: "iterateCacheRefs"
 cssclasses: hide-title
 ---
 

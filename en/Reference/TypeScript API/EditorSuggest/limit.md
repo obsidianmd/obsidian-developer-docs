@@ -1,5 +1,5 @@
 ---
-aliases: "EditorSuggest.limit.md"
+aliases: "EditorSuggest.limit"
 cssclasses: hide-title
 ---
 

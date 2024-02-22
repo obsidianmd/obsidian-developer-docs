@@ -1,5 +1,5 @@
 ---
-aliases: "View.(constructor).md"
+aliases: "View.(constructor)"
 cssclasses: hide-title
 ---
 

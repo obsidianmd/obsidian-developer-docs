@@ -1,5 +1,5 @@
 ---
-aliases: "FileSystemAdapter.rmdir.md"
+aliases: "FileSystemAdapter.rmdir"
 cssclasses: hide-title
 ---
 

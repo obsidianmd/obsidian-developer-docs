@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceRoot.md"
+aliases: "WorkspaceRoot"
 cssclasses: hide-title
 ---
 

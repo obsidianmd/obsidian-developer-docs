@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.lastLine.md"
+aliases: "Editor.lastLine"
 cssclasses: hide-title
 ---
 

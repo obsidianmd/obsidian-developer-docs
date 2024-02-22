@@ -1,5 +1,5 @@
 ---
-aliases: "View.onOpen.md"
+aliases: "View.onOpen"
 cssclasses: hide-title
 ---
 

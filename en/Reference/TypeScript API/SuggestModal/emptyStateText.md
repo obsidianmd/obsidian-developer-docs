@@ -1,5 +1,5 @@
 ---
-aliases: "SuggestModal.emptyStateText.md"
+aliases: "SuggestModal.emptyStateText"
 cssclasses: hide-title
 ---
 

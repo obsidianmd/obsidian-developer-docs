@@ -1,5 +1,5 @@
 ---
-aliases: "HeadingCache.md"
+aliases: "HeadingCache"
 cssclasses: hide-title
 ---
 

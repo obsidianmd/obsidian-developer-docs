@@ -1,5 +1,5 @@
 ---
-aliases: "Constructor.md"
+aliases: "Constructor"
 cssclasses: hide-title
 ---
 

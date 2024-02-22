@@ -1,5 +1,5 @@
 ---
-aliases: "livePreviewState.md"
+aliases: "livePreviewState"
 cssclasses: hide-title
 ---
 

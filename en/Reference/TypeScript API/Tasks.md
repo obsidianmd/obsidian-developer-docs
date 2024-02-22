@@ -1,5 +1,5 @@
 ---
-aliases: "Tasks.md"
+aliases: "Tasks"
 cssclasses: hide-title
 ---
 

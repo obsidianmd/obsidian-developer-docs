@@ -1,5 +1,5 @@
 ---
-aliases: "HoverLinkSource.defaultMod.md"
+aliases: "HoverLinkSource.defaultMod"
 cssclasses: hide-title
 ---
 

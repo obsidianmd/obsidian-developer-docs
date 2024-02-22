@@ -1,5 +1,5 @@
 ---
-aliases: "Keymap.md"
+aliases: "Keymap"
 cssclasses: hide-title
 ---
 

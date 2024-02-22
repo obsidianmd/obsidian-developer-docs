@@ -1,5 +1,5 @@
 ---
-aliases: "Component.load.md"
+aliases: "Component.load"
 cssclasses: hide-title
 ---
 

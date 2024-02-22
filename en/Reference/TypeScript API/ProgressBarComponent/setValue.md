@@ -1,5 +1,5 @@
 ---
-aliases: "ProgressBarComponent.setValue.md"
+aliases: "ProgressBarComponent.setValue"
 cssclasses: hide-title
 ---
 

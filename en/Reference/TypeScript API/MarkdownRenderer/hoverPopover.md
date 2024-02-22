@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownRenderer.hoverPopover.md"
+aliases: "MarkdownRenderer.hoverPopover"
 cssclasses: hide-title
 ---
 

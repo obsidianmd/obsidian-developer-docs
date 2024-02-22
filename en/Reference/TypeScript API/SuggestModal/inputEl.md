@@ -1,5 +1,5 @@
 ---
-aliases: "SuggestModal.inputEl.md"
+aliases: "SuggestModal.inputEl"
 cssclasses: hide-title
 ---
 

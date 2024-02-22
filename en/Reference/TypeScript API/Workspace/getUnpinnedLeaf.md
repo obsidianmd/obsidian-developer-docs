@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.getUnpinnedLeaf.md"
+aliases: "Workspace.getUnpinnedLeaf"
 cssclasses: hide-title
 ---
 

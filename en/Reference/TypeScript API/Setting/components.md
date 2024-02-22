@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.components.md"
+aliases: "Setting.components"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Stat.ctime.md"
+aliases: "Stat.ctime"
 cssclasses: hide-title
 ---
 

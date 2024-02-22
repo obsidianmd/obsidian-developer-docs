@@ -1,5 +1,5 @@
 ---
-aliases: "AbstractTextComponent.onChange.md"
+aliases: "AbstractTextComponent.onChange"
 cssclasses: hide-title
 ---
 

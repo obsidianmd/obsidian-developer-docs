@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.setCursor.md"
+aliases: "Editor.setCursor"
 cssclasses: hide-title
 ---
 

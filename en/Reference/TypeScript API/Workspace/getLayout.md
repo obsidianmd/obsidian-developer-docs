@@ -1,5 +1,5 @@
 ---
-aliases: "Workspace.getLayout.md"
+aliases: "Workspace.getLayout"
 cssclasses: hide-title
 ---
 

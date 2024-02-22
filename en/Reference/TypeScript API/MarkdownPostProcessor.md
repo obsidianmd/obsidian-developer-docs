@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPostProcessor.md"
+aliases: "MarkdownPostProcessor"
 cssclasses: hide-title
 ---
 

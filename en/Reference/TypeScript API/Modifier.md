@@ -1,5 +1,5 @@
 ---
-aliases: "Modifier.md"
+aliases: "Modifier"
 cssclasses: hide-title
 ---
 

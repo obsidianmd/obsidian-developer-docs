@@ -1,5 +1,5 @@
 ---
-aliases: "WorkspaceWindow.win.md"
+aliases: "WorkspaceWindow.win"
 cssclasses: hide-title
 ---
 

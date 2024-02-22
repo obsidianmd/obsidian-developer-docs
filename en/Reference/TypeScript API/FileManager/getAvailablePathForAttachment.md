@@ -1,5 +1,5 @@
 ---
-aliases: "FileManager.getAvailablePathForAttachment.md"
+aliases: "FileManager.getAvailablePathForAttachment"
 cssclasses: hide-title
 ---
 

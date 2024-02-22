@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownEditView.file.md"
+aliases: "MarkdownEditView.file"
 cssclasses: hide-title
 ---
 

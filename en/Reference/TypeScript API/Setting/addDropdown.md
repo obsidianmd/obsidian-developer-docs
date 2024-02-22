@@ -1,5 +1,5 @@
 ---
-aliases: "Setting.addDropdown.md"
+aliases: "Setting.addDropdown"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "Command.editorCheckCallback.md"
+aliases: "Command.editorCheckCallback"
 cssclasses: hide-title
 ---
 

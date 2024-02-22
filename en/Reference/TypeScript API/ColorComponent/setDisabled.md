@@ -1,5 +1,5 @@
 ---
-aliases: "ColorComponent.setDisabled.md"
+aliases: "ColorComponent.setDisabled"
 cssclasses: hide-title
 ---
 

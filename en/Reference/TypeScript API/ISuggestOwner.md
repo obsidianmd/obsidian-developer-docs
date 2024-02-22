@@ -1,5 +1,5 @@
 ---
-aliases: "ISuggestOwner.md"
+aliases: "ISuggestOwner"
 cssclasses: hide-title
 ---
 

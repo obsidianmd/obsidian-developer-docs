@@ -1,5 +1,5 @@
 ---
-aliases: "MarkdownPreviewView.applyScroll.md"
+aliases: "MarkdownPreviewView.applyScroll"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "DataAdapter.mkdir.md"
+aliases: "DataAdapter.mkdir"
 cssclasses: hide-title
 ---
 

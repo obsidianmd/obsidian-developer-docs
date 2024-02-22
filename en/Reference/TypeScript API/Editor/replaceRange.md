@@ -1,5 +1,5 @@
 ---
-aliases: "Editor.replaceRange.md"
+aliases: "Editor.replaceRange"
 cssclasses: hide-title
 ---
 

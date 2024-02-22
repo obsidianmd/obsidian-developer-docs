@@ -1,5 +1,5 @@
 ---
-aliases: "LinkCache.md"
+aliases: "LinkCache"
 cssclasses: hide-title
 ---
 

@@ -1,5 +1,5 @@
 ---
-aliases: "getBlobArrayBuffer.md"
+aliases: "getBlobArrayBuffer"
 cssclasses: hide-title
 ---
 

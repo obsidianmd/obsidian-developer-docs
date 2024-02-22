@@ -1,5 +1,5 @@
 ---
-aliases: "Loc.line.md"
+aliases: "Loc.line"
 cssclasses: hide-title
 ---
 

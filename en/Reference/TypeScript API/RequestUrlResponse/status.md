@@ -1,5 +1,5 @@
 ---
-aliases: "RequestUrlResponse.status.md"
+aliases: "RequestUrlResponse.status"
 cssclasses: hide-title
 ---
 

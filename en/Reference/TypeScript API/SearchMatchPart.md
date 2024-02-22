@@ -1,5 +1,5 @@
 ---
-aliases: "SearchMatchPart.md"
+aliases: "SearchMatchPart"
 cssclasses: hide-title
 ---
 

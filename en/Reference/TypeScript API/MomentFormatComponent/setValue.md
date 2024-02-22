@@ -1,5 +1,5 @@
 ---
-aliases: "MomentFormatComponent.setValue.md"
+aliases: "MomentFormatComponent.setValue"
 cssclasses: hide-title
 ---
 

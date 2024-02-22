@@ -1,5 +1,5 @@
 ---
-aliases: "getFrontMatterInfo.md"
+aliases: "getFrontMatterInfo"
 cssclasses: hide-title
 ---
 
