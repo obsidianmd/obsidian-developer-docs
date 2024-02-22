@@ -8,50 +8,57 @@ const targetDir = folderPath;
 
 // Read the folder contents
 async function updateFileContent(folderPath) {
-  try {
-	  const files = await fs.readdir(folderPath, {recursive: true});
+	try {
+		const files = await fs.readdir(folderPath, {recursive: true});
 
-	  for (const file of files) {
+		for (const file of files) {
 
-		  // Remove index
-		  if (file === 'index.md') {
-			  await fs.unlink(folderPath + file);
-			  continue;
-		  }
+			// Remove index
+			if (file === 'index.md') {
+				await fs.unlink(folderPath + file);
+				continue;
+			}
 
-		  if(!folderExists(file)) {
-			  continue;
-		  }
+			if(!folderExists(file)) {
+				continue;
+			}
 
-		  const newFileName = file.replace('obsidian.', '').replace('Plugin_2', 'Plugin').replace('Plugin\_2', 'Plugin');
+			const newFileName = file.replace('obsidian.', '').replace('Plugin_2', 'Plugin').replace('Plugin\_2', 'Plugin');
 
-		  // Step 1: Replace escaped backtick with normal backtick
-		  try {
-			  let filePath = path.join(folderPath, file);
-			  const fileContent = await fs.readFile(filePath, {encoding: 'UTF-8'});
-			  let newFileContent = `---
+			// Step 1: Replace escaped backtick with normal backtick
+			try {
+				let filePath = path.join(folderPath, file);
+				const fileContent = await fs.readFile(filePath, {encoding: 'UTF-8'});
+				let newFileContent = `---
 aliases: "${newFileName.slice(0, -3).replaceAll('\\', '.')}"
 cssclasses: hide-title
 ---
 
 `+ fileContent;
 
-			  newFileContent = newFileContent.replace(/\\`/g, '`');
-			  newFileContent = newFileContent.replaceAll('obsidian.', '');
-			  newFileContent = newFileContent.replaceAll('Plugin_2', 'Plugin')
+				newFileContent = newFileContent.replace(/\\`/g, '`');
+				newFileContent = newFileContent.replaceAll('obsidian.', '');
+				newFileContent = newFileContent.replaceAll('Plugin_2', 'Plugin')
 
-			  newFileContent = newFileContent.replaceAll('Plugin\_2', 'Plugin')
-			  newFileContent = newFileContent.replaceAll('Plugin\\_2', 'Plugin');
+				newFileContent = newFileContent.replaceAll('Plugin\_2', 'Plugin')
+				newFileContent = newFileContent.replaceAll('Plugin\\_2', 'Plugin');
+				newFileContent = newFileContent.replace(/\[([^\[]+)\](\((.*?)\))/g, function(_, x, y) {
+					if(y.includes('constructor')) {
+						return `[${x}]${y.replaceAll(".", "/")}`;
+					}
 
-			  await fs.writeFile(filePath, newFileContent, {encoding: 'utf-8'});
-			  console.log(`Updated file content: ${filePath}`);
-		  } catch (err) {
-			  console.error(`Error processing file: ${err.message}`);
-		  }
-	  }
-  } catch (err) {
-	  console.error(`Error reading directory: ${err.message}`);
-  }
+					return `[${x}]${y.slice(0, -4).replaceAll(".", "/")})`;
+				});
+
+				await fs.writeFile(filePath, newFileContent, {encoding: 'utf-8'});
+				console.log(`Updated file content: ${filePath}`);
+			} catch (err) {
+				console.error(`Error processing file: ${err.message}`);
+			}
+		}
+	} catch (err) {
+		console.error(`Error reading directory: ${err.message}`);
+	}
 }
 
 async function renameFiles(files) {
