@@ -2,9 +2,6 @@ name: Build TypeScript docs
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-    - 'config/**' # Only run this workflow whenever a file in ./config has changed.
 
 jobs:
   build:
@@ -17,6 +14,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16.x"
+
+      - name: get latest d.ts
+        working-directory: ./config
+        run: wget https://raw.githubusercontent.com/obsidianmd/obsidian-api/master/obsidian.d.ts
 
       - name: Clone rushstack fork
         run: git clone https://github.com/joethei/rushstack.git
