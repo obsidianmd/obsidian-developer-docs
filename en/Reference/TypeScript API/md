@@ -12,242 +12,242 @@ cssclasses: hide-title
 
 |  Class | Description |
 |  --- | --- |
-|  [`AbstractTextComponent`](AbstractTextComponent.md) |  |
-|  [`App`](App.md) |  |
-|  [`ButtonComponent`](ButtonComponent.md) |  |
-|  [`ColorComponent`](ColorComponent.md) | Color picker component. Values are by default 6-digit hash-prefixed hex strings like <code>#000000</code>. |
-|  [`Component`](Component.md) |  |
-|  [`DropdownComponent`](DropdownComponent.md) |  |
-|  [`Events`](Events.md) |  |
-|  [`ExtraButtonComponent`](ExtraButtonComponent.md) |  |
-|  [`FileManager`](FileManager.md) | Manage the creation, deletion and renaming of files from the UI. |
-|  [`FileSystemAdapter`](FileSystemAdapter.md) |  |
-|  [`HoverPopover`](HoverPopover.md) |  |
-|  [`Keymap`](Keymap.md) | Manages keymap lifecycle for different [Scope](Scope.md)<!-- -->s. |
-|  [`MarkdownEditView`](MarkdownEditView.md) | This is the editor for Obsidian Mobile as well as the upcoming WYSIWYG editor. |
-|  [`MarkdownPreviewRenderer`](MarkdownPreviewRenderer.md) |  |
-|  [`MarkdownPreviewView`](MarkdownPreviewView.md) |  |
-|  [`MarkdownRenderChild`](MarkdownRenderChild.md) |  |
-|  [`MarkdownView`](MarkdownView.md) |  |
-|  [`Menu`](Menu.md) |  |
-|  [`MenuItem`](MenuItem.md) |  |
-|  [`MenuSeparator`](MenuSeparator.md) |  |
-|  [`MetadataCache`](MetadataCache.md) | Linktext is any internal link that is composed of a path and a subpath, such as "My note\#Heading" Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext. |
-|  [`Modal`](Modal.md) |  |
-|  [`MomentFormatComponent`](MomentFormatComponent.md) |  |
-|  [`Notice`](Notice.md) | Notification component. Use to present timely, high-value information. |
-|  [`ProgressBarComponent`](ProgressBarComponent.md) |  |
-|  [`Scope`](Scope.md) | A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys. |
-|  [`SearchComponent`](SearchComponent.md) |  |
-|  [`Setting`](Setting.md) |  |
-|  [`SliderComponent`](SliderComponent.md) |  |
-|  [`Tasks`](Tasks.md) |  |
-|  [`TextAreaComponent`](TextAreaComponent.md) |  |
-|  [`TextComponent`](TextComponent.md) |  |
-|  [`TFile`](TFile.md) |  |
-|  [`TFolder`](TFolder.md) |  |
-|  [`ToggleComponent`](ToggleComponent.md) |  |
-|  [`Vault`](Vault.md) | Work with files and folders stored inside a vault. |
-|  [`Workspace`](Workspace.md) |  |
-|  [`WorkspaceFloating`](WorkspaceFloating.md) |  |
-|  [`WorkspaceLeaf`](WorkspaceLeaf.md) |  |
-|  [`WorkspaceMobileDrawer`](WorkspaceMobileDrawer.md) |  |
-|  [`WorkspaceRibbon`](WorkspaceRibbon.md) |  |
-|  [`WorkspaceRoot`](WorkspaceRoot.md) |  |
-|  [`WorkspaceSidedock`](WorkspaceSidedock.md) |  |
-|  [`WorkspaceSplit`](WorkspaceSplit.md) |  |
-|  [`WorkspaceTabs`](WorkspaceTabs.md) |  |
-|  [`WorkspaceWindow`](WorkspaceWindow.md) |  |
+|  [`AbstractTextComponent`](AbstractTextComponent) |  |
+|  [`App`](App) |  |
+|  [`ButtonComponent`](ButtonComponent) |  |
+|  [`ColorComponent`](ColorComponent) | Color picker component. Values are by default 6-digit hash-prefixed hex strings like <code>#000000</code>. |
+|  [`Component`](Component) |  |
+|  [`DropdownComponent`](DropdownComponent) |  |
+|  [`Events`](Events) |  |
+|  [`ExtraButtonComponent`](ExtraButtonComponent) |  |
+|  [`FileManager`](FileManager) | Manage the creation, deletion and renaming of files from the UI. |
+|  [`FileSystemAdapter`](FileSystemAdapter) |  |
+|  [`HoverPopover`](HoverPopover) |  |
+|  [`Keymap`](Keymap) | Manages keymap lifecycle for different [Scope](Scope)<!-- -->s. |
+|  [`MarkdownEditView`](MarkdownEditView) | This is the editor for Obsidian Mobile as well as the upcoming WYSIWYG editor. |
+|  [`MarkdownPreviewRenderer`](MarkdownPreviewRenderer) |  |
+|  [`MarkdownPreviewView`](MarkdownPreviewView) |  |
+|  [`MarkdownRenderChild`](MarkdownRenderChild) |  |
+|  [`MarkdownView`](MarkdownView) |  |
+|  [`Menu`](Menu) |  |
+|  [`MenuItem`](MenuItem) |  |
+|  [`MenuSeparator`](MenuSeparator) |  |
+|  [`MetadataCache`](MetadataCache) | Linktext is any internal link that is composed of a path and a subpath, such as "My note\#Heading" Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext. |
+|  [`Modal`](Modal) |  |
+|  [`MomentFormatComponent`](MomentFormatComponent) |  |
+|  [`Notice`](Notice) | Notification component. Use to present timely, high-value information. |
+|  [`ProgressBarComponent`](ProgressBarComponent) |  |
+|  [`Scope`](Scope) | A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys. |
+|  [`SearchComponent`](SearchComponent) |  |
+|  [`Setting`](Setting) |  |
+|  [`SliderComponent`](SliderComponent) |  |
+|  [`Tasks`](Tasks) |  |
+|  [`TextAreaComponent`](TextAreaComponent) |  |
+|  [`TextComponent`](TextComponent) |  |
+|  [`TFile`](TFile) |  |
+|  [`TFolder`](TFolder) |  |
+|  [`ToggleComponent`](ToggleComponent) |  |
+|  [`Vault`](Vault) | Work with files and folders stored inside a vault. |
+|  [`Workspace`](Workspace) |  |
+|  [`WorkspaceFloating`](WorkspaceFloating) |  |
+|  [`WorkspaceLeaf`](WorkspaceLeaf) |  |
+|  [`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) |  |
+|  [`WorkspaceRibbon`](WorkspaceRibbon) |  |
+|  [`WorkspaceRoot`](WorkspaceRoot) |  |
+|  [`WorkspaceSidedock`](WorkspaceSidedock) |  |
+|  [`WorkspaceSplit`](WorkspaceSplit) |  |
+|  [`WorkspaceTabs`](WorkspaceTabs) |  |
+|  [`WorkspaceWindow`](WorkspaceWindow) |  |
 
 ## Abstract Classes
 
 |  Abstract Class | Description |
 |  --- | --- |
-|  [`AbstractInputSuggest`](AbstractInputSuggest.md) | Attach to an <code>&lt;input&gt;</code> element or a <code>&lt;div contentEditable&gt;</code> to add type-ahead support. |
-|  [`BaseComponent`](BaseComponent.md) |  |
-|  [`EditableFileView`](EditableFileView.md) |  |
-|  [`Editor`](Editor.md) | A common interface that bridges the gap between CodeMirror 5 and CodeMirror 6. |
-|  [`EditorSuggest`](EditorSuggest.md) |  |
-|  [`FileView`](FileView.md) |  |
-|  [`FuzzySuggestModal`](FuzzySuggestModal.md) |  |
-|  [`ItemView`](ItemView.md) |  |
-|  [`MarkdownRenderer`](MarkdownRenderer.md) |  |
-|  [`Plugin`](Plugin.md) |  |
-|  [`PluginSettingTab`](PluginSettingTab.md) | Provides a unified interface for users to configure the plugin. |
-|  [`PopoverSuggest`](PopoverSuggest.md) | Base class for adding a type-ahead popover. |
-|  [`SettingTab`](SettingTab.md) |  |
-|  [`SuggestModal`](SuggestModal.md) |  |
-|  [`TAbstractFile`](TAbstractFile.md) | This can be either a <code>TFile</code> or a <code>TFolder</code>. |
-|  [`TextFileView`](TextFileView.md) | <p>This class implements a plaintext-based editable file view, which can be loaded and saved given an editor.</p><p>Note that by default, this view only saves when it's closing. To implement auto-save, your editor should call <code>this.requestSave()</code> when the content is changed.</p> |
-|  [`ValueComponent`](ValueComponent.md) |  |
-|  [`View`](View.md) |  |
-|  [`WorkspaceContainer`](WorkspaceContainer.md) |  |
-|  [`WorkspaceItem`](WorkspaceItem.md) |  |
-|  [`WorkspaceParent`](WorkspaceParent.md) |  |
+|  [`AbstractInputSuggest`](AbstractInputSuggest) | Attach to an <code>&lt;input&gt;</code> element or a <code>&lt;div contentEditable&gt;</code> to add type-ahead support. |
+|  [`BaseComponent`](BaseComponent) |  |
+|  [`EditableFileView`](EditableFileView) |  |
+|  [`Editor`](Editor) | A common interface that bridges the gap between CodeMirror 5 and CodeMirror 6. |
+|  [`EditorSuggest`](EditorSuggest) |  |
+|  [`FileView`](FileView) |  |
+|  [`FuzzySuggestModal`](FuzzySuggestModal) |  |
+|  [`ItemView`](ItemView) |  |
+|  [`MarkdownRenderer`](MarkdownRenderer) |  |
+|  [`Plugin`](Plugin) |  |
+|  [`PluginSettingTab`](PluginSettingTab) | Provides a unified interface for users to configure the plugin. |
+|  [`PopoverSuggest`](PopoverSuggest) | Base class for adding a type-ahead popover. |
+|  [`SettingTab`](SettingTab) |  |
+|  [`SuggestModal`](SuggestModal) |  |
+|  [`TAbstractFile`](TAbstractFile) | This can be either a <code>TFile</code> or a <code>TFolder</code>. |
+|  [`TextFileView`](TextFileView) | <p>This class implements a plaintext-based editable file view, which can be loaded and saved given an editor.</p><p>Note that by default, this view only saves when it's closing. To implement auto-save, your editor should call <code>this.requestSave()</code> when the content is changed.</p> |
+|  [`ValueComponent`](ValueComponent) |  |
+|  [`View`](View) |  |
+|  [`WorkspaceContainer`](WorkspaceContainer) |  |
+|  [`WorkspaceItem`](WorkspaceItem) |  |
+|  [`WorkspaceParent`](WorkspaceParent) |  |
 
 ## Enumerations
 
 |  Enumeration | Description |
 |  --- | --- |
-|  [`PopoverState`](PopoverState.md) |  |
+|  [`PopoverState`](PopoverState) |  |
 
 ## Functions
 
 |  Function | Description |
 |  --- | --- |
-|  [`addIcon(iconId, svgContent)`](addIcon.md) | Adds an icon to the library. |
-|  [`arrayBufferToBase64(buffer)`](arrayBufferToBase64.md) |  |
-|  [`arrayBufferToHex(data)`](arrayBufferToHex.md) |  |
-|  [`base64ToArrayBuffer(base64)`](base64ToArrayBuffer.md) |  |
-|  [`debounce(cb, timeout, resetTimer)`](debounce.md) | A standard debounce function. Use this to have a time-delayed function only be called once in a given timeframe. |
-|  [`finishRenderMath()`](finishRenderMath.md) | Flush the MathJax stylesheet. |
-|  [`fuzzySearch(q, text)`](fuzzySearch.md) |  |
-|  [`getAllTags(cache)`](getAllTags.md) |  |
-|  [`getBlobArrayBuffer(blob)`](getBlobArrayBuffer.md) |  |
-|  [`getFrontMatterInfo(content)`](getFrontMatterInfo.md) | Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text. |
-|  [`getIcon(iconId)`](getIcon.md) | Create an SVG from an iconId. Returns null if no icon associated with the iconId. |
-|  [`getIconIds()`](getIconIds.md) | Get the list of registered icons. |
-|  [`getLinkpath(linktext)`](getLinkpath.md) |  |
-|  [`hexToArrayBuffer(hex)`](hexToArrayBuffer.md) |  |
-|  [`htmlToMarkdown(html)`](htmlToMarkdown.md) | Converts HTML to Markdown using Turndown Service. |
-|  [`iterateCacheRefs(cache, cb)`](iterateCacheRefs.md) | Iterate links and embeds. If callback returns true, the iteration process will be interrupted. |
-|  [`iterateRefs(refs, cb)`](iterateRefs.md) |  |
-|  [`loadMathJax()`](loadMathJax.md) | Load MathJax. |
-|  [`loadMermaid()`](loadMermaid.md) | Load Mermaid and return a promise to the global mermaid object. Can also use <code>mermaid</code> after this promise resolves to get the same reference. |
-|  [`loadPdfJs()`](loadPdfJs.md) | Load PDF.js and return a promise to the global pdfjsLib object. Can also use <code>window.pdfjsLib</code> after this promise resolves to get the same reference. |
-|  [`loadPrism()`](loadPrism.md) | Load Prism.js and return a promise to the global Prism object. Can also use <code>Prism</code> after this promise resolves to get the same reference. |
-|  [`normalizePath(path)`](normalizePath.md) |  |
-|  [`parseFrontMatterAliases(frontmatter)`](parseFrontMatterAliases.md) |  |
-|  [`parseFrontMatterEntry(frontmatter, key)`](parseFrontMatterEntry.md) |  |
-|  [`parseFrontMatterStringArray(frontmatter, key, nospaces)`](parseFrontMatterStringArray.md) |  |
-|  [`parseFrontMatterTags(frontmatter)`](parseFrontMatterTags.md) |  |
-|  [`parseLinktext(linktext)`](parseLinktext.md) |  |
-|  [`parseYaml(yaml)`](parseYaml.md) |  |
-|  [`prepareFuzzySearch(query)`](prepareFuzzySearch.md) | Construct a fuzzy search callback that runs on a target string. Performance may be an issue if you are running the search for more than a few thousand times. If performance is a problem, consider using <code>prepareSimpleSearch</code> instead. |
-|  [`prepareQuery(query)`](prepareQuery.md) |  |
-|  [`prepareSimpleSearch(query)`](prepareSimpleSearch.md) | Construct a simple search callback that runs on a target string. |
-|  [`removeIcon(iconId)`](removeIcon.md) | Remove a custom icon from the library. |
-|  [`renderMatches(el, text, matches, offset)`](renderMatches.md) |  |
-|  [`renderMath(source, display)`](renderMath.md) | Render some LaTeX math using the MathJax engine. Returns an HTMLElement. Requires calling <code>finishRenderMath</code> when rendering is all done to flush the MathJax stylesheet. |
-|  [`renderResults(el, text, result, offset)`](renderResults.md) |  |
-|  [`request(request)`](request.md) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. Returns the text value of the response. |
-|  [`requestUrl(request)`](requestUrl.md) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. |
-|  [`requireApiVersion(version)`](requireApiVersion.md) | Returns true if the API version is equal or higher than the requested version. Use this to limit functionality that require specific API versions to avoid crashing on older Obsidian builds. |
-|  [`resolveSubpath(cache, subpath)`](resolveSubpath.md) |  |
-|  [`sanitizeHTMLToDom(html)`](sanitizeHTMLToDom.md) |  |
-|  [`setIcon(parent, iconId)`](setIcon.md) | Insert an SVG into the element from an iconId. Does nothing if no icon associated with the iconId. |
-|  [`setTooltip(el, tooltip, options)`](setTooltip.md) |  |
-|  [`sortSearchResults(results)`](sortSearchResults.md) |  |
-|  [`stringifyYaml(obj)`](stringifyYaml.md) |  |
-|  [`stripHeading(heading)`](stripHeading.md) | This function normalizes headings for link matching by stripping out special characters and shrinking consecutive spaces. |
-|  [`stripHeadingForLink(heading)`](stripHeadingForLink.md) | This function prepares headings for linking. It strips out some bad combinations of special characters that could break links. |
+|  [`addIcon(iconId, svgContent)`](addIcon) | Adds an icon to the library. |
+|  [`arrayBufferToBase64(buffer)`](arrayBufferToBase64) |  |
+|  [`arrayBufferToHex(data)`](arrayBufferToHex) |  |
+|  [`base64ToArrayBuffer(base64)`](base64ToArrayBuffer) |  |
+|  [`debounce(cb, timeout, resetTimer)`](debounce) | A standard debounce function. Use this to have a time-delayed function only be called once in a given timeframe. |
+|  [`finishRenderMath()`](finishRenderMath) | Flush the MathJax stylesheet. |
+|  [`fuzzySearch(q, text)`](fuzzySearch) |  |
+|  [`getAllTags(cache)`](getAllTags) |  |
+|  [`getBlobArrayBuffer(blob)`](getBlobArrayBuffer) |  |
+|  [`getFrontMatterInfo(content)`](getFrontMatterInfo) | Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text. |
+|  [`getIcon(iconId)`](getIcon) | Create an SVG from an iconId. Returns null if no icon associated with the iconId. |
+|  [`getIconIds()`](getIconIds) | Get the list of registered icons. |
+|  [`getLinkpath(linktext)`](getLinkpath) |  |
+|  [`hexToArrayBuffer(hex)`](hexToArrayBuffer) |  |
+|  [`htmlToMarkdown(html)`](htmlToMarkdown) | Converts HTML to Markdown using Turndown Service. |
+|  [`iterateCacheRefs(cache, cb)`](iterateCacheRefs) | Iterate links and embeds. If callback returns true, the iteration process will be interrupted. |
+|  [`iterateRefs(refs, cb)`](iterateRefs) |  |
+|  [`loadMathJax()`](loadMathJax) | Load MathJax. |
+|  [`loadMermaid()`](loadMermaid) | Load Mermaid and return a promise to the global mermaid object. Can also use <code>mermaid</code> after this promise resolves to get the same reference. |
+|  [`loadPdfJs()`](loadPdfJs) | Load PDF.js and return a promise to the global pdfjsLib object. Can also use <code>window.pdfjsLib</code> after this promise resolves to get the same reference. |
+|  [`loadPrism()`](loadPrism) | Load Prism.js and return a promise to the global Prism object. Can also use <code>Prism</code> after this promise resolves to get the same reference. |
+|  [`normalizePath(path)`](normalizePath) |  |
+|  [`parseFrontMatterAliases(frontmatter)`](parseFrontMatterAliases) |  |
+|  [`parseFrontMatterEntry(frontmatter, key)`](parseFrontMatterEntry) |  |
+|  [`parseFrontMatterStringArray(frontmatter, key, nospaces)`](parseFrontMatterStringArray) |  |
+|  [`parseFrontMatterTags(frontmatter)`](parseFrontMatterTags) |  |
+|  [`parseLinktext(linktext)`](parseLinktext) |  |
+|  [`parseYaml(yaml)`](parseYaml) |  |
+|  [`prepareFuzzySearch(query)`](prepareFuzzySearch) | Construct a fuzzy search callback that runs on a target string. Performance may be an issue if you are running the search for more than a few thousand times. If performance is a problem, consider using <code>prepareSimpleSearch</code> instead. |
+|  [`prepareQuery(query)`](prepareQuery) |  |
+|  [`prepareSimpleSearch(query)`](prepareSimpleSearch) | Construct a simple search callback that runs on a target string. |
+|  [`removeIcon(iconId)`](removeIcon) | Remove a custom icon from the library. |
+|  [`renderMatches(el, text, matches, offset)`](renderMatches) |  |
+|  [`renderMath(source, display)`](renderMath) | Render some LaTeX math using the MathJax engine. Returns an HTMLElement. Requires calling <code>finishRenderMath</code> when rendering is all done to flush the MathJax stylesheet. |
+|  [`renderResults(el, text, result, offset)`](renderResults) |  |
+|  [`request(request)`](request) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. Returns the text value of the response. |
+|  [`requestUrl(request)`](requestUrl) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. |
+|  [`requireApiVersion(version)`](requireApiVersion) | Returns true if the API version is equal or higher than the requested version. Use this to limit functionality that require specific API versions to avoid crashing on older Obsidian builds. |
+|  [`resolveSubpath(cache, subpath)`](resolveSubpath) |  |
+|  [`sanitizeHTMLToDom(html)`](sanitizeHTMLToDom) |  |
+|  [`setIcon(parent, iconId)`](setIcon) | Insert an SVG into the element from an iconId. Does nothing if no icon associated with the iconId. |
+|  [`setTooltip(el, tooltip, options)`](setTooltip) |  |
+|  [`sortSearchResults(results)`](sortSearchResults) |  |
+|  [`stringifyYaml(obj)`](stringifyYaml) |  |
+|  [`stripHeading(heading)`](stripHeading) | This function normalizes headings for link matching by stripping out special characters and shrinking consecutive spaces. |
+|  [`stripHeadingForLink(heading)`](stripHeadingForLink) | This function prepares headings for linking. It strips out some bad combinations of special characters that could break links. |
 
 ## Interfaces
 
 |  Interface | Description |
 |  --- | --- |
-|  [`BlockCache`](BlockCache.md) |  |
-|  [`BlockSubpathResult`](BlockSubpathResult.md) |  |
-|  [`CachedMetadata`](CachedMetadata.md) |  |
-|  [`CacheItem`](CacheItem.md) |  |
-|  [`CloseableComponent`](CloseableComponent.md) |  |
-|  [`Command`](Command.md) |  |
-|  [`DataAdapter`](DataAdapter.md) | Work directly with files and folders inside a vault. If possible prefer using the [Vault](Vault.md) API over this. |
-|  [`DataWriteOptions`](DataWriteOptions.md) |  |
-|  [`Debouncer`](Debouncer.md) |  |
-|  [`EditorChange`](EditorChange.md) |  |
-|  [`EditorPosition`](EditorPosition.md) |  |
-|  [`EditorRange`](EditorRange.md) |  |
-|  [`EditorRangeOrCaret`](EditorRangeOrCaret.md) |  |
-|  [`EditorScrollInfo`](EditorScrollInfo.md) |  |
-|  [`EditorSelection`](EditorSelection.md) |  |
-|  [`EditorSelectionOrCaret`](EditorSelectionOrCaret.md) |  |
-|  [`EditorSuggestContext`](EditorSuggestContext.md) |  |
-|  [`EditorSuggestTriggerInfo`](EditorSuggestTriggerInfo.md) |  |
-|  [`EditorTransaction`](EditorTransaction.md) |  |
-|  [`EmbedCache`](EmbedCache.md) |  |
-|  [`EventRef`](EventRef.md) |  |
-|  [`FileStats`](FileStats.md) |  |
-|  [`FrontMatterCache`](FrontMatterCache.md) |  |
-|  [`FrontMatterInfo`](FrontMatterInfo.md) |  |
-|  [`FrontmatterLinkCache`](FrontmatterLinkCache.md) |  |
-|  [`FuzzyMatch`](FuzzyMatch.md) |  |
-|  [`HeadingCache`](HeadingCache.md) |  |
-|  [`HeadingSubpathResult`](HeadingSubpathResult.md) |  |
-|  [`Hotkey`](Hotkey.md) |  |
-|  [`HoverLinkSource`](HoverLinkSource.md) |  |
-|  [`HoverParent`](HoverParent.md) |  |
-|  [`HSL`](HSL.md) |  |
-|  [`Instruction`](Instruction.md) |  |
-|  [`ISuggestOwner`](ISuggestOwner.md) |  |
-|  [`KeymapContext`](KeymapContext.md) |  |
-|  [`KeymapEventHandler`](KeymapEventHandler.md) |  |
-|  [`KeymapInfo`](KeymapInfo.md) |  |
-|  [`LinkCache`](LinkCache.md) |  |
-|  [`ListedFiles`](ListedFiles.md) |  |
-|  [`ListItemCache`](ListItemCache.md) |  |
-|  [`LivePreviewState`](LivePreviewState.md) |  |
-|  [`Loc`](Loc.md) |  |
-|  [`MarkdownFileInfo`](MarkdownFileInfo.md) |  |
-|  [`MarkdownPostProcessor`](MarkdownPostProcessor.md) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into </p> |
-|  [`MarkdownPostProcessorContext`](MarkdownPostProcessorContext.md) |  |
-|  [`MarkdownPreviewEvents`](MarkdownPreviewEvents.md) | \* |
-|  [`MarkdownSectionInformation`](MarkdownSectionInformation.md) |  |
-|  [`MarkdownSubView`](MarkdownSubView.md) |  |
-|  [`MenuPositionDef`](MenuPositionDef.md) |  |
-|  [`ObsidianProtocolData`](ObsidianProtocolData.md) |  |
-|  [`OpenViewState`](OpenViewState.md) |  |
-|  [`PluginManifest`](PluginManifest.md) | Metadata about a Community plugin. |
-|  [`Point`](Point.md) |  |
-|  [`Pos`](Pos.md) |  |
-|  [`PreparedQuery`](PreparedQuery.md) |  |
-|  [`Reference`](Reference.md) |  |
-|  [`ReferenceCache`](ReferenceCache.md) |  |
-|  [`RequestUrlParam`](RequestUrlParam.md) |  |
-|  [`RequestUrlResponse`](RequestUrlResponse.md) |  |
-|  [`RequestUrlResponsePromise`](RequestUrlResponsePromise.md) |  |
-|  [`RGB`](RGB.md) |  |
-|  [`SearchResult`](SearchResult.md) |  |
-|  [`SearchResultContainer`](SearchResultContainer.md) |  |
-|  [`SectionCache`](SectionCache.md) |  |
-|  [`Stat`](Stat.md) |  |
-|  [`SubpathResult`](SubpathResult.md) |  |
-|  [`TagCache`](TagCache.md) |  |
-|  [`TooltipOptions`](TooltipOptions.md) |  |
-|  [`ViewState`](ViewState.md) |  |
-|  [`ViewStateResult`](ViewStateResult.md) |  |
-|  [`WorkspaceWindowInitData`](WorkspaceWindowInitData.md) |  |
+|  [`BlockCache`](BlockCache) |  |
+|  [`BlockSubpathResult`](BlockSubpathResult) |  |
+|  [`CachedMetadata`](CachedMetadata) |  |
+|  [`CacheItem`](CacheItem) |  |
+|  [`CloseableComponent`](CloseableComponent) |  |
+|  [`Command`](Command) |  |
+|  [`DataAdapter`](DataAdapter) | Work directly with files and folders inside a vault. If possible prefer using the [Vault](Vault) API over this. |
+|  [`DataWriteOptions`](DataWriteOptions) |  |
+|  [`Debouncer`](Debouncer) |  |
+|  [`EditorChange`](EditorChange) |  |
+|  [`EditorPosition`](EditorPosition) |  |
+|  [`EditorRange`](EditorRange) |  |
+|  [`EditorRangeOrCaret`](EditorRangeOrCaret) |  |
+|  [`EditorScrollInfo`](EditorScrollInfo) |  |
+|  [`EditorSelection`](EditorSelection) |  |
+|  [`EditorSelectionOrCaret`](EditorSelectionOrCaret) |  |
+|  [`EditorSuggestContext`](EditorSuggestContext) |  |
+|  [`EditorSuggestTriggerInfo`](EditorSuggestTriggerInfo) |  |
+|  [`EditorTransaction`](EditorTransaction) |  |
+|  [`EmbedCache`](EmbedCache) |  |
+|  [`EventRef`](EventRef) |  |
+|  [`FileStats`](FileStats) |  |
+|  [`FrontMatterCache`](FrontMatterCache) |  |
+|  [`FrontMatterInfo`](FrontMatterInfo) |  |
+|  [`FrontmatterLinkCache`](FrontmatterLinkCache) |  |
+|  [`FuzzyMatch`](FuzzyMatch) |  |
+|  [`HeadingCache`](HeadingCache) |  |
+|  [`HeadingSubpathResult`](HeadingSubpathResult) |  |
+|  [`Hotkey`](Hotkey) |  |
+|  [`HoverLinkSource`](HoverLinkSource) |  |
+|  [`HoverParent`](HoverParent) |  |
+|  [`HSL`](HSL) |  |
+|  [`Instruction`](Instruction) |  |
+|  [`ISuggestOwner`](ISuggestOwner) |  |
+|  [`KeymapContext`](KeymapContext) |  |
+|  [`KeymapEventHandler`](KeymapEventHandler) |  |
+|  [`KeymapInfo`](KeymapInfo) |  |
+|  [`LinkCache`](LinkCache) |  |
+|  [`ListedFiles`](ListedFiles) |  |
+|  [`ListItemCache`](ListItemCache) |  |
+|  [`LivePreviewState`](LivePreviewState) |  |
+|  [`Loc`](Loc) |  |
+|  [`MarkdownFileInfo`](MarkdownFileInfo) |  |
+|  [`MarkdownPostProcessor`](MarkdownPostProcessor) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into </p> |
+|  [`MarkdownPostProcessorContext`](MarkdownPostProcessorContext) |  |
+|  [`MarkdownPreviewEvents`](MarkdownPreviewEvents) | \* |
+|  [`MarkdownSectionInformation`](MarkdownSectionInformation) |  |
+|  [`MarkdownSubView`](MarkdownSubView) |  |
+|  [`MenuPositionDef`](MenuPositionDef) |  |
+|  [`ObsidianProtocolData`](ObsidianProtocolData) |  |
+|  [`OpenViewState`](OpenViewState) |  |
+|  [`PluginManifest`](PluginManifest) | Metadata about a Community plugin. |
+|  [`Point`](Point) |  |
+|  [`Pos`](Pos) |  |
+|  [`PreparedQuery`](PreparedQuery) |  |
+|  [`Reference`](Reference) |  |
+|  [`ReferenceCache`](ReferenceCache) |  |
+|  [`RequestUrlParam`](RequestUrlParam) |  |
+|  [`RequestUrlResponse`](RequestUrlResponse) |  |
+|  [`RequestUrlResponsePromise`](RequestUrlResponsePromise) |  |
+|  [`RGB`](RGB) |  |
+|  [`SearchResult`](SearchResult) |  |
+|  [`SearchResultContainer`](SearchResultContainer) |  |
+|  [`SectionCache`](SectionCache) |  |
+|  [`Stat`](Stat) |  |
+|  [`SubpathResult`](SubpathResult) |  |
+|  [`TagCache`](TagCache) |  |
+|  [`TooltipOptions`](TooltipOptions) |  |
+|  [`ViewState`](ViewState) |  |
+|  [`ViewStateResult`](ViewStateResult) |  |
+|  [`WorkspaceWindowInitData`](WorkspaceWindowInitData) |  |
 
 ## Variables
 
 |  Variable | Description |
 |  --- | --- |
-|  [`apiVersion`](apiVersion.md) | This is the API version of the app, which follows the release cycle of the desktop app. Example: "0.13.21" |
-|  [`editorEditorField`](editorEditorField.md) | Use this StateField to get a reference to the EditorView |
-|  [`editorInfoField`](editorInfoField.md) | Use this StateField to get information about this markdown editor, such as the associated file, or the Editor. |
-|  [`editorLivePreviewField`](editorLivePreviewField.md) | Use this StateField to check whether Live Preview is active |
-|  [`editorViewField`](editorViewField.md) | This is now deprecated - it is now mapped directly to <code>editorInfoField</code>, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily. |
-|  [`livePreviewState`](livePreviewState.md) |  |
-|  [`moment`](moment.md) |  |
-|  [`Platform`](Platform.md) |  |
+|  [`apiVersion`](apiVersion) | This is the API version of the app, which follows the release cycle of the desktop app. Example: "0.13.21" |
+|  [`editorEditorField`](editorEditorField) | Use this StateField to get a reference to the EditorView |
+|  [`editorInfoField`](editorInfoField) | Use this StateField to get information about this markdown editor, such as the associated file, or the Editor. |
+|  [`editorLivePreviewField`](editorLivePreviewField) | Use this StateField to check whether Live Preview is active |
+|  [`editorViewField`](editorViewField) | This is now deprecated - it is now mapped directly to <code>editorInfoField</code>, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily. |
+|  [`livePreviewState`](livePreviewState) |  |
+|  [`moment`](moment) |  |
+|  [`Platform`](Platform) |  |
 
 ## Type Aliases
 
 |  Type Alias | Description |
 |  --- | --- |
-|  [`Constructor`](Constructor.md) |  |
-|  [`EditorCommandName`](EditorCommandName.md) |  |
-|  [`HexString`](HexString.md) | Hex strings are 6-digit hash-prefixed rgb strings in lowercase form. Example: \#ffffff |
-|  [`IconName`](IconName.md) |  |
-|  [`KeymapEventListener`](KeymapEventListener.md) | Return <code>false</code> to automatically preventDefault |
-|  [`MarkdownViewModeType`](MarkdownViewModeType.md) |  |
-|  [`Modifier`](Modifier.md) | Mod = Cmd on MacOS and Ctrl on other OS Ctrl = Ctrl key for every OS Meta = Cmd on MacOS and Win key on other OS |
-|  [`ObsidianProtocolHandler`](ObsidianProtocolHandler.md) |  |
-|  [`PaneType`](PaneType.md) |  |
-|  [`SearchMatches`](SearchMatches.md) |  |
-|  [`SearchMatchPart`](SearchMatchPart.md) | Text position offsets within text file. Represents a text range \[from offset, to offset\]. |
-|  [`SplitDirection`](SplitDirection.md) |  |
-|  [`TooltipPlacement`](TooltipPlacement.md) |  |
-|  [`UserEvent`](UserEvent.md) |  |
-|  [`ViewCreator`](ViewCreator.md) |  |
+|  [`Constructor`](Constructor) |  |
+|  [`EditorCommandName`](EditorCommandName) |  |
+|  [`HexString`](HexString) | Hex strings are 6-digit hash-prefixed rgb strings in lowercase form. Example: \#ffffff |
+|  [`IconName`](IconName) |  |
+|  [`KeymapEventListener`](KeymapEventListener) | Return <code>false</code> to automatically preventDefault |
+|  [`MarkdownViewModeType`](MarkdownViewModeType) |  |
+|  [`Modifier`](Modifier) | Mod = Cmd on MacOS and Ctrl on other OS Ctrl = Ctrl key for every OS Meta = Cmd on MacOS and Win key on other OS |
+|  [`ObsidianProtocolHandler`](ObsidianProtocolHandler) |  |
+|  [`PaneType`](PaneType) |  |
+|  [`SearchMatches`](SearchMatches) |  |
+|  [`SearchMatchPart`](SearchMatchPart) | Text position offsets within text file. Represents a text range \[from offset, to offset\]. |
+|  [`SplitDirection`](SplitDirection) |  |
+|  [`TooltipPlacement`](TooltipPlacement) |  |
+|  [`UserEvent`](UserEvent) |  |
+|  [`ViewCreator`](ViewCreator) |  |
 
