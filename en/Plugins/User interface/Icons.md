@@ -4,7 +4,7 @@ Several of the UI components in the Obsidian API lets you configure an accompany
 
 Browse to [lucide.dev](https://lucide.dev/) to see all available icons and their corresponding names.
 
-**Please note:** Only icons up to v0.171.0 are supported at this time.
+**Please note:** Only icons up to v0.292.0 are supported at this time.
 
 ## Use icons
 
