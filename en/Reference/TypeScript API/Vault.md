@@ -47,10 +47,10 @@ export class Vault extends Events
 |  [`getRoot()`](Vault/getRoot) |  | Get the root folder of the current vault. |
 |  [`modify(file, data, options)`](Vault/modify) |  | Modify the contents of a plaintext file. |
 |  [`modifyBinary(file, data, options)`](Vault/modifyBinary) |  | Modify the contents of a binary file. |
-|  [`on(name: 'create', callback, ctx)`](Vault/on) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](Workspace/onLayoutReady)<!-- -->. |
-|  [`on(name: 'modify', callback, ctx)`](Vault/on_1) |  | Called when a file is modified. |
-|  [`on(name: 'delete', callback, ctx)`](Vault/on_2) |  | Called when a file is deleted. |
-|  [`on(name: 'rename', callback, ctx)`](Vault/on_3) |  | Called when a file is renamed. |
+|  [`on(name: 'create', callback, ctx)`](on(''creat).on.md) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](Workspace/onLayoutReady)<!-- -->. |
+|  [`on(name: 'modify', callback, ctx)`](on(''modif).on_1.md) |  | Called when a file is modified. |
+|  [`on(name: 'delete', callback, ctx)`](on(''delet).on_2.md) |  | Called when a file is deleted. |
+|  [`on(name: 'rename', callback, ctx)`](on(''renam).on_3.md) |  | Called when a file is renamed. |
 |  [`process(file, fn, options)`](Vault/process) |  | Atomically read, modify, and save the contents of a note. |
 |  [`read(file)`](Vault/read) |  | Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](Vault/cachedRead) otherwise for better performance. |
 |  [`readBinary(file)`](Vault/readBinary) |  | Read the content of a binary file stored inside the vault. |

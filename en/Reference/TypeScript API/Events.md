@@ -22,7 +22,7 @@ export class Events
 |  --- | --- | --- |
 |  [`off(name, callback)`](Events/off) |  |  |
 |  [`offref(ref)`](Events/offref) |  |  |
-|  [`on(name: string, callback, ctx)`](Events/on) |  |  |
+|  [`on(name: string, callback, ctx)`](on('stri).on.md) |  |  |
 |  [`trigger(name, data)`](Events/trigger) |  |  |
 |  [`tryTrigger(evt, args)`](Events/tryTrigger) |  |  |
 

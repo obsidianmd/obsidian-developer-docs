@@ -32,8 +32,8 @@ export class WorkspaceLeaf extends WorkspaceItem
 |  [`getEphemeralState()`](WorkspaceLeaf/getEphemeralState) |  |  |
 |  [`getIcon()`](WorkspaceLeaf/getIcon) |  |  |
 |  [`getViewState()`](WorkspaceLeaf/getViewState) |  |  |
-|  [`on(name: 'pinned-change', callback, ctx)`](WorkspaceLeaf/on) |  |  |
-|  [`on(name: 'group-change', callback, ctx)`](WorkspaceLeaf/on_1) |  |  |
+|  [`on(name: 'pinned-change', callback, ctx)`](on(''pinned-chang).on.md) |  |  |
+|  [`on(name: 'group-change', callback, ctx)`](on(''group-chang).on_1.md) |  |  |
 |  [`onResize()`](WorkspaceLeaf/onResize) |  |  |
 |  [`open(view)`](WorkspaceLeaf/open) |  |  |
 |  [`openFile(file, openState)`](WorkspaceLeaf/openFile) |  | By default, <code>openFile</code> will also make the leaf active. Pass in <code>{ active: false }</code> to override. |
