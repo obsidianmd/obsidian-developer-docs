@@ -47,7 +47,7 @@ export class Workspace extends Events
 |  [`getGroupLeaves(group)`](Workspace/getGroupLeaves) |  |  |
 |  [`getLastOpenFiles()`](Workspace/getLastOpenFiles) |  |  |
 |  [`getLayout()`](Workspace/getLayout) |  |  |
-|  [`getLeaf(newLeaf, direction)`](Workspace/getLeaf) |  | Creates a new leaf in a leaf adjacent to the currently active leaf. If direction is <code>'vertical'</code>, the leaf will appear to the right. If direction is <code>'horizontal'</code>, the leaf will appear below the current leaf. |
+|  [`getLeaf(newLeaf, direction)`](Workspace/getLeaf('split').md) |  | Creates a new leaf in a leaf adjacent to the currently active leaf. If direction is <code>'vertical'</code>, the leaf will appear to the right. If direction is <code>'horizontal'</code>, the leaf will appear below the current leaf. |
 |  [`getLeaf(newLeaf)`](Workspace/getLeaf_1) |  | <p>If newLeaf is false (or not set) then an existing leaf which can be navigated is returned, or a new leaf will be created if there was no leaf available.</p><p>If newLeaf is <code>'tab'</code> or <code>true</code> then a new leaf will be created in the preferred location within the root split and returned.</p><p>If newLeaf is <code>'split'</code> then a new leaf will be created adjacent to the currently active leaf.</p><p>If newLeaf is <code>'window'</code> then a popout window will be created with a new leaf inside.</p> |
 |  [`getLeafById(id)`](Workspace/getLeafById) |  |  |
 |  [`getLeavesOfType(viewType)`](Workspace/getLeavesOfType) |  |  |
@@ -58,22 +58,22 @@ export class Workspace extends Events
 |  [`iterateAllLeaves(callback)`](Workspace/iterateAllLeaves) |  | Iterate through all leaves, including main area leaves, floating leaves, and sidebar leaves. |
 |  [`iterateRootLeaves(callback)`](Workspace/iterateRootLeaves) |  | Iterate through all leaves in the main area of the workspace. |
 |  [`moveLeafToPopout(leaf, data)`](Workspace/moveLeafToPopout) |  | Migrates this leaf to a new popout window. Only works on the desktop app. |
-|  [`on(name: 'quick-preview', callback, ctx)`](Workspace/on) |  |  |
-|  [`on(name: 'files-menu', callback, ctx)`](Workspace/on_9) |  | Triggered when the user opens the context menu with multiple files selected in the File Explorer. |
-|  [`on(name: 'url-menu', callback, ctx)`](Workspace/on_10) |  | Triggered when the user opens the context menu on an external URL. |
-|  [`on(name: 'editor-menu', callback, ctx)`](Workspace/on_11) |  | Triggered when the user opens the context menu on an editor. |
-|  [`on(name: 'editor-change', callback, ctx)`](Workspace/on_12) |  | Triggered when changes to an editor has been applied, either programmatically or from a user event. |
-|  [`on(name: 'editor-paste', callback, ctx)`](Workspace/on_13) |  | Triggered when the editor receives a paste event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
-|  [`on(name: 'editor-drop', callback, ctx)`](Workspace/on_14) |  | Triggered when the editor receives a drop event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
-|  [`on(name: 'quit', callback, ctx)`](Workspace/on_15) |  | Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here. |
-|  [`on(name: 'resize', callback, ctx)`](Workspace/on_1) |  |  |
-|  [`on(name: 'active-leaf-change', callback, ctx)`](Workspace/on_2) |  |  |
-|  [`on(name: 'file-open', callback, ctx)`](Workspace/on_3) |  |  |
-|  [`on(name: 'layout-change', callback, ctx)`](Workspace/on_4) |  |  |
-|  [`on(name: 'window-open', callback, ctx)`](Workspace/on_5) |  |  |
-|  [`on(name: 'window-close', callback, ctx)`](Workspace/on_6) |  |  |
-|  [`on(name: 'css-change', callback, ctx)`](Workspace/on_7) |  | Triggered when the CSS of the app has changed. |
-|  [`on(name: 'file-menu', callback, ctx)`](Workspace/on_8) |  | Triggered when the user opens the context menu on a file. |
+|  [`on(name: 'quick-preview', callback, ctx)`](Workspace/on('quick-preview').md) |  |  |
+|  [`on(name: 'files-menu', callback, ctx)`](Workspace/on('files-menu').md) |  | Triggered when the user opens the context menu with multiple files selected in the File Explorer. |
+|  [`on(name: 'url-menu', callback, ctx)`](Workspace/on('url-menu').md) |  | Triggered when the user opens the context menu on an external URL. |
+|  [`on(name: 'editor-menu', callback, ctx)`](Workspace/on('editor-menu').md) |  | Triggered when the user opens the context menu on an editor. |
+|  [`on(name: 'editor-change', callback, ctx)`](Workspace/on('editor-change').md) |  | Triggered when changes to an editor has been applied, either programmatically or from a user event. |
+|  [`on(name: 'editor-paste', callback, ctx)`](Workspace/on('editor-paste').md) |  | Triggered when the editor receives a paste event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
+|  [`on(name: 'editor-drop', callback, ctx)`](Workspace/on('editor-drop').md) |  | Triggered when the editor receives a drop event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
+|  [`on(name: 'quit', callback, ctx)`](Workspace/on('quit').md) |  | Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here. |
+|  [`on(name: 'resize', callback, ctx)`](Workspace/on('resize').md) |  |  |
+|  [`on(name: 'active-leaf-change', callback, ctx)`](Workspace/on('active-leaf-change').md) |  |  |
+|  [`on(name: 'file-open', callback, ctx)`](Workspace/on('file-open').md) |  |  |
+|  [`on(name: 'layout-change', callback, ctx)`](Workspace/on('layout-change').md) |  |  |
+|  [`on(name: 'window-open', callback, ctx)`](Workspace/on('window-open').md) |  |  |
+|  [`on(name: 'window-close', callback, ctx)`](Workspace/on('window-close').md) |  |  |
+|  [`on(name: 'css-change', callback, ctx)`](Workspace/on('css-change').md) |  | Triggered when the CSS of the app has changed. |
+|  [`on(name: 'file-menu', callback, ctx)`](Workspace/on('file-menu').md) |  | Triggered when the user opens the context menu on a file. |
 |  [`onLayoutReady(callback)`](Workspace/onLayoutReady) |  | Runs the callback function right away if layout is already ready, or push it to a queue to be called later when layout is ready. |
 |  [`openLinkText(linktext, sourcePath, newLeaf, openViewState)`](Workspace/openLinkText) |  |  |
 |  [`openPopoutLeaf(data)`](Workspace/openPopoutLeaf) |  | Open a new popout window with a single new leaf and return that leaf. Only works on the desktop app. |
