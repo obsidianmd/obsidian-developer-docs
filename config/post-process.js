@@ -46,6 +46,9 @@ cssclasses: hide-title
 					if(y.includes('constructor')) {
 						return `[${x}]${y.replaceAll(".", "/")}`;
 					}
+					if(y.includes("'")) {
+						return `[${x}]${y.replaceAll(".", "/")}`;
+					}
 
 					return `[${x}]${y.slice(0, -4).replaceAll(".", "/")})`;
 				});
