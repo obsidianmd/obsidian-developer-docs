@@ -25,7 +25,7 @@ While you don't need to use a separate framework to build a plugin, there are a 
    ```ts
    {
      "compilerOptions": {
-       "jsx": "preserve"
+       "jsx": "react-jsx"
      }
    }
    ```
