@@ -149,7 +149,11 @@ With this update, when you hover over any input field, the border color will cha
 
 ## Step 7: Discover CSS variables in use
 
-Obsidian exposes more than 400 different CSS variables for customizing different parts of the user interface. In this step, you'll find the CSS variable for changing the ribbon background.
+Obsidian exposes more than 400 different CSS variables for customizing different parts of the user interface.
+You can find a list of many of these variables under available under [[CSS variables]]
+
+Alternatively, you can inspect the app to find the variable that is used to style a certain element. 
+In this step, you'll find the CSS variable for changing the ribbon background.
 
 1. In Obsidian, open the **Developer Tools** by pressing `Ctrl`+`Shift`+`I` (or `Cmd`+`Option`+`I` on macOS).
 2. Open the **Sources** tab.
