@@ -13,6 +13,10 @@ Avoid using the global app object, `app` (or `window.app`). Instead, use the ref
 
 The global app object is intended for debugging purposes and might be removed in the future.
 
+## Mobile
+![[Mobile development#Node and Electron APIs]]
+
+![[Mobile development#Lookbehind in regular expressions]]
 ## UI text
 
 This section lists guidelines for formatting text in the user interface, such as settings, commands, and buttons.
