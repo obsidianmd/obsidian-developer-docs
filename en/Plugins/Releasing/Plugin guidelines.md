@@ -200,24 +200,37 @@ While the file operations in the Adapter API are often more familiar to many dev
 
 ### Avoid iterating all files to find a file by its path
 
-This is inefficient, especially for large vaults. Use [[Vault/getAbstractFileByPath|getAbstractFileByPath()]] instead.
+This is inefficient, especially for large vaults. Use [[getFileByPath|Vault.getFileByPath]], [[getFolderByPath|Vault.getFolderByPath]] or [[getAbstractFileByPath|Vault.getAbstractFileByPath]] instead.
 
 **Don't** do this:
 
 ```ts
-vault.getAllFiles().find(file => file.path === filePath)
+this.app.vault.getAllFiles().find(file => file.path === filePath);
 ```
 
 Do this instead:
 
 ```ts
 const filePath = 'folder/file.md';
+// if you want to get a file
+const file = this.app.vault.getFileByPath(filePath);
+```
 
-const file = app.vault.getAbstractFileByPath(filePath);
+```ts
+const folderPath = 'folder';
+// or if you want to get a folder
+const folder = this.app.vault.getFolderByPath(folderPath);
+```
 
-// Check if it exists and is of the correct type
+If you aren't sure if the path provided is for a folder or a file, use:
+```ts
+const abstractFile = this.app.vault.getAbstractFileByPath(filePath);
+
 if (file instanceof TFile) {
-  // file is automatically casted to TFile within this scope.
+	// it's a file
+}
+if (file instanceof TFolder) {
+	// it's a folder
 }
 ```
 
