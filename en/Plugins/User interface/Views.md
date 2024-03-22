@@ -45,7 +45,7 @@ Each view is uniquely identified by a text string and several operations require
 Custom views need to be registered when the plugin is enabled, and cleaned up when the plugin is disabled:
 
 ```ts
-import { Plugin } from "obsidian";
+import { Plugin, WorkspaceLeaf } from "obsidian";
 import { ExampleView, VIEW_TYPE_EXAMPLE } from "./view";
 
 export default class ExamplePlugin extends Plugin {
