@@ -223,8 +223,8 @@ Use [[normalizePath|normalizePath()]] whenever you accept user-defined paths to 
 
 ```ts
 import { normalizePath } from "obsidian";
-const pathToPlugin = normalizePath(app.vault.configDir + "//plugins/my-plugin");
-// pathToPlugin contains ".obsidian/plugins/my-plugin" not .obsidian//plugins/my-plugin
+const pathToPlugin = normalizePath("//my-folder\file");
+// pathToPlugin contains "my-folder/file" not "//my-folder\"
 ```
 
 ## Editor
