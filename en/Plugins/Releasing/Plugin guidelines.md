@@ -168,7 +168,7 @@ for (let leaf of app.workspace.getActiveLeavesOfType(MY_VIEW_TYPE)) {
 
 ## Vault
 
-### Prefer the Editor API instead of `Vault.modify`
+### Prefer the Editor API instead of `Vault.modify` to a the active file
 
 If you want to edit an active note, use the [[Editor]] interface instead of [[Vault/modify|Vault.modify()]].
 
@@ -176,7 +176,18 @@ Editor maintains information about the active note, such as cursor position, sel
 
 Editor is also more efficient when making small changes to parts of the note.
 
-Only use [[Vault/modify|Vault.modify()]] if you're editing a file in the background.
+### Prefer `Vault.process` instead of `Vault.modify` to modify a file in the background
+
+If you want to edit a note that is not currently opened, use the [[Reference/TypeScript API/Vault/process|Vault.process]] function instead of [[modify|Vault.modify]].
+
+The `process` function modifies the file atomically, which means that your plugin won't run into conflicts with other plugins modifying the same file.
+
+### Prefer `FileManager.processFrontMatter` to modify frontmatter of a note
+
+Instead of extracting the frontmatter of a note, parsing and modifying the YAML manually you should use the [[processFrontMatter|FileManager.processFrontMatter]] function.
+
+`processFrontMatter` runs atomically, so modifying the file will not conflict with other plugins editing the same file.
+It will also ensure a consistent layout of the YAML produced.
 
 ### Prefer the Vault API over the Adapter API
 
