@@ -78,6 +78,8 @@ function showName(name: string) {
 
 Instead, use the DOM API or the Obsidian helper functions, such as `createEl()`, `createDiv()` and `createSpan()` to build the DOM element programmatically. For more information, refer to [[HTML elements]].
 
+To cleanup a HTML elements contents use `el.empty();`
+
 ## Resource management
 
 ### Clean up resources when plugin unloads

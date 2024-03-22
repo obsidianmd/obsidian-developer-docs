@@ -5,6 +5,7 @@ You can build themes for your [Obsidian Publish](https://help.obsidian.md/Obsidi
 To build a theme for your site:
 
 1. Add a file called `publish.css` to the root folder of your vault.
+	- You need to use a external editor to create this file, as Obsidian does not support editing CSS files.
 2. Publish `publish.css` to enable the theme on your live Publish site.
 
 **Example:**
