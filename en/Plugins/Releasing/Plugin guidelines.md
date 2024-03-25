@@ -17,6 +17,15 @@ The global app object is intended for debugging purposes and might be removed in
 
 Please avoid unnecessary logging.
 In it's default configuration, the developer console should only show error messages, debug messages should not be shown.
+
+### Consider organizing your code base using folders
+
+If your plugin uses more than one `.ts` file, consider organizing them into folders to make it easier to review and maintain.
+
+### Rename placeholder class names
+
+The sample plugin contains placeholder names for common classes, such as `MyPlugin`, `MyPluginSettings`, and `SampleSettingTab`. Rename these to reflect the name of your plugin.
+
 ## Mobile
 ![[Mobile development#Node and Electron APIs]]
 
@@ -363,11 +372,3 @@ async function AsyncTest(): Promise<string | null> {
   }
 }
 ```
-
-### Consider organizing your code base using folders
-
-If your plugin uses more than one `.ts` file, consider organizing them into folders to make it easier to review and maintain.
-
-### Rename placeholder class names
-
-The sample plugin contains placeholder names for common classes, such as `MyPlugin`, `MyPluginSettings`, and `SampleSettingTab`. Rename these to reflect the name of your plugin.
