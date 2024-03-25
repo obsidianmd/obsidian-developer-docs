@@ -40,4 +40,10 @@ If your plugin uses any of these APIs, you **must** set `isDesktopOnly` to `true
 
 ## Don't include the plugin ID in the command ID
 
-Obsidian automatically prefixes command IDs with your plugin ID. You don't need to include the plugin ID yourself.
+Obsidian automatically prefixes command IDs with your plugin ID.
+You don't need to include the plugin ID yourself.
+
+## Remove all the sample code
+
+The sample plugin includes examples how to do many of the most common things a plugin requires.
+It's only there to get you started, sample code should be removed from your plugin before submission.
