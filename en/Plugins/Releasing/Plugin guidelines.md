@@ -13,6 +13,10 @@ Avoid using the global app object, `app` (or `window.app`). Instead, use the ref
 
 The global app object is intended for debugging purposes and might be removed in the future.
 
+### Avoid unnecessary logging to console
+
+Please avoid unnecessary logging.
+In it's default configuration, the developer console should only show error messages, debug messages should not be shown.
 ## Mobile
 ![[Mobile development#Node and Electron APIs]]
 
