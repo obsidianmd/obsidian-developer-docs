@@ -6,6 +6,11 @@ Use [[Manifest#fundingUrl|fundingUrl]] if you accept financial support for your 
 
 If you don't accept donations, remove `fundingUrl` from your manifest.
 
+## Set an appropriate `minAppVersion`
+
+The `minAppVersion` in the [[Reference/Manifest|Manifest]] should be set to the minimum required version of the Obsidian app that your plugin is compatible with.
+If you don't know what an appropriate version number is, use the latest stable build number.
+
 ## Keep plugin descriptions short and simple
 
 Good plugin descriptions help users understand your plugin quickly and succinctly. Good descriptions often start with an action statement such as:
