@@ -16,7 +16,7 @@ To build a Svelte application, you need to install the dependencies and configur
 1. Add Svelte to your plugin dependencies:
 
    ```bash
-   npm install --save-dev svelte svelte-preprocess @tsconfig/svelte esbuild-svelte
+   npm install --save-dev svelte svelte-preprocess @tsconfig/svelte esbuild-svelte typescript@^5.0.0
    ```
 
 2. Extend the `tsconfig.json` to enable additional type checking for common Svelte issues. The `types` property is important for TypeScript to recognize `.svelte` files.
@@ -38,27 +38,30 @@ To build a Svelte application, you need to install the dependencies and configur
    "inlineSourceMap": true,
    ```
 
-4. In `esbuild.config.mjs`, add the following imports to the top of the file:
+4. Add `.svelte` files to the `include` list in `tsconfig.json` so the bundler picks them up.
+
+   ```json
+   "include": [ "**/*.ts", "**/*.svelte" ]
+   ``` 
+
+5. In `esbuild.config.mjs`, add the following imports to the top of the file:
 
    ```js
    import esbuildSvelte from "esbuild-svelte";
    import sveltePreprocess from "svelte-preprocess";
    ```
-
-5. Add Svelte to the list of plugins.
+6. Add Svelte to the list of plugins.
 
    ```js
-    esbuild
-    .build({
-      plugins: [
-        esbuildSvelte({
-          compilerOptions: { css: true },
-          preprocess: sveltePreprocess(),
-        }),
-      ],
-      // ...
-    })
-    .catch(() => process.exit(1));
+   const context = await esbuild.context({
+     ...
+	 plugins: [
+       esbuildSvelte({
+         compilerOptions: { css: true },
+         preprocess: sveltePreprocess(),
+       }),
+     ]
+   });
    ```
 
 ## Create a Svelte component
