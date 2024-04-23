@@ -43,7 +43,7 @@ jobs:
 
       - name: Generate API docs
         working-directory: ./config
-        run: ../rushstack/apps/api-documenter/bin/api-documenter markdown --output ../en/Reference/TypeScript\ API
+        run: ../rushstack/apps/api-documenter/bin/api-documenter generate --output ../en/Reference/TypeScript\ API
 
       - name: Post-process Markdown
         working-directory: ./config
