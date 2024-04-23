@@ -27,6 +27,7 @@ export class DropdownComponent extends ValueComponent<string>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`selectEl`](DropdownComponent/selectEl) |  | <code>HTMLSelectElement</code> |  |
 
 ## Methods
@@ -37,6 +38,8 @@ export class DropdownComponent extends ValueComponent<string>
 |  [`addOptions(options)`](DropdownComponent/addOptions) |  |  |
 |  [`getValue()`](DropdownComponent/getValue) |  |  |
 |  [`onChange(callback)`](DropdownComponent/onChange) |  |  |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
 |  [`setDisabled(disabled)`](DropdownComponent/setDisabled) |  |  |
 |  [`setValue(value)`](DropdownComponent/setValue) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

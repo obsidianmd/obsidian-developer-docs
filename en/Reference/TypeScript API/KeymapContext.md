@@ -21,5 +21,7 @@ export interface KeymapContext extends KeymapInfo
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`key`](KeymapInfo/key) |  | <code>string &#124; null</code> | <p>(Inherited from [KeymapInfo](KeymapInfo)<!-- -->)</p> |
+|  [`modifiers`](KeymapInfo/modifiers) |  | <code>string &#124; null</code> | <p>(Inherited from [KeymapInfo](KeymapInfo)<!-- -->)</p> |
 |  [`vkey`](KeymapContext/vkey) |  | <code>string</code> | Interpreted virtual key. |
 

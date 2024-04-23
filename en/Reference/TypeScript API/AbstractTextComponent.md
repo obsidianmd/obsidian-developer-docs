@@ -27,6 +27,7 @@ export class AbstractTextComponent<T extends HTMLInputElement | HTMLTextAreaElem
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`inputEl`](AbstractTextComponent/inputEl) |  | <code>T</code> |  |
 
 ## Methods
@@ -36,7 +37,9 @@ export class AbstractTextComponent<T extends HTMLInputElement | HTMLTextAreaElem
 |  [`getValue()`](AbstractTextComponent/getValue) |  |  |
 |  [`onChange(callback)`](AbstractTextComponent/onChange) |  |  |
 |  [`onChanged()`](AbstractTextComponent/onChanged) |  |  |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
 |  [`setDisabled(disabled)`](AbstractTextComponent/setDisabled) |  |  |
 |  [`setPlaceholder(placeholder)`](AbstractTextComponent/setPlaceholder) |  |  |
 |  [`setValue(value)`](AbstractTextComponent/setValue) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

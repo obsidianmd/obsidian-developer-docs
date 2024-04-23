@@ -21,5 +21,7 @@ export interface EditorChange extends EditorRangeOrCaret
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`from`](EditorRangeOrCaret/from) |  | [`EditorPosition`](EditorPosition) | <p>(Inherited from [EditorRangeOrCaret](EditorRangeOrCaret)<!-- -->)</p> |
 |  [`text`](EditorChange/text) |  | <code>string</code> |  |
+|  [`to?`](EditorRangeOrCaret/to) |  | [`EditorPosition`](EditorPosition) | <p>_(Optional)_</p><p>(Inherited from [EditorRangeOrCaret](EditorRangeOrCaret)<!-- -->)</p> |
 

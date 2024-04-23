@@ -17,19 +17,33 @@ export class MomentFormatComponent extends TextComponent
 ```
 **Extends:** [`TextComponent`](TextComponent)
 
+## Constructors
+
+|  Constructor | Modifiers | Description |
+|  --- | --- | --- |
+|  [`(constructor)(containerEl)`](TextComponent/(constructor).md) |  | <p>Constructs a new instance of the <code>TextComponent</code> class</p><p>(Inherited from [TextComponent](TextComponent)<!-- -->)</p> |
+
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`inputEl`](AbstractTextComponent/inputEl) |  | <code>T</code> | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
 |  [`sampleEl`](MomentFormatComponent/sampleEl) |  | <code>HTMLElement</code> |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [`getValue()`](AbstractTextComponent/getValue) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`onChange(callback)`](AbstractTextComponent/onChange) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
 |  [`onChanged()`](MomentFormatComponent/onChanged) |  |  |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
 |  [`setDefaultFormat(defaultFormat)`](MomentFormatComponent/setDefaultFormat) |  | Sets the default format when input is cleared. Also used for placeholder. |
+|  [`setDisabled(disabled)`](AbstractTextComponent/setDisabled) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`setPlaceholder(placeholder)`](AbstractTextComponent/setPlaceholder) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
 |  [`setSampleEl(sampleEl)`](MomentFormatComponent/setSampleEl) |  |  |
 |  [`setValue(value)`](MomentFormatComponent/setValue) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`updateSample()`](MomentFormatComponent/updateSample) |  |  |
 

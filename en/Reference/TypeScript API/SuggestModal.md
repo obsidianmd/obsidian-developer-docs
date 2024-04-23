@@ -29,20 +29,33 @@ export abstract class SuggestModal<T> extends Modal implements ISuggestOwner<T>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`app`](Modal/app) |  | [`App`](App) | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`containerEl`](Modal/containerEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`contentEl`](Modal/contentEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`emptyStateText`](SuggestModal/emptyStateText) |  | <code>string</code> |  |
 |  [`inputEl`](SuggestModal/inputEl) |  | <code>HTMLInputElement</code> |  |
 |  [`limit`](SuggestModal/limit) |  | <code>number</code> |  |
+|  [`modalEl`](Modal/modalEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`resultContainerEl`](SuggestModal/resultContainerEl) |  | <code>HTMLElement</code> |  |
+|  [`scope`](Modal/scope) |  | [`Scope`](Scope) | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`shouldRestoreSelection`](Modal/shouldRestoreSelection) |  | <code>boolean</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`titleEl`](Modal/titleEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [`close()`](Modal/close) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`getSuggestions(query)`](SuggestModal/getSuggestions) | <code>abstract</code> |  |
 |  [`onChooseSuggestion(item, evt)`](SuggestModal/onChooseSuggestion) | <code>abstract</code> |  |
+|  [`onClose()`](Modal/onClose) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`onNoSuggestion()`](SuggestModal/onNoSuggestion) |  |  |
+|  [`onOpen()`](Modal/onOpen) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`open()`](Modal/open) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`renderSuggestion(value, el)`](SuggestModal/renderSuggestion) | <code>abstract</code> |  |
 |  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  |  |
+|  [`setContent(content)`](Modal/setContent) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`setInstructions(instructions)`](SuggestModal/setInstructions) |  |  |
 |  [`setPlaceholder(placeholder)`](SuggestModal/setPlaceholder) |  |  |
+|  [`setTitle(title)`](Modal/setTitle) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 

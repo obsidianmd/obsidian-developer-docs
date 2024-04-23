@@ -21,5 +21,8 @@ export interface FrontmatterLinkCache extends Reference
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`displayText?`](Reference/displayText) |  | <code>string</code> | <p>_(Optional)_ if title is different than link text, in the case of \[\[page name\|display name\]\]</p><p>(Inherited from [Reference](Reference)<!-- -->)</p> |
 |  [`key`](FrontmatterLinkCache/key) |  | <code>string</code> |  |
+|  [`link`](Reference/link) |  | <code>string</code> | <p>(Inherited from [Reference](Reference)<!-- -->)</p> |
+|  [`original`](Reference/original) |  | <code>string</code> | <p>(Inherited from [Reference](Reference)<!-- -->)</p> |
 

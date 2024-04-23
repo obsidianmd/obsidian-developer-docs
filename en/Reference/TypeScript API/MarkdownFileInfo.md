@@ -23,4 +23,5 @@ export interface MarkdownFileInfo extends HoverParent
 |  --- | --- | --- | --- |
 |  [`app`](MarkdownFileInfo/app) |  | [`App`](App) |  |
 |  [`editor?`](MarkdownFileInfo/editor) |  | [`Editor`](Editor) | _(Optional)_ |
+|  [`hoverPopover`](HoverParent/hoverPopover) |  | [`HoverPopover`](HoverPopover)<code> &#124; null</code> | <p>(Inherited from [HoverParent](HoverParent)<!-- -->)</p> |
 

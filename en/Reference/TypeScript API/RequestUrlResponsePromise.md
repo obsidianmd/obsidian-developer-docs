@@ -17,6 +17,8 @@ export interface RequestUrlResponsePromise extends Promise<RequestUrlResponse>
 ```
 **Extends:** `Promise``<`[`RequestUrlResponse`](RequestUrlResponse)`>`
 
+_(Some inherited members may not be shown because they are not represented in the documentation.)_
+
 ## Properties
 
 |  Property | Modifiers | Type | Description |

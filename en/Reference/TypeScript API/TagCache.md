@@ -21,5 +21,6 @@ export interface TagCache extends CacheItem
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`position`](CacheItem/position) |  | [`Pos`](Pos) | <p>(Inherited from [CacheItem](CacheItem)<!-- -->)</p> |
 |  [`tag`](TagCache/tag) |  | <code>string</code> |  |
 

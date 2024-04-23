@@ -23,10 +23,19 @@ export class ProgressBarComponent extends ValueComponent<number>
 |  --- | --- | --- |
 |  [`(constructor)(containerEl)`](ProgressBarComponent/(constructor).md) |  | Constructs a new instance of the <code>ProgressBarComponent</code> class |
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`getValue()`](ProgressBarComponent/getValue) |  |  |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
+|  [`setDisabled(disabled)`](BaseComponent/setDisabled) |  | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`setValue(value)`](ProgressBarComponent/setValue) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

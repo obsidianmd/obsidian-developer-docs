@@ -47,6 +47,8 @@ export class Vault extends Events
 |  [`getRoot()`](Vault/getRoot) |  | Get the root folder of the current vault. |
 |  [`modify(file, data, options)`](Vault/modify) |  | Modify the contents of a plaintext file. |
 |  [`modifyBinary(file, data, options)`](Vault/modifyBinary) |  | Modify the contents of a binary file. |
+|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`on(name: 'create', callback, ctx)`](Vault/on('create').md) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](Workspace/onLayoutReady)<!-- -->. |
 |  [`on(name: 'modify', callback, ctx)`](Vault/on('modify').md) |  | Called when a file is modified. |
 |  [`on(name: 'delete', callback, ctx)`](Vault/on('delete').md) |  | Called when a file is deleted. |
@@ -57,4 +59,6 @@ export class Vault extends Events
 |  [`recurseChildren(root, cb)`](Vault/recurseChildren) | <code>static</code> |  |
 |  [`rename(file, newPath)`](Vault/rename) |  | Rename or move a file. |
 |  [`trash(file, system)`](Vault/trash) |  | Tries to move to system trash. If that isn't successful/allowed, use local trash |
+|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 

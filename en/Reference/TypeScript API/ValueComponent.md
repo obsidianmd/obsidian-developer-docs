@@ -17,11 +17,19 @@ export abstract class ValueComponent<T> extends BaseComponent
 ```
 **Extends:** [`BaseComponent`](BaseComponent)
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`getValue()`](ValueComponent/getValue) | <code>abstract</code> |  |
 |  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  |  |
+|  [`setDisabled(disabled)`](BaseComponent/setDisabled) |  | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`setValue(value)`](ValueComponent/setValue) | <code>abstract</code> |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 
