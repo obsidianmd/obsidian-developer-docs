@@ -22,4 +22,5 @@ export interface BlockCache extends CacheItem
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`id`](BlockCache/id) |  | <code>string</code> |  |
+|  [`position`](CacheItem/position) |  | [`Pos`](Pos) | <p>(Inherited from [CacheItem](CacheItem)<!-- -->)</p> |
 

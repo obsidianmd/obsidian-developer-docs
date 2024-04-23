@@ -23,4 +23,5 @@ export interface HeadingCache extends CacheItem
 |  --- | --- | --- | --- |
 |  [`heading`](HeadingCache/heading) |  | <code>string</code> |  |
 |  [`level`](HeadingCache/level) |  | <code>number</code> |  |
+|  [`position`](CacheItem/position) |  | [`Pos`](Pos) | <p>(Inherited from [CacheItem](CacheItem)<!-- -->)</p> |
 

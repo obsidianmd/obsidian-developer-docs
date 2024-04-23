@@ -24,6 +24,12 @@ export class ColorComponent extends ValueComponent<string>
 |  --- | --- | --- |
 |  [`(constructor)(containerEl)`](ColorComponent/(constructor).md) |  | Constructs a new instance of the <code>ColorComponent</code> class |
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+
 ## Methods
 
 |  Method | Modifiers | Description |
@@ -32,8 +38,10 @@ export class ColorComponent extends ValueComponent<string>
 |  [`getValueHsl()`](ColorComponent/getValueHsl) |  |  |
 |  [`getValueRgb()`](ColorComponent/getValueRgb) |  |  |
 |  [`onChange(callback)`](ColorComponent/onChange) |  |  |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
 |  [`setDisabled(disabled)`](ColorComponent/setDisabled) |  |  |
 |  [`setValue(value)`](ColorComponent/setValue) |  |  |
 |  [`setValueHsl(hsl)`](ColorComponent/setValueHsl) |  |  |
 |  [`setValueRgb(rgb)`](ColorComponent/setValueRgb) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

@@ -30,3 +30,20 @@ export class HoverPopover extends Component
 |  [`hoverEl`](HoverPopover/hoverEl) |  | <code>HTMLElement</code> |  |
 |  [`state`](HoverPopover/state) |  | [`PopoverState`](PopoverState) |  |
 
+## Methods
+
+|  Method | Modifiers | Description |
+|  --- | --- | --- |
+|  [`addChild(component)`](Component/addChild) |  | <p>Adds a child component, loading it if this component is loaded</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`load()`](Component/load) |  | <p>Load this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onload()`](Component/onload) |  | <p>Override this to load your component</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onunload()`](Component/onunload) |  | <p>Override this to unload your component</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`register(cb)`](Component/register) |  | <p>Registers a callback to be called when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_2) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`unload()`](Component/unload) |  | <p>Unload this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+

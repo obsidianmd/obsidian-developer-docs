@@ -28,10 +28,14 @@ export class WorkspaceLeaf extends WorkspaceItem
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`detach()`](WorkspaceLeaf/detach) |  |  |
+|  [`getContainer()`](WorkspaceItem/getContainer) |  | <p>Get the root container parent item, which can be one of: - [WorkspaceRoot](WorkspaceRoot) - [WorkspaceWindow](WorkspaceWindow)</p><p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
 |  [`getDisplayText()`](WorkspaceLeaf/getDisplayText) |  |  |
 |  [`getEphemeralState()`](WorkspaceLeaf/getEphemeralState) |  |  |
 |  [`getIcon()`](WorkspaceLeaf/getIcon) |  |  |
+|  [`getRoot()`](WorkspaceItem/getRoot) |  | <p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
 |  [`getViewState()`](WorkspaceLeaf/getViewState) |  |  |
+|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`on(name: 'pinned-change', callback, ctx)`](WorkspaceLeaf/on('pinned-change').md) |  |  |
 |  [`on(name: 'group-change', callback, ctx)`](WorkspaceLeaf/on('group-change').md) |  |  |
 |  [`onResize()`](WorkspaceLeaf/onResize) |  |  |
@@ -43,4 +47,6 @@ export class WorkspaceLeaf extends WorkspaceItem
 |  [`setPinned(pinned)`](WorkspaceLeaf/setPinned) |  |  |
 |  [`setViewState(viewState, eState)`](WorkspaceLeaf/setViewState) |  |  |
 |  [`togglePinned()`](WorkspaceLeaf/togglePinned) |  |  |
+|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 

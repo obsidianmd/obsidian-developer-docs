@@ -27,6 +27,7 @@ export class ToggleComponent extends ValueComponent<boolean>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`toggleEl`](ToggleComponent/toggleEl) |  | <code>HTMLElement</code> |  |
 
 ## Methods
@@ -36,7 +37,9 @@ export class ToggleComponent extends ValueComponent<boolean>
 |  [`getValue()`](ToggleComponent/getValue) |  |  |
 |  [`onChange(callback)`](ToggleComponent/onChange) |  |  |
 |  [`onClick()`](ToggleComponent/onClick) |  |  |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
 |  [`setDisabled(disabled)`](ToggleComponent/setDisabled) |  |  |
 |  [`setTooltip(tooltip, options)`](ToggleComponent/setTooltip) |  |  |
 |  [`setValue(on)`](ToggleComponent/setValue) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

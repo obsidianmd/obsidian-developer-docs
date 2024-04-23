@@ -27,6 +27,7 @@ export class SliderComponent extends ValueComponent<number>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`sliderEl`](SliderComponent/sliderEl) |  | <code>HTMLInputElement</code> |  |
 
 ## Methods
@@ -36,9 +37,11 @@ export class SliderComponent extends ValueComponent<number>
 |  [`getValue()`](SliderComponent/getValue) |  |  |
 |  [`getValuePretty()`](SliderComponent/getValuePretty) |  |  |
 |  [`onChange(callback)`](SliderComponent/onChange) |  |  |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
 |  [`setDisabled(disabled)`](SliderComponent/setDisabled) |  |  |
 |  [`setDynamicTooltip()`](SliderComponent/setDynamicTooltip) |  |  |
 |  [`setLimits(min, max, step)`](SliderComponent/setLimits) |  |  |
 |  [`setValue(value)`](SliderComponent/setValue) |  |  |
 |  [`showTooltip()`](SliderComponent/showTooltip) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

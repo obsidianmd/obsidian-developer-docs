@@ -22,6 +22,8 @@ export interface HeadingSubpathResult extends SubpathResult
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`current`](HeadingSubpathResult/current) |  | [`HeadingCache`](HeadingCache) |  |
+|  [`end`](SubpathResult/end) |  | [`Loc`](Loc)<code> &#124; null</code> | <p>(Inherited from [SubpathResult](SubpathResult)<!-- -->)</p> |
 |  [`next`](HeadingSubpathResult/next) |  | [`HeadingCache`](HeadingCache) |  |
+|  [`start`](SubpathResult/start) |  | [`Loc`](Loc) | <p>(Inherited from [SubpathResult](SubpathResult)<!-- -->)</p> |
 |  [`type`](HeadingSubpathResult/type) |  | <code>'heading'</code> |  |
 

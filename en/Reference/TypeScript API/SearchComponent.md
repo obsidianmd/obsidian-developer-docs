@@ -28,10 +28,19 @@ export class SearchComponent extends AbstractTextComponent<HTMLInputElement>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`clearButtonEl`](SearchComponent/clearButtonEl) |  | <code>HTMLElement</code> |  |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`inputEl`](AbstractTextComponent/inputEl) |  | <code>T</code> | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [`getValue()`](AbstractTextComponent/getValue) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`onChange(callback)`](AbstractTextComponent/onChange) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
 |  [`onChanged()`](SearchComponent/onChanged) |  |  |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
+|  [`setDisabled(disabled)`](AbstractTextComponent/setDisabled) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`setPlaceholder(placeholder)`](AbstractTextComponent/setPlaceholder) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`setValue(value)`](AbstractTextComponent/setValue) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

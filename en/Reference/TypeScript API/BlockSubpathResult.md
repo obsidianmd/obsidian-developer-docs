@@ -22,6 +22,8 @@ export interface BlockSubpathResult extends SubpathResult
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`block`](BlockSubpathResult/block) |  | [`BlockCache`](BlockCache) |  |
+|  [`end`](SubpathResult/end) |  | [`Loc`](Loc)<code> &#124; null</code> | <p>(Inherited from [SubpathResult](SubpathResult)<!-- -->)</p> |
 |  [`list?`](BlockSubpathResult/list) |  | [`ListItemCache`](ListItemCache) | _(Optional)_ |
+|  [`start`](SubpathResult/start) |  | [`Loc`](Loc) | <p>(Inherited from [SubpathResult](SubpathResult)<!-- -->)</p> |
 |  [`type`](BlockSubpathResult/type) |  | <code>'block'</code> |  |
 

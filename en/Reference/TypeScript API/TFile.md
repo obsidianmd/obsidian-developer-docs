@@ -23,5 +23,9 @@ export class TFile extends TAbstractFile
 |  --- | --- | --- | --- |
 |  [`basename`](TFile/basename) |  | <code>string</code> |  |
 |  [`extension`](TFile/extension) |  | <code>string</code> |  |
+|  [`name`](TAbstractFile/name) |  | <code>string</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`parent`](TAbstractFile/parent) |  | [`TFolder`](TFolder)<code> &#124; null</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`path`](TAbstractFile/path) |  | <code>string</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
 |  [`stat`](TFile/stat) |  | [`FileStats`](FileStats) |  |
+|  [`vault`](TAbstractFile/vault) |  | [`Vault`](Vault) | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
 

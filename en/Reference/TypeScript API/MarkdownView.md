@@ -29,19 +29,58 @@ export class MarkdownView extends TextFileView implements MarkdownFileInfo
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`allowNoFile`](FileView/allowNoFile) |  | <code>boolean</code> | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
+|  [`app`](View/app) |  | [`App`](App) | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`containerEl`](View/containerEl) |  | <code>HTMLElement</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`contentEl`](ItemView/contentEl) |  | <code>HTMLElement</code> | <p>(Inherited from [ItemView](ItemView)<!-- -->)</p> |
 |  [`currentMode`](MarkdownView/currentMode) |  | [`MarkdownSubView`](MarkdownSubView) |  |
+|  [`data`](TextFileView/data) |  | <code>string</code> | <p>In memory data</p><p>(Inherited from [TextFileView](TextFileView)<!-- -->)</p> |
 |  [`editor`](MarkdownView/editor) |  | [`Editor`](Editor) |  |
+|  [`file`](FileView/file) |  | [`TFile`](TFile)<code> &#124; null</code> | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
 |  [`hoverPopover`](MarkdownView/hoverPopover) |  | [`HoverPopover`](HoverPopover)<code> &#124; null</code> |  |
+|  [`icon`](View/icon) |  | [`IconName`](IconName) | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`leaf`](View/leaf) |  | [`WorkspaceLeaf`](WorkspaceLeaf) | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`navigation`](FileView/navigation) |  | <code>boolean</code> | <p>File views can be navigated by default. </p><p>(Inherited from [FileView](FileView)<!-- -->)</p> |
 |  [`previewMode`](MarkdownView/previewMode) |  | [`MarkdownPreviewView`](MarkdownPreviewView) |  |
+|  [`requestSave`](TextFileView/requestSave) |  | <code>() =&gt; void</code> | <p>Debounced save in 2 seconds from now</p><p>(Inherited from [TextFileView](TextFileView)<!-- -->)</p> |
+|  [`scope`](View/scope) |  | [`Scope`](Scope)<code> &#124; null</code> | <p>Assign an optional scope to your view to register hotkeys for when the view is in focus.</p><p>(Inherited from [View](View)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [`addAction(icon, title, callback)`](ItemView/addAction) |  | <p>(Inherited from [ItemView](ItemView)<!-- -->)</p> |
+|  [`addChild(component)`](Component/addChild) |  | <p>Adds a child component, loading it if this component is loaded</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`canAcceptExtension(extension)`](FileView/canAcceptExtension) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
 |  [`clear()`](MarkdownView/clear) |  |  |
+|  [`getDisplayText()`](FileView/getDisplayText) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
+|  [`getEphemeralState()`](View/getEphemeralState) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`getIcon()`](View/getIcon) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
 |  [`getMode()`](MarkdownView/getMode) |  |  |
+|  [`getState()`](FileView/getState) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
 |  [`getViewData()`](MarkdownView/getViewData) |  |  |
 |  [`getViewType()`](MarkdownView/getViewType) |  |  |
+|  [`load()`](Component/load) |  | <p>Load this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onClose()`](View/onClose) | <code>protected</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onload()`](FileView/onload) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
+|  [`onLoadFile(file)`](TextFileView/onLoadFile) |  | <p>(Inherited from [TextFileView](TextFileView)<!-- -->)</p> |
+|  [`onOpen()`](View/onOpen) | <code>protected</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onPaneMenu(menu, source)`](View/onPaneMenu) |  | <p>Populates the pane menu.</p><p>(Replaces the previously removed <code>onHeaderMenu</code> and <code>onMoreOptionsMenu</code>)</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onRename(file)`](FileView/onRename) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
+|  [`onResize()`](View/onResize) |  | <p>Called when the size of this view is changed.</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onunload()`](Component/onunload) |  | <p>Override this to unload your component</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onUnloadFile(file)`](TextFileView/onUnloadFile) |  | <p>(Inherited from [TextFileView](TextFileView)<!-- -->)</p> |
+|  [`register(cb)`](Component/register) |  | <p>Registers a callback to be called when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_2) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`save(clear)`](TextFileView/save) |  | <p>(Inherited from [TextFileView](TextFileView)<!-- -->)</p> |
+|  [`setEphemeralState(state)`](View/setEphemeralState) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`setState(state, result)`](FileView/setState) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
 |  [`setViewData(data, clear)`](MarkdownView/setViewData) |  |  |
 |  [`showSearch(replace)`](MarkdownView/showSearch) |  |  |
+|  [`unload()`](Component/unload) |  | <p>Unload this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 

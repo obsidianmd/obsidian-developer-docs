@@ -58,6 +58,8 @@ export class Workspace extends Events
 |  [`iterateAllLeaves(callback)`](Workspace/iterateAllLeaves) |  | Iterate through all leaves, including main area leaves, floating leaves, and sidebar leaves. |
 |  [`iterateRootLeaves(callback)`](Workspace/iterateRootLeaves) |  | Iterate through all leaves in the main area of the workspace. |
 |  [`moveLeafToPopout(leaf, data)`](Workspace/moveLeafToPopout) |  | Migrates this leaf to a new popout window. Only works on the desktop app. |
+|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`on(name: 'quick-preview', callback, ctx)`](Workspace/on('quick-preview').md) |  |  |
 |  [`on(name: 'files-menu', callback, ctx)`](Workspace/on('files-menu').md) |  | Triggered when the user opens the context menu with multiple files selected in the File Explorer. |
 |  [`on(name: 'url-menu', callback, ctx)`](Workspace/on('url-menu').md) |  | Triggered when the user opens the context menu on an external URL. |
@@ -81,5 +83,7 @@ export class Workspace extends Events
 |  [`setActiveLeaf(leaf, params)`](Workspace/setActiveLeaf) |  | Sets the active leaf |
 |  [`setActiveLeaf(leaf, pushHistory, focus)`](Workspace/setActiveLeaf_1) |  |  |
 |  [`splitActiveLeaf(direction)`](Workspace/splitActiveLeaf) |  |  |
+|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`updateOptions()`](Workspace/updateOptions) |  | Calling this function will update/reconfigure the options of all markdown panes. It is fairly expensive, so it should not be called frequently. |
 

@@ -28,6 +28,7 @@ export class ButtonComponent extends BaseComponent
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`buttonEl`](ButtonComponent/buttonEl) |  | <code>HTMLButtonElement</code> |  |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 
 ## Methods
 
@@ -42,4 +43,5 @@ export class ButtonComponent extends BaseComponent
 |  [`setIcon(icon)`](ButtonComponent/setIcon) |  |  |
 |  [`setTooltip(tooltip, options)`](ButtonComponent/setTooltip) |  |  |
 |  [`setWarning()`](ButtonComponent/setWarning) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

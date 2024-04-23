@@ -27,6 +27,7 @@ export class ExtraButtonComponent extends BaseComponent
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`extraSettingsEl`](ExtraButtonComponent/extraSettingsEl) |  | <code>HTMLElement</code> |  |
 
 ## Methods
@@ -37,4 +38,5 @@ export class ExtraButtonComponent extends BaseComponent
 |  [`setDisabled(disabled)`](ExtraButtonComponent/setDisabled) |  |  |
 |  [`setIcon(icon)`](ExtraButtonComponent/setIcon) |  |  |
 |  [`setTooltip(tooltip, options)`](ExtraButtonComponent/setTooltip) |  |  |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

@@ -22,5 +22,8 @@ export interface EditorSuggestContext extends EditorSuggestTriggerInfo
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`editor`](EditorSuggestContext/editor) |  | [`Editor`](Editor) |  |
+|  [`end`](EditorSuggestTriggerInfo/end) |  | [`EditorPosition`](EditorPosition) | <p>The end position of the triggering text. This is used to position the popover.</p><p>(Inherited from [EditorSuggestTriggerInfo](EditorSuggestTriggerInfo)<!-- -->)</p> |
 |  [`file`](EditorSuggestContext/file) |  | [`TFile`](TFile) |  |
+|  [`query`](EditorSuggestTriggerInfo/query) |  | <code>string</code> | <p>They query string (usually the text between start and end) that will be used to generate the suggestion content.</p><p>(Inherited from [EditorSuggestTriggerInfo](EditorSuggestTriggerInfo)<!-- -->)</p> |
+|  [`start`](EditorSuggestTriggerInfo/start) |  | [`EditorPosition`](EditorPosition) | <p>The start position of the triggering text. This is used to position the popover.</p><p>(Inherited from [EditorSuggestTriggerInfo](EditorSuggestTriggerInfo)<!-- -->)</p> |
 
