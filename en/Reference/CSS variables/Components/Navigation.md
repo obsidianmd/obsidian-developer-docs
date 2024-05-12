@@ -26,6 +26,6 @@ This page lists CSS variables for navigational items, such as files and folders 
 | `--nav-item-weight-active`            | Nav item font weight (active)               |
 | `--nav-item-white-space`              | Nav item `white-space`                      |
 | `--nav-indentation-guide-width`       | Nav item indentation guide border width     |
-| `--nav-indetation-guide-color`        | Nav item indentation guide border color     |
+| `--nav-indentation-guide-color`       | Nav item indentation guide border color     |
 | `--nav-collapse-icon-color`           | Nav item collapse chevron color             |
 | `--nav-collapse-icon-color-collapsed` | Nav item collapse chevron color (collapsed) |
