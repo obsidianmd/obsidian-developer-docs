@@ -7,6 +7,7 @@ To load remote fonts we recommend using CSS with `@import` or defining your font
 For example you can use [Google Fonts](https://fonts.google.com/) in your `publish.css` file. Here's how you would use the font Poppins:
 
 ```css
+/* @import must always be at the top of your publish.css file */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .published-container {
