@@ -1,6 +1,13 @@
 ---
 cssClass: reference
 ---
+## Fonts
+
+| Variable                 | Description                                                          |
+| ------------------------ | -------------------------------------------------------------------- |
+| `--font-interface-theme` | Font used for UI elements                                            |
+| `--font-text-theme`      | Font used for text in the editor                                     |
+| `--font-monospace-theme` | Font used for monospaced content such as code blocks and inline code |
 
 ## Font size
 
@@ -9,16 +16,16 @@ Obsidian uses both relative and fixed font sizes depending on the context.
 - Use `--font-*` (relative) variables in the editor.
 - Use `--font-ui-*` (fixed) variables for UI elements.
 
-| Variable            | Default value | Description |
-| ------------------- | ------------- | ----------- |
-| `--font-text-size`  | `16px`          | Editor font size. Defined by the user under Appearance settings.            |
-| `--font-smallest`   | `0.8em`       |             |
-| `--font-smaller`    | `0.875em`     |             |
-| `--font-small`      | `0.933em`     |             |
-| `--font-ui-smaller` | `12px`        |             |
-| `--font-ui-small`   | `13px`        |             |
-| `--font-ui-medium`  | `15px`        |             |
-| `--font-ui-larger`  | `20px`        |             |
+| Variable            | Default value | Description                                                      |
+| ------------------- | ------------- | ---------------------------------------------------------------- |
+| `--font-text-size`  | `16px`        | Editor font size. Defined by the user under Appearance settings. |
+| `--font-smallest`   | `0.8em`       |                                                                  |
+| `--font-smaller`    | `0.875em`     |                                                                  |
+| `--font-small`      | `0.933em`     |                                                                  |
+| `--font-ui-smaller` | `12px`        |                                                                  |
+| `--font-ui-small`   | `13px`        |                                                                  |
+| `--font-ui-medium`  | `15px`        |                                                                  |
+| `--font-ui-larger`  | `20px`        |                                                                  |
 
 ## Font weight
 
