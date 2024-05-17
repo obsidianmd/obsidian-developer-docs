@@ -2,6 +2,8 @@ Our goal for community plugins and themes is to make it easy for users to safely
 
 All community plugins and themes added to the Obsidian directory must respect the following policies. Every plugin and theme is individually vetted before being included in the directory. Plugins and themes that don't follow these policies will be removed from the directory.
 
+Note that these policies only apply to plugins listed in the official Obsidian directory. These policies do not apply to plugins installed outside of the Obsidian directory, but are nonetheless good practices to follow.
+
 ## Policies
 
 ### Not allowed
