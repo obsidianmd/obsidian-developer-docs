@@ -155,7 +155,11 @@ if (view) {
 If you want to access the editor in the active note, use `activeEditor` instead:
 
 ```ts
-const editor = this.app.workspace.activeEditor;
+const editor = this.app.workspace.activeEditor?.editor;
+
+if (editor) {
+    // ...
+}
 ```
 
 ### Avoid managing references to custom views
