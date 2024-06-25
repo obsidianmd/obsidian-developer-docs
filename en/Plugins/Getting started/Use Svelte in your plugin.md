@@ -48,17 +48,15 @@ To build a Svelte application, you need to install the dependencies and configur
 5. Add Svelte to the list of plugins.
 
    ```js
-    esbuild
-    .build({
-      plugins: [
-        esbuildSvelte({
-          compilerOptions: { css: true },
-          preprocess: sveltePreprocess(),
-        }),
-      ],
-      // ...
-    })
-    .catch(() => process.exit(1));
+	const context = await esbuild.context({
+		plugins: [
+		  esbuildSvelte({
+			compilerOptions: { css: true },
+			preprocess: sveltePreprocess(),
+		  }),
+		],
+		// ...
+	});
    ```
 
 ## Create a Svelte component
