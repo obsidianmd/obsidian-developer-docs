@@ -1,7 +1,6 @@
 ---
 cssClass: reference
 ---
-
 The site header contains the site logo (if added in Publish settings), the site name, and the mobile hamburger menu if navigation is turned on.
 
 The site header appears as a horizontal header at the top of the page on mobile devices and when navigation is turned off. When navigation is turned on in Publish settings, the site name and logo appear in the left sidebar.

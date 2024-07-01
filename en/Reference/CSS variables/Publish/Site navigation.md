@@ -1,7 +1,6 @@
 ---
 cssClass: reference
 ---
-
 When activated in Publish settings, navigation is placed in the left sidebar and can be styled with the following variables. Top-level items and folders can be treated differently than nested items.
 
 ## CSS variables

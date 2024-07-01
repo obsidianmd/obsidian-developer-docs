@@ -43,11 +43,15 @@ Obsidian uses both relative and fixed font sizes depending on the context.
 
 ## Text formatting
 
-| Variable        | Description             |
-| --------------- | ----------------------- |
-| `--bold-weight` | Bold text font weight |
-| `--bold-color`  | Bold text color       |
-| `--italic-color` | Italic text color |
+As of Obsidian 1.6 `--bold-modifier` is the recommended way to change the weight of bolded text. The bold modifier value stacks on top of other font weights. This allows text which may already be bolded to have an even heavier weight, e.g. `## Bold **bolder**`. Recommended values for `--bold-modifier` are between 100 and 300.
+
+| Variable          | Description                  |
+| ----------------- | ---------------------------- |
+| `--font-weight`   | Regular text weight          |
+| `--bold-modifier` | Added weight for bolded text |
+| `--bold-weight`   | Bold text font weight        |
+| `--bold-color`    | Bold text color              |
+| `--italic-color`  | Italic text color            |
 
 ## Line heights
 

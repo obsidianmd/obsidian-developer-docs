@@ -1,7 +1,6 @@
 ---
 cssClass: reference
 ---
-
 This page lists CSS variables used for Obsidian Publish pages.
 
 ## CSS variables

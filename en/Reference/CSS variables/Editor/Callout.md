@@ -16,6 +16,7 @@ This page lists CSS variables for [Callouts](https://help.obsidian.md/Editing+an
 | `--callout-title-color`        | Callout title text color                                    |
 | `--callout-title-padding`      | Callout title padding                                       |
 | `--callout-title-size`         | Callout title font size                                     |
+| `--callout-title-weight`       | Callout title weight                                        |
 | `--callout-content-padding`    | Callout content padding                                     |
 | `--callout-content-background` | Callout content background color                            |
 

@@ -1,7 +1,6 @@
 ---
 cssClasses: reference
 ---
-
 Obsidian displays dragging affordances while the user drag files or tabs.
 
 ## CSS variables

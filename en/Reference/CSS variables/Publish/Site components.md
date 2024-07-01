@@ -22,7 +22,6 @@ Styles for the title above components such as **Backlinks**, **Graph**, **Table 
 | `--component-title-variant`   | Font variant                      |
 | `--component-title-weight`    | Font weight                       |
 
-
 ### Outline
 
 When activated in Publish settings, a table of contents is displayed in the right sidebar showing a navigable list of headings on the page.
@@ -41,4 +40,3 @@ The graph component can be turned on in Publish settings. More graph CSS variabl
 | Variable         | Description                   |
 | ---------------- | ----------------------------- |
 | `--graph-height` | Height of the graph component |
-

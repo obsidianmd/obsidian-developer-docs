@@ -1,7 +1,6 @@
 ---
 cssClass: reference
 ---
-
 This page lists CSS variables for links.
 
 Obsidian supports three different types of links:
@@ -19,6 +18,7 @@ Obsidian supports three different types of links:
 | `--link-decoration`                  | Resolved link text decoration             |
 | `--link-decoration-hover`            | Resolved link text decoration (hover)     |
 | `--link-decoration-thickness`        | Resolved link text decoration thickness   |
+| `--link-weight`                      | Link font weight                          |
 | `--link-unresolved-color`            | Unresolved link text color                |
 | `--link-unresolved-opacity`          | Unresolved link opacity                   |
 | `--link-unresolved-filter`           | Unresolved link filter, e.g. `hue-rotate` |

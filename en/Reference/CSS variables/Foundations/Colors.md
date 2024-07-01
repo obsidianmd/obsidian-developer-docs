@@ -146,3 +146,11 @@ Semantic colors are derived from the base color palette based on their intended 
 | --------------------- | --------------------------- |
 | `--text-selection`    | Selected text background    |
 | `--text-highlight-bg` | Highlighted text background |
+
+#### Caret color
+
+Defines the color of the caret, the blinking text entry cursor.
+
+| Variable        | Description |
+| --------------- | ----------- |
+| `--caret-color` | Caret color |

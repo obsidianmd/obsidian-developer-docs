@@ -33,10 +33,12 @@ These variables apply to individual properties in the list.
 | `--metadata-divider-width`              | Width of divider lines                    |
 | `--metadata-property-padding`           | Property adding                           |
 | `--metadata-property-radius`            | Property corner radius                    |
+| `--metadata-property-radius-hover`      | Property corner radius (hover)            |
+| `--metadata-property-radius-focus`      | Property corner radius (focus)            |
 | `--metadata-property-background`        | Property background color                 |
 | `--metadata-property-background-hover`  | Property background color (hover)         |
 | `--metadata-property-background-active` | Property background color (active)        |
-| `--metadata-label-background-hover`     | Property label background color(hover)    |
+| `--metadata-label-background-hover`     | Property label background color (hover)   |
 | `--metadata-label-background-active`    | Property label background color (active)  |
 | `--metadata-label-font-size`            | Property label font size                  |
 | `--metadata-label-font-weight`          | Property label font weight                |

@@ -8,8 +8,9 @@ This page lists CSS variables for prompts, such as the [Quick switcher](https://
 
 | Variable                | Description                           |
 | ----------------------- | ------------------------------------- |
+| `--prompt-input-height` | Prompt input height                   |
 | `--prompt-width`        | Prompt width                          |
 | `--prompt-max-width`    | Prompt max width (for narrow windows) |
 | `--prompt-max-height`   | Prompt max height                     |
 | `--prompt-border-width` | Prompt border width                   |
-| `--prompt-border-color` | Prompt border color                  |
+| `--prompt-border-color` | Prompt border color                   |
