@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 This page lists CSS variables for navigational items, such as files and folders in [[File explorer]].

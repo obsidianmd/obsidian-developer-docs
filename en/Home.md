@@ -1,5 +1,5 @@
 ---
-cssClass: hide-title
+cssclasses: hide-title
 ---
 # Obsidian Developer Docs
 

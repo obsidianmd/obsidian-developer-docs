@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 Icons communicate messages at a glance, and draw attention to important information.

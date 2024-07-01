@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 This page lists CSS variables for [embedded files](https://help.obsidian.md/Linking+notes+and+files/Embedding+files).

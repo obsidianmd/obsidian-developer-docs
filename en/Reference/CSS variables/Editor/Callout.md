@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 This page lists CSS variables for [Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts).

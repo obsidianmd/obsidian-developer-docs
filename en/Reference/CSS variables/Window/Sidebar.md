@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 This page lists CSS variables for the [Sidebar](https://help.obsidian.md/User+interface/Workspace/Sidebar).

@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 This page lists CSS variables for multi-select inputs. For example, used in List type [[Properties]].

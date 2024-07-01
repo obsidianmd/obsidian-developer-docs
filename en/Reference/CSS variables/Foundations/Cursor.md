@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 Obsidian follows operating system conventions for cursors, which means interactive elements use the arrow cursor instead of the pointer cursor.

@@ -1,5 +1,5 @@
 ---
-alias: editor extension
+aliases: editor extension
 ---
 
 Editor extensions let you customize the experience of editing notes in Obsidian. This page explains what editor extensions are, and when to use them.

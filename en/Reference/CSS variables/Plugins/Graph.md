@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 This page lists CSS variables used by the [Graph view](https://help.obsidian.md/Plugins/Graph+view) plugin.

@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 The Obsidian color palette defines a range of colors used in the app.

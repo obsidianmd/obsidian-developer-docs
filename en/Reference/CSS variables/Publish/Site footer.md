@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 The site footer contains the text "Powered by Obsidian Publish". To hide the site footer you can set `--footer-display` to `none`.
 

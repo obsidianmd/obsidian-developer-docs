@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 This page lists CSS variables for indentation guides. Indentation guides visualize the indentation level in nested lists.
 

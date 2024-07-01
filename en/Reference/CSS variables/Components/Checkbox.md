@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 This page lists CSS variables for checkboxes and text inside of task lists.
 

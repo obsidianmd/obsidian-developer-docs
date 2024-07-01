@@ -1,5 +1,5 @@
 ---
-cssClasses: reference
+cssclasses: reference
 ---
 
 Border thicknesses applied to UI elements. 

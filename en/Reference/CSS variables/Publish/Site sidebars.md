@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 The left sidebar is present when [[Site navigation]] is turned on. The right sidebar is present when the **Graph** and/or **Table of Contents** [[Site components]] are turned on. When these components are turned off, the following variables have no effect.
 

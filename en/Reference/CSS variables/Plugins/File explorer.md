@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 This page lists CSS variables used by the [File explorer](https://help.obsidian.md/Plugins/File+explorer) plugin.

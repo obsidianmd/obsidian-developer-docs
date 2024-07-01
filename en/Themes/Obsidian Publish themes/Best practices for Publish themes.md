@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 ### Obsidian App and Obsidian Publish are different contexts

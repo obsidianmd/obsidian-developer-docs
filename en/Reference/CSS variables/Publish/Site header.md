@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 The site header contains the site logo (if added in Publish settings), the site name, and the mobile hamburger menu if navigation is turned on.
 

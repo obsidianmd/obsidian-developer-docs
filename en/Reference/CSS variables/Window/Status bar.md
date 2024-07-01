@@ -1,5 +1,5 @@
 ---
-cssClass: reference
+cssclasses: reference
 ---
 
 This page lists CSS variables for the [Status bar](https://help.obsidian.md/User+interface/Workspace/Status+bar).
