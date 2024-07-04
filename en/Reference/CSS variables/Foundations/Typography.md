@@ -60,3 +60,9 @@ As of Obsidian 1.6 `--bold-modifier` is the recommended way to change the weight
 | `--line-height-normal` | `1.5`         | Default line height                                                    |
 | `--line-height-tight`  | `1.3`         | Used in search results, tree items, tooltips, and other smaller spaces |
 
+## Paragraph spacing
+
+| Variable            | Description                |
+| ------------------- | -------------------------- |
+| `--heading-spacing` | Spacing above headings     |
+| `--p-spacing`       | Spacing between paragraphs |

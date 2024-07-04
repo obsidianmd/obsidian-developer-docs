@@ -9,6 +9,7 @@ This page lists CSS variables for headings.
 | Variable               | Description                                  |
 | ---------------------- | -------------------------------------------- |
 | `--heading-formatting` | Text color for Markdown heading depth syntax |
+| `--heading-spacing`    | Spacing above headings, see [[Typography]]   |
 | `--h1-color`           | H1 text color                                |
 | `--h2-color`           | H2 text color                                |
 | `--h3-color`           | H3 text color                                |
