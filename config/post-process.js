@@ -23,7 +23,7 @@ async function updateFileContent(folderPath) {
 				continue;
 			}
 
-			const newFileName = file.replace('obsidian.', '').replace('Plugin_2', 'Plugin').replace('Plugin\_2', 'Plugin');
+			const newFileName = file.replace('https://docs.obsidian.md', '$docssite$').replace('obsidian.', '').replace('Plugin_2', 'Plugin').replace('Plugin\_2', 'Plugin').replace('$docssite$', 'https://docs.obsidian.md');
 
 			// Step 1: Replace escaped backtick with normal backtick
 			try {
