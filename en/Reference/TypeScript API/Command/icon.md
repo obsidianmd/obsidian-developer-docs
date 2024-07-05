@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Command.icon property
 
-Icon ID to be used in the toolbar. See [https://docs.md/Plugins/User+interface/Icons](https://docs/md/Plugins/User+interface/Ic) for available icons and how to add your own.
+Icon ID to be used in the toolbar. See [https://docs.obsidian.md/Plugins/User+interface/Icons](https://docs.obsidian.md/Plugins/User+interface/Icons) for available icons and how to add your own.
 
 **Signature:**
 
