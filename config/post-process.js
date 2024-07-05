@@ -23,7 +23,7 @@ async function updateFileContent(folderPath) {
 				continue;
 			}
 
-			const newFileName = file.replace('https://docs.obsidian.md', '$docssite$').replace('obsidian.', '').replace('Plugin_2', 'Plugin').replace('Plugin\_2', 'Plugin').replace('$docssite$', 'https://docs.obsidian.md');
+			const newFileName = file.replace('obsidian.', '').replace('Plugin_2', 'Plugin').replace('Plugin\_2', 'Plugin')
 
 			// Step 1: Replace escaped backtick with normal backtick
 			try {
@@ -37,17 +37,22 @@ cssclasses: hide-title
 `+ fileContent;
 
 				newFileContent = newFileContent.replace(/\\`/g, '`');
+				newFileContent = newFileContent.replaceAll('https://docs.obsidian.md', '$docssite$');
 				newFileContent = newFileContent.replaceAll('obsidian.', '');
 				newFileContent = newFileContent.replaceAll('Plugin_2', 'Plugin')
 
 				newFileContent = newFileContent.replaceAll('Plugin\_2', 'Plugin')
 				newFileContent = newFileContent.replaceAll('Plugin\\_2', 'Plugin');
+				newFileContent = newFileContent.replaceAll('$docssite$', 'https://docs.obsidian.md');
 				newFileContent = newFileContent.replace(/\[([^\[]+)\](\((.*?)\))/g, function(_, x, y) {
 					if(y.includes('constructor')) {
 						return `[${x}]${y.replaceAll(".", "/")}`;
 					}
 					if(y.includes("'")) {
 						return `[${x}]${y.replaceAll(".", "/")}`;
+					}
+					if(y.includes("https://") {
+						return `[${x}]${y}`;
 					}
 
 					return `[${x}]${y.slice(0, -4).replaceAll(".", "/")})`;
