@@ -51,7 +51,7 @@ cssclasses: hide-title
 					if(y.includes("'")) {
 						return `[${x}]${y.replaceAll(".", "/")}`;
 					}
-					if(y.includes("https://") {
+					if(y.includes("https://")) {
 						return `[${x}]${y}`;
 					}
 
