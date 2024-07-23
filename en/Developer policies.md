@@ -14,6 +14,7 @@ Plugins and themes must not:
 - Insert dynamic ads that are loaded over the internet.
 - Insert static ads outside a plugin’s own interface.
 - Include client-side telemetry.
+- Include a mechanism that updates the plugin.
 - Themes may not load assets from the network. To bundle an asset, see [[Embed fonts and images in your theme|this guide]].
 
 ### Disclosures
