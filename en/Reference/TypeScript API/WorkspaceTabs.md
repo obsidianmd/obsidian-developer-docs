@@ -17,6 +17,12 @@ export class WorkspaceTabs extends WorkspaceParent
 ```
 **Extends:** [`WorkspaceParent`](WorkspaceParent)
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`parent`](WorkspaceTabs/parent) |  | [`WorkspaceSplit`](WorkspaceSplit) |  |
+
 ## Methods
 
 |  Method | Modifiers | Description |

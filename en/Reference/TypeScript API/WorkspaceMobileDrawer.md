@@ -22,6 +22,7 @@ export class WorkspaceMobileDrawer extends WorkspaceParent
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`collapsed`](WorkspaceMobileDrawer/collapsed) |  | <code>boolean</code> |  |
+|  [`parent`](WorkspaceMobileDrawer/parent) |  | [`WorkspaceParent`](WorkspaceParent) |  |
 
 ## Methods
 

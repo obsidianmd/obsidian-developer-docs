@@ -42,6 +42,6 @@ export abstract class AbstractInputSuggest<T> extends PopoverSuggest<T>
 |  [`onSelect(callback)`](AbstractInputSuggest/onSelect) |  | Registers a callback to handle when a suggestion is selected by the user. |
 |  [`open()`](PopoverSuggest/open) |  | <p>(Inherited from [PopoverSuggest](PopoverSuggest)<!-- -->)</p> |
 |  [`renderSuggestion(value, el)`](PopoverSuggest/renderSuggestion) | <code>abstract</code> | <p>(Inherited from [PopoverSuggest](PopoverSuggest)<!-- -->)</p> |
-|  [`selectSuggestion(value, evt)`](PopoverSuggest/selectSuggestion) | <code>abstract</code> | <p>(Inherited from [PopoverSuggest](PopoverSuggest)<!-- -->)</p> |
+|  [`selectSuggestion(value, evt)`](AbstractInputSuggest/selectSuggestion) |  |  |
 |  [`setValue(value)`](AbstractInputSuggest/setValue) |  | Sets the value into the input element. |
 

@@ -22,6 +22,7 @@ export abstract class WorkspaceContainer extends WorkspaceSplit
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`doc`](WorkspaceContainer/doc) | <code>abstract</code> | <code>Document</code> |  |
+|  [`parent`](WorkspaceSplit/parent) |  | [`WorkspaceParent`](WorkspaceParent) | <p>(Inherited from [WorkspaceSplit](WorkspaceSplit)<!-- -->)</p> |
 |  [`win`](WorkspaceContainer/win) | <code>abstract</code> | <code>Window</code> |  |
 
 ## Methods

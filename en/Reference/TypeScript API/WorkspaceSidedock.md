@@ -22,6 +22,7 @@ export class WorkspaceSidedock extends WorkspaceSplit
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`collapsed`](WorkspaceSidedock/collapsed) |  | <code>boolean</code> |  |
+|  [`parent`](WorkspaceSplit/parent) |  | [`WorkspaceParent`](WorkspaceParent) | <p>(Inherited from [WorkspaceSplit](WorkspaceSplit)<!-- -->)</p> |
 
 ## Methods
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CloseableComponent interface
 
+A closeable component that can get dismissed via the Android 'back' button.
 
 **Signature:**
 

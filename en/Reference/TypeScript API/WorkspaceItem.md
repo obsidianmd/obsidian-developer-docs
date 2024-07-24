@@ -17,6 +17,12 @@ export abstract class WorkspaceItem extends Events
 ```
 **Extends:** [`Events`](Events)
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`parent`](WorkspaceItem/parent) | <code>abstract</code> | [`WorkspaceParent`](WorkspaceParent) | The direct parent of the leaf. |
+
 ## Methods
 
 |  Method | Modifiers | Description |

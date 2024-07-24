@@ -22,6 +22,7 @@ export class WorkspaceWindow extends WorkspaceContainer
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`doc`](WorkspaceWindow/doc) |  | <code>Document</code> |  |
+|  [`parent`](WorkspaceSplit/parent) |  | [`WorkspaceParent`](WorkspaceParent) | <p>(Inherited from [WorkspaceSplit](WorkspaceSplit)<!-- -->)</p> |
 |  [`win`](WorkspaceWindow/win) |  | <code>Window</code> |  |
 
 ## Methods
