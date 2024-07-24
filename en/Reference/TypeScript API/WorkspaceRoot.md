@@ -22,6 +22,7 @@ export class WorkspaceRoot extends WorkspaceContainer
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`doc`](WorkspaceRoot/doc) |  | <code>Document</code> |  |
+|  [`parent`](WorkspaceSplit/parent) |  | [`WorkspaceParent`](WorkspaceParent) | <p>(Inherited from [WorkspaceSplit](WorkspaceSplit)<!-- -->)</p> |
 |  [`win`](WorkspaceRoot/win) |  | <code>Window</code> |  |
 
 ## Methods

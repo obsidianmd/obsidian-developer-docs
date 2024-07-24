@@ -40,6 +40,7 @@ export class SliderComponent extends ValueComponent<number>
 |  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
 |  [`setDisabled(disabled)`](SliderComponent/setDisabled) |  |  |
 |  [`setDynamicTooltip()`](SliderComponent/setDynamicTooltip) |  |  |
+|  [`setInstant(instant)`](SliderComponent/setInstant) |  |  |
 |  [`setLimits(min, max, step)`](SliderComponent/setLimits) |  |  |
 |  [`setValue(value)`](SliderComponent/setValue) |  |  |
 |  [`showTooltip()`](SliderComponent/showTooltip) |  |  |

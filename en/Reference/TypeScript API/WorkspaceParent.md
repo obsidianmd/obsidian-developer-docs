@@ -17,6 +17,12 @@ export abstract class WorkspaceParent extends WorkspaceItem
 ```
 **Extends:** [`WorkspaceItem`](WorkspaceItem)
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`parent`](WorkspaceItem/parent) | <code>abstract</code> | [`WorkspaceParent`](WorkspaceParent) | <p>The direct parent of the leaf.</p><p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
+
 ## Methods
 
 |  Method | Modifiers | Description |

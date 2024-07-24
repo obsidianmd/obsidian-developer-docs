@@ -21,6 +21,7 @@ export class WorkspaceLeaf extends WorkspaceItem
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`parent`](WorkspaceLeaf/parent) |  | [`WorkspaceTabs`](WorkspaceTabs)<code> &#124; </code>[`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) | <p>The direct parent of the leaf.</p><p>On desktop, a leaf is always a child of a <code>WorkspaceTabs</code> component. On mobile, a leaf might be a child of a <code>WorkspaceMobileDrawer</code>. Perform an <code>instanceof</code> check before making an assumption about the <code>parent</code>.</p> |
 |  [`view`](WorkspaceLeaf/view) |  | [`View`](View) |  |
 
 ## Methods

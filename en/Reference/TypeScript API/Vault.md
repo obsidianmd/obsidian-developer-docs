@@ -37,6 +37,7 @@ export class Vault extends Events
 |  [`createFolder(path)`](Vault/createFolder) |  | Create a new folder inside the vault. |
 |  [`delete(file, force)`](Vault/delete) |  | Deletes the file completely. |
 |  [`getAbstractFileByPath(path)`](Vault/getAbstractFileByPath) |  | Get a file or folder inside the vault at the given path. To check if the return type is a file, use <code>instanceof TFile</code>. To check if it is a folder, use <code>instanceof TFolder</code>. |
+|  [`getAllFolders(includeRoot)`](Vault/getAllFolders) |  | Get all folders in the vault. |
 |  [`getAllLoadedFiles()`](Vault/getAllLoadedFiles) |  | Get all files and folders in the vault. |
 |  [`getFileByPath(path)`](Vault/getFileByPath) |  | Get a file inside the vault at the given path. Returns <code>null</code> if the file does not exist. |
 |  [`getFiles()`](Vault/getFiles) |  | Get all files in the vault. |

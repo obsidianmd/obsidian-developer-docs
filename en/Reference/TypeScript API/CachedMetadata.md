@@ -22,6 +22,7 @@ export interface CachedMetadata
 |  --- | --- | --- | --- |
 |  [`blocks?`](CachedMetadata/blocks) |  | <code>Record</code><code>&lt;string, </code>[`BlockCache`](BlockCache)<code>&gt;</code> | _(Optional)_ |
 |  [`embeds?`](CachedMetadata/embeds) |  | [`EmbedCache`](EmbedCache)<code>[]</code> | _(Optional)_ |
+|  [`footnotes?`](CachedMetadata/footnotes) |  | [`FootnoteCache`](FootnoteCache)<code>[]</code> | _(Optional)_ |
 |  [`frontmatter?`](CachedMetadata/frontmatter) |  | [`FrontMatterCache`](FrontMatterCache) | _(Optional)_ |
 |  [`frontmatterLinks?`](CachedMetadata/frontmatterLinks) |  | [`FrontmatterLinkCache`](FrontmatterLinkCache)<code>[]</code> | _(Optional)_ |
 |  [`frontmatterPosition?`](CachedMetadata/frontmatterPosition) |  | [`Pos`](Pos) | _(Optional)_ |

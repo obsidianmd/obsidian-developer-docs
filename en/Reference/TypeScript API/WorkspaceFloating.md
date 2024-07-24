@@ -17,6 +17,12 @@ export class WorkspaceFloating extends WorkspaceParent
 ```
 **Extends:** [`WorkspaceParent`](WorkspaceParent)
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`parent`](WorkspaceFloating/parent) |  | [`WorkspaceParent`](WorkspaceParent) |  |
+
 ## Methods
 
 |  Method | Modifiers | Description |

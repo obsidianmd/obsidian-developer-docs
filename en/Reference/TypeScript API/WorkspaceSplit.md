@@ -17,6 +17,12 @@ export class WorkspaceSplit extends WorkspaceParent
 ```
 **Extends:** [`WorkspaceParent`](WorkspaceParent)
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`parent`](WorkspaceSplit/parent) |  | [`WorkspaceParent`](WorkspaceParent) |  |
+
 ## Methods
 
 |  Method | Modifiers | Description |
