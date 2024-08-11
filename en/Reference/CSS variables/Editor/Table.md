@@ -31,7 +31,7 @@ This page lists CSS variables for tables.
 | `--table-row-background-hover`          | Row background color (hover)             |
 | `--table-row-alt-background`            | Alternating row background color         |
 | `--table-row-alt-background-hover`      | Alternating row background color (hover) |
-| `--table-last-border-width`             | Last row bottom border width             |
+| `--table-row-last-border-width`         | Last row bottom border width             |
 | `--table-selection`                     | Selection background color               |
 | `--table-selection-blend-mode`          | Selection blend mode                     |
 | `--table-selection-border-color`        | Selection border color                   |
@@ -42,6 +42,6 @@ This page lists CSS variables for tables.
 | `--table-drag-handle-color`             | Drag handle icon color                   |
 | `--table-drag-handle-color-active`      | Drag handle icon color (active)          |
 | `--table-add-button-background`         | "Add" button background color            |
-| `--table-add-button-width`              | "Add" button width                       |
-| `--table-add-button-color`              | "Add" button icon color                  |
+| `--table-add-button-border-width`       | "Add" button border width                |
+| `--table-add-button-border-color`       | "Add" button border color                |
 
