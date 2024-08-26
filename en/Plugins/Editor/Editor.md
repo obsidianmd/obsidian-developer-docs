@@ -47,7 +47,7 @@ export default class ExamplePlugin extends Plugin {
 
 ## Replace current selection
 
-If you want to modify the selected text, use [[replaceRange|replaceSelection()]] to replace the current selection with a new text.
+If you want to modify the selected text, use [[replaceSelection|replaceSelection()]] to replace the current selection with a new text.
 
 The following command reads the current selection and converts it to uppercase:
 
