@@ -31,7 +31,7 @@ These variables apply to individual properties in the list.
 | `--metadata-divider-color-hover`        | Color of dividers when property (hover)   |
 | `--metadata-divider-color-focus`        | Color of dividers when property (focused) |
 | `--metadata-divider-width`              | Width of divider lines                    |
-| `--metadata-property-padding`           | Property adding                           |
+| `--metadata-property-padding`           | Property padding                          |
 | `--metadata-property-radius`            | Property corner radius                    |
 | `--metadata-property-radius-hover`      | Property corner radius (hover)            |
 | `--metadata-property-radius-focus`      | Property corner radius (focus)            |
