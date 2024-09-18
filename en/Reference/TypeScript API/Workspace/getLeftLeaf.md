@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.getLeftLeaf() method
 
+Create a new leaf inside the left sidebar.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ getLeftLeaf(split: boolean): WorkspaceLeaf | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>split</code> | <code>boolean</code> |  |
+|  <code>split</code> | <code>boolean</code> | Should the existing split be split up? |
 
 **Returns:**
 

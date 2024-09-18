@@ -28,3 +28,7 @@ moveLeafToPopout(leaf: WorkspaceLeaf, data?: WorkspaceWindowInitData): Workspace
 
 [`WorkspaceWindow`](WorkspaceWindow)
 
+## Exceptions
+
+Error if the app does not support popout windows (i.e. on mobile or if Electron version is too old)
+

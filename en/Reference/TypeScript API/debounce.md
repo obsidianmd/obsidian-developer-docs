@@ -38,8 +38,8 @@ a debounced function that takes the same parameter as the original function.
 const debounced = debounce((text: string) => {
     console.log(text);
 }, 1000, true);
-debounced("Hello world"); // this will not be printed
+debounced('Hello world'); // this will not be printed
 await sleep(500);
-debounced("World, hello"); // this will be printed to the console.
+debounced('World, hello'); // this will be printed to the console.
 ```
 

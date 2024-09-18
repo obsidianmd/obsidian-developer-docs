@@ -21,8 +21,9 @@ export class WorkspaceLeaf extends WorkspaceItem
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`isDeferred`](WorkspaceLeaf/isDeferred) | <code>readonly</code> | <code>boolean</code> | Returns true if this leaf is currently deferred because it is in the background. A deferred leaf will have a DeferredView as its view, instead of the View that it should normally have for its type (like MarkdownView for the <code>markdown</code> type).  1.7.2 |
 |  [`parent`](WorkspaceLeaf/parent) |  | [`WorkspaceTabs`](WorkspaceTabs)<code> &#124; </code>[`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) | <p>The direct parent of the leaf.</p><p>On desktop, a leaf is always a child of a <code>WorkspaceTabs</code> component. On mobile, a leaf might be a child of a <code>WorkspaceMobileDrawer</code>. Perform an <code>instanceof</code> check before making an assumption about the <code>parent</code>.</p> |
-|  [`view`](WorkspaceLeaf/view) |  | [`View`](View) |  |
+|  [`view`](WorkspaceLeaf/view) |  | [`View`](View) | The view associated with this leaf. Do not attempt to cast this to your custom <code>View</code> without first checking <code>instanceof</code>. |
 
 ## Methods
 
@@ -35,6 +36,7 @@ export class WorkspaceLeaf extends WorkspaceItem
 |  [`getIcon()`](WorkspaceLeaf/getIcon) |  |  |
 |  [`getRoot()`](WorkspaceItem/getRoot) |  | <p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
 |  [`getViewState()`](WorkspaceLeaf/getViewState) |  |  |
+|  [`loadIfDeferred()`](WorkspaceLeaf/loadIfDeferred) |  | If this view is currently deferred, load it and await that it has fully loaded.  1.7.2 |
 |  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`on(name: 'pinned-change', callback, ctx)`](WorkspaceLeaf/on('pinned-change').md) |  |  |

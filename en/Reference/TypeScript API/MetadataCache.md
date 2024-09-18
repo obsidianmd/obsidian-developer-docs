@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## MetadataCache class
 
-Linktext is any internal link that is composed of a path and a subpath, such as "My note\#Heading" Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext.
+Linktext is any internal link that is composed of a path and a subpath, such as 'My note\#Heading' Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext.
 
 **Signature:**
 
@@ -35,7 +35,7 @@ export class MetadataCache extends Events
 |  [`getFirstLinkpathDest(linkpath, sourcePath)`](MetadataCache/getFirstLinkpathDest) |  | Get the best match for a linkpath. |
 |  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`on(name: 'changed', callback, ctx)`](MetadataCache/on('changed').md) |  | <p>Called when a file has been indexed, and its (updated) cache is now available.</p><p>Note: This is not called when a file is renamed for performance reasons. You must hook the vault rename event for those. (Details: https://github.com/obsidianmd/obsidian-api/issues/77)</p> |
+|  [`on(name: 'changed', callback, ctx)`](MetadataCache/on('changed').md) |  | <p>Called when a file has been indexed, and its (updated) cache is now available.</p><p>Note: This is not called when a file is renamed for performance reasons. You must hook the vault rename event for those.</p> |
 |  [`on(name: 'deleted', callback, ctx)`](MetadataCache/on('deleted').md) |  | Called when a file has been deleted. A best-effort previous version of the cached metadata is presented, but it could be null in case the file was not successfully cached previously. |
 |  [`on(name: 'resolve', callback, ctx)`](MetadataCache/on('resolve').md) |  | Called when a file has been resolved for <code>resolvedLinks</code> and <code>unresolvedLinks</code>. This happens sometimes after a file has been indexed. |
 |  [`on(name: 'resolved', callback, ctx)`](MetadataCache/on('resolved').md) |  | Called when all files has been resolved. This will be fired each time files get modified after the initial load. |

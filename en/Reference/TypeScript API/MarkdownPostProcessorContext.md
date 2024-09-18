@@ -22,7 +22,7 @@ export interface MarkdownPostProcessorContext
 |  --- | --- | --- | --- |
 |  [`docId`](MarkdownPostProcessorContext/docId) |  | <code>string</code> |  |
 |  [`frontmatter`](MarkdownPostProcessorContext/frontmatter) |  | <code>any &#124; null &#124; undefined</code> |  |
-|  [`sourcePath`](MarkdownPostProcessorContext/sourcePath) |  | <code>string</code> |  |
+|  [`sourcePath`](MarkdownPostProcessorContext/sourcePath) |  | <code>string</code> | The path to the associated file. Any links are assumed to be relative to the <code>sourcePath</code>. |
 
 ## Methods
 

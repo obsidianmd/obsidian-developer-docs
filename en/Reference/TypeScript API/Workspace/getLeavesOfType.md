@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.getLeavesOfType() method
 
+Get all leaves of a given type.
 
 **Signature:**
 

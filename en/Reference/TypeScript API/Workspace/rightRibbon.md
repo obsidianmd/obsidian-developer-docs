@@ -9,6 +9,10 @@ cssclasses: hide-title
 
 ## Workspace.rightRibbon property
 
+> Warning: This API is now obsolete.
+> 
+> No longer used
+> 
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.on('quick-preview') method
 
+Triggered when the active Markdown file is modified. React to file changes before they are saved to disk.
 
 **Signature:**
 

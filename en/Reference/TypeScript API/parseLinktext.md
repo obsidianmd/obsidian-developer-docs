@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## parseLinktext() function
 
+Parses the linktext of a wikilink into its component parts.
 
 **Signature:**
 
@@ -23,9 +24,11 @@ export function parseLinktext(linktext: string): {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>linktext</code> | <code>string</code> |  |
+|  <code>linktext</code> | <code>string</code> | A wikilink without the leading \[\[ and trailing \]\] |
 
 **Returns:**
 
 `{     path: string;     subpath: string; }`
+
+filepath and subpath (subpath can refer either to a block id, or a heading)
 

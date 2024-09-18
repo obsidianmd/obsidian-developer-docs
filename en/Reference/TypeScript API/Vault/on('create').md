@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Vault.on('create') method
 
-Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](Workspace/onLayoutReady)<!-- -->.
+Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside .
 
 **Signature:**
 

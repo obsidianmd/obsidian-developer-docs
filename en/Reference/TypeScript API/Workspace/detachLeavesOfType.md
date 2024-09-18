@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.detachLeavesOfType() method
 
+Remove all leaves of the given type.
 
 **Signature:**
 

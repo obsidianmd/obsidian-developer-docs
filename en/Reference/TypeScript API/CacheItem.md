@@ -20,5 +20,5 @@ export interface CacheItem
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`position`](CacheItem/position) |  | [`Pos`](Pos) |  |
+|  [`position`](CacheItem/position) |  | [`Pos`](Pos) | Position of this item in the note. |
 

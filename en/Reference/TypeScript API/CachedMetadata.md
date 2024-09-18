@@ -25,7 +25,7 @@ export interface CachedMetadata
 |  [`footnotes?`](CachedMetadata/footnotes) |  | [`FootnoteCache`](FootnoteCache)<code>[]</code> | _(Optional)_ |
 |  [`frontmatter?`](CachedMetadata/frontmatter) |  | [`FrontMatterCache`](FrontMatterCache) | _(Optional)_ |
 |  [`frontmatterLinks?`](CachedMetadata/frontmatterLinks) |  | [`FrontmatterLinkCache`](FrontmatterLinkCache)<code>[]</code> | _(Optional)_ |
-|  [`frontmatterPosition?`](CachedMetadata/frontmatterPosition) |  | [`Pos`](Pos) | _(Optional)_ |
+|  [`frontmatterPosition?`](CachedMetadata/frontmatterPosition) |  | [`Pos`](Pos) | _(Optional)_ Position of the frontmatter in the file. |
 |  [`headings?`](CachedMetadata/headings) |  | [`HeadingCache`](HeadingCache)<code>[]</code> | _(Optional)_ |
 |  [`links?`](CachedMetadata/links) |  | [`LinkCache`](LinkCache)<code>[]</code> | _(Optional)_ |
 |  [`listItems?`](CachedMetadata/listItems) |  | [`ListItemCache`](ListItemCache)<code>[]</code> | _(Optional)_ |

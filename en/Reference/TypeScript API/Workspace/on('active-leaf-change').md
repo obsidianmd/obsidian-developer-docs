@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.on('active-leaf-change') method
 
+Triggered when the active leaf changes.
 
 **Signature:**
 

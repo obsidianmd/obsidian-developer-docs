@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.on('resize') method
 
+Triggered when a `WorkspaceItem` is resized or the workspace layout has changed.
 
 **Signature:**
 

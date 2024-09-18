@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## FileManager.generateMarkdownLink() method
 
-Generate a markdown link based on the user's preferences.
+Generate a Markdown link based on the user's preferences.
 
 **Signature:**
 

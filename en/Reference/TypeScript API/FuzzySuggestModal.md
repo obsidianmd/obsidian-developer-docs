@@ -54,6 +54,7 @@ export abstract class FuzzySuggestModal<T> extends SuggestModal<FuzzyMatch<T>>
 |  [`onOpen()`](Modal/onOpen) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`open()`](Modal/open) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`renderSuggestion(item, el)`](FuzzySuggestModal/renderSuggestion) |  |  |
+|  [`selectActiveSuggestion(evt)`](SuggestModal/selectActiveSuggestion) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`setContent(content)`](Modal/setContent) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`setInstructions(instructions)`](SuggestModal/setInstructions) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |

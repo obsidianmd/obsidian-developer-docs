@@ -30,7 +30,7 @@ export class Vault extends Events
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`append(file, data, options)`](Vault/append) |  | Add text to the end of a plaintext file inside the vault. |
-|  [`cachedRead(file)`](Vault/cachedRead) |  | Read the content of a plaintext file stored inside the vault Use this if you only want to display the content to the user. If you want to modify the file content afterward use [Vault.read()](Vault/read) |
+|  [`cachedRead(file)`](Vault/cachedRead) |  | Read the content of a plaintext file stored inside the vault Use this if you only want to display the content to the user. If you want to modify the file content afterward use  |
 |  [`copy(file, newPath)`](Vault/copy) |  | Create a copy of the selected file. |
 |  [`create(path, data, options)`](Vault/create) |  | Create a new plaintext file inside the vault. |
 |  [`createBinary(path, data, options)`](Vault/createBinary) |  | Create a new binary file inside the vault. |
@@ -42,7 +42,7 @@ export class Vault extends Events
 |  [`getFileByPath(path)`](Vault/getFileByPath) |  | Get a file inside the vault at the given path. Returns <code>null</code> if the file does not exist. |
 |  [`getFiles()`](Vault/getFiles) |  | Get all files in the vault. |
 |  [`getFolderByPath(path)`](Vault/getFolderByPath) |  | Get a folder inside the vault at the given path. Returns <code>null</code> if the folder does not exist. |
-|  [`getMarkdownFiles()`](Vault/getMarkdownFiles) |  | Get all markdown files in the vault. |
+|  [`getMarkdownFiles()`](Vault/getMarkdownFiles) |  | Get all Markdown files in the vault. |
 |  [`getName()`](Vault/getName) |  | Gets the name of the vault. |
 |  [`getResourcePath(file)`](Vault/getResourcePath) |  | Returns an URI for the browser engine to use, for example to embed an image. |
 |  [`getRoot()`](Vault/getRoot) |  | Get the root folder of the current vault. |
@@ -50,15 +50,15 @@ export class Vault extends Events
 |  [`modifyBinary(file, data, options)`](Vault/modifyBinary) |  | Modify the contents of a binary file. |
 |  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`on(name: 'create', callback, ctx)`](Vault/on('create').md) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](Workspace/onLayoutReady)<!-- -->. |
+|  [`on(name: 'create', callback, ctx)`](Vault/on('create').md) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside . |
 |  [`on(name: 'modify', callback, ctx)`](Vault/on('modify').md) |  | Called when a file is modified. |
 |  [`on(name: 'delete', callback, ctx)`](Vault/on('delete').md) |  | Called when a file is deleted. |
 |  [`on(name: 'rename', callback, ctx)`](Vault/on('rename').md) |  | Called when a file is renamed. |
 |  [`process(file, fn, options)`](Vault/process) |  | Atomically read, modify, and save the contents of a note. |
-|  [`read(file)`](Vault/read) |  | Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](Vault/cachedRead) otherwise for better performance. |
+|  [`read(file)`](Vault/read) |  | Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use  otherwise for better performance. |
 |  [`readBinary(file)`](Vault/readBinary) |  | Read the content of a binary file stored inside the vault. |
 |  [`recurseChildren(root, cb)`](Vault/recurseChildren) | <code>static</code> |  |
-|  [`rename(file, newPath)`](Vault/rename) |  | Rename or move a file. |
+|  [`rename(file, newPath)`](Vault/rename) |  | Rename or move a file. To ensure links are automatically renamed, use  instead. |
 |  [`trash(file, system)`](Vault/trash) |  | Tries to move to system trash. If that isn't successful/allowed, use local trash |
 |  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |

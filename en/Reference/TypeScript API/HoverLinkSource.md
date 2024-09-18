@@ -20,6 +20,6 @@ export interface HoverLinkSource
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`defaultMod`](HoverLinkSource/defaultMod) |  | <code>boolean</code> | Whether or not the <code>hover-link</code> event requires the 'Mod' key to be pressed to trigger. |
-|  [`display`](HoverLinkSource/display) |  | <code>string</code> | The string that will be displayed in the 'Page preview' plugin settings. It should match your plugin's display name. |
+|  [`defaultMod`](HoverLinkSource/defaultMod) |  | <code>boolean</code> | Whether the <code>hover-link</code> event requires the 'Mod' key to be pressed to trigger. |
+|  [`display`](HoverLinkSource/display) |  | <code>string</code> | Text displayed in the 'Page preview' plugin settings. It should match the plugin's display name. |
 

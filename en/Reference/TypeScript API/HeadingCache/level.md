@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## HeadingCache.level property
 
+Number between 1 and 6.
 
 **Signature:**
 

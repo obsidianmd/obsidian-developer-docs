@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Vault.read() method
 
-Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](Vault/cachedRead) otherwise for better performance.
+Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use  otherwise for better performance.
 
 **Signature:**
 

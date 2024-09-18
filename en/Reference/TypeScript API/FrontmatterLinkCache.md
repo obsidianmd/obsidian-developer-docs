@@ -21,8 +21,8 @@ export interface FrontmatterLinkCache extends Reference
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`displayText?`](Reference/displayText) |  | <code>string</code> | <p>_(Optional)_ if title is different than link text, in the case of \[\[page name\|display name\]\]</p><p>(Inherited from [Reference](Reference)<!-- -->)</p> |
+|  [`displayText?`](Reference/displayText) |  | <code>string</code> | <p>_(Optional)_ Available if title is different from link text, in the case of <code>[[page name&#124;display name]]</code> this will return <code>display name</code></p><p>(Inherited from [Reference](Reference)<!-- -->)</p> |
 |  [`key`](FrontmatterLinkCache/key) |  | <code>string</code> |  |
-|  [`link`](Reference/link) |  | <code>string</code> | <p>(Inherited from [Reference](Reference)<!-- -->)</p> |
-|  [`original`](Reference/original) |  | <code>string</code> | <p>(Inherited from [Reference](Reference)<!-- -->)</p> |
+|  [`link`](Reference/link) |  | <code>string</code> | <p>Link destination.</p><p>(Inherited from [Reference](Reference)<!-- -->)</p> |
+|  [`original`](Reference/original) |  | <code>string</code> | <p>Contains the text as it's written in the document. Not available on Publish.</p><p>(Inherited from [Reference](Reference)<!-- -->)</p> |
 

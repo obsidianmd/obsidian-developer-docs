@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## HoverLinkSource.display property
 
-The string that will be displayed in the 'Page preview' plugin settings. It should match your plugin's display name.
+Text displayed in the 'Page preview' plugin settings. It should match the plugin's display name.
 
 **Signature:**
 

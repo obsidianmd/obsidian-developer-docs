@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FileSystemAdapter class
 
+Implementation of the vault adapter for desktop.
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Loc.offset property
 
+Number of characters from the beginning of the file.
 
 **Signature:**
 

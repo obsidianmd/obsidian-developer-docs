@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## getAllTags() function
 
+Combines all tags from frontmatter and note content into a single array.
 
 **Signature:**
 

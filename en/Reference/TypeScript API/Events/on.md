@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-on(name: string, callback: (...data: any) => any, ctx?: any): EventRef;
+on(name: string, callback: (...data: unknown[]) => unknown, ctx?: any): EventRef;
 ```
 
 ## Parameters
@@ -21,7 +21,7 @@ on(name: string, callback: (...data: any) => any, ctx?: any): EventRef;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>name</code> | <code>string</code> |  |
-|  <code>callback</code> | <code>(...data: any) =&gt; any</code> |  |
+|  <code>callback</code> | <code>(...data: unknown[]) =&gt; unknown</code> |  |
 |  <code>ctx</code> | <code>any</code> | _(Optional)_ |
 
 **Returns:**

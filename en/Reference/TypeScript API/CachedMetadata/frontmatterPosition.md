@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CachedMetadata.frontmatterPosition property
 
+Position of the frontmatter in the file.
 
 **Signature:**
 

@@ -9,11 +9,12 @@ cssclasses: hide-title
 
 ## resolveSubpath() function
 
+Resolve the given subpath to a reference in the MetadataCache.
 
 **Signature:**
 
 ```typescript
-export function resolveSubpath(cache: CachedMetadata, subpath: string): HeadingSubpathResult | BlockSubpathResult | null;
+export function resolveSubpath(cache: CachedMetadata, subpath: string): HeadingSubpathResult | BlockSubpathResult | FootnoteSubpathResult | null;
 ```
 
 ## Parameters
@@ -25,5 +26,5 @@ export function resolveSubpath(cache: CachedMetadata, subpath: string): HeadingS
 
 **Returns:**
 
-[`HeadingSubpathResult`](HeadingSubpathResult)` | `[`BlockSubpathResult`](BlockSubpathResult)` | null`
+[`HeadingSubpathResult`](HeadingSubpathResult)` | `[`BlockSubpathResult`](BlockSubpathResult)` | `[`FootnoteSubpathResult`](FootnoteSubpathResult)` | null`
 

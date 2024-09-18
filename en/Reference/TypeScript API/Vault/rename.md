@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Vault.rename() method
 
-Rename or move a file.
+Rename or move a file. To ensure links are automatically renamed, use  instead.
 
 **Signature:**
 

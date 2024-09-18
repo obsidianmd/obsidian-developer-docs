@@ -14,9 +14,9 @@ Called when the settings tab should be rendered.
 **Signature:**
 
 ```typescript
-abstract display(): any;
+abstract display(): void;
 ```
 **Returns:**
 
-`any`
+`void`
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MarkdownPostProcessorContext.sourcePath property
 
+The path to the associated file. Any links are assumed to be relative to the `sourcePath`<!-- -->.
 
 **Signature:**
 

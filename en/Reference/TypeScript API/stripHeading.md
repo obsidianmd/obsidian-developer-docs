@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## stripHeading() function
 
-This function normalizes headings for link matching by stripping out special characters and shrinking consecutive spaces.
+Normalizes headings for link matching by stripping out special characters and shrinking consecutive spaces.
 
 **Signature:**
 

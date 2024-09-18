@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceLeaf.view property
 
+The view associated with this leaf. Do not attempt to cast this to your custom `View` without first checking `instanceof`<!-- -->.
 
 **Signature:**
 
