@@ -4,11 +4,11 @@ This change might break some assumptions that your plugin is currently making.
 
 ### Accessing `leaf.view`
 
-If your plugin is iterating the workspace (using either `iterateLeaves` or `getLeavesOfType`), it's now very important that you perform an `instanceof` check before making any assumptions about `leaf.view`.
+If your plugin is iterating the workspace (using either `iterateAllLeaves` or `getLeavesOfType`), it's now very important that you perform an `instanceof` check before making any assumptions about `leaf.view`.
 
 ```ts
 // Bad
-workspace.iterateLeaves(leaf => {
+workspace.iterateAllLeaves(leaf => {
     if (leaf.view.getViewType() === 'my-view') {
         let view = leaf.view as MyCustomView;
         ...
@@ -16,7 +16,7 @@ workspace.iterateLeaves(leaf => {
 });
 
 // Good
-workspace.iterateLeaves(leaf => {
+workspace.iterateAllLeaves(leaf => {
     if (leaf.view instanceof MyCustomView) {
         ...
     }
