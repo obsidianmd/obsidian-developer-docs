@@ -15,7 +15,7 @@ In your build configuration, you should consider minifying your plugin code. Thi
 
 Next, make sure you aren't doing anything expensive inside your plugin's `onload` function. The `onload` function should only include code necessary for the plugin to initialize. This includes app registrations, like registering commands, view types, and Markdown post-processors. It should not include anything computationally expensive or data fetching.
 
-If your plugin creates any custom views, be mindful of your custom view constructor. When Obsidian opens, it will reopen all the views saved to the user's workspace. If your view is loaded (and not [[Deferred views for Plugin Developers|deferred]]), this will directly impact the app load time.
+If your plugin creates any custom views, be mindful of your custom view constructor. When Obsidian opens, it will reopen all the views saved to the user's workspace. If your view is loaded (and not [[Understanding deferred views|deferred]]), this will directly impact the app load time.
 
 ### If you have code that you want to run at startup, where should it go?
 
