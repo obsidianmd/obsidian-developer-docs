@@ -4,7 +4,6 @@ Plugins play an important rule in app load time. To ensure that Obsidian behaves
 
 ### How do I improve my plugin's load time?
 
-- Use a "production" build.
 - Simplify your plugin `onload`.
 - Check your plugin View constructor.
 - Avoid the [common pitfalls](#Pitfalls).
@@ -62,3 +61,5 @@ class MyPlugin extends Plugin {
 	}
 }
 ```
+
+For additional help with optimizing your plugin, reach out for [[Home#Join the developer community|help from the developer community]]!
