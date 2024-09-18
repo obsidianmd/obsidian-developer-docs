@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-trigger(name: string, ...data: any[]): void;
+trigger(name: string, ...data: unknown[]): void;
 ```
 
 ## Parameters
@@ -21,7 +21,7 @@ trigger(name: string, ...data: any[]): void;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>name</code> | <code>string</code> |  |
-|  <code>data</code> | <code>any[]</code> |  |
+|  <code>data</code> | <code>unknown[]</code> |  |
 
 **Returns:**
 

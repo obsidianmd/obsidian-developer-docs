@@ -13,14 +13,14 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-setState(state: any, result: ViewStateResult): Promise<void>;
+setState(state: unknown, result: ViewStateResult): Promise<void>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>state</code> | <code>any</code> |  |
+|  <code>state</code> | <code>unknown</code> |  |
 |  <code>result</code> | [`ViewStateResult`](ViewStateResult) |  |
 
 **Returns:**

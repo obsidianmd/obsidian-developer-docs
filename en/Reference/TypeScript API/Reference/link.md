@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Reference.link property
 
+Link destination.
 
 **Signature:**
 

@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-abstract onChooseSuggestion(item: T, evt: MouseEvent | KeyboardEvent): any;
+abstract onChooseSuggestion(item: T, evt: MouseEvent | KeyboardEvent): void;
 ```
 
 ## Parameters
@@ -25,5 +25,5 @@ abstract onChooseSuggestion(item: T, evt: MouseEvent | KeyboardEvent): any;
 
 **Returns:**
 
-`any`
+`void`
 

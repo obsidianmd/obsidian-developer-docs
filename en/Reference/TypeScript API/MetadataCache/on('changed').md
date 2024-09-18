@@ -11,7 +11,7 @@ cssclasses: hide-title
 
 Called when a file has been indexed, and its (updated) cache is now available.
 
-Note: This is not called when a file is renamed for performance reasons. You must hook the vault rename event for those. (Details: https://github.com/obsidianmd/obsidian-api/issues/77)
+Note: This is not called when a file is renamed for performance reasons. You must hook the vault rename event for those.
 
 **Signature:**
 

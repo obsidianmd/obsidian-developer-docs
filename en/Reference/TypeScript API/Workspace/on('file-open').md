@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.on('file-open') method
 
+Triggered when the active file changes. The file could be in a new leaf, an existing leaf, or an embed.
 
 **Signature:**
 

@@ -9,11 +9,12 @@ cssclasses: hide-title
 
 ## Workspace.revealLeaf() method
 
+Bring a given leaf to the foreground. If the leaf is in a sidebar, the sidebar will be uncollapsed. `await` this function to ensure your view has been fully loaded and is not deferred.
 
 **Signature:**
 
 ```typescript
-revealLeaf(leaf: WorkspaceLeaf): void;
+revealLeaf(leaf: WorkspaceLeaf): Promise<void>;
 ```
 
 ## Parameters
@@ -24,5 +25,5 @@ revealLeaf(leaf: WorkspaceLeaf): void;
 
 **Returns:**
 
-`void`
+`Promise``<void>`
 

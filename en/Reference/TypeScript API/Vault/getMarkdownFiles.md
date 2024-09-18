@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Vault.getMarkdownFiles() method
 
-Get all markdown files in the vault.
+Get all Markdown files in the vault.
 
 **Signature:**
 

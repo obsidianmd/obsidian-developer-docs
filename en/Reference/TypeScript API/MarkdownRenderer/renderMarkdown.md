@@ -14,7 +14,7 @@ cssclasses: hide-title
 > - use [MarkdownRenderer.render()](MarkdownRenderer/render)
 > 
 
-Renders markdown string to an HTML element.
+Renders Markdown string to an HTML element.
 
 **Signature:**
 

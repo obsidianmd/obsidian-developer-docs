@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## editorInfoField variable
 
-Use this StateField to get information about this markdown editor, such as the associated file, or the Editor.
+Use this StateField to get information about this Markdown editor, such as the associated file, or the Editor.
 
 **Signature:**
 

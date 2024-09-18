@@ -53,6 +53,7 @@ export abstract class SuggestModal<T> extends Modal implements ISuggestOwner<T>
 |  [`onOpen()`](Modal/onOpen) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`open()`](Modal/open) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`renderSuggestion(value, el)`](SuggestModal/renderSuggestion) | <code>abstract</code> |  |
+|  [`selectActiveSuggestion(evt)`](SuggestModal/selectActiveSuggestion) |  |  |
 |  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  |  |
 |  [`setContent(content)`](Modal/setContent) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`setInstructions(instructions)`](SuggestModal/setInstructions) |  |  |

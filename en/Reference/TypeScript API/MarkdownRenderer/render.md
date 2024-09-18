@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## MarkdownRenderer.render() method
 
-Renders markdown string to an HTML element.
+Renders Markdown string to an HTML element.
 
 **Signature:**
 
@@ -22,9 +22,9 @@ static render(app: App, markdown: string, el: HTMLElement, sourcePath: string, c
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>app</code> | [`App`](App) | A reference to the app object |
-|  <code>markdown</code> | <code>string</code> | The markdown source code |
+|  <code>markdown</code> | <code>string</code> | The Markdown source code |
 |  <code>el</code> | <code>HTMLElement</code> | The element to append to |
-|  <code>sourcePath</code> | <code>string</code> | The normalized path of this markdown file, used to resolve relative internal links |
+|  <code>sourcePath</code> | <code>string</code> | The normalized path of this Markdown file, used to resolve relative internal links |
 |  <code>component</code> | [`Component`](Component) | A parent component to manage the lifecycle of the rendered child components. |
 
 **Returns:**

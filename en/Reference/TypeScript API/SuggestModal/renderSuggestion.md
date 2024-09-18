@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-abstract renderSuggestion(value: T, el: HTMLElement): any;
+abstract renderSuggestion(value: T, el: HTMLElement): void;
 ```
 
 ## Parameters
@@ -25,5 +25,5 @@ abstract renderSuggestion(value: T, el: HTMLElement): any;
 
 **Returns:**
 
-`any`
+`void`
 

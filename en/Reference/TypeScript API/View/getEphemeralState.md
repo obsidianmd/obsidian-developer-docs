@@ -13,9 +13,9 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-getEphemeralState(): any;
+getEphemeralState(): Record<string, unknown>;
 ```
 **Returns:**
 
-`any`
+`Record``<string, unknown>`
 

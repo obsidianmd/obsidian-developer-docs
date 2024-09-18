@@ -13,14 +13,14 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-setEphemeralState(state: any): void;
+setEphemeralState(state: unknown): void;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>state</code> | <code>any</code> |  |
+|  <code>state</code> | <code>unknown</code> |  |
 
 **Returns:**
 

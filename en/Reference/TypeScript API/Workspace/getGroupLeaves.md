@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.getGroupLeaves() method
 
+Get all leaves that belong to a group
 
 **Signature:**
 
@@ -20,7 +21,7 @@ getGroupLeaves(group: string): WorkspaceLeaf[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>group</code> | <code>string</code> |  |
+|  <code>group</code> | <code>string</code> | id |
 
 **Returns:**
 

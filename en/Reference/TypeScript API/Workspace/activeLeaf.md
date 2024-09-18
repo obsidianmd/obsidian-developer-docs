@@ -11,14 +11,12 @@ cssclasses: hide-title
 
 > Warning: This API is now obsolete.
 > 
-> - The use of this field is discouraged.
+> The use of this field is discouraged. The recommended alternatives are: - If you need information about the current view, use [Workspace.getActiveViewOfType()](Workspace/getActiveViewOfType)<!-- -->. - If you need to open a new file or navigate a view, use [Workspace.getLeaf](obsidian.workspace.getleaf_1.md).
 > 
 
 Indicates the currently focused leaf, if one exists.
 
 Please avoid using `activeLeaf` directly, especially without checking whether `activeLeaf` is null.
-
-The recommended alternatives are: - If you need information about the current view, use [Workspace.getActiveViewOfType()](Workspace/getActiveViewOfType)<!-- -->. - If you need to open a new file or navigate a view, use [Workspace.getLeaf](obsidian.workspace.getleaf_1.md).
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Loc.col property
 
+Column number.
 
 **Signature:**
 

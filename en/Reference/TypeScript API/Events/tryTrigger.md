@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-tryTrigger(evt: EventRef, args: any[]): void;
+tryTrigger(evt: EventRef, args: unknown[]): void;
 ```
 
 ## Parameters
@@ -21,7 +21,7 @@ tryTrigger(evt: EventRef, args: any[]): void;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>evt</code> | [`EventRef`](EventRef) |  |
-|  <code>args</code> | <code>any[]</code> |  |
+|  <code>args</code> | <code>unknown[]</code> |  |
 
 **Returns:**
 

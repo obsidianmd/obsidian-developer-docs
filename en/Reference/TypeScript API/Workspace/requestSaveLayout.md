@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.requestSaveLayout property
 
+Save the state of the current workspace layout.
 
 **Signature:**
 

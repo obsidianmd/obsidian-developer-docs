@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Loc interface
 
+Location within a Markdown document
 
 **Signature:**
 
@@ -20,7 +21,7 @@ export interface Loc
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`col`](Loc/col) |  | <code>number</code> |  |
-|  [`line`](Loc/line) |  | <code>number</code> |  |
-|  [`offset`](Loc/offset) |  | <code>number</code> |  |
+|  [`col`](Loc/col) |  | <code>number</code> | Column number. |
+|  [`line`](Loc/line) |  | <code>number</code> | Line number. |
+|  [`offset`](Loc/offset) |  | <code>number</code> | Number of characters from the beginning of the file. |
 

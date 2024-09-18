@@ -9,9 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.getActiveFile() method
 
-Returns the file for the current view if it's a FileView.
-
-Otherwise, it will recent the most recently active file.
+Returns the file for the current view if it's a `FileView`<!-- -->. Otherwise, it will return the most recently active file.
 
 **Signature:**
 

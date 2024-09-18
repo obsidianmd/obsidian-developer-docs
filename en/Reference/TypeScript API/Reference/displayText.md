@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Reference.displayText property
 
-if title is different than link text, in the case of \[\[page name\|display name\]\]
+Available if title is different from link text, in the case of `[[page name|display name]]` this will return `display name`
 
 **Signature:**
 

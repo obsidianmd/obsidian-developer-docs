@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Pos.end property
 
+End location.
 
 **Signature:**
 

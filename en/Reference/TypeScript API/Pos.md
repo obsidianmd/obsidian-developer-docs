@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Pos interface
 
+Describes a text range in a Markdown document.
 
 **Signature:**
 
@@ -20,6 +21,6 @@ export interface Pos
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`end`](Pos/end) |  | [`Loc`](Loc) |  |
-|  [`start`](Pos/start) |  | [`Loc`](Loc) |  |
+|  [`end`](Pos/end) |  | [`Loc`](Loc) | End location. |
+|  [`start`](Pos/start) |  | [`Loc`](Loc) | Starting location. |
 

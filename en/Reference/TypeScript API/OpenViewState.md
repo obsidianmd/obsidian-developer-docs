@@ -21,7 +21,7 @@ export interface OpenViewState
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`active?`](OpenViewState/active) |  | <code>boolean</code> | _(Optional)_ |
-|  [`eState?`](OpenViewState/eState) |  | <code>any</code> | _(Optional)_ |
+|  [`eState?`](OpenViewState/eState) |  | <code>Record</code><code>&lt;string, unknown&gt;</code> | _(Optional)_ |
 |  [`group?`](OpenViewState/group) |  | [`WorkspaceLeaf`](WorkspaceLeaf) | _(Optional)_ |
-|  [`state?`](OpenViewState/state) |  | <code>any</code> | _(Optional)_ |
+|  [`state?`](OpenViewState/state) |  | <code>Record</code><code>&lt;string, unknown&gt;</code> | _(Optional)_ |
 

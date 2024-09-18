@@ -13,9 +13,9 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-close(): any;
+close(): void;
 ```
 **Returns:**
 
-`any`
+`void`
 

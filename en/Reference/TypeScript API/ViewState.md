@@ -23,6 +23,6 @@ export interface ViewState
 |  [`active?`](ViewState/active) |  | <code>boolean</code> | _(Optional)_ |
 |  [`group?`](ViewState/group) |  | [`WorkspaceLeaf`](WorkspaceLeaf) | _(Optional)_ |
 |  [`pinned?`](ViewState/pinned) |  | <code>boolean</code> | _(Optional)_ |
-|  [`state?`](ViewState/state) |  | <code>any</code> | _(Optional)_ |
+|  [`state?`](ViewState/state) |  | <code>Record</code><code>&lt;string, unknown&gt;</code> | _(Optional)_ |
 |  [`type`](ViewState/type) |  | <code>string</code> |  |
 

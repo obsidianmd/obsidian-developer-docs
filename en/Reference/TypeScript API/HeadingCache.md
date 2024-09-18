@@ -22,6 +22,6 @@ export interface HeadingCache extends CacheItem
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`heading`](HeadingCache/heading) |  | <code>string</code> |  |
-|  [`level`](HeadingCache/level) |  | <code>number</code> |  |
-|  [`position`](CacheItem/position) |  | [`Pos`](Pos) | <p>(Inherited from [CacheItem](CacheItem)<!-- -->)</p> |
+|  [`level`](HeadingCache/level) |  | <code>number</code> | Number between 1 and 6. |
+|  [`position`](CacheItem/position) |  | [`Pos`](Pos) | <p>Position of this item in the note.</p><p>(Inherited from [CacheItem](CacheItem)<!-- -->)</p> |
 
