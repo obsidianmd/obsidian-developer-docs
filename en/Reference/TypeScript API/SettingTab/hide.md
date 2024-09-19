@@ -14,9 +14,9 @@ Hides the contents of the setting tab. Any registered components should be unloa
 **Signature:**
 
 ```typescript
-hide(): any;
+hide(): void;
 ```
 **Returns:**
 
-`any`
+`void`
 

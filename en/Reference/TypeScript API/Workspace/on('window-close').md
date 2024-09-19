@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.on('window-close') method
 
+Triggered when a popout window is closed.
 
 **Signature:**
 

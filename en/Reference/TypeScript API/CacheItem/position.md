@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CacheItem.position property
 
+Position of this item in the note.
 
 **Signature:**
 

@@ -21,7 +21,7 @@ export class FileManager
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`generateMarkdownLink(file, sourcePath, subpath, alias)`](FileManager/generateMarkdownLink) |  | Generate a markdown link based on the user's preferences. |
+|  [`generateMarkdownLink(file, sourcePath, subpath, alias)`](FileManager/generateMarkdownLink) |  | Generate a Markdown link based on the user's preferences. |
 |  [`getAvailablePathForAttachment(filename, sourcePath)`](FileManager/getAvailablePathForAttachment) |  | Resolves a unique path for the attachment file being saved. Ensures that the parent directory exists and dedupes the filename if the destination filename already exists. |
 |  [`getNewFileParent(sourcePath, newFilePath)`](FileManager/getNewFileParent) |  | Gets the folder that new files should be saved to, given the user's preferences. |
 |  [`processFrontMatter(file, fn, options)`](FileManager/processFrontMatter) |  | <p>Atomically read, modify, and save the frontmatter of a note. The frontmatter is passed in as a JS object, and should be mutated directly to achieve the desired result.</p><p>Remember to handle errors thrown by this method.</p> |

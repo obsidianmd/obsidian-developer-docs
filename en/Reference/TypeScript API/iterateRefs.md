@@ -9,6 +9,8 @@ cssclasses: hide-title
 
 ## iterateRefs() function
 
+If callback returns true, the iteration process will be interrupted.
+
 **Signature:**
 
 ```typescript

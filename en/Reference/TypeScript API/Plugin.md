@@ -35,15 +35,16 @@ export abstract class Plugin extends Component
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`addChild(component)`](Component/addChild) |  | <p>Adds a child component, loading it if this component is loaded</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`addCommand(command)`](Plugin/addCommand) |  | Register a command globally. Registered commands will be available from the @<!-- -->{<!-- -->link https://help.md/Plugins/Command+palette Command pallete<!-- -->}<!-- -->. The command id and name will be automatically prefixed with this plugin's id and name. |
+|  [`addCommand(command)`](Plugin/addCommand) |  | Register a command globally. Registered commands will be available from the @<!-- -->{<!-- -->link https://help.md/Plugins/Command+palette Command palette<!-- -->}<!-- -->. The command id and name will be automatically prefixed with this plugin's id and name. |
 |  [`addRibbonIcon(icon, title, callback)`](Plugin/addRibbonIcon) |  | Adds a ribbon icon to the left bar. |
 |  [`addSettingTab(settingTab)`](Plugin/addSettingTab) |  | Register a settings tab, which allows users to change settings. |
 |  [`addStatusBarItem()`](Plugin/addStatusBarItem) |  | Adds a status bar item to the bottom of the app. Not available on mobile. |
 |  [`load()`](Component/load) |  | <p>Load this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`loadData()`](Plugin/loadData) |  | Load settings data from disk. Data is stored in <code>data.json</code> in the plugin folder. |
 |  [`onExternalSettingsChange()?`](Plugin/onExternalSettingsChange) |  | <p>_(Optional)_ Called when the <code>data.json</code> file is modified on disk externally from Obsidian. This usually means that a Sync service or external program has modified the plugin settings.</p><p>Implement this method to reload plugin settings when they have changed externally.</p> |
-|  [`onload()`](Component/onload) |  | <p>Override this to load your component</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onload()`](Plugin/onload) |  |  |
 |  [`onunload()`](Component/onunload) |  | <p>Override this to unload your component</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onUserEnable()`](Plugin/onUserEnable) |  | Perform any initial setup code. The user has explicitly interacted with the plugin so its safe to engage with the user. If your plugin registers a custom view, you can open it here. |
 |  [`register(cb)`](Component/register) |  | <p>Registers a callback to be called when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
@@ -52,13 +53,14 @@ export abstract class Plugin extends Component
 |  [`registerEditorSuggest(editorSuggest)`](Plugin/registerEditorSuggest) |  | Register an EditorSuggest which can provide live suggestions while the user is typing. |
 |  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`registerExtensions(extensions, viewType)`](Plugin/registerExtensions) |  |  |
-|  [`registerHoverLinkSource(id, info)`](Plugin/registerHoverLinkSource) |  | Registers a view with the 'Page preview' core plugin as an emitter of the 'hover-link' on the event. |
+|  [`registerHoverLinkSource(id, info)`](Plugin/registerHoverLinkSource) |  | Registers a view with the 'Page preview' core plugin as an emitter of the 'hover-link' event. |
 |  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`registerMarkdownCodeBlockProcessor(language, handler, sortOrder)`](Plugin/registerMarkdownCodeBlockProcessor) |  | Register a special post processor that handles fenced code given a language and a handler. This special post processor takes care of removing the <code>&lt;pre&gt;&lt;code&gt;</code> and create a <code>&lt;div&gt;</code> that will be passed to the handler, and is expected to be filled with custom elements. |
 |  [`registerMarkdownPostProcessor(postProcessor, sortOrder)`](Plugin/registerMarkdownPostProcessor) |  | Registers a post processor, to change how the document looks in reading mode. |
 |  [`registerObsidianProtocolHandler(action, handler)`](Plugin/registerObsidianProtocolHandler) |  | Register a handler for obsidian:// URLs. |
 |  [`registerView(type, viewCreator)`](Plugin/registerView) |  |  |
 |  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`removeCommand(commandId)`](Plugin/removeCommand) |  | Manually remove a command from the list of global commands. This should not be needed unless your plugin registers commands dynamically. |
 |  [`saveData(data)`](Plugin/saveData) |  | Write settings data to disk. Data is stored in <code>data.json</code> in the plugin folder. |
 |  [`unload()`](Component/unload) |  | <p>Unload this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 

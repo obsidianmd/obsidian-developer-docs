@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.updateOptions() method
 
-Calling this function will update/reconfigure the options of all markdown panes. It is fairly expensive, so it should not be called frequently.
+Calling this function will update/reconfigure the options of all Markdown views. It is fairly expensive, so it should not be called frequently.
 
 **Signature:**
 

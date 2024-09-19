@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Reference.original property
 
+Contains the text as it's written in the document. Not available on Publish.
 
 **Signature:**
 

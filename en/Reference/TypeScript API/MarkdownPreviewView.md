@@ -53,8 +53,8 @@ export class MarkdownPreviewView extends MarkdownRenderer implements MarkdownSub
 |  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`render(app, markdown, el, sourcePath, component)`](MarkdownRenderer/render) | <code>static</code> | <p>Renders markdown string to an HTML element.</p><p>(Inherited from [MarkdownRenderer](MarkdownRenderer)<!-- -->)</p> |
-|  [`renderMarkdown(markdown, el, sourcePath, component)`](MarkdownRenderer/renderMarkdown) | <code>static</code> | <p>Renders markdown string to an HTML element.</p><p>(Inherited from [MarkdownRenderer](MarkdownRenderer)<!-- -->)</p> |
+|  [`render(app, markdown, el, sourcePath, component)`](MarkdownRenderer/render) | <code>static</code> | <p>Renders Markdown string to an HTML element.</p><p>(Inherited from [MarkdownRenderer](MarkdownRenderer)<!-- -->)</p> |
+|  [`renderMarkdown(markdown, el, sourcePath, component)`](MarkdownRenderer/renderMarkdown) | <code>static</code> | <p>Renders Markdown string to an HTML element.</p><p>(Inherited from [MarkdownRenderer](MarkdownRenderer)<!-- -->)</p> |
 |  [`rerender(full)`](MarkdownPreviewView/rerender) |  |  |
 |  [`set(data, clear)`](MarkdownPreviewView/set) |  |  |
 |  [`unload()`](Component/unload) |  | <p>Unload this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |

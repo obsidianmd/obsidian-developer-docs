@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Reference interface
 
+Base interface for items that point to a different location.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ export interface Reference
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`displayText?`](Reference/displayText) |  | <code>string</code> | _(Optional)_ if title is different than link text, in the case of \[\[page name\|display name\]\] |
-|  [`link`](Reference/link) |  | <code>string</code> |  |
-|  [`original`](Reference/original) |  | <code>string</code> |  |
+|  [`displayText?`](Reference/displayText) |  | <code>string</code> | _(Optional)_ Available if title is different from link text, in the case of <code>[[page name&#124;display name]]</code> this will return <code>display name</code> |
+|  [`link`](Reference/link) |  | <code>string</code> | Link destination. |
+|  [`original`](Reference/original) |  | <code>string</code> | Contains the text as it's written in the document. Not available on Publish. |
 

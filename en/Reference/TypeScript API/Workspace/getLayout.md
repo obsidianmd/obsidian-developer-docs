@@ -13,9 +13,9 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-getLayout(): any;
+getLayout(): Record<string, unknown>;
 ```
 **Returns:**
 
-`any`
+`Record``<string, unknown>`
 

@@ -31,3 +31,12 @@ process(file: TFile, fn: (data: string) => string, options?: DataWriteOptions): 
 
 string - the text value of the note that was written.
 
+## Example
+
+
+```ts
+app.vault.process(file, (data) => {
+ return data.replace('Hello', 'World');
+});
+```
+

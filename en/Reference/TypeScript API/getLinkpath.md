@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## getLinkpath() function
 
+Converts the linktext to a linkpath.
 
 **Signature:**
 
@@ -20,9 +21,11 @@ export function getLinkpath(linktext: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>linktext</code> | <code>string</code> |  |
+|  <code>linktext</code> | <code>string</code> | A wikilink without the leading \[\[ and trailing \]\] |
 
 **Returns:**
 
 `string`
+
+the name of the file that is being linked to.
 

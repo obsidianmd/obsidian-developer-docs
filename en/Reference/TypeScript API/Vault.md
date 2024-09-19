@@ -42,7 +42,7 @@ export class Vault extends Events
 |  [`getFileByPath(path)`](Vault/getFileByPath) |  | Get a file inside the vault at the given path. Returns <code>null</code> if the file does not exist. |
 |  [`getFiles()`](Vault/getFiles) |  | Get all files in the vault. |
 |  [`getFolderByPath(path)`](Vault/getFolderByPath) |  | Get a folder inside the vault at the given path. Returns <code>null</code> if the folder does not exist. |
-|  [`getMarkdownFiles()`](Vault/getMarkdownFiles) |  | Get all markdown files in the vault. |
+|  [`getMarkdownFiles()`](Vault/getMarkdownFiles) |  | Get all Markdown files in the vault. |
 |  [`getName()`](Vault/getName) |  | Gets the name of the vault. |
 |  [`getResourcePath(file)`](Vault/getResourcePath) |  | Returns an URI for the browser engine to use, for example to embed an image. |
 |  [`getRoot()`](Vault/getRoot) |  | Get the root folder of the current vault. |
@@ -58,7 +58,7 @@ export class Vault extends Events
 |  [`read(file)`](Vault/read) |  | Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](Vault/cachedRead) otherwise for better performance. |
 |  [`readBinary(file)`](Vault/readBinary) |  | Read the content of a binary file stored inside the vault. |
 |  [`recurseChildren(root, cb)`](Vault/recurseChildren) | <code>static</code> |  |
-|  [`rename(file, newPath)`](Vault/rename) |  | Rename or move a file. |
+|  [`rename(file, newPath)`](Vault/rename) |  | Rename or move a file. To ensure links are automatically renamed, use [FileManager.renameFile()](FileManager/renameFile) instead. |
 |  [`trash(file, system)`](Vault/trash) |  | Tries to move to system trash. If that isn't successful/allowed, use local trash |
 |  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |

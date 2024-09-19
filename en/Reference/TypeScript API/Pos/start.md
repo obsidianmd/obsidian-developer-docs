@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Pos.start property
 
+Starting location.
 
 **Signature:**
 

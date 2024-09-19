@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.getLeafById() method
 
+Retrieve a leaf by its id.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ getLeafById(id: string): WorkspaceLeaf | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>id</code> | <code>string</code> |  |
+|  <code>id</code> | <code>string</code> | id of the leaf to retrieve. |
 
 **Returns:**
 

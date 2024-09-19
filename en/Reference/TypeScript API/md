@@ -15,13 +15,14 @@ cssclasses: hide-title
 |  [`AbstractTextComponent`](AbstractTextComponent) |  |
 |  [`App`](App) |  |
 |  [`ButtonComponent`](ButtonComponent) |  |
+|  [`CapacitorAdapter`](CapacitorAdapter) | Implementation of the vault adapter for mobile devices. |
 |  [`ColorComponent`](ColorComponent) | Color picker component. Values are by default 6-digit hash-prefixed hex strings like <code>#000000</code>. |
 |  [`Component`](Component) |  |
 |  [`DropdownComponent`](DropdownComponent) |  |
 |  [`Events`](Events) |  |
 |  [`ExtraButtonComponent`](ExtraButtonComponent) |  |
 |  [`FileManager`](FileManager) | Manage the creation, deletion and renaming of files from the UI. |
-|  [`FileSystemAdapter`](FileSystemAdapter) |  |
+|  [`FileSystemAdapter`](FileSystemAdapter) | Implementation of the vault adapter for desktop. |
 |  [`HoverPopover`](HoverPopover) |  |
 |  [`Keymap`](Keymap) | Manages keymap lifecycle for different [Scope](Scope)<!-- -->s. |
 |  [`MarkdownEditView`](MarkdownEditView) | This is the editor for Obsidian Mobile as well as the upcoming WYSIWYG editor. |
@@ -32,7 +33,7 @@ cssclasses: hide-title
 |  [`Menu`](Menu) |  |
 |  [`MenuItem`](MenuItem) |  |
 |  [`MenuSeparator`](MenuSeparator) |  |
-|  [`MetadataCache`](MetadataCache) | Linktext is any internal link that is composed of a path and a subpath, such as "My note\#Heading" Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext. |
+|  [`MetadataCache`](MetadataCache) | Linktext is any internal link that is composed of a path and a subpath, such as 'My note\#Heading' Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext. |
 |  [`Modal`](Modal) |  |
 |  [`MomentFormatComponent`](MomentFormatComponent) |  |
 |  [`Notice`](Notice) | Notification component. Use to present timely, high-value information. |
@@ -101,17 +102,16 @@ cssclasses: hide-title
 |  [`base64ToArrayBuffer(base64)`](base64ToArrayBuffer) |  |
 |  [`debounce(cb, timeout, resetTimer)`](debounce) | A standard debounce function. Use this to have a time-delayed function only be called once in a given timeframe. |
 |  [`finishRenderMath()`](finishRenderMath) | Flush the MathJax stylesheet. |
-|  [`fuzzySearch(q, text)`](fuzzySearch) |  |
-|  [`getAllTags(cache)`](getAllTags) |  |
+|  [`getAllTags(cache)`](getAllTags) | Combines all tags from frontmatter and note content into a single array. |
 |  [`getBlobArrayBuffer(blob)`](getBlobArrayBuffer) |  |
 |  [`getFrontMatterInfo(content)`](getFrontMatterInfo) | Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text. |
 |  [`getIcon(iconId)`](getIcon) | Create an SVG from an iconId. Returns null if no icon associated with the iconId. |
 |  [`getIconIds()`](getIconIds) | Get the list of registered icons. |
-|  [`getLinkpath(linktext)`](getLinkpath) |  |
+|  [`getLinkpath(linktext)`](getLinkpath) | Converts the linktext to a linkpath. |
 |  [`hexToArrayBuffer(hex)`](hexToArrayBuffer) |  |
 |  [`htmlToMarkdown(html)`](htmlToMarkdown) | Converts HTML to Markdown using Turndown Service. |
 |  [`iterateCacheRefs(cache, cb)`](iterateCacheRefs) | Iterate links and embeds. If callback returns true, the iteration process will be interrupted. |
-|  [`iterateRefs(refs, cb)`](iterateRefs) |  |
+|  [`iterateRefs(refs, cb)`](iterateRefs) | If callback returns true, the iteration process will be interrupted. |
 |  [`loadMathJax()`](loadMathJax) | Load MathJax. |
 |  [`loadMermaid()`](loadMermaid) | Load Mermaid and return a promise to the global mermaid object. Can also use <code>mermaid</code> after this promise resolves to get the same reference. |
 |  [`loadPdfJs()`](loadPdfJs) | Load PDF.js and return a promise to the global pdfjsLib object. Can also use <code>window.pdfjsLib</code> after this promise resolves to get the same reference. |
@@ -121,10 +121,9 @@ cssclasses: hide-title
 |  [`parseFrontMatterEntry(frontmatter, key)`](parseFrontMatterEntry) |  |
 |  [`parseFrontMatterStringArray(frontmatter, key, nospaces)`](parseFrontMatterStringArray) |  |
 |  [`parseFrontMatterTags(frontmatter)`](parseFrontMatterTags) |  |
-|  [`parseLinktext(linktext)`](parseLinktext) |  |
+|  [`parseLinktext(linktext)`](parseLinktext) | Parses the linktext of a wikilink into its component parts. |
 |  [`parseYaml(yaml)`](parseYaml) |  |
 |  [`prepareFuzzySearch(query)`](prepareFuzzySearch) | Construct a fuzzy search callback that runs on a target string. Performance may be an issue if you are running the search for more than a few thousand times. If performance is a problem, consider using <code>prepareSimpleSearch</code> instead. |
-|  [`prepareQuery(query)`](prepareQuery) |  |
 |  [`prepareSimpleSearch(query)`](prepareSimpleSearch) | Construct a simple search callback that runs on a target string. |
 |  [`removeIcon(iconId)`](removeIcon) | Remove a custom icon from the library. |
 |  [`renderMatches(el, text, matches, offset)`](renderMatches) |  |
@@ -133,14 +132,14 @@ cssclasses: hide-title
 |  [`request(request)`](request) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. Returns the text value of the response. |
 |  [`requestUrl(request)`](requestUrl) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. |
 |  [`requireApiVersion(version)`](requireApiVersion) | Returns true if the API version is equal or higher than the requested version. Use this to limit functionality that require specific API versions to avoid crashing on older Obsidian builds. |
-|  [`resolveSubpath(cache, subpath)`](resolveSubpath) |  |
+|  [`resolveSubpath(cache, subpath)`](resolveSubpath) | Resolve the given subpath to a reference in the MetadataCache. |
 |  [`sanitizeHTMLToDom(html)`](sanitizeHTMLToDom) |  |
 |  [`setIcon(parent, iconId)`](setIcon) | Insert an SVG into the element from an iconId. Does nothing if no icon associated with the iconId. |
 |  [`setTooltip(el, tooltip, options)`](setTooltip) |  |
 |  [`sortSearchResults(results)`](sortSearchResults) |  |
 |  [`stringifyYaml(obj)`](stringifyYaml) |  |
-|  [`stripHeading(heading)`](stripHeading) | This function normalizes headings for link matching by stripping out special characters and shrinking consecutive spaces. |
-|  [`stripHeadingForLink(heading)`](stripHeadingForLink) | This function prepares headings for linking. It strips out some bad combinations of special characters that could break links. |
+|  [`stripHeading(heading)`](stripHeading) | Normalizes headings for link matching by stripping out special characters and shrinking consecutive spaces. |
+|  [`stripHeadingForLink(heading)`](stripHeadingForLink) | Prepares headings for linking by stripping out some bad combinations of special characters that could break links. |
 
 ## Interfaces
 
@@ -169,6 +168,7 @@ cssclasses: hide-title
 |  [`EventRef`](EventRef) |  |
 |  [`FileStats`](FileStats) |  |
 |  [`FootnoteCache`](FootnoteCache) |  |
+|  [`FootnoteSubpathResult`](FootnoteSubpathResult) |  |
 |  [`FrontMatterCache`](FrontMatterCache) |  |
 |  [`FrontMatterInfo`](FrontMatterInfo) |  |
 |  [`FrontmatterLinkCache`](FrontmatterLinkCache) |  |
@@ -188,9 +188,9 @@ cssclasses: hide-title
 |  [`ListedFiles`](ListedFiles) |  |
 |  [`ListItemCache`](ListItemCache) |  |
 |  [`LivePreviewState`](LivePreviewState) |  |
-|  [`Loc`](Loc) |  |
+|  [`Loc`](Loc) | Location within a Markdown document |
 |  [`MarkdownFileInfo`](MarkdownFileInfo) |  |
-|  [`MarkdownPostProcessor`](MarkdownPostProcessor) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into </p> |
+|  [`MarkdownPostProcessor`](MarkdownPostProcessor) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into [MarkdownPostProcessorContext.addChild()](MarkdownPostProcessorContext/addChild)</p> |
 |  [`MarkdownPostProcessorContext`](MarkdownPostProcessorContext) |  |
 |  [`MarkdownPreviewEvents`](MarkdownPreviewEvents) | \* |
 |  [`MarkdownSectionInformation`](MarkdownSectionInformation) |  |
@@ -200,9 +200,8 @@ cssclasses: hide-title
 |  [`OpenViewState`](OpenViewState) |  |
 |  [`PluginManifest`](PluginManifest) | Metadata about a Community plugin. |
 |  [`Point`](Point) |  |
-|  [`Pos`](Pos) |  |
-|  [`PreparedQuery`](PreparedQuery) |  |
-|  [`Reference`](Reference) |  |
+|  [`Pos`](Pos) | Describes a text range in a Markdown document. |
+|  [`Reference`](Reference) | Base interface for items that point to a different location. |
 |  [`ReferenceCache`](ReferenceCache) |  |
 |  [`RequestUrlParam`](RequestUrlParam) |  |
 |  [`RequestUrlResponse`](RequestUrlResponse) |  |
@@ -223,9 +222,9 @@ cssclasses: hide-title
 
 |  Variable | Description |
 |  --- | --- |
-|  [`apiVersion`](apiVersion) | This is the API version of the app, which follows the release cycle of the desktop app. Example: "0.13.21" |
+|  [`apiVersion`](apiVersion) | This is the API version of the app, which follows the release cycle of the desktop app. Example: '0.13.21' |
 |  [`editorEditorField`](editorEditorField) | Use this StateField to get a reference to the EditorView |
-|  [`editorInfoField`](editorInfoField) | Use this StateField to get information about this markdown editor, such as the associated file, or the Editor. |
+|  [`editorInfoField`](editorInfoField) | Use this StateField to get information about this Markdown editor, such as the associated file, or the Editor. |
 |  [`editorLivePreviewField`](editorLivePreviewField) | Use this StateField to check whether Live Preview is active |
 |  [`editorViewField`](editorViewField) | This is now deprecated - it is now mapped directly to <code>editorInfoField</code>, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily. |
 |  [`livePreviewState`](livePreviewState) |  |
@@ -247,6 +246,7 @@ cssclasses: hide-title
 |  [`PaneType`](PaneType) |  |
 |  [`SearchMatches`](SearchMatches) |  |
 |  [`SearchMatchPart`](SearchMatchPart) | Text position offsets within text file. Represents a text range \[from offset, to offset\]. |
+|  [`Side`](Side) |  |
 |  [`SplitDirection`](SplitDirection) |  |
 |  [`TooltipPlacement`](TooltipPlacement) |  |
 |  [`UserEvent`](UserEvent) |  |

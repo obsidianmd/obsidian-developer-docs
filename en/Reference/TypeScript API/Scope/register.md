@@ -14,14 +14,14 @@ Add a keymap event handler to this scope.
 **Signature:**
 
 ```typescript
-register(modifiers: Modifier[], key: string | null, func: KeymapEventListener): KeymapEventHandler;
+register(modifiers: Modifier[] | null, key: string | null, func: KeymapEventListener): KeymapEventHandler;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>modifiers</code> | [`Modifier`](Modifier)<code>[]</code> | <code>Mod</code>, <code>Ctrl</code>, <code>Meta</code>, <code>Shift</code>, or <code>Alt</code>. <code>Mod</code> translates to <code>Meta</code> on macOS and <code>Ctrl</code> otherwise. |
+|  <code>modifiers</code> | [`Modifier`](Modifier)<code>[] &#124; null</code> | <code>Mod</code>, <code>Ctrl</code>, <code>Meta</code>, <code>Shift</code>, or <code>Alt</code>. <code>Mod</code> translates to <code>Meta</code> on macOS and <code>Ctrl</code> otherwise. Pass <code>null</code> to capture all events matching the <code>key</code>, regardless of modifiers. |
 |  <code>key</code> | <code>string &#124; null</code> | Keycode from https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key%5FValues |
 |  <code>func</code> | [`KeymapEventListener`](KeymapEventListener) | the callback that will be called when a user triggers the keybind. |
 

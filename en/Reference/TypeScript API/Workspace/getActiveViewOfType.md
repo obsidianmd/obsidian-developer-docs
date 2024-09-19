@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.getActiveViewOfType() method
 
+Get the currently active view of a given type.
 
 **Signature:**
 

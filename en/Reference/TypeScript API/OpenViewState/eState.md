@@ -13,5 +13,5 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-eState?: any;
+eState?: Record<string, unknown>;
 ```

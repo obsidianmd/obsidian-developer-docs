@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Plugin.addCommand() method
 
-Register a command globally. Registered commands will be available from the @<!-- -->{<!-- -->link https://help.md/Plugins/Command+palette Command pallete<!-- -->}<!-- -->. The command id and name will be automatically prefixed with this plugin's id and name.
+Register a command globally. Registered commands will be available from the @<!-- -->{<!-- -->link https://help.md/Plugins/Command+palette Command palette<!-- -->}<!-- -->. The command id and name will be automatically prefixed with this plugin's id and name.
 
 **Signature:**
 

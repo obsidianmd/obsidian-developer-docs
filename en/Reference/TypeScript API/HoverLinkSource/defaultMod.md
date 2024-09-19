@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## HoverLinkSource.defaultMod property
 
-Whether or not the `hover-link` event requires the 'Mod' key to be pressed to trigger.
+Whether the `hover-link` event requires the 'Mod' key to be pressed to trigger.
 
 **Signature:**
 

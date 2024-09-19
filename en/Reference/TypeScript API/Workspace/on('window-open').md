@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.on('window-open') method
 
+Triggered when a new popout window is created.
 
 **Signature:**
 

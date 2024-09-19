@@ -22,5 +22,5 @@ export interface FootnoteCache extends CacheItem
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`id`](FootnoteCache/id) |  | <code>string</code> |  |
-|  [`position`](CacheItem/position) |  | [`Pos`](Pos) | <p>(Inherited from [CacheItem](CacheItem)<!-- -->)</p> |
+|  [`position`](CacheItem/position) |  | [`Pos`](Pos) | <p>Position of this item in the note.</p><p>(Inherited from [CacheItem](CacheItem)<!-- -->)</p> |
 

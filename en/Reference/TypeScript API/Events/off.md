@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-off(name: string, callback: (...data: any) => any): void;
+off(name: string, callback: (...data: unknown[]) => unknown): void;
 ```
 
 ## Parameters
@@ -21,7 +21,7 @@ off(name: string, callback: (...data: any) => any): void;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>name</code> | <code>string</code> |  |
-|  <code>callback</code> | <code>(...data: any) =&gt; any</code> |  |
+|  <code>callback</code> | <code>(...data: unknown[]) =&gt; unknown</code> |  |
 
 **Returns:**
 

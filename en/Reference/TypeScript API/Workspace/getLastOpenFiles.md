@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.getLastOpenFiles() method
 
+Get the filenames of the 10 most recently opened files.
 
 **Signature:**
 

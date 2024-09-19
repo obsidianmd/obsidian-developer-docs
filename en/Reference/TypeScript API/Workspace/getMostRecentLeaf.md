@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.getMostRecentLeaf() method
 
+Get the most recently active leaf in a given workspace root. Useful for interacting with the leaf in the root split while a sidebar leaf might be active.
 
 **Signature:**
 
@@ -20,7 +21,7 @@ getMostRecentLeaf(root?: WorkspaceParent): WorkspaceLeaf | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>root</code> | [`WorkspaceParent`](WorkspaceParent) | _(Optional)_ |
+|  <code>root</code> | [`WorkspaceParent`](WorkspaceParent) | _(Optional)_ Root for the leaves you want to search. If a root is not provided, the <code>rootSplit</code> and leaves within pop-outs will be searched. |
 
 **Returns:**
 

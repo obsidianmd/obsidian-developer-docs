@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## stripHeadingForLink() function
 
-This function prepares headings for linking. It strips out some bad combinations of special characters that could break links.
+Prepares headings for linking by stripping out some bad combinations of special characters that could break links.
 
 **Signature:**
 
