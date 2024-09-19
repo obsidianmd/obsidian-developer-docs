@@ -18,7 +18,7 @@ If your plugin creates any custom views, be mindful of your custom view construc
 
 ### If you have code that you want to run at startup, where should it go?
 
-The easiest option is to wrap your code inside a `onLayoutReady` callback. These callbacks are deferred and are only called after Obsidian finishes loading.
+For most cases, you will want to wrap your code inside a `onLayoutReady` callback. These callbacks are deferred and are only called after Obsidian finishes loading.
 
 ## Pitfalls
 
