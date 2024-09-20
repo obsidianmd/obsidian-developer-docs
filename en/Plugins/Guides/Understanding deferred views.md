@@ -25,12 +25,15 @@ workspace.iterateAllLeaves(leaf => {
 
 ```ts
 // Bad
-let leaf = workspace.getLeavesOfType('my-view').first() as MyCustomView;
+let leaf = workspace.getLeavesOfType('my-view').first();
+if (leaf) {
+	let view = leaf.first() as MyCustomView;
+}
 ...
 
 // Good
-let leaf = workspace.getLeavesOfType('my-view');
-if (leaf.view instanceof MyCustomView) {
+let leaf = workspace.getLeavesOfType('my-view').first();
+if (leaf && leaf.view instanceof MyCustomView) {
     ...
 }
 ```
@@ -47,9 +50,11 @@ For most use cases, the solution is simple:
 
 ```ts
 let leaf = workspace.getLeavesOfType('my-view').first();
-await workspace.revealLeaf(leaf); // Ensure the view is visible, `await` it to make sure the view is fully loaded
-if (leaf.view instanceof MyCustomView) {
-    let view = leaf.view; // You now have your CustomView
+if (leaf) {
+	await workspace.revealLeaf(leaf); // Ensure the view is visible, `await` it to make sure the view is fully loaded
+	if (leaf.view instanceof MyCustomView) {
+		let view = leaf.view; // You now have your CustomView
+	}
 }
 ```
 
