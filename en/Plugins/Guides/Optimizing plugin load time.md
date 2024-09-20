@@ -24,7 +24,7 @@ For most cases, you will want to wrap your code inside a `onLayoutReady` callbac
 
 ### Listening to `vault.on('create')`
 
-As a part of Obsidian's vault initialization process, it will call `create` for every file. If your plugin needs to react to new files getting created, you should  So your vault event registration should be inside an `onLayoutReady` callback this will ensure you don't start picking up events that fire before Obsidian is fully initialized.
+As a part of Obsidian's vault initialization process, it will call `create` for every file. If your plugin needs to react to new files getting created, you need to wait for the workspace to be ready first. Your vault event registration should be inside an `onLayoutReady` callback; this will ensure you don't start reacting to events until the workspace is fully initialized.
 
 #### Option A. Check if the layout is ready
 
