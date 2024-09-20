@@ -27,7 +27,7 @@ workspace.iterateAllLeaves(leaf => {
 // Bad
 let leaf = workspace.getLeavesOfType('my-view').first();
 if (leaf) {
-	let view = leaf.first() as MyCustomView;
+	let view = leaf.view as MyCustomView;
 }
 ...
 
