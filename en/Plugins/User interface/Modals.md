@@ -6,22 +6,10 @@ import { App, Modal } from "obsidian";
 export class ExampleModal extends Modal {
   constructor(app: App) {
     super(app);
-  }
-
-  onOpen() {
-    let { contentEl } = this;
-    contentEl.setText("Look at me, I'm a modal! 👀");
-  }
-
-  onClose() {
-    let { contentEl } = this;
-    contentEl.empty();
+	this.contentEl.setText("Look at me, I'm a modal! 👀");
   }
 }
 ```
-
-- [[Reference/TypeScript API/View/onOpen|onOpen()]] is called when the modal is opened and is responsible for building the content of your modal. For more information, refer to [HTML elements](HTML%20elements.md).
-- [[Reference/TypeScript API/Modal/onClose|onClose()]] is called when the modal is closed and is responsible for cleaning up any resources used by the modal.
 
 To open a modal, create a new instance of `ExampleModal` and call [[Reference/TypeScript API/Modal/open|open()]] on it:
 
@@ -52,45 +40,32 @@ The modal in the previous example only displayed some text. Let's look at a litt
 import { App, Modal, Setting } from "obsidian";
 
 export class ExampleModal extends Modal {
-  result: string;
-  onSubmit: (result: string) => void;
-
   constructor(app: App, onSubmit: (result: string) => void) {
     super(app);
-    this.onSubmit = onSubmit;
-  }
+	this.setTitle("What's your name?");
 
-  onOpen() {
-    const { contentEl } = this;
-
-    contentEl.createEl("h1", { text: "What's your name?" });
-
-    new Setting(contentEl)
+	let name = '';
+    new Setting(this.contentEl)
       .setName("Name")
       .addText((text) =>
         text.onChange((value) => {
-          this.result = value
+          name = value;
         }));
 
-    new Setting(contentEl)
+    new Setting(this.contentEl)
       .addButton((btn) =>
         btn
           .setButtonText("Submit")
           .setCta()
           .onClick(() => {
             this.close();
-            this.onSubmit(this.result);
+            onSubmit(name);
           }));
-  }
-
-  onClose() {
-    let { contentEl } = this;
-    contentEl.empty();
   }
 }
 ```
 
-The result is stored in `this.result` and returned in the `onSubmit` callback when the user clicks **Submit**:
+The result is returned in the `onSubmit` callback when the user clicks **Submit**:
 
 ```ts
 new ExampleModal(this.app, (result) => {
