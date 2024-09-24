@@ -6,7 +6,7 @@ import { App, Modal } from "obsidian";
 export class ExampleModal extends Modal {
   constructor(app: App) {
     super(app);
-	this.contentEl.setText("Look at me, I'm a modal! 👀");
+	this.setContent("Look at me, I'm a modal! 👀")
   }
 }
 ```
