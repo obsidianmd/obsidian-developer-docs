@@ -50,7 +50,7 @@ Avoid adding a top-level heading in the settings tab, such as "General", "Settin
 
 If you have more than one section under settings, and one contains general settings, keep them at the top without adding a heading.
 
-For example, look at the settings under **Settings → Appearance**:
+For example, look at the settings under **Settings → Appearance**.
 
 ### Avoid "settings" in settings headings
 
@@ -191,7 +191,7 @@ for (let leaf of app.workspace.getActiveLeavesOfType(MY_VIEW_TYPE)) {
 
 ## Vault
 
-### Prefer the Editor API instead of `Vault.modify` to a the active file
+### Prefer the Editor API instead of `Vault.modify` to the active file
 
 If you want to edit an active note, use the [[Editor]] interface instead of [[Vault/modify|Vault.modify()]].
 
