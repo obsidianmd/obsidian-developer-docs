@@ -61,7 +61,7 @@ export default class ExamplePlugin extends Plugin {
       })
     );
 
-  this.registerEvent(
+    this.registerEvent(
       this.app.workspace.on("editor-menu", (menu, editor, view) => {
         menu.addItem((item) => {
           item
