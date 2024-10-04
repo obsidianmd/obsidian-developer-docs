@@ -25,16 +25,16 @@ The [[replaceRange|replaceRange()]] method replaces the text between two cursor 
 The following command inserts today's date at the cursor position:
 
 ```ts
-import { Editor, moment, Plugin } from "obsidian";
+import { Editor, moment, Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
     this.addCommand({
-      id: "insert-todays-date",
-      name: "Insert today's date",
+      id: 'insert-todays-date',
+      name: 'Insert today\'s date',
       editorCallback: (editor: Editor) => {
         editor.replaceRange(
-          moment().format("YYYY-MM-DD"),
+          moment().format('YYYY-MM-DD'),
           editor.getCursor()
         );
       },
@@ -52,13 +52,13 @@ If you want to modify the selected text, use [[replaceSelection|replaceSelection
 The following command reads the current selection and converts it to uppercase:
 
 ```ts
-import { Editor, Plugin } from "obsidian";
+import { Editor, Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
     this.addCommand({
-      id: "convert-to-uppercase",
-      name: "Convert to uppercase",
+      id: 'convert-to-uppercase',
+      name: 'Convert to uppercase',
       editorCallback: (editor: Editor) => {
         const selection = editor.getSelection();
         editor.replaceSelection(selection.toUpperCase());

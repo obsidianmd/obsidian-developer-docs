@@ -7,15 +7,15 @@ In this guide, you'll learn how to create a settings page like this 👇
 The main reason to add settings to a plugin is to store configuration that persists even after the user quits Obsidian. The following example demonstrates how to save and load settings from disk:
 
 ```ts
-import { Plugin } from "obsidian";
-import { ExampleSettingTab } from "./settings";
+import { Plugin } from 'obsidian';
+import { ExampleSettingTab } from './settings';
 
 interface ExamplePluginSettings {
   dateFormat: string;
 }
 
 const DEFAULT_SETTINGS: Partial<ExamplePluginSettings> = {
-  dateFormat: "YYYY-MM-DD",
+  dateFormat: 'YYYY-MM-DD',
 };
 
 export default class ExamplePlugin extends Plugin {
@@ -101,7 +101,7 @@ Object.assign({}, DEFAULT_SETTINGS, await this.loadData())
 
 ```ts
 const DEFAULT_SETTINGS: Partial<ExamplePluginSettings> = {
-  dateFormat: "YYYY-MM-DD",
+  dateFormat: 'YYYY-MM-DD',
 };
 ```
 
@@ -119,8 +119,8 @@ this.addSettingTab(new ExampleSettingTab(this.app, this));
 Here, the `ExampleSettingTab` is a class that extends [[PluginSettingTab|PluginSettingTab]]:
 
 ```ts
-import ExamplePlugin from "./main";
-import { App, PluginSettingTab, Setting } from "obsidian";
+import ExamplePlugin from './main';
+import { App, PluginSettingTab, Setting } from 'obsidian';
 
 export class ExampleSettingTab extends PluginSettingTab {
   plugin: ExamplePlugin;
@@ -136,11 +136,11 @@ export class ExampleSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     new Setting(containerEl)
-      .setName("Date format")
-      .setDesc("Default date format")
+      .setName('Date format')
+      .setDesc('Default date format')
       .addText((text) =>
         text
-          .setPlaceholder("MMMM dd, yyyy")
+          .setPlaceholder('MMMM dd, yyyy')
           .setValue(this.plugin.settings.dateFormat)
           .onChange(async (value) => {
             this.plugin.settings.dateFormat = value;

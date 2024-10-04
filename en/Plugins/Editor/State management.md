@@ -8,10 +8,10 @@ This page aims to give an introduction to state management for [[Editor extensio
 In most applications, you would update state by assigning a new value to a property or variable. As a consequence, the old value is lost forever.
 
 ```ts
-let note = "";
-note = "Heading"
-note = "# Heading"
-note = "## Heading" // How to undo this?
+let note = '';
+note = 'Heading'
+note = '# Heading'
+note = '## Heading' // How to undo this?
 ```
 
 To support features like undoing and redoing changes to a user's workspace, applications like Obsidian instead keep a history of all changes that have been made. To undo a change, you can then go back to a point in time before the change was made.
@@ -28,9 +28,9 @@ In TypeScript, you'd then end up with something like this:
 ```ts
 const changes: ChangeSpec[] = [];
 
-changes.push({ from: 0, insert: "Heading" });
-changes.push({ from: 0, insert: "# " });
-changes.push({ from: 0, insert: "#" });
+changes.push({ from: 0, insert: 'Heading' });
+changes.push({ from: 0, insert: '# ' });
+changes.push({ from: 0, insert: '#' });
 ```
 
 ## Transactions

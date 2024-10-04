@@ -1,7 +1,7 @@
 The [[Plugin|Plugin]] class defines the lifecycle of a plugin and exposes the operations available to all plugins:
 
 ```ts
-import { Plugin } from "obsidian";
+import { Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
@@ -27,7 +27,7 @@ To view the console:
 2. Click on the Console tab in the Developer Tools window.
 
 ```ts
-import { Plugin } from "obsidian";
+import { Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {

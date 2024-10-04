@@ -28,11 +28,11 @@ There are two methods for reading the content of a file: [[Reference/TypeScript 
 The following example reads the content of all Markdown files in the Vault and returns the average document size:
 
 ```ts
-import { Notice, Plugin } from "obsidian";
+import { Notice, Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    this.addRibbonIcon("info", "Calculate average file length", async () => {
+    this.addRibbonIcon('info', 'Calculate average file length', async () => {
       const fileLength = await this.averageFileLength();
       new Notice(`The average file length is ${fileLength} characters.`);
     });
@@ -71,7 +71,7 @@ If you want to modify a file based on its current content, use [[process|Vault.p
 // emojify replaces all occurrences of :) with 🙂.
 function emojify(vault: Vault, file: TFile): Promise<string> {
   return vault.process(file, (data) => {
-    return data.replace(":)", "🙂");
+    return data.replace(':)', '🙂');
   })
 }
 ```
@@ -102,11 +102,11 @@ When you use `trash()`, you have the option to move the file to the system's tra
 Some operations return or accept a [[TAbstractFile|TAbstractFile]] object, which can be either a file or a folder. Always check the concrete type of a `TAbstractFile` before you use it.
 
 ```ts
-const folderOrFile = this.app.vault.getAbstractFileByPath("folderOrFile");
+const folderOrFile = this.app.vault.getAbstractFileByPath('folderOrFile');
 
 if (folderOrFile instanceof TFile) {
-  console.log("It's a file!");
+  console.log('It\'s a file!');
 } else if (folderOrFile instanceof TFolder) {
-  console.log("It's a folder!");
+  console.log('It\'s a folder!');
 }
 ```

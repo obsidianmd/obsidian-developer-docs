@@ -46,16 +46,16 @@ cssclasses: hide-title
 				newFileContent = newFileContent.replaceAll('$docssite$', 'https://docs.obsidian.md');
 				newFileContent = newFileContent.replace(/\[([^\[]+)\](\((.*?)\))/g, function(_, x, y) {
 					if(y.includes('constructor')) {
-						return `[${x}]${y.replaceAll(".", "/")}`;
+						return `[${x}]${y.replaceAll('.', '/')}`;
 					}
-					if(y.includes("'")) {
-						return `[${x}]${y.replaceAll(".", "/")}`;
+					if(y.includes('\'')) {
+						return `[${x}]${y.replaceAll('.', '/')}`;
 					}
-					if(y.includes("https://")) {
+					if(y.includes('https://')) {
 						return `[${x}]${y}`;
 					}
 
-					return `[${x}]${y.slice(0, -4).replaceAll(".", "/")})`;
+					return `[${x}]${y.slice(0, -4).replaceAll('.', '/')})`;
 				});
 
 				await fs.writeFile(filePath, newFileContent, {encoding: 'utf-8'});

@@ -104,7 +104,7 @@ When possible, use methods like [[registerEvent|registerEvent()]] or [[addComman
 ```ts
 export default class MyPlugin extends Plugin {
   onload() {
-    this.registerEvent(this.app.vault.on("create", this.onCreate));
+    this.registerEvent(this.app.vault.on('create', this.onCreate));
   }
 
   onCreate: (file: TAbstractFile) => {
@@ -269,8 +269,8 @@ Use [[normalizePath|normalizePath()]] whenever you accept user-defined paths to 
 - Runs the path through [String.prototype.normalize](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize).
 
 ```ts
-import { normalizePath } from "obsidian";
-const pathToPlugin = normalizePath("//my-folder\file");
+import { normalizePath } from 'obsidian';
+const pathToPlugin = normalizePath('//my-folder\file');
 // pathToPlugin contains "my-folder/file" not "//my-folder\"
 ```
 
