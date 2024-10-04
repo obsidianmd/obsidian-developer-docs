@@ -42,7 +42,7 @@ You can inspect Obsidian on an iOS device running 16.4 or later and a macOS base
 To detect the platform your plugin is running on, you can use [[Platform]]:
 
 ```ts
-import { Platform } from "obsidian";
+import { Platform } from 'obsidian';
 
 if (Platform.isIosApp) {
   // ...

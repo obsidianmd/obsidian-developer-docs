@@ -11,12 +11,12 @@ Browse to [lucide.dev](https://lucide.dev/) to see all available icons and their
 If you'd like to use icons in your custom interfaces, use the [[setIcon|setIcon()]] utility function to add an icon to an [[HTML elements|HTML element]]. The following example adds icon to the status bar:
 
 ```ts
-import { Plugin, setIcon } from "obsidian";
+import { Plugin, setIcon } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
     const item = this.addStatusBarItem();
-    setIcon(item, "info");
+    setIcon(item, 'info');
   }
 }
 ```
@@ -34,14 +34,14 @@ div {
 To add a custom icon for your plugin, use the [[addIcon|addIcon()]] utility:
 
 ```ts
-import { addIcon, Plugin } from "obsidian";
+import { addIcon, Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    addIcon("circle", `<circle cx="50" cy="50" r="50" fill="currentColor" />`);
+    addIcon('circle', `<circle cx="50" cy="50" r="50" fill="currentColor" />`);
 
-    this.addRibbonIcon("circle", "Click me", () => {
-      console.log("Hello, you!");
+    this.addRibbonIcon('circle', 'Click me', () => {
+      console.log('Hello, you!');
     });
   }
 }

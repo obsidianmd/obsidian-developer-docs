@@ -3,9 +3,9 @@ Views determine how Obsidian displays content. The file explorer, graph view, an
 To create a custom view, create a class that extends the [[ItemView|ItemView]] interface:
 
 ```ts
-import { ItemView, WorkspaceLeaf } from "obsidian";
+import { ItemView, WorkspaceLeaf } from 'obsidian';
 
-export const VIEW_TYPE_EXAMPLE = "example-view";
+export const VIEW_TYPE_EXAMPLE = 'example-view';
 
 export class ExampleView extends ItemView {
   constructor(leaf: WorkspaceLeaf) {
@@ -17,13 +17,13 @@ export class ExampleView extends ItemView {
   }
 
   getDisplayText() {
-    return "Example view";
+    return 'Example view';
   }
 
   async onOpen() {
     const container = this.containerEl.children[1];
     container.empty();
-    container.createEl("h4", { text: "Example view" });
+    container.createEl('h4', { text: 'Example view' });
   }
 
   async onClose() {
@@ -45,8 +45,8 @@ Each view is uniquely identified by a text string and several operations require
 Custom views need to be registered when the plugin is enabled, and cleaned up when the plugin is disabled:
 
 ```ts
-import { Plugin, WorkspaceLeaf } from "obsidian";
-import { ExampleView, VIEW_TYPE_EXAMPLE } from "./view";
+import { Plugin, WorkspaceLeaf } from 'obsidian';
+import { ExampleView, VIEW_TYPE_EXAMPLE } from './view';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
@@ -55,7 +55,7 @@ export default class ExamplePlugin extends Plugin {
       (leaf) => new ExampleView(leaf)
     );
 
-    this.addRibbonIcon("dice", "Activate view", () => {
+    this.addRibbonIcon('dice', 'Activate view', () => {
       this.activateView();
     });
   }

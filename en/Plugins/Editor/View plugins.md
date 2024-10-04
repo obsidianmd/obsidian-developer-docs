@@ -22,7 +22,7 @@ import {
   PluginValue,
   EditorView,
   ViewPlugin,
-} from "@codemirror/view";
+} from '@codemirror/view';
 
 class ExamplePlugin implements PluginValue {
   constructor(view: EditorView) {

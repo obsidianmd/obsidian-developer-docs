@@ -3,22 +3,22 @@ If you want to change how a Markdown document is rendered in Reading view, you c
 The following example looks for any code block that contains a text between two colons, `:`, and replaces it with an appropriate emoji:
 
 ```ts
-import { Plugin } from "obsidian";
+import { Plugin } from 'obsidian';
 
 const ALL_EMOJIS: Record<string, string> = {
-  ":+1:": "👍",
-  ":sunglasses:": "😎",
-  ":smile:": "😄",
+  ':+1:': '👍',
+  ':sunglasses:': '😎',
+  ':smile:': '😄',
 };
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
     this.registerMarkdownPostProcessor((element, context) => {
-      const codeblocks = element.findAll("code");
+      const codeblocks = element.findAll('code');
 
       for (let codeblock of codeblocks) {
         const text = codeblock.innerText.trim();
-        if (text[0] === ":" && text[text.length - 1] === ":") {
+        if (text[0] === ':' && text[text.length - 1] === ':') {
           const emojiEl = codeblock.createSpan({
             text: ALL_EMOJIS[text] ?? text,
           });
@@ -51,23 +51,23 @@ flowchart LR
 If you want to add your own custom code blocks like the Mermaid one, you can use [[registerMarkdownCodeBlockProcessor|registerMarkdownCodeBlockProcessor()]]. The following example renders a code block with CSV data, as a table:
 
 ```ts
-import { Plugin } from "obsidian";
+import { Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    this.registerMarkdownCodeBlockProcessor("csv", (source, el, ctx) => {
-      const rows = source.split("\n").filter((row) => row.length > 0);
+    this.registerMarkdownCodeBlockProcessor('csv', (source, el, ctx) => {
+      const rows = source.split('\n').filter((row) => row.length > 0);
 
-      const table = el.createEl("table");
-      const body = table.createEl("tbody");
+      const table = el.createEl('table');
+      const body = table.createEl('tbody');
 
       for (let i = 0; i < rows.length; i++) {
-        const cols = rows[i].split(",");
+        const cols = rows[i].split(',');
 
-        const row = body.createEl("tr");
+        const row = body.createEl('tr');
 
         for (let j = 0; j < cols.length; j++) {
-          row.createEl("td", { text: cols[j] });
+          row.createEl('td', { text: cols[j] });
         }
       }
     });

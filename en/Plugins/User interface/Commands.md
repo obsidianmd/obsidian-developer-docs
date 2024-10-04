@@ -5,15 +5,15 @@ Commands are actions that the user can perform from the [Command Palette](https:
 To register a new command for your plugin, call the [[addCommand|addCommand()]] method inside the `onload()` method:
 
 ```ts
-import { Plugin } from "obsidian";
+import { Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
     this.addCommand({
-      id: "print-greeting-to-console",
-      name: "Print greeting to console",
+      id: 'print-greeting-to-console',
+      name: 'Print greeting to console',
       callback: () => {
-        console.log("Hey, you!");
+        console.log('Hey, you!');
       },
     });
   }
@@ -110,7 +110,7 @@ In this example, the user can run the command by pressing and holding Ctrl (or C
 this.addCommand({
   id: 'example-command',
   name: 'Example command',
-  hotkeys: [{ modifiers: ["Mod", "Shift"], key: "a" }],
+  hotkeys: [{ modifiers: ['Mod', 'Shift'], key: 'a' }],
   callback: () => {
     console.log('Hey, you!');
   },

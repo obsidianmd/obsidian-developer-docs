@@ -99,11 +99,11 @@ flowchart TD
 You can access the workspace through the [[App|App]] object. The following example prints the type of every leaf in the workspace:
 
 ```ts
-import { Plugin } from "obsidian";
+import { Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    this.addRibbonIcon("dice", "Print leaf types", () => {
+    this.addRibbonIcon('dice', 'Print leaf types', () => {
       this.app.workspace.iterateAllLeaves((leaf) => {
         console.log(leaf.getViewState().type);
       });
@@ -130,5 +130,5 @@ To remove a leaf from the workspace, call [[detach|detach()]] on the leaf you wa
 You can create [linked panes](https://help.obsidian.md/User+interface/Workspace/Panes/Linked+pane) by assigning multiple leaves to the same group, using [[setGroup|setGroup()]].
 
 ```ts
-leaves.forEach((leaf) => leaf.setGroup("group1");
+leaves.forEach((leaf) => leaf.setGroup('group1');
 ```

@@ -106,7 +106,7 @@ To let the user interact with your plugin, add a _ribbon icon_ that greets the u
 3. Import `Notice` from the `obsidian` package.
 
    ```ts
-   import { Notice, Plugin } from "obsidian";
+   import { Notice, Plugin } from 'obsidian';
    ```
 
 4. In the `onload()` method, add the following code:

@@ -13,7 +13,7 @@ async function each(members) {
 		if(member.docComment) {
 			if(member.docComment.includes('getLeaf')) {
 				const regex = /{@link Workspace.getLeaf(.*)}/g;
-				member.docComment = member.docComment.replace(regex, "::Workspace.getLeaf::$1::")
+				member.docComment = member.docComment.replace(regex, '::Workspace.getLeaf::$1::')
 			}
 		}
 
