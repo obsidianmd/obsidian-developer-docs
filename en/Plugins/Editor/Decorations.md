@@ -58,13 +58,13 @@ Widgets are custom HTML elements that you can add to the editor. You can either 
 The following example defines a widget that returns an HTML element, `<span>👉</span>`. You'll use this widget later on.
 
 ```ts
-import { EditorView, WidgetType } from "@codemirror/view";
+import { EditorView, WidgetType } from '@codemirror/view';
 
 export class EmojiWidget extends WidgetType {
   toDOM(view: EditorView): HTMLElement {
-    const div = document.createElement("span");
+    const div = document.createElement('span');
 
-    div.innerText = "👉";
+    div.innerText = '👉';
 
     return div;
   }
@@ -93,20 +93,20 @@ To provide decorations from a state field:
    ```
 
 ```ts
-import { syntaxTree } from "@codemirror/language";
+import { syntaxTree } from '@codemirror/language';
 import {
   Extension,
   RangeSetBuilder,
   StateField,
   Transaction,
-} from "@codemirror/state";
+} from '@codemirror/state';
 import {
   Decoration,
   DecorationSet,
   EditorView,
   WidgetType,
-} from "@codemirror/view";
-import { EmojiWidget } from "emoji";
+} from '@codemirror/view';
+import { EmojiWidget } from 'emoji';
 
 export const emojiListField = StateField.define<DecorationSet>({
   create(state): DecorationSet {
@@ -117,7 +117,7 @@ export const emojiListField = StateField.define<DecorationSet>({
 
     syntaxTree(transaction.state).iterate({
       enter(node) {
-        if (node.type.name.startsWith("list")) {
+        if (node.type.name.startsWith('list')) {
           // Position of the '-' or the '*'.
           const listCharFrom = node.from - 2;
 
@@ -152,8 +152,8 @@ To manage your decorations using a view plugin:
 Not all updates are reasons to rebuild your decorations. The following example only rebuilds decorations whenever the underlying document or the viewport changes.
 
 ```ts
-import { syntaxTree } from "@codemirror/language";
-import { RangeSetBuilder } from "@codemirror/state";
+import { syntaxTree } from '@codemirror/language';
+import { RangeSetBuilder } from '@codemirror/state';
 import {
   Decoration,
   DecorationSet,
@@ -163,8 +163,8 @@ import {
   ViewPlugin,
   ViewUpdate,
   WidgetType,
-} from "@codemirror/view";
-import { EmojiWidget } from "emoji";
+} from '@codemirror/view';
+import { EmojiWidget } from 'emoji';
 
 class EmojiListPlugin implements PluginValue {
   decorations: DecorationSet;
@@ -189,7 +189,7 @@ class EmojiListPlugin implements PluginValue {
         from,
         to,
         enter(node) {
-          if (node.type.name.startsWith("list")) {
+          if (node.type.name.startsWith('list')) {
             // Position of the '-' or the '*'.
             const listCharFrom = node.from - 2;
 

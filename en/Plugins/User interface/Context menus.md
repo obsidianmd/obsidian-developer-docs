@@ -1,28 +1,28 @@
 If you want to open up a context menu, use [[Menu|Menu]]:
 
 ```ts
-import { Menu, Notice, Plugin } from "obsidian";
+import { Menu, Notice, Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
-    this.addRibbonIcon("dice", "Open menu", (event) => {
+    this.addRibbonIcon('dice', 'Open menu', (event) => {
       const menu = new Menu();
 
       menu.addItem((item) =>
         item
-          .setTitle("Copy")
-          .setIcon("documents")
+          .setTitle('Copy')
+          .setIcon('documents')
           .onClick(() => {
-            new Notice("Copied");
+            new Notice('Copied');
           })
       );
 
       menu.addItem((item) =>
         item
-          .setTitle("Paste")
-          .setIcon("paste")
+          .setTitle('Paste')
+          .setIcon('paste')
           .onClick(() => {
-            new Notice("Pasted");
+            new Notice('Pasted');
           })
       );
 
@@ -44,16 +44,16 @@ You can also add an item to the file menu, or the editor menu, by subscribing to
 ![[context-menu-positions.png]]
 
 ```ts
-import { Notice, Plugin } from "obsidian";
+import { Notice, Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
   async onload() {
     this.registerEvent(
-      this.app.workspace.on("file-menu", (menu, file) => {
+      this.app.workspace.on('file-menu', (menu, file) => {
         menu.addItem((item) => {
           item
-            .setTitle("Print file path 👈")
-            .setIcon("document")
+            .setTitle('Print file path 👈')
+            .setIcon('document')
             .onClick(async () => {
               new Notice(file.path);
             });
@@ -62,11 +62,11 @@ export default class ExamplePlugin extends Plugin {
     );
 
   this.registerEvent(
-      this.app.workspace.on("editor-menu", (menu, editor, view) => {
+      this.app.workspace.on('editor-menu', (menu, editor, view) => {
         menu.addItem((item) => {
           item
-            .setTitle("Print file path 👈")
-            .setIcon("document")
+            .setTitle('Print file path 👈')
+            .setIcon('document')
             .onClick(async () => {
               new Notice(view.file.path);
             });
