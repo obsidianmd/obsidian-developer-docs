@@ -61,8 +61,8 @@ export default class ExamplePlugin extends Plugin {
       })
     );
 
-  this.registerEvent(
-      this.app.workspace.on('editor-menu', (menu, editor, view) => {
+    this.registerEvent(
+      this.app.workspace.on("editor-menu", (menu, editor, view) => {
         menu.addItem((item) => {
           item
             .setTitle('Print file path 👈')
