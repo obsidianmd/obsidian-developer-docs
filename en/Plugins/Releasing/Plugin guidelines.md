@@ -50,7 +50,7 @@ Avoid adding a top-level heading in the settings tab, such as "General", "Settin
 
 If you have more than one section under settings, and one contains general settings, keep them at the top without adding a heading.
 
-For example, look at the settings under **Settings → Appearance**:
+For example, look at the settings under **Settings → Appearance**.
 
 ### Avoid "settings" in settings headings
 
@@ -104,7 +104,7 @@ When possible, use methods like [[registerEvent|registerEvent()]] or [[addComman
 ```ts
 export default class MyPlugin extends Plugin {
   onload() {
-    this.registerEvent(this.app.vault.on("create", this.onCreate));
+    this.registerEvent(this.app.vault.on('create', this.onCreate));
   }
 
   onCreate: (file: TAbstractFile) => {
@@ -191,7 +191,7 @@ for (let leaf of app.workspace.getActiveLeavesOfType(MY_VIEW_TYPE)) {
 
 ## Vault
 
-### Prefer the Editor API instead of `Vault.modify` to a the active file
+### Prefer the Editor API instead of `Vault.modify` to the active file
 
 If you want to edit an active note, use the [[Editor]] interface instead of [[Vault/modify|Vault.modify()]].
 
@@ -269,8 +269,8 @@ Use [[normalizePath|normalizePath()]] whenever you accept user-defined paths to 
 - Runs the path through [String.prototype.normalize](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize).
 
 ```ts
-import { normalizePath } from "obsidian";
-const pathToPlugin = normalizePath("//my-folder\file");
+import { normalizePath } from 'obsidian';
+const pathToPlugin = normalizePath('//my-folder\file');
 // pathToPlugin contains "my-folder/file" not "//my-folder\"
 ```
 

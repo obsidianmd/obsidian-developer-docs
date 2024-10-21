@@ -41,7 +41,7 @@ All community plugins and themes must follow these requirements:
 
 If you encounter a plugin or theme that violates the policies above, please let the developer know by opening a GitHub issue in their repository. Kindly check existing issues to see if it’s already reported.
 
-If the developer doesn’t response after 7 days, [contact the Obsidian team](https://help.obsidian.md/Help+and+support#Report+a+security+issue). For serious violations, you can contact our team immediately.
+If the developer doesn’t respond after 7 days, [contact the Obsidian team](https://help.obsidian.md/Help+and+support#Report+a+security+issue). For serious violations, you can contact our team immediately.
 
 ## Removing plugins and themes
 

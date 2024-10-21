@@ -20,6 +20,7 @@ Obsidian Publish shares many [[CSS variables]] with the Obsidian app. You can ch
 
 | Variable                 | Description                                           |
 | ------------------------ | ----------------------------------------------------- |
+| `--font-text-size`      | Font size for page text                             |
 | `--font-text-theme`      | Font family for page text                             |
 | `--font-monospace-theme` | Font family for code                                  |
 | `--font-interface-theme` | Font family for interface elements such as navigation |
@@ -29,4 +30,3 @@ Publish-specific CSS variables should be defined on the `.published-container`. 
 | Variable            | Description                                 |
 | ------------------- | ------------------------------------------- |
 | `--page-title-font` | Font family for [[Site pages\|page titles]] |
-| `--font-text-size`  | Font size for page text                     |
