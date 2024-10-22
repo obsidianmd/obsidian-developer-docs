@@ -27,6 +27,9 @@ The following properties are only available to plugins.
 | `id`            | `string`  | **Yes**  | The ID of your plugin.                            |
 | `isDesktopOnly` | `boolean` | **Yes**  | Whether your plugin uses NodeJS or Electron APIs. |
 
+> [!note]
+> For local development, the `id` should match the plugin's folder name; otherwise some methods, such as `onExternalSettingsChange`, won't be called.
+
 ## fundingUrl
 
 `fundingUrl` can either be a string with a single URL, or an object with multiple URLs.

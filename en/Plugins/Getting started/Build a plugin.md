@@ -91,7 +91,8 @@ In this step, you'll rename the plugin by updating the plugin manifest, `manifes
 1. Open `manifest.json` in your code editor.
 2. Change `id` to a unique identifier, such as `"hello-world"`.
 3. Change `name` to a human-friendly name, such as `"Hello world"`.
-4. Restart Obsidian to load the new changes to the plugin manifest.
+4. Rename the plugin folder to match the plugin's `id`.
+5. Restart Obsidian to load the new changes to the plugin manifest.
 
 Go back to **Installed plugins** and notice that the name of the plugin has been updated to reflect the changes you made.
 
