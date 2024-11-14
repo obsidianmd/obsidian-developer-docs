@@ -13,7 +13,8 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
    jobs:
      build:
        runs-on: ubuntu-latest
-
+       permissions:
+         contents: write
        steps:
          - uses: actions/checkout@v3
 
