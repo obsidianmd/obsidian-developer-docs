@@ -63,7 +63,7 @@ In this step, you'll submit your plugin to the Obsidian team for review.
 4. Select **Create pull request**.
 5. Select **Preview**, and then select **Community Plugin**.
 6. Click **Create pull request**.
-7. In the name of the pull request, enter "Add [...] plugin", where [...] is the name of your plugin.
+7. In the name of the pull request, enter "Add plugin: [...]", where [...] is the name of your plugin.
 8. Fill in the details in the description for the pull request. For the checkboxes, insert an `x` between the brackets, `[x]`, to mark them as done.
 9. Click **Create pull request** (for the last time 🤞).
 
