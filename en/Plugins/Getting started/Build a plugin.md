@@ -71,7 +71,7 @@ In this step, you'll compile the sample plugin so that Obsidian can load it.
    npm run dev
    ```
 
-Notice that the plugin directory now has a `main.js` file that contains a compiled version of the plugin.
+Notice that the plugin directory now has a `main.ts` file that contains a compiled version of the plugin.
 
 ## Step 3: Enable the plugin
 
