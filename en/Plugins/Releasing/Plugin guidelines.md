@@ -228,7 +228,7 @@ This is inefficient, especially for large vaults. Use [[getFileByPath|Vault.getF
 **Don't** do this:
 
 ```ts
-this.app.vault.getAllFiles().find(file => file.path === filePath);
+this.app.vault.getFiles().find(file => file.path === filePath);
 ```
 
 Do this instead:
