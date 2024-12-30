@@ -1,6 +1,6 @@
 The sidebar on the left side of the Obsidian interface is mainly known as the _ribbon_. The purpose of the ribbon is to host actions defined by plugins.
 
-To add a action to the ribbon, use the [[addRibbonIcon|addRibbonIcon()]] method:
+To add an action to the ribbon, use the [[addRibbonIcon|addRibbonIcon()]] method:
 
 ```ts
 import { Plugin } from 'obsidian';
