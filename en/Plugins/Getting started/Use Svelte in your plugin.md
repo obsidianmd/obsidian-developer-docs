@@ -47,7 +47,7 @@ If you only want to use TypeScript's *type-only* features, you don't need `svelt
 
    ```js
    import esbuildSvelte from 'esbuild-svelte';
-   import sveltePreprocess from 'svelte-preprocess';
+   import { sveltePreprocess } from 'svelte-preprocess';
    ```
 
 4. Add Svelte to the list of plugins.
@@ -110,7 +110,7 @@ In the root directory of the plugin, create a new file called `Counter.svelte`:
 
 ## Mount the Svelte component
 
-To use the Svelte component, it needs to be mounted on an existing [[HTML elements|HTML element]]. For example, if you are mounting on a custom [[ItemView|ItemView]] in Obsidian, create a file called `example_view.ts`
+To use the Svelte component, it needs to be mounted on an existing [[HTML elements|HTML element]]. For example, if you are mounting on a custom [[ItemView|ItemView]] in Obsidian:
 
 ```ts
 import { ItemView, WorkspaceLeaf } from 'obsidian';
@@ -159,50 +159,4 @@ export class ExampleView extends ItemView {
 }
 ```
 
-The view then needs to be be registered in the [[obsidian-developer-docs/en/Reference/TypeScript API/Plugin/onload|onload]] function of `main.ts`.
-```ts
-import { ExampleView, VIEW_TYPE_EXAMPLE } from "./example_view.ts"
-...
-export default class MyPlugin extends Plugin {
-	...
-	async onload() {
-		...
-		this.registerView(VIEW_TYPE_EXAMPLE, (leaf) => new ExampleView(leaf));
-	}
-	...
-}
-```
-
-With the view registered, you can adjust the ribbon icon to reveal this view in the right leaf:
-```ts
-export default class MyPlugin extends Plugin {
-	...
-	async onload() {
-		...
-		const ribbonIconEl = this.addRibbonIcon('dice', 'Sample Plugin', (evt: MouseEvent) => {
-			// Called when the user clicks the icon.
-			this.activateView();
-		});
-		...
-	}
-	...
-	async activateView() {
-		const { workspace } = this.app;
-		
-		let leaf: WorkspaceLeaf | null = null;
-		const leaves = workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE);
-		
-		if (leaves.length > 0) {
-			// A leaf with our view already exists, use that
-			leaf = leaves[0];
-		} else {
-			// Our view could not be found in the workspace, create a new leaf
-			// in the right sidebar for it
-			leaf = workspace.getRightLeaf(false);
-			await leaf.setViewState({ type: VIEW_TYPE_EXAMPLE, active: true });
-		}
-		
-		// "Reveal" the leaf in case it is in a collapsed sidebar
-		workspace.revealLeaf(leaf);
-	}
-```
+See [[Views]] for more on how to incorporate this new view into the User Interface.
