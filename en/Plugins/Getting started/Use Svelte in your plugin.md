@@ -47,7 +47,7 @@ If you only want to use TypeScript's *type-only* features, you don't need `svelt
 
    ```js
    import esbuildSvelte from 'esbuild-svelte';
-   import sveltePreprocess from 'svelte-preprocess';
+   import { sveltePreprocess } from 'svelte-preprocess';
    ```
 
 4. Add Svelte to the list of plugins.
@@ -139,7 +139,7 @@ export class ExampleView extends ItemView {
 
   async onOpen() {
     // Attach the Svelte component to the ItemViews content element and provide the needed props.
-    this.counter = mount({
+    this.counter = mount(Counter, {
       target: this.contentEl,
       props: {
         startCount: 5,
@@ -158,3 +158,5 @@ export class ExampleView extends ItemView {
   }
 }
 ```
+
+See [[Views]] for more on how to incorporate this new view into the User Interface.
