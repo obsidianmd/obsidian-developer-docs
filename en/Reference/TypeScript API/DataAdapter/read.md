@@ -23,5 +23,5 @@ read(normalizedPath: string): Promise<string>;
 
 **Returns:**
 
-`Promise``<string>`
+`Promise<string>`
 

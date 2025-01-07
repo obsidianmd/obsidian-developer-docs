@@ -24,5 +24,5 @@ export function getBlobArrayBuffer(blob: Blob): Promise<ArrayBuffer>;
 
 **Returns:**
 
-`Promise``<``ArrayBuffer``>`
+`Promise<``ArrayBuffer``>`
 

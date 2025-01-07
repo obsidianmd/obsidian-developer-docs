@@ -27,5 +27,5 @@ create(path: string, data: string, options?: DataWriteOptions): Promise<TFile>;
 
 **Returns:**
 
-`Promise``<`[`TFile`](TFile)`>`
+`Promise<`[`TFile`](TFile)`>`
 

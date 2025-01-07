@@ -18,5 +18,5 @@ export function finishRenderMath(): Promise<void>;
 ```
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

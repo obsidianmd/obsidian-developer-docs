@@ -27,5 +27,5 @@ modifyBinary(file: TFile, data: ArrayBuffer, options?: DataWriteOptions): Promis
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

@@ -27,7 +27,7 @@ process(file: TFile, fn: (data: string) => string, options?: DataWriteOptions): 
 
 **Returns:**
 
-`Promise``<string>`
+`Promise<string>`
 
 string - the text value of the note that was written.
 

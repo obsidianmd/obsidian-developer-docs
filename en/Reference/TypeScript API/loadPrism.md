@@ -18,5 +18,5 @@ export function loadPrism(): Promise<any>;
 ```
 **Returns:**
 
-`Promise``<any>`
+`Promise<any>`
 

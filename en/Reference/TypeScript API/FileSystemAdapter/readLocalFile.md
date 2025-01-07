@@ -24,5 +24,5 @@ static readLocalFile(path: string): Promise<ArrayBuffer>;
 
 **Returns:**
 
-`Promise``<``ArrayBuffer``>`
+`Promise<``ArrayBuffer``>`
 

@@ -17,5 +17,5 @@ protected onClose(): Promise<void>;
 ```
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

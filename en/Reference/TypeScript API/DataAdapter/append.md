@@ -27,5 +27,5 @@ append(normalizedPath: string, data: string, options?: DataWriteOptions): Promis
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

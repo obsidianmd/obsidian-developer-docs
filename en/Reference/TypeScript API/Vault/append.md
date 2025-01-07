@@ -27,5 +27,5 @@ append(file: TFile, data: string, options?: DataWriteOptions): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

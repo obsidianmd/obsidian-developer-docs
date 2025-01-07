@@ -27,7 +27,7 @@ createBinary(path: string, data: ArrayBuffer, options?: DataWriteOptions): Promi
 
 **Returns:**
 
-`Promise``<`[`TFile`](TFile)`>`
+`Promise<`[`TFile`](TFile)`>`
 
 ## Exceptions
 

@@ -24,5 +24,5 @@ protected abstract getSuggestions(query: string): T[] | Promise<T[]>;
 
 **Returns:**
 
-`T[] | ``Promise``<T[]>`
+`T[] | ``Promise<T[]>`
 

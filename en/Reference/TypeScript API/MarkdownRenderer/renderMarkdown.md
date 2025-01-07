@@ -33,5 +33,5 @@ static renderMarkdown(markdown: string, el: HTMLElement, sourcePath: string, com
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

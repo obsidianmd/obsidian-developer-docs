@@ -26,7 +26,7 @@ getAvailablePathForAttachment(filename: string, sourcePath?: string): Promise<st
 
 **Returns:**
 
-`Promise``<string>`
+`Promise<string>`
 
 Full path for where the attachment should be saved, according to the user's settings
 

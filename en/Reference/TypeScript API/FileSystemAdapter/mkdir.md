@@ -24,5 +24,5 @@ static mkdir(path: string): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

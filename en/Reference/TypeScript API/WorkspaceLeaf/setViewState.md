@@ -25,5 +25,5 @@ setViewState(viewState: ViewState, eState?: any): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

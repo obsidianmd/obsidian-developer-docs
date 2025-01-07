@@ -29,7 +29,7 @@ processFrontMatter(file: TFile, fn: (frontmatter: any) => void, options?: DataWr
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 
 ## Exceptions
 

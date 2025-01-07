@@ -18,5 +18,5 @@ export function loadMermaid(): Promise<any>;
 ```
 **Returns:**
 
-`Promise``<any>`
+`Promise<any>`
 

@@ -26,5 +26,5 @@ renameFile(file: TAbstractFile, newPath: string): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

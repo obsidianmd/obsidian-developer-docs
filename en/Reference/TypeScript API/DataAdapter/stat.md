@@ -25,5 +25,5 @@ stat(normalizedPath: string): Promise<Stat | null>;
 
 **Returns:**
 
-`Promise``<`[`Stat`](Stat)` | null>`
+`Promise<`[`Stat`](Stat)` | null>`
 

@@ -18,5 +18,5 @@ export function loadPdfJs(): Promise<any>;
 ```
 **Returns:**
 
-`Promise``<any>`
+`Promise<any>`
 

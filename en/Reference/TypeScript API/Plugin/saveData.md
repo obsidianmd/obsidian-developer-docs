@@ -25,5 +25,5 @@ saveData(data: any): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 
