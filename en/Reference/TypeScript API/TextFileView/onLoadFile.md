@@ -24,5 +24,5 @@ onLoadFile(file: TFile): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

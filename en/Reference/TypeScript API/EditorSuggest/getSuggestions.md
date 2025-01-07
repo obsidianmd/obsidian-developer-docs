@@ -25,5 +25,5 @@ abstract getSuggestions(context: EditorSuggestContext): T[] | Promise<T[]>;
 
 **Returns:**
 
-`T[] | ``Promise``<T[]>`
+`T[] | ``Promise<T[]>`
 

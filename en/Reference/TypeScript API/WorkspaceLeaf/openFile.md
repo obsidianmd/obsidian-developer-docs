@@ -26,5 +26,5 @@ openFile(file: TFile, openState?: OpenViewState): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

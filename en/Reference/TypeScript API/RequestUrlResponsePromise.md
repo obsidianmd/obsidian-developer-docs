@@ -15,7 +15,7 @@ cssclasses: hide-title
 ```typescript
 export interface RequestUrlResponsePromise extends Promise<RequestUrlResponse> 
 ```
-**Extends:** `Promise``<`[`RequestUrlResponse`](RequestUrlResponse)`>`
+**Extends:** `Promise<`[`RequestUrlResponse`](RequestUrlResponse)`>`
 
 _(Some inherited members may not be shown because they are not represented in the documentation.)_
 

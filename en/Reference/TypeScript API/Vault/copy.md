@@ -26,5 +26,5 @@ copy(file: TFile, newPath: string): Promise<TFile>;
 
 **Returns:**
 
-`Promise``<`[`TFile`](TFile)`>`
+`Promise<`[`TFile`](TFile)`>`
 

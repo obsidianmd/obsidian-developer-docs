@@ -26,5 +26,5 @@ process(normalizedPath: string, fn: (data: string) => string, options?: DataWrit
 
 **Returns:**
 
-`Promise``<string>`
+`Promise<string>`
 

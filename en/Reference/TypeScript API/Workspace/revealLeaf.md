@@ -25,5 +25,5 @@ revealLeaf(leaf: WorkspaceLeaf): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

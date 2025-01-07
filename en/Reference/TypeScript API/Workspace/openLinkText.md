@@ -27,5 +27,5 @@ openLinkText(linktext: string, sourcePath: string, newLeaf?: PaneType | boolean,
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

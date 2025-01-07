@@ -25,7 +25,7 @@ trashSystem(normalizedPath: string): Promise<boolean>;
 
 **Returns:**
 
-`Promise``<boolean>`
+`Promise<boolean>`
 
 Returns true if succeeded. This can fail due to system trash being disabled.
 

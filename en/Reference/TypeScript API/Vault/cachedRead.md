@@ -25,5 +25,5 @@ cachedRead(file: TFile): Promise<string>;
 
 **Returns:**
 
-`Promise``<string>`
+`Promise<string>`
 

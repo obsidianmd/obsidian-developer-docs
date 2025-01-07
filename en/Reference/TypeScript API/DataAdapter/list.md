@@ -25,5 +25,5 @@ list(normalizedPath: string): Promise<ListedFiles>;
 
 **Returns:**
 
-`Promise``<`[`ListedFiles`](ListedFiles)`>`
+`Promise<`[`ListedFiles`](ListedFiles)`>`
 

@@ -25,5 +25,5 @@ readBinary(file: TFile): Promise<ArrayBuffer>;
 
 **Returns:**
 
-`Promise``<``ArrayBuffer``>`
+`Promise<``ArrayBuffer``>`
 

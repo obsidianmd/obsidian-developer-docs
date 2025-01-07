@@ -25,5 +25,5 @@ rename(normalizedPath: string, normalizedNewPath: string): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

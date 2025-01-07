@@ -24,5 +24,5 @@ trashSystem(normalizedPath: string): Promise<boolean>;
 
 **Returns:**
 
-`Promise``<boolean>`
+`Promise<boolean>`
 

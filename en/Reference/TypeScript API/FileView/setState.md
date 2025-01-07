@@ -25,5 +25,5 @@ setState(state: any, result: ViewStateResult): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

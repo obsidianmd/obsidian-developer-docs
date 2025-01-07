@@ -25,5 +25,5 @@ export function request(request: RequestUrlParam | string): Promise<string>;
 
 **Returns:**
 
-`Promise``<string>`
+`Promise<string>`
 

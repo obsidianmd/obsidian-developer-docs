@@ -24,5 +24,5 @@ open(view: View): Promise<View>;
 
 **Returns:**
 
-`Promise``<`[`View`](View)`>`
+`Promise<`[`View`](View)`>`
 

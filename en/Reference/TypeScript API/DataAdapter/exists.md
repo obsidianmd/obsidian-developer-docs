@@ -26,5 +26,5 @@ exists(normalizedPath: string, sensitive?: boolean): Promise<boolean>;
 
 **Returns:**
 
-`Promise``<boolean>`
+`Promise<boolean>`
 

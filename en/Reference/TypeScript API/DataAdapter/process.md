@@ -27,7 +27,7 @@ process(normalizedPath: string, fn: (data: string) => string, options?: DataWrit
 
 **Returns:**
 
-`Promise``<string>`
+`Promise<string>`
 
 string - the text value of the file that was written.
 

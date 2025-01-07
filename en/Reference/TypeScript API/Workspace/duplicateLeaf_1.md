@@ -26,5 +26,5 @@ duplicateLeaf(leaf: WorkspaceLeaf, leafType: PaneType | boolean, direction?: Spl
 
 **Returns:**
 
-`Promise``<`[`WorkspaceLeaf`](WorkspaceLeaf)`>`
+`Promise<`[`WorkspaceLeaf`](WorkspaceLeaf)`>`
 

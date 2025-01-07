@@ -26,5 +26,5 @@ trash(file: TAbstractFile, system: boolean): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

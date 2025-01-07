@@ -26,5 +26,5 @@ rmdir(normalizedPath: string, recursive: boolean): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

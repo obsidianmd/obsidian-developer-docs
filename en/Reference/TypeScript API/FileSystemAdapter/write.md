@@ -26,5 +26,5 @@ write(normalizedPath: string, data: string, options?: DataWriteOptions): Promise
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

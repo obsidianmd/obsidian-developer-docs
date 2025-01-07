@@ -27,5 +27,5 @@ writeBinary(normalizedPath: string, data: ArrayBuffer, options?: DataWriteOption
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

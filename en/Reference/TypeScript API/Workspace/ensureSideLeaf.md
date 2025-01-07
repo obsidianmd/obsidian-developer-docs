@@ -32,5 +32,5 @@ ensureSideLeaf(type: string, side: Side, options?: {
 
 **Returns:**
 
-`Promise``<`[`WorkspaceLeaf`](WorkspaceLeaf)`>`
+`Promise<`[`WorkspaceLeaf`](WorkspaceLeaf)`>`
 

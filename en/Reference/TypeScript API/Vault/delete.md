@@ -26,5 +26,5 @@ delete(file: TAbstractFile, force?: boolean): Promise<void>;
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

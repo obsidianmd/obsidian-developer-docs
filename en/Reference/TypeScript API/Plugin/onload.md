@@ -17,5 +17,5 @@ onload(): Promise<void> | void;
 ```
 **Returns:**
 
-`Promise``<void> | void`
+`Promise<void> | void`
 

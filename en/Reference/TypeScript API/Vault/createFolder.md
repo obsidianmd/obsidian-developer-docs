@@ -25,7 +25,7 @@ createFolder(path: string): Promise<TFolder>;
 
 **Returns:**
 
-`Promise``<`[`TFolder`](TFolder)`>`
+`Promise<`[`TFolder`](TFolder)`>`
 
 ## Exceptions
 

@@ -29,5 +29,5 @@ static render(app: App, markdown: string, el: HTMLElement, sourcePath: string, c
 
 **Returns:**
 
-`Promise``<void>`
+`Promise<void>`
 

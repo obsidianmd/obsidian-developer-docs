@@ -24,5 +24,5 @@ readBinary(normalizedPath: string): Promise<ArrayBuffer>;
 
 **Returns:**
 
-`Promise``<``ArrayBuffer``>`
+`Promise<``ArrayBuffer``>`
 

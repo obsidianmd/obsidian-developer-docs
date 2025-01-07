@@ -29,5 +29,5 @@ duplicateLeaf(leaf: WorkspaceLeaf, direction?: SplitDirection): Promise<Workspac
 
 **Returns:**
 
-`Promise``<`[`WorkspaceLeaf`](WorkspaceLeaf)`>`
+`Promise<`[`WorkspaceLeaf`](WorkspaceLeaf)`>`
 
