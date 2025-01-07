@@ -49,6 +49,9 @@ jobs:
         working-directory: ./config
         run: node post-process.js
 
+      - name: Rename files
+        run: mv en/Reference/TypeScript\ API/md en/Reference/TypeScript\ API/index.md
+
       - name: Print changes
         run: git diff
 
