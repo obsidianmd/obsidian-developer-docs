@@ -40,7 +40,7 @@ cssclasses: hide-title
 				newFileContent = newFileContent.replaceAll('https://docs.obsidian.md', '$docssite$');
 				newFileContent = newFileContent.replaceAll('obsidian.', '');
 				newFileContent = newFileContent.replaceAll('Plugin_2', 'Plugin')
-				newFileConent = newFileContent.replaceAll('Promise``<', 'Promise<')
+				newFileContent = newFileContent.replaceAll('Promise``<', 'Promise<')
 
 				newFileContent = newFileContent.replaceAll('Plugin\_2', 'Plugin')
 				newFileContent = newFileContent.replaceAll('Plugin\\_2', 'Plugin');
