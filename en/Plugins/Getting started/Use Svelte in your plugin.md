@@ -24,7 +24,7 @@ If you only want to use TypeScript's *type-only* features, you don't need `svelt
    > Svelte requires at least TypeScript 5.0. To update to Typescript 5.0 run the following in your terminal.
    >
    > ```bash
-   > npm update typescript@~5.0.0
+   > npm install typescript@~5.0.0
    > ```
 
 2. Extend the `tsconfig.json` to enable additional type checking for common Svelte issues. `verbatimModuleSyntax` is needed for `svelte-preprocess` and `skipLibCheck` is needed for `svelte-check` to work correctly.
