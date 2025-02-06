@@ -2,7 +2,9 @@
 
 This repository contains the vault for the Obsidian Developer Docs.
 
-A hosted version of this vault is available at https://docs.obsidian.md/.
+A more accessible version of this vault is available at https://docs.obsidian.md/. (recommended for new contributors) 
+[Developer Policies](https://github.com/obsidianmd/obsidian-developer-docs/blob/main/en/Developer%20policies.md)
+[Developer Forum](https://forum.obsidian.md/c/developers-api/14)
 
 ## Contributing
 
