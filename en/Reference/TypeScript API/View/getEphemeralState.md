@@ -17,5 +17,5 @@ getEphemeralState(): Record<string, unknown>;
 ```
 **Returns:**
 
-`Record``<string, unknown>`
+`Record<string, unknown>`
 
