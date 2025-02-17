@@ -41,6 +41,7 @@ cssclasses: hide-title
 				newFileContent = newFileContent.replaceAll('obsidian.', '');
 				newFileContent = newFileContent.replaceAll('Plugin_2', 'Plugin')
 				newFileContent = newFileContent.replaceAll('Promise``<', 'Promise<')
+				newFileContent = newFileContent.replaceAll('Record``<', 'Record<')
 
 				newFileContent = newFileContent.replaceAll('Plugin\_2', 'Plugin')
 				newFileContent = newFileContent.replaceAll('Plugin\\_2', 'Plugin');
