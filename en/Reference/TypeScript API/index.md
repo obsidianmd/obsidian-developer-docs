@@ -101,15 +101,17 @@ cssclasses: hide-title
 |  [`arrayBufferToHex(data)`](arrayBufferToHex) |  |
 |  [`base64ToArrayBuffer(base64)`](base64ToArrayBuffer) |  |
 |  [`debounce(cb, timeout, resetTimer)`](debounce) | A standard debounce function. Use this to have a time-delayed function only be called once in a given timeframe. |
+|  [`displayTooltip(newTargetEl, content, options)`](displayTooltip) | <p>Manually trigger a tooltip that will appear over the provided element.</p><p>To display a tooltip on hover, use [setTooltip()](setTooltip) instead.</p> |
 |  [`finishRenderMath()`](finishRenderMath) | Flush the MathJax stylesheet. |
 |  [`getAllTags(cache)`](getAllTags) | Combines all tags from frontmatter and note content into a single array. |
 |  [`getBlobArrayBuffer(blob)`](getBlobArrayBuffer) |  |
 |  [`getFrontMatterInfo(content)`](getFrontMatterInfo) | Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text. |
 |  [`getIcon(iconId)`](getIcon) | Create an SVG from an iconId. Returns null if no icon associated with the iconId. |
 |  [`getIconIds()`](getIconIds) | Get the list of registered icons. |
+|  [`getLanguage()`](getLanguage) | Get the ISO code for the currently configured app language. Defaults to 'en'. See [https://github.com/obsidianmd/obsidian-translations?tab=readme-ov-file\#existing-languages](https://github.com/obsidianmd/obsidian-translations?tab=readme-ov-file#existing-languages) for list of options. |
 |  [`getLinkpath(linktext)`](getLinkpath) | Converts the linktext to a linkpath. |
 |  [`hexToArrayBuffer(hex)`](hexToArrayBuffer) |  |
-|  [`htmlToMarkdown(html)`](htmlToMarkdown) | Converts HTML to Markdown using Turndown Service. |
+|  [`htmlToMarkdown(html)`](htmlToMarkdown) | Converts HTML to a Markdown string. |
 |  [`iterateCacheRefs(cache, cb)`](iterateCacheRefs) | Iterate links and embeds. If callback returns true, the iteration process will be interrupted. |
 |  [`iterateRefs(refs, cb)`](iterateRefs) | If callback returns true, the iteration process will be interrupted. |
 |  [`loadMathJax()`](loadMathJax) | Load MathJax. |
@@ -168,6 +170,7 @@ cssclasses: hide-title
 |  [`EventRef`](EventRef) |  |
 |  [`FileStats`](FileStats) |  |
 |  [`FootnoteCache`](FootnoteCache) |  |
+|  [`FootnoteRefCache`](FootnoteRefCache) |  |
 |  [`FootnoteSubpathResult`](FootnoteSubpathResult) |  |
 |  [`FrontMatterCache`](FrontMatterCache) |  |
 |  [`FrontMatterInfo`](FrontMatterInfo) |  |
@@ -187,7 +190,7 @@ cssclasses: hide-title
 |  [`LinkCache`](LinkCache) |  |
 |  [`ListedFiles`](ListedFiles) |  |
 |  [`ListItemCache`](ListItemCache) |  |
-|  [`LivePreviewState`](LivePreviewState) |  |
+|  [`LivePreviewStateType`](LivePreviewStateType) | The object stored in the view plugin [livePreviewState](livePreviewState) |
 |  [`Loc`](Loc) | Location within a Markdown document |
 |  [`MarkdownFileInfo`](MarkdownFileInfo) |  |
 |  [`MarkdownPostProcessor`](MarkdownPostProcessor) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into [MarkdownPostProcessorContext.addChild()](MarkdownPostProcessorContext/addChild)</p> |
@@ -203,6 +206,7 @@ cssclasses: hide-title
 |  [`Pos`](Pos) | Describes a text range in a Markdown document. |
 |  [`Reference`](Reference) | Base interface for items that point to a different location. |
 |  [`ReferenceCache`](ReferenceCache) |  |
+|  [`ReferenceLinkCache`](ReferenceLinkCache) |  |
 |  [`RequestUrlParam`](RequestUrlParam) |  |
 |  [`RequestUrlResponse`](RequestUrlResponse) |  |
 |  [`RequestUrlResponsePromise`](RequestUrlResponsePromise) |  |

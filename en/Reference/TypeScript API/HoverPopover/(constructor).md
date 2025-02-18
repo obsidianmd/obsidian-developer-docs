@@ -14,7 +14,7 @@ Constructs a new instance of the `HoverPopover` class
 **Signature:**
 
 ```typescript
-constructor(parent: HoverParent, targetEl: HTMLElement | null, waitTime?: number);
+constructor(parent: HoverParent, targetEl: HTMLElement | null, waitTime?: number, staticPos?: Point | null);
 ```
 
 ## Parameters
@@ -24,4 +24,5 @@ constructor(parent: HoverParent, targetEl: HTMLElement | null, waitTime?: number
 |  <code>parent</code> | [`HoverParent`](HoverParent) |  |
 |  <code>targetEl</code> | <code>HTMLElement</code><code> &#124; null</code> |  |
 |  <code>waitTime</code> | <code>number</code> | _(Optional)_ |
+|  <code>staticPos</code> | [`Point`](Point)<code> &#124; null</code> | _(Optional)_ |
 

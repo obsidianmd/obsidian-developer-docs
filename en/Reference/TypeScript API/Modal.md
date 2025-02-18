@@ -39,10 +39,10 @@ export class Modal implements CloseableComponent
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`close()`](Modal/close) |  |  |
+|  [`close()`](Modal/close) |  | Hide the modal. |
 |  [`onClose()`](Modal/onClose) |  |  |
 |  [`onOpen()`](Modal/onOpen) |  |  |
-|  [`open()`](Modal/open) |  |  |
+|  [`open()`](Modal/open) |  | Show the modal on the the active window. On mobile, the modal will animate on screen. |
 |  [`setContent(content)`](Modal/setContent) |  |  |
 |  [`setTitle(title)`](Modal/setTitle) |  |  |
 

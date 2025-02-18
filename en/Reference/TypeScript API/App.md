@@ -28,3 +28,10 @@ export class App
 |  [`vault`](App/vault) |  | [`Vault`](Vault) |  |
 |  [`workspace`](App/workspace) |  | [`Workspace`](Workspace) |  |
 
+## Methods
+
+|  Method | Modifiers | Description |
+|  --- | --- | --- |
+|  [`loadLocalStorage(key)`](App/loadLocalStorage) |  | Retrieve value from <code>localStorage</code> for this vault. |
+|  [`saveLocalStorage(key, data)`](App/saveLocalStorage) |  | Save vault-specific value to <code>localStorage</code>. If data is <code>null</code>, the entry will be cleared. |
+

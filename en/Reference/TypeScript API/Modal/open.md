@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Modal.open() method
 
+Show the modal on the the active window. On mobile, the modal will animate on screen.
 
 **Signature:**
 

@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceLeaf.openFile() method
 
-By default, `openFile` will also make the leaf active. Pass in `{ active: false }` to override.
+Open a file in this leaf.
 
 **Signature:**
 

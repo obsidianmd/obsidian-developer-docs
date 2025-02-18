@@ -43,7 +43,7 @@ export abstract class FuzzySuggestModal<T> extends SuggestModal<FuzzyMatch<T>>
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`close()`](Modal/close) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`close()`](Modal/close) |  | <p>Hide the modal.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`getItems()`](FuzzySuggestModal/getItems) | <code>abstract</code> |  |
 |  [`getItemText(item)`](FuzzySuggestModal/getItemText) | <code>abstract</code> |  |
 |  [`getSuggestions(query)`](FuzzySuggestModal/getSuggestions) |  |  |
@@ -52,7 +52,7 @@ export abstract class FuzzySuggestModal<T> extends SuggestModal<FuzzyMatch<T>>
 |  [`onClose()`](Modal/onClose) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`onNoSuggestion()`](SuggestModal/onNoSuggestion) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`onOpen()`](Modal/onOpen) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`open()`](Modal/open) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`open()`](Modal/open) |  | <p>Show the modal on the the active window. On mobile, the modal will animate on screen.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`renderSuggestion(item, el)`](FuzzySuggestModal/renderSuggestion) |  |  |
 |  [`selectActiveSuggestion(evt)`](SuggestModal/selectActiveSuggestion) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |

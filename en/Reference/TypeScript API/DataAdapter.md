@@ -23,7 +23,7 @@ export interface DataAdapter
 |  --- | --- |
 |  [`append(normalizedPath, data, options)`](DataAdapter/append) | Add text to the end of a plaintext file. |
 |  [`copy(normalizedPath, normalizedNewPath)`](DataAdapter/copy) | Create a copy of a file. This will fail if there is already a file at <code>normalizedNewPath</code>. |
-|  [`exists(normalizedPath, sensitive)`](DataAdapter/exists) | Check if something exists at the given path. |
+|  [`exists(normalizedPath, sensitive)`](DataAdapter/exists) | Check if something exists at the given path. For a faster way to synchronously check if a note or attachment is in the vault, use [Vault.getAbstractFileByPath()](Vault/getAbstractFileByPath)<!-- -->. |
 |  [`getName()`](DataAdapter/getName) |  |
 |  [`getResourcePath(normalizedPath)`](DataAdapter/getResourcePath) | Returns an URI for the browser engine to use, for example to embed an image. |
 |  [`list(normalizedPath)`](DataAdapter/list) | Retrieve a list of all files and folders inside the given folder, non-recursive. |

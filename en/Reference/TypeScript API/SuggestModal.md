@@ -45,13 +45,13 @@ export abstract class SuggestModal<T> extends Modal implements ISuggestOwner<T>
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`close()`](Modal/close) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`close()`](Modal/close) |  | <p>Hide the modal.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`getSuggestions(query)`](SuggestModal/getSuggestions) | <code>abstract</code> |  |
 |  [`onChooseSuggestion(item, evt)`](SuggestModal/onChooseSuggestion) | <code>abstract</code> |  |
 |  [`onClose()`](Modal/onClose) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`onNoSuggestion()`](SuggestModal/onNoSuggestion) |  |  |
 |  [`onOpen()`](Modal/onOpen) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`open()`](Modal/open) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`open()`](Modal/open) |  | <p>Show the modal on the the active window. On mobile, the modal will animate on screen.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`renderSuggestion(value, el)`](SuggestModal/renderSuggestion) | <code>abstract</code> |  |
 |  [`selectActiveSuggestion(evt)`](SuggestModal/selectActiveSuggestion) |  |  |
 |  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  |  |
