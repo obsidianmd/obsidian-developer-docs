@@ -21,7 +21,7 @@ export class HoverPopover extends Component
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [`(constructor)(parent, targetEl, waitTime)`](HoverPopover/(constructor).md) |  | Constructs a new instance of the <code>HoverPopover</code> class |
+|  [`(constructor)(parent, targetEl, waitTime, staticPos)`](HoverPopover/(constructor).md) |  | Constructs a new instance of the <code>HoverPopover</code> class |
 
 ## Properties
 

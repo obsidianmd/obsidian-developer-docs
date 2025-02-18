@@ -13,5 +13,5 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-livePreviewState: ViewPlugin<LivePreviewState>
+livePreviewState: ViewPlugin<LivePreviewStateType>
 ```

@@ -43,7 +43,7 @@ export class WorkspaceLeaf extends WorkspaceItem
 |  [`on(name: 'group-change', callback, ctx)`](WorkspaceLeaf/on('group-change').md) |  |  |
 |  [`onResize()`](WorkspaceLeaf/onResize) |  |  |
 |  [`open(view)`](WorkspaceLeaf/open) |  |  |
-|  [`openFile(file, openState)`](WorkspaceLeaf/openFile) |  | By default, <code>openFile</code> will also make the leaf active. Pass in <code>{ active: false }</code> to override. |
+|  [`openFile(file, openState)`](WorkspaceLeaf/openFile) |  | Open a file in this leaf. |
 |  [`setEphemeralState(state)`](WorkspaceLeaf/setEphemeralState) |  |  |
 |  [`setGroup(group)`](WorkspaceLeaf/setGroup) |  |  |
 |  [`setGroupMember(other)`](WorkspaceLeaf/setGroupMember) |  |  |

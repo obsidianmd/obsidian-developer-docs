@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Modal.close() method
 
+Hide the modal.
 
 **Signature:**
 

@@ -22,6 +22,6 @@ export interface Loc
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`col`](Loc/col) |  | <code>number</code> | Column number. |
-|  [`line`](Loc/line) |  | <code>number</code> | Line number. |
+|  [`line`](Loc/line) |  | <code>number</code> | Line number. 0-based. |
 |  [`offset`](Loc/offset) |  | <code>number</code> | Number of characters from the beginning of the file. |
 

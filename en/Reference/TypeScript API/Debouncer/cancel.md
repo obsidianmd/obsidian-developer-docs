@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Debouncer.cancel() method
 
+Cancel any pending debounced function call.
 
 **Signature:**
 

@@ -9,6 +9,10 @@ cssclasses: hide-title
 
 ## Notice.noticeEl property
 
+> Warning: This API is now obsolete.
+> 
+> Use `messageEl` instead
+> 
 
 **Signature:**
 

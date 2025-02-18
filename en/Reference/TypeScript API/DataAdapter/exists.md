@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## DataAdapter.exists() method
 
-Check if something exists at the given path.
+Check if something exists at the given path. For a faster way to synchronously check if a note or attachment is in the vault, use [Vault.getAbstractFileByPath()](Vault/getAbstractFileByPath)<!-- -->.
 
 **Signature:**
 

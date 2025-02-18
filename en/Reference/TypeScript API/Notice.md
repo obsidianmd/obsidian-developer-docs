@@ -27,6 +27,8 @@ export class Notice
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`containerEl`](Notice/containerEl) |  | <code>HTMLElement</code> |  |
+|  [`messageEl`](Notice/messageEl) |  | <code>HTMLElement</code> |  |
 |  [`noticeEl`](Notice/noticeEl) |  | <code>HTMLElement</code> |  |
 
 ## Methods

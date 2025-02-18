@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## htmlToMarkdown() function
 
-Converts HTML to Markdown using Turndown Service.
+Converts HTML to a Markdown string.
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Debouncer.run() method
 
+If there is any pending function call, clear the timer and call the function immediately.
 
 **Signature:**
 
