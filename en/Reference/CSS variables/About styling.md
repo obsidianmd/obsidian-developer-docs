@@ -4,7 +4,7 @@ Obsidian includes hundreds of [[CSS variables]] that enable consistently beautif
 
 ## For plugins
 
-By using the built-in CSS variables for you own custom elements, you can create native-looking user interfaces in your plugin that look beautiful and are compatible with community themes.
+By using the built-in CSS variables for your own custom elements, you can create native-looking user interfaces in your plugin that look beautiful and are compatible with community themes.
 
 **styles.css**:
 
