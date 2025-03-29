@@ -8,14 +8,14 @@ This page describes the schema for the manifest, `manifest.json`.
 
 The following properties are available for both plugins and themes.
 
-| Property        | Type                                | Required | Description                                                                     |
-| --------------- | ----------------------------------- | -------- | ------------------------------------------------------------------------------- |
-| `author`        | `string`                            | **Yes**  | The author's name.                                                              |
-| `minAppVersion` | `string`                            | **Yes**  | The minimum required Obsidian version.                                          |
-| `name`          | `string`                            | **Yes**  | The display name.                                                               |
-| `version`       | `string`                            | **Yes**  | The version, using [Semantic Versioning](https://semver.org/).                  |
-| `authorUrl`     | `string`                            | No       | A URL to the author's website.                                                  |
-| `fundingUrl`    | `string` or [`object`](#fundingurl) | No       | A URL or multiple URLs to where the users can support your project financially. |
+| Property        | Type                                | Required | Description                                                                          |
+| --------------- | ----------------------------------- | -------- | ------------------------------------------------------------------------------------ |
+| `author`        | `string`                            | **Yes**  | The author's name.                                                                   |
+| `minAppVersion` | `string`                            | **Yes**  | The minimum required Obsidian version.                                               |
+| `name`          | `string`                            | **Yes**  | The display name.                                                                    |
+| `version`       | `string`                            | **Yes**  | The version, using [Semantic Versioning](https://semver.org/) in the format `x.y.z`. |
+| `authorUrl`     | `string`                            | No       | A URL to the author's website.                                                       |
+| `fundingUrl`    | `string` or [`object`](#fundingurl) | No       | A URL or multiple URLs to where the users can support your project financially.      |
 
 ## Plugin-specific properties
 
