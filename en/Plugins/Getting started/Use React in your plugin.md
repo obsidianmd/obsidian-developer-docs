@@ -42,7 +42,7 @@ export const ReactView = () => {
 
 ## Mount the React component
 
-To use the React component, it needs to be mounted on a [[HTML elements]]. The following example mounts the `ReactView` component on the `this.containerEl.children[1]` element:
+To use the React component, it needs to be mounted on a [[HTML elements]]. The following example mounts the `ReactView` component on the `this.contentEl` element:
 
 ```tsx
 import { StrictMode } from 'react';
@@ -68,7 +68,7 @@ class ExampleView extends ItemView {
 	}
 
 	async onOpen() {
-		this.root = createRoot(this.containerEl.children[1]);
+		this.root = createRoot(this.contentEl);
 		this.root.render(
 			<StrictMode>
 				<ReactView />,
@@ -104,7 +104,7 @@ Another alternative is to create a React context for the app to make it globally
 2. Wrap the `ReactView` with a context provider and pass the app as the value.
 
    ```tsx title="view.tsx"
-   this.root = createRoot(this.containerEl.children[1]);
+   this.root = createRoot(this.contentEl);
    this.root.render(
      <AppContext.Provider value={this.app}>
        <ReactView />
