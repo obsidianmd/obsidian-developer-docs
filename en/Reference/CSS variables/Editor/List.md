@@ -9,7 +9,7 @@ This page lists CSS variables for ordered and unordered lists.
 | ------------------------------- | ------------------------------------ |
 | `--list-indent`                 | Indentation width for nested items   |
 | `--list-indent-editing`         | Indent width in Live Preview         |
-| `--list-indent-source`          | Indent width is source mode          |
+| `--list-indent-source`          | Indent width in source mode          |
 | `--list-spacing`                | Vertical spacing between list items  |
 | `--list-marker-color`           | Marker color                         |
 | `--list-marker-color-hover`     | Marker color (hover)                 |
