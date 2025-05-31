@@ -27,7 +27,7 @@ To review your plugin, we need to access to the source code on GitHub. If you're
 
 In this step, you'll prepare a release for your plugin that's ready to be submitted.
 
-1. In `manifest.json`, update `version` to a new version that follows the [Semantic Versioning](https://semver.org/) specification, for example `1.0.0` for your initial release. You can only use numbers and periods (`.`).
+1. In `manifest.json`, update `version` to a new version that follows the [Semantic Versioning](https://semver.org/) specification, for example `1.0.0` for your initial release. Versions supported only in the format `x.y.z`.
 2. [Create a GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release). The "Tag version" of the release must match the version in your `manifest.json`.
 3. Enter a name for the release, and describe it in the description field. Obsidian doesn't use the release name for anything, so feel free to name it however you like.
 4. Upload the following plugin assets to the release as binary attachments:
