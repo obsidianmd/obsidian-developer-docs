@@ -42,7 +42,7 @@ export const ReactView = () => {
 
 ## Mount the React component
 
-To use the React component, it needs to be mounted on a [[HTML elements|HTML element]]. The following example mounts the `ReactView` component on the `this.contentEl` element:
+To use the React component, it needs to be mounted on a [[HTML elements|HTML element]]. The following example mounts the `ReactView` component on the `this.containerEl.children[1]` element:
 
 ```tsx
 import { StrictMode } from "react";
