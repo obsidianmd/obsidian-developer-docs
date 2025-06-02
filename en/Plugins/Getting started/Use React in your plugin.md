@@ -68,7 +68,7 @@ class ExampleView extends ItemView {
 	}
 
 	async onOpen() {
-		this.root = createRoot(this.contentEl);
+		this.root = createRoot(this.containerEl.children[1]);
 		this.root.render(
 			<StrictMode>
 				<ReactView />,
@@ -104,7 +104,7 @@ Another alternative is to create a React context for the app to make it globally
 2. Wrap the `ReactView` with a context provider and pass the app as the value.
 
     ```tsx title="view.tsx"
-    this.root = createRoot(this.contentEl);
+    this.root = createRoot(this.containerEl.children[1]);
     this.root.render(
     	<AppContext.Provider value={this.app}>
     		<ReactView />
