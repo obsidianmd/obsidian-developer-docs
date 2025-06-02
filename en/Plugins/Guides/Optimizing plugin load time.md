@@ -1,6 +1,6 @@
 In [Obsidian v1.7.1](https://obsidian.md/changelog/2024-08-27-desktop-v1.7.1/), we added the "Debug startup time" view. This view indicates how long it takes for the app to launch.
 
-Plugins play an important rule in app load time. To ensure that Obsidian behaves correctly, Obsidian loads all plugins before the user can interact with the app.
+Plugins play an important role in app load time. To ensure that Obsidian behaves correctly, Obsidian loads all plugins before the user can interact with the app.
 
 ### How do I improve my plugin's load time?
 
