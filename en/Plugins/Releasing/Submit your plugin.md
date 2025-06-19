@@ -77,6 +77,10 @@ Once your submission is ready for review, you can sit back and wait for the Obsi
 > [!question] How long does it take to review my plugin?
 > The time it takes to review your submission depends on the current workload of the Obsidian team. The team is still small, so please be patient while you wait for your plugin to be reviewed. We're currently unable to give any estimates on when we'll be able to review your submission.
 
+> [!warning] Ignore merge conflicts
+> If you see in your PR GitHub's warning `This branch has conflicts that must be resolved`, just ignore it. Don't merge or rebase your PR.
+> Once your plugin passes all reviews, Obsidian team will resolve those conflicts before publishing your plugin.
+
 ## Step 4: Address review comments
 
 Once a reviewer has reviewed your plugin, they'll add a comment to your pull request with the result of the review. The reviewer may require that you update your plugin, or they can offer suggestions on how you can improve it.
