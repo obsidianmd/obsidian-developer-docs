@@ -169,13 +169,13 @@ Managing references to custom view can cause memory leaks or unintended conseque
 **Don't** do this:
 
 ```ts
-this.registerViewType(MY_VIEW_TYPE, () => this.view = new MyCustomView());
+this.registerView(MY_VIEW_TYPE, () => this.view = new MyCustomView());
 ```
 
 Do this instead:
 
 ```ts
-this.registerViewType(MY_VIEW_TYPE, () => new MyCustomView());
+this.registerView(MY_VIEW_TYPE, () => new MyCustomView());
 ```
 
 To access the view from your plugin, use `Workspace.getActiveLeavesOfType()`:
