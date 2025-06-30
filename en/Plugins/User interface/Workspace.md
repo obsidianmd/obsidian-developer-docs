@@ -20,7 +20,7 @@ flowchart TD
 - A split item lays out its child items one after another along a vertical or horizontal direction.
 - A tabs item only displays one child item at a time and hides the others.
 
-The workspace has three special split items under it: _left_, _right_, and _root_. The following diagram shows a example of what a typical workspace could look like:
+The workspace has three special split items under it: _left_, _right_, and _root_. The following diagram shows an example of what a typical workspace could look like:
 
 ```mermaid
 flowchart TD
@@ -49,7 +49,7 @@ A leaf is a window that can display content in different ways. The type of leaf 
 
 ## Splits
 
-By default, the direction of the root split is set to vertical. When you create a new leaf to it, Obsidian creates a new column in the user interface. When you split a leaf, the resulting leaves are added to a new split item. While there's no defined limit to the number of levels you can create under the root split, in practice their usefulness diminish for each level.
+By default, the direction of the root split is set to vertical. When you create a new leaf to it, Obsidian creates a new column in the user interface. When you split a leaf, the resulting leaves are added to a new split item. While there is no defined limit to the number of levels you can create under the root split, in practice their usefulness diminish for each level.
 
 ```mermaid
 flowchart TD
@@ -66,7 +66,7 @@ flowchart TD
     split --> leaf5((Leaf))
 ```
 
-The left and right splits work a little differently. When you split a leaf in the side docks, Obsidian generates a new tabs item and adds the new leaf under it. Effectively, this means they can only have three levels of workspace items at any time, and any direct children must be tabs items.
+The left and right splits work slightly differently. When you split a leaf in the side docks, Obsidian generates a new tabs item and adds the new leaf under it. Effectively, this means they can only have three levels of workspace items at any time, and any direct children must be tabs items.
 
 ```mermaid
 flowchart TD
@@ -114,14 +114,14 @@ export default class ExamplePlugin extends Plugin {
 
 ## Leaf lifecycle
 
-Plugins can add leaves of any type to the workspace, as well as define new leaf types through [[Views|custom views]]. Here are a few ways to add a leaf to the workspace. For more ways, refer to [[Reference/TypeScript API/Workspace|Workspace]].
+Plugins can add leaves of any type to the workspace, as well as define new leaf types through [[Views|custom views]]. Here are a few ways to add a leaf to the workspace. For more information, refer to [[Reference/TypeScript API/Workspace|Workspace]].
 
 - If you want to add a new leaf in the root split, use [[getLeaf|getLeaf(true)]].
 - If you want to add a new leaf in any of the side bars, use [[getLeftLeaf|getLeftLeaf()]] and [[getRightLeaf|getRightLeaf()]]. Both let you decide whether to add the leaf to a new split.
 
 You can also explicitly add the leaf in the split of your choice, using [[createLeafInParent|createLeafInParent()]].
 
-Unless explicitly removed, any leaves that a plugin add to the workspace remain even after the plugin is disabled. Plugins are responsible for removing any leaves they add to the workspace.
+Unless explicitly removed, any leaves a plugin adds to the workspace remain even after the plugin is disabled. Plugins are responsible for removing any leaves they add to the workspace.
 
 To remove a leaf from the workspace, call [[detach|detach()]] on the leaf you want to remove. You can also remove all leaves of a certain type, by using [[detachLeavesOfType|detachLeavesOfType()]].
 
