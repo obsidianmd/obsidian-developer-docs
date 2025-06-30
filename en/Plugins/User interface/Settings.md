@@ -44,7 +44,7 @@ There's a lot going on here 🤯, so let's look closer at each part.
 
 ## Create a settings definition
 
-First, you need to create a definition, `ExamplePluginSettings`, for what settings you want the user to be able to configure. While the plugin is enabled, you can access the settings from the `settings` member variable.
+First, you need to define, which settings you want the user to be able to configure. Therefore, you create an interface, `ExamplePluginSettings`. While the plugin is enabled, you can access its settings from the `settings` member variable, which in our example is of type `ExamplePluginSettings`.
 
 ```ts
 interface ExamplePluginSettings {
@@ -60,7 +60,7 @@ export default class ExamplePlugin extends Plugin {
 
 ## Save and load the settings object
 
-[[loadData|loadData()]] and [[saveData|saveData()]] provide an easy way to store and retrieve data from disk. The example also introduces two helper methods that makes it easier to use `loadData()` and `saveData()` from other parts of the plugin.
+[[loadData|loadData()]] and [[saveData|saveData()]] provide an easy way to store and retrieve data from disk. The example also introduces two helper methods that make it easier to use `loadData()` and `saveData()` from other parts of the plugin.
 
 ```ts
 export default class ExamplePlugin extends Plugin {
@@ -91,7 +91,7 @@ async onload() {
 
 When the user enables the plugin for the first time, none of the settings have been configured yet. The preceding example provides default values for any missing settings.
 
-To understand how this work, let's look at the following code:
+To understand how this works, have a look at the following code:
 
 ```ts
 Object.assign({}, DEFAULT_SETTINGS, await this.loadData())
@@ -153,7 +153,7 @@ export class ExampleSettingTab extends PluginSettingTab {
 
 `display()` is where you build the content for the settings tab. For more information, refer to [[HTML elements]].
 
-`new Setting(containerEl)` appends a setting to the container element. This example uses a text field using `addText()`, but there are several other setting types available.
+`new Setting(containerEl)` appends a setting to the container element. This example only provides a text field using `addText()`, but there are several other setting types available.
 
 Update the settings object whenever the value of the text field changes, and then save it to disk:
 
@@ -164,4 +164,4 @@ Update the settings object whenever the value of the text field changes, and the
 })
 ```
 
-Nice work! 💪 Your users will thank you for giving them a way to customize how they interact with your plugin. Before heading to the next guide, experiment with what you've learned by adding another setting.
+Nice work! 💪 Your users will thank you for giving them a way to customize how they interact with your plugin. Before heading to the next guide, experiment with what you've learned maybe by adding another setting.

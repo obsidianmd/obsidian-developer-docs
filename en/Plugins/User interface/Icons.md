@@ -1,4 +1,4 @@
-Several of the UI components in the Obsidian API lets you configure an accompanying icon. You can choose from one of the built-in icons, or you can add your own.
+Several of the UI components in the Obsidian API let you configure an accompanying icon. You can choose from one of the built-in icons, or you can add your own.
 
 ## Browse available icons
 
@@ -8,7 +8,7 @@ Browse to [lucide.dev](https://lucide.dev/) to see all available icons and their
 
 ## Use icons
 
-If you'd like to use icons in your custom interfaces, use the [[setIcon|setIcon()]] utility function to add an icon to an [[HTML elements|HTML element]]. The following example adds icon to the status bar:
+If you'd like to use icons in your custom interfaces, use the [[setIcon|setIcon()]] utility function to add an icon to an [[HTML elements|HTML element]]. The following example adds an icon to the status bar:
 
 ```ts
 import { Plugin, setIcon } from 'obsidian';
@@ -21,7 +21,7 @@ export default class ExamplePlugin extends Plugin {
 }
 ```
 
-To change the size of the icon, set the `--icon-size` [[Reference/CSS variables/Foundations/Icons|CSS variable]] on the element containing the icon using preset sizes:
+To change the size of an icon, set the `--icon-size` [[Reference/CSS variables/Foundations/Icons|CSS variable]] on the element containing the icon using preset sizes:
 
 ```css
 div {

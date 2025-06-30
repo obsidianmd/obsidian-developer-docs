@@ -1,4 +1,4 @@
-Modals display information and accept input from the user. To create a modal, create a class that extends [[Reference/TypeScript API/Modal|Modal]]:
+Modals display information and accept user input. To create a modal, create a class that extends [[Reference/TypeScript API/Modal|Modal]]:
 
 ```ts
 import { App, Modal } from 'obsidian';
@@ -32,7 +32,7 @@ export default class ExamplePlugin extends Plugin {
 
 ## Accept user input
 
-The modal in the previous example only displayed some text. Let's look at a little more complex example that handles input from the user.
+Our modal in the previous example only displayed some information. Let's look at a slightly more complex example that also handles user input.
 
 ![[modal-input.png]]
 
@@ -65,7 +65,7 @@ export class ExampleModal extends Modal {
 }
 ```
 
-The result is returned in the `onSubmit` callback when the user clicks **Submit**:
+The result is passed into the `onSubmit` callback when the user clicks **Submit**:
 
 ```ts
 new ExampleModal(this.app, (result) => {

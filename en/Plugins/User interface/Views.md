@@ -35,10 +35,10 @@ export class ExampleView extends ItemView {
 > [!note]
 > For more information on how to use the `createEl()` method, refer to [[HTML elements]].
 
-Each view is uniquely identified by a text string and several operations require that you specify the view you'd like to use. Extracting it to a constant, `VIEW_TYPE_EXAMPLE`, is a good idea—as you will see later in this guide.
+Each view is uniquely identified by a text string and several operations require that you specify the view you'd like to use. Extracting it to a constant, `VIEW_TYPE_EXAMPLE`, is a good idea — as you will see later in this guide.
 
 - `getViewType()` returns a unique identifier for the view.
-- `getDisplayText()` returns a human-friendly name for the view.
+- `getDisplayText()` returns a human-readable name for the view.
 - `onOpen()` is called when the view is opened within a new leaf and is responsible for building the content of your view.
 - `onClose()` is called when the view should close and is responsible for cleaning up any resources used by the view.
 

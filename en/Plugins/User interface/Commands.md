@@ -1,4 +1,4 @@
-Commands are actions that the user can perform from the [Command Palette](https://help.obsidian.md/Plugins/Command+palette) or by using a hot key.
+Commands are actions that the user can invoke from the [Command Palette](https://help.obsidian.md/Plugins/Command+palette) or by using a hot key.
 
 ![[command.png]]
 
@@ -22,7 +22,7 @@ export default class ExamplePlugin extends Plugin {
 
 ## Conditional commands
 
-If your command is only able to run under certain conditions, then consider using [[checkCallback|checkCallback()]] instead.
+If your command is only able to run under certain conditions, consider using [[checkCallback|checkCallback()]] instead.
 
 The `checkCallback` runs twice. First, to perform a preliminary check to determine whether the command can run. Second, to perform the action.
 
@@ -75,7 +75,7 @@ this.addCommand({
 > [!note]
 > Editor commands only appear in the Command Palette when there's an active editor available.
 
-If the editor callback can only run given under certain conditions, consider using the [[editorCheckCallback|editorCheckCallback()]] instead. For more information, refer to [[#Conditional commands]].
+If the editor callback can only run under certain conditions, consider using [[editorCheckCallback|editorCheckCallback()]] instead. For more information, refer to [[#Conditional commands]].
 
 ```ts
 this.addCommand({
