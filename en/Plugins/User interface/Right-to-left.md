@@ -7,11 +7,11 @@ description: Obsidian supports right-to-left (RTL) languages such as Arabic, Dhi
 > [!Warning] New in Obsidian 1.6
 > Obsidian 1.6 contains many improvements for right-to-left languages, with mirrored UI and mixed language support. These changes can affect themes and plugins.
 
-Obsidian supports right-to-left (RTL) languages such as Arabic, Dhivehi, Hebrew, Farsi, Syriac, and Urdu. These languages are spoken by more than 600 million people. When developing plugins and themes for Obsidian it is important consider how your interface changes will adapt to the direction of the language interface and content.
+Obsidian supports right-to-left (RTL) languages such as Arabic, Dhivehi, Hebrew, Farsi, Syriac, and Urdu. These languages are spoken by more than 600 million people. When developing plugins and themes for Obsidian it is important to consider how your interface changes will adapt to the direction of the language interface and content.
 
 RTL languages can be present in two important contexts within Obsidian: the app interface and the content of notes.
 
-- **The app interface** is defined by the language selected in Obsidian Settings. If the user selects an RTL language, the app interface is automatically reversed, and a `.mod-rtl` class is added to the `body` element. The specific interface language is also is added to the `lang` attribute on the `html` element.
+- **The app interface** is defined by the language selected in Obsidian Settings. If the user selects an RTL language, the app interface is automatically reversed, and a `.mod-rtl` class is added to the `body` element. Also the specific interface language is added to the `lang` attribute on the `html` element.
 - **The content of notes** can be written in left-to-right (LTR) languages, RTL languages, or mix both LTR and RTL languages within the same note. Obsidian automatically detects the direction of the language in the editor and adds the `dir` attribute to each line.
 
 When the user selects an RTL language as their interface language, or sets RTL as the default editor direction in Obsidian settings, the `dir="rtl"` attribute is added to the editor.
@@ -35,7 +35,7 @@ Obsidian is built using web technologies which means it uses existing CSS and HT
 
 ### Use logical properties, avoid directional properties
 
-Whenever you use CSS to add positioning and spacing, use logical properties and values such `start` and `end` rather than directional alternatives such as `left` and `right`. See the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values) for a full list of logical properties and values.
+Whenever you use CSS to add positioning and spacing, use logical properties and values such as `start` and `end` rather than directional alternatives such as `left` and `right`. See the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values) for a full list of logical properties and values.
 
 Prefer logical over directional properties:
 
@@ -113,9 +113,9 @@ In reading mode, the direction of lines is set automatically using the `dir="aut
 
 ### Icons are mirrored automatically
 
-Obsidian uses the [Lucide](https://lucide.dev/) icon library. Because almost all icons are either symmetric or have a LTR bias Obsidian automatically reverses the direction of icons when the interface is in RTL mode. To prevent reversing a specific icon in RTL mode you must explicitly unset the transformation.
+Obsidian uses the [Lucide](https://lucide.dev/) icon library. Because almost all icons are either symmetric or have an LTR bias, Obsidian automatically reverses the direction of icons when the interface is in RTL mode. To prevent reversing a specific icon in RTL mode you must explicitly unset the transformation.
 
-For example if you want `.left-icon` to not be mirrored for RTL languages:
+For example, if you want `.left-icon` to not be mirrored for RTL languages:
 
 ```css
 .mod-rtl svg.svg-icon.left-icon {
@@ -125,7 +125,7 @@ For example if you want `.left-icon` to not be mirrored for RTL languages:
 
 ### Use the direction variable for horizontal calculations
 
-The CSS variable `--direction` is available for calculations such as `translateX()` so that elements can be shifted horizontally according to language direction where logical values are not available.
+The CSS variable `--direction` is available for calculations such as `translateX()`, so that elements can be shifted horizontally according to language direction where logical values are not available.
 
 | Variable      | LTR value | RTL value |
 | ------------- | --------- | --------- |
