@@ -79,7 +79,7 @@ Once your submission is ready for review, you can sit back and wait for the Obsi
 
 > [!warning] Ignore merge conflicts
 > If you see in your PR GitHub's warning `This branch has conflicts that must be resolved`, just ignore it. Don't merge or rebase your PR.
-> Once your plugin passes all reviews, Obsidian team will resolve those conflicts before publishing your plugin.
+> Once your plugin passes all reviews, the Obsidian team will resolve those conflicts before publishing your plugin.
 
 ## Step 4: Address review comments
 
