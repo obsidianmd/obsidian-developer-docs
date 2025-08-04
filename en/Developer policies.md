@@ -4,6 +4,7 @@ All community plugins and themes added to the Obsidian directory must respect th
 
 These policies only apply to plugins listed in the official Obsidian directory. These policies do not apply to plugins installed outside of the Obsidian directory, but they are nonetheless good practices to follow.
 
+Also read the [[Submission requirements for plugins]]
 ## Policies
 
 ### Not allowed

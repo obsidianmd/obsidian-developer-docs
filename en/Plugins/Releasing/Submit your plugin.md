@@ -16,6 +16,8 @@ Before you submit your plugin, make sure you have the following files in the roo
 - A `LICENSE` that determines how others are allowed to use the plugin and its source code. If you need help to [add a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) for your plugin, refer to [Choose a License](https://choosealicense.com/).
 - A `manifest.json` that describes your plugin. For more information, refer to [[Manifest]].
 
+Also make sure that you follow the [[Developer policies]] and the [[Submission requirements for plugins|submission requirements]] before you submit your plugin.
+
 ## Step 1: Publish your plugin to GitHub
 
 > [!note] Template repositories
