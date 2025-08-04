@@ -1,6 +1,6 @@
 If you want users to be able to configure parts of your plugin themselves, you can expose them as _settings_.
 
-In this guide, you'll learn how to create a settings page like this 👇
+In this guide, you'll learn how you can create a settings page like this 👇
 
 ![[settings.png]]
 
@@ -11,11 +11,11 @@ import { Plugin } from 'obsidian';
 import { ExampleSettingTab } from './settings';
 
 interface ExamplePluginSettings {
-  dateFormat: string;
+  sampleValue: string;
 }
 
 const DEFAULT_SETTINGS: Partial<ExamplePluginSettings> = {
-  dateFormat: 'YYYY-MM-DD',
+  sampleValue: 'Lorem ipsum',
 };
 
 export default class ExamplePlugin extends Plugin {
@@ -48,7 +48,7 @@ First, you need to define, which settings you want the user to be able to config
 
 ```ts
 interface ExamplePluginSettings {
-  dateFormat: string;
+  sampleValue: string;
 }
 
 export default class ExamplePlugin extends Plugin {
@@ -101,7 +101,7 @@ Object.assign({}, DEFAULT_SETTINGS, await this.loadData())
 
 ```ts
 const DEFAULT_SETTINGS: Partial<ExamplePluginSettings> = {
-  dateFormat: 'YYYY-MM-DD',
+  sampleValue: 'Lorem ipsum',
 };
 ```
 
@@ -136,14 +136,13 @@ export class ExampleSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     new Setting(containerEl)
-      .setName('Date format')
-      .setDesc('Default date format')
+      .setName('Default value')
       .addText((text) =>
         text
-          .setPlaceholder('MMMM dd, yyyy')
-          .setValue(this.plugin.settings.dateFormat)
+          .setPlaceholder('Lorem ipsum')
+          .setValue(this.plugin.settings.sampleValue)
           .onChange(async (value) => {
-            this.plugin.settings.dateFormat = value;
+            this.plugin.settings.sampleValue = value;
             await this.plugin.saveSettings();
           })
       );
@@ -154,14 +153,200 @@ export class ExampleSettingTab extends PluginSettingTab {
 `display()` is where you build the content for the settings tab. For more information, refer to [[HTML elements]].
 
 `new Setting(containerEl)` appends a setting to the container element. This example only provides a text field using `addText()`, but there are several other setting types available.
+The [[Setting]] class also provides some functions like `setName` and `setDesc` to provide a name and a description to your setting.
 
 Update the settings object whenever the value of the text field changes, and then save it to disk:
 
 ```ts
 .onChange(async (value) => {
-  this.plugin.settings.dateFormat = value;
+  this.plugin.settings.sampleValue = value;
   await this.plugin.saveSettings();
 })
 ```
 
 Nice work! 💪 Your users will thank you for giving them a way to customize how they interact with your plugin. Before heading to the next guide, experiment with what you've learned maybe by adding another setting.
+
+## Available settings types
+
+### Headings
+
+If you have a lot of settings in your plugin it can be useful to separate settings into different sections.
+```ts
+new Setting(containerEl).setText("Defaults").setHeading();
+```
+Since everything in under the settings tab is settings, repeating the word "settings" or a synonym for every heading becomes redundant.
+General settings should be at the top of the settings tab and should not have a heading.
+### Text
+
+```ts
+new Setting(containerEl)  
+    .setName('Text input')  
+    .setDesc('Sample description')  
+    .addText((text) =>  
+       text  
+          .setPlaceholder('Lorem ipsum')  
+          .setValue(this.plugin.settings.sampleValue)  
+          .onChange(async (value) => {  
+            ...
+          })
+    );
+```
+
+### Textarea
+
+```ts
+new Setting(containerEl)  
+    .setName('Textarea') 
+    .addTextArea((text) => {  
+	    ...
+    });
+```
+
+### Search
+
+To provide users with a searchable list of available items you can implement the [[AbstractInputSuggest]] class and hook it up to a search. (but it also works with regular text inputs)
+
+![[settings-suggestions.png]]
+
+```ts
+new Setting(containerEl)  
+    .setName('Search')  
+    .addSearch(search => {  
+       search.setValue(this.plugin.settings.icon)  
+          .setPlaceholder('Search for an icon')  
+          .onChange(async (value) => {  
+             this.plugin.settings.icon = value;  
+             await this.plugin.saveSettings();  
+          });  
+       new IconSuggest(this.plugin.app, search.inputEl);  
+    });
+```
+
+
+### Moment format
+
+Obsidian uses the [moment.js](https://momentjs.com/) library for formatting dates.
+The library supports custom tokens to customize the look of the resulting string.
+The [[MomentFormatComponent]] can be used to render an example of the currently configured format.
+
+```ts
+const dateDesc = document.createDocumentFragment();  
+dateDesc.appendText('For a list of all available tokens, see the ');  
+dateDesc.createEl('a', {  
+    text: 'format reference',  
+    attr: { href: 'https://momentjs.com/docs/#/displaying/format/', target: '_blank' }  
+});  
+dateDesc.createEl('br');  
+dateDesc.appendText('Your current syntax looks like this: ');  
+const dateSampleEl = dateDesc.createEl('b', 'u-pop');  
+new Setting(containerEl)  
+    .setName('Date format')  
+    .setDesc(dateDesc)  
+    .addMomentFormat(momentFormat => momentFormat  
+       .setValue(this.plugin.settings.dateFormat)  
+       .setSampleEl(dateSampleEl)  
+       .setDefaultFormat('MMMM dd, yyyy')  
+       .onChange(async (value) => {  
+          this.plugin.settings.dateFormat = value;  
+          await this.plugin.saveSettings();  
+       }));
+```
+
+### Buttons
+```ts
+new Setting(containerEl)  
+    .setName('Button')  
+    .setDesc('With extra button')  
+    .addButton(button => button  
+       .setButtonText('Click me!')  
+       .onClick(() => {  
+          new Notice('This is a notice!');  
+       })  
+    )
+);
+```
+
+You can also add multiple buttons to the same setting for performing different actions.
+
+### Extra button
+
+This button can be added to any other settings type, to reset it to the default value, for example.
+
+```ts
+new Setting(containerEl)  
+    .setName('Button')  
+    .setDesc('With extra button')  
+    .addButton(button => button  
+       .setButtonText('Click me!')  
+       .onClick(() => {  
+         /...
+       })  
+    ).addExtraButton(button => button  
+    .setIcon('gear')  
+    .onClick(() => {  
+       //...  
+    })  
+);
+```
+
+### Toggle
+```ts
+new Setting(containerEl)  
+    .setName('Toggle')  
+    .addToggle(toggle => toggle  
+       .setValue(this.plugin.settings.localServer)  
+       .onChange(async (value) => {  
+          this.plugin.settings.localServer = value;  
+          await this.plugin.saveSettings();  
+          this.display();  
+       })  
+    );
+```
+
+### Dropdown
+```ts
+new Setting(containerEl)  
+    .setName('Dropdown')  
+    .addDropdown((dropdown) =>  
+       dropdown  
+          .addOption('1', 'Option 1')  
+          .addOption('2', 'Option 2')  
+          .addOption('3', 'Option 3')  
+          .setValue(this.plugin.settings.mySetting)  
+          .onChange(async (value) => {  
+             this.plugin.settings.mySetting = value;  
+             await this.plugin.saveSettings();  
+          })  
+    );
+```
+
+### Slider
+
+```ts
+new Setting(containerEl)  
+    .setName('Slider')  
+    .setDesc('with tooltip')  
+    .addSlider(slider => slider.setDynamicTooltip()  
+    );
+```
+
+### Progress bar
+
+While a slider allows for numeric input, a progress bar can show the progress of a task running in the background, but it can also be used to show a quota, for example the disk space used.
+
+```ts
+new Setting(containerEl)  
+    .setName('Progress bar')  
+    .setDesc('It\'s 50% done')  
+    .addProgressBar(bar => bar.setValue(50));
+```
+
+### Color picker
+
+```ts
+new Setting(containerEl)  
+    .setName('Color picker')  
+    .addColorPicker(color => color  
+       .setValue('#FFFFFF')  
+    );
+```
