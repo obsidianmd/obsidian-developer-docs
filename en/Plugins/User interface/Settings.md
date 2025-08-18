@@ -172,7 +172,7 @@ Nice work! 💪 Your users will thank you for giving them a way to customize how
 
 If you have a lot of settings in your plugin it can be useful to separate settings into different sections.
 ```ts
-new Setting(containerEl).setText("Defaults").setHeading();
+new Setting(containerEl).setName("Defaults").setHeading();
 ```
 Since everything in under the settings tab is settings, repeating the word "settings" or a synonym for every heading becomes redundant.
 General settings should be at the top of the settings tab and should not have a heading.
