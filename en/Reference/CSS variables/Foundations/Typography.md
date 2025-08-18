@@ -25,7 +25,7 @@ Obsidian uses both relative and fixed font sizes depending on the context.
 | `--font-ui-smaller` | `12px`        |                                                                  |
 | `--font-ui-small`   | `13px`        |                                                                  |
 | `--font-ui-medium`  | `15px`        |                                                                  |
-| `--font-ui-larger`  | `20px`        |                                                                  |
+| `--font-ui-large`   | `20px`        |                                                                  |
 
 ## Font weight
 
