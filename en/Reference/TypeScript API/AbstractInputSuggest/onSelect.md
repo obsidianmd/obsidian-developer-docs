@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Registers a callback to handle when a suggestion is selected by the user.
 
+ 1.4.10
+
 **Signature:**
 
 ```typescript

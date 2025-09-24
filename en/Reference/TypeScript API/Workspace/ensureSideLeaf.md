@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get side leaf or create one if one does not exist.
 
+ 1.7.2
+
 **Signature:**
 
 ```typescript

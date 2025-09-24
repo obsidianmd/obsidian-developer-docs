@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 A common interface that bridges the gap between CodeMirror 5 and CodeMirror 6.
 
+ 0.11.11
+
 **Signature:**
 
 ```typescript
@@ -21,36 +23,36 @@ export abstract class Editor
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`blur()`](Editor/blur) | <code>abstract</code> |  |
-|  [`exec(command)`](Editor/exec) | <code>abstract</code> |  |
-|  [`focus()`](Editor/focus) | <code>abstract</code> |  |
-|  [`getCursor(string)`](Editor/getCursor) | <code>abstract</code> |  |
-|  [`getDoc()`](Editor/getDoc) |  |  |
-|  [`getLine(line)`](Editor/getLine) | <code>abstract</code> | Get the text at line (0-indexed) |
-|  [`getRange(from, to)`](Editor/getRange) | <code>abstract</code> |  |
-|  [`getScrollInfo()`](Editor/getScrollInfo) | <code>abstract</code> |  |
-|  [`getSelection()`](Editor/getSelection) | <code>abstract</code> |  |
-|  [`getValue()`](Editor/getValue) | <code>abstract</code> |  |
-|  [`hasFocus()`](Editor/hasFocus) | <code>abstract</code> |  |
-|  [`lastLine()`](Editor/lastLine) | <code>abstract</code> |  |
-|  [`lineCount()`](Editor/lineCount) | <code>abstract</code> | Gets the number of lines in the document |
-|  [`listSelections()`](Editor/listSelections) | <code>abstract</code> |  |
-|  [`offsetToPos(offset)`](Editor/offsetToPos) | <code>abstract</code> |  |
-|  [`posToOffset(pos)`](Editor/posToOffset) | <code>abstract</code> |  |
-|  [`processLines(read, write, ignoreEmpty)`](Editor/processLines) |  |  |
-|  [`redo()`](Editor/redo) | <code>abstract</code> |  |
-|  [`refresh()`](Editor/refresh) | <code>abstract</code> |  |
-|  [`replaceRange(replacement, from, to, origin)`](Editor/replaceRange) | <code>abstract</code> |  |
-|  [`replaceSelection(replacement, origin)`](Editor/replaceSelection) | <code>abstract</code> |  |
-|  [`scrollIntoView(range, center)`](Editor/scrollIntoView) | <code>abstract</code> |  |
-|  [`scrollTo(x, y)`](Editor/scrollTo) | <code>abstract</code> |  |
-|  [`setCursor(pos, ch)`](Editor/setCursor) |  |  |
-|  [`setLine(n, text)`](Editor/setLine) |  |  |
-|  [`setSelection(anchor, head)`](Editor/setSelection) | <code>abstract</code> |  |
-|  [`setSelections(ranges, main)`](Editor/setSelections) | <code>abstract</code> |  |
-|  [`setValue(content)`](Editor/setValue) | <code>abstract</code> |  |
-|  [`somethingSelected()`](Editor/somethingSelected) |  |  |
-|  [`transaction(tx, origin)`](Editor/transaction) | <code>abstract</code> |  |
-|  [`undo()`](Editor/undo) | <code>abstract</code> |  |
-|  [`wordAt(pos)`](Editor/wordAt) | <code>abstract</code> |  |
+|  [`blur()`](Editor/blur) | <code>abstract</code> |  0.11.11 |
+|  [`exec(command)`](Editor/exec) | <code>abstract</code> |  0.12.2 |
+|  [`focus()`](Editor/focus) | <code>abstract</code> |  0.11.11 |
+|  [`getCursor(string)`](Editor/getCursor) | <code>abstract</code> |  0.11.11 |
+|  [`getDoc()`](Editor/getDoc) |  |  0.11.11 |
+|  [`getLine(line)`](Editor/getLine) | <code>abstract</code> | <p>Get the text at line (0-indexed)</p><p> 0.11.11</p> |
+|  [`getRange(from, to)`](Editor/getRange) | <code>abstract</code> |  0.11.11 |
+|  [`getScrollInfo()`](Editor/getScrollInfo) | <code>abstract</code> |  0.11.11 |
+|  [`getSelection()`](Editor/getSelection) | <code>abstract</code> |  0.11.11 |
+|  [`getValue()`](Editor/getValue) | <code>abstract</code> |  0.11.11 |
+|  [`hasFocus()`](Editor/hasFocus) | <code>abstract</code> |  0.11.11 |
+|  [`lastLine()`](Editor/lastLine) | <code>abstract</code> |  0.11.11 |
+|  [`lineCount()`](Editor/lineCount) | <code>abstract</code> | <p>Gets the number of lines in the document</p><p> 0.11.11</p> |
+|  [`listSelections()`](Editor/listSelections) | <code>abstract</code> |  0.11.11 |
+|  [`offsetToPos(offset)`](Editor/offsetToPos) | <code>abstract</code> |  0.11.11 |
+|  [`posToOffset(pos)`](Editor/posToOffset) | <code>abstract</code> |  0.11.11 |
+|  [`processLines(read, write, ignoreEmpty)`](Editor/processLines) |  |  0.13.26 |
+|  [`redo()`](Editor/redo) | <code>abstract</code> |  0.11.11 |
+|  [`refresh()`](Editor/refresh) | <code>abstract</code> |  0.11.11 |
+|  [`replaceRange(replacement, from, to, origin)`](Editor/replaceRange) | <code>abstract</code> |  0.11.11 |
+|  [`replaceSelection(replacement, origin)`](Editor/replaceSelection) | <code>abstract</code> |  0.11.11 |
+|  [`scrollIntoView(range, center)`](Editor/scrollIntoView) | <code>abstract</code> |  0.13.0 |
+|  [`scrollTo(x, y)`](Editor/scrollTo) | <code>abstract</code> |  0.11.11 |
+|  [`setCursor(pos, ch)`](Editor/setCursor) |  |  0.11.11 |
+|  [`setLine(n, text)`](Editor/setLine) |  |  0.11.11 |
+|  [`setSelection(anchor, head)`](Editor/setSelection) | <code>abstract</code> |  0.11.11 |
+|  [`setSelections(ranges, main)`](Editor/setSelections) | <code>abstract</code> |  0.12.11 |
+|  [`setValue(content)`](Editor/setValue) | <code>abstract</code> |  0.11.11 |
+|  [`somethingSelected()`](Editor/somethingSelected) |  |  0.11.11 |
+|  [`transaction(tx, origin)`](Editor/transaction) | <code>abstract</code> |  0.13.0 |
+|  [`undo()`](Editor/undo) | <code>abstract</code> |  0.11.11 |
+|  [`wordAt(pos)`](Editor/wordAt) | <code>abstract</code> |  0.11.11 |
 

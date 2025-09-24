@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting class
 
+ 0.9.7
 
 **Signature:**
 
@@ -26,34 +27,34 @@ export class Setting
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`components`](Setting/components) |  | [`BaseComponent`](BaseComponent)<code>[]</code> |  |
-|  [`controlEl`](Setting/controlEl) |  | <code>HTMLElement</code> |  |
-|  [`descEl`](Setting/descEl) |  | <code>HTMLElement</code> |  |
-|  [`infoEl`](Setting/infoEl) |  | <code>HTMLElement</code> |  |
-|  [`nameEl`](Setting/nameEl) |  | <code>HTMLElement</code> |  |
-|  [`settingEl`](Setting/settingEl) |  | <code>HTMLElement</code> |  |
+|  [`components`](Setting/components) |  | [`BaseComponent`](BaseComponent)<code>[]</code> |  0.9.7 |
+|  [`controlEl`](Setting/controlEl) |  | <code>HTMLElement</code> |  0.9.7 |
+|  [`descEl`](Setting/descEl) |  | <code>HTMLElement</code> |  0.9.7 |
+|  [`infoEl`](Setting/infoEl) |  | <code>HTMLElement</code> |  0.9.7 |
+|  [`nameEl`](Setting/nameEl) |  | <code>HTMLElement</code> |  0.9.7 |
+|  [`settingEl`](Setting/settingEl) |  | <code>HTMLElement</code> |  0.9.7 |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`addButton(cb)`](Setting/addButton) |  |  |
-|  [`addColorPicker(cb)`](Setting/addColorPicker) |  |  |
-|  [`addDropdown(cb)`](Setting/addDropdown) |  |  |
-|  [`addExtraButton(cb)`](Setting/addExtraButton) |  |  |
-|  [`addMomentFormat(cb)`](Setting/addMomentFormat) |  |  |
-|  [`addProgressBar(cb)`](Setting/addProgressBar) |  |  |
-|  [`addSearch(cb)`](Setting/addSearch) |  |  |
-|  [`addSlider(cb)`](Setting/addSlider) |  |  |
-|  [`addText(cb)`](Setting/addText) |  |  |
-|  [`addTextArea(cb)`](Setting/addTextArea) |  |  |
-|  [`addToggle(cb)`](Setting/addToggle) |  |  |
-|  [`clear()`](Setting/clear) |  |  |
-|  [`setClass(cls)`](Setting/setClass) |  |  |
-|  [`setDesc(desc)`](Setting/setDesc) |  |  |
-|  [`setDisabled(disabled)`](Setting/setDisabled) |  |  |
-|  [`setHeading()`](Setting/setHeading) |  |  |
-|  [`setName(name)`](Setting/setName) |  |  |
-|  [`setTooltip(tooltip, options)`](Setting/setTooltip) |  |  |
-|  [`then(cb)`](Setting/then) |  | Facilitates chaining |
+|  [`addButton(cb)`](Setting/addButton) |  |  0.9.7 |
+|  [`addColorPicker(cb)`](Setting/addColorPicker) |  |  0.16.0 |
+|  [`addDropdown(cb)`](Setting/addDropdown) |  |  0.9.7 |
+|  [`addExtraButton(cb)`](Setting/addExtraButton) |  |  0.9.16 |
+|  [`addMomentFormat(cb)`](Setting/addMomentFormat) |  |  0.9.7 |
+|  [`addProgressBar(cb)`](Setting/addProgressBar) |  |  1.4.4 |
+|  [`addSearch(cb)`](Setting/addSearch) |  |  0.9.21 |
+|  [`addSlider(cb)`](Setting/addSlider) |  |  0.9.7 |
+|  [`addText(cb)`](Setting/addText) |  |  0.9.7 |
+|  [`addTextArea(cb)`](Setting/addTextArea) |  |  0.9.7 |
+|  [`addToggle(cb)`](Setting/addToggle) |  |  0.9.7 |
+|  [`clear()`](Setting/clear) |  |  0.13.8 |
+|  [`setClass(cls)`](Setting/setClass) |  |  0.9.7 |
+|  [`setDesc(desc)`](Setting/setDesc) |  |  0.9.7 |
+|  [`setDisabled(disabled)`](Setting/setDisabled) |  |  1.2.3 |
+|  [`setHeading()`](Setting/setHeading) |  |  0.9.16 |
+|  [`setName(name)`](Setting/setName) |  |  0.12.16 |
+|  [`setTooltip(tooltip, options)`](Setting/setTooltip) |  |  1.1.0 |
+|  [`then(cb)`](Setting/then) |  | <p>Facilitates chaining</p><p> 0.9.20</p> |
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Tasks.add() method
 
+ 0.10.2
 
 **Signature:**
 

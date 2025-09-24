@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CachedMetadata.footnotes property
 
+ 1.6.6
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## EditorSuggest.setInstructions() method
 
+ 0.13.0
 
 **Signature:**
 

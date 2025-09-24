@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CapacitorAdapter.trashSystem() method
 
+ 1.7.2
 
 **Signature:**
 

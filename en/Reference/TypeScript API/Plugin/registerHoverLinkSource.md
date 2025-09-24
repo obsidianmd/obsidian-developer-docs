@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Registers a view with the 'Page preview' core plugin as an emitter of the 'hover-link' event.
 
+ 1.1.0
+
 **Signature:**
 
 ```typescript

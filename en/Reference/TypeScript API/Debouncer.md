@@ -21,5 +21,5 @@ export interface Debouncer<T extends unknown[], V>
 |  Method | Description |
 |  --- | --- |
 |  [`cancel()`](Debouncer/cancel) | Cancel any pending debounced function call. |
-|  [`run()`](Debouncer/run) | If there is any pending function call, clear the timer and call the function immediately. |
+|  [`run()`](Debouncer/run) | <p>If there is any pending function call, clear the timer and call the function immediately.</p><p> 1.4.4</p> |
 

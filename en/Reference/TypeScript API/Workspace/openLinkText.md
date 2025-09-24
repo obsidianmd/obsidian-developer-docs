@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.openLinkText() method
 
+ 0.16.0
 
 **Signature:**
 

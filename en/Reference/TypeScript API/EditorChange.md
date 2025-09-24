@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## EditorChange interface
 
+ 0.12.11
 
 **Signature:**
 

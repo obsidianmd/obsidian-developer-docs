@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## MarkdownEditView class
 
-This is the editor for Obsidian Mobile as well as the upcoming WYSIWYG editor.
+This is the editor for Obsidian Mobile as well as the WYSIWYG editor.
 
 **Signature:**
 

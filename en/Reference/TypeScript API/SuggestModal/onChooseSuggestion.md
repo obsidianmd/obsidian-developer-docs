@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SuggestModal.onChooseSuggestion() method
 
+ 1.5.7
 
 **Signature:**
 

@@ -22,7 +22,7 @@ renameFile(file: TAbstractFile, newPath: string): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>file</code> | [`TAbstractFile`](TAbstractFile) | the file to rename |
-|  <code>newPath</code> | <code>string</code> | the new path for the file |
+|  <code>newPath</code> | <code>string</code> | <p>the new path for the file</p><p> 0.11.0</p> |
 
 **Returns:**
 

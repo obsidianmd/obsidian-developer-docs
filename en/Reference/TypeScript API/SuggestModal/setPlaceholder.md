@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SuggestModal.setPlaceholder() method
 
+ 0.9.20
 
 **Signature:**
 

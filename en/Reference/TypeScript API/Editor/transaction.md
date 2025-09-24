@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Editor.transaction() method
 
+ 0.13.0
 
 **Signature:**
 

@@ -21,7 +21,7 @@ export function setTooltip(el: HTMLElement, tooltip: string, options?: TooltipOp
 |  --- | --- | --- |
 |  <code>el</code> | <code>HTMLElement</code> | The element to show the tooltip on |
 |  <code>tooltip</code> | <code>string</code> | The tooltip text to show |
-|  <code>options</code> | [`TooltipOptions`](TooltipOptions) | _(Optional)_ |
+|  <code>options</code> | [`TooltipOptions`](TooltipOptions) | _(Optional)_  1.4.4 |
 
 **Returns:**
 

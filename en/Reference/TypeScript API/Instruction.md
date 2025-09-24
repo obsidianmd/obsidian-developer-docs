@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Instruction interface
 
+ 0.9.20
 
 **Signature:**
 
@@ -20,6 +21,6 @@ export interface Instruction
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`command`](Instruction/command) |  | <code>string</code> |  |
-|  [`purpose`](Instruction/purpose) |  | <code>string</code> |  |
+|  [`command`](Instruction/command) |  | <code>string</code> |  0.9.20 |
+|  [`purpose`](Instruction/purpose) |  | <code>string</code> |  0.9.20 |
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## KeymapInfo interface
 
+ 0.10.4
 
 **Signature:**
 
@@ -20,6 +21,6 @@ export interface KeymapInfo
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`key`](KeymapInfo/key) |  | <code>string &#124; null</code> |  |
-|  [`modifiers`](KeymapInfo/modifiers) |  | <code>string &#124; null</code> |  |
+|  [`key`](KeymapInfo/key) |  | <code>string &#124; null</code> |  0.10.4 |
+|  [`modifiers`](KeymapInfo/modifiers) |  | <code>string &#124; null</code> |  0.10.4 |
 

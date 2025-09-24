@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SuggestModal class
 
+ 0.9.20
 
 **Signature:**
 
@@ -32,13 +33,13 @@ export abstract class SuggestModal<T> extends Modal implements ISuggestOwner<T>
 |  [`app`](Modal/app) |  | [`App`](App) | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`containerEl`](Modal/containerEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`contentEl`](Modal/contentEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`emptyStateText`](SuggestModal/emptyStateText) |  | <code>string</code> |  |
-|  [`inputEl`](SuggestModal/inputEl) |  | <code>HTMLInputElement</code> |  |
-|  [`limit`](SuggestModal/limit) |  | <code>number</code> |  |
+|  [`emptyStateText`](SuggestModal/emptyStateText) |  | <code>string</code> |  0.9.20 |
+|  [`inputEl`](SuggestModal/inputEl) |  | <code>HTMLInputElement</code> | @<!-- -->0.9.20 |
+|  [`limit`](SuggestModal/limit) |  | <code>number</code> |  0.9.20 |
 |  [`modalEl`](Modal/modalEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`resultContainerEl`](SuggestModal/resultContainerEl) |  | <code>HTMLElement</code> |  |
+|  [`resultContainerEl`](SuggestModal/resultContainerEl) |  | <code>HTMLElement</code> |  0.9.20 |
 |  [`scope`](Modal/scope) |  | [`Scope`](Scope) | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`shouldRestoreSelection`](Modal/shouldRestoreSelection) |  | <code>boolean</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`shouldRestoreSelection`](Modal/shouldRestoreSelection) |  | <code>boolean</code> | <p> 0.9.16</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`titleEl`](Modal/titleEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 
 ## Methods
@@ -46,17 +47,17 @@ export abstract class SuggestModal<T> extends Modal implements ISuggestOwner<T>
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`close()`](Modal/close) |  | <p>Hide the modal.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`getSuggestions(query)`](SuggestModal/getSuggestions) | <code>abstract</code> |  |
-|  [`onChooseSuggestion(item, evt)`](SuggestModal/onChooseSuggestion) | <code>abstract</code> |  |
+|  [`getSuggestions(query)`](SuggestModal/getSuggestions) | <code>abstract</code> |  1.5.7 |
+|  [`onChooseSuggestion(item, evt)`](SuggestModal/onChooseSuggestion) | <code>abstract</code> |  1.5.7 |
 |  [`onClose()`](Modal/onClose) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`onNoSuggestion()`](SuggestModal/onNoSuggestion) |  |  |
+|  [`onNoSuggestion()`](SuggestModal/onNoSuggestion) |  |  0.9.20 |
 |  [`onOpen()`](Modal/onOpen) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`open()`](Modal/open) |  | <p>Show the modal on the the active window. On mobile, the modal will animate on screen.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`renderSuggestion(value, el)`](SuggestModal/renderSuggestion) | <code>abstract</code> |  |
-|  [`selectActiveSuggestion(evt)`](SuggestModal/selectActiveSuggestion) |  |  |
-|  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  |  |
+|  [`open()`](Modal/open) |  | <p>Show the modal on the active window. On mobile, the modal will animate on screen.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`renderSuggestion(value, el)`](SuggestModal/renderSuggestion) | <code>abstract</code> |  1.5.7 |
+|  [`selectActiveSuggestion(evt)`](SuggestModal/selectActiveSuggestion) |  |  1.7.2 |
+|  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  |  0.9.20 |
 |  [`setContent(content)`](Modal/setContent) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`setInstructions(instructions)`](SuggestModal/setInstructions) |  |  |
-|  [`setPlaceholder(placeholder)`](SuggestModal/setPlaceholder) |  |  |
+|  [`setInstructions(instructions)`](SuggestModal/setInstructions) |  |  0.9.20 |
+|  [`setPlaceholder(placeholder)`](SuggestModal/setPlaceholder) |  |  0.9.20 |
 |  [`setTitle(title)`](Modal/setTitle) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 

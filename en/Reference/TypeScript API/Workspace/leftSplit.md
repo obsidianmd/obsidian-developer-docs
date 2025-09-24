@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.leftSplit property
 
+ 0.9.7
 
 **Signature:**
 

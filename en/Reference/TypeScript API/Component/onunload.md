@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Override this to unload your component
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

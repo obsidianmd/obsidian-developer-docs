@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CapacitorAdapter.writeBinary() method
 
+ 1.7.2
 
 **Signature:**
 

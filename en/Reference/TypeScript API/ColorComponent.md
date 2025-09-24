@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Color picker component. Values are by default 6-digit hash-prefixed hex strings like `#000000`<!-- -->.
 
+ 1.0.0
+
 **Signature:**
 
 ```typescript
@@ -28,20 +30,20 @@ export class ColorComponent extends ValueComponent<string>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`getValue()`](ColorComponent/getValue) |  |  |
-|  [`getValueHsl()`](ColorComponent/getValueHsl) |  |  |
-|  [`getValueRgb()`](ColorComponent/getValueRgb) |  |  |
-|  [`onChange(callback)`](ColorComponent/onChange) |  |  |
-|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
-|  [`setDisabled(disabled)`](ColorComponent/setDisabled) |  |  |
-|  [`setValue(value)`](ColorComponent/setValue) |  |  |
-|  [`setValueHsl(hsl)`](ColorComponent/setValueHsl) |  |  |
-|  [`setValueRgb(rgb)`](ColorComponent/setValueRgb) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`getValue()`](ColorComponent/getValue) |  |  1.0.0 |
+|  [`getValueHsl()`](ColorComponent/getValueHsl) |  |  1.0.0 |
+|  [`getValueRgb()`](ColorComponent/getValueRgb) |  |  1.0.0 |
+|  [`onChange(callback)`](ColorComponent/onChange) |  |  1.0.0 |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p> 0.9.7</p><p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
+|  [`setDisabled(disabled)`](ColorComponent/setDisabled) |  |  1.2.3 |
+|  [`setValue(value)`](ColorComponent/setValue) |  |  1.0.0 |
+|  [`setValueHsl(hsl)`](ColorComponent/setValueHsl) |  |  1.0.0 |
+|  [`setValueRgb(rgb)`](ColorComponent/setValueRgb) |  |  1.0.0 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

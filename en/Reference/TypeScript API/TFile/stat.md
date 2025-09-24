@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TFile.stat property
 
+ 0.9.7
 
 **Signature:**
 

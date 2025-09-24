@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TooltipOptions.gap property
 
+ 1.8.7
 
 **Signature:**
 

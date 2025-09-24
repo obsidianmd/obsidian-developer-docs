@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Plugin.registerView() method
 
+ 0.9.7
 
 **Signature:**
 

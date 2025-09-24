@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TooltipOptions.delay property
 
+ 1.4.11
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## RGB interface
 
+ 0.16.0
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## App class
 
+ 0.9.7
 
 **Signature:**
 
@@ -20,13 +21,13 @@ export class App
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`fileManager`](App/fileManager) |  | [`FileManager`](FileManager) |  |
-|  [`keymap`](App/keymap) |  | [`Keymap`](Keymap) |  |
-|  [`lastEvent`](App/lastEvent) |  | [`UserEvent`](UserEvent)<code> &#124; null</code> | The last known user interaction event, to help commands find out what modifier keys are pressed. |
-|  [`metadataCache`](App/metadataCache) |  | [`MetadataCache`](MetadataCache) |  |
-|  [`scope`](App/scope) |  | [`Scope`](Scope) |  |
-|  [`vault`](App/vault) |  | [`Vault`](Vault) |  |
-|  [`workspace`](App/workspace) |  | [`Workspace`](Workspace) |  |
+|  [`fileManager`](App/fileManager) |  | [`FileManager`](FileManager) |  0.11.0 |
+|  [`keymap`](App/keymap) |  | [`Keymap`](Keymap) |  0.9.7 |
+|  [`lastEvent`](App/lastEvent) |  | [`UserEvent`](UserEvent)<code> &#124; null</code> | <p>The last known user interaction event, to help commands find out what modifier keys are pressed.</p><p> 0.12.17</p> |
+|  [`metadataCache`](App/metadataCache) |  | [`MetadataCache`](MetadataCache) |  0.9.7 |
+|  [`scope`](App/scope) |  | [`Scope`](Scope) |  0.9.7 |
+|  [`vault`](App/vault) |  | [`Vault`](Vault) |  0.9.7 |
+|  [`workspace`](App/workspace) |  | [`Workspace`](Workspace) |  0.9.7 |
 
 ## Methods
 

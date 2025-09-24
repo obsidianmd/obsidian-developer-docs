@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ToggleComponent.toggleEl property
 
+ 0.9.7
 
 **Signature:**
 

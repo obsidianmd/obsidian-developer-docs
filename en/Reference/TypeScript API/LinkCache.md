@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## LinkCache interface
 
+ 0.9.7
 
 **Signature:**
 

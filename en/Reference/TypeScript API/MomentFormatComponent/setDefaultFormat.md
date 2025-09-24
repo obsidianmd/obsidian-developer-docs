@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Sets the default format when input is cleared. Also used for placeholder.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

@@ -33,3 +33,5 @@ createBinary(path: string, data: ArrayBuffer, options?: DataWriteOptions): Promi
 
 Error if file already exists
 
+ 0.9.7
+

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Bring a given leaf to the foreground. If the leaf is in a sidebar, the sidebar will be uncollapsed. `await` this function to ensure your view has been fully loaded and is not deferred.
 
+ 1.7.2
+
 **Signature:**
 
 ```typescript

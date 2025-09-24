@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceSidedock class
 
+ 0.15.4
 
 **Signature:**
 
@@ -21,21 +22,21 @@ export class WorkspaceSidedock extends WorkspaceSplit
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`collapsed`](WorkspaceSidedock/collapsed) |  | <code>boolean</code> |  |
+|  [`collapsed`](WorkspaceSidedock/collapsed) |  | <code>boolean</code> |  0.12.11 |
 |  [`parent`](WorkspaceSplit/parent) |  | [`WorkspaceParent`](WorkspaceParent) | <p>(Inherited from [WorkspaceSplit](WorkspaceSplit)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`collapse()`](WorkspaceSidedock/collapse) |  |  |
-|  [`expand()`](WorkspaceSidedock/expand) |  |  |
-|  [`getContainer()`](WorkspaceItem/getContainer) |  | <p>Get the root container parent item, which can be one of: - [WorkspaceRoot](WorkspaceRoot) - [WorkspaceWindow](WorkspaceWindow)</p><p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
-|  [`getRoot()`](WorkspaceItem/getRoot) |  | <p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
-|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`on(name: string, callback, ctx)`](Events/on) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`toggle()`](WorkspaceSidedock/toggle) |  |  |
-|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`collapse()`](WorkspaceSidedock/collapse) |  |  0.12.11 |
+|  [`expand()`](WorkspaceSidedock/expand) |  |  0.12.11 |
+|  [`getContainer()`](WorkspaceItem/getContainer) |  | <p>Get the root container parent item, which can be one of: - [WorkspaceRoot](WorkspaceRoot) - [WorkspaceWindow](WorkspaceWindow)</p><p> 0.15.4</p><p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
+|  [`getRoot()`](WorkspaceItem/getRoot) |  | <p> 0.10.2</p><p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
+|  [`off(name, callback)`](Events/off) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`on(name: string, callback, ctx)`](Events/on) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`toggle()`](WorkspaceSidedock/toggle) |  |  0.12.11 |
+|  [`trigger(name, data)`](Events/trigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
 

@@ -21,7 +21,7 @@ trashFile(file: TAbstractFile): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>file</code> | [`TAbstractFile`](TAbstractFile) |  |
+|  <code>file</code> | [`TAbstractFile`](TAbstractFile) |  1.6.6 |
 
 **Returns:**
 

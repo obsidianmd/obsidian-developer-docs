@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SearchComponent.clearButtonEl property
 
+ 0.9.21
 
 **Signature:**
 

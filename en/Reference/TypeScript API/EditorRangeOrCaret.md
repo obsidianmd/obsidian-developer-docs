@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## EditorRangeOrCaret interface
 
+ 0.12.11
 
 **Signature:**
 

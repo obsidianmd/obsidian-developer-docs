@@ -30,15 +30,15 @@ export class MetadataCache extends Events
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`fileToLinktext(file, sourcePath, omitMdExtension)`](MetadataCache/fileToLinktext) |  | <p>Generates a linktext for a file.</p><p>If file name is unique, use the filename. If not unique, use full path.</p> |
-|  [`getCache(path)`](MetadataCache/getCache) |  |  |
-|  [`getFileCache(file)`](MetadataCache/getFileCache) |  |  |
-|  [`getFirstLinkpathDest(linkpath, sourcePath)`](MetadataCache/getFirstLinkpathDest) |  | Get the best match for a linkpath. |
-|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`getCache(path)`](MetadataCache/getCache) |  |  0.14.5 |
+|  [`getFileCache(file)`](MetadataCache/getFileCache) |  |  0.9.21 |
+|  [`getFirstLinkpathDest(linkpath, sourcePath)`](MetadataCache/getFirstLinkpathDest) |  | <p>Get the best match for a linkpath.</p><p> 0.12.5</p> |
+|  [`off(name, callback)`](Events/off) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`on(name: 'changed', callback, ctx)`](MetadataCache/on('changed').md) |  | <p>Called when a file has been indexed, and its (updated) cache is now available.</p><p>Note: This is not called when a file is renamed for performance reasons. You must hook the vault rename event for those.</p> |
 |  [`on(name: 'deleted', callback, ctx)`](MetadataCache/on('deleted').md) |  | Called when a file has been deleted. A best-effort previous version of the cached metadata is presented, but it could be null in case the file was not successfully cached previously. |
 |  [`on(name: 'resolve', callback, ctx)`](MetadataCache/on('resolve').md) |  | Called when a file has been resolved for <code>resolvedLinks</code> and <code>unresolvedLinks</code>. This happens sometimes after a file has been indexed. |
 |  [`on(name: 'resolved', callback, ctx)`](MetadataCache/on('resolved').md) |  | Called when all files has been resolved. This will be fired each time files get modified after the initial load. |
-|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`trigger(name, data)`](Events/trigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
 

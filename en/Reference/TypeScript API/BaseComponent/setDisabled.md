@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## BaseComponent.setDisabled() method
 
+ 1.2.3
 
 **Signature:**
 

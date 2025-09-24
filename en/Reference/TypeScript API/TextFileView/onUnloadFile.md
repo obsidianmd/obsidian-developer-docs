@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TextFileView.onUnloadFile() method
 
+ 0.10.12
 
 **Signature:**
 

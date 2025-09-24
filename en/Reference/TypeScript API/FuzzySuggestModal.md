@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FuzzySuggestModal class
 
+ 0.9.20
 
 **Signature:**
 
@@ -30,13 +31,13 @@ export abstract class FuzzySuggestModal<T> extends SuggestModal<FuzzyMatch<T>>
 |  [`app`](Modal/app) |  | [`App`](App) | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`containerEl`](Modal/containerEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`contentEl`](Modal/contentEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`emptyStateText`](SuggestModal/emptyStateText) |  | <code>string</code> | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
-|  [`inputEl`](SuggestModal/inputEl) |  | <code>HTMLInputElement</code> | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
-|  [`limit`](SuggestModal/limit) |  | <code>number</code> | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`emptyStateText`](SuggestModal/emptyStateText) |  | <code>string</code> | <p> 0.9.20</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`inputEl`](SuggestModal/inputEl) |  | <code>HTMLInputElement</code> | <p>@<!-- -->0.9.20</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`limit`](SuggestModal/limit) |  | <code>number</code> | <p> 0.9.20</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`modalEl`](Modal/modalEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`resultContainerEl`](SuggestModal/resultContainerEl) |  | <code>HTMLElement</code> | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`resultContainerEl`](SuggestModal/resultContainerEl) |  | <code>HTMLElement</code> | <p> 0.9.20</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`scope`](Modal/scope) |  | [`Scope`](Scope) | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`shouldRestoreSelection`](Modal/shouldRestoreSelection) |  | <code>boolean</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`shouldRestoreSelection`](Modal/shouldRestoreSelection) |  | <code>boolean</code> | <p> 0.9.16</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 |  [`titleEl`](Modal/titleEl) |  | <code>HTMLElement</code> | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 
 ## Methods
@@ -44,20 +45,20 @@ export abstract class FuzzySuggestModal<T> extends SuggestModal<FuzzyMatch<T>>
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`close()`](Modal/close) |  | <p>Hide the modal.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`getItems()`](FuzzySuggestModal/getItems) | <code>abstract</code> |  |
-|  [`getItemText(item)`](FuzzySuggestModal/getItemText) | <code>abstract</code> |  |
-|  [`getSuggestions(query)`](FuzzySuggestModal/getSuggestions) |  |  |
-|  [`onChooseItem(item, evt)`](FuzzySuggestModal/onChooseItem) | <code>abstract</code> |  |
-|  [`onChooseSuggestion(item, evt)`](FuzzySuggestModal/onChooseSuggestion) |  |  |
+|  [`getItems()`](FuzzySuggestModal/getItems) | <code>abstract</code> |  0.9.20 |
+|  [`getItemText(item)`](FuzzySuggestModal/getItemText) | <code>abstract</code> |  0.9.20 |
+|  [`getSuggestions(query)`](FuzzySuggestModal/getSuggestions) |  |  0.9.20 |
+|  [`onChooseItem(item, evt)`](FuzzySuggestModal/onChooseItem) | <code>abstract</code> |  0.9.20 |
+|  [`onChooseSuggestion(item, evt)`](FuzzySuggestModal/onChooseSuggestion) |  |  0.9.20 |
 |  [`onClose()`](Modal/onClose) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`onNoSuggestion()`](SuggestModal/onNoSuggestion) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`onNoSuggestion()`](SuggestModal/onNoSuggestion) |  | <p> 0.9.20</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`onOpen()`](Modal/onOpen) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`open()`](Modal/open) |  | <p>Show the modal on the the active window. On mobile, the modal will animate on screen.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`renderSuggestion(item, el)`](FuzzySuggestModal/renderSuggestion) |  |  |
-|  [`selectActiveSuggestion(evt)`](SuggestModal/selectActiveSuggestion) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
-|  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`open()`](Modal/open) |  | <p>Show the modal on the active window. On mobile, the modal will animate on screen.</p><p>(Inherited from [Modal](Modal)<!-- -->)</p> |
+|  [`renderSuggestion(item, el)`](FuzzySuggestModal/renderSuggestion) |  |  0.9.20 |
+|  [`selectActiveSuggestion(evt)`](SuggestModal/selectActiveSuggestion) |  | <p> 1.7.2</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`selectSuggestion(value, evt)`](SuggestModal/selectSuggestion) |  | <p> 0.9.20</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`setContent(content)`](Modal/setContent) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
-|  [`setInstructions(instructions)`](SuggestModal/setInstructions) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
-|  [`setPlaceholder(placeholder)`](SuggestModal/setPlaceholder) |  | <p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`setInstructions(instructions)`](SuggestModal/setInstructions) |  | <p> 0.9.20</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
+|  [`setPlaceholder(placeholder)`](SuggestModal/setPlaceholder) |  | <p> 0.9.20</p><p>(Inherited from [SuggestModal](SuggestModal)<!-- -->)</p> |
 |  [`setTitle(title)`](Modal/setTitle) |  | <p>(Inherited from [Modal](Modal)<!-- -->)</p> |
 

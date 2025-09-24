@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Editor.focus() method
 
+ 0.11.11
 
 **Signature:**
 

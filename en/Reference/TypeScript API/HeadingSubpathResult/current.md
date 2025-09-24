@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## HeadingSubpathResult.current property
 
+ 0.9.16
 
 **Signature:**
 

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Push a scope onto the scope stack, setting it as the active scope to handle all key events.
 
+ 0.13.9
+
 **Signature:**
 
 ```typescript

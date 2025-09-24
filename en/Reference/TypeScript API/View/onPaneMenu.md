@@ -13,6 +13,8 @@ Populates the pane menu.
 
 (Replaces the previously removed `onHeaderMenu` and `onMoreOptionsMenu`<!-- -->)
 
+ 0.15.3
+
 **Signature:**
 
 ```typescript

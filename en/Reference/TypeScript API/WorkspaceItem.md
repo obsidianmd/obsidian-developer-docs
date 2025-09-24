@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceItem class
 
+ 0.10.2
 
 **Signature:**
 
@@ -21,17 +22,17 @@ export abstract class WorkspaceItem extends Events
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`parent`](WorkspaceItem/parent) | <code>abstract</code> | [`WorkspaceParent`](WorkspaceParent) | The direct parent of the leaf. |
+|  [`parent`](WorkspaceItem/parent) | <code>abstract</code> | [`WorkspaceParent`](WorkspaceParent) | <p>The direct parent of the leaf.</p><p> 1.6.6</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`getContainer()`](WorkspaceItem/getContainer) |  | Get the root container parent item, which can be one of: - [WorkspaceRoot](WorkspaceRoot) - [WorkspaceWindow](WorkspaceWindow) |
-|  [`getRoot()`](WorkspaceItem/getRoot) |  |  |
-|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`on(name: string, callback, ctx)`](Events/on) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`getContainer()`](WorkspaceItem/getContainer) |  | <p>Get the root container parent item, which can be one of: - [WorkspaceRoot](WorkspaceRoot) - [WorkspaceWindow](WorkspaceWindow)</p><p> 0.15.4</p> |
+|  [`getRoot()`](WorkspaceItem/getRoot) |  |  0.10.2 |
+|  [`off(name, callback)`](Events/off) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`on(name: string, callback, ctx)`](Events/on) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`trigger(name, data)`](Events/trigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
 

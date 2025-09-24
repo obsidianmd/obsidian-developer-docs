@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TooltipOptions.classes property
 
+ 1.8.7
 
 **Signature:**
 

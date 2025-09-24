@@ -30,5 +30,5 @@ moveLeafToPopout(leaf: WorkspaceLeaf, data?: WorkspaceWindowInitData): Workspace
 
 ## Exceptions
 
-Error if the app does not support popout windows (i.e. on mobile or if Electron version is too old)
+Error if the app does not support popout windows (i.e. on mobile or if Electron version is too old)  0.15.4
 

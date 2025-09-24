@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get all Markdown files in the vault.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

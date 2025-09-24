@@ -21,7 +21,7 @@ loadLocalStorage(key: string): any | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>key</code> | <code>string</code> |  |
+|  <code>key</code> | <code>string</code> |  1.8.7 |
 
 **Returns:**
 

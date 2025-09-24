@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text.
 
+ 1.5.7
+
 **Signature:**
 
 ```typescript

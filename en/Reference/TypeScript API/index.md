@@ -12,79 +12,79 @@ cssclasses: hide-title
 
 |  Class | Description |
 |  --- | --- |
-|  [`AbstractTextComponent`](AbstractTextComponent) |  |
-|  [`App`](App) |  |
-|  [`ButtonComponent`](ButtonComponent) |  |
-|  [`CapacitorAdapter`](CapacitorAdapter) | Implementation of the vault adapter for mobile devices. |
-|  [`ColorComponent`](ColorComponent) | Color picker component. Values are by default 6-digit hash-prefixed hex strings like <code>#000000</code>. |
-|  [`Component`](Component) |  |
-|  [`DropdownComponent`](DropdownComponent) |  |
-|  [`Events`](Events) |  |
-|  [`ExtraButtonComponent`](ExtraButtonComponent) |  |
-|  [`FileManager`](FileManager) | Manage the creation, deletion and renaming of files from the UI. |
+|  [`AbstractTextComponent`](AbstractTextComponent) |  0.9.21 |
+|  [`App`](App) |  0.9.7 |
+|  [`ButtonComponent`](ButtonComponent) |  0.9.7 |
+|  [`CapacitorAdapter`](CapacitorAdapter) | <p>Implementation of the vault adapter for mobile devices.</p><p> 1.7.2</p> |
+|  [`ColorComponent`](ColorComponent) | <p>Color picker component. Values are by default 6-digit hash-prefixed hex strings like <code>#000000</code>.</p><p> 1.0.0</p> |
+|  [`Component`](Component) |  0.9.7 |
+|  [`DropdownComponent`](DropdownComponent) |  0.9.7 |
+|  [`Events`](Events) |  0.9.7 |
+|  [`ExtraButtonComponent`](ExtraButtonComponent) |  0.9.7 |
+|  [`FileManager`](FileManager) | <p>Manage the creation, deletion and renaming of files from the UI.</p><p> 0.9.7</p> |
 |  [`FileSystemAdapter`](FileSystemAdapter) | Implementation of the vault adapter for desktop. |
-|  [`HoverPopover`](HoverPopover) |  |
-|  [`Keymap`](Keymap) | Manages keymap lifecycle for different [Scope](Scope)<!-- -->s. |
-|  [`MarkdownEditView`](MarkdownEditView) | This is the editor for Obsidian Mobile as well as the upcoming WYSIWYG editor. |
-|  [`MarkdownPreviewRenderer`](MarkdownPreviewRenderer) |  |
+|  [`HoverPopover`](HoverPopover) |  0.15.0 |
+|  [`Keymap`](Keymap) | <p>Manages keymap lifecycle for different [Scope](Scope)<!-- -->s.</p><p> 0.13.9</p> |
+|  [`MarkdownEditView`](MarkdownEditView) | This is the editor for Obsidian Mobile as well as the WYSIWYG editor. |
+|  [`MarkdownPreviewRenderer`](MarkdownPreviewRenderer) |  0.9.7 |
 |  [`MarkdownPreviewView`](MarkdownPreviewView) |  |
 |  [`MarkdownRenderChild`](MarkdownRenderChild) |  |
 |  [`MarkdownView`](MarkdownView) |  |
 |  [`Menu`](Menu) |  |
 |  [`MenuItem`](MenuItem) |  |
-|  [`MenuSeparator`](MenuSeparator) |  |
+|  [`MenuSeparator`](MenuSeparator) |  0.15.3 |
 |  [`MetadataCache`](MetadataCache) | Linktext is any internal link that is composed of a path and a subpath, such as 'My note\#Heading' Linkpath (or path) is the path part of a linktext Subpath is the heading/block ID part of a linktext. |
 |  [`Modal`](Modal) |  |
-|  [`MomentFormatComponent`](MomentFormatComponent) |  |
-|  [`Notice`](Notice) | Notification component. Use to present timely, high-value information. |
-|  [`ProgressBarComponent`](ProgressBarComponent) |  |
+|  [`MomentFormatComponent`](MomentFormatComponent) |  0.9.7 |
+|  [`Notice`](Notice) | <p>Notification component. Use to present timely, high-value information.</p><p> 0.9.7</p> |
+|  [`ProgressBarComponent`](ProgressBarComponent) |  1.4.4 |
 |  [`Scope`](Scope) | A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys. |
-|  [`SearchComponent`](SearchComponent) |  |
-|  [`Setting`](Setting) |  |
-|  [`SliderComponent`](SliderComponent) |  |
-|  [`Tasks`](Tasks) |  |
-|  [`TextAreaComponent`](TextAreaComponent) |  |
-|  [`TextComponent`](TextComponent) |  |
-|  [`TFile`](TFile) |  |
-|  [`TFolder`](TFolder) |  |
-|  [`ToggleComponent`](ToggleComponent) |  |
+|  [`SearchComponent`](SearchComponent) |  0.9.21 |
+|  [`Setting`](Setting) |  0.9.7 |
+|  [`SliderComponent`](SliderComponent) |  0.9.7 |
+|  [`Tasks`](Tasks) |  0.10.2 |
+|  [`TextAreaComponent`](TextAreaComponent) |  0.9.7 |
+|  [`TextComponent`](TextComponent) |  0.9.21 |
+|  [`TFile`](TFile) |  0.9.7 |
+|  [`TFolder`](TFolder) |  0.9.7 |
+|  [`ToggleComponent`](ToggleComponent) |  0.9.7 |
 |  [`Vault`](Vault) | Work with files and folders stored inside a vault. |
-|  [`Workspace`](Workspace) |  |
-|  [`WorkspaceFloating`](WorkspaceFloating) |  |
+|  [`Workspace`](Workspace) |  0.9.7 |
+|  [`WorkspaceFloating`](WorkspaceFloating) |  0.15.2 |
 |  [`WorkspaceLeaf`](WorkspaceLeaf) |  |
-|  [`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) |  |
+|  [`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) |  1.6.6 |
 |  [`WorkspaceRibbon`](WorkspaceRibbon) |  |
-|  [`WorkspaceRoot`](WorkspaceRoot) |  |
-|  [`WorkspaceSidedock`](WorkspaceSidedock) |  |
-|  [`WorkspaceSplit`](WorkspaceSplit) |  |
+|  [`WorkspaceRoot`](WorkspaceRoot) |  0.15.2 |
+|  [`WorkspaceSidedock`](WorkspaceSidedock) |  0.15.4 |
+|  [`WorkspaceSplit`](WorkspaceSplit) |  0.9.7 |
 |  [`WorkspaceTabs`](WorkspaceTabs) |  |
-|  [`WorkspaceWindow`](WorkspaceWindow) |  |
+|  [`WorkspaceWindow`](WorkspaceWindow) |  0.15.4 |
 
 ## Abstract Classes
 
 |  Abstract Class | Description |
 |  --- | --- |
-|  [`AbstractInputSuggest`](AbstractInputSuggest) | Attach to an <code>&lt;input&gt;</code> element or a <code>&lt;div contentEditable&gt;</code> to add type-ahead support. |
-|  [`BaseComponent`](BaseComponent) |  |
-|  [`EditableFileView`](EditableFileView) |  |
-|  [`Editor`](Editor) | A common interface that bridges the gap between CodeMirror 5 and CodeMirror 6. |
-|  [`EditorSuggest`](EditorSuggest) |  |
+|  [`AbstractInputSuggest`](AbstractInputSuggest) | <p>Attach to an <code>&lt;input&gt;</code> element or a <code>&lt;div contentEditable&gt;</code> to add type-ahead support.</p><p> 1.4.10</p> |
+|  [`BaseComponent`](BaseComponent) |  0.10.3 |
+|  [`EditableFileView`](EditableFileView) |  0.9.7 |
+|  [`Editor`](Editor) | <p>A common interface that bridges the gap between CodeMirror 5 and CodeMirror 6.</p><p> 0.11.11</p> |
+|  [`EditorSuggest`](EditorSuggest) |  0.12.17 |
 |  [`FileView`](FileView) |  |
-|  [`FuzzySuggestModal`](FuzzySuggestModal) |  |
-|  [`ItemView`](ItemView) |  |
-|  [`MarkdownRenderer`](MarkdownRenderer) |  |
-|  [`Plugin`](Plugin) |  |
+|  [`FuzzySuggestModal`](FuzzySuggestModal) |  0.9.20 |
+|  [`ItemView`](ItemView) |  0.9.7 |
+|  [`MarkdownRenderer`](MarkdownRenderer) |  0.9.7 |
+|  [`Plugin`](Plugin) |  0.9.7 |
 |  [`PluginSettingTab`](PluginSettingTab) | Provides a unified interface for users to configure the plugin. |
 |  [`PopoverSuggest`](PopoverSuggest) | Base class for adding a type-ahead popover. |
 |  [`SettingTab`](SettingTab) |  |
-|  [`SuggestModal`](SuggestModal) |  |
-|  [`TAbstractFile`](TAbstractFile) | This can be either a <code>TFile</code> or a <code>TFolder</code>. |
-|  [`TextFileView`](TextFileView) | <p>This class implements a plaintext-based editable file view, which can be loaded and saved given an editor.</p><p>Note that by default, this view only saves when it's closing. To implement auto-save, your editor should call <code>this.requestSave()</code> when the content is changed.</p> |
-|  [`ValueComponent`](ValueComponent) |  |
-|  [`View`](View) |  |
-|  [`WorkspaceContainer`](WorkspaceContainer) |  |
-|  [`WorkspaceItem`](WorkspaceItem) |  |
-|  [`WorkspaceParent`](WorkspaceParent) |  |
+|  [`SuggestModal`](SuggestModal) |  0.9.20 |
+|  [`TAbstractFile`](TAbstractFile) | <p>This can be either a <code>TFile</code> or a <code>TFolder</code>.</p><p> 0.9.7</p> |
+|  [`TextFileView`](TextFileView) | <p>This class implements a plaintext-based editable file view, which can be loaded and saved given an editor.</p><p>Note that by default, this view only saves when it's closing. To implement auto-save, your editor should call <code>this.requestSave()</code> when the content is changed.</p><p> 0.10.12</p> |
+|  [`ValueComponent`](ValueComponent) |  0.9.7 |
+|  [`View`](View) |  0.9.7 |
+|  [`WorkspaceContainer`](WorkspaceContainer) |  0.15.4 |
+|  [`WorkspaceItem`](WorkspaceItem) |  0.10.2 |
+|  [`WorkspaceParent`](WorkspaceParent) |  0.9.7 |
 
 ## Enumerations
 
@@ -101,14 +101,14 @@ cssclasses: hide-title
 |  [`arrayBufferToHex(data)`](arrayBufferToHex) |  |
 |  [`base64ToArrayBuffer(base64)`](base64ToArrayBuffer) |  |
 |  [`debounce(cb, timeout, resetTimer)`](debounce) | A standard debounce function. Use this to have a time-delayed function only be called once in a given timeframe. |
-|  [`displayTooltip(newTargetEl, content, options)`](displayTooltip) | <p>Manually trigger a tooltip that will appear over the provided element.</p><p>To display a tooltip on hover, use [setTooltip()](setTooltip) instead.</p> |
+|  [`displayTooltip(newTargetEl, content, options)`](displayTooltip) | <p>Manually trigger a tooltip that will appear over the provided element.</p><p>To display a tooltip on hover, use [setTooltip()](setTooltip) instead.</p><p> 1.8.7</p> |
 |  [`finishRenderMath()`](finishRenderMath) | Flush the MathJax stylesheet. |
 |  [`getAllTags(cache)`](getAllTags) | Combines all tags from frontmatter and note content into a single array. |
 |  [`getBlobArrayBuffer(blob)`](getBlobArrayBuffer) |  |
-|  [`getFrontMatterInfo(content)`](getFrontMatterInfo) | Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text. |
+|  [`getFrontMatterInfo(content)`](getFrontMatterInfo) | <p>Given the contents of a file, get information about the frontmatter of the file, including whether there is a frontmatter block, the offsets of where it starts and ends, and the frontmatter text.</p><p> 1.5.7</p> |
 |  [`getIcon(iconId)`](getIcon) | Create an SVG from an iconId. Returns null if no icon associated with the iconId. |
 |  [`getIconIds()`](getIconIds) | Get the list of registered icons. |
-|  [`getLanguage()`](getLanguage) | Get the ISO code for the currently configured app language. Defaults to 'en'. See [https://github.com/obsidianmd/obsidian-translations?tab=readme-ov-file\#existing-languages](https://github.com/obsidianmd/obsidian-translations?tab=readme-ov-file#existing-languages) for list of options. |
+|  [`getLanguage()`](getLanguage) | <p>Get the ISO code for the currently configured app language. Defaults to 'en'. See [https://github.com/obsidianmd/obsidian-translations?tab=readme-ov-file\#existing-languages](https://github.com/obsidianmd/obsidian-translations?tab=readme-ov-file#existing-languages) for list of options.</p><p> 1.8.7</p> |
 |  [`getLinkpath(linktext)`](getLinkpath) | Converts the linktext to a linkpath. |
 |  [`hexToArrayBuffer(hex)`](hexToArrayBuffer) |  |
 |  [`htmlToMarkdown(html)`](htmlToMarkdown) | Converts HTML to a Markdown string. |
@@ -131,7 +131,7 @@ cssclasses: hide-title
 |  [`renderMatches(el, text, matches, offset)`](renderMatches) |  |
 |  [`renderMath(source, display)`](renderMath) | Render some LaTeX math using the MathJax engine. Returns an HTMLElement. Requires calling <code>finishRenderMath</code> when rendering is all done to flush the MathJax stylesheet. |
 |  [`renderResults(el, text, result, offset)`](renderResults) |  |
-|  [`request(request)`](request) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. Returns the text value of the response. |
+|  [`request(request)`](request) | <p>Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. Returns the text value of the response.</p><p> 0.12.11</p> |
 |  [`requestUrl(request)`](requestUrl) | Similar to <code>fetch()</code>, request a URL using HTTP/HTTPS, without any CORS restrictions. |
 |  [`requireApiVersion(version)`](requireApiVersion) | Returns true if the API version is equal or higher than the requested version. Use this to limit functionality that require specific API versions to avoid crashing on older Obsidian builds. |
 |  [`resolveSubpath(cache, subpath)`](resolveSubpath) | Resolve the given subpath to a reference in the MetadataCache. |
@@ -147,8 +147,8 @@ cssclasses: hide-title
 
 |  Interface | Description |
 |  --- | --- |
-|  [`BlockCache`](BlockCache) |  |
-|  [`BlockSubpathResult`](BlockSubpathResult) |  |
+|  [`BlockCache`](BlockCache) |  0.11.13 |
+|  [`BlockSubpathResult`](BlockSubpathResult) |  0.13.26 |
 |  [`CachedMetadata`](CachedMetadata) |  |
 |  [`CacheItem`](CacheItem) |  |
 |  [`CloseableComponent`](CloseableComponent) | A closeable component that can get dismissed via the Android 'back' button. |
@@ -156,49 +156,49 @@ cssclasses: hide-title
 |  [`DataAdapter`](DataAdapter) | Work directly with files and folders inside a vault. If possible prefer using the [Vault](Vault) API over this. |
 |  [`DataWriteOptions`](DataWriteOptions) |  |
 |  [`Debouncer`](Debouncer) |  |
-|  [`EditorChange`](EditorChange) |  |
-|  [`EditorPosition`](EditorPosition) |  |
-|  [`EditorRange`](EditorRange) |  |
-|  [`EditorRangeOrCaret`](EditorRangeOrCaret) |  |
-|  [`EditorScrollInfo`](EditorScrollInfo) |  |
-|  [`EditorSelection`](EditorSelection) |  |
-|  [`EditorSelectionOrCaret`](EditorSelectionOrCaret) |  |
-|  [`EditorSuggestContext`](EditorSuggestContext) |  |
-|  [`EditorSuggestTriggerInfo`](EditorSuggestTriggerInfo) |  |
+|  [`EditorChange`](EditorChange) |  0.12.11 |
+|  [`EditorPosition`](EditorPosition) |  0.12.11 |
+|  [`EditorRange`](EditorRange) |  0.12.11 |
+|  [`EditorRangeOrCaret`](EditorRangeOrCaret) |  0.12.11 |
+|  [`EditorScrollInfo`](EditorScrollInfo) |  0.15.0 |
+|  [`EditorSelection`](EditorSelection) |  0.12.11 |
+|  [`EditorSelectionOrCaret`](EditorSelectionOrCaret) |  0.12.11 |
+|  [`EditorSuggestContext`](EditorSuggestContext) |  0.12.17 |
+|  [`EditorSuggestTriggerInfo`](EditorSuggestTriggerInfo) |  0.12.17 |
 |  [`EditorTransaction`](EditorTransaction) |  |
-|  [`EmbedCache`](EmbedCache) |  |
+|  [`EmbedCache`](EmbedCache) |  0.9.7 |
 |  [`EventRef`](EventRef) |  |
 |  [`FileStats`](FileStats) |  |
 |  [`FootnoteCache`](FootnoteCache) |  |
 |  [`FootnoteRefCache`](FootnoteRefCache) |  |
-|  [`FootnoteSubpathResult`](FootnoteSubpathResult) |  |
+|  [`FootnoteSubpathResult`](FootnoteSubpathResult) |  1.7.2 |
 |  [`FrontMatterCache`](FrontMatterCache) |  |
 |  [`FrontMatterInfo`](FrontMatterInfo) |  |
 |  [`FrontmatterLinkCache`](FrontmatterLinkCache) |  |
-|  [`FuzzyMatch`](FuzzyMatch) |  |
+|  [`FuzzyMatch`](FuzzyMatch) |  0.9.20 |
 |  [`HeadingCache`](HeadingCache) |  |
-|  [`HeadingSubpathResult`](HeadingSubpathResult) |  |
+|  [`HeadingSubpathResult`](HeadingSubpathResult) |  0.9.16 |
 |  [`Hotkey`](Hotkey) |  |
 |  [`HoverLinkSource`](HoverLinkSource) |  |
-|  [`HoverParent`](HoverParent) |  |
-|  [`HSL`](HSL) |  |
-|  [`Instruction`](Instruction) |  |
+|  [`HoverParent`](HoverParent) |  0.11.13 |
+|  [`HSL`](HSL) |  0.16.0 |
+|  [`Instruction`](Instruction) |  0.9.20 |
 |  [`ISuggestOwner`](ISuggestOwner) |  |
 |  [`KeymapContext`](KeymapContext) |  |
 |  [`KeymapEventHandler`](KeymapEventHandler) |  |
-|  [`KeymapInfo`](KeymapInfo) |  |
-|  [`LinkCache`](LinkCache) |  |
+|  [`KeymapInfo`](KeymapInfo) |  0.10.4 |
+|  [`LinkCache`](LinkCache) |  0.9.7 |
 |  [`ListedFiles`](ListedFiles) |  |
 |  [`ListItemCache`](ListItemCache) |  |
 |  [`LivePreviewStateType`](LivePreviewStateType) | The object stored in the view plugin [livePreviewState](livePreviewState) |
 |  [`Loc`](Loc) | Location within a Markdown document |
 |  [`MarkdownFileInfo`](MarkdownFileInfo) |  |
-|  [`MarkdownPostProcessor`](MarkdownPostProcessor) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into [MarkdownPostProcessorContext.addChild()](MarkdownPostProcessorContext/addChild)</p> |
+|  [`MarkdownPostProcessor`](MarkdownPostProcessor) | <p>A post processor receives an element which is a section of the preview.</p><p>Post processors can mutate the DOM to render various things, such as mermaid graphs, latex equations, or custom controls.</p><p>If your post processor requires lifecycle management, for example, to clear an interval, kill a subprocess, etc when this element is removed from the app, look into [MarkdownPostProcessorContext.addChild()](MarkdownPostProcessorContext/addChild)</p><p> 0.10.12</p> |
 |  [`MarkdownPostProcessorContext`](MarkdownPostProcessorContext) |  |
 |  [`MarkdownPreviewEvents`](MarkdownPreviewEvents) | \* |
 |  [`MarkdownSectionInformation`](MarkdownSectionInformation) |  |
 |  [`MarkdownSubView`](MarkdownSubView) |  |
-|  [`MenuPositionDef`](MenuPositionDef) |  |
+|  [`MenuPositionDef`](MenuPositionDef) |  1.1.0 |
 |  [`ObsidianProtocolData`](ObsidianProtocolData) |  |
 |  [`OpenViewState`](OpenViewState) |  |
 |  [`PluginManifest`](PluginManifest) | Metadata about a Community plugin. |
@@ -206,17 +206,17 @@ cssclasses: hide-title
 |  [`Pos`](Pos) | Describes a text range in a Markdown document. |
 |  [`Reference`](Reference) | Base interface for items that point to a different location. |
 |  [`ReferenceCache`](ReferenceCache) |  |
-|  [`ReferenceLinkCache`](ReferenceLinkCache) |  |
+|  [`ReferenceLinkCache`](ReferenceLinkCache) |  1.8.7 |
 |  [`RequestUrlParam`](RequestUrlParam) |  |
 |  [`RequestUrlResponse`](RequestUrlResponse) |  |
 |  [`RequestUrlResponsePromise`](RequestUrlResponsePromise) |  |
-|  [`RGB`](RGB) |  |
-|  [`SearchResult`](SearchResult) |  |
-|  [`SearchResultContainer`](SearchResultContainer) |  |
+|  [`RGB`](RGB) |  0.16.0 |
+|  [`SearchResult`](SearchResult) |  0.9.21 |
+|  [`SearchResultContainer`](SearchResultContainer) |  0.9.21 |
 |  [`SectionCache`](SectionCache) |  |
 |  [`Stat`](Stat) |  |
 |  [`SubpathResult`](SubpathResult) |  |
-|  [`TagCache`](TagCache) |  |
+|  [`TagCache`](TagCache) |  0.9.7 |
 |  [`TooltipOptions`](TooltipOptions) |  |
 |  [`ViewState`](ViewState) |  |
 |  [`ViewStateResult`](ViewStateResult) |  |
@@ -233,7 +233,7 @@ cssclasses: hide-title
 |  [`editorViewField`](editorViewField) | This is now deprecated - it is now mapped directly to <code>editorInfoField</code>, which return a MarkdownFileInfo, which may be a MarkdownView but not necessarily. |
 |  [`livePreviewState`](livePreviewState) |  |
 |  [`moment`](moment) |  |
-|  [`Platform`](Platform) |  |
+|  [`Platform`](Platform) |  0.12.2 |
 
 ## Type Aliases
 

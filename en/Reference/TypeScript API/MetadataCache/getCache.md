@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MetadataCache.getCache() method
 
+ 0.14.5
 
 **Signature:**
 

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 The last known user interaction event, to help commands find out what modifier keys are pressed.
 
+ 0.12.17
+
 **Signature:**
 
 ```typescript

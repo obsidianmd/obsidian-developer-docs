@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Editor.setSelections() method
 
+ 0.12.11
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SearchResultContainer interface
 
+ 0.9.21
 
 **Signature:**
 

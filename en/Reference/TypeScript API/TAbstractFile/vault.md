@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TAbstractFile.vault property
 
+ 0.9.7
 
 **Signature:**
 

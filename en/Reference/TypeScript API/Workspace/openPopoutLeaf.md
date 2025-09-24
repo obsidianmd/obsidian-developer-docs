@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Open a new popout window with a single new leaf and return that leaf. Only works on the desktop app.
 
+ 0.15.4
+
 **Signature:**
 
 ```typescript

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Current suggestion context, containing the result of `onTrigger`<!-- -->. This will be null any time the EditorSuggest is not supposed to run.
 
+ 0.12.17
+
 **Signature:**
 
 ```typescript

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ItemView.addAction() method
 
+ 1.1.0
 
 **Signature:**
 

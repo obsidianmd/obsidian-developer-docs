@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## BlockCache interface
 
+ 0.11.13
 
 **Signature:**
 

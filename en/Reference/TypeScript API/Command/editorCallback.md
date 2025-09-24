@@ -31,4 +31,5 @@ this.addCommand({
   }
 });
 ```
+ 0.12.2
 

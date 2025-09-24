@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Manage the creation, deletion and renaming of files from the UI.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

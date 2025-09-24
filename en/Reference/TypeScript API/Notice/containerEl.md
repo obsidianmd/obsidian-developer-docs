@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Notice.containerEl property
 
+ 1.8.7
 
 **Signature:**
 

@@ -22,7 +22,7 @@ delete(file: TAbstractFile, force?: boolean): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>file</code> | [`TAbstractFile`](TAbstractFile) | The file or folder to be deleted |
-|  <code>force</code> | <code>boolean</code> | _(Optional)_ Should attempt to delete folder even if it has hidden children |
+|  <code>force</code> | <code>boolean</code> | <p>_(Optional)_ Should attempt to delete folder even if it has hidden children</p><p> 0.9.7</p> |
 
 **Returns:**
 

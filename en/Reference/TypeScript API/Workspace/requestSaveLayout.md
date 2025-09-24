@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Save the state of the current workspace layout.
 
+ 0.16.0
+
 **Signature:**
 
 ```typescript

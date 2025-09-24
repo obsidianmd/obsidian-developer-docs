@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ButtonComponent.onClick() method
 
+ 0.12.16
 
 **Signature:**
 

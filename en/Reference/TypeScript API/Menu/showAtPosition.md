@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Menu.showAtPosition() method
 
+ 1.1.0
 
 **Signature:**
 

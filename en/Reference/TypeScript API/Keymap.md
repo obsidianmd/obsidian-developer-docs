@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Manages keymap lifecycle for different [Scope](Scope)<!-- -->s.
 
+ 0.13.9
+
 **Signature:**
 
 ```typescript
@@ -21,8 +23,8 @@ export class Keymap
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`isModEvent(evt)`](Keymap/isModEvent) | <code>static</code> | Translates an event into the type of pane that should open. Returns 'tab' if the modifier key Cmd/Ctrl is pressed OR if this is a middle-click MouseEvent. Returns 'split' if Cmd/Ctrl+Alt is pressed. Returns 'window' if Cmd/Ctrl+Alt+Shift is pressed. |
-|  [`isModifier(evt, modifier)`](Keymap/isModifier) | <code>static</code> | Checks whether the modifier key is pressed during this event. |
-|  [`popScope(scope)`](Keymap/popScope) |  | Remove a scope from the scope stack. If the given scope is active, the next scope in the stack will be made active. |
-|  [`pushScope(scope)`](Keymap/pushScope) |  | Push a scope onto the scope stack, setting it as the active scope to handle all key events. |
+|  [`isModEvent(evt)`](Keymap/isModEvent) | <code>static</code> | <p>Translates an event into the type of pane that should open. Returns 'tab' if the modifier key Cmd/Ctrl is pressed OR if this is a middle-click MouseEvent. Returns 'split' if Cmd/Ctrl+Alt is pressed. Returns 'window' if Cmd/Ctrl+Alt+Shift is pressed.</p><p> 0.16.0</p> |
+|  [`isModifier(evt, modifier)`](Keymap/isModifier) | <code>static</code> | <p>Checks whether the modifier key is pressed during this event.</p><p> 0.12.17</p> |
+|  [`popScope(scope)`](Keymap/popScope) |  | <p>Remove a scope from the scope stack. If the given scope is active, the next scope in the stack will be made active.</p><p> 0.13.9</p> |
+|  [`pushScope(scope)`](Keymap/pushScope) |  | <p>Push a scope onto the scope stack, setting it as the active scope to handle all key events.</p><p> 0.13.9</p> |
 

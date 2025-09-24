@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Lightness integer value between 0 and 100
 
+ 0.16.0
+
 **Signature:**
 
 ```typescript

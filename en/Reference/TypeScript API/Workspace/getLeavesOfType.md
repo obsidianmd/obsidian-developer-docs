@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get all leaves of a given type.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

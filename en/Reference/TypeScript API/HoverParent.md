@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## HoverParent interface
 
+ 0.11.13
 
 **Signature:**
 
@@ -20,5 +21,5 @@ export interface HoverParent
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`hoverPopover`](HoverParent/hoverPopover) |  | [`HoverPopover`](HoverPopover)<code> &#124; null</code> |  |
+|  [`hoverPopover`](HoverParent/hoverPopover) |  | [`HoverPopover`](HoverPopover)<code> &#124; null</code> |  0.11.13 |
 

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Attach to an `<input>` element or a `<div contentEditable>` to add type-ahead support.
 
+ 1.4.10
+
 **Signature:**
 
 ```typescript
@@ -29,7 +31,7 @@ export abstract class AbstractInputSuggest<T> extends PopoverSuggest<T>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`app`](PopoverSuggest/app) |  | [`App`](App) | <p>(Inherited from [PopoverSuggest](PopoverSuggest)<!-- -->)</p> |
-|  [`limit`](AbstractInputSuggest/limit) |  | <code>number</code> | Limit to the number of elements rendered at once. Set to 0 to disable. Defaults to 100. |
+|  [`limit`](AbstractInputSuggest/limit) |  | <code>number</code> | <p>Limit to the number of elements rendered at once. Set to 0 to disable. Defaults to 100.</p><p> 1.4.10</p> |
 |  [`scope`](PopoverSuggest/scope) |  | [`Scope`](Scope) | <p>(Inherited from [PopoverSuggest](PopoverSuggest)<!-- -->)</p> |
 
 ## Methods
@@ -37,11 +39,11 @@ export abstract class AbstractInputSuggest<T> extends PopoverSuggest<T>
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`close()`](PopoverSuggest/close) |  | <p>(Inherited from [PopoverSuggest](PopoverSuggest)<!-- -->)</p> |
-|  [`getSuggestions(query)`](AbstractInputSuggest/getSuggestions) | <p><code>protected</code></p><p><code>abstract</code></p> |  |
-|  [`getValue()`](AbstractInputSuggest/getValue) |  | Gets the value from the input element. |
-|  [`onSelect(callback)`](AbstractInputSuggest/onSelect) |  | Registers a callback to handle when a suggestion is selected by the user. |
+|  [`getSuggestions(query)`](AbstractInputSuggest/getSuggestions) | <p><code>protected</code></p><p><code>abstract</code></p> |  1.5.7 |
+|  [`getValue()`](AbstractInputSuggest/getValue) |  | <p>Gets the value from the input element.</p><p> 1.4.10</p> |
+|  [`onSelect(callback)`](AbstractInputSuggest/onSelect) |  | <p>Registers a callback to handle when a suggestion is selected by the user.</p><p> 1.4.10</p> |
 |  [`open()`](PopoverSuggest/open) |  | <p>(Inherited from [PopoverSuggest](PopoverSuggest)<!-- -->)</p> |
 |  [`renderSuggestion(value, el)`](PopoverSuggest/renderSuggestion) | <code>abstract</code> | <p>(Inherited from [PopoverSuggest](PopoverSuggest)<!-- -->)</p> |
-|  [`selectSuggestion(value, evt)`](AbstractInputSuggest/selectSuggestion) |  |  |
-|  [`setValue(value)`](AbstractInputSuggest/setValue) |  | Sets the value into the input element. |
+|  [`selectSuggestion(value, evt)`](AbstractInputSuggest/selectSuggestion) |  |  1.6.6 |
+|  [`setValue(value)`](AbstractInputSuggest/setValue) |  | <p>Sets the value into the input element.</p><p> 1.4.10</p> |
 

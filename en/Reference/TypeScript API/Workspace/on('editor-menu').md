@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the user opens the context menu on an editor.
 
+ 1.1.0
+
 **Signature:**
 
 ```typescript

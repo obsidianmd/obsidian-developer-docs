@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when changes to an editor has been applied, either programmatically or from a user event.
 
+ 1.1.1
+
 **Signature:**
 
 ```typescript
