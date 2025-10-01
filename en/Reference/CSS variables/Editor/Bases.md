@@ -21,6 +21,7 @@ These variables apply to the entire Properties container.
 | `--bases-embed-border-color`    | Border color around base view when embedded              |
 | `--bases-embed-border-radius`   | Radius around base view when embedded                    |
 | `--bases-filter-menu-width`     | Width of the filter menu                                 |
+| `--bases-view-padding-bottom`   | Height of padding at the end of the file                 |
 
 ### Table view
 
@@ -46,6 +47,7 @@ These variables apply to the entire Properties container.
 | `--bases-table-cell-shadow-active`       |
 | `--bases-table-cell-background-active`   |
 | `--bases-table-cell-background-disabled` |
+| `--bases-table-cell-edge-padding`        |
 
 ### Cards view
 
