@@ -62,7 +62,7 @@ Complete this section if you have `isDesktopOnly` set to false in your manifest.
 
 - [ ] Do optimize your plugin's load time. [Detailed guide](https://docs.obsidian.md/Plugins/Guides/Optimizing+plugin+load+time).
 - [ ] Don't iterate all files to find a file or folder by its path. [Learn more](https://docs.obsidian.md/Plugins/Releasing/Plugin+guidelines#Avoid+iterating+all+files+to+find+a+file+by+its+path).
-- [ ] If you want your plugins to be compatible with Obsidian 1.7.2+ (currently in early access), update your plugin to work with `DeferredViews`. [Detailed guide](https://docs.obsidian.md/Plugins/Guides/Understanding+deferred+views).
+- [ ] If you want your plugins to be compatible with Obsidian 1.7.2+, update your plugin to work with `DeferredViews`. [Detailed guide](https://docs.obsidian.md/Plugins/Guides/Understanding+deferred+views).
 - [ ] If you're using `moment`, make sure you're doing `import { moment} from 'obsidian'` so that you don't import another copy.
 - [ ] Do minimize your `main.js` for releasing.
 - [ ] Do your initial UI setup on `workspace.onLayoutReady()` instead of in the constructor or `onload()` function. [Learn more](https://docs.obsidian.md/Plugins/Guides/Optimizing+plugin+load+time#If+you+have+code+that+you+want+to+run+at+startup%2C+where+should+it+go%3F).
