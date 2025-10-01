@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ButtonComponent.buttonEl property
 
+ 0.9.7
 
 **Signature:**
 

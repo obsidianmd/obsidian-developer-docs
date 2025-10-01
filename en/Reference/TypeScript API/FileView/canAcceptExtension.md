@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FileView.canAcceptExtension() method
 
+ 0.9.7
 
 **Signature:**
 

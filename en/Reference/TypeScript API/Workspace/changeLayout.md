@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.changeLayout() method
 
+ 0.9.7
 
 **Signature:**
 

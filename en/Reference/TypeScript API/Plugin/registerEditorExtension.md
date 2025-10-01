@@ -21,7 +21,7 @@ registerEditorExtension(extension: Extension): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>extension</code> | <code>Extension</code> | must be a CodeMirror 6 <code>Extension</code>, or an array of Extensions. |
+|  <code>extension</code> | <code>Extension</code> | <p>must be a CodeMirror 6 <code>Extension</code>, or an array of Extensions.</p><p> 0.12.8</p> |
 
 **Returns:**
 

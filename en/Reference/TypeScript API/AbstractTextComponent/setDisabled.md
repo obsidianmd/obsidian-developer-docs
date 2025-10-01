@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## AbstractTextComponent.setDisabled() method
 
+ 1.2.3
 
 **Signature:**
 

@@ -22,7 +22,7 @@ saveLocalStorage(key: string, data: unknown | null): void;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>key</code> | <code>string</code> |  |
-|  <code>data</code> | <code>unknown &#124; null</code> | value being saved to localStorage. Must be serializable. |
+|  <code>data</code> | <code>unknown &#124; null</code> | <p>value being saved to localStorage. Must be serializable.</p><p> 1.8.7</p> |
 
 **Returns:**
 

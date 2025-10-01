@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get the best match for a linkpath.
 
+ 0.12.5
+
 **Signature:**
 
 ```typescript

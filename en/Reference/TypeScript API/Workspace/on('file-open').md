@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the active file changes. The file could be in a new leaf, an existing leaf, or an embed.
 
+ 0.10.9
+
 **Signature:**
 
 ```typescript

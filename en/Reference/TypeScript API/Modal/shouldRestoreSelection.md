@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Modal.shouldRestoreSelection property
 
+ 0.9.16
 
 **Signature:**
 

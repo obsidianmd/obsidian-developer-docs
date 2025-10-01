@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.setTooltip() method
 
+ 1.1.0
 
 **Signature:**
 

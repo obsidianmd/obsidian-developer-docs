@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ExtraButtonComponent.extraSettingsEl property
 
+ 0.9.7
 
 **Signature:**
 

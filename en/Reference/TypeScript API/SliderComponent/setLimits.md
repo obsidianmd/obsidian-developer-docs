@@ -9,19 +9,20 @@ cssclasses: hide-title
 
 ## SliderComponent.setLimits() method
 
+ 0.9.7
 
 **Signature:**
 
 ```typescript
-setLimits(min: number, max: number, step: number | 'any'): this;
+setLimits(min: number | null, max: number | null, step: number | 'any'): this;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>min</code> | <code>number</code> |  |
-|  <code>max</code> | <code>number</code> |  |
+|  <code>min</code> | <code>number &#124; null</code> |  |
+|  <code>max</code> | <code>number &#124; null</code> |  |
 |  <code>step</code> | <code>number &#124; 'any'</code> |  |
 
 **Returns:**

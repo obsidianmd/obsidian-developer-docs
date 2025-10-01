@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 If the layout of the app has been successfully initialized. To react to the layout becoming ready, use [Workspace.onLayoutReady()](Workspace/onLayoutReady)
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

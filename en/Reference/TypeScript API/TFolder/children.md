@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TFolder.children property
 
+ 0.9.7
 
 **Signature:**
 

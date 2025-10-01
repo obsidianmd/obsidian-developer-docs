@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Perform any initial setup code. The user has explicitly interacted with the plugin so its safe to engage with the user. If your plugin registers a custom view, you can open it here.
 
+ 1.7.2
+
 **Signature:**
 
 ```typescript

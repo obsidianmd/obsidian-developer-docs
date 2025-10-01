@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 The direct parent of the leaf.
 
+ 1.6.6
+
 **Signature:**
 
 ```typescript

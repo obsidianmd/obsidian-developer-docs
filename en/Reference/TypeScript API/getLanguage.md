@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get the ISO code for the currently configured app language. Defaults to 'en'. See [https://github.com/obsidianmd/obsidian-translations?tab=readme-ov-file\#existing-languages](https://github.com/obsidianmd/obsidian-translations?tab=readme-ov-file#existing-languages) for list of options.
 
+ 1.8.7
+
 **Signature:**
 
 ```typescript

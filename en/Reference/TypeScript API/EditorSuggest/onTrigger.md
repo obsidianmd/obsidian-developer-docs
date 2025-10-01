@@ -13,6 +13,8 @@ Based on the editor line and cursor position, determine if this EditorSuggest sh
 
 Please be mindful of performance when implementing this function, as it will be triggered very often (on each keypress). Keep it simple, and return null as early as possible if you determine that it is not the right time.
 
+ 1.1.13
+
 **Signature:**
 
 ```typescript

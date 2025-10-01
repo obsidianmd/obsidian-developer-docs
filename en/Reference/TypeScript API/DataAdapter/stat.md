@@ -21,7 +21,7 @@ stat(normalizedPath: string): Promise<Stat | null>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>normalizedPath</code> | <code>string</code> | path to file/folder, use [normalizePath()](normalizePath) to normalize beforehand. |
+|  <code>normalizedPath</code> | <code>string</code> | <p>path to file/folder, use [normalizePath()](normalizePath) to normalize beforehand.</p><p> 0.12.2</p> |
 
 **Returns:**
 

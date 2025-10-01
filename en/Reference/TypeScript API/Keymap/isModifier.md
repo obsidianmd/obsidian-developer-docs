@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Checks whether the modifier key is pressed during this event.
 
+ 0.12.17
+
 **Signature:**
 
 ```typescript

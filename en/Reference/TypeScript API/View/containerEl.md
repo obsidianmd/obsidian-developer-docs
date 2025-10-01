@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## View.containerEl property
 
+ 0.9.7
 
 **Signature:**
 

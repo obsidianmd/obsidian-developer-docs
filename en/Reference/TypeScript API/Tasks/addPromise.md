@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Tasks.addPromise() method
 
+ 0.10.2
 
 **Signature:**
 

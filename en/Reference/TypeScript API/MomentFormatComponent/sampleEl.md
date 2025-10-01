@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MomentFormatComponent.sampleEl property
 
+ 0.9.7
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.createLeafInParent() method
 
+ 0.9.11
 
 **Signature:**
 

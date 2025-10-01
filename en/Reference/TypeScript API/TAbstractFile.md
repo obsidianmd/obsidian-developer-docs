@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 This can be either a `TFile` or a `TFolder`<!-- -->.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript
@@ -21,8 +23,8 @@ export abstract class TAbstractFile
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`name`](TAbstractFile/name) |  | <code>string</code> |  |
-|  [`parent`](TAbstractFile/parent) |  | [`TFolder`](TFolder)<code> &#124; null</code> |  |
-|  [`path`](TAbstractFile/path) |  | <code>string</code> |  |
-|  [`vault`](TAbstractFile/vault) |  | [`Vault`](Vault) |  |
+|  [`name`](TAbstractFile/name) |  | <code>string</code> |  0.9.7 |
+|  [`parent`](TAbstractFile/parent) |  | [`TFolder`](TFolder)<code> &#124; null</code> |  0.9.7 |
+|  [`path`](TAbstractFile/path) |  | <code>string</code> |  0.9.7 |
+|  [`vault`](TAbstractFile/vault) |  | [`Vault`](Vault) |  0.9.7 |
 

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get all files and folders in the vault.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

@@ -22,15 +22,15 @@ export interface CachedMetadata
 |  --- | --- | --- | --- |
 |  [`blocks?`](CachedMetadata/blocks) |  | <code>Record</code><code>&lt;string, </code>[`BlockCache`](BlockCache)<code>&gt;</code> | _(Optional)_ |
 |  [`embeds?`](CachedMetadata/embeds) |  | [`EmbedCache`](EmbedCache)<code>[]</code> | _(Optional)_ |
-|  [`footnoteRefs?`](CachedMetadata/footnoteRefs) |  | [`FootnoteRefCache`](FootnoteRefCache)<code>[]</code> | _(Optional)_ |
-|  [`footnotes?`](CachedMetadata/footnotes) |  | [`FootnoteCache`](FootnoteCache)<code>[]</code> | _(Optional)_ |
+|  [`footnoteRefs?`](CachedMetadata/footnoteRefs) |  | [`FootnoteRefCache`](FootnoteRefCache)<code>[]</code> | _(Optional)_  1.8.7 |
+|  [`footnotes?`](CachedMetadata/footnotes) |  | [`FootnoteCache`](FootnoteCache)<code>[]</code> | _(Optional)_  1.6.6 |
 |  [`frontmatter?`](CachedMetadata/frontmatter) |  | [`FrontMatterCache`](FrontMatterCache) | _(Optional)_ |
-|  [`frontmatterLinks?`](CachedMetadata/frontmatterLinks) |  | [`FrontmatterLinkCache`](FrontmatterLinkCache)<code>[]</code> | _(Optional)_ |
-|  [`frontmatterPosition?`](CachedMetadata/frontmatterPosition) |  | [`Pos`](Pos) | _(Optional)_ Position of the frontmatter in the file. |
+|  [`frontmatterLinks?`](CachedMetadata/frontmatterLinks) |  | [`FrontmatterLinkCache`](FrontmatterLinkCache)<code>[]</code> | _(Optional)_  1.4.0 |
+|  [`frontmatterPosition?`](CachedMetadata/frontmatterPosition) |  | [`Pos`](Pos) | <p>_(Optional)_ Position of the frontmatter in the file.</p><p> 1.4.0</p> |
 |  [`headings?`](CachedMetadata/headings) |  | [`HeadingCache`](HeadingCache)<code>[]</code> | _(Optional)_ |
 |  [`links?`](CachedMetadata/links) |  | [`LinkCache`](LinkCache)<code>[]</code> | _(Optional)_ |
 |  [`listItems?`](CachedMetadata/listItems) |  | [`ListItemCache`](ListItemCache)<code>[]</code> | _(Optional)_ |
-|  [`referenceLinks?`](CachedMetadata/referenceLinks) |  | [`ReferenceLinkCache`](ReferenceLinkCache)<code>[]</code> | _(Optional)_ |
+|  [`referenceLinks?`](CachedMetadata/referenceLinks) |  | [`ReferenceLinkCache`](ReferenceLinkCache)<code>[]</code> | _(Optional)_  1.8.7 |
 |  [`sections?`](CachedMetadata/sections) |  | [`SectionCache`](SectionCache)<code>[]</code> | _(Optional)_ Sections are root level markdown blocks, which can be used to divide the document up. |
 |  [`tags?`](CachedMetadata/tags) |  | [`TagCache`](TagCache)<code>[]</code> | _(Optional)_ |
 

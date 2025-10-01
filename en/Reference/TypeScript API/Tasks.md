@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Tasks class
 
+ 0.10.2
 
 **Signature:**
 
@@ -20,8 +21,8 @@ export class Tasks
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`add(callback)`](Tasks/add) |  |  |
-|  [`addPromise(promise)`](Tasks/addPromise) |  |  |
-|  [`isEmpty()`](Tasks/isEmpty) |  |  |
-|  [`promise()`](Tasks/promise) |  |  |
+|  [`add(callback)`](Tasks/add) |  |  0.10.2 |
+|  [`addPromise(promise)`](Tasks/addPromise) |  |  0.10.2 |
+|  [`isEmpty()`](Tasks/isEmpty) |  |  0.10.2 |
+|  [`promise()`](Tasks/promise) |  |  0.10.2 |
 

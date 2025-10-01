@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Force this menu to use native or DOM. (Only works on the desktop app)
 
+ 0.16.0
+
 **Signature:**
 
 ```typescript

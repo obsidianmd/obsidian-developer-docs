@@ -13,7 +13,7 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-export function parseFrontMatterStringArray(frontmatter: any | null, key: string | RegExp, nospaces?: boolean): string[] | null;
+export function parseFrontMatterStringArray(frontmatter: any | null, key: string | RegExp): string[] | null;
 ```
 
 ## Parameters
@@ -22,7 +22,6 @@ export function parseFrontMatterStringArray(frontmatter: any | null, key: string
 |  --- | --- | --- |
 |  <code>frontmatter</code> | <code>any &#124; null</code> |  |
 |  <code>key</code> | <code>string &#124; </code><code>RegExp</code> |  |
-|  <code>nospaces</code> | <code>boolean</code> | _(Optional)_ |
 
 **Returns:**
 

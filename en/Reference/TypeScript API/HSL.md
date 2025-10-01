@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## HSL interface
 
+ 0.16.0
 
 **Signature:**
 
@@ -20,7 +21,7 @@ export interface HSL
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`h`](HSL/h) |  | <code>number</code> | Hue integer value between 0 and 360 |
-|  [`l`](HSL/l) |  | <code>number</code> | Lightness integer value between 0 and 100 |
-|  [`s`](HSL/s) |  | <code>number</code> | Saturation integer value between 0 and 100 |
+|  [`h`](HSL/h) |  | <code>number</code> | <p>Hue integer value between 0 and 360</p><p> 0.16.0</p> |
+|  [`l`](HSL/l) |  | <code>number</code> | <p>Lightness integer value between 0 and 100</p><p> 0.16.0</p> |
+|  [`s`](HSL/s) |  | <code>number</code> | <p>Saturation integer value between 0 and 100</p><p> 0.16.0</p> |
 

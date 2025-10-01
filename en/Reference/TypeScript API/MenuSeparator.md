@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MenuSeparator class
 
+ 0.15.3
 
 **Signature:**
 

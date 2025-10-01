@@ -13,6 +13,8 @@ Set the data to the editor. This is used to load the file contents.
 
 If clear is set, then it means we're opening a completely different file. In that case, you should call clear(), or implement a slightly more efficient clearing mechanism given the new data to be set.
 
+ 0.10.12
+
 **Signature:**
 
 ```typescript

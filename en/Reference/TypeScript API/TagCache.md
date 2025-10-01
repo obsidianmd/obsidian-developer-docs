@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TagCache interface
 
+ 0.9.7
 
 **Signature:**
 

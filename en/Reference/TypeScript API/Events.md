@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Events class
 
+ 0.9.7
 
 **Signature:**
 
@@ -20,9 +21,9 @@ export class Events
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`off(name, callback)`](Events/off) |  |  |
-|  [`offref(ref)`](Events/offref) |  |  |
-|  [`on(name: string, callback, ctx)`](Events/on) |  |  |
-|  [`trigger(name, data)`](Events/trigger) |  |  |
-|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  |  |
+|  [`off(name, callback)`](Events/off) |  |  0.9.7 |
+|  [`offref(ref)`](Events/offref) |  |  0.9.7 |
+|  [`on(name: string, callback, ctx)`](Events/on) |  |  0.9.7 |
+|  [`trigger(name, data)`](Events/trigger) |  |  0.9.7 |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  |  0.9.7 |
 

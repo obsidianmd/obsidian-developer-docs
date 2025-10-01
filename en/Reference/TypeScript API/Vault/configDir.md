@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Gets the path to the config folder. This value is typically `.obsidian` but it could be different.
 
+ 0.11.1
+
 **Signature:**
 
 ```typescript

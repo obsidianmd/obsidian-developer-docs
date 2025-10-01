@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Gets the number of lines in the document
 
+ 0.11.11
+
 **Signature:**
 
 ```typescript

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TextFileView.save() method
 
+ 0.10.12
 
 **Signature:**
 

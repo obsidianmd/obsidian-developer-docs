@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ItemView class
 
+ 0.9.7
 
 **Signature:**
 
@@ -27,40 +28,40 @@ export abstract class ItemView extends View
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`app`](View/app) |  | [`App`](App) | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`containerEl`](View/containerEl) |  | <code>HTMLElement</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`app`](View/app) |  | [`App`](App) | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`containerEl`](View/containerEl) |  | <code>HTMLElement</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
 |  [`contentEl`](ItemView/contentEl) |  | <code>HTMLElement</code> |  |
-|  [`icon`](View/icon) |  | [`IconName`](IconName) | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`leaf`](View/leaf) |  | [`WorkspaceLeaf`](WorkspaceLeaf) | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`navigation`](View/navigation) |  | <code>boolean</code> | <p>Whether or not the view is intended for navigation. If your view is a static view that is not intended to be navigated away, set this to false. (For example: File explorer, calendar, etc.) If your view opens a file or can be otherwise navigated, set this to true. (For example: Markdown editor view, Kanban view, PDF view, etc.)</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`icon`](View/icon) |  | [`IconName`](IconName) | <p> 1.1.0</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`leaf`](View/leaf) |  | [`WorkspaceLeaf`](WorkspaceLeaf) | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`navigation`](View/navigation) |  | <code>boolean</code> | <p>Whether or not the view is intended for navigation. If your view is a static view that is not intended to be navigated away, set this to false. (For example: File explorer, calendar, etc.) If your view opens a file or can be otherwise navigated, set this to true. (For example: Markdown editor view, Kanban view, PDF view, etc.)</p><p> 0.15.1</p><p>(Inherited from [View](View)<!-- -->)</p> |
 |  [`scope`](View/scope) |  | [`Scope`](Scope)<code> &#124; null</code> | <p>Assign an optional scope to your view to register hotkeys for when the view is in focus.</p><p>(Inherited from [View](View)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`addAction(icon, title, callback)`](ItemView/addAction) |  |  |
-|  [`addChild(component)`](Component/addChild) |  | <p>Adds a child component, loading it if this component is loaded</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`getDisplayText()`](View/getDisplayText) | <code>abstract</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`getEphemeralState()`](View/getEphemeralState) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`getIcon()`](View/getIcon) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`getState()`](View/getState) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`getViewType()`](View/getViewType) | <code>abstract</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`load()`](Component/load) |  | <p>Load this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`onClose()`](View/onClose) | <code>protected</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`onload()`](Component/onload) |  | <p>Override this to load your component</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`onOpen()`](View/onOpen) | <code>protected</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`onPaneMenu(menu, source)`](View/onPaneMenu) |  | <p>Populates the pane menu.</p><p>(Replaces the previously removed <code>onHeaderMenu</code> and <code>onMoreOptionsMenu</code>)</p><p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`onResize()`](View/onResize) |  | <p>Called when the size of this view is changed.</p><p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`onunload()`](Component/onunload) |  | <p>Override this to unload your component</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`register(cb)`](Component/register) |  | <p>Registers a callback to be called when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_2) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`setEphemeralState(state)`](View/setEphemeralState) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`setState(state, result)`](View/setState) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`unload()`](Component/unload) |  | <p>Unload this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`addAction(icon, title, callback)`](ItemView/addAction) |  |  1.1.0 |
+|  [`addChild(component)`](Component/addChild) |  | <p>Adds a child component, loading it if this component is loaded</p><p> 0.12.0</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`getDisplayText()`](View/getDisplayText) | <code>abstract</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`getEphemeralState()`](View/getEphemeralState) |  | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`getIcon()`](View/getIcon) |  | <p> 1.1.0</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`getState()`](View/getState) |  | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`getViewType()`](View/getViewType) | <code>abstract</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`load()`](Component/load) |  | <p>Load this component and its children</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onClose()`](View/onClose) | <code>protected</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onload()`](Component/onload) |  | <p>Override this to load your component</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onOpen()`](View/onOpen) | <code>protected</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onPaneMenu(menu, source)`](View/onPaneMenu) |  | <p>Populates the pane menu.</p><p>(Replaces the previously removed <code>onHeaderMenu</code> and <code>onMoreOptionsMenu</code>)</p><p> 0.15.3</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onResize()`](View/onResize) |  | <p>Called when the size of this view is changed.</p><p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onunload()`](Component/onunload) |  | <p>Override this to unload your component</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`register(cb)`](Component/register) |  | <p>Registers a callback to be called when unloading</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_2) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p> 0.13.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p> 0.12.0</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`setEphemeralState(state)`](View/setEphemeralState) |  | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`setState(state, result)`](View/setState) |  | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`unload()`](Component/unload) |  | <p>Unload this component and its children</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 

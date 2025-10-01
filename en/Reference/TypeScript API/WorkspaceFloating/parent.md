@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceFloating.parent property
 
+ 0.15.2
 
 **Signature:**
 

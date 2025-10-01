@@ -21,7 +21,7 @@ getFileByPath(path: string): TFile | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>path</code> | <code>string</code> |  |
+|  <code>path</code> | <code>string</code> |  1.5.7 |
 
 **Returns:**
 

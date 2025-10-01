@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 If there is any pending function call, clear the timer and call the function immediately.
 
+ 1.4.4
+
 **Signature:**
 
 ```typescript

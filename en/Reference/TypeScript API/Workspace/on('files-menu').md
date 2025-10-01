@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the user opens the context menu with multiple files selected in the File Explorer.
 
+ 1.4.10
+
 **Signature:**
 
 ```typescript

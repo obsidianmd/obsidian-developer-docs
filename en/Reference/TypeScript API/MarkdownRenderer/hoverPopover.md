@@ -13,5 +13,5 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-hoverPopover: HoverPopover;
+hoverPopover: HoverPopover | null;
 ```

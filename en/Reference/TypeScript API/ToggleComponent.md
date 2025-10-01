@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ToggleComponent class
 
+ 0.9.7
 
 **Signature:**
 
@@ -21,25 +22,25 @@ export class ToggleComponent extends ValueComponent<boolean>
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [`(constructor)(containerEl)`](ToggleComponent/(constructor).md) |  | Constructs a new instance of the <code>ToggleComponent</code> class |
+|  [`(constructor)(containerEl)`](ToggleComponent/(constructor).md) |  |  0.9.7 |
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
-|  [`toggleEl`](ToggleComponent/toggleEl) |  | <code>HTMLElement</code> |  |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`toggleEl`](ToggleComponent/toggleEl) |  | <code>HTMLElement</code> |  0.9.7 |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`getValue()`](ToggleComponent/getValue) |  |  |
-|  [`onChange(callback)`](ToggleComponent/onChange) |  |  |
-|  [`onClick()`](ToggleComponent/onClick) |  |  |
-|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
-|  [`setDisabled(disabled)`](ToggleComponent/setDisabled) |  |  |
-|  [`setTooltip(tooltip, options)`](ToggleComponent/setTooltip) |  |  |
-|  [`setValue(on)`](ToggleComponent/setValue) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`getValue()`](ToggleComponent/getValue) |  |  0.9.7 |
+|  [`onChange(callback)`](ToggleComponent/onChange) |  |  0.9.7 |
+|  [`onClick()`](ToggleComponent/onClick) |  |  0.9.7 |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p> 0.9.7</p><p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
+|  [`setDisabled(disabled)`](ToggleComponent/setDisabled) |  |  1.2.3 |
+|  [`setTooltip(tooltip, options)`](ToggleComponent/setTooltip) |  |  1.1.1 |
+|  [`setValue(on)`](ToggleComponent/setValue) |  |  0.9.7 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

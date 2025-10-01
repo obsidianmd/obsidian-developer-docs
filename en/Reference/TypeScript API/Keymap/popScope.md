@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Remove a scope from the scope stack. If the given scope is active, the next scope in the stack will be made active.
 
+ 0.13.9
+
 **Signature:**
 
 ```typescript

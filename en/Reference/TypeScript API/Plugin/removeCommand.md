@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Manually remove a command from the list of global commands. This should not be needed unless your plugin registers commands dynamically.
 
+ 1.7.2
+
 **Signature:**
 
 ```typescript

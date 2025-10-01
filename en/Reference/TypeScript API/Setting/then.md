@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Facilitates chaining
 
+ 0.9.20
+
 **Signature:**
 
 ```typescript

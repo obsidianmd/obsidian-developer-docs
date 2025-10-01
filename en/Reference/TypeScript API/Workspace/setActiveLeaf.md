@@ -24,7 +24,7 @@ setActiveLeaf(leaf: WorkspaceLeaf, params?: {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>leaf</code> | [`WorkspaceLeaf`](WorkspaceLeaf) | The new active leaf |
-|  <code>params</code> | <code>{         focus?: boolean;     }</code> | _(Optional)_ Parameter object of whether to set the focus. |
+|  <code>params</code> | <code>{         focus?: boolean;     }</code> | <p>_(Optional)_ Parameter object of whether to set the focus.</p><p> 0.16.3</p> |
 
 **Returns:**
 

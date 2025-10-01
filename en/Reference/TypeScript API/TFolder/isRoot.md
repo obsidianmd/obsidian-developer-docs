@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TFolder.isRoot() method
 
+ 0.9.7
 
 **Signature:**
 

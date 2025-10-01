@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FuzzyMatch interface
 
+ 0.9.20
 
 **Signature:**
 
@@ -20,6 +21,6 @@ export interface FuzzyMatch<T>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`item`](FuzzyMatch/item) |  | <code>T</code> |  |
-|  [`match`](FuzzyMatch/match) |  | [`SearchResult`](SearchResult) |  |
+|  [`item`](FuzzyMatch/item) |  | <code>T</code> |  0.9.20 |
+|  [`match`](FuzzyMatch/match) |  | [`SearchResult`](SearchResult) |  0.9.20 |
 

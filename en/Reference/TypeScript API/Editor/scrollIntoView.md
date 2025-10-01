@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Editor.scrollIntoView() method
 
+ 0.13.0
 
 **Signature:**
 

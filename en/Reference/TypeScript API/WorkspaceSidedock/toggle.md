@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceSidedock.toggle() method
 
+ 0.12.11
 
 **Signature:**
 

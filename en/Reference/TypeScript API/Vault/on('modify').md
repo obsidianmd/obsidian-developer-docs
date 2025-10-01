@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Called when a file is modified.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

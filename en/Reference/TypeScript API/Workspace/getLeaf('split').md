@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Creates a new leaf in a leaf adjacent to the currently active leaf. If direction is `'vertical'`<!-- -->, the leaf will appear to the right. If direction is `'horizontal'`<!-- -->, the leaf will appear below the current leaf.
 
+ 0.16.0
+
 **Signature:**
 
 ```typescript

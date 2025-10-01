@@ -13,6 +13,8 @@ Called when the `data.json` file is modified on disk externally from Obsidian. T
 
 Implement this method to reload plugin settings when they have changed externally.
 
+ 1.5.7
+
 **Signature:**
 
 ```typescript

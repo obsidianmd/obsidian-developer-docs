@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SearchResult interface
 
+ 0.9.21
 
 **Signature:**
 

@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## View.(constructor)
 
-Constructs a new instance of the `View` class
+ 0.9.7
 
 **Signature:**
 

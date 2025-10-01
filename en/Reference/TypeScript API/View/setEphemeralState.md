@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## View.setEphemeralState() method
 
+ 0.9.7
 
 **Signature:**
 

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Adds a child component, loading it if this component is loaded
 
+ 0.12.0
+
 **Signature:**
 
 ```typescript

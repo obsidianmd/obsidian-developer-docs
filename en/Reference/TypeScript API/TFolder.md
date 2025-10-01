@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TFolder class
 
+ 0.9.7
 
 **Signature:**
 
@@ -21,15 +22,15 @@ export class TFolder extends TAbstractFile
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`children`](TFolder/children) |  | [`TAbstractFile`](TAbstractFile)<code>[]</code> |  |
-|  [`name`](TAbstractFile/name) |  | <code>string</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
-|  [`parent`](TAbstractFile/parent) |  | [`TFolder`](TFolder)<code> &#124; null</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
-|  [`path`](TAbstractFile/path) |  | <code>string</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
-|  [`vault`](TAbstractFile/vault) |  | [`Vault`](Vault) | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`children`](TFolder/children) |  | [`TAbstractFile`](TAbstractFile)<code>[]</code> |  0.9.7 |
+|  [`name`](TAbstractFile/name) |  | <code>string</code> | <p> 0.9.7</p><p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`parent`](TAbstractFile/parent) |  | [`TFolder`](TFolder)<code> &#124; null</code> | <p> 0.9.7</p><p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`path`](TAbstractFile/path) |  | <code>string</code> | <p> 0.9.7</p><p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`vault`](TAbstractFile/vault) |  | [`Vault`](Vault) | <p> 0.9.7</p><p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`isRoot()`](TFolder/isRoot) |  |  |
+|  [`isRoot()`](TFolder/isRoot) |  |  0.9.7 |
 

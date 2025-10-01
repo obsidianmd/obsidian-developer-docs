@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API
 
+ 0.13.8
+
 **Signature:**
 
 ```typescript

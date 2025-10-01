@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the user opens the context menu on an external URL.
 
+ 1.5.1
+
 **Signature:**
 
 ```typescript

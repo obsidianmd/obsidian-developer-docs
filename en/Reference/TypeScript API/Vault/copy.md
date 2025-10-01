@@ -22,7 +22,7 @@ copy<T extends TAbstractFile>(file: T, newPath: string): Promise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>file</code> | <code>T</code> | The file or folder. |
-|  <code>newPath</code> | <code>string</code> | Vault absolute path for the new copy. |
+|  <code>newPath</code> | <code>string</code> | <p>Vault absolute path for the new copy.</p><p> 1.8.7</p> |
 
 **Returns:**
 

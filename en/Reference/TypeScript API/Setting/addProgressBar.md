@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.addProgressBar() method
 
+ 1.4.4
 
 **Signature:**
 

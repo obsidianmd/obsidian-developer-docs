@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.infoEl property
 
+ 0.9.7
 
 **Signature:**
 

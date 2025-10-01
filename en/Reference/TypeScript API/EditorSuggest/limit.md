@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Override this to use a different limit for suggestion items
 
+ 0.12.17
+
 **Signature:**
 
 ```typescript

@@ -21,7 +21,7 @@ getLeafById(id: string): WorkspaceLeaf | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>id</code> | <code>string</code> | id of the leaf to retrieve. |
+|  <code>id</code> | <code>string</code> | <p>id of the leaf to retrieve.</p><p> 1.5.1</p> |
 
 **Returns:**
 

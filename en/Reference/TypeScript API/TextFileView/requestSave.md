@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Debounced save in 2 seconds from now
 
+ 0.10.12
+
 **Signature:**
 
 ```typescript

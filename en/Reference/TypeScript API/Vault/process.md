@@ -39,4 +39,5 @@ app.vault.process(file, (data) => {
  return data.replace('Hello', 'World');
 });
 ```
+ 1.1.0
 

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get the filenames of the 10 most recently opened files.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript
