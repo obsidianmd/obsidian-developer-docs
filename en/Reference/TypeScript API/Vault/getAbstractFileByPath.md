@@ -29,3 +29,5 @@ getAbstractFileByPath(path: string): TAbstractFile | null;
 
 the abstract file, if it's found.
 
+ 0.11.11
+

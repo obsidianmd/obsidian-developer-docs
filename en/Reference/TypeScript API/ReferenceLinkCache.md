@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ReferenceLinkCache interface
 
+ 1.8.7
 
 **Signature:**
 

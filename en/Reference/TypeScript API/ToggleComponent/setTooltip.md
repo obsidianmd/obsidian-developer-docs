@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ToggleComponent.setTooltip() method
 
+ 1.1.1
 
 **Signature:**
 

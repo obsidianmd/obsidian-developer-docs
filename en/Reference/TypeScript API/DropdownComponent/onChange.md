@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DropdownComponent.onChange() method
 
+ 0.9.7
 
 **Signature:**
 

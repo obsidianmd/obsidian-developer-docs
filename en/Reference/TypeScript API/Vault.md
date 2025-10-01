@@ -22,15 +22,15 @@ export class Vault extends Events
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`adapter`](Vault/adapter) |  | [`DataAdapter`](DataAdapter) |  |
-|  [`configDir`](Vault/configDir) |  | <code>string</code> | Gets the path to the config folder. This value is typically <code>.obsidian</code> but it could be different. |
+|  [`adapter`](Vault/adapter) |  | [`DataAdapter`](DataAdapter) |  0.9.7 |
+|  [`configDir`](Vault/configDir) |  | <code>string</code> | <p>Gets the path to the config folder. This value is typically <code>.obsidian</code> but it could be different.</p><p> 0.11.1</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`append(file, data, options)`](Vault/append) |  | Add text to the end of a plaintext file inside the vault. |
-|  [`cachedRead(file)`](Vault/cachedRead) |  | Read the content of a plaintext file stored inside the vault Use this if you only want to display the content to the user. If you want to modify the file content afterward use [Vault.read()](Vault/read) |
+|  [`cachedRead(file)`](Vault/cachedRead) |  | <p>Read the content of a plaintext file stored inside the vault Use this if you only want to display the content to the user. If you want to modify the file content afterward use [Vault.read()](Vault/read)</p><p> 0.9.7</p> |
 |  [`copy(file, newPath)`](Vault/copy) |  | Create a copy of a file or folder. |
 |  [`create(path, data, options)`](Vault/create) |  | Create a new plaintext file inside the vault. |
 |  [`createBinary(path, data, options)`](Vault/createBinary) |  | Create a new binary file inside the vault. |
@@ -38,28 +38,28 @@ export class Vault extends Events
 |  [`delete(file, force)`](Vault/delete) |  | Deletes the file completely. |
 |  [`getAbstractFileByPath(path)`](Vault/getAbstractFileByPath) |  | Get a file or folder inside the vault at the given path. To check if the return type is a file, use <code>instanceof TFile</code>. To check if it is a folder, use <code>instanceof TFolder</code>. |
 |  [`getAllFolders(includeRoot)`](Vault/getAllFolders) |  | Get all folders in the vault. |
-|  [`getAllLoadedFiles()`](Vault/getAllLoadedFiles) |  | Get all files and folders in the vault. |
+|  [`getAllLoadedFiles()`](Vault/getAllLoadedFiles) |  | <p>Get all files and folders in the vault.</p><p> 0.9.7</p> |
 |  [`getFileByPath(path)`](Vault/getFileByPath) |  | Get a file inside the vault at the given path. Returns <code>null</code> if the file does not exist. |
-|  [`getFiles()`](Vault/getFiles) |  | Get all files in the vault. |
+|  [`getFiles()`](Vault/getFiles) |  | <p>Get all files in the vault.</p><p> 0.9.7</p> |
 |  [`getFolderByPath(path)`](Vault/getFolderByPath) |  | Get a folder inside the vault at the given path. Returns <code>null</code> if the folder does not exist. |
-|  [`getMarkdownFiles()`](Vault/getMarkdownFiles) |  | Get all Markdown files in the vault. |
-|  [`getName()`](Vault/getName) |  | Gets the name of the vault. |
-|  [`getResourcePath(file)`](Vault/getResourcePath) |  | Returns an URI for the browser engine to use, for example to embed an image. |
-|  [`getRoot()`](Vault/getRoot) |  | Get the root folder of the current vault. |
+|  [`getMarkdownFiles()`](Vault/getMarkdownFiles) |  | <p>Get all Markdown files in the vault.</p><p> 0.9.7</p> |
+|  [`getName()`](Vault/getName) |  | <p>Gets the name of the vault.</p><p> 0.9.7</p> |
+|  [`getResourcePath(file)`](Vault/getResourcePath) |  | <p>Returns an URI for the browser engine to use, for example to embed an image.</p><p> 0.9.7</p> |
+|  [`getRoot()`](Vault/getRoot) |  | <p>Get the root folder of the current vault.</p><p> 0.9.7</p> |
 |  [`modify(file, data, options)`](Vault/modify) |  | Modify the contents of a plaintext file. |
 |  [`modifyBinary(file, data, options)`](Vault/modifyBinary) |  | Modify the contents of a binary file. |
-|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`on(name: 'create', callback, ctx)`](Vault/on('create').md) |  | Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](Workspace/onLayoutReady)<!-- -->. |
-|  [`on(name: 'modify', callback, ctx)`](Vault/on('modify').md) |  | Called when a file is modified. |
-|  [`on(name: 'delete', callback, ctx)`](Vault/on('delete').md) |  | Called when a file is deleted. |
-|  [`on(name: 'rename', callback, ctx)`](Vault/on('rename').md) |  | Called when a file is renamed. |
+|  [`off(name, callback)`](Events/off) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`on(name: 'create', callback, ctx)`](Vault/on('create').md) |  | <p>Called when a file is created. This is also called when the vault is first loaded for each existing file If you do not wish to receive create events on vault load, register your event handler inside [Workspace.onLayoutReady()](Workspace/onLayoutReady)<!-- -->.</p><p> 0.9.7</p> |
+|  [`on(name: 'modify', callback, ctx)`](Vault/on('modify').md) |  | <p>Called when a file is modified.</p><p> 0.9.7</p> |
+|  [`on(name: 'delete', callback, ctx)`](Vault/on('delete').md) |  | <p>Called when a file is deleted.</p><p> 0.9.7</p> |
+|  [`on(name: 'rename', callback, ctx)`](Vault/on('rename').md) |  | <p>Called when a file is renamed.</p><p> 0.9.7</p> |
 |  [`process(file, fn, options)`](Vault/process) |  | Atomically read, modify, and save the contents of a note. |
-|  [`read(file)`](Vault/read) |  | Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](Vault/cachedRead) otherwise for better performance. |
-|  [`readBinary(file)`](Vault/readBinary) |  | Read the content of a binary file stored inside the vault. |
-|  [`recurseChildren(root, cb)`](Vault/recurseChildren) | <code>static</code> |  |
+|  [`read(file)`](Vault/read) |  | <p>Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](Vault/cachedRead) otherwise for better performance.</p><p> 0.9.7</p> |
+|  [`readBinary(file)`](Vault/readBinary) |  | <p>Read the content of a binary file stored inside the vault.</p><p> 0.9.7</p> |
+|  [`recurseChildren(root, cb)`](Vault/recurseChildren) | <code>static</code> |  0.9.7 |
 |  [`rename(file, newPath)`](Vault/rename) |  | Rename or move a file. To ensure links are automatically renamed, use [FileManager.renameFile()](FileManager/renameFile) instead. |
 |  [`trash(file, system)`](Vault/trash) |  | Tries to move to system trash. If that isn't successful/allowed, use local trash |
-|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`trigger(name, data)`](Events/trigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
 

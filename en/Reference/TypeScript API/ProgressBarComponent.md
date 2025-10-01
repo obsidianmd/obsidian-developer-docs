@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ProgressBarComponent class
 
+ 1.4.4
 
 **Signature:**
 
@@ -27,15 +28,15 @@ export class ProgressBarComponent extends ValueComponent<number>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`getValue()`](ProgressBarComponent/getValue) |  |  |
-|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
-|  [`setDisabled(disabled)`](BaseComponent/setDisabled) |  | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p> 0.9.7</p><p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
+|  [`setDisabled(disabled)`](BaseComponent/setDisabled) |  | <p> 1.2.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`setValue(value)`](ProgressBarComponent/setValue) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

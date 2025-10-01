@@ -20,8 +20,8 @@ export interface TooltipOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`classes?`](TooltipOptions/classes) |  | <code>string[]</code> | _(Optional)_ |
-|  [`delay?`](TooltipOptions/delay) |  | <code>number</code> | _(Optional)_ |
-|  [`gap?`](TooltipOptions/gap) |  | <code>number</code> | _(Optional)_ |
+|  [`classes?`](TooltipOptions/classes) |  | <code>string[]</code> | _(Optional)_  1.8.7 |
+|  [`delay?`](TooltipOptions/delay) |  | <code>number</code> | _(Optional)_  1.4.11 |
+|  [`gap?`](TooltipOptions/gap) |  | <code>number</code> | _(Optional)_  1.8.7 |
 |  [`placement?`](TooltipOptions/placement) |  | [`TooltipPlacement`](TooltipPlacement) | _(Optional)_ |
 

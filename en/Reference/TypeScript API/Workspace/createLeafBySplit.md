@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.createLeafBySplit() method
 
+ 0.9.7
 
 **Signature:**
 

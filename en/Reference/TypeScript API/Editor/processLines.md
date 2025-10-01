@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Editor.processLines() method
 
+ 0.13.26
 
 **Signature:**
 

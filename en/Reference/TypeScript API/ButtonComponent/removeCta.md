@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ButtonComponent.removeCta() method
 
+ 0.9.20
 
 **Signature:**
 

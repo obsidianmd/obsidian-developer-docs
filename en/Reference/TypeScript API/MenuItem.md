@@ -24,7 +24,8 @@ export class MenuItem
 |  [`setChecked(checked)`](MenuItem/setChecked) |  |  |
 |  [`setDisabled(disabled)`](MenuItem/setDisabled) |  |  |
 |  [`setIcon(icon)`](MenuItem/setIcon) |  |  |
-|  [`setIsLabel(isLabel)`](MenuItem/setIsLabel) |  |  |
+|  [`setIsLabel(isLabel)`](MenuItem/setIsLabel) |  |  0.15.0 |
 |  [`setSection(section)`](MenuItem/setSection) |  | Sets the section this menu item should belong in. To find the section IDs of an existing menu, inspect the DOM elements to see their <code>data-section</code> attribute. |
 |  [`setTitle(title)`](MenuItem/setTitle) |  |  |
+|  [`setWarning(isWarning)`](MenuItem/setWarning) |  |  |
 

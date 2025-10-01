@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Change the message of this notice.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

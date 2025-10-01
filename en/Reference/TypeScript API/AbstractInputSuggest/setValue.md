@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Sets the value into the input element.
 
+ 1.4.10
+
 **Signature:**
 
 ```typescript

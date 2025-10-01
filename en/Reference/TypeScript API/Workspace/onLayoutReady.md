@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Runs the callback function right away if layout is already ready, or push it to a queue to be called later when layout is ready.
 
+ 0.11.0
+
 **Signature:**
 
 ```typescript

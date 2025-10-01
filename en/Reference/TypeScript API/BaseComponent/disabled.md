@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## BaseComponent.disabled property
 
+ 0.10.3
 
 **Signature:**
 

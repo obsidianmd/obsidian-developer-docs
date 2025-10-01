@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MarkdownPreviewRenderer class
 
+ 0.9.7
 
 **Signature:**
 
@@ -20,7 +21,7 @@ export class MarkdownPreviewRenderer
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`createCodeBlockPostProcessor(language, handler)`](MarkdownPreviewRenderer/createCodeBlockPostProcessor) | <code>static</code> |  |
-|  [`registerPostProcessor(postProcessor, sortOrder)`](MarkdownPreviewRenderer/registerPostProcessor) | <code>static</code> |  |
-|  [`unregisterPostProcessor(postProcessor)`](MarkdownPreviewRenderer/unregisterPostProcessor) | <code>static</code> |  |
+|  [`createCodeBlockPostProcessor(language, handler)`](MarkdownPreviewRenderer/createCodeBlockPostProcessor) | <code>static</code> |  0.12.11 |
+|  [`registerPostProcessor(postProcessor, sortOrder)`](MarkdownPreviewRenderer/registerPostProcessor) | <code>static</code> |  0.10.12 |
+|  [`unregisterPostProcessor(postProcessor)`](MarkdownPreviewRenderer/unregisterPostProcessor) | <code>static</code> |  0.9.7 |
 

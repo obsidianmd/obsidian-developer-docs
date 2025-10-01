@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Returns the file:// path of this file
 
+ 0.14.3
+
 **Signature:**
 
 ```typescript

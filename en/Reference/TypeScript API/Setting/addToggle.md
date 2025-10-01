@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.addToggle() method
 
+ 0.9.7
 
 **Signature:**
 

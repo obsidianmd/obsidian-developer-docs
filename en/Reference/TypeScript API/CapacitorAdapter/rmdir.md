@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CapacitorAdapter.rmdir() method
 
+ 1.7.2
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.addColorPicker() method
 
+ 0.16.0
 
 **Signature:**
 

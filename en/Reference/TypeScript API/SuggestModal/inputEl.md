@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SuggestModal.inputEl property
 
+@<!-- -->0.9.20
 
 **Signature:**
 

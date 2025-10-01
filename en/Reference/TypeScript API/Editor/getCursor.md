@@ -9,18 +9,19 @@ cssclasses: hide-title
 
 ## Editor.getCursor() method
 
+ 0.11.11
 
 **Signature:**
 
 ```typescript
-abstract getCursor(string?: 'from' | 'to' | 'head' | 'anchor'): EditorPosition;
+abstract getCursor(side?: 'from' | 'to' | 'head' | 'anchor'): EditorPosition;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>string</code> | <code>'from' &#124; 'to' &#124; 'head' &#124; 'anchor'</code> | _(Optional)_ |
+|  <code>side</code> | <code>'from' &#124; 'to' &#124; 'head' &#124; 'anchor'</code> | _(Optional)_ |
 
 **Returns:**
 

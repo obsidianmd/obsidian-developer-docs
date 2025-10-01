@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Remove all leaves of the given type.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

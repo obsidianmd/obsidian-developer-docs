@@ -11,7 +11,7 @@ cssclasses: hide-title
 
 > Warning: This API is now obsolete.
 > 
-> Use `messageEl` instead
+> Use `messageEl` instead  0.9.7
 > 
 
 **Signature:**

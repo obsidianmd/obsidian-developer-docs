@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Registers an event to be detached when unloading
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

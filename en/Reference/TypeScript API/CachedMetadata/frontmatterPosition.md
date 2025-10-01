@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Position of the frontmatter in the file.
 
+ 1.4.0
+
 **Signature:**
 
 ```typescript

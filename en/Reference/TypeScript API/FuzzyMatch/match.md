@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FuzzyMatch.match property
 
+ 0.9.20
 
 **Signature:**
 

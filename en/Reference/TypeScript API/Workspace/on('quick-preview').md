@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the active Markdown file is modified. React to file changes before they are saved to disk.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

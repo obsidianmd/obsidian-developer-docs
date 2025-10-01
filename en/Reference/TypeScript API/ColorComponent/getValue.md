@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ColorComponent.getValue() method
 
+ 1.0.0
 
 **Signature:**
 

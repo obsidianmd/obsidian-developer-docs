@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Gets the value from the input element.
 
+ 1.4.10
+
 **Signature:**
 
 ```typescript

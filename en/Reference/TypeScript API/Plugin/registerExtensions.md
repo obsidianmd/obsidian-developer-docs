@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Plugin.registerExtensions() method
 
+ 0.9.7
 
 **Signature:**
 

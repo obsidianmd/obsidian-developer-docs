@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## App.workspace property
 
+ 0.9.7
 
 **Signature:**
 

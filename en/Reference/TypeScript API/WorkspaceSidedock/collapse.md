@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceSidedock.collapse() method
 
+ 0.12.11
 
 **Signature:**
 

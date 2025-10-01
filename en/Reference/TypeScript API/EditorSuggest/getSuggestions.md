@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Generate suggestion items based on this context. Can be async, but preferably sync. When generating async suggestions, you should pass the context along.
 
+ 0.12.17
+
 **Signature:**
 
 ```typescript

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Notice.hide() method
 
+ 0.9.7
 
 **Signature:**
 

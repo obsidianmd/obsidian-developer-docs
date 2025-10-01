@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the editor receives a drop event. Check for `evt.defaultPrevented` before attempting to handle this event, and return if it has been already handled. Use `evt.preventDefault()` to indicate that you've handled the event.
 
+ 1.1.0
+
 **Signature:**
 
 ```typescript

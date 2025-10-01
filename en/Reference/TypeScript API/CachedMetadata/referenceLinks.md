@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CachedMetadata.referenceLinks property
 
+ 1.8.7
 
 **Signature:**
 

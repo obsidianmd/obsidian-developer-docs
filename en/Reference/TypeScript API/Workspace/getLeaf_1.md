@@ -17,6 +17,8 @@ If newLeaf is `'split'` then a new leaf will be created adjacent to the currentl
 
 If newLeaf is `'window'` then a popout window will be created with a new leaf inside.
 
+ 0.16.0
+
 **Signature:**
 
 ```typescript

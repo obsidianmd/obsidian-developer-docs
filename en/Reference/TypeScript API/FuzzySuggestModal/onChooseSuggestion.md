@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FuzzySuggestModal.onChooseSuggestion() method
 
+ 0.9.20
 
 **Signature:**
 

@@ -46,4 +46,5 @@ app.fileManager.processFrontMatter(file, (frontmatter) => {
     delete frontmatter['key2'];
 });
 ```
+ 1.4.4
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## View.icon property
 
+ 1.1.0
 
 **Signature:**
 

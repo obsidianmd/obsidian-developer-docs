@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FileSystemAdapter.stat() method
 
+ 0.12.2
 
 **Signature:**
 

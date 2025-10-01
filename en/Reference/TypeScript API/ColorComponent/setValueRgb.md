@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ColorComponent.setValueRgb() method
 
+ 1.0.0
 
 **Signature:**
 

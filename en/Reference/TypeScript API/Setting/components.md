@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.components property
 
+ 0.9.7
 
 **Signature:**
 

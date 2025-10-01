@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Plugin.app property
 
+ 0.9.7
 
 **Signature:**
 

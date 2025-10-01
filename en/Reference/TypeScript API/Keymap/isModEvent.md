@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Translates an event into the type of pane that should open. Returns 'tab' if the modifier key Cmd/Ctrl is pressed OR if this is a middle-click MouseEvent. Returns 'split' if Cmd/Ctrl+Alt is pressed. Returns 'window' if Cmd/Ctrl+Alt+Shift is pressed.
 
+ 0.16.0
+
 **Signature:**
 
 ```typescript

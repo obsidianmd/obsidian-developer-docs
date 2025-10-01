@@ -21,7 +21,7 @@ getMostRecentLeaf(root?: WorkspaceParent): WorkspaceLeaf | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>root</code> | [`WorkspaceParent`](WorkspaceParent) | _(Optional)_ Root for the leaves you want to search. If a root is not provided, the <code>rootSplit</code> and leaves within pop-outs will be searched. |
+|  <code>root</code> | [`WorkspaceParent`](WorkspaceParent) | <p>_(Optional)_ Root for the leaves you want to search. If a root is not provided, the <code>rootSplit</code> and leaves within pop-outs will be searched.</p><p> 0.15.4</p> |
 
 **Returns:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Tasks.isEmpty() method
 
+ 0.10.2
 
 **Signature:**
 

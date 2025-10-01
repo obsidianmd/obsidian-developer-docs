@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## ToggleComponent.(constructor)
 
-Constructs a new instance of the `ToggleComponent` class
+ 0.9.7
 
 **Signature:**
 

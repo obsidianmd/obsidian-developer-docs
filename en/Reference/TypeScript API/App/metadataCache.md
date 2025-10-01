@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## App.metadataCache property
 
+ 0.9.7
 
 **Signature:**
 

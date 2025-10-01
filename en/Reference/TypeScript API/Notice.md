@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Notification component. Use to present timely, high-value information.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript
@@ -27,14 +29,14 @@ export class Notice
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`containerEl`](Notice/containerEl) |  | <code>HTMLElement</code> |  |
-|  [`messageEl`](Notice/messageEl) |  | <code>HTMLElement</code> |  |
+|  [`containerEl`](Notice/containerEl) |  | <code>HTMLElement</code> |  1.8.7 |
+|  [`messageEl`](Notice/messageEl) |  | <code>HTMLElement</code> |  1.8.7 |
 |  [`noticeEl`](Notice/noticeEl) |  | <code>HTMLElement</code> |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`hide()`](Notice/hide) |  |  |
-|  [`setMessage(message)`](Notice/setMessage) |  | Change the message of this notice. |
+|  [`hide()`](Notice/hide) |  |  0.9.7 |
+|  [`setMessage(message)`](Notice/setMessage) |  | <p>Change the message of this notice.</p><p> 0.9.7</p> |
 

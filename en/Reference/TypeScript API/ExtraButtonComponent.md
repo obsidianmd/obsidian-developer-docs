@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ExtraButtonComponent class
 
+ 0.9.7
 
 **Signature:**
 
@@ -27,16 +28,16 @@ export class ExtraButtonComponent extends BaseComponent
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
-|  [`extraSettingsEl`](ExtraButtonComponent/extraSettingsEl) |  | <code>HTMLElement</code> |  |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`extraSettingsEl`](ExtraButtonComponent/extraSettingsEl) |  | <code>HTMLElement</code> |  0.9.7 |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`onClick(callback)`](ExtraButtonComponent/onClick) |  |  |
-|  [`setDisabled(disabled)`](ExtraButtonComponent/setDisabled) |  |  |
+|  [`onClick(callback)`](ExtraButtonComponent/onClick) |  |  0.9.7 |
+|  [`setDisabled(disabled)`](ExtraButtonComponent/setDisabled) |  |  1.2.3 |
 |  [`setIcon(icon)`](ExtraButtonComponent/setIcon) |  |  |
-|  [`setTooltip(tooltip, options)`](ExtraButtonComponent/setTooltip) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`setTooltip(tooltip, options)`](ExtraButtonComponent/setTooltip) |  |  1.1.0 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

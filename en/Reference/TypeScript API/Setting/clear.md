@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.clear() method
 
+ 0.13.8
 
 **Signature:**
 

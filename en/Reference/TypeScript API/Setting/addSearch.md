@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.addSearch() method
 
+ 0.9.21
 
 **Signature:**
 

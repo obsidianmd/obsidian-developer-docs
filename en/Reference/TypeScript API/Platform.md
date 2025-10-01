@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Platform variable
 
+ 0.12.2
 
 **Signature:**
 

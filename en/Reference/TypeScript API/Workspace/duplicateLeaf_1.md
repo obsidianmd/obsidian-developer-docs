@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace.duplicateLeaf() method
 
+ 1.1.0
 
 **Signature:**
 

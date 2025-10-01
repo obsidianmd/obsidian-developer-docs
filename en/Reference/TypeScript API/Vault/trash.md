@@ -22,7 +22,7 @@ trash(file: TAbstractFile, system: boolean): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  <code>file</code> | [`TAbstractFile`](TAbstractFile) | The file or folder to be deleted |
-|  <code>system</code> | <code>boolean</code> | Set to <code>false</code> to use local trash by default. |
+|  <code>system</code> | <code>boolean</code> | <p>Set to <code>false</code> to use local trash by default.</p><p> 0.9.7</p> |
 
 **Returns:**
 

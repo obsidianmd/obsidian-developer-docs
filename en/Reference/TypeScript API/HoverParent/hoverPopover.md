@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## HoverParent.hoverPopover property
 
+ 0.11.13
 
 **Signature:**
 

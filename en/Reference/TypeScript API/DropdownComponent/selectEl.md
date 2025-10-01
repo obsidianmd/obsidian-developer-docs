@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DropdownComponent.selectEl property
 
+ 0.9.7
 
 **Signature:**
 

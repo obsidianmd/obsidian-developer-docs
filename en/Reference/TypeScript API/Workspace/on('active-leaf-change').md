@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the active leaf changes.
 
+ 0.10.9
+
 **Signature:**
 
 ```typescript

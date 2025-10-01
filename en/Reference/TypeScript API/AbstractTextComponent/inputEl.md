@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## AbstractTextComponent.inputEl property
 
+ 0.9.7
 
 **Signature:**
 

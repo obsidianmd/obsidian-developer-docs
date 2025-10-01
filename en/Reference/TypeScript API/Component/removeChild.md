@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Removes a child component, unloading it
 
+ 0.12.0
+
 **Signature:**
 
 ```typescript

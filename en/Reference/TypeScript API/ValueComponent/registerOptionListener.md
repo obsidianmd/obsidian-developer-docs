@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ValueComponent.registerOptionListener() method
 
+ 0.9.7
 
 **Signature:**
 

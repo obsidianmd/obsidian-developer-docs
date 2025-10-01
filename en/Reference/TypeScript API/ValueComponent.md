@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ValueComponent class
 
+ 0.9.7
 
 **Signature:**
 
@@ -21,15 +22,15 @@ export abstract class ValueComponent<T> extends BaseComponent
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`getValue()`](ValueComponent/getValue) | <code>abstract</code> |  |
-|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  |  |
-|  [`setDisabled(disabled)`](BaseComponent/setDisabled) |  | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
-|  [`setValue(value)`](ValueComponent/setValue) | <code>abstract</code> |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`getValue()`](ValueComponent/getValue) | <code>abstract</code> |  0.9.7 |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  |  0.9.7 |
+|  [`setDisabled(disabled)`](BaseComponent/setDisabled) |  | <p> 1.2.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`setValue(value)`](ValueComponent/setValue) | <code>abstract</code> |  0.9.7 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

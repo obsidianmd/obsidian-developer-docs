@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Called when the size of this view is changed.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

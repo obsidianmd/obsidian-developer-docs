@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ButtonComponent.setWarning() method
 
+ 0.11.0
 
 **Signature:**
 

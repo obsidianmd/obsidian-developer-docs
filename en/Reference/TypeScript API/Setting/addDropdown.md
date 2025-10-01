@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.addDropdown() method
 
+ 0.9.7
 
 **Signature:**
 

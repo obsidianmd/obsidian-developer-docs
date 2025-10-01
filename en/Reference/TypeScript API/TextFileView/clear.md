@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Clear the editor. This is usually called when we're about to open a completely different file, so it's best to clear any editor states like undo-redo history, and any caches/indexes associated with the previous file contents.
 
+ 0.10.12
+
 **Signature:**
 
 ```typescript

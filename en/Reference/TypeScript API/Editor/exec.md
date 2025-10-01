@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Editor.exec() method
 
+ 0.12.2
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Notice.messageEl property
 
+ 1.8.7
 
 **Signature:**
 

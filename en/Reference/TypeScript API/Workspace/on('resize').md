@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when a `WorkspaceItem` is resized or the workspace layout has changed.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

@@ -23,7 +23,7 @@ append(file: TFile, data: string, options?: DataWriteOptions): Promise<void>;
 |  --- | --- | --- |
 |  <code>file</code> | [`TFile`](TFile) | The file |
 |  <code>data</code> | <code>string</code> | the text to add |
-|  <code>options</code> | [`DataWriteOptions`](DataWriteOptions) | _(Optional)_ (Optional) |
+|  <code>options</code> | [`DataWriteOptions`](DataWriteOptions) | <p>_(Optional)_ (Optional)</p><p> 0.13.0</p> |
 
 **Returns:**
 

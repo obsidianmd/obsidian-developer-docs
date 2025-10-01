@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.addSlider() method
 
+ 0.9.7
 
 **Signature:**
 

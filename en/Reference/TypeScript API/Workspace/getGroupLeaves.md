@@ -21,7 +21,7 @@ getGroupLeaves(group: string): WorkspaceLeaf[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>group</code> | <code>string</code> | id |
+|  <code>group</code> | <code>string</code> | <p>id</p><p> 0.9.7</p> |
 
 **Returns:**
 

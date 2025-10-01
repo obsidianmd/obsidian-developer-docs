@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## DropdownComponent class
 
+ 0.9.7
 
 **Signature:**
 
@@ -27,19 +28,19 @@ export class DropdownComponent extends ValueComponent<string>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
-|  [`selectEl`](DropdownComponent/selectEl) |  | <code>HTMLSelectElement</code> |  |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`selectEl`](DropdownComponent/selectEl) |  | <code>HTMLSelectElement</code> |  0.9.7 |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`addOption(value, display)`](DropdownComponent/addOption) |  |  |
-|  [`addOptions(options)`](DropdownComponent/addOptions) |  |  |
-|  [`getValue()`](DropdownComponent/getValue) |  |  |
-|  [`onChange(callback)`](DropdownComponent/onChange) |  |  |
-|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
-|  [`setDisabled(disabled)`](DropdownComponent/setDisabled) |  |  |
-|  [`setValue(value)`](DropdownComponent/setValue) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`addOption(value, display)`](DropdownComponent/addOption) |  |  0.9.7 |
+|  [`addOptions(options)`](DropdownComponent/addOptions) |  |  0.9.7 |
+|  [`getValue()`](DropdownComponent/getValue) |  |  0.9.7 |
+|  [`onChange(callback)`](DropdownComponent/onChange) |  |  0.9.7 |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p> 0.9.7</p><p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
+|  [`setDisabled(disabled)`](DropdownComponent/setDisabled) |  |  1.2.3 |
+|  [`setValue(value)`](DropdownComponent/setValue) |  |  0.9.7 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 
