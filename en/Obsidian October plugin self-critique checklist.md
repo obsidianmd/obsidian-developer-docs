@@ -4,7 +4,7 @@ permalink: oo/plugin
 aliases:
   - oo24/plugin
 ---
-## Releasing & naming
+## Releasing and naming
 
 - [ ] Remove placeholder names such as `MyPlugin` and `SampleSettingTab`.
 - [ ] Don't include the word "Obsidian" in your name unless it absolutely makes sense. Most of the time it's redundant.
@@ -23,11 +23,11 @@ aliases:
 
 ## Mobile support
 
-Please only complete this section if you have `isDesktopOnly` set to false in your manifest.
+Complete this section if you have `isDesktopOnly` set to false in your manifest.
 
-- [ ] Don't use node.js modules such as `fs`, `path`, and `electron`.
+- [ ] Don’t use Node.js modules such as `fs`, `path`, or `electron` at the top level. If needed, gate the functionality behind `Platform.isDesktopApp` and `require()` them dynamically at runtime.
 - [ ] Don't use regex lookbehinds if you want to support iOS versions lower than 16.4 (ignore this if you don't use regex in your plugin). [Learn more](https://docs.obsidian.md/Plugins/Getting+started/Mobile+development#Lookbehind+in+regular+expressions).
-- [ ] Don't use the `FileSystemAdapter` class.
+- [ ] Don't cast `Vault.adapter` to `FileSystemAdapter`. All usages of `FileSystemAdapter` should be gated behind an `instanceof` check. On mobile, `Vault.adapter` will be an instance of `CapacitorAdapter`.
 - [ ] Don't use `process.platform`, use Obsidian's `Platform` instead. [Link to API](https://docs.obsidian.md/Reference/TypeScript+API/Platform).
 - [ ] Don't use `fetch` or `axios.get`, use Obsidian's `requestUrl` instead. [Link to API](https://docs.obsidian.md/Reference/TypeScript+API/requestUrl).
 
@@ -38,9 +38,15 @@ Please only complete this section if you have `isDesktopOnly` set to false in yo
 - [ ] Do break up your `main.ts` into smaller files or even folders if it gets big to make code easier to find.
 - [ ] Do use `async` and `await` when you can for readability, instead of using `Promise`. [Learn more](https://docs.obsidian.md/Plugins/Releasing/Plugin+guidelines#Prefer+async%2Fawait+over+Promise).
 - [ ] Don't use global variables. Try to keep variables either in the scope of classes or functions. [Learn more](http://wiki.c2.com/?GlobalVariablesAreBad).
-- [ ] Do test with `instanceof` before casting into other types such as `TFile`, `TFolder`, or `FileSystemAdapter`, 
+- [ ] Do test with `instanceof` before casting into other types such as `TFile`, `TFolder`, or `FileSystemAdapter`.
 - [ ] Don't use use `as any` and use proper typing instead.
 
+## Security
+
+- [ ] Do [disclose relevant information](https://docs.obsidian.md/Developer+policies#Disclosures) in your README file (payments, account requirements, network use, external file access, ads, telemetry with privacy policy, closed source code).
+- [ ] Do be mindful of all dependencies you add to your plugin. Remember that [less is safer](https://obsidian.md/blog/less-is-safer/). 
+- [ ] Do not include any client-side telemetry. Libraries that offer usage tracking and metrics will often collect information that users could consider sensitive.
+- [ ] Do commit and use a lock file (package-lock.json, pnpm-lock.yaml, or yarn.lock) when using a package manager (npm, pnpm, or yarn).
 
 ## API usage
 
