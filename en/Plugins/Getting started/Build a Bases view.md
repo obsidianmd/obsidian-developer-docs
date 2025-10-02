@@ -29,7 +29,7 @@ When developing plugins, one mistake can lead to unintended changes to your vaul
 
 In this tutorial it is assumed that you have a directory on your computer with the sample plugin and that you know how to build your plugin and test it in Obsidian.
 
-For the purposes of this List view plugin, we can remove a large portion of the code from the `MyPlugin` class, leaving just the `onload` function.
+For the purposes of this list view plugin, we can remove a large portion of the code from the `MyPlugin` class, leaving just the `onload` function.
 
 ```TypeScript
 export default class MyPlugin extends Plugin {
@@ -40,7 +40,7 @@ export default class MyPlugin extends Plugin {
 
 ## Step 2: Create and register the Bases view
 
-Once you have an empty plugin which can be built and loaded into Obsidian, you can start to add a Bases view. Start with a view that statically displays "Hello World".
+Once you have an empty plugin which can be built and loaded into Obsidian, you can begin building a Bases view. Start with a view that statically displays "Hello World".
 
 ```TypeScript
 export const ExampleViewType = 'example-view';
@@ -93,14 +93,14 @@ export default class MyPlugin extends Plugin {
       icon: 'lucide-graduation-cap',
       factory: (controller, containerEl) => new MyBasesView(controller, containerEl),
       options: () => ([
-		{
-			type: 'text',                      // The type of option. 'text' is a text input.
-			displayName: 'Property separator', // The name displayed in the settings menu
-			key: 'separator',                  // The value saved to the view settings
-			default: ' - ',                    // The default value for this option
-		},
-		// ...
-	  ]),
+        {
+          type: 'text',                      // The type of option. 'text' is a text input.
+          displayName: 'Property separator', // The name displayed in the settings menu.
+          key: 'separator',                  // The value saved to the view settings.
+          default: ' - ',                    // The default value for this option.
+        },
+        // ...
+    ]),
     });
   }
 }
@@ -110,7 +110,7 @@ export default class MyPlugin extends Plugin {
 
 ## Step 4: Display list items
 
-The final step in creating a new Bases view is to actually transform the data from properties into the format you want to display. Obsidian will call the `onDataUpdated` method on your view whenever there are changes to the data. To keep this example simple, the code below clears the container, and rerenders a list entry for every file provided in the data set. It is important, however, to keep in mind the best practices of web development. An unfiltered Base will provide an entry for every file in the vault, so your view should be able to handle thousands of entries and reuse DOM elements and avoid rendering off screen where appropriate.
+The final step in creating a new Bases view is to transform the data from properties into the format you want to display. Obsidian will call the `onDataUpdated` method on your view whenever there are changes to the data. To keep this example simple, the code below clears the container, and rerenders a list entry for every file provided in the data set. It is important, however, to keep in mind the best practices of web development. An unfiltered Base will provide an entry for every file in the vault, so your view should be able to handle thousands of entries, reuse DOM elements, and avoid rendering off screen where appropriate.
 
 ```typescript
 // Add `implements HoverParent` to enable hovering over file links.
@@ -194,8 +194,18 @@ export class MyBasesView extends BasesView implements HoverParent {
 }
 ```
 
-Build your plugin again with the changes and reload the app. Your Base should now display a list item for every file in the vault!
+Rebuild your plugin and reload the app. Your Base should now display a list item for every file in the vault!
 
 ![[example-bases-view-complete.jpg]]
 
-TODO: Add links to api docs, discord channels, etc.
+## Conclusion
+
+Congratulations on building your first Bases view! Bases are a powerful new way to view the data in your vault and we can't wait to see what new views you create.
+
+This website contains the full API reference for Bases. Here are a couple places to get started:
+
+- [BasesView](/Reference/TypeScript+API/BasesView)
+- [BasesViewConfig](/Reference/TypeScript+API/BasesViewConfig)
+- [BasesEntryGroup](/Reference/TypeScript+API/BasesEntryGroup)
+
+If you have any questions, please join the [Obsidian Discord server](https://discord.gg/obsidianmd) and ask in the "obsidian-bases" or "plugin-dev" channels.
