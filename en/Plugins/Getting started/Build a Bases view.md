@@ -1,4 +1,4 @@
-Bases are a core plugin in Obsidian which display dynamic views of your notes as tables, cards, lists, and more. If you're unfamiliar with Bases, please read about them in the [help docs](https://help.obsidian.md/bases) before getting started.
+Bases is a core plugin in Obsidian which display dynamic views of your notes as tables, cards, lists, and more. If you're unfamiliar with Bases, please read about them in the [help docs](https://help.obsidian.md/bases) before getting started.
 
 Plugins can use the Obsidian API to create completely custom views of the data powering Bases. In this tutorial, you'll walk through extending the sample plugin to create a simplified version of the list view.
 
@@ -49,7 +49,7 @@ export default class MyPlugin extends Plugin {
   async onload() {
     // Tell Obsidian about the new view type that this plugin provides.
     this.registerBasesView(ExampleViewType, {
-      name: "Example",
+      name: 'Example',
       icon: 'lucide-graduation-cap',
       factory: (controller, containerEl) => new MyBasesView(controller, containerEl),
     });
@@ -60,9 +60,9 @@ export class MyBasesView extends BasesView {
   readonly type = ExampleViewType;
   private containerEl: HTMLElement;
 
-  constructor(controller: QueryController, scrollEl: HTMLElement) {
+  constructor(controller: QueryController, parentEl: HTMLElement) {
     super(controller);
-    this.containerEl = scrollEl.createDiv('bases-example-view-container');
+    this.containerEl = parentEl.createDiv('bases-example-view-container');
   }
 
   // onDataUpdated is called by Obsidian whenever there is a configuration or data change
@@ -82,6 +82,8 @@ Build your plugin, reload the app, and create a new Base file. Use the menu on t
 
 The menu where you changed the view layout can also contain additional configuration options for your view. Add an `options` property in the call to `registerBasesView`.
 
+In your IDE, you can view the definition of `ViewOption` to see the different controls available. Each control will create an entry in the view configuration menu, and user input will automatically be stored in the Bases configuration file.
+
 ```typescript
 export default class MyPlugin extends Plugin {
   async onload() {
@@ -90,35 +92,17 @@ export default class MyPlugin extends Plugin {
       name: "Example",
       icon: 'lucide-graduation-cap',
       factory: (controller, containerEl) => new MyBasesView(controller, containerEl),
-      options: MyBasesView.getViewOptions,
+      options: () => ([
+		{
+			type: 'text',                      // The type of option. 'text' is a text input.
+			displayName: 'Property separator', // The name displayed in the settings menu
+			key: 'separator',                  // The value saved to the view settings
+			default: ' - ',                    // The default value for this option
+		},
+		// ...
+	  ]),
     });
   }
-}
-```
-
-Then, in `MyBasesView`, define `getViewOptions`. In your IDE, you can view the definition of `ViewOption` to see the different controls available. Each control will create an entry in the view configuration menu, and user input will automatically be stored in the Bases configuration file.
-
-```typescript
-const DEFAULT_PROPERTY_SEPARATOR = ' - ';
-const PROPERTY_SEPARATOR_KEY = 'separator';
-
-export class MyBasesView extends BasesView {
-
-  // ...
-
-  static getViewOptions(): ViewOption[] {
-    return [
-      {
-        displayName: 'Property separator',
-        key: PROPERTY_SEPARATOR_KEY,
-        type: 'text',
-        default: DEFAULT_PROPERTY_SEPARATOR,
-      },
-    ];
-  }
-
-  // ...
-
 }
 ```
 
@@ -170,12 +154,10 @@ export class MyBasesView extends BasesView implements HoverParent {
   
             // Completely skip rendering properties which have an empty value.
             // This means the list items for each file may have differing length.
-            if (value === undefined || value === null) continue;
+            if (value.isEmpty()) continue;
   
             if (!firstProp) {
-              el.createEl('span', 'bases-list-separator', (sepEl) => {
-                sepEl.setText(propertySeparator);
-              });
+              el.createSpan({ cls: 'bases-list-separator', text: propertySeparator });
             }
             firstProp = false;
   
@@ -202,9 +184,7 @@ export class MyBasesView extends BasesView implements HoverParent {
             // For all other properties, just display the value as text. In your view
             // you may also choose to use the `Value.renderTo` API to better support photos, links, icons, etc.
             else {
-              el.createEl('span', 'bases-list-entry-property', (spanEl) => {
-                spanEl.setText(String(value));
-              });
+              el.createSpan({ cls: 'bases-list-entry-property', text: value.toString() });
             }
           }
         });
