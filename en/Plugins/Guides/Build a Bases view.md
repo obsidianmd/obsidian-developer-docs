@@ -107,7 +107,7 @@ export default class MyPlugin extends Plugin {
 }
 ```
 
-![[example-bases-view-configuration.gif]]
+![[example-bases-view-configuration.gif#interface]]
 
 ## Step 4: Display list items
 
