@@ -1,3 +1,6 @@
+---
+permalink: plugins/guides/bases-view
+---
 Bases is a core plugin in Obsidian which display dynamic views of your notes as tables, cards, lists, and more. If you're unfamiliar with Bases, please read about them in the [help docs](https://help.obsidian.md/bases) before getting started.
 
 Plugins can use the Obsidian API to create completely custom views of the data powering Bases. In this tutorial, you'll walk through extending the sample plugin to create a simplified version of the list view.
@@ -75,8 +78,6 @@ export class MyBasesView extends BasesView {
 ```
 
 Build your plugin, reload the app, and create a new Base file. Use the menu on the left of the toolbar, and select the right chevron next to the view in the list. From this menu, change the layout to your newly created "Example" view type.
-
-![[example-bases-view-hello-world.jpg]]
 
 ## Step 3: Add configuration
 
@@ -195,8 +196,6 @@ export class MyBasesView extends BasesView implements HoverParent {
 ```
 
 Rebuild your plugin and reload the app. Your Base should now display a list item for every file in the vault!
-
-![[example-bases-view-complete.jpg]]
 
 ## Conclusion
 

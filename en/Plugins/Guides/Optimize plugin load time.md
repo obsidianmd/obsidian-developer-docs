@@ -1,6 +1,11 @@
-In [Obsidian v1.7.1](https://obsidian.md/changelog/2024-08-27-desktop-v1.7.1/), we added the "Debug startup time" view. This view indicates how long it takes for the app to launch.
-
+---
+aliases:
+  - Plugins/Guides/Optimizing+plugin+load+time
+permalink: plugins/guides/load-time
+---
 Plugins play an important role in app load time. To ensure that Obsidian behaves correctly, Obsidian loads all plugins before the user can interact with the app.
+
+You can test the startup time of Obsidian by going to **Settings** → **General** → **Advanced**. and select the stopwatch icon to debug startup time. This view indicates how long it takes for the app to launch.
 
 ### How do I improve my plugin's load time?
 
@@ -14,7 +19,7 @@ In your build configuration, you should consider minifying your plugin code. Thi
 
 Next, make sure you aren't doing anything expensive inside your plugin's `onload` function. The `onload` function should only include code necessary for the plugin to initialize. This includes app registrations, like registering commands, view types, and Markdown post-processors. It should not include anything computationally expensive or data fetching.
 
-If your plugin creates any custom views, be mindful of your custom view constructor. When Obsidian opens, it will reopen all the views saved to the user's workspace. If your view is loaded (and not [[Understanding deferred views|deferred]]), this will directly impact the app load time.
+If your plugin creates any custom views, be mindful of your custom view constructor. When Obsidian opens, it will reopen all the views saved to the user's workspace. If your view is loaded (and not [[Defer views|deferred]]), this will directly impact the app load time.
 
 ### If you have code that you want to run at startup, where should it go?
 
