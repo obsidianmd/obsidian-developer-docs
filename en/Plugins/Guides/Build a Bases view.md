@@ -142,10 +142,7 @@ export class MyBasesView extends BasesView implements HoverParent {
 
     // The property separator configured by the ViewOptions above can be
     // retrieved from the view config. Be sure to set a default value.
-    const propertySeparator = String(
-      this.config.get(PROPERTY_SEPARATOR_KEY) ||
-      DEFAULT_PROPERTY_SEPARATOR
-    );
+    const propertySeparator = String(this.config.get('separator')) || ' - ';
 
     // this.data contains both grouped and ungrouped versions of the data.
     // If it's appropriate for your view type, use the grouped form.
