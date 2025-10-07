@@ -54,7 +54,9 @@ export default class MyPlugin extends Plugin {
     this.registerBasesView(ExampleViewType, {
       name: 'Example',
       icon: 'lucide-graduation-cap',
-      factory: (controller, containerEl) => new MyBasesView(controller, containerEl),
+      factory: (controller, containerEl) => {
+        new MyBasesView(controller, containerEl)
+      },
     });
   }
 }
@@ -68,8 +70,9 @@ export class MyBasesView extends BasesView {
     this.containerEl = parentEl.createDiv('bases-example-view-container');
   }
 
-  // onDataUpdated is called by Obsidian whenever there is a configuration or data change
-  // in the vault which may affect your view. For now, simply draw "Hello World" to screen.
+  // onDataUpdated is called by Obsidian whenever there is a configuration
+  // or data change in the vault which may affect your view. For now,
+  // simply draw "Hello World" to screen.
   public onDataUpdated(): void {
     this.containerEl.empty();
     this.containerEl.createDiv({ text: 'Hello World' });
@@ -92,13 +95,19 @@ export default class MyPlugin extends Plugin {
     this.registerBasesView(ExampleViewType, {
       name: "Example",
       icon: 'lucide-graduation-cap',
-      factory: (controller, containerEl) => new MyBasesView(controller, containerEl),
+      factory: (controller, containerEl) => {
+        new MyBasesView(controller, containerEl)
+      },
       options: () => ([
         {
-          type: 'text',                      // The type of option. 'text' is a text input.
-          displayName: 'Property separator', // The name displayed in the settings menu.
-          key: 'separator',                  // The value saved to the view settings.
-          default: ' - ',                    // The default value for this option.
+          // The type of option. 'text' is a text input.
+          type: 'text',
+          // The name displayed in the settings menu.
+          displayName: 'Property separator',
+          // The value saved to the view settings.
+          key: 'separator',
+          // The default value for this option.
+          default: ' - ',
         },
         // ...
     ]),
@@ -133,7 +142,10 @@ export class MyBasesView extends BasesView implements HoverParent {
 
     // The property separator configured by the ViewOptions above can be retrieved
     // from the view config. Be sure to set a default value.
-    const propertySeparator = String(this.config.get(PROPERTY_SEPARATOR_KEY) || DEFAULT_PROPERTY_SEPARATOR);
+    const propertySeparator = String(
+      this.config.get(PROPERTY_SEPARATOR_KEY) ||
+      DEFAULT_PROPERTY_SEPARATOR
+    );
 
     // this.data contains both grouped and ungrouped versions of the data.
     // If it's appropriate for your view type, use the grouped form.
@@ -141,16 +153,18 @@ export class MyBasesView extends BasesView implements HoverParent {
       const groupEl = this.containerEl.createDiv('bases-list-group');
       const groupListEl = groupEl.createEl('ul', 'bases-list-group-list');
 
-      // Each entry in the group is a separate file in the vault which matched the Base filters.
-      // For the list view, each entry will be a separate line.
+      // Each entry in the group is a separate file in the vault which matched
+      // the Base filters. For the list view, each entry will be a separate line.
       for (const entry of group.entries) {
         groupListEl.createEl('li', 'bases-list-entry', (el) => {
           let firstProp = true;
           for (const propertyName of order) {
-            // Properties in the order can be parsed to determine what type they are: formula, note, or file.
+            // Properties in the order can be parsed to determine what type
+            // they are: formula, note, or file.
             const { type, name } = parsePropertyId(propertyName);
   
-            // `entry.getValue` returns the evaluated result of the property in the context of this entry.
+            // `entry.getValue` returns the evaluated result of the property
+            // in the context of this entry.
             const value = entry.getValue(propertyName);
   
             // Completely skip rendering properties which have an empty value.
@@ -158,18 +172,24 @@ export class MyBasesView extends BasesView implements HoverParent {
             if (value.isEmpty()) continue;
   
             if (!firstProp) {
-              el.createSpan({ cls: 'bases-list-separator', text: propertySeparator });
+              el.createSpan({
+                cls: 'bases-list-separator',
+                text: propertySeparator
+              });
             }
             firstProp = false;
   
             // If the `file.name` property is included in the order, render
             // it specially so that it links to that file.
             if (name === 'name' && type === 'file') {
-              const linkEl = el.createEl('a', { text: String(entry.file.name) });
+              const fileName = String(entry.file.name);
+              const linkEl = el.createEl('a', { text: fileName });
               linkEl.onClickEvent((evt) => {
                 if (evt.button !== 0 && evt.button !== 1) return;
                 evt.preventDefault();
-                void app.workspace.openLinkText(entry.file.path, '', Keymap.isModEvent(evt));
+                const path = entry.file.path;
+                const modEvent = Keymap.isModEvent(evt);
+                void app.workspace.openLinkText(path, '', modEvent);
               });
   
               linkEl.addEventListener('mouseover', (evt) => {
@@ -182,10 +202,14 @@ export class MyBasesView extends BasesView implements HoverParent {
                 });
               });
             }
-            // For all other properties, just display the value as text. In your view
-            // you may also choose to use the `Value.renderTo` API to better support photos, links, icons, etc.
+            // For all other properties, just display the value as text.
+            // In your view you may also choose to use the `Value.renderTo` API
+            // to better support photos, links, icons, etc.
             else {
-              el.createSpan({ cls: 'bases-list-entry-property', text: value.toString() });
+              el.createSpan({
+                cls: 'bases-list-entry-property',
+                text: value.toString()
+              });
             }
           }
         });
