@@ -3,24 +3,24 @@ permalink: plugins/guides/bases-view
 ---
 Bases is a core plugin in Obsidian which display dynamic views of your notes as tables, cards, lists, and more. If you're unfamiliar with Bases, please read about them in the [help docs](https://help.obsidian.md/bases) before getting started.
 
-Plugins can use the Obsidian API to create completely custom views of the data powering Bases. In this tutorial, you'll walk through extending the sample plugin to create a simplified version of the list view.
+Plugins can use the Obsidian API to create completely custom views of the data powering Bases. In this guide, you'll walk through extending the sample plugin to create a simplified version of the list view.
 
 ## What you'll learn
 
-After you've completed this tutorial, you'll be able to:
+After you've completed this guide, you'll be able to:
 
-- Create a custom [Bases view](help.obsidian.md/bases/views).
+- Create a custom [Bases view](https://help.obsidian.md/bases/views).
 - Dynamically render data from note properties in a list format.
 
 ## Prerequisites
 
-To complete this tutorial, you'll need:
+To complete this guide, you'll need:
 
 - [Git](https://git-scm.com/) installed on your local machine.
 - A local development environment for [Node.js](https://Node.js.org/en/about/).
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/).
 
-Additionally, this tutorial will build off of the sample plugin created in a previous tutorial. Please follow the ["Build a plugin" tutorial](Plugins/Getting+started/Build+a+plugin) before starting this tutorial.
+Additionally, this guide will build off of the sample plugin created in a previous guide. Follow the [[Build a plugin]] guide before starting this guide.
 
 ## Before you start
 
@@ -30,7 +30,7 @@ When developing plugins, one mistake can lead to unintended changes to your vaul
 
 ## Step 1: Sample plugin setup
 
-In this tutorial it is assumed that you have a directory on your computer with the sample plugin and that you know how to build your plugin and test it in Obsidian.
+In this guide it is assumed that you have a directory on your computer with the sample plugin and that you know how to build your plugin and test it in Obsidian.
 
 For the purposes of this list view plugin, we can remove a large portion of the code from the `MyPlugin` class, leaving just the `onload` function.
 
@@ -203,8 +203,8 @@ Congratulations on building your first Bases view! Bases are a powerful new way 
 
 This website contains the full API reference for Bases. Here are a couple places to get started:
 
-- [BasesView](/Reference/TypeScript+API/BasesView)
-- [BasesViewConfig](/Reference/TypeScript+API/BasesViewConfig)
-- [BasesEntryGroup](/Reference/TypeScript+API/BasesEntryGroup)
+- [[BasesView|BasesView]]
+- [[BasesViewConfig|BasesViewConfig]]
+- [[BasesEntryGroup|BasesEntryGroup]]
 
 If you have any questions, please join the [Obsidian Discord server](https://discord.gg/obsidianmd) and ask in the "obsidian-bases" or "plugin-dev" channels.
