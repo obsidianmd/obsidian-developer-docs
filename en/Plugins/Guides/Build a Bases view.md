@@ -133,7 +133,7 @@ export class MyBasesView extends BasesView implements HoverParent {
   public onDataUpdated(): void {
     const { app } = this;
 
-    // Retrieve the user configured order set in the Properties toolbar menu.
+    // Retrieve the user configured order set in the Properties menu.
     const order = this.config.getOrder()
 
     // Clear entries created by previous iterations. Remember, you should
@@ -154,7 +154,7 @@ export class MyBasesView extends BasesView implements HoverParent {
       const groupListEl = groupEl.createEl('ul', 'bases-list-group-list');
 
       // Each entry in the group is a separate file in the vault matching
-      // the Base filters. For list view, each entry will be a separate line.
+      // the Base filters. For list view, each entry is a separate line.
       for (const entry of group.entries) {
         groupListEl.createEl('li', 'bases-list-entry', (el) => {
           let firstProp = true;
