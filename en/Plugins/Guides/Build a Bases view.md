@@ -136,8 +136,8 @@ export class MyBasesView extends BasesView implements HoverParent {
     // Retrieve the user configured order set in the Properties toolbar menu.
     const order = this.config.getOrder()
 
-    // Clear entries created by previous iterations. Remember, you should instead
-    // attempt element reuse when possible.
+    // Clear entries created by previous iterations. Remember, you should
+    // instead attempt element reuse when possible.
     this.containerEl.empty();
 
     // The property separator configured by the ViewOptions above can be
@@ -153,8 +153,8 @@ export class MyBasesView extends BasesView implements HoverParent {
       const groupEl = this.containerEl.createDiv('bases-list-group');
       const groupListEl = groupEl.createEl('ul', 'bases-list-group-list');
 
-      // Each entry in the group is a separate file in the vault which matched
-      // the Base filters. For the list view, each entry will be a separate line.
+      // Each entry in the group is a separate file in the vault matching
+      // the Base filters. For list view, each entry will be a separate line.
       for (const entry of group.entries) {
         groupListEl.createEl('li', 'bases-list-entry', (el) => {
           let firstProp = true;
@@ -167,8 +167,8 @@ export class MyBasesView extends BasesView implements HoverParent {
             // in the context of this entry.
             const value = entry.getValue(propertyName);
   
-            // Completely skip rendering properties which have an empty value.
-            // This means the list items for each file may have differing length.
+            // Skip rendering properties which have an empty value.
+            // The list items for each file may have differing length.
             if (value.isEmpty()) continue;
   
             if (!firstProp) {
@@ -203,8 +203,8 @@ export class MyBasesView extends BasesView implements HoverParent {
               });
             }
             // For all other properties, just display the value as text.
-            // In your view you may also choose to use the `Value.renderTo` API
-            // to better support photos, links, icons, etc.
+            // In your view you may also choose to use the `Value.renderTo`
+            // API to better support photos, links, icons, etc.
             else {
               el.createSpan({
                 cls: 'bases-list-entry-property',
