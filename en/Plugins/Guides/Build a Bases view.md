@@ -133,15 +133,15 @@ export class MyBasesView extends BasesView implements HoverParent {
   public onDataUpdated(): void {
     const { app } = this;
 
-    // Retrieve the user configured order they set in the Properties toolbar menu.
+    // Retrieve the user configured order set in the Properties toolbar menu.
     const order = this.config.getOrder()
 
     // Clear entries created by previous iterations. Remember, you should instead
     // attempt element reuse when possible.
     this.containerEl.empty();
 
-    // The property separator configured by the ViewOptions above can be retrieved
-    // from the view config. Be sure to set a default value.
+    // The property separator configured by the ViewOptions above can be
+    // retrieved from the view config. Be sure to set a default value.
     const propertySeparator = String(
       this.config.get(PROPERTY_SEPARATOR_KEY) ||
       DEFAULT_PROPERTY_SEPARATOR
