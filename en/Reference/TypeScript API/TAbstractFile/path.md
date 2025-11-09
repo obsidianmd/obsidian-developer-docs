@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TAbstractFile.path property
 
+ 0.9.7
 
 **Signature:**
 

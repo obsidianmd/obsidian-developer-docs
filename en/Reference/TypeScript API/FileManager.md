@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Manage the creation, deletion and renaming of files from the UI.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript
@@ -25,6 +27,7 @@ export class FileManager
 |  [`getAvailablePathForAttachment(filename, sourcePath)`](FileManager/getAvailablePathForAttachment) |  | Resolves a unique path for the attachment file being saved. Ensures that the parent directory exists and dedupes the filename if the destination filename already exists. |
 |  [`getNewFileParent(sourcePath, newFilePath)`](FileManager/getNewFileParent) |  | Gets the folder that new files should be saved to, given the user's preferences. |
 |  [`processFrontMatter(file, fn, options)`](FileManager/processFrontMatter) |  | <p>Atomically read, modify, and save the frontmatter of a note. The frontmatter is passed in as a JS object, and should be mutated directly to achieve the desired result.</p><p>Remember to handle errors thrown by this method.</p> |
+|  [`promptForDeletion(file)`](FileManager/promptForDeletion) |  |  0.15.0 |
 |  [`renameFile(file, newPath)`](FileManager/renameFile) |  | Rename or move a file safely, and update all links to it depending on the user's preferences. |
 |  [`trashFile(file)`](FileManager/trashFile) |  | Remove a file or a folder from the vault according the user's preferred 'trash' options (either moving the file to .trash/ or the OS trash bin). |
 

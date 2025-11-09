@@ -23,7 +23,7 @@ create(path: string, data: string, options?: DataWriteOptions): Promise<TFile>;
 |  --- | --- | --- |
 |  <code>path</code> | <code>string</code> | Vault absolute path for the new file, with extension. |
 |  <code>data</code> | <code>string</code> | text content for the new file. |
-|  <code>options</code> | [`DataWriteOptions`](DataWriteOptions) | _(Optional)_ (Optional) |
+|  <code>options</code> | [`DataWriteOptions`](DataWriteOptions) | <p>_(Optional)_ (Optional)</p><p> 0.9.7</p> |
 
 **Returns:**
 

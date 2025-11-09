@@ -9,18 +9,19 @@ cssclasses: hide-title
 
 ## ButtonComponent.onClick() method
 
+ 0.12.16
 
 **Signature:**
 
 ```typescript
-onClick(callback: (evt: MouseEvent) => any): this;
+onClick(callback: (evt: MouseEvent) => unknown | Promise<unknown>): this;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>callback</code> | <code>(evt: </code><code>MouseEvent</code><code>) =&gt; any</code> |  |
+|  <code>callback</code> | <code>(evt: </code><code>MouseEvent</code><code>) =&gt; unknown &#124; </code><code>Promise</code><code>&lt;unknown&gt;</code> |  |
 
 **Returns:**
 

@@ -11,7 +11,7 @@ cssclasses: hide-title
 
 > Warning: This API is now obsolete.
 > 
-> - use [MarkdownRenderer.render()](MarkdownRenderer/render)
+> - use [MarkdownRenderer.render()](MarkdownRenderer/render)  0.10.6
 > 
 
 Renders Markdown string to an HTML element.

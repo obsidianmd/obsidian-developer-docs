@@ -13,9 +13,9 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-onOpen(): void;
+onOpen(): Promise<void> | void;
 ```
 **Returns:**
 
-`void`
+`Promise<void> | void`
 

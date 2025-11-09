@@ -2,6 +2,11 @@ Each collection of notes in Obsidian is known as a Vault. A Vault consists of a 
 
 While your plugin can access the file system like any other Node.js application, the [[Reference/TypeScript API/Vault|Vault]] module aims to make it easier to work with files and folders within a Vault.
 
+
+> [!NOTE]
+> The Vault API only allows access to the files visible inside the app, files included in hidden folders can only be accessed using the Adapter API.
+
+
 The following example recursively prints the paths of all Markdown files in a Vault:
 
 ```ts

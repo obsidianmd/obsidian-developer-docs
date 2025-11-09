@@ -30,7 +30,7 @@ jobs:
         continue-on-error: true
         run: |
           rush update --bypass-policy
-          rush build
+          rush build -t api-extractor -t api-documenter
 
       - name: Run API Extractor
         run: |

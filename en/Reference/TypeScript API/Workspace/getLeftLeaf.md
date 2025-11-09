@@ -21,7 +21,7 @@ getLeftLeaf(split: boolean): WorkspaceLeaf | null;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>split</code> | <code>boolean</code> | Should the existing split be split up? |
+|  <code>split</code> | <code>boolean</code> | <p>Should the existing split be split up?</p><p> 0.9.7</p> |
 
 **Returns:**
 

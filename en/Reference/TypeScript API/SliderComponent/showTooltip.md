@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SliderComponent.showTooltip() method
 
+ 0.9.7
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Events.on() method
 
+ 0.9.7
 
 **Signature:**
 

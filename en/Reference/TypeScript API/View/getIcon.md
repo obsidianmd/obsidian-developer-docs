@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## View.getIcon() method
 
+ 1.1.0
 
 **Signature:**
 

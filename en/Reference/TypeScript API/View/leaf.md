@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## View.leaf property
 
+ 0.9.7
 
 **Signature:**
 

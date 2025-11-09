@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Gets the name of the vault.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

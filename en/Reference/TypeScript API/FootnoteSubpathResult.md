@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## FootnoteSubpathResult interface
 
+ 1.7.2
 
 **Signature:**
 

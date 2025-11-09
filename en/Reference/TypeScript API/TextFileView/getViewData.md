@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Gets the data from the editor. This will be called to save the editor contents to the file.
 
+ 0.10.12
+
 **Signature:**
 
 ```typescript

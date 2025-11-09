@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the CSS of the app has changed.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ExtraButtonComponent.setTooltip() method
 
+ 1.1.0
 
 **Signature:**
 

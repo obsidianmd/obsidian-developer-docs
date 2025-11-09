@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ButtonComponent.setIcon() method
 
+ 1.1.0
 
 **Signature:**
 

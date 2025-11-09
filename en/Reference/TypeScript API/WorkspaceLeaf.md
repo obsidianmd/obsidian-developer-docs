@@ -13,14 +13,17 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-export class WorkspaceLeaf extends WorkspaceItem 
+export class WorkspaceLeaf extends WorkspaceItem implements HoverParent 
 ```
 **Extends:** [`WorkspaceItem`](WorkspaceItem)
+
+**Implements:** [`HoverParent`](HoverParent)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`hoverPopover`](WorkspaceLeaf/hoverPopover) |  | [`HoverPopover`](HoverPopover)<code> &#124; null</code> |  |
 |  [`isDeferred`](WorkspaceLeaf/isDeferred) | <code>readonly</code> | <code>boolean</code> | Returns true if this leaf is currently deferred because it is in the background. A deferred leaf will have a DeferredView as its view, instead of the View that it should normally have for its type (like MarkdownView for the <code>markdown</code> type).  1.7.2 |
 |  [`parent`](WorkspaceLeaf/parent) |  | [`WorkspaceTabs`](WorkspaceTabs)<code> &#124; </code>[`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) | <p>The direct parent of the leaf.</p><p>On desktop, a leaf is always a child of a <code>WorkspaceTabs</code> component. On mobile, a leaf might be a child of a <code>WorkspaceMobileDrawer</code>. Perform an <code>instanceof</code> check before making an assumption about the <code>parent</code>.</p> |
 |  [`view`](WorkspaceLeaf/view) |  | [`View`](View) | The view associated with this leaf. Do not attempt to cast this to your custom <code>View</code> without first checking <code>instanceof</code>. |
@@ -30,15 +33,15 @@ export class WorkspaceLeaf extends WorkspaceItem
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`detach()`](WorkspaceLeaf/detach) |  |  |
-|  [`getContainer()`](WorkspaceItem/getContainer) |  | <p>Get the root container parent item, which can be one of: - [WorkspaceRoot](WorkspaceRoot) - [WorkspaceWindow](WorkspaceWindow)</p><p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
+|  [`getContainer()`](WorkspaceItem/getContainer) |  | <p>Get the root container parent item, which can be one of: - [WorkspaceRoot](WorkspaceRoot) - [WorkspaceWindow](WorkspaceWindow)</p><p> 0.15.4</p><p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
 |  [`getDisplayText()`](WorkspaceLeaf/getDisplayText) |  |  |
 |  [`getEphemeralState()`](WorkspaceLeaf/getEphemeralState) |  |  |
 |  [`getIcon()`](WorkspaceLeaf/getIcon) |  |  |
-|  [`getRoot()`](WorkspaceItem/getRoot) |  | <p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
+|  [`getRoot()`](WorkspaceItem/getRoot) |  | <p> 0.10.2</p><p>(Inherited from [WorkspaceItem](WorkspaceItem)<!-- -->)</p> |
 |  [`getViewState()`](WorkspaceLeaf/getViewState) |  |  |
 |  [`loadIfDeferred()`](WorkspaceLeaf/loadIfDeferred) |  | If this view is currently deferred, load it and await that it has fully loaded.  1.7.2 |
-|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`off(name, callback)`](Events/off) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
 |  [`on(name: 'pinned-change', callback, ctx)`](WorkspaceLeaf/on('pinned-change').md) |  |  |
 |  [`on(name: 'group-change', callback, ctx)`](WorkspaceLeaf/on('group-change').md) |  |  |
 |  [`onResize()`](WorkspaceLeaf/onResize) |  |  |
@@ -50,6 +53,6 @@ export class WorkspaceLeaf extends WorkspaceItem
 |  [`setPinned(pinned)`](WorkspaceLeaf/setPinned) |  |  |
 |  [`setViewState(viewState, eState)`](WorkspaceLeaf/setViewState) |  |  |
 |  [`togglePinned()`](WorkspaceLeaf/togglePinned) |  |  |
-|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`trigger(name, data)`](Events/trigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
 

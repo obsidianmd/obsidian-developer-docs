@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get the currently active view of a given type.
 
+ 0.9.16
+
 **Signature:**
 
 ```typescript

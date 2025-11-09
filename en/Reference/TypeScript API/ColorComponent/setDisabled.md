@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ColorComponent.setDisabled() method
 
+ 1.2.3
 
 **Signature:**
 

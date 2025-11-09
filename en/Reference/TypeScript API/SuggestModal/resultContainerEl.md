@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SuggestModal.resultContainerEl property
 
+ 0.9.20
 
 **Signature:**
 

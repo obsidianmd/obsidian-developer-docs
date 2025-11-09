@@ -9,7 +9,7 @@ This page lists CSS variables used by the [File explorer](https://help.obsidian.
 | Variable                          | Description                                                    |
 | --------------------------------- | -------------------------------------------------------------- |
 | `--vault-profile-display`         | `display` property for the vault profile                       |
-| `--vault-profile-actions-display` | `dsiplay` property for the action buttons in the vault profile |
+| `--vault-profile-actions-display` | `display` property for the action buttons in the vault profile |
 | `--vault-profile-font-size`       | Font size                                                      |
 | `--vault-profile-font-weight`     | Font weight                                                    |
 | `--vault-profile-color`           | Text color                                                     |

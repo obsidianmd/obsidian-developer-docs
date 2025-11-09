@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Iterate through all leaves in the main area of the workspace.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

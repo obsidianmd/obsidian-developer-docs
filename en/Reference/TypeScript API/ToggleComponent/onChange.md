@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ToggleComponent.onChange() method
 
+ 0.9.7
 
 **Signature:**
 

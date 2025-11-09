@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CapacitorAdapter.read() method
 
+ 1.7.2
 
 **Signature:**
 

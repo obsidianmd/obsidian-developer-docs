@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## EditableFileView class
 
+ 0.9.7
 
 **Signature:**
 
@@ -28,12 +29,12 @@ export abstract class EditableFileView extends FileView
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`allowNoFile`](FileView/allowNoFile) |  | <code>boolean</code> | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
-|  [`app`](View/app) |  | [`App`](App) | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`containerEl`](View/containerEl) |  | <code>HTMLElement</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`app`](View/app) |  | [`App`](App) | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`containerEl`](View/containerEl) |  | <code>HTMLElement</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
 |  [`contentEl`](ItemView/contentEl) |  | <code>HTMLElement</code> | <p>(Inherited from [ItemView](ItemView)<!-- -->)</p> |
 |  [`file`](FileView/file) |  | [`TFile`](TFile)<code> &#124; null</code> | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
-|  [`icon`](View/icon) |  | [`IconName`](IconName) | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`leaf`](View/leaf) |  | [`WorkspaceLeaf`](WorkspaceLeaf) | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`icon`](View/icon) |  | [`IconName`](IconName) | <p> 1.1.0</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`leaf`](View/leaf) |  | [`WorkspaceLeaf`](WorkspaceLeaf) | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
 |  [`navigation`](FileView/navigation) |  | <code>boolean</code> | <p>File views can be navigated by default. </p><p>(Inherited from [FileView](FileView)<!-- -->)</p> |
 |  [`scope`](View/scope) |  | [`Scope`](Scope)<code> &#124; null</code> | <p>Assign an optional scope to your view to register hotkeys for when the view is in focus.</p><p>(Inherited from [View](View)<!-- -->)</p> |
 
@@ -41,32 +42,32 @@ export abstract class EditableFileView extends FileView
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`addAction(icon, title, callback)`](ItemView/addAction) |  | <p>(Inherited from [ItemView](ItemView)<!-- -->)</p> |
-|  [`addChild(component)`](Component/addChild) |  | <p>Adds a child component, loading it if this component is loaded</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`canAcceptExtension(extension)`](FileView/canAcceptExtension) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
+|  [`addAction(icon, title, callback)`](ItemView/addAction) |  | <p> 1.1.0</p><p>(Inherited from [ItemView](ItemView)<!-- -->)</p> |
+|  [`addChild(component)`](Component/addChild) |  | <p>Adds a child component, loading it if this component is loaded</p><p> 0.12.0</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`canAcceptExtension(extension)`](FileView/canAcceptExtension) |  | <p> 0.9.7</p><p>(Inherited from [FileView](FileView)<!-- -->)</p> |
 |  [`getDisplayText()`](FileView/getDisplayText) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
-|  [`getEphemeralState()`](View/getEphemeralState) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`getIcon()`](View/getIcon) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`getEphemeralState()`](View/getEphemeralState) |  | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`getIcon()`](View/getIcon) |  | <p> 1.1.0</p><p>(Inherited from [View](View)<!-- -->)</p> |
 |  [`getState()`](FileView/getState) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
-|  [`getViewType()`](View/getViewType) | <code>abstract</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`load()`](Component/load) |  | <p>Load this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`onClose()`](View/onClose) | <code>protected</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`getViewType()`](View/getViewType) | <code>abstract</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`load()`](Component/load) |  | <p>Load this component and its children</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onClose()`](View/onClose) | <code>protected</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
 |  [`onload()`](FileView/onload) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
 |  [`onLoadFile(file)`](FileView/onLoadFile) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
-|  [`onOpen()`](View/onOpen) | <code>protected</code> | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`onPaneMenu(menu, source)`](View/onPaneMenu) |  | <p>Populates the pane menu.</p><p>(Replaces the previously removed <code>onHeaderMenu</code> and <code>onMoreOptionsMenu</code>)</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onOpen()`](View/onOpen) | <code>protected</code> | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onPaneMenu(menu, source)`](View/onPaneMenu) |  | <p>Populates the pane menu.</p><p>(Replaces the previously removed <code>onHeaderMenu</code> and <code>onMoreOptionsMenu</code>)</p><p> 0.15.3</p><p>(Inherited from [View](View)<!-- -->)</p> |
 |  [`onRename(file)`](FileView/onRename) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
-|  [`onResize()`](View/onResize) |  | <p>Called when the size of this view is changed.</p><p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`onunload()`](Component/onunload) |  | <p>Override this to unload your component</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`onResize()`](View/onResize) |  | <p>Called when the size of this view is changed.</p><p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`onunload()`](Component/onunload) |  | <p>Override this to unload your component</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`onUnloadFile(file)`](FileView/onUnloadFile) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
-|  [`register(cb)`](Component/register) |  | <p>Registers a callback to be called when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_2) |  | <p>Registers an DOM event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`setEphemeralState(state)`](View/setEphemeralState) |  | <p>(Inherited from [View](View)<!-- -->)</p> |
-|  [`setState(state, result)`](FileView/setState) |  | <p>(Inherited from [FileView](FileView)<!-- -->)</p> |
-|  [`unload()`](Component/unload) |  | <p>Unload this component and its children</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`register(cb)`](Component/register) |  | <p>Registers a callback to be called when unloading</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_2) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p> 0.13.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p> 0.12.0</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`setEphemeralState(state)`](View/setEphemeralState) |  | <p> 0.9.7</p><p>(Inherited from [View](View)<!-- -->)</p> |
+|  [`setState(state, result)`](FileView/setState) |  | <p> 0.9.7</p><p>(Inherited from [FileView](FileView)<!-- -->)</p> |
+|  [`unload()`](Component/unload) |  | <p>Unload this component and its children</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 

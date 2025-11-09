@@ -18,6 +18,8 @@ Indicates the currently focused leaf, if one exists.
 
 Please avoid using `activeLeaf` directly, especially without checking whether `activeLeaf` is null.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

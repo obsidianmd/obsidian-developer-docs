@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## HeadingSubpathResult interface
 
+ 0.9.16
 
 **Signature:**
 
@@ -21,9 +22,9 @@ export interface HeadingSubpathResult extends SubpathResult
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`current`](HeadingSubpathResult/current) |  | [`HeadingCache`](HeadingCache) |  |
+|  [`current`](HeadingSubpathResult/current) |  | [`HeadingCache`](HeadingCache) |  0.9.16 |
 |  [`end`](SubpathResult/end) |  | [`Loc`](Loc)<code> &#124; null</code> | <p>(Inherited from [SubpathResult](SubpathResult)<!-- -->)</p> |
-|  [`next`](HeadingSubpathResult/next) |  | [`HeadingCache`](HeadingCache) |  |
+|  [`next`](HeadingSubpathResult/next) |  | [`HeadingCache`](HeadingCache) |  0.9.16 |
 |  [`start`](SubpathResult/start) |  | [`Loc`](Loc) | <p>(Inherited from [SubpathResult](SubpathResult)<!-- -->)</p> |
-|  [`type`](HeadingSubpathResult/type) |  | <code>'heading'</code> |  |
+|  [`type`](HeadingSubpathResult/type) |  | <code>'heading'</code> |  0.9.16 |
 

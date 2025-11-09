@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## EditorPosition interface
 
+ 0.12.11
 
 **Signature:**
 

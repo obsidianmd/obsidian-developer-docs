@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Read a plaintext file that is stored inside the vault, directly from disk. Use this if you intend to modify the file content afterwards. Use [Vault.cachedRead()](Vault/cachedRead) otherwise for better performance.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

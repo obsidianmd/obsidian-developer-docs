@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Hue integer value between 0 and 360
 
+ 0.16.0
+
 **Signature:**
 
 ```typescript

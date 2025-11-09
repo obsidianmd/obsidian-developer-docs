@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get the root container parent item, which can be one of: - [WorkspaceRoot](WorkspaceRoot) - [WorkspaceWindow](WorkspaceWindow)
 
+ 0.15.4
+
 **Signature:**
 
 ```typescript

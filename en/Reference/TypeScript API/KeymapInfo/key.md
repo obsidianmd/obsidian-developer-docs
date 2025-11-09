@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## KeymapInfo.key property
 
+ 0.10.4
 
 **Signature:**
 

@@ -31,3 +31,5 @@ createFolder(path: string): Promise<TFolder>;
 
 Error if folder already exists
 
+ 1.4.0
+

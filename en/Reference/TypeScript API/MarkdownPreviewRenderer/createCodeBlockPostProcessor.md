@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MarkdownPreviewRenderer.createCodeBlockPostProcessor() method
 
+ 0.12.11
 
 **Signature:**
 

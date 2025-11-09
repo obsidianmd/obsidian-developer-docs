@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Workspace class
 
+ 0.9.7
 
 **Signature:**
 
@@ -22,69 +23,70 @@ export class Workspace extends Events
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`activeEditor`](Workspace/activeEditor) |  | [`MarkdownFileInfo`](MarkdownFileInfo)<code> &#124; null</code> | A component managing the current editor. This can be null if the active view has no editor. |
-|  [`activeLeaf`](Workspace/activeLeaf) |  | [`WorkspaceLeaf`](WorkspaceLeaf)<code> &#124; null</code> | <p>Indicates the currently focused leaf, if one exists.</p><p>Please avoid using <code>activeLeaf</code> directly, especially without checking whether <code>activeLeaf</code> is null.</p> |
-|  [`containerEl`](Workspace/containerEl) |  | <code>HTMLElement</code> |  |
-|  [`layoutReady`](Workspace/layoutReady) |  | <code>boolean</code> | If the layout of the app has been successfully initialized. To react to the layout becoming ready, use [Workspace.onLayoutReady()](Workspace/onLayoutReady) |
-|  [`leftRibbon`](Workspace/leftRibbon) |  | [`WorkspaceRibbon`](WorkspaceRibbon) |  |
-|  [`leftSplit`](Workspace/leftSplit) |  | [`WorkspaceSidedock`](WorkspaceSidedock)<code> &#124; </code>[`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) |  |
-|  [`requestSaveLayout`](Workspace/requestSaveLayout) |  | [`Debouncer`](Debouncer)<code>&lt;[], </code><code>Promise</code><code>&lt;void&gt;&gt;</code> | Save the state of the current workspace layout. |
+|  [`activeLeaf`](Workspace/activeLeaf) |  | [`WorkspaceLeaf`](WorkspaceLeaf)<code> &#124; null</code> | <p>Indicates the currently focused leaf, if one exists.</p><p>Please avoid using <code>activeLeaf</code> directly, especially without checking whether <code>activeLeaf</code> is null.</p><p> 0.9.7</p> |
+|  [`containerEl`](Workspace/containerEl) |  | <code>HTMLElement</code> |  0.9.7 |
+|  [`layoutReady`](Workspace/layoutReady) |  | <code>boolean</code> | <p>If the layout of the app has been successfully initialized. To react to the layout becoming ready, use [Workspace.onLayoutReady()](Workspace/onLayoutReady)</p><p> 0.9.7</p> |
+|  [`leftRibbon`](Workspace/leftRibbon) |  | [`WorkspaceRibbon`](WorkspaceRibbon) |  0.9.7 |
+|  [`leftSplit`](Workspace/leftSplit) |  | [`WorkspaceSidedock`](WorkspaceSidedock)<code> &#124; </code>[`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) |  0.9.7 |
+|  [`requestSaveLayout`](Workspace/requestSaveLayout) |  | [`Debouncer`](Debouncer)<code>&lt;[], </code><code>Promise</code><code>&lt;void&gt;&gt;</code> | <p>Save the state of the current workspace layout.</p><p> 0.16.0</p> |
 |  [`rightRibbon`](Workspace/rightRibbon) |  | [`WorkspaceRibbon`](WorkspaceRibbon) |  |
-|  [`rightSplit`](Workspace/rightSplit) |  | [`WorkspaceSidedock`](WorkspaceSidedock)<code> &#124; </code>[`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) |  |
-|  [`rootSplit`](Workspace/rootSplit) |  | [`WorkspaceRoot`](WorkspaceRoot) |  |
+|  [`rightSplit`](Workspace/rightSplit) |  | [`WorkspaceSidedock`](WorkspaceSidedock)<code> &#124; </code>[`WorkspaceMobileDrawer`](WorkspaceMobileDrawer) |  0.9.7 |
+|  [`rootSplit`](Workspace/rootSplit) |  | [`WorkspaceRoot`](WorkspaceRoot) |  0.9.7 |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`changeLayout(workspace)`](Workspace/changeLayout) |  |  |
-|  [`createLeafBySplit(leaf, direction, before)`](Workspace/createLeafBySplit) |  |  |
-|  [`createLeafInParent(parent, index)`](Workspace/createLeafInParent) |  |  |
-|  [`detachLeavesOfType(viewType)`](Workspace/detachLeavesOfType) |  | Remove all leaves of the given type. |
+|  [`changeLayout(workspace)`](Workspace/changeLayout) |  |  0.9.7 |
+|  [`createLeafBySplit(leaf, direction, before)`](Workspace/createLeafBySplit) |  |  0.9.7 |
+|  [`createLeafInParent(parent, index)`](Workspace/createLeafInParent) |  |  0.9.11 |
+|  [`detachLeavesOfType(viewType)`](Workspace/detachLeavesOfType) |  | <p>Remove all leaves of the given type.</p><p> 0.9.7</p> |
 |  [`duplicateLeaf(leaf, direction)`](Workspace/duplicateLeaf) |  |  |
-|  [`duplicateLeaf(leaf, leafType, direction)`](Workspace/duplicateLeaf_1) |  |  |
-|  [`ensureSideLeaf(type, side, options)`](Workspace/ensureSideLeaf) |  | Get side leaf or create one if one does not exist. |
+|  [`duplicateLeaf(leaf, leafType, direction)`](Workspace/duplicateLeaf_1) |  |  1.1.0 |
+|  [`ensureSideLeaf(type, side, options)`](Workspace/ensureSideLeaf) |  | <p>Get side leaf or create one if one does not exist.</p><p> 1.7.2</p> |
 |  [`getActiveFile()`](Workspace/getActiveFile) |  | Returns the file for the current view if it's a <code>FileView</code>. Otherwise, it will return the most recently active file. |
-|  [`getActiveViewOfType(type)`](Workspace/getActiveViewOfType) |  | Get the currently active view of a given type. |
+|  [`getActiveViewOfType(type)`](Workspace/getActiveViewOfType) |  | <p>Get the currently active view of a given type.</p><p> 0.9.16</p> |
 |  [`getGroupLeaves(group)`](Workspace/getGroupLeaves) |  | Get all leaves that belong to a group |
-|  [`getLastOpenFiles()`](Workspace/getLastOpenFiles) |  | Get the filenames of the 10 most recently opened files. |
-|  [`getLayout()`](Workspace/getLayout) |  |  |
-|  [`getLeaf(newLeaf, direction)`](Workspace/getLeaf('split').md) |  | Creates a new leaf in a leaf adjacent to the currently active leaf. If direction is <code>'vertical'</code>, the leaf will appear to the right. If direction is <code>'horizontal'</code>, the leaf will appear below the current leaf. |
-|  [`getLeaf(newLeaf)`](Workspace/getLeaf_1) |  | <p>If newLeaf is false (or not set) then an existing leaf which can be navigated is returned, or a new leaf will be created if there was no leaf available.</p><p>If newLeaf is <code>'tab'</code> or <code>true</code> then a new leaf will be created in the preferred location within the root split and returned.</p><p>If newLeaf is <code>'split'</code> then a new leaf will be created adjacent to the currently active leaf.</p><p>If newLeaf is <code>'window'</code> then a popout window will be created with a new leaf inside.</p> |
+|  [`getLastOpenFiles()`](Workspace/getLastOpenFiles) |  | <p>Get the filenames of the 10 most recently opened files.</p><p> 0.9.7</p> |
+|  [`getLayout()`](Workspace/getLayout) |  |  0.9.7 |
+|  [`getLeaf(newLeaf, direction)`](Workspace/getLeaf('split').md) |  | <p>Creates a new leaf in a leaf adjacent to the currently active leaf. If direction is <code>'vertical'</code>, the leaf will appear to the right. If direction is <code>'horizontal'</code>, the leaf will appear below the current leaf.</p><p> 0.16.0</p> |
+|  [`getLeaf(newLeaf)`](Workspace/getLeaf_1) |  | <p>If newLeaf is false (or not set) then an existing leaf which can be navigated is returned, or a new leaf will be created if there was no leaf available.</p><p>If newLeaf is <code>'tab'</code> or <code>true</code> then a new leaf will be created in the preferred location within the root split and returned.</p><p>If newLeaf is <code>'split'</code> then a new leaf will be created adjacent to the currently active leaf.</p><p>If newLeaf is <code>'window'</code> then a popout window will be created with a new leaf inside.</p><p> 0.16.0</p> |
 |  [`getLeafById(id)`](Workspace/getLeafById) |  | Retrieve a leaf by its id. |
-|  [`getLeavesOfType(viewType)`](Workspace/getLeavesOfType) |  | Get all leaves of a given type. |
+|  [`getLeavesOfType(viewType)`](Workspace/getLeavesOfType) |  | <p>Get all leaves of a given type.</p><p> 0.9.7</p> |
 |  [`getLeftLeaf(split)`](Workspace/getLeftLeaf) |  | Create a new leaf inside the left sidebar. |
 |  [`getMostRecentLeaf(root)`](Workspace/getMostRecentLeaf) |  | Get the most recently active leaf in a given workspace root. Useful for interacting with the leaf in the root split while a sidebar leaf might be active. |
 |  [`getRightLeaf(split)`](Workspace/getRightLeaf) |  | Create a new leaf inside the right sidebar. |
 |  [`getUnpinnedLeaf()`](Workspace/getUnpinnedLeaf) |  |  |
-|  [`iterateAllLeaves(callback)`](Workspace/iterateAllLeaves) |  | Iterate through all leaves, including main area leaves, floating leaves, and sidebar leaves. |
-|  [`iterateRootLeaves(callback)`](Workspace/iterateRootLeaves) |  | Iterate through all leaves in the main area of the workspace. |
+|  [`handleLinkContextMenu(menu, linktext, sourcePath, leaf)`](Workspace/handleLinkContextMenu) |  | <p>Add a context menu to internal file links.</p><p> 0.12.10</p> |
+|  [`iterateAllLeaves(callback)`](Workspace/iterateAllLeaves) |  | <p>Iterate through all leaves, including main area leaves, floating leaves, and sidebar leaves.</p><p> 0.9.7</p> |
+|  [`iterateRootLeaves(callback)`](Workspace/iterateRootLeaves) |  | <p>Iterate through all leaves in the main area of the workspace.</p><p> 0.9.7</p> |
 |  [`moveLeafToPopout(leaf, data)`](Workspace/moveLeafToPopout) |  | Migrates this leaf to a new popout window. Only works on the desktop app. |
-|  [`off(name, callback)`](Events/off) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`offref(ref)`](Events/offref) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`on(name: 'quick-preview', callback, ctx)`](Workspace/on('quick-preview').md) |  | Triggered when the active Markdown file is modified. React to file changes before they are saved to disk. |
-|  [`on(name: 'files-menu', callback, ctx)`](Workspace/on('files-menu').md) |  | Triggered when the user opens the context menu with multiple files selected in the File Explorer. |
-|  [`on(name: 'url-menu', callback, ctx)`](Workspace/on('url-menu').md) |  | Triggered when the user opens the context menu on an external URL. |
-|  [`on(name: 'editor-menu', callback, ctx)`](Workspace/on('editor-menu').md) |  | Triggered when the user opens the context menu on an editor. |
-|  [`on(name: 'editor-change', callback, ctx)`](Workspace/on('editor-change').md) |  | Triggered when changes to an editor has been applied, either programmatically or from a user event. |
-|  [`on(name: 'editor-paste', callback, ctx)`](Workspace/on('editor-paste').md) |  | Triggered when the editor receives a paste event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
-|  [`on(name: 'editor-drop', callback, ctx)`](Workspace/on('editor-drop').md) |  | Triggered when the editor receives a drop event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event. |
-|  [`on(name: 'quit', callback, ctx)`](Workspace/on('quit').md) |  | Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here. |
-|  [`on(name: 'resize', callback, ctx)`](Workspace/on('resize').md) |  | Triggered when a <code>WorkspaceItem</code> is resized or the workspace layout has changed. |
-|  [`on(name: 'active-leaf-change', callback, ctx)`](Workspace/on('active-leaf-change').md) |  | Triggered when the active leaf changes. |
-|  [`on(name: 'file-open', callback, ctx)`](Workspace/on('file-open').md) |  | Triggered when the active file changes. The file could be in a new leaf, an existing leaf, or an embed. |
-|  [`on(name: 'layout-change', callback, ctx)`](Workspace/on('layout-change').md) |  |  |
-|  [`on(name: 'window-open', callback, ctx)`](Workspace/on('window-open').md) |  | Triggered when a new popout window is created. |
-|  [`on(name: 'window-close', callback, ctx)`](Workspace/on('window-close').md) |  | Triggered when a popout window is closed. |
-|  [`on(name: 'css-change', callback, ctx)`](Workspace/on('css-change').md) |  | Triggered when the CSS of the app has changed. |
-|  [`on(name: 'file-menu', callback, ctx)`](Workspace/on('file-menu').md) |  | Triggered when the user opens the context menu on a file. |
-|  [`onLayoutReady(callback)`](Workspace/onLayoutReady) |  | Runs the callback function right away if layout is already ready, or push it to a queue to be called later when layout is ready. |
-|  [`openLinkText(linktext, sourcePath, newLeaf, openViewState)`](Workspace/openLinkText) |  |  |
-|  [`openPopoutLeaf(data)`](Workspace/openPopoutLeaf) |  | Open a new popout window with a single new leaf and return that leaf. Only works on the desktop app. |
-|  [`revealLeaf(leaf)`](Workspace/revealLeaf) |  | Bring a given leaf to the foreground. If the leaf is in a sidebar, the sidebar will be uncollapsed. <code>await</code> this function to ensure your view has been fully loaded and is not deferred. |
+|  [`off(name, callback)`](Events/off) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`offref(ref)`](Events/offref) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`on(name: 'quick-preview', callback, ctx)`](Workspace/on('quick-preview').md) |  | <p>Triggered when the active Markdown file is modified. React to file changes before they are saved to disk.</p><p> 0.9.7</p> |
+|  [`on(name: 'files-menu', callback, ctx)`](Workspace/on('files-menu').md) |  | <p>Triggered when the user opens the context menu with multiple files selected in the File Explorer.</p><p> 1.4.10</p> |
+|  [`on(name: 'url-menu', callback, ctx)`](Workspace/on('url-menu').md) |  | <p>Triggered when the user opens the context menu on an external URL.</p><p> 1.5.1</p> |
+|  [`on(name: 'editor-menu', callback, ctx)`](Workspace/on('editor-menu').md) |  | <p>Triggered when the user opens the context menu on an editor.</p><p> 1.1.0</p> |
+|  [`on(name: 'editor-change', callback, ctx)`](Workspace/on('editor-change').md) |  | <p>Triggered when changes to an editor has been applied, either programmatically or from a user event.</p><p> 1.1.1</p> |
+|  [`on(name: 'editor-paste', callback, ctx)`](Workspace/on('editor-paste').md) |  | <p>Triggered when the editor receives a paste event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event.</p><p> 1.1.0</p> |
+|  [`on(name: 'editor-drop', callback, ctx)`](Workspace/on('editor-drop').md) |  | <p>Triggered when the editor receives a drop event. Check for <code>evt.defaultPrevented</code> before attempting to handle this event, and return if it has been already handled. Use <code>evt.preventDefault()</code> to indicate that you've handled the event.</p><p> 1.1.0</p> |
+|  [`on(name: 'quit', callback, ctx)`](Workspace/on('quit').md) |  | <p>Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here.</p><p> 0.10.2</p> |
+|  [`on(name: 'resize', callback, ctx)`](Workspace/on('resize').md) |  | <p>Triggered when a <code>WorkspaceItem</code> is resized or the workspace layout has changed.</p><p> 0.9.7</p> |
+|  [`on(name: 'active-leaf-change', callback, ctx)`](Workspace/on('active-leaf-change').md) |  | <p>Triggered when the active leaf changes.</p><p> 0.10.9</p> |
+|  [`on(name: 'file-open', callback, ctx)`](Workspace/on('file-open').md) |  | <p>Triggered when the active file changes. The file could be in a new leaf, an existing leaf, or an embed.</p><p> 0.10.9</p> |
+|  [`on(name: 'layout-change', callback, ctx)`](Workspace/on('layout-change').md) |  |  0.9.20 |
+|  [`on(name: 'window-open', callback, ctx)`](Workspace/on('window-open').md) |  | <p>Triggered when a new popout window is created.</p><p> 0.15.3</p> |
+|  [`on(name: 'window-close', callback, ctx)`](Workspace/on('window-close').md) |  | <p>Triggered when a popout window is closed.</p><p> 0.15.3</p> |
+|  [`on(name: 'css-change', callback, ctx)`](Workspace/on('css-change').md) |  | <p>Triggered when the CSS of the app has changed.</p><p> 0.9.7</p> |
+|  [`on(name: 'file-menu', callback, ctx)`](Workspace/on('file-menu').md) |  | <p>Triggered when the user opens the context menu on a file.</p><p> 0.9.12</p> |
+|  [`onLayoutReady(callback)`](Workspace/onLayoutReady) |  | <p>Runs the callback function right away if layout is already ready, or push it to a queue to be called later when layout is ready.</p><p> 0.11.0</p> |
+|  [`openLinkText(linktext, sourcePath, newLeaf, openViewState)`](Workspace/openLinkText) |  |  0.16.0 |
+|  [`openPopoutLeaf(data)`](Workspace/openPopoutLeaf) |  | <p>Open a new popout window with a single new leaf and return that leaf. Only works on the desktop app.</p><p> 0.15.4</p> |
+|  [`revealLeaf(leaf)`](Workspace/revealLeaf) |  | <p>Bring a given leaf to the foreground. If the leaf is in a sidebar, the sidebar will be uncollapsed. <code>await</code> this function to ensure your view has been fully loaded and is not deferred.</p><p> 1.7.2</p> |
 |  [`setActiveLeaf(leaf, params)`](Workspace/setActiveLeaf) |  | Sets the active leaf |
 |  [`setActiveLeaf(leaf, pushHistory, focus)`](Workspace/setActiveLeaf_1) |  |  |
 |  [`splitActiveLeaf(direction)`](Workspace/splitActiveLeaf) |  |  |
-|  [`trigger(name, data)`](Events/trigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p>(Inherited from [Events](Events)<!-- -->)</p> |
-|  [`updateOptions()`](Workspace/updateOptions) |  | Calling this function will update/reconfigure the options of all Markdown views. It is fairly expensive, so it should not be called frequently. |
+|  [`trigger(name, data)`](Events/trigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`tryTrigger(evt, args)`](Events/tryTrigger) |  | <p> 0.9.7</p><p>(Inherited from [Events](Events)<!-- -->)</p> |
+|  [`updateOptions()`](Workspace/updateOptions) |  | <p>Calling this function will update/reconfigure the options of all Markdown views. It is fairly expensive, so it should not be called frequently.</p><p> 0.13.21</p> |
 

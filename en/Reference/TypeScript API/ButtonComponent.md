@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ButtonComponent class
 
+ 0.9.7
 
 **Signature:**
 
@@ -27,21 +28,21 @@ export class ButtonComponent extends BaseComponent
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`buttonEl`](ButtonComponent/buttonEl) |  | <code>HTMLButtonElement</code> |  |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`buttonEl`](ButtonComponent/buttonEl) |  | <code>HTMLButtonElement</code> |  0.9.7 |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`onClick(callback)`](ButtonComponent/onClick) |  |  |
-|  [`removeCta()`](ButtonComponent/removeCta) |  |  |
-|  [`setButtonText(name)`](ButtonComponent/setButtonText) |  |  |
-|  [`setClass(cls)`](ButtonComponent/setClass) |  |  |
-|  [`setCta()`](ButtonComponent/setCta) |  |  |
-|  [`setDisabled(disabled)`](ButtonComponent/setDisabled) |  |  |
-|  [`setIcon(icon)`](ButtonComponent/setIcon) |  |  |
-|  [`setTooltip(tooltip, options)`](ButtonComponent/setTooltip) |  |  |
-|  [`setWarning()`](ButtonComponent/setWarning) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`onClick(callback)`](ButtonComponent/onClick) |  |  0.12.16 |
+|  [`removeCta()`](ButtonComponent/removeCta) |  |  0.9.20 |
+|  [`setButtonText(name)`](ButtonComponent/setButtonText) |  |  0.9.7 |
+|  [`setClass(cls)`](ButtonComponent/setClass) |  |  0.9.7 |
+|  [`setCta()`](ButtonComponent/setCta) |  |  0.9.7 |
+|  [`setDisabled(disabled)`](ButtonComponent/setDisabled) |  |  1.2.3 |
+|  [`setIcon(icon)`](ButtonComponent/setIcon) |  |  1.1.0 |
+|  [`setTooltip(tooltip, options)`](ButtonComponent/setTooltip) |  |  1.1.0 |
+|  [`setWarning()`](ButtonComponent/setWarning) |  |  0.11.0 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

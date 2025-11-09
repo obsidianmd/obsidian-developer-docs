@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ExtraButtonComponent.setDisabled() method
 
+ 1.2.3
 
 **Signature:**
 

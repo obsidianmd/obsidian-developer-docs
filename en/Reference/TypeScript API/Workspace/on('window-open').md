@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when a new popout window is created.
 
+ 0.15.3
+
 **Signature:**
 
 ```typescript

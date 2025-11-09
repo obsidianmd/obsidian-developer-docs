@@ -32,7 +32,7 @@ export class Modal implements CloseableComponent
 |  [`contentEl`](Modal/contentEl) |  | <code>HTMLElement</code> |  |
 |  [`modalEl`](Modal/modalEl) |  | <code>HTMLElement</code> |  |
 |  [`scope`](Modal/scope) |  | [`Scope`](Scope) |  |
-|  [`shouldRestoreSelection`](Modal/shouldRestoreSelection) |  | <code>boolean</code> |  |
+|  [`shouldRestoreSelection`](Modal/shouldRestoreSelection) |  | <code>boolean</code> |  0.9.16 |
 |  [`titleEl`](Modal/titleEl) |  | <code>HTMLElement</code> |  |
 
 ## Methods
@@ -42,7 +42,8 @@ export class Modal implements CloseableComponent
 |  [`close()`](Modal/close) |  | Hide the modal. |
 |  [`onClose()`](Modal/onClose) |  |  |
 |  [`onOpen()`](Modal/onOpen) |  |  |
-|  [`open()`](Modal/open) |  | Show the modal on the the active window. On mobile, the modal will animate on screen. |
+|  [`open()`](Modal/open) |  | Show the modal on the active window. On mobile, the modal will animate on screen. |
+|  [`setCloseCallback(callback)`](Modal/setCloseCallback) |  |  1.10.0 |
 |  [`setContent(content)`](Modal/setContent) |  |  |
 |  [`setTitle(title)`](Modal/setTitle) |  |  |
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Vault.adapter property
 
+ 0.9.7
 
 **Signature:**
 

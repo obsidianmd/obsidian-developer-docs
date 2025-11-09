@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.setHeading() method
 
+ 0.9.16
 
 **Signature:**
 

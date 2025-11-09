@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## EditorScrollInfo interface
 
+ 0.15.0
 
 **Signature:**
 

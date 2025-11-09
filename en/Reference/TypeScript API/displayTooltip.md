@@ -13,6 +13,8 @@ Manually trigger a tooltip that will appear over the provided element.
 
 To display a tooltip on hover, use [setTooltip()](setTooltip) instead.
 
+ 1.8.7
+
 **Signature:**
 
 ```typescript

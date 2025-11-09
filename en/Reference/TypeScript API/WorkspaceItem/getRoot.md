@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceItem.getRoot() method
 
+ 0.10.2
 
 **Signature:**
 

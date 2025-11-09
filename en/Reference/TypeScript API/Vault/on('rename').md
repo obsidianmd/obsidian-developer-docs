@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Called when a file is renamed.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

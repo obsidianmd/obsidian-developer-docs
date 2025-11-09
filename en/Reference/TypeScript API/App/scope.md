@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## App.scope property
 
+ 0.9.7
 
 **Signature:**
 

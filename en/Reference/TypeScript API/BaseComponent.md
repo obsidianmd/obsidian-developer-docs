@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## BaseComponent class
 
+ 0.10.3
 
 **Signature:**
 
@@ -20,12 +21,12 @@ export abstract class BaseComponent
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> |  |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> |  0.10.3 |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`setDisabled(disabled)`](BaseComponent/setDisabled) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | Facilitates chaining |
+|  [`setDisabled(disabled)`](BaseComponent/setDisabled) |  |  1.2.3 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p> |
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceContainer.win property
 
+ 0.15.4
 
 **Signature:**
 

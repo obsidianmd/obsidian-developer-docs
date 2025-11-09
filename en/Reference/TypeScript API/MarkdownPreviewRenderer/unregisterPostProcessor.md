@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MarkdownPreviewRenderer.unregisterPostProcessor() method
 
+ 0.9.7
 
 **Signature:**
 

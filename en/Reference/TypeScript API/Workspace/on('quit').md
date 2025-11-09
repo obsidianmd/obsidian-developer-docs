@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Triggered when the app is about to quit. Not guaranteed to actually run. Perform some best effort cleanup here.
 
+ 0.10.2
+
 **Signature:**
 
 ```typescript

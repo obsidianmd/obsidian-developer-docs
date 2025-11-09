@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MenuPositionDef interface
 
+ 1.1.0
 
 **Signature:**
 

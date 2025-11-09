@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CachedMetadata.frontmatterLinks property
 
+ 1.4.0
 
 **Signature:**
 

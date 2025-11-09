@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Registers a callback to be called when unloading
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

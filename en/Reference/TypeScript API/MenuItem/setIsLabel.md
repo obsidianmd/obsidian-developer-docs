@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MenuItem.setIsLabel() method
 
+ 0.15.0
 
 **Signature:**
 

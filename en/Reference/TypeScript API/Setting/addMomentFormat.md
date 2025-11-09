@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.addMomentFormat() method
 
+ 0.9.7
 
 **Signature:**
 

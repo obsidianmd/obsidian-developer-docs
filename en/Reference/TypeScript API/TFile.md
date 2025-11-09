@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## TFile class
 
+ 0.9.7
 
 **Signature:**
 
@@ -21,11 +22,11 @@ export class TFile extends TAbstractFile
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`basename`](TFile/basename) |  | <code>string</code> |  |
-|  [`extension`](TFile/extension) |  | <code>string</code> |  |
-|  [`name`](TAbstractFile/name) |  | <code>string</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
-|  [`parent`](TAbstractFile/parent) |  | [`TFolder`](TFolder)<code> &#124; null</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
-|  [`path`](TAbstractFile/path) |  | <code>string</code> | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
-|  [`stat`](TFile/stat) |  | [`FileStats`](FileStats) |  |
-|  [`vault`](TAbstractFile/vault) |  | [`Vault`](Vault) | <p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`basename`](TFile/basename) |  | <code>string</code> |  0.9.7 |
+|  [`extension`](TFile/extension) |  | <code>string</code> |  0.9.7 |
+|  [`name`](TAbstractFile/name) |  | <code>string</code> | <p> 0.9.7</p><p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`parent`](TAbstractFile/parent) |  | [`TFolder`](TFolder)<code> &#124; null</code> | <p> 0.9.7</p><p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`path`](TAbstractFile/path) |  | <code>string</code> | <p> 0.9.7</p><p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
+|  [`stat`](TFile/stat) |  | [`FileStats`](FileStats) |  0.9.7 |
+|  [`vault`](TAbstractFile/vault) |  | [`Vault`](Vault) | <p> 0.9.7</p><p>(Inherited from [TAbstractFile](TAbstractFile)<!-- -->)</p> |
 

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Read the content of a plaintext file stored inside the vault Use this if you only want to display the content to the user. If you want to modify the file content afterward use [Vault.read()](Vault/read)
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

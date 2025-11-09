@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## View.setState() method
 
+ 0.9.7
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## BlockSubpathResult interface
 
+ 0.13.26
 
 **Signature:**
 

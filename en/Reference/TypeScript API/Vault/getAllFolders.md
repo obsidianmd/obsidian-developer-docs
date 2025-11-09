@@ -21,7 +21,7 @@ getAllFolders(includeRoot?: boolean): TFolder[];
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>includeRoot</code> | <code>boolean</code> | _(Optional)_ Should the root folder (<code>/</code>) be returned |
+|  <code>includeRoot</code> | <code>boolean</code> | <p>_(Optional)_ Should the root folder (<code>/</code>) be returned</p><p> 1.6.6</p> |
 
 **Returns:**
 

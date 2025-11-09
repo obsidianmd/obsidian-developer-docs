@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Editor.offsetToPos() method
 
+ 0.11.11
 
 **Signature:**
 

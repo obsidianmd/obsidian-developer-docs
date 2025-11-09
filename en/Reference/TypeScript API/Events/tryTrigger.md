@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Events.tryTrigger() method
 
+ 0.9.7
 
 **Signature:**
 

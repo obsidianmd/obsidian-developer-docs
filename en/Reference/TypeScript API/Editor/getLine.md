@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get the text at line (0-indexed)
 
+ 0.11.11
+
 **Signature:**
 
 ```typescript

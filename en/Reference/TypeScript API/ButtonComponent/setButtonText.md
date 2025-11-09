@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## ButtonComponent.setButtonText() method
 
+ 0.9.7
 
 **Signature:**
 

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## AbstractInputSuggest.selectSuggestion() method
 
+ 1.6.6
 
 **Signature:**
 

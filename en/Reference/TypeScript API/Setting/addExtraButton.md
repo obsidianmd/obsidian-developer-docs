@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Setting.addExtraButton() method
 
+ 0.9.16
 
 **Signature:**
 

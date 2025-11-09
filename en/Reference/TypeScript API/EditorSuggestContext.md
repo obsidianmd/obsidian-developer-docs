@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## EditorSuggestContext interface
 
+ 0.12.17
 
 **Signature:**
 

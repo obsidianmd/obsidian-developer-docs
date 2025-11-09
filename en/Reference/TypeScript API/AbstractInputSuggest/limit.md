@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Limit to the number of elements rendered at once. Set to 0 to disable. Defaults to 100.
 
+ 1.4.10
+
 **Signature:**
 
 ```typescript

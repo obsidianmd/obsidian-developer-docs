@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Menu.showAtMouseEvent() method
 
+ 0.12.6
 
 **Signature:**
 

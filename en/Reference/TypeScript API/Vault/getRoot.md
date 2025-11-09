@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Get the root folder of the current vault.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Read the content of a binary file stored inside the vault.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

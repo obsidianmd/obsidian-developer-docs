@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## WorkspaceSidedock.expand() method
 
+ 0.12.11
 
 **Signature:**
 

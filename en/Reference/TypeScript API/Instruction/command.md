@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Instruction.command property
 
+ 0.9.20
 
 **Signature:**
 

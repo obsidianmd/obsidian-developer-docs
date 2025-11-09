@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## App.fileManager property
 
+ 0.11.0
 
 **Signature:**
 

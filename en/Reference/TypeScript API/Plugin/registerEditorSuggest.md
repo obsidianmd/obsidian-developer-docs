@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Register an EditorSuggest which can provide live suggestions while the user is typing.
 
+ 0.12.7
+
 **Signature:**
 
 ```typescript

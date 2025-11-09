@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Iterate through all leaves, including main area leaves, floating leaves, and sidebar leaves.
 
+ 0.9.7
+
 **Signature:**
 
 ```typescript

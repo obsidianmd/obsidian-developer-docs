@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## SliderComponent class
 
+ 0.9.7
 
 **Signature:**
 
@@ -27,22 +28,22 @@ export class SliderComponent extends ValueComponent<number>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 |  [`sliderEl`](SliderComponent/sliderEl) |  | <code>HTMLInputElement</code> |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`getValue()`](SliderComponent/getValue) |  |  |
-|  [`getValuePretty()`](SliderComponent/getValuePretty) |  |  |
-|  [`onChange(callback)`](SliderComponent/onChange) |  |  |
-|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
-|  [`setDisabled(disabled)`](SliderComponent/setDisabled) |  |  |
-|  [`setDynamicTooltip()`](SliderComponent/setDynamicTooltip) |  |  |
+|  [`getValue()`](SliderComponent/getValue) |  |  0.9.7 |
+|  [`getValuePretty()`](SliderComponent/getValuePretty) |  |  0.9.7 |
+|  [`onChange(callback)`](SliderComponent/onChange) |  |  0.9.7 |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p> 0.9.7</p><p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
+|  [`setDisabled(disabled)`](SliderComponent/setDisabled) |  |  1.2.3 |
+|  [`setDynamicTooltip()`](SliderComponent/setDynamicTooltip) |  |  0.9.7 |
 |  [`setInstant(instant)`](SliderComponent/setInstant) |  |  |
-|  [`setLimits(min, max, step)`](SliderComponent/setLimits) |  |  |
-|  [`setValue(value)`](SliderComponent/setValue) |  |  |
-|  [`showTooltip()`](SliderComponent/showTooltip) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`setLimits(min, max, step)`](SliderComponent/setLimits) |  |  0.9.7 |
+|  [`setValue(value)`](SliderComponent/setValue) |  |  0.9.7 |
+|  [`showTooltip()`](SliderComponent/showTooltip) |  |  0.9.7 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

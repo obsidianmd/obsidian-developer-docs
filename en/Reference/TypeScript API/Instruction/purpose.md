@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## Instruction.purpose property
 
+ 0.9.20
 
 **Signature:**
 

@@ -19,7 +19,7 @@ setInstant(instant: boolean): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>instant</code> | <code>boolean</code> | whether or not the value should get updated while the slider is dragging |
+|  <code>instant</code> | <code>boolean</code> | <p>whether or not the value should get updated while the slider is dragging</p><p> 1.6.6</p> |
 
 **Returns:**
 

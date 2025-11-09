@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 In memory data
 
+ 0.10.12
+
 **Signature:**
 
 ```typescript

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## MomentFormatComponent class
 
+ 0.9.7
 
 **Signature:**
 
@@ -27,23 +28,23 @@ export class MomentFormatComponent extends TextComponent
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
-|  [`inputEl`](AbstractTextComponent/inputEl) |  | <code>T</code> | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
-|  [`sampleEl`](MomentFormatComponent/sampleEl) |  | <code>HTMLElement</code> |  |
+|  [`disabled`](BaseComponent/disabled) |  | <code>boolean</code> | <p> 0.10.3</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`inputEl`](AbstractTextComponent/inputEl) |  | <code>T</code> | <p> 0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`sampleEl`](MomentFormatComponent/sampleEl) |  | <code>HTMLElement</code> |  0.9.7 |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`getValue()`](AbstractTextComponent/getValue) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
-|  [`onChange(callback)`](AbstractTextComponent/onChange) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
-|  [`onChanged()`](MomentFormatComponent/onChanged) |  |  |
-|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
-|  [`setDefaultFormat(defaultFormat)`](MomentFormatComponent/setDefaultFormat) |  | Sets the default format when input is cleared. Also used for placeholder. |
-|  [`setDisabled(disabled)`](AbstractTextComponent/setDisabled) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
-|  [`setPlaceholder(placeholder)`](AbstractTextComponent/setPlaceholder) |  | <p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
-|  [`setSampleEl(sampleEl)`](MomentFormatComponent/setSampleEl) |  |  |
-|  [`setValue(value)`](MomentFormatComponent/setValue) |  |  |
-|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
-|  [`updateSample()`](MomentFormatComponent/updateSample) |  |  |
+|  [`getValue()`](AbstractTextComponent/getValue) |  | <p> 0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`onChange(callback)`](AbstractTextComponent/onChange) |  | <p>0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`onChanged()`](MomentFormatComponent/onChanged) |  |  0.9.7 |
+|  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p> 0.9.7</p><p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
+|  [`setDefaultFormat(defaultFormat)`](MomentFormatComponent/setDefaultFormat) |  | <p>Sets the default format when input is cleared. Also used for placeholder.</p><p> 0.9.7</p> |
+|  [`setDisabled(disabled)`](AbstractTextComponent/setDisabled) |  | <p> 1.2.3</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`setPlaceholder(placeholder)`](AbstractTextComponent/setPlaceholder) |  | <p>0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`setSampleEl(sampleEl)`](MomentFormatComponent/setSampleEl) |  |  0.9.7 |
+|  [`setValue(value)`](MomentFormatComponent/setValue) |  |  0.9.7 |
+|  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
+|  [`updateSample()`](MomentFormatComponent/updateSample) |  |  0.9.7 |
 

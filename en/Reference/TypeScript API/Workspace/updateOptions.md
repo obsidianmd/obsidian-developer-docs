@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Calling this function will update/reconfigure the options of all Markdown views. It is fairly expensive, so it should not be called frequently.
 
+ 0.13.21
+
 **Signature:**
 
 ```typescript
