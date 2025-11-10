@@ -46,7 +46,7 @@ class MyPlugin extends Plugin {
 }
 ```
 
-While this works, it quickly becomes repetitive and error-prone. Fortunately, Obsidian’s `Component` system offers a better solution.
+While this works, it quickly becomes repetitive and error-prone. Fortunately, Obsidian's `Component` system offers a better solution.
 
 
 ## Automatic Resource Management with `Component`
@@ -63,7 +63,7 @@ class MyPlugin extends Plugin {
 }
 ```
 
-The `registerDomEvent` call automatically removes the listener when your plugin unloads, so you don’t have to track it manually. The same applies to other helper methods:
+The `registerDomEvent` call automatically removes the listener when your plugin unloads, so you don't have to track it manually. The same applies to other helper methods:
 
 ### `registerEvent(eventRef)`
 
@@ -221,7 +221,7 @@ import { Component, MarkdownRenderer } from "obsidian";
 import SomeLibrary from "some-library";
 
 class MyWidget extends Component {
-	private widget: HTMLElement = document.createDiv({ cls: "my-widget" });
+	private widget: HTMLElement = createDiv({ cls: "my-widget" });
 	private lib: SomeLibrary;
 
 	constructor(private app: App) {
@@ -290,4 +290,4 @@ By structuring your plugin around components, you gain clear ownership of resour
 - Register intervals, events, and DOM listeners through helper methods (`registerEvent`, `registerInterval`, `registerDomEvent`).
 - Pass a `Component` to APIs like `MarkdownRenderer.render` to ensure proper lifecycle handling.
 - Organize your plugin into smaller `Component` subclasses to simplify ownership.
-- Remember: if you create a resource, make sure it’s cleaned up by `onunload`.
+- Remember: if you create a resource, make sure it's cleaned up by `onunload`.
