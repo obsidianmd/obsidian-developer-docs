@@ -376,3 +376,28 @@ async function AsyncTest(): Promise<string | null> {
   }
 }
 ```
+
+## Language
+
+### English-first
+
+Write the following in English by default:
+
+- `id` property in `manifest.json`
+- `name` property in `manifest.json`
+- `description` property in `manifest.json`
+- `README.md`
+
+You may append translations to each property (except `id`) and document, but the English version must appear first.
+
+### UI localization
+
+Set English as the default language for your plugin UI whenever possible.
+
+Do not mix multiple languages within the same UI.
+
+If your plugin offers localized UI strings, ensure it respects [`getLanguage()`](https://docs.obsidian.md/Reference/TypeScript+API/getLanguage).
+
+Don't add a custom language setting to your plugin; rely on Obsidian's built-in language setting instead.
+
+If your plugin ships without English support, call this out explicitly in both the `description` key in `manifest.json` and the `README.md`.
