@@ -403,7 +403,7 @@ Don't add a custom language setting to your plugin; rely on Obsidian's built-in 
 
 If your plugin ships without English support, call this out explicitly in both the `description` property in `manifest.json` and the `README.md`.
 
-### Internationalization frameworks
+### Internationalization (i18n) frameworks
 
 If your plugin supports multiple UI languages, consider using frameworks like [i18next](https://www.i18next.com/), or hand-written one, e.g.:
 
@@ -430,7 +430,7 @@ export function t(key: keyof typeof en): string {
 }
 
 // main.ts
-import { t } from './i18.ts';
+import { t } from './i18n.ts';
 
 new Notice(t('some.key'));
 ```
