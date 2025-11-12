@@ -413,7 +413,7 @@ export const en = {
   'some.key': 'Some value'
 };
 
-// your plugin
+// i18n.ts
 import en from './locales/en.ts';
 import zhCN from './locales/zh_CN.ts'
 import { getLanguage } from 'obsidian';
@@ -425,7 +425,12 @@ const localeMap: { [locale: string]: Partial<typeof en> } = {
 
 const userLocale = localeMap[getLanguage()];
 
-export default function t(key: keyof typeof en): string {
+export function t(key: keyof typeof en): string {
   return userLocale?.[key] ?? en[key] ?? key;
 }
+
+// main.ts
+import { t } from './i18.ts';
+
+new Notice(t('some.key'));
 ```
