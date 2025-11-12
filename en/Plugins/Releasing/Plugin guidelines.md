@@ -401,7 +401,7 @@ If your plugin offers localized UI strings, ensure it respects [`getLanguage()`]
 
 Don't add a custom language setting to your plugin; rely on Obsidian's built-in language setting instead.
 
-If your plugin ships without English support, call this out explicitly in both the `description` key in `manifest.json` and the `README.md`.
+If your plugin ships without English support, call this out explicitly in both the `description` property in `manifest.json` and the `README.md`.
 
 ### Internationalization frameworks
 
