@@ -397,7 +397,7 @@ Set English as the default language for your plugin UI whenever possible.
 
 Do not mix multiple languages within the same UI.
 
-If your plugin offers localized UI strings, ensure it respects [`getLanguage()`](https://docs.obsidian.md/Reference/TypeScript+API/getLanguage) (require `minAppVersion` to be at least `1.8.7`).
+If your plugin offers localized UI strings, ensure it respects [`getLanguage()`](https://docs.obsidian.md/Reference/TypeScript+API/getLanguage) (requires `minAppVersion` to be at least `1.8.7`).
 
 Don't add a custom language setting to your plugin; rely on Obsidian's built-in language setting instead.
 
