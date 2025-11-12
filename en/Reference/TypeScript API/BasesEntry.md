@@ -30,5 +30,5 @@ export class BasesEntry implements FormulaContext
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`getValue(propertyId)`](BasesEntry/getValue) |  | Get the value of the property. |
+|  [`getValue(propertyId)`](BasesEntry/getValue) |  | <p>Get the value of the property. Note: Errors are returned as </p><p> 1.10.0</p> |
 

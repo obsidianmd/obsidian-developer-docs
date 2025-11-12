@@ -9,7 +9,9 @@ cssclasses: hide-title
 
 ## BasesEntry.getValue() method
 
-Get the value of the property.
+Get the value of the property. Note: Errors are returned as 
+
+ 1.10.0
 
 **Signature:**
 
@@ -26,10 +28,4 @@ getValue(propertyId: BasesPropertyId): Value | null;
 **Returns:**
 
 [`Value`](Value)` | null`
-
-## Exceptions
-
-Error if the property is a formula and cannot be evaluated.
-
- 1.10.0
 

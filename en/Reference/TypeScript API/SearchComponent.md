@@ -37,11 +37,11 @@ export class SearchComponent extends AbstractTextComponent<HTMLInputElement>
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`getValue()`](AbstractTextComponent/getValue) |  | <p> 0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
-|  [`onChange(callback)`](AbstractTextComponent/onChange) |  | <p>0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`onChange(callback)`](AbstractTextComponent/onChange) |  | <p> 0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
 |  [`onChanged()`](SearchComponent/onChanged) |  |  |
 |  [`registerOptionListener(listeners, key)`](ValueComponent/registerOptionListener) |  | <p> 0.9.7</p><p>(Inherited from [ValueComponent](ValueComponent)<!-- -->)</p> |
 |  [`setDisabled(disabled)`](AbstractTextComponent/setDisabled) |  | <p> 1.2.3</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
-|  [`setPlaceholder(placeholder)`](AbstractTextComponent/setPlaceholder) |  | <p>0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
+|  [`setPlaceholder(placeholder)`](AbstractTextComponent/setPlaceholder) |  | <p> 0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
 |  [`setValue(value)`](AbstractTextComponent/setValue) |  | <p> 0.9.7</p><p>(Inherited from [AbstractTextComponent](AbstractTextComponent)<!-- -->)</p> |
 |  [`then(cb)`](BaseComponent/then) |  | <p>Facilitates chaining</p><p> 0.9.7</p><p>(Inherited from [BaseComponent](BaseComponent)<!-- -->)</p> |
 

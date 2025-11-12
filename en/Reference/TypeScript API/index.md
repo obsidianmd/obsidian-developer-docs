@@ -176,6 +176,8 @@ cssclasses: hide-title
 |  Interface | Description |
 |  --- | --- |
 |  [`BaseOption`](BaseOption) |  1.10.0 |
+|  [`BasesConfigFile`](BasesConfigFile) | <p>Represents the serialized format of a Bases query as stored in a <code>.base</code> file.</p><p> 1.10.0</p> |
+|  [`BasesConfigFileView`](BasesConfigFileView) |  1.10.0 |
 |  [`BasesProperty`](BasesProperty) | <p>A parsed version of the [BasesPropertyId](BasesPropertyId)<!-- -->.</p><p> 1.10.0</p> |
 |  [`BasesViewRegistration`](BasesViewRegistration) | <p>Container for options when registering a new Bases view type.</p><p> 1.10.0</p> |
 |  [`BlockCache`](BlockCache) |  0.11.13 |
@@ -200,11 +202,14 @@ cssclasses: hide-title
 |  [`EditorTransaction`](EditorTransaction) |  |
 |  [`EmbedCache`](EmbedCache) |  0.9.7 |
 |  [`EventRef`](EventRef) |  |
+|  [`FileOption`](FileOption) | <p>A text input allowing selection of a file from in the vault.</p><p> 1.10.2</p> |
 |  [`FileStats`](FileStats) |  |
+|  [`FolderOption`](FolderOption) | <p>A text input allowing selection of a folder from in the vault.</p><p> 1.10.2</p> |
 |  [`FootnoteCache`](FootnoteCache) |  |
 |  [`FootnoteRefCache`](FootnoteRefCache) |  |
 |  [`FootnoteSubpathResult`](FootnoteSubpathResult) |  1.7.2 |
 |  [`FormulaContext`](FormulaContext) | <p>The context in which a formula is evaluated. In most cases, [BasesEntry](BasesEntry) is the specific type to use.</p><p> 1.10.0</p> |
+|  [`FormulaOption`](FormulaOption) | <p>A text input supporting formula evaluation.</p><p> 1.10.2</p> |
 |  [`FrontMatterCache`](FrontMatterCache) |  |
 |  [`FrontMatterInfo`](FrontMatterInfo) |  |
 |  [`FrontmatterLinkCache`](FrontmatterLinkCache) |  |
@@ -278,6 +283,7 @@ cssclasses: hide-title
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [`BasesConfigFileFilter`](BasesConfigFileFilter) |  1.10.0 |
 |  [`BasesPropertyId`](BasesPropertyId) | <p>The full ID of a property, used in the bases config file. The prefixed [BasesPropertyType](BasesPropertyType) disambiguates properties of the same name but from different sources.</p><p> 1.10.0</p> |
 |  [`BasesPropertyType`](BasesPropertyType) | <p>The three valid "sources" of a property in a Base.</p><p>- <code>note</code>: Properties from the frontmatter of markdown files in the vault. - <code>formula</code>: Properties calculated by evaluating a formula from the base config file. - <code>file</code>: Properties inherent to a file, such as the name, extension, size, etc.</p><p> 1.10.0</p> |
 |  [`BasesSortConfig`](BasesSortConfig) |  1.10.0 |

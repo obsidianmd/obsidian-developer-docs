@@ -24,6 +24,7 @@ export class NullValue extends Value
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
+|  [`type`](Value/type) | <code>static</code> | <code>string</code> | <p> 1.10.0</p><p>(Inherited from [Value](Value)<!-- -->)</p> |
 |  [`value`](NullValue/value) | <code>static</code> | [`NullValue`](NullValue) |  1.10.0 |
 
 ## Methods

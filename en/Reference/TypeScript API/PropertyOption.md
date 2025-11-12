@@ -29,5 +29,6 @@ export interface PropertyOption extends BaseOption
 |  [`filter?`](PropertyOption/filter) |  | <code>(prop: </code>[`BasesPropertyId`](BasesPropertyId)<code>) =&gt; boolean</code> | <p>_(Optional)_ If provided, only properties which pass the filter will be included for selection in the property dropdown.</p><p> 1.10.0</p> |
 |  [`key`](BaseOption/key) |  | <code>string</code> | <p> 1.10.0</p><p>(Inherited from [BaseOption](BaseOption)<!-- -->)</p> |
 |  [`placeholder?`](PropertyOption/placeholder) |  | <code>string</code> | _(Optional)_  1.10.0 |
+|  [`shouldHide?`](BaseOption/shouldHide) |  | <code>(config: </code>[`BasesViewConfig`](BasesViewConfig)<code>) =&gt; boolean</code> | <p>_(Optional)_ If provided, the option will be hidden if the function returns true.</p><p> 1.10.2</p><p>(Inherited from [BaseOption](BaseOption)<!-- -->)</p> |
 |  [`type`](PropertyOption/type) |  | <code>'property'</code> |  1.10.0 |
 

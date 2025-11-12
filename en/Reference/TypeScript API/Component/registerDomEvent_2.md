@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Component.registerDomEvent() method
 
-Registers an DOM event to be detached when unloading
+Registers a DOM event to be detached when unloading
 
  0.14.8
 

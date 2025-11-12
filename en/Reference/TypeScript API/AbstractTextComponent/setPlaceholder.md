@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## AbstractTextComponent.setPlaceholder() method
 
-0.9.7
+ 0.9.7
 
 **Signature:**
 

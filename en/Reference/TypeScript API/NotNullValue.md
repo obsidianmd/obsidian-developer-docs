@@ -20,6 +20,12 @@ export abstract class NotNullValue extends Value
 ```
 **Extends:** [`Value`](Value)
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`type`](Value/type) | <code>static</code> | <code>string</code> | <p> 1.10.0</p><p>(Inherited from [Value](Value)<!-- -->)</p> |
+
 ## Methods
 
 |  Method | Modifiers | Description |

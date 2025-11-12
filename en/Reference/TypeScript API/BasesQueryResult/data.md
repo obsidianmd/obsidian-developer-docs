@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## BasesQueryResult.data property
 
-A ungrouped version of the data, with user-configured sort and limit applied. Where appropriate, views should support groupBy by using `groupedData` instead of this value.
+An ungrouped version of the data, with user-configured sort and limit applied. Where appropriate, views should support groupBy by using `groupedData` instead of this value.
 
  1.10.0
 

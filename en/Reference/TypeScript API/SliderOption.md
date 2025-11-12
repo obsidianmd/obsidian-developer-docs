@@ -28,6 +28,7 @@ export interface SliderOption extends BaseOption
 |  [`key`](BaseOption/key) |  | <code>string</code> | <p> 1.10.0</p><p>(Inherited from [BaseOption](BaseOption)<!-- -->)</p> |
 |  [`max?`](SliderOption/max) |  | <code>number</code> | _(Optional)_  1.10.0 |
 |  [`min?`](SliderOption/min) |  | <code>number</code> | _(Optional)_  1.10.0 |
+|  [`shouldHide?`](BaseOption/shouldHide) |  | <code>(config: </code>[`BasesViewConfig`](BasesViewConfig)<code>) =&gt; boolean</code> | <p>_(Optional)_ If provided, the option will be hidden if the function returns true.</p><p> 1.10.2</p><p>(Inherited from [BaseOption](BaseOption)<!-- -->)</p> |
 |  [`step?`](SliderOption/step) |  | <code>number</code> | _(Optional)_  1.10.0 |
 |  [`type`](SliderOption/type) |  | <code>'slider'</code> |  1.10.0 |
 

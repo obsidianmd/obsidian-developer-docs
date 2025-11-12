@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## Vault.getResourcePath() method
 
-Returns an URI for the browser engine to use, for example to embed an image.
+Returns a URI for the browser engine to use, for example to embed an image.
 
  0.9.7
 

@@ -44,7 +44,7 @@ export class Vault extends Events
 |  [`getFolderByPath(path)`](Vault/getFolderByPath) |  | Get a folder inside the vault at the given path. Returns <code>null</code> if the folder does not exist. |
 |  [`getMarkdownFiles()`](Vault/getMarkdownFiles) |  | <p>Get all Markdown files in the vault.</p><p> 0.9.7</p> |
 |  [`getName()`](Vault/getName) |  | <p>Gets the name of the vault.</p><p> 0.9.7</p> |
-|  [`getResourcePath(file)`](Vault/getResourcePath) |  | <p>Returns an URI for the browser engine to use, for example to embed an image.</p><p> 0.9.7</p> |
+|  [`getResourcePath(file)`](Vault/getResourcePath) |  | <p>Returns a URI for the browser engine to use, for example to embed an image.</p><p> 0.9.7</p> |
 |  [`getRoot()`](Vault/getRoot) |  | <p>Get the root folder of the current vault.</p><p> 0.9.7</p> |
 |  [`modify(file, data, options)`](Vault/modify) |  | Modify the contents of a plaintext file. |
 |  [`modifyBinary(file, data, options)`](Vault/modifyBinary) |  | Modify the contents of a binary file. |
