@@ -19,6 +19,12 @@ Container type for data which can expose functions for retrieving, comparing, an
 export abstract class Value 
 ```
 
+## Properties
+
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [`type`](Value/type) | <code>static</code> | <code>string</code> |  1.10.0 |
+
 ## Methods
 
 |  Method | Modifiers | Description |

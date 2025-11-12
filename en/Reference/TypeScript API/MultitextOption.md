@@ -25,5 +25,6 @@ export interface MultitextOption extends BaseOption
 |  [`default?`](MultitextOption/default) |  | <code>string[]</code> | _(Optional)_  1.10.0 |
 |  [`displayName`](BaseOption/displayName) |  | <code>string</code> | <p> 1.10.0</p><p>(Inherited from [BaseOption](BaseOption)<!-- -->)</p> |
 |  [`key`](BaseOption/key) |  | <code>string</code> | <p> 1.10.0</p><p>(Inherited from [BaseOption](BaseOption)<!-- -->)</p> |
+|  [`shouldHide?`](BaseOption/shouldHide) |  | <code>(config: </code>[`BasesViewConfig`](BasesViewConfig)<code>) =&gt; boolean</code> | <p>_(Optional)_ If provided, the option will be hidden if the function returns true.</p><p> 1.10.2</p><p>(Inherited from [BaseOption](BaseOption)<!-- -->)</p> |
 |  [`type`](MultitextOption/type) |  | <code>'multitext'</code> |  1.10.0 |
 

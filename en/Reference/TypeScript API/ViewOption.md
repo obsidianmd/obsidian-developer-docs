@@ -16,7 +16,7 @@ ViewOption and the associated sub-types are configuration-driven settings contro
 **Signature:**
 
 ```typescript
-export type ViewOption = TextOption | MultitextOption | GroupOption | PropertyOption | ToggleOption | SliderOption | DropdownOption;
+export type ViewOption = DropdownOption | FileOption | FolderOption | FormulaOption | GroupOption | MultitextOption | PropertyOption | SliderOption | TextOption | ToggleOption;
 ```
-**References:** [`TextOption`](TextOption)<!-- -->, [`MultitextOption`](MultitextOption)<!-- -->, [`GroupOption`](GroupOption)<!-- -->, [`PropertyOption`](PropertyOption)<!-- -->, [`ToggleOption`](ToggleOption)<!-- -->, [`SliderOption`](SliderOption)<!-- -->, [`DropdownOption`](DropdownOption)
+**References:** [`DropdownOption`](DropdownOption)<!-- -->, [`FileOption`](FileOption)<!-- -->, [`FolderOption`](FolderOption)<!-- -->, [`FormulaOption`](FormulaOption)<!-- -->, [`GroupOption`](GroupOption)<!-- -->, [`MultitextOption`](MultitextOption)<!-- -->, [`PropertyOption`](PropertyOption)<!-- -->, [`SliderOption`](SliderOption)<!-- -->, [`TextOption`](TextOption)<!-- -->, [`ToggleOption`](ToggleOption)
 

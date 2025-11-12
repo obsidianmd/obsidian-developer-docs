@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## AbstractTextComponent.onChange() method
 
-0.9.7
+ 0.9.7
 
 **Signature:**
 

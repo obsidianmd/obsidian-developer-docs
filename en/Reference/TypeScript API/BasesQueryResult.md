@@ -23,7 +23,7 @@ export class BasesQueryResult
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`data`](BasesQueryResult/data) |  | [`BasesEntry`](BasesEntry)<code>[]</code> | <p>A ungrouped version of the data, with user-configured sort and limit applied. Where appropriate, views should support groupBy by using <code>groupedData</code> instead of this value.</p><p> 1.10.0</p> |
+|  [`data`](BasesQueryResult/data) |  | [`BasesEntry`](BasesEntry)<code>[]</code> | <p>An ungrouped version of the data, with user-configured sort and limit applied. Where appropriate, views should support groupBy by using <code>groupedData</code> instead of this value.</p><p> 1.10.0</p> |
 |  [`groupedData`](BasesQueryResult/groupedData) | <code>readonly</code> | [`BasesEntryGroup`](BasesEntryGroup)<code>[]</code> | <p>The data to be rendered, grouped according to the groupBy config. If there is no groupBy configured, returns a single group with an empty key.</p><p> 1.10.0</p> |
 |  [`properties`](BasesQueryResult/properties) | <code>readonly</code> | [`BasesPropertyId`](BasesPropertyId)<code>[]</code> | <p>Visible properties defined by the user.</p><p> 1.10.0</p> |
 

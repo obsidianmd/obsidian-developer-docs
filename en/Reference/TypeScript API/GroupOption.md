@@ -25,5 +25,6 @@ export interface GroupOption
 |  --- | --- | --- | --- |
 |  [`displayName`](GroupOption/displayName) |  | <code>string</code> |  1.10.0 |
 |  [`items`](GroupOption/items) |  | <code>Exclude</code><code>&lt;</code>[`ViewOption`](ViewOption)<code>, </code>[`GroupOption`](GroupOption)<code>&gt;[]</code> |  1.10.0 |
+|  [`shouldHide?`](GroupOption/shouldHide) |  | <code>(config: </code>[`BasesViewConfig`](BasesViewConfig)<code>) =&gt; boolean</code> | <p>_(Optional)_ If provided, the group will be hidden if the function returns true.</p><p> 1.10.2</p> |
 |  [`type`](GroupOption/type) |  | <code>'group'</code> |  1.10.0 |
 

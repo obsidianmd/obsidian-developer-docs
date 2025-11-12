@@ -40,9 +40,9 @@ export class HoverPopover extends Component
 |  [`onload()`](Component/onload) |  | <p>Override this to load your component</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`onunload()`](Component/onunload) |  | <p>Override this to unload your component</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`register(cb)`](Component/register) |  | <p>Registers a callback to be called when unloading</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
-|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_2) |  | <p>Registers an DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent) |  | <p>Registers a DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_1) |  | <p>Registers a DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
+|  [`registerDomEvent(el, type, callback, options)`](Component/registerDomEvent_2) |  | <p>Registers a DOM event to be detached when unloading</p><p> 0.14.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`registerEvent(eventRef)`](Component/registerEvent) |  | <p>Registers an event to be detached when unloading</p><p> 0.9.7</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`registerInterval(id)`](Component/registerInterval) |  | <p>Registers an interval (from setInterval) to be cancelled when unloading Use  instead of  to avoid TypeScript confusing between NodeJS vs Browser API</p><p> 0.13.8</p><p>(Inherited from [Component](Component)<!-- -->)</p> |
 |  [`removeChild(component)`](Component/removeChild) |  | <p>Removes a child component, unloading it</p><p> 0.12.0</p><p>(Inherited from [Component](Component)<!-- -->)</p> |

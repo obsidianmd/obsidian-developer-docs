@@ -23,5 +23,6 @@ export interface BaseOption
 |  --- | --- | --- | --- |
 |  [`displayName`](BaseOption/displayName) |  | <code>string</code> |  1.10.0 |
 |  [`key`](BaseOption/key) |  | <code>string</code> |  1.10.0 |
+|  [`shouldHide?`](BaseOption/shouldHide) |  | <code>(config: </code>[`BasesViewConfig`](BasesViewConfig)<code>) =&gt; boolean</code> | <p>_(Optional)_ If provided, the option will be hidden if the function returns true.</p><p> 1.10.2</p> |
 |  [`type`](BaseOption/type) |  | <code>string</code> |  1.10.0 |
 

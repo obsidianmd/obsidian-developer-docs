@@ -9,7 +9,7 @@ cssclasses: hide-title
 
 ## ListItemCache.task property
 
-A single character indicating the checked status of a task. The space character `' '` is interpreted as an incomplete task. An other character is interpreted as completed task. `undefined` if this item isn't a task.
+A single character indicating the checked status of a task. The space character `' '` is interpreted as an incomplete task. Any other character is interpreted as completed task. `undefined` if this item isn't a task.
 
 **Signature:**
 
