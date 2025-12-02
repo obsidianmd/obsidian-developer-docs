@@ -62,7 +62,7 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
 
 5. Browse to your repository on GitHub and select the **Actions** tab. Your workflow might still be running, or it might have finished already.
 
-6. When the workflow finishes, go back to the main page for your repository and select **Releases** in the sidebar on the right side. The workflow has created a draft GitHub release and uploaded the required assets as binary attachments.
+6. When the workflow finishes, go back to the main page of your repository and select **Releases** in the sidebar on the right side. The workflow has created a draft GitHub release and uploaded the required assets as binary attachments.
 
 7. Select **Edit** (pencil icon) on the right side of the release name.
 
