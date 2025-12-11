@@ -15,10 +15,12 @@ cssclasses: hide-title
 
 ```typescript
 export type BasesConfigFileFilter = string | {
-
+    and: BasesConfigFileFilter[];
 } | {
-
+    or: BasesConfigFileFilter[];
 } | {
-
+    not: BasesConfigFileFilter[];
 };
 ```
+**References:** [`BasesConfigFileFilter`](BasesConfigFileFilter)
+

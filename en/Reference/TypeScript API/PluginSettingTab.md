@@ -29,7 +29,8 @@ export abstract class PluginSettingTab extends SettingTab
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`app`](SettingTab/app) |  | [`App`](App) | <p>Reference to the app instance.</p><p>(Inherited from [SettingTab](SettingTab)<!-- -->)</p> |
-|  [`containerEl`](SettingTab/containerEl) |  | <code>HTMLElement</code> | <p>Outermost HTML element on the setting tab.</p><p>(Inherited from [SettingTab](SettingTab)<!-- -->)</p> |
+|  [`containerEl`](SettingTab/containerEl) |  | <code>HTMLElement</code> | <p>HTML element for the setting tab content.</p><p>(Inherited from [SettingTab](SettingTab)<!-- -->)</p> |
+|  [`icon`](SettingTab/icon) |  | [`IconName`](IconName) | <p>The icon to display in the settings sidebar.</p><p> 1.11.0</p><p>(Inherited from [SettingTab](SettingTab)<!-- -->)</p> |
 
 ## Methods
 

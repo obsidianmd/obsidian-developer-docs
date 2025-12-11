@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## IconName type
 
+Can be any Lucide icon name or an internal icon name.
 
 **Signature:**
 

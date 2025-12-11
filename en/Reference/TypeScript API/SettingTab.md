@@ -20,7 +20,8 @@ export abstract class SettingTab
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [`app`](SettingTab/app) |  | [`App`](App) | Reference to the app instance. |
-|  [`containerEl`](SettingTab/containerEl) |  | <code>HTMLElement</code> | Outermost HTML element on the setting tab. |
+|  [`containerEl`](SettingTab/containerEl) |  | <code>HTMLElement</code> | HTML element for the setting tab content. |
+|  [`icon`](SettingTab/icon) |  | [`IconName`](IconName) | <p>The icon to display in the settings sidebar.</p><p> 1.11.0</p> |
 
 ## Methods
 
