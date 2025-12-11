@@ -61,6 +61,7 @@ cssclasses: hide-title
 |  [`Scope`](Scope) | A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys. |
 |  [`SearchComponent`](SearchComponent) |  0.9.21 |
 |  [`Setting`](Setting) |  0.9.7 |
+|  [`SettingGroup`](SettingGroup) |  1.11.0 |
 |  [`SliderComponent`](SliderComponent) |  0.9.7 |
 |  [`StringValue`](StringValue) | <p>[Value](Value) wrapping a string.</p><p> 1.10.0</p> |
 |  [`TagValue`](TagValue) | <p>[Value](Value) wrapping an Obsidian tag.</p><p> 1.10.0</p> |
@@ -291,7 +292,7 @@ cssclasses: hide-title
 |  [`Constructor`](Constructor) |  |
 |  [`EditorCommandName`](EditorCommandName) |  |
 |  [`HexString`](HexString) | Hex strings are 6-digit hash-prefixed rgb strings in lowercase form. Example: \#ffffff |
-|  [`IconName`](IconName) |  |
+|  [`IconName`](IconName) | Can be any Lucide icon name or an internal icon name. |
 |  [`KeymapEventListener`](KeymapEventListener) | Return <code>false</code> to automatically preventDefault |
 |  [`MarkdownViewModeType`](MarkdownViewModeType) |  |
 |  [`Modifier`](Modifier) | Mod = Cmd on MacOS and Ctrl on other OS Ctrl = Ctrl key for every OS Meta = Cmd on MacOS and Win key on other OS |

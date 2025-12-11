@@ -40,6 +40,7 @@ export class Setting
 |  --- | --- | --- |
 |  [`addButton(cb)`](Setting/addButton) |  |  0.9.7 |
 |  [`addColorPicker(cb)`](Setting/addColorPicker) |  |  0.16.0 |
+|  [`addComponent(cb)`](Setting/addComponent) |  |  1.11.0 |
 |  [`addDropdown(cb)`](Setting/addDropdown) |  |  0.9.7 |
 |  [`addExtraButton(cb)`](Setting/addExtraButton) |  |  0.9.16 |
 |  [`addMomentFormat(cb)`](Setting/addMomentFormat) |  |  0.9.7 |
