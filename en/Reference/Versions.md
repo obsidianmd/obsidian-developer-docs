@@ -35,4 +35,4 @@ If the user runs version 1.1.0 of the Obsidian app, Obsidian then consults the `
 In this case, the most recent plugin version for 1.1.0 is 0.12.0.
 
 > [!important]
-> You don't need to list every plugin relese in the `versions.json`. You only need to update `versions.json` if you change the `minAppVersion` for your plugin.
+> You don't need to list every plugin release in the `versions.json`. You only need to update `versions.json` if you change the `minAppVersion` for your plugin.
