@@ -23,8 +23,12 @@ A simple (but incorrect implementation!) might look like this:
 ```ts
 // Bad
 class MyPlugin extends Plugin {
+	onResize() {
+		// ...
+	}
+
 	onload() {
-		window.addEventListener("resize", onResize);
+		window.addEventListener("resize", this.onResize);
 	}
 }
 ```
@@ -36,12 +40,13 @@ A more responsible solution would be to manually remove the listener during `onu
 ```ts
 // Better
 class MyPlugin extends Plugin {
+	// ...
 	onload() {
-		window.addEventListener("resize", onResize);
+		window.addEventListener("resize", this.onResize);
 	}
 
 	onunload() {
-		window.removeEventListener("resize", onResize);
+		window.removeEventListener("resize", this.onResize);
 	}
 }
 ```
@@ -57,6 +62,7 @@ Inside the `Plugin` class, you have access to several helper methods for registe
 ```ts
 // Good
 class MyPlugin extends Plugin {
+	// ...
 	onload() {
 		this.registerDomEvent(window, "resize", onResize);
 	}
@@ -197,14 +203,15 @@ class MyView extends ItemView {
 
 As we have seen in previous sections, this component is never loaded or unloaded, so the renderer will never be cleaned up!
 
-Instead, you should pass a component that is loaded and unloaded properly. This can be your own, or the plugin itself.
+Instead, you should pass a component that is loaded and unloaded properly, and should live for just as long - but never longer - as the view.
+Luckily, _every_ view is also a `Component`, so we can simply pass the `View` instance itself!
 
 ```ts
 import { ItemView, MarkdownRenderer } from 'obsidian';
 
 class MyView extends ItemView {
 	onload() {		
-		// Good: using the view itself as the component
+		// Good: using the view itself (`this`) as the component
 		MarkdownRenderer.render(this.app, "## Some Markdown", this.containerEl, "", this);
 	}
 }
