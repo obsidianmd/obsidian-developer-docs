@@ -21,7 +21,7 @@ This guide assumes you're familiar with creating plugin settings in Obsidian. If
 
 When plugins store secrets directly in `data.json`, several problems arise:
 
-- **Security**: Secrets are stored in plain text alongside other plugin data.
+- **Security**: Secrets are stored in plaintext alongside other plugin data.
 - **Duplication**: Users must copy the same API key into every plugin that needs it.
 - **Maintenance**: If a token changes, users must update every plugin manually.
 
