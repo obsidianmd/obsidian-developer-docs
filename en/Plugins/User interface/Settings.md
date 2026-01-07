@@ -344,9 +344,9 @@ new Setting(containerEl)
 ### Color picker
 
 ```ts
-new Setting(containerEl)  
-    .setName('Color picker')  
-    .addColorPicker(color => color  
-       .setValue('#FFFFFF')  
+new Setting(containerEl)
+    .setName('Color picker')
+    .addColorPicker(color => color
+       .setValue('#FFFFFF')
     );
 ```
