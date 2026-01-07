@@ -40,10 +40,6 @@ import MyPlugin from "./main";
 export interface MyPluginSettings {
   mySetting: string;
 }
-
-export const DEFAULT_SETTINGS: MyPluginSettings = {
-  mySetting: 'default'
-}
 ```
 
 ## Step 2: Add the SecretComponent to your settings tab
@@ -90,6 +86,9 @@ When your plugin needs the actual secret value, use the `SecretStorage` API:
 
 ```ts
 const secret = app.secretStorage.get(this.settings.mySetting);
+if (secret) { // secret value might be null
+
+}
 ```
 
 This retrieves the secret value associated with the name stored in your settings. The actual secret is stored in local storage, keyed to the specific vault.
@@ -104,10 +103,6 @@ import MyPlugin from "./main";
 
 export interface MyPluginSettings {
   mySetting: string;
-}
-
-export const DEFAULT_SETTINGS: MyPluginSettings = {
-  mySetting: 'default'
 }
 
 export class SampleSettingTab extends PluginSettingTab {
