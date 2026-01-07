@@ -28,6 +28,8 @@ export class SettingGroup
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`addClass(cls)`](SettingGroup/addClass) |  |  1.11.0 |
+|  [`addExtraButton(cb)`](SettingGroup/addExtraButton) |  |  1.11.0 |
+|  [`addSearch(cb)`](SettingGroup/addSearch) |  | <p>Add a search input at the beginning of the setting group. Useful for filtering results or adding an input for quick entry.</p><p> 1.11.0</p> |
 |  [`addSetting(cb)`](SettingGroup/addSetting) |  |  1.11.0 |
 |  [`setHeading(text)`](SettingGroup/setHeading) |  |  1.11.0 |
 

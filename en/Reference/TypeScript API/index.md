@@ -60,6 +60,8 @@ cssclasses: hide-title
 |  [`RenderContext`](RenderContext) | <p>Utility functions for rendering Values within the app.</p><p> 1.10.0</p> |
 |  [`Scope`](Scope) | A scope receives keyboard events and binds callbacks to given hotkeys. Only one scope is active at a time, but scopes may define parent scopes (in the constructor) and inherit their hotkeys. |
 |  [`SearchComponent`](SearchComponent) |  0.9.21 |
+|  [`SecretComponent`](SecretComponent) |  1.11.1 |
+|  [`SecretStorage`](SecretStorage) |  1.11.4 |
 |  [`Setting`](Setting) |  0.9.7 |
 |  [`SettingGroup`](SettingGroup) |  1.11.0 |
 |  [`SliderComponent`](SliderComponent) |  0.9.7 |
