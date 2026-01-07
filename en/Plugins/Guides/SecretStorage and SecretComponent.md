@@ -68,7 +68,7 @@ export class SampleSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     new Setting(containerEl)
-      .setName('API Key')
+      .setName('API key')
       .setDesc('Select a secret from SecretStorage')
       .addComponent(el => new SecretComponent(this.app, el)
         .setValue(this.plugin.settings.mySetting)
@@ -124,7 +124,7 @@ export class SampleSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     new Setting(containerEl)
-      .setName('API Key')
+      .setName('API key')
       .setDesc('Select a secret from SecretStorage')
       .addComponent(el => new SecretComponent(this.app, el)
         .setValue(this.plugin.settings.mySetting)
