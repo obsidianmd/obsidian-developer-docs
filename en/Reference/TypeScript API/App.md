@@ -27,6 +27,7 @@ export class App
 |  [`metadataCache`](App/metadataCache) |  | [`MetadataCache`](MetadataCache) |  0.9.7 |
 |  [`renderContext`](App/renderContext) |  | [`RenderContext`](RenderContext) |  1.10.0 |
 |  [`scope`](App/scope) |  | [`Scope`](Scope) |  0.9.7 |
+|  [`secretStorage`](App/secretStorage) |  | [`SecretStorage`](SecretStorage) |  1.11.4 |
 |  [`vault`](App/vault) |  | [`Vault`](Vault) |  0.9.7 |
 |  [`workspace`](App/workspace) |  | [`Workspace`](Workspace) |  0.9.7 |
 
