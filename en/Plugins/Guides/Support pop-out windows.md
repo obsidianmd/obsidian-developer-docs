@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /Plugins/Guides/Supporting+Pop-Out+Windows
+  - Plugins/Guides/Supporting Pop-Out Windows
 permalink: /plugins/guides/pop-out-windows
 ---
 With the release of [Obsidian v0.15.0](https://obsidian.md/changelog/2022-06-14-desktop-v0.15.0/), the pop-out windows feature was added to the desktop version of Obsidian. 
