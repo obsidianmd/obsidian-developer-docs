@@ -85,7 +85,7 @@ The `SecretComponent` presents users with an interface to select from existing s
 When your plugin needs the actual secret value, use the `SecretStorage` API:
 
 ```ts
-const secret = app.secretStorage.get(this.settings.mySetting);
+const secret = app.secretStorage.getSecret(this.settings.mySetting);
 if (secret) { // secret value might be null
 
 }
