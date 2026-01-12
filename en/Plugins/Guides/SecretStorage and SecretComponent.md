@@ -27,7 +27,7 @@ When plugins store secrets directly in `data.json`, several problems arise:
 
 SecretStorage addresses these issues by providing a central store for secrets. Users save each secret with a name, and any plugin can reference it by that name.
 
-[](/en/Assets/settings-secret-list.png)
+![[settings-secret-list.png]]
 
 ## Step 1: Update your settings interface
 
@@ -78,7 +78,7 @@ export class SampleSettingTab extends PluginSettingTab {
 
 The `SecretComponent` presents users with an interface to select from existing secrets or create a new one. When saved, your plugin settings contain the *name* of the secret, not the actual secret value.
 
-[](/en/Assets/settings-secretcomponent.png)
+![[settings-secretcomponent.png]]
 
 ## Step 3: Retrieve the secret value
 
