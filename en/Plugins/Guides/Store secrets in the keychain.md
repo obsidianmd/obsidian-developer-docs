@@ -1,9 +1,11 @@
 ---
 permalink: plugins/guides/secret-storage
+aliases:
+  - SecretStorage and SecretComponent
 ---
-SecretStorage provides a secure way to store and manage sensitive data like API keys and tokens in Obsidian plugins. Instead of storing secrets directly in your plugin's `data.json` file, SecretStorage offers a centralized key-value store that allows users to share secrets across multiple plugins.
+[[SecretStorage]] provides a secure way to store and manage sensitive data like API keys and tokens in Obsidian plugins. Instead of storing secrets directly in your plugin's `data.json` file, SecretStorage offers a centralized key-value store that allows users to share secrets across multiple plugins.
 
-In this guide, you'll learn how to use SecretStorage and SecretComponent to securely handle secrets in your plugin settings.
+In this guide, you'll learn how to use [[SecretStorage]] and [[SecretComponent]] to securely handle secrets in your plugin settings.
 
 ## What you'll learn
 
