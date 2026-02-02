@@ -7,7 +7,7 @@ export default class ExamplePlugin extends Plugin {
   async onload() {
     // Configure resources needed by the plugin.
   }
-  async onunload() {
+  onunload() {
     // Release any resources configured by the plugin.
   }
 }
@@ -33,7 +33,7 @@ export default class ExamplePlugin extends Plugin {
   async onload() {
     console.log('loading plugin')
   }
-  async onunload() {
+  onunload() {
     console.log('unloading plugin')
   }
 }
