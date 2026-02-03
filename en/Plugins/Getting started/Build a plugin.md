@@ -104,7 +104,7 @@ To let the user interact with your plugin, add a _ribbon icon_ that greets the u
 
 1. Open `main.ts` in your code editor.
 2. Rename the plugin class from `MyPlugin` to `HelloWorldPlugin`.
-3. Import `Notice` from the `obsidian` package.
+3. Import `Notice` from the `obsidian` package (if it hasn't been imported already).
 
    ```ts
    import { Notice, Plugin } from 'obsidian';
