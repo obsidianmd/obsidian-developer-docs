@@ -14,5 +14,5 @@ cssclasses: hide-title
 **Signature:**
 
 ```typescript
-options?: () => ViewOption[];
+options?: (config: BasesViewConfig) => BasesAllOptions[];
 ```
