@@ -26,5 +26,5 @@ export interface BasesViewRegistration
 |  [`factory`](BasesViewRegistration/factory) |  | [`BasesViewFactory`](BasesViewFactory) |  1.10.0 |
 |  [`icon`](BasesViewRegistration/icon) |  | [`IconName`](IconName) | <p>Icon ID to be used in the Bases view selector. See [https://docs.obsidian.md/Plugins/User+interface/Icons](https://docs.obsidian.md/Plugins/User+interface/Icons) for available icons and how to add your own.</p><p> 1.10.0</p> |
 |  [`name`](BasesViewRegistration/name) |  | <code>string</code> |  1.10.0 |
-|  [`options?`](BasesViewRegistration/options) |  | <code>() =&gt; </code>[`ViewOption`](ViewOption)<code>[]</code> | _(Optional)_  1.10.0 |
+|  [`options?`](BasesViewRegistration/options) |  | <code>(config: </code>[`BasesViewConfig`](BasesViewConfig)<code>) =&gt; </code>[`BasesAllOptions`](BasesAllOptions)<code>[]</code> | _(Optional)_  1.10.0 |
 

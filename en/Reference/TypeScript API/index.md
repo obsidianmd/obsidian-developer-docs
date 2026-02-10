@@ -178,10 +178,20 @@ cssclasses: hide-title
 
 |  Interface | Description |
 |  --- | --- |
-|  [`BaseOption`](BaseOption) |  1.10.0 |
 |  [`BasesConfigFile`](BasesConfigFile) | <p>Represents the serialized format of a Bases query as stored in a <code>.base</code> file.</p><p> 1.10.0</p> |
 |  [`BasesConfigFileView`](BasesConfigFileView) |  1.10.0 |
+|  [`BasesDropdownOption`](BasesDropdownOption) |  1.10.0 |
+|  [`BasesFileOption`](BasesFileOption) | <p>A text input allowing selection of a file from in the vault.</p><p> 1.10.2</p> |
+|  [`BasesFolderOption`](BasesFolderOption) | <p>A text input allowing selection of a folder from in the vault.</p><p> 1.10.2</p> |
+|  [`BasesFormulaOption`](BasesFormulaOption) | <p>A text input supporting formula evaluation.</p><p> 1.10.2</p> |
+|  [`BasesMultitextOption`](BasesMultitextOption) |  1.10.0 |
+|  [`BasesOption`](BasesOption) |  1.10.0 |
+|  [`BasesOptionGroup`](BasesOptionGroup) | <p>Collapsible container for other ViewOptions.</p><p> 1.10.0</p> |
 |  [`BasesProperty`](BasesProperty) | <p>A parsed version of the [BasesPropertyId](BasesPropertyId)<!-- -->.</p><p> 1.10.0</p> |
+|  [`BasesPropertyOption`](BasesPropertyOption) | <p>A dropdown menu allowing selection of a property.</p><p> 1.10.0</p> |
+|  [`BasesSliderOption`](BasesSliderOption) |  1.10.0 |
+|  [`BasesTextOption`](BasesTextOption) |  1.10.0 |
+|  [`BasesToggleOption`](BasesToggleOption) |  1.10.0 |
 |  [`BasesViewRegistration`](BasesViewRegistration) | <p>Container for options when registering a new Bases view type.</p><p> 1.10.0</p> |
 |  [`BlockCache`](BlockCache) |  0.11.13 |
 |  [`BlockSubpathResult`](BlockSubpathResult) |  0.13.26 |
@@ -192,7 +202,6 @@ cssclasses: hide-title
 |  [`DataAdapter`](DataAdapter) | Work directly with files and folders inside a vault. If possible prefer using the [Vault](Vault) API over this. |
 |  [`DataWriteOptions`](DataWriteOptions) |  |
 |  [`Debouncer`](Debouncer) |  |
-|  [`DropdownOption`](DropdownOption) |  1.10.0 |
 |  [`EditorChange`](EditorChange) |  0.12.11 |
 |  [`EditorPosition`](EditorPosition) |  0.12.11 |
 |  [`EditorRange`](EditorRange) |  0.12.11 |
@@ -205,19 +214,15 @@ cssclasses: hide-title
 |  [`EditorTransaction`](EditorTransaction) |  |
 |  [`EmbedCache`](EmbedCache) |  0.9.7 |
 |  [`EventRef`](EventRef) |  |
-|  [`FileOption`](FileOption) | <p>A text input allowing selection of a file from in the vault.</p><p> 1.10.2</p> |
 |  [`FileStats`](FileStats) |  |
-|  [`FolderOption`](FolderOption) | <p>A text input allowing selection of a folder from in the vault.</p><p> 1.10.2</p> |
 |  [`FootnoteCache`](FootnoteCache) |  |
 |  [`FootnoteRefCache`](FootnoteRefCache) |  |
 |  [`FootnoteSubpathResult`](FootnoteSubpathResult) |  1.7.2 |
 |  [`FormulaContext`](FormulaContext) | <p>The context in which a formula is evaluated. In most cases, [BasesEntry](BasesEntry) is the specific type to use.</p><p> 1.10.0</p> |
-|  [`FormulaOption`](FormulaOption) | <p>A text input supporting formula evaluation.</p><p> 1.10.2</p> |
 |  [`FrontMatterCache`](FrontMatterCache) |  |
 |  [`FrontMatterInfo`](FrontMatterInfo) |  |
 |  [`FrontmatterLinkCache`](FrontmatterLinkCache) |  |
 |  [`FuzzyMatch`](FuzzyMatch) |  0.9.20 |
-|  [`GroupOption`](GroupOption) | <p>Collapsible container for other ViewOptions.</p><p> 1.10.0</p> |
 |  [`HeadingCache`](HeadingCache) |  |
 |  [`HeadingSubpathResult`](HeadingSubpathResult) |  0.9.16 |
 |  [`Hotkey`](Hotkey) |  |
@@ -241,13 +246,11 @@ cssclasses: hide-title
 |  [`MarkdownSectionInformation`](MarkdownSectionInformation) |  |
 |  [`MarkdownSubView`](MarkdownSubView) |  |
 |  [`MenuPositionDef`](MenuPositionDef) |  1.1.0 |
-|  [`MultitextOption`](MultitextOption) |  1.10.0 |
 |  [`ObsidianProtocolData`](ObsidianProtocolData) |  |
 |  [`OpenViewState`](OpenViewState) |  |
 |  [`PluginManifest`](PluginManifest) | Metadata about a Community plugin. |
 |  [`Point`](Point) |  |
 |  [`Pos`](Pos) | Describes a text range in a Markdown document. |
-|  [`PropertyOption`](PropertyOption) | <p>A dropdown menu allowing selection of a property.</p><p> 1.10.0</p> |
 |  [`Reference`](Reference) | Base interface for items that point to a different location. |
 |  [`ReferenceCache`](ReferenceCache) |  |
 |  [`ReferenceLinkCache`](ReferenceLinkCache) |  1.8.7 |
@@ -258,12 +261,9 @@ cssclasses: hide-title
 |  [`SearchResult`](SearchResult) |  0.9.21 |
 |  [`SearchResultContainer`](SearchResultContainer) |  0.9.21 |
 |  [`SectionCache`](SectionCache) |  |
-|  [`SliderOption`](SliderOption) |  1.10.0 |
 |  [`Stat`](Stat) |  |
 |  [`SubpathResult`](SubpathResult) |  |
 |  [`TagCache`](TagCache) |  0.9.7 |
-|  [`TextOption`](TextOption) |  1.10.0 |
-|  [`ToggleOption`](ToggleOption) |  1.10.0 |
 |  [`TooltipOptions`](TooltipOptions) |  |
 |  [`ViewState`](ViewState) |  |
 |  [`ViewStateResult`](ViewStateResult) |  |
@@ -286,7 +286,9 @@ cssclasses: hide-title
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [`BasesAllOptions`](BasesAllOptions) | <p>BasesOptions and the associated sub-types are configuration-driven settings controls which can be provided by a [BasesViewRegistration](BasesViewRegistration) to expose configuration options to users in the view config menu of the Bases toolbar.</p><p> 1.10.0</p> |
 |  [`BasesConfigFileFilter`](BasesConfigFileFilter) |  1.10.0 |
+|  [`BasesOptions`](BasesOptions) |  1.10.0 |
 |  [`BasesPropertyId`](BasesPropertyId) | <p>The full ID of a property, used in the bases config file. The prefixed [BasesPropertyType](BasesPropertyType) disambiguates properties of the same name but from different sources.</p><p> 1.10.0</p> |
 |  [`BasesPropertyType`](BasesPropertyType) | <p>The three valid "sources" of a property in a Base.</p><p>- <code>note</code>: Properties from the frontmatter of markdown files in the vault. - <code>formula</code>: Properties calculated by evaluating a formula from the base config file. - <code>file</code>: Properties inherent to a file, such as the name, extension, size, etc.</p><p> 1.10.0</p> |
 |  [`BasesSortConfig`](BasesSortConfig) |  1.10.0 |
@@ -307,5 +309,4 @@ cssclasses: hide-title
 |  [`TooltipPlacement`](TooltipPlacement) |  |
 |  [`UserEvent`](UserEvent) |  |
 |  [`ViewCreator`](ViewCreator) |  |
-|  [`ViewOption`](ViewOption) | <p>ViewOption and the associated sub-types are configuration-driven settings controls which can be provided by a [BasesViewRegistration](BasesViewRegistration) to expose configuration options to users in the view config menu of the Bases toolbar.</p><p> 1.10.0</p> |
 
