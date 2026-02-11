@@ -142,7 +142,7 @@ class MyModal extends Modal {
 		console.debug("Key pressed!");
 	}
 
-	onload() {
+	onOpen() {
 		// Bad: listener outlives the modal!
 		window.addEventListener("keydown", this.onKeyDown);
 	}
@@ -163,7 +163,7 @@ class MyModal extends Modal {
 		console.debug("Key pressed!");
 	}
 	
-	onload() {
+	onOpen() {
 		window.addEventListener("keydown", this.onKeyDown);
 	}
 
