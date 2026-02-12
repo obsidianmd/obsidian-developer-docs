@@ -54,7 +54,7 @@ class MyPlugin extends Plugin {
 }
 ```
 
-This works, but as your plugin grows, manually tracking every resource you instantiate becomes unwieldy and error-prone. Obsidian's `Component` system provides a better solution.
+As your plugin grows in complexity, manually tracking every resource you instantiate can become unwieldy and error-prone. Obsidian's `Component` system provides a better solution.
 
 
 ## Automatic Resource Management with `Component`
