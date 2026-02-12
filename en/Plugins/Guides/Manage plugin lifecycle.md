@@ -249,7 +249,7 @@ Since the `tempComponent` is never unloaded, the MarkdownRenderer will never cle
 
 ### Solution: Add or use an existing component
 
-Instead, you should pass a component that has a clearly defined lifecycle, one that will be loaded and unloaded properly. Since _every_ view is a `Component`, we can simply pass the `View` instance itself via `this`:
+Instead, you should pass a component that has a clearly defined lifecycle, one that will be loaded and unloaded at an appropriate time. Both `Plugin` and `View` are components; however, `View` is a more appropriate choice since its lifespan matches with the `MarkdownRenderer`. We can simply pass the `View` instance itself via `this`:
 
 ```ts
 import { ItemView, MarkdownRenderer } from 'obsidian';
