@@ -262,7 +262,7 @@ class MyView extends ItemView {
 }
 ```
 
-Now, when the view closes, the renderer cleans up automatically.
+Now, when the view is loaded, the Markdown renderer loads alongside it; likewise, when the view closes, it cleans the renderer automatically.
 
 
 ## Creating Your Own Components
