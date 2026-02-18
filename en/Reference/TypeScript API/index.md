@@ -197,6 +197,8 @@ cssclasses: hide-title
 |  [`BlockSubpathResult`](BlockSubpathResult) |  0.13.26 |
 |  [`CachedMetadata`](CachedMetadata) |  |
 |  [`CacheItem`](CacheItem) |  |
+|  [`CliData`](CliData) |  |
+|  [`CliFlag`](CliFlag) |  |
 |  [`CloseableComponent`](CloseableComponent) | A closeable component that can get dismissed via the Android 'back' button. |
 |  [`Command`](Command) |  |
 |  [`DataAdapter`](DataAdapter) | Work directly with files and folders inside a vault. If possible prefer using the [Vault](Vault) API over this. |
@@ -293,6 +295,8 @@ cssclasses: hide-title
 |  [`BasesPropertyType`](BasesPropertyType) | <p>The three valid "sources" of a property in a Base.</p><p>- <code>note</code>: Properties from the frontmatter of markdown files in the vault. - <code>formula</code>: Properties calculated by evaluating a formula from the base config file. - <code>file</code>: Properties inherent to a file, such as the name, extension, size, etc.</p><p> 1.10.0</p> |
 |  [`BasesSortConfig`](BasesSortConfig) |  1.10.0 |
 |  [`BasesViewFactory`](BasesViewFactory) | Implement this factory function in a [BasesViewRegistration](BasesViewRegistration) to create a new instance of a custom Bases view. |
+|  [`CliFlags`](CliFlags) |  |
+|  [`CliHandler`](CliHandler) |  |
 |  [`Constructor`](Constructor) |  |
 |  [`EditorCommandName`](EditorCommandName) |  |
 |  [`HexString`](HexString) | Hex strings are 6-digit hash-prefixed rgb strings in lowercase form. Example: \#ffffff |
