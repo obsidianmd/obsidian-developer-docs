@@ -9,21 +9,25 @@ cssclasses: hide-title
 
 ## FileManager.promptForDeletion() method
 
- 0.15.0
+Prompt the user to confirm they want to delete the specified file or folder
 
 **Signature:**
 
 ```typescript
-promptForDeletion(file: TAbstractFile): Promise<void>;
+promptForDeletion(file: TAbstractFile): Promise<boolean>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  <code>file</code> | [`TAbstractFile`](TAbstractFile) |  |
+|  <code>file</code> | [`TAbstractFile`](TAbstractFile) | the file or folder to delete |
 
 **Returns:**
 
-`Promise<void>`
+`Promise<boolean>`
+
+A promise that resolves to true if the prompt was confirmed or false if it was canceled
+
+ 0.15.0
 

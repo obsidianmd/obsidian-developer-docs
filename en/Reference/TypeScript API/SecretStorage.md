@@ -21,7 +21,6 @@ export class SecretStorage
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [`getLastAccess(id)`](SecretStorage/getLastAccess) |  | Gets the last access timestamp for a secret key |
 |  [`getSecret(id)`](SecretStorage/getSecret) |  | Gets a secret from storage |
 |  [`listSecrets()`](SecretStorage/listSecrets) |  | Lists all secrets in storage |
 |  [`setSecret(id, secret)`](SecretStorage/setSecret) |  | Sets a secret in the storage. |
