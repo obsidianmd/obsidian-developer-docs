@@ -23,7 +23,7 @@ export function debounce<T extends unknown[], V>(cb: (...args: [...T]) => V, tim
 |  --- | --- | --- |
 |  <code>cb</code> | <code>(...args: [...T]) =&gt; V</code> | The function to call. |
 |  <code>timeout</code> | <code>number</code> | _(Optional)_ The timeout to wait, in milliseconds |
-|  <code>resetTimer</code> | <code>boolean</code> | _(Optional)_ Whether to reset the timeout when the debouncer is called again. |
+|  <code>resetTimer</code> | <code>boolean</code> | _(Optional)_ Whether to reset the timeout when the debounce function is called again. |
 
 **Returns:**
 

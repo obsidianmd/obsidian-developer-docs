@@ -22,6 +22,7 @@ export interface DataAdapter
 |  Method | Description |
 |  --- | --- |
 |  [`append(normalizedPath, data, options)`](DataAdapter/append) | Add text to the end of a plaintext file. |
+|  [`appendBinary(normalizedPath, data, options)`](DataAdapter/appendBinary) | Add data to the end of a binary file. |
 |  [`copy(normalizedPath, normalizedNewPath)`](DataAdapter/copy) | Create a copy of a file. This will fail if there is already a file at <code>normalizedNewPath</code>. |
 |  [`exists(normalizedPath, sensitive)`](DataAdapter/exists) | Check if something exists at the given path. For a faster way to synchronously check if a note or attachment is in the vault, use [Vault.getAbstractFileByPath()](Vault/getAbstractFileByPath)<!-- -->. |
 |  [`getName()`](DataAdapter/getName) |  |

@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CliFlags type
 
+ 1.12.2
 
 **Signature:**
 

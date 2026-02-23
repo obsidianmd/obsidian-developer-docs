@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CliData interface
 
+ 1.12.2
 
 **Signature:**
 
