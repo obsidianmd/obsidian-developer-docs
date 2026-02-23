@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Value placeholder (e.g., '<filename>', '<path>'). Omit for boolean flags.
 
+ 1.12.2
+
 **Signature:**
 
 ```typescript

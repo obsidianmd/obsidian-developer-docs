@@ -23,6 +23,7 @@ export class FileSystemAdapter implements DataAdapter
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`append(normalizedPath, data, options)`](FileSystemAdapter/append) |  |  |
+|  [`appendBinary(normalizedPath, data, options)`](FileSystemAdapter/appendBinary) |  |  1.12.3 |
 |  [`copy(normalizedPath, normalizedNewPath)`](FileSystemAdapter/copy) |  |  |
 |  [`exists(normalizedPath, sensitive)`](FileSystemAdapter/exists) |  |  |
 |  [`getBasePath()`](FileSystemAdapter/getBasePath) |  |  |

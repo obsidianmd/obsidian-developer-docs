@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CliFlag interface
 
+ 1.12.2
 
 **Signature:**
 
@@ -20,7 +21,7 @@ export interface CliFlag
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [`description`](CliFlag/description) |  | <code>string</code> | Description shown in help and autocomplete |
-|  [`required?`](CliFlag/required) |  | <code>boolean</code> | _(Optional)_ Whether this flag is required (default: false) |
-|  [`value?`](CliFlag/value) |  | <code>string</code> | _(Optional)_ Value placeholder (e.g., '<filename>', '<path>'). Omit for boolean flags. |
+|  [`description`](CliFlag/description) |  | <code>string</code> | <p>Description shown in help and autocomplete</p><p> 1.12.2</p> |
+|  [`required?`](CliFlag/required) |  | <code>boolean</code> | <p>_(Optional)_ Whether this flag is required (default: false)</p><p> 1.12.2</p> |
+|  [`value?`](CliFlag/value) |  | <code>string</code> | <p>_(Optional)_ Value placeholder (e.g., '<filename>', '<path>'). Omit for boolean flags.</p><p> 1.12.2</p> |
 

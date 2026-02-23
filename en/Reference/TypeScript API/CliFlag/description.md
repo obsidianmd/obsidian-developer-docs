@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Description shown in help and autocomplete
 
+ 1.12.2
+
 **Signature:**
 
 ```typescript

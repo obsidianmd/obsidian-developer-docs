@@ -30,6 +30,7 @@ export class Vault extends Events
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`append(file, data, options)`](Vault/append) |  | Add text to the end of a plaintext file inside the vault. |
+|  [`appendBinary(file, data, options)`](Vault/appendBinary) |  | Add data to the end of a binary file inside the vault. |
 |  [`cachedRead(file)`](Vault/cachedRead) |  | <p>Read the content of a plaintext file stored inside the vault Use this if you only want to display the content to the user. If you want to modify the file content afterward use [Vault.read()](Vault/read)</p><p> 0.9.7</p> |
 |  [`copy(file, newPath)`](Vault/copy) |  | Create a copy of a file or folder. |
 |  [`create(path, data, options)`](Vault/create) |  | Create a new plaintext file inside the vault. |

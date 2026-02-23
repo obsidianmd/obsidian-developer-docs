@@ -11,6 +11,8 @@ cssclasses: hide-title
 
 Whether this flag is required (default: false)
 
+ 1.12.2
+
 **Signature:**
 
 ```typescript

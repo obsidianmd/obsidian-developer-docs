@@ -25,6 +25,7 @@ export class CapacitorAdapter implements DataAdapter
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [`append(normalizedPath, data, options)`](CapacitorAdapter/append) |  |  1.7.2 |
+|  [`appendBinary(normalizedPath, data, options)`](CapacitorAdapter/appendBinary) |  |  1.12.3 |
 |  [`copy(normalizedPath, normalizedNewPath)`](CapacitorAdapter/copy) |  |  1.7.2 |
 |  [`exists(normalizedPath, sensitive)`](CapacitorAdapter/exists) |  |  1.7.2 |
 |  [`getFullPath(normalizedPath)`](CapacitorAdapter/getFullPath) |  |  1.7.2 |

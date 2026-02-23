@@ -9,6 +9,7 @@ cssclasses: hide-title
 
 ## CliHandler type
 
+ 1.12.2
 
 **Signature:**
 
