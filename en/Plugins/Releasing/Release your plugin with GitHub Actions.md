@@ -8,36 +8,45 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
    on:
      push:
        tags:
-         - "*"
+         - '[0-9]+.[0-9]+.[0-9]+'
+
+   permissions:
+     contents: write
 
    jobs:
-     build:
+     release:
        runs-on: ubuntu-latest
-       permissions:
-         contents: write
+
        steps:
-         - uses: actions/checkout@v3
+         - name: Checkout
+           uses: actions/checkout@v4
 
-         - name: Use Node.js
-           uses: actions/setup-node@v3
+         - name: Setup Node.js
+           uses: actions/setup-node@v4
            with:
-             node-version: "18.x"
+             node-version: 20
+             cache: npm
 
-         - name: Build plugin
+         - name: Install dependencies
+           run: npm ci
+
+         - name: Build
+           run: npm run build
+
+         - name: Create release package
            run: |
-             npm install
-             npm run build
+             mkdir release
+             cp manifest.json release/
+             cp main.js release/
+             if [ -f styles.css ]; then cp styles.css release/; i
 
-         - name: Create release
-           env:
-             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-           run: |
-             tag="${GITHUB_REF#refs/tags/}"
-
-             gh release create "$tag" \
-               --title="$tag" \
-               --draft \
-               main.js manifest.json styles.css
+         - name: Publish GitHub Release
+           uses: softprops/action-gh-release@v2
+           with:
+             files: |
+               release/manifest.json
+               release/main.js
+               release/styles.css
    ```
 
 2. In your terminal, commit the workflow.
