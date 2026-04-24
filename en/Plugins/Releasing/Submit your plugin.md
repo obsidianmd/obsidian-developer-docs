@@ -1,4 +1,4 @@
-If you want to share your plugin with the Obsidian community, the best way is to submit it to the [official list of plugins](https://github.com/obsidianmd/obsidian-releases/blob/master/community-plugins.json). Once we've reviewed and published your plugin, users can install it directly from within Obsidian. It'll also be featured in the [plugin directory](https://obsidian.md/plugins) on the Obsidian website.
+If you want to share your plugin with the Obsidian community, the best way is to submit it to the Obsidian Community directory at [community.obsidian.md](https://community.obsidian.md). Once we've reviewed and published your plugin, users can install it directly from within Obsidian. It'll also be featured in the [plugin directory](https://community.obsidian.md/plugins) on the Obsidian website.
 
 You only need to submit the initial version of your plugin. After your plugin has been published, users can download new releases from GitHub directly from within Obsidian.
 
@@ -7,6 +7,7 @@ You only need to submit the initial version of your plugin. After your plugin ha
 To complete this guide, you'll need:
 
 - A [GitHub](https://github.com/signup) account.
+- An [Obsidian](https://obsidian.md) account.
 
 ## Before you begin
 
@@ -38,61 +39,26 @@ In this step, you'll prepare a release for your plugin that's ready to be submit
    - `manifest.json`
    - `styles.css` (optional)
 
-## Step 3: Submit your plugin for review
+## Step 3: Submit your plugin to the community directory
 
-In this step, you'll submit your plugin to the Obsidian team for review.
+In this step, you'll submit your plugin through the Obsidian Community directory.
 
-1. In [community-plugins.json](https://github.com/obsidianmd/obsidian-releases/edit/master/community-plugins.json), add a new entry at the end of the JSON array.
+1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
+2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
+3. In the sidebar, select **Plugins**, and then select **New plugin**.
+4. Enter the URL of your GitHub repository, for example `https://github.com/your-username/your-repo-name`.
+5. Review and agree to the [[Developer policies]], and confirm that you'll continue to support your plugin.
+6. Select **Submit**.
 
-   ```json
-   {
-     "id": "doggo-dictation",
-     "name": "Doggo Dictation",
-     "author": "John Dolittle",
-     "description": "Transcribes dog speech into notes.",
-     "repo": "drdolittle/doggo-dictation"
-   }
-   ```
+The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting. The `id` must be unique across all published plugins and can't contain `obsidian`.
 
-   - `id`, `name`, `author`, and `description` determines how your plugin appears to the user, and should match the corresponding properties in your [[Manifest]].
-   - `id` is unique to your plugin. Search `community-plugins.json` to confirm that there's no existing plugin with the same id. The `id` can't contain `obsidian`.
-   - `repo` is the path to your GitHub repository. For example, if your GitHub repo is located at https://github.com/your-username/your-repo-name, the path is `your-username/your-repo-name`.
+When a user installs your plugin, Obsidian downloads `main.js`, `manifest.json`, and `styles.css` from the GitHub release whose tag matches the `version` in your manifest, so the release from Step 2 is required in addition to the committed manifest.
 
-   Remember to add a comma after the closing brace, `}`, of the previous entry.
+## Step 4: Address review feedback
 
-2. Select **Commit changes...** in the upper-right corner.
-3. Select **Propose changes**.
-4. Select **Create pull request**.
-5. Select **Preview**, and then select **Community Plugin**.
-6. Click **Create pull request**.
-7. In the name of the pull request, enter "Add plugin: [...]", where [...] is the name of your plugin.
-8. Fill in the details in the description for the pull request. For the checkboxes, insert an `x` between the brackets, `[x]`, to mark them as done.
-9. Click **Create pull request** (for the last time 🤞).
+After you submit, your plugin is reviewed automatically and the directory shows guidance for anything that needs to be corrected. To address feedback, update your repository and publish a new GitHub release with an incremented version.
 
-You've now submitted your plugin to the Obsidian plugin directory. Sit back and wait for an initial validation by our friendly bot. It may take a few minutes before the results are ready.
-
-- If you see a **Ready for review** label on your PR, your submission has passed the automatic validation.
-- If you see a **Validation failed** label on your PR, you need to address all listed issues until the bot assigns a **Ready for review** label.
-
-Once your submission is ready for review, you can sit back and wait for the Obsidian team to review it.
-
-> [!question] How long does it take to review my plugin?
-> The time it takes to review your submission depends on the current workload of the Obsidian team. The team is still small, so please be patient while you wait for your plugin to be reviewed. We're currently unable to give any estimates on when we'll be able to review your submission.
-
-> [!warning] Ignore merge conflicts
-> If you see in your PR GitHub's warning `This branch has conflicts that must be resolved`, just ignore it. Don't merge or rebase your PR.
-> Once your plugin passes all reviews, the Obsidian team will resolve those conflicts before publishing your plugin.
-
-## Step 4: Address review comments
-
-Once a reviewer has reviewed your plugin, they'll add a comment to your pull request with the result of the review. The reviewer may require that you update your plugin, or they can offer suggestions on how you can improve it.
-
-Address any required changes and update the GitHub release with the new changes. Leave a comment on the PR to let us know you've addressed the feedback. Don't open a new PR.
-
-We'll publish the plugin as soon we've verified that all required changes have been addressed.
-
-> [!note]
-> While only Obsidian team members can publish your plugin, other community members may also offer to review your submission in the meantime.
+You can edit the description and select **Publish** at any time, but your plugin won't be installable from within Obsidian until the automated review passes.
 
 ## Next steps
 
