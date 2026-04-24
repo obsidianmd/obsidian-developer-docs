@@ -46,7 +46,7 @@ Manually releasing your theme can be time-consuming and error-prone. In this gui
    ```
 
    - `-a` creates an [annotated tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_creating_tags).
-   - `-m` specifies the name of your release. For Obsidian plugins, this must be the same as the version.
+   - `-m` specifies the name of your release. For Obsidian themes, this must be the same as the version.
 
 4. Browse to your repository on GitHub and select the **Actions** tab. Your workflow might still be running, or it might have finished already.
 

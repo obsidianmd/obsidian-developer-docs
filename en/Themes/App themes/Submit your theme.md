@@ -24,7 +24,19 @@ Before you submit your theme, make sure you have the following files in the root
 
 To review your theme, we need to access to the source code on GitHub. If you're unfamiliar with GitHub, refer to the GitHub docs for how to [Create a new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository).
 
-## Step 2: Submit your theme for review
+## Step 2: Create a release
+
+In this step, you'll prepare a release for your theme that's ready to be submitted.
+
+1. In `manifest.json`, update `version` to a new version that follows the [Semantic Versioning](https://semver.org/) specification, for example `1.0.0` for your initial release. Versions supported only in the format `x.y.z`.
+2. [Create a GitHub release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release). The "Tag version" of the release must match the version in your `manifest.json`.
+3. Enter a name for the release, and describe it in the description field. Obsidian doesn't use the release name for anything, so feel free to name it however you like.
+4. Upload the following theme assets to the release as binary attachments:
+
+   - `manifest.json`
+   - `theme.css`
+
+## Step 3: Submit your theme for review
 
 In this step, you'll submit your theme to the Obsidian team for review.
 
