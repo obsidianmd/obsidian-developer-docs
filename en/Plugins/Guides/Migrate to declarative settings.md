@@ -105,13 +105,11 @@ This path bumps `minAppVersion` to 1.13.0, deletes `display()`, and writes only 
 ### Steps
 
 1. Bump `minAppVersion` to `"1.13.0"` in `manifest.json`.
-2. Change the class signature to `extends PluginSettingTab<MySettings>`. This type-checks every `control.key` against your settings interface.
-3. Pass `plugin.settings` as a third argument to `super()`. This binds `control` definitions to your settings object so the framework can read, write, and save automatically.
-4. Add a `getSettingDefinitions()` method that returns an array of definitions.
-5. For each one-key binding, write `{ name, desc, control: { type, key } }`. See [[Settings#Control types]] for every available type.
-6. Move any value-shape validation (regex, range, format) from a custom `onChange` into a `validate` callback on the control. See [[Settings#Validating input]].
-7. Keep `render` for anything that isn't a simple one-key bind — see [[#When to keep render]].
-8. Delete the `display()` override and any imports that are no longer used (typically `Setting`).
+2. Add a `getSettingDefinitions()` method that returns an array of definitions.
+3. For each one-key binding, write `{ name, desc, control: { type, key } }`. Each `key` corresponds to a property on `this.plugin.settings`. See [[Settings#Control types]] for every available type.
+4. Move any value-shape validation (regex, range, format) from a custom `onChange` into a `validate` callback on the control. See [[Settings#Validating input]].
+5. Keep `render` for anything that isn't a simple one-key bind — see [[#When to keep render]].
+6. Delete the `display()` override and any imports that are no longer used (typically `Setting`).
 
 ### After
 
@@ -124,11 +122,11 @@ interface MySettings {
   cacheKey: string;
 }
 
-class MyTab extends PluginSettingTab<MySettings> {
+class MyTab extends PluginSettingTab {
   plugin: MyPlugin;
 
   constructor(app: App, plugin: MyPlugin) {
-    super(app, plugin, plugin.settings);
+    super(app, plugin);
     this.plugin = plugin;
   }
 
@@ -166,10 +164,8 @@ class MyTab extends PluginSettingTab<MySettings> {
 
 ### What changed
 
-- The class signature gained `<MySettings>` — control keys are now type-checked.
-- The constructor passes `plugin.settings` to `super()` — controls auto-bind to your settings object.
 - `display()` is gone. The framework renders from the array.
-- All three settings collapse to `control` definitions. The framework reads, writes, and saves.
+- All three settings collapse to `control` definitions. The framework reads `this.plugin.settings[key]`, writes changes back, and calls `saveData()` for you.
 - The `cacheKey` rejection-on-invalid logic moved from a custom `onChange` into a `validate` callback. The framework now shows an inline error message when the input doesn't match.
 - `Setting` is no longer imported.
 
@@ -181,7 +177,7 @@ Keep your existing `display()` exactly as it is, and add `getSettingDefinitions(
 - On Obsidian < 1.13.0, `display()` runs as it always has.
 
 ```ts
-import { App, PluginSettingTab, Setting, type SettingControlBinding } from 'obsidian';
+import { App, PluginSettingTab, Setting } from 'obsidian';
 
 interface MySettings {
   enabled: boolean;
@@ -193,12 +189,12 @@ class MyTab extends PluginSettingTab {
   plugin: MyPlugin;
 
   constructor(app: App, plugin: MyPlugin) {
-    // Two-argument super() — works on every PluginSettingTab version.
     super(app, plugin);
     this.plugin = plugin;
   }
 
   // 1.13.0+: framework calls this and skips display().
+  // Controls auto-bind to this.plugin.settings[key].
   getSettingDefinitions() {
     return [
       {
@@ -229,20 +225,6 @@ class MyTab extends PluginSettingTab {
     ];
   }
 
-  // Bind control keys to plugin.settings on 1.13.0+. Without this override,
-  // controls would try to bind to vault config (since we didn't pass settings
-  // to super()).
-  getControlBinding(key: string): SettingControlBinding {
-    let settings = this.plugin.settings as Record<string, any>;
-    return {
-      value: settings[key],
-      onChange: (value) => {
-        settings[key] = value;
-        void this.plugin.saveData(this.plugin.settings);
-      },
-    };
-  }
-
   // < 1.13.0: framework calls this. Keep your original imperative implementation.
   display(): void {
     let { containerEl } = this;
@@ -263,11 +245,7 @@ class MyTab extends PluginSettingTab {
 }
 ```
 
-Notes:
-
-- The constructor passes only `(app, plugin)` to `super()` because the pre-1.13 `PluginSettingTab` constructor takes two arguments.
-- Since we didn't pass `settings` to `super()`, the default `getControlBinding` falls back to vault config. The override above re-routes it to `plugin.settings`.
-- Once your user base on < 1.13.0 is small enough, delete the `display()` method and the `getControlBinding` override, bump `minAppVersion` to `1.13.0`, and pass `plugin.settings` to `super()`.
+Once your user base on < 1.13.0 is small enough, delete the `display()` method and bump `minAppVersion` to `1.13.0`.
 
 > [!warning] The two implementations must stay in sync
 > Every time you add or change a setting, update both `display()` and `getSettingDefinitions()`. Drift between the two means users on different Obsidian versions see different settings. If the maintenance overhead isn't worth it, prefer Path A and bump `minAppVersion`.

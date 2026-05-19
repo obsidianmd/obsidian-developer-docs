@@ -122,11 +122,11 @@ Here, `ExampleSettingTab` is a class that extends [[PluginSettingTab|PluginSetti
 import ExamplePlugin from './main';
 import { App, PluginSettingTab } from 'obsidian';
 
-export class ExampleSettingTab extends PluginSettingTab<ExamplePluginSettings> {
+export class ExampleSettingTab extends PluginSettingTab {
   plugin: ExamplePlugin;
 
   constructor(app: App, plugin: ExamplePlugin) {
-    super(app, plugin, plugin.settings);
+    super(app, plugin);
     this.plugin = plugin;
   }
 
@@ -145,7 +145,7 @@ export class ExampleSettingTab extends PluginSettingTab<ExamplePluginSettings> {
 }
 ```
 
-The `<ExamplePluginSettings>` generic type-checks every `control.key` against your settings interface — invalid keys are caught at compile time. Passing `plugin.settings` to `super()` binds `control` definitions to your settings object, so the framework reads the current value, writes changes back, and calls `saveData()` automatically.
+Each `control` definition's `key` names a property on `this.plugin.settings`. The framework reads the current value, writes changes back, and calls `saveData()` automatically — no `onChange` plumbing required. If your plugin stores settings somewhere other than `this.plugin.settings` (a Svelte store, an immutable update pattern, etc.), see [[#Custom settings storage]].
 
 To move an existing tab that uses `display()`, see [[Migrate to declarative settings]].
 
@@ -304,6 +304,32 @@ Async validators work too — return a `Promise<string | void>`.
 <!-- TBD: screenshot of an inline validate error -->
 
 `validate` is most useful on text-bearing controls (`text`, `textarea`, `number`, `file`, `folder`).
+
+## Custom settings storage
+
+By default, `control` definitions read and write `this.plugin.settings` directly — `key: 'sampleValue'` corresponds to `this.plugin.settings.sampleValue`. The framework also calls `this.plugin.saveData()` for you on every change.
+
+If your plugin keeps settings somewhere other than the conventional `this.plugin.settings` field (a Svelte store, a reactive proxy, an immutable update mechanism), override `getControlValue` and `setControlValue` on your settings tab:
+
+```ts
+class MyTab extends PluginSettingTab {
+  plugin: MyPlugin;
+
+  getControlValue(key: string): unknown {
+    return this.plugin.getStateValue(key);
+  }
+
+  setControlValue(key: string, value: unknown): void | Promise<void> {
+    return this.plugin.updateState(key, value);
+  }
+
+  getSettingDefinitions() { /* … */ }
+}
+```
+
+The framework calls `getControlValue(key)` on every render and `setControlValue(key, value)` on every user change. Both run fresh each time, so reassigning the underlying state object stays in sync with the open settings tab.
+
+For the common case where you just store settings in `this.plugin.settings`, you don't need to override anything — the defaults handle it.
 
 ## Groups
 
