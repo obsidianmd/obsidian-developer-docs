@@ -270,6 +270,7 @@ For conditional visibility (showing or hiding a setting based on another setting
 - `getSettingDefinitions()` runs on every `update()` AND once when the tab is registered (for search indexing). Keep it cheap: no I/O, no network calls.
 - `desc` accepts a `string` or `DocumentFragment`. For rich descriptions with formatting or links, pass a `DocumentFragment` built with `createFragment(...)`.
 - A `render` callback does **not** auto-save. Always `await this.plugin.saveData(this.plugin.settings)` after mutating settings.
+- When an `action` callback depends on the row's position, use the `index` argument it receives rather than an index captured in the outer `map`. A captured index goes stale once the user reorders or deletes neighboring rows. Closing over the row's stable data (an `id`, say) is fine; only position is order-dependent. (Deleting and reordering rows themselves is handled by `onDelete` and `onReorder`, not `action`.)
 - To re-render the tab after data changes (interdependent settings, list mutations), call `this.update()`. On 1.13.0+, calling `display()` won't refresh anything declarative; `display()` is bypassed when `getSettingDefinitions()` returns a non-empty array.
 - Page names must be unique among their siblings at the same depth, or path-based navigation will misbehave.
 - `validate` doesn't replace the stored value. If your stored settings might already be invalid (loaded from an older plugin version), validate again when reading them.

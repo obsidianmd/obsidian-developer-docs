@@ -155,7 +155,7 @@ Each entry returned by `getSettingDefinitions()` is one of the following:
 
 - A setting with a `control` — declarative binding to one settings key. Preferred for simple settings. See [[#Control types]].
 - A setting with a `render` callback — full control over the `Setting` row. Use for side effects, derived values, or custom UI. See [[#Render callback]].
-- A setting with an `action` callback — a clickable row that runs your function. Common inside lists.
+- A setting with an `action` callback — a clickable row that runs your function. Common inside lists. The callback receives the row's current index (`action: (index: number) => void`); see [[#Lists]].
 - A setting with none of the above — a name/desc-only row, useful for headings or static informational rows.
 - A `SettingDefinitionGroup` (`type: 'group'`) — a heading and a nested list of definitions. See [[#Groups]].
 - A `SettingDefinitionList` (`type: 'list'`) — a group with add, delete, and reorder affordances for user-managed entries. See [[#Lists]].
@@ -566,6 +566,22 @@ items: availableCommands.map((cmd) => ({
   },
 })),
 ```
+
+If your action depends on the row's position in the list, use the `index` it receives, read at click time (`action: (index: number) => void`). In a reorderable list, the user can move rows after the definitions are authored, so a position captured from the outer `map` would point at the wrong row:
+
+```ts
+{
+  type: 'list',
+  onReorder: async (oldIndex, newIndex) => { /* ... */ },
+  items: this.plugin.settings.items.map((item) => ({
+    name: item.label,
+    searchable: false,
+    action: (index) => this.plugin.doSomething(index),
+  })),
+}
+```
+
+The `index` matches the row's live position, so the action stays correct even after the user reorders the list.
 
 ### Lists with a form modal
 
