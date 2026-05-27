@@ -3,7 +3,7 @@ permalink: plugins/guides/migrate-declarative-settings
 aliases:
   - Plugins/Guides/Migrate+to+declarative+settings
 ---
-As of Obsidian 1.13.0, plugin settings tabs can be defined declaratively by overriding `getSettingDefinitions()` on [[PluginSettingTab|PluginSettingTab]]. The framework handles rendering, search indexing, persistence, and validation. You describe the settings, not the DOM.
+As of Obsidian 1.13.0, plugin settings tabs can be defined declaratively by overriding `getSettingDefinitions()` on [[PluginSettingTab|PluginSettingTab]]. Obsidian handles rendering, search indexing, persistence, and validation. You describe the settings, not the DOM.
 
 This guide walks through converting an existing imperative `display()` tab to the new API.
 
@@ -26,19 +26,9 @@ This guide assumes you have:
 - Familiarity with [[Settings]] (defining a settings interface, `loadData()`, `saveData()`).
 - A decision on your plugin's `minAppVersion`. See [[#Choosing a path]] below.
 
-## Choosing a path
+## The starting point
 
-| Your plugin's `minAppVersion` | What to do |
-| --- | --- |
-| `>= 1.13.0` | [[#Path A: clean 1.13-only migration\|Path A]]: implement `getSettingDefinitions()` only. Delete `display()`. |
-| `< 1.13.0` and you want to adopt the new API | [[#Path B: dual support\|Path B]]: keep `display()` and add `getSettingDefinitions()` alongside it. |
-| `< 1.13.0` and you don't need the new features | Leave the plugin as-is. The new API is opt-in. |
-
-Prefer Path A whenever you can; it's simpler and avoids maintaining two implementations. Choose Path B only if you have an existing user base on Obsidian < 1.13.0 that you can't drop.
-
-## Before
-
-The following tab has three settings: a toggle, a dropdown with a default, and a text input that rejects values containing spaces.
+The following tab has three settings: a toggle, a dropdown with a default, and a text input that rejects values containing spaces. This is the imperative `display()` implementation we'll migrate.
 
 ```ts
 import { App, Plugin, PluginSettingTab, Setting } from 'obsidian';
@@ -49,7 +39,7 @@ interface MySettings {
   cacheKey: string;
 }
 
-class MyTab extends PluginSettingTab {
+class MySettingTab extends PluginSettingTab {
   plugin: MyPlugin;
 
   constructor(app: App, plugin: MyPlugin) {
@@ -97,11 +87,25 @@ class MyTab extends PluginSettingTab {
 }
 ```
 
-## Path A: clean 1.13-only migration
+## Migrate the tab
+
+There are two ways to migrate, depending on which Obsidian versions you support.
+
+### Choosing a path
+
+| Your plugin's `minAppVersion` | What to do |
+| --- | --- |
+| `>= 1.13.0` | [[#Path A: clean 1.13-only migration\|Path A]]: implement `getSettingDefinitions()` only. Delete `display()`. |
+| `< 1.13.0` and you want to adopt the new API | [[#Path B: dual support\|Path B]]: keep `display()` and add `getSettingDefinitions()` alongside it. |
+| `< 1.13.0` and you don't need the new features | Leave the plugin as-is. The new API is opt-in. |
+
+Prefer Path A whenever you can; it's simpler and avoids maintaining two implementations. Choose Path B only if you have an existing user base on Obsidian < 1.13.0 that you can't drop.
+
+### Path A: clean 1.13-only migration
 
 This path bumps `minAppVersion` to 1.13.0, deletes `display()`, and writes only `getSettingDefinitions()`.
 
-### Steps
+#### Steps
 
 1. Bump `minAppVersion` to `"1.13.0"` in `manifest.json`.
 2. Add a `getSettingDefinitions()` method that returns an array of definitions.
@@ -109,7 +113,7 @@ This path bumps `minAppVersion` to 1.13.0, deletes `display()`, and writes only 
 4. Move any value-shape validation (regex, range, format) from a custom `onChange` into a `validate` callback on the control. See [[Settings#Validating input]].
 5. Delete the `display()` override and any imports that are no longer used (typically `Setting`).
 
-### After
+#### After
 
 ```ts
 import { App, PluginSettingTab } from 'obsidian';
@@ -120,7 +124,7 @@ interface MySettings {
   cacheKey: string;
 }
 
-class MyTab extends PluginSettingTab {
+class MySettingTab extends PluginSettingTab {
   plugin: MyPlugin;
 
   constructor(app: App, plugin: MyPlugin) {
@@ -160,18 +164,18 @@ class MyTab extends PluginSettingTab {
 }
 ```
 
-### What changed
+#### What changed
 
-- `display()` is gone. The framework renders from the array.
-- All three settings collapse to `control` definitions. The framework reads `this.plugin.settings[key]`, writes changes back, and calls `saveData()` for you.
-- The `cacheKey` rejection-on-invalid logic moved from a custom `onChange` into a `validate` callback. The framework now shows an inline error message when the input doesn't match.
+- `display()` is gone. Obsidian renders from the array.
+- All three settings collapse to `control` definitions. Obsidian reads `this.plugin.settings[key]`, writes changes back, and calls `saveData()` for you.
+- The validation logic has been moved out of `onChange` and into a `validate` callback. An inline error message now appears when the input doesn't match.
 - `Setting` is no longer imported.
 
-## Path B: dual support
+### Path B: dual support
 
 Keep your existing `display()` exactly as it is, and add `getSettingDefinitions()` alongside it.
 
-- On Obsidian 1.13.0+, the framework calls `getSettingDefinitions()` and skips `display()`.
+- On Obsidian 1.13.0+, `getSettingDefinitions()` is called and `display()` is skipped.
 - On Obsidian < 1.13.0, `display()` runs as it always has.
 
 ```ts
@@ -183,7 +187,7 @@ interface MySettings {
   cacheKey: string;
 }
 
-class MyTab extends PluginSettingTab {
+class MySettingTab extends PluginSettingTab {
   plugin: MyPlugin;
 
   constructor(app: App, plugin: MyPlugin) {
@@ -191,7 +195,7 @@ class MyTab extends PluginSettingTab {
     this.plugin = plugin;
   }
 
-  // 1.13.0+: framework calls this and skips display().
+  // 1.13.0+: Obsidian calls this and skips display().
   // Controls auto-bind to this.plugin.settings[key].
   getSettingDefinitions() {
     return [
@@ -223,7 +227,7 @@ class MyTab extends PluginSettingTab {
     ];
   }
 
-  // < 1.13.0: framework calls this. Keep your original imperative implementation.
+  // < 1.13.0: Obsidian calls this. Keep your original imperative implementation.
   display(): void {
     let { containerEl } = this;
     containerEl.empty();
@@ -248,7 +252,7 @@ Once your user base on < 1.13.0 is small enough, delete the `display()` method a
 > [!warning] The two implementations must stay in sync
 > Every time you add or change a setting, update both `display()` and `getSettingDefinitions()`. Drift between the two means users on different Obsidian versions see different settings. If the maintenance overhead isn't worth it, prefer Path A and bump `minAppVersion`.
 
-## When to keep `render`
+## When to use `render` instead
 
 In Path A above, the `cacheKey` validation moved from a hand-rolled `onChange` into `validate`. That works whenever the rejection is purely about the value's shape (regex, range, format). But there are cases where `control` + `validate` isn't enough, and a `render` callback is the right tool:
 
@@ -266,7 +270,7 @@ For conditional visibility (showing or hiding a setting based on another setting
 - `getSettingDefinitions()` runs on every `update()` AND once when the tab is registered (for search indexing). Keep it cheap: no I/O, no network calls.
 - `desc` accepts a `string` or `DocumentFragment`. For rich descriptions with formatting or links, pass a `DocumentFragment` built with `createFragment(...)`.
 - A `render` callback does **not** auto-save. Always `await this.plugin.saveData(this.plugin.settings)` after mutating settings.
-- To re-render the tab after data changes (interdependent settings, list mutations), call `this.update()`. On 1.13.0+, calling `display()` won't refresh anything declarative; the framework bypasses `display()` when `getSettingDefinitions()` returns a non-empty array.
+- To re-render the tab after data changes (interdependent settings, list mutations), call `this.update()`. On 1.13.0+, calling `display()` won't refresh anything declarative; `display()` is bypassed when `getSettingDefinitions()` returns a non-empty array.
 - Page names must be unique among their siblings at the same depth, or path-based navigation will misbehave.
 - `validate` doesn't replace the stored value. If your stored settings might already be invalid (loaded from an older plugin version), validate again when reading them.
 
@@ -286,7 +290,7 @@ After migrating:
 
 ### Why didn't my `render` callback save?
 
-A `render` callback gives you full control of the `Setting` row, but the framework doesn't know what you're binding, so it doesn't auto-save. Always `await this.plugin.saveData(this.plugin.settings)` at the end of your `onChange`. `control` definitions are different; the framework saves those for you.
+A `render` callback gives you full control of the `Setting` row, but Obsidian doesn't know what you're binding, so it doesn't auto-save. Always `await this.plugin.saveData(this.plugin.settings)` at the end of your `onChange`. `control` definitions are different; Obsidian saves those for you.
 
 ### My stored data is invalid. How do I clean it up?
 

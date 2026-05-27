@@ -145,7 +145,7 @@ export class ExampleSettingTab extends PluginSettingTab {
 }
 ```
 
-Each `control` definition's `key` names a property on `this.plugin.settings`. The framework reads the current value, writes changes back, and calls `saveData()` automatically. No `onChange` plumbing required. If your plugin stores settings somewhere other than `this.plugin.settings` (a Svelte store, an immutable update pattern, etc.), see [[#Custom settings storage]].
+Each `control` definition's `key` names a property on `this.plugin.settings`. Obsidian reads the current value, writes changes back, and calls `saveData()` automatically. No `onChange` plumbing required. If your plugin stores settings somewhere other than `this.plugin.settings` (a Svelte store, an immutable update pattern, etc.), see [[#Custom settings storage]].
 
 To move an existing tab that uses `display()`, see [[Migrate to declarative settings]].
 
@@ -165,11 +165,11 @@ Each entry returned by `getSettingDefinitions()` is one of the following:
 > `control`, `render`, and `action` on a single definition are mutually exclusive. TypeScript will reject more than one.
 
 > [!warning] Keep `getSettingDefinitions()` cheap
-> The framework calls `getSettingDefinitions()` every time the tab updates AND once when the tab is registered (to index settings for global search). Don't perform file reads, network calls, or expensive computation here. Move heavy work into `render` callbacks, which run only when the row is drawn.
+> `getSettingDefinitions()` is called every time the tab updates AND once when the tab is registered (to index settings for global search). Don't perform file reads, network calls, or expensive computation here. Move heavy work into `render` callbacks, which run only when the row is drawn.
 
 ## Control types
 
-A `control` definition reads and writes one key on your settings object. The framework handles `saveData()` for you.
+A `control` definition reads and writes one key on your settings object. Obsidian handles `saveData()` for you.
 
 | Type | Stored value | Notes |
 | --- | --- | --- |
@@ -300,7 +300,7 @@ Every `control` accepts an optional `validate` callback. Return a non-empty stri
 Async validators work too: return a `Promise<string | void>`.
 
 > [!warning] `validate` is a UI gate, not a data invariant
-> The stored value may already be invalid when the setting is rendered (for example, data saved by an older version of your plugin). The framework runs `validate` once on mount and shows the message if the seeded value fails, but it does not modify or replace the stored value. If your plugin needs to enforce invariants on stored data, validate again when reading your settings. Don't rely on `validate` alone.
+> The stored value may already be invalid when the setting is rendered (for example, data saved by an older version of your plugin). `validate` runs once on mount and shows the message if the seeded value fails, but it does not modify or replace the stored value. If your plugin needs to enforce invariants on stored data, validate again when reading your settings. Don't rely on `validate` alone.
 
 <!-- TBD: screenshot of an inline validate error -->
 
@@ -313,7 +313,7 @@ Two predicates let you toggle a setting's state without rebuilding the tab:
 - `visible` on any definition — hides the row when it returns `false`. A hidden row is also excluded from global settings search for that render.
 - `disabled` on a `control` (or on an `action` row) — disables interaction without hiding the row.
 
-Both accept a `boolean` or `() => boolean`. The function form is re-evaluated whenever the framework refreshes DOM state. For `control` definitions the framework refreshes automatically after every change, so the example below works without any extra wiring. After mutating dependent state from a `render` callback or any other imperative path, call `this.refreshDomState()` to re-run the predicates without a full re-render.
+Both accept a `boolean` or `() => boolean`. The function form is re-evaluated on every DOM-state refresh. For `control` definitions, Obsidian refreshes automatically after every change, so the example below works without any extra wiring. After mutating dependent state from a `render` callback or any other imperative path, call `this.refreshDomState()` to re-run the predicates without a full re-render.
 
 ```ts
 getSettingDefinitions() {
@@ -353,29 +353,30 @@ For changes that add or remove definitions (not just toggle visibility), call `t
 
 ## Custom settings storage
 
-By default, `control` definitions read and write `this.plugin.settings` directly: `key: 'sampleValue'` corresponds to `this.plugin.settings.sampleValue`. The framework also calls `this.plugin.saveData()` for you on every change.
+By default, `control` definitions read and write `this.plugin.settings` directly: `key: 'sampleValue'` corresponds to `this.plugin.settings.sampleValue`. `this.plugin.saveData()` is called for you on every change.
 
 If your plugin keeps settings somewhere other than the conventional `this.plugin.settings` field (a Svelte store, a reactive proxy, an immutable update mechanism), override `getControlValue` and `setControlValue` on your settings tab:
 
 ```ts
-class MyTab extends PluginSettingTab {
+class MySettingTab extends PluginSettingTab {
   plugin: MyPlugin;
 
   getControlValue(key: string): unknown {
-    return this.plugin.getStateValue(key);
+    // Read from wherever your plugin keeps settings.
   }
 
-  setControlValue(key: string, value: unknown): void | Promise<void> {
-    return this.plugin.updateState(key, value);
+  async setControlValue(key: string, value: unknown): Promise<void> {
+    // Update wherever your plugin keeps settings, then persist it yourself.
+    await this.plugin.saveData(/* your settings */);
   }
 
   getSettingDefinitions() { /* … */ }
 }
 ```
 
-The framework calls `getControlValue(key)` on every render and `setControlValue(key, value)` on every user change. Both run fresh each time, so reassigning the underlying state object stays in sync with the open settings tab.
+Overriding `setControlValue` replaces the default write path, including the automatic `saveData()` call. Persist the value yourself, and return the promise (or make the method `async`) so Obsidian can await the write before re-rendering.
 
-For the common case where you just store settings in `this.plugin.settings`, you don't need to override anything; the defaults handle it.
+For the common case where you just store settings in `this.plugin.settings`, you don't need to override anything; the defaults handle reading, writing, and saving.
 
 ### Advanced: nested settings with dot-notation keys
 
@@ -390,29 +391,31 @@ interface MySettings {
   sync: { enabled: boolean; interval: number };
 }
 
-function getPath(obj: any, path: string): unknown {
-  let cursor: any = obj;
+function getPath(obj: Record<string, unknown>, path: string): unknown {
+  let cursor: unknown = obj;
   for (let part of path.split('.')) {
-    if (cursor === null || cursor === undefined) return undefined;
-    cursor = cursor[part];
+    if (cursor === null || typeof cursor !== 'object') return undefined;
+    cursor = (cursor as Record<string, unknown>)[part];
   }
   return cursor;
 }
 
-function setPath(obj: any, path: string, value: unknown): void {
+function setPath(obj: Record<string, unknown>, path: string, value: unknown): void {
   let parts = path.split('.');
   let last = parts.pop()!;
-  let cursor: any = obj;
+  let cursor: Record<string, unknown> = obj;
   for (let part of parts) {
-    if (cursor[part] === null || typeof cursor[part] !== 'object') {
-      cursor[part] = {};
+    let next = cursor[part];
+    if (next === null || typeof next !== 'object') {
+      next = {};
+      cursor[part] = next;
     }
-    cursor = cursor[part];
+    cursor = next as Record<string, unknown>;
   }
   cursor[last] = value;
 }
 
-class MyTab extends PluginSettingTab {
+class MySettingTab extends PluginSettingTab {
   plugin: MyPlugin;
 
   constructor(app: App, plugin: MyPlugin) {
@@ -469,7 +472,7 @@ Wire the listeners up from the settings tab constructor, since that's where the 
 ```ts
 import { App, debounce, PluginSettingTab } from 'obsidian';
 
-export class MyTab extends PluginSettingTab {
+export class MySettingTab extends PluginSettingTab {
   plugin: MyPlugin;
 
   constructor(app: App, plugin: MyPlugin) {
@@ -605,11 +608,11 @@ return [
 
 A `SettingDefinitionPage` is a navigable entry on the parent tab; clicking it slides in a sub-page with a back button. Use sub-pages sparingly: only when the parent tab is too long to scan, or the section has a self-contained scope (a dictionary, a font picker, an ignore list). If a section is just two or three settings, leave them on the parent tab.
 
-Pages can nest. Page names must be unique among their siblings at the same depth, otherwise path-based navigation breaks. The framework logs a console error when duplicates are detected.
+Pages can nest. Page names must be unique among their siblings at the same depth, otherwise path-based navigation breaks. Obsidian logs a console error when duplicates are detected.
 
 ### Declarative pages
 
-The page content is a list of definitions. The framework renders the page automatically.
+The page content is a list of definitions. Obsidian renders the page automatically.
 
 ```ts
 {
@@ -636,6 +639,9 @@ Always start with the declarative form. Reach for the imperative form only when 
 ### Imperative pages
 
 When the page's UI is computed from runtime state or interleaves rendered content with imperative DOM, subclass `SettingPage` and pass a factory:
+
+> [!warning] You opt out of the declarative system inside `display()`
+> Controls you build by hand in `display()` are invisible to `getSettingDefinitions()`. They aren't indexed for global settings search, and the declarative features that key off definitions (`visible`/`disabled` predicates, automatic read/write and save) don't apply. You own all of that yourself. Use an imperative page only for the parts that genuinely need it, and keep the rest declarative.
 
 ```ts
 import { SettingPage, Setting } from 'obsidian';
@@ -716,13 +722,13 @@ Use a `render` callback when the setting needs anything beyond a simple bind: si
 ```
 
 > [!warning] `render` does not auto-save
-> The framework only saves automatically for `control` bindings. Inside a `render` callback, always `await this.plugin.saveData(this.plugin.settings)` after mutating settings.
+> Obsidian only saves automatically for `control` bindings. Inside a `render` callback, always `await this.plugin.saveData(this.plugin.settings)` after mutating settings.
 
-For settings that hide or show others based on another value, prefer the `visible` predicate documented in [[#Conditional visibility and enabling]]. Use `this.update()` when the *set* of definitions changes (rows added or removed). Don't call `this.display()` to refresh declarative content: on Obsidian 1.13.0+, the framework bypasses `display()` whenever `getSettingDefinitions()` returns a non-empty array.
+For settings that hide or show others based on another value, prefer the `visible` predicate documented in [[#Conditional visibility and enabling]]. Use `this.update()` when the *set* of definitions changes (rows added or removed). Don't call `this.display()` to refresh declarative content: on Obsidian 1.13.0+, `display()` is bypassed whenever `getSettingDefinitions()` returns a non-empty array.
 
 ### Cleanup
 
-If your `render` callback subscribes to something that outlives the DOM (a `ResizeObserver`, a `MutationObserver`, a `setInterval`, or anything that wouldn't otherwise be garbage-collected when the row is removed), return a cleanup function. The framework invokes it before the row is torn down (re-render, page navigation, tab switch, or modal close).
+If your `render` callback subscribes to something that outlives the DOM (a `ResizeObserver`, a `MutationObserver`, a `setInterval`, or anything that wouldn't otherwise be garbage-collected when the row is removed), return a cleanup function. Obsidian invokes it before the row is torn down (re-render, page navigation, tab switch, or modal close).
 
 ```ts
 {
@@ -901,15 +907,17 @@ new Setting(containerEl)
 Obsidian uses the [moment.js](https://momentjs.com/) library for formatting dates. The library supports custom tokens to customize the look of the resulting string. The [[MomentFormatComponent]] can render an example of the currently configured format.
 
 ```ts
-const dateDesc = document.createDocumentFragment();
-dateDesc.appendText('For a list of all available tokens, see the ');
-dateDesc.createEl('a', {
-  text: 'format reference',
-  attr: { href: 'https://momentjs.com/docs/#/displaying/format/', target: '_blank' },
+let dateSampleEl: HTMLElement;
+const dateDesc = createFragment((frag) => {
+  frag.appendText('For a list of all available tokens, see the ');
+  frag.createEl('a', {
+    text: 'format reference',
+    attr: { href: 'https://momentjs.com/docs/#/displaying/format/', target: '_blank' },
+  });
+  frag.createEl('br');
+  frag.appendText('Your current syntax looks like this: ');
+  dateSampleEl = frag.createEl('b', 'u-pop');
 });
-dateDesc.createEl('br');
-dateDesc.appendText('Your current syntax looks like this: ');
-const dateSampleEl = dateDesc.createEl('b', 'u-pop');
 
 new Setting(containerEl)
   .setName('Date format')
