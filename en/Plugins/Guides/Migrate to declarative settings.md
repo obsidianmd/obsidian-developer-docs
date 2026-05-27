@@ -107,8 +107,7 @@ This path bumps `minAppVersion` to 1.13.0, deletes `display()`, and writes only 
 2. Add a `getSettingDefinitions()` method that returns an array of definitions.
 3. For each one-key binding, write `{ name, desc, control: { type, key } }`. Each `key` corresponds to a property on `this.plugin.settings`. See [[Settings#Control types]] for every available type.
 4. Move any value-shape validation (regex, range, format) from a custom `onChange` into a `validate` callback on the control. See [[Settings#Validating input]].
-5. Keep `render` for anything that isn't a simple one-key bind. See [[#When to keep render]].
-6. Delete the `display()` override and any imports that are no longer used (typically `Setting`).
+5. Delete the `display()` override and any imports that are no longer used (typically `Setting`).
 
 ### After
 
