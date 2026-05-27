@@ -86,7 +86,6 @@ class MyTab extends PluginSettingTab {
       .setName('Cache key')
       .setDesc('Alphanumeric only.')
       .addText(text => text
-        .setPlaceholder('default')
         .setValue(this.plugin.settings.cacheKey)
         .onChange(async (value) => {
           let trimmed = value.trim();
