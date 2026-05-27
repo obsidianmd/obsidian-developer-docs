@@ -145,7 +145,7 @@ export class ExampleSettingTab extends PluginSettingTab {
 }
 ```
 
-Each `control` definition's `key` names a property on `this.plugin.settings`. The framework reads the current value, writes changes back, and calls `saveData()` automatically — no `onChange` plumbing required. If your plugin stores settings somewhere other than `this.plugin.settings` (a Svelte store, an immutable update pattern, etc.), see [[#Custom settings storage]].
+Each `control` definition's `key` names a property on `this.plugin.settings`. The framework reads the current value, writes changes back, and calls `saveData()` automatically. No `onChange` plumbing required. If your plugin stores settings somewhere other than `this.plugin.settings` (a Svelte store, an immutable update pattern, etc.), see [[#Custom settings storage]].
 
 To move an existing tab that uses `display()`, see [[Migrate to declarative settings]].
 
@@ -155,13 +155,14 @@ Each entry returned by `getSettingDefinitions()` is one of the following:
 
 - A setting with a `control` — declarative binding to one settings key. Preferred for simple settings. See [[#Control types]].
 - A setting with a `render` callback — full control over the `Setting` row. Use for side effects, derived values, or custom UI. See [[#Render callback]].
-- A setting with an `element` callback — raw DOM, for banners or non-setting layouts. See [[#Custom elements]].
 - A setting with an `action` callback — a clickable row that runs your function. Common inside lists.
-- A `SettingDefinitionGroup` — a heading and a nested list of definitions. See [[#Groups]].
-- A `SettingDefinitionPage` — a navigable sub-page. See [[#Sub-pages]].
+- A setting with none of the above — a name/desc-only row, useful for headings or static informational rows.
+- A `SettingDefinitionGroup` (`type: 'group'`) — a heading and a nested list of definitions. See [[#Groups]].
+- A `SettingDefinitionList` (`type: 'list'`) — a group with add, delete, and reorder affordances for user-managed entries. See [[#Lists]].
+- A `SettingDefinitionPage` (`type: 'page'`) — a navigable sub-page. See [[#Sub-pages]].
 
 > [!important] Mutual exclusion
-> `control`, `render`, `element`, and `action` on a single definition are mutually exclusive. TypeScript will reject more than one.
+> `control`, `render`, and `action` on a single definition are mutually exclusive. TypeScript will reject more than one.
 
 > [!warning] Keep `getSettingDefinitions()` cheap
 > The framework calls `getSettingDefinitions()` every time the tab updates AND once when the tab is registered (to index settings for global search). Don't perform file reads, network calls, or expensive computation here. Move heavy work into `render` callbacks, which run only when the row is drawn.
@@ -182,7 +183,7 @@ A `control` definition reads and writes one key on your settings object. The fra
 | `folder` | `string` (path) | Optional `filter: (folder: TFolder) => boolean`, `includeRoot` (default `false`), `placeholder`. |
 | `color` | `string` (hex) | |
 
-Every control also accepts an optional `defaultValue` — the fallback when the stored value is `undefined` or `null` — and an optional `validate` callback (see [[#Validating input]]).
+Every control also accepts an optional `defaultValue` (the fallback when the stored value is `undefined` or `null`) and an optional `validate` callback (see [[#Validating input]]).
 
 ### Toggle
 
@@ -273,7 +274,7 @@ Every control also accepts an optional `defaultValue` — the fallback when the 
 Some patterns from the imperative API don't have a dedicated declarative control type:
 
 - **Moment-format inputs** — use a `render` callback with `addMomentFormat()`.
-- **Progress bars** — use a `render` callback with `addProgressBar()`, or `element` for a static layout.
+- **Progress bars** — use a `render` callback with `addProgressBar()`.
 - **Custom suggesters** beyond file and folder — use a `render` callback with `addSearch()` and your own [[AbstractInputSuggest]] subclass.
 - **Multi-button rows** — use a `render` callback and chain multiple `addButton()` calls.
 - **Standalone buttons** — use a definition with `action` for a clickable row, or a `render` callback when you need a button inside a setting row.
@@ -296,18 +297,63 @@ Every `control` accepts an optional `validate` callback. Return a non-empty stri
 }
 ```
 
-Async validators work too — return a `Promise<string | void>`.
+Async validators work too: return a `Promise<string | void>`.
 
 > [!warning] `validate` is a UI gate, not a data invariant
-> The stored value may already be invalid when the setting is rendered (for example, data saved by an older version of your plugin). The framework runs `validate` once on mount and shows the message if the seeded value fails, but it does not modify or replace the stored value. If your plugin needs to enforce invariants on stored data, validate again when reading your settings — don't rely on `validate` alone.
+> The stored value may already be invalid when the setting is rendered (for example, data saved by an older version of your plugin). The framework runs `validate` once on mount and shows the message if the seeded value fails, but it does not modify or replace the stored value. If your plugin needs to enforce invariants on stored data, validate again when reading your settings. Don't rely on `validate` alone.
 
 <!-- TBD: screenshot of an inline validate error -->
 
 `validate` is most useful on text-bearing controls (`text`, `textarea`, `number`, `file`, `folder`).
 
+## Conditional visibility and enabling
+
+Two predicates let you toggle a setting's state without rebuilding the tab:
+
+- `visible` on any definition — hides the row when it returns `false`. A hidden row is also excluded from global settings search for that render.
+- `disabled` on a `control` (or on an `action` row) — disables interaction without hiding the row.
+
+Both accept a `boolean` or `() => boolean`. The function form is re-evaluated whenever the framework refreshes DOM state. For `control` definitions the framework refreshes automatically after every change, so the example below works without any extra wiring. After mutating dependent state from a `render` callback or any other imperative path, call `this.refreshDomState()` to re-run the predicates without a full re-render.
+
+```ts
+getSettingDefinitions() {
+  return [
+    {
+      name: 'Enable advanced mode',
+      control: { type: 'toggle' as const, key: 'advanced' },
+    },
+    {
+      name: 'Debug log level',
+      desc: 'Only relevant when advanced mode is on.',
+      visible: () => this.plugin.settings.advanced,
+      control: {
+        type: 'dropdown' as const,
+        key: 'logLevel',
+        defaultValue: 'info',
+        options: { info: 'Info', verbose: 'Verbose' },
+      },
+    },
+    {
+      name: 'Cache size (MB)',
+      control: {
+        type: 'number' as const,
+        key: 'cacheMb',
+        min: 1,
+        disabled: () => !this.plugin.settings.advanced,
+      },
+    },
+  ];
+}
+```
+
+For changes that add or remove definitions (not just toggle visibility), call `this.update()` instead. `refreshDomState` only re-evaluates predicates on already-rendered items.
+
+> [!tip] When to use which
+> Use `visible` when a setting is irrelevant in the current configuration, with nothing meaningful for the user to read or change. Use `disabled` when the setting is meaningful but currently locked (a prerequisite isn't met, a paid feature isn't unlocked); keep it visible so the user understands the option exists.
+
 ## Custom settings storage
 
-By default, `control` definitions read and write `this.plugin.settings` directly — `key: 'sampleValue'` corresponds to `this.plugin.settings.sampleValue`. The framework also calls `this.plugin.saveData()` for you on every change.
+By default, `control` definitions read and write `this.plugin.settings` directly: `key: 'sampleValue'` corresponds to `this.plugin.settings.sampleValue`. The framework also calls `this.plugin.saveData()` for you on every change.
 
 If your plugin keeps settings somewhere other than the conventional `this.plugin.settings` field (a Svelte store, a reactive proxy, an immutable update mechanism), override `getControlValue` and `setControlValue` on your settings tab:
 
@@ -329,13 +375,123 @@ class MyTab extends PluginSettingTab {
 
 The framework calls `getControlValue(key)` on every render and `setControlValue(key, value)` on every user change. Both run fresh each time, so reassigning the underlying state object stays in sync with the open settings tab.
 
-For the common case where you just store settings in `this.plugin.settings`, you don't need to override anything — the defaults handle it.
+For the common case where you just store settings in `this.plugin.settings`, you don't need to override anything; the defaults handle it.
+
+### Advanced: nested settings with dot-notation keys
+
+> [!tip] Keep your settings simple
+> Flat JSON is usually better. If you're starting a new plugin, flatten the shape (`editorFontSize` rather than `editor.fontSize`) and skip this recipe. Out of the box, `control` keys only reach top-level properties.
+
+If your plugin already ships nested settings JSON and can't reshape the file without a migration, the same two overrides let you treat a `control` `key` as a dot-notation path (`editor.fontSize`) and walk the nested shape:
+
+```ts
+interface MySettings {
+  editor: { fontSize: number; tabSize: number };
+  sync: { enabled: boolean; interval: number };
+}
+
+function getPath(obj: any, path: string): unknown {
+  let cursor: any = obj;
+  for (let part of path.split('.')) {
+    if (cursor === null || cursor === undefined) return undefined;
+    cursor = cursor[part];
+  }
+  return cursor;
+}
+
+function setPath(obj: any, path: string, value: unknown): void {
+  let parts = path.split('.');
+  let last = parts.pop()!;
+  let cursor: any = obj;
+  for (let part of parts) {
+    if (cursor[part] === null || typeof cursor[part] !== 'object') {
+      cursor[part] = {};
+    }
+    cursor = cursor[part];
+  }
+  cursor[last] = value;
+}
+
+class MyTab extends PluginSettingTab {
+  plugin: MyPlugin;
+
+  constructor(app: App, plugin: MyPlugin) {
+    super(app, plugin);
+    this.plugin = plugin;
+  }
+
+  getControlValue(key: string): unknown {
+    return getPath(this.plugin.settings, key);
+  }
+
+  async setControlValue(key: string, value: unknown): Promise<void> {
+    setPath(this.plugin.settings, key, value);
+    await this.plugin.saveData(this.plugin.settings);
+  }
+
+  getSettingDefinitions() {
+    return [
+      {
+        type: 'group' as const,
+        heading: 'Editor',
+        items: [
+          { name: 'Font size', control: { type: 'number' as const, key: 'editor.fontSize', min: 8, max: 32 } },
+          { name: 'Tab size', control: { type: 'number' as const, key: 'editor.tabSize', min: 1, max: 8 } },
+        ],
+      },
+      {
+        type: 'group' as const,
+        heading: 'Sync',
+        items: [
+          { name: 'Enable sync', control: { type: 'toggle' as const, key: 'sync.enabled' } },
+          {
+            name: 'Interval (seconds)',
+            visible: () => this.plugin.settings.sync.enabled,
+            control: { type: 'number' as const, key: 'sync.interval', min: 5 },
+          },
+        ],
+      },
+    ];
+  }
+}
+```
+
+The `key` literal is now a path, not a property name: `editor.fontSize` is two property lookups. `setPath` creates intermediate objects as it walks, so a user upgrading from a partial settings JSON doesn't crash on a missing parent object. Predicates like `visible` read through the nested shape directly; they don't go through `getControlValue`.
+
+You give up compile-time `key` checking. Dot-notation strings aren't statically verifiable against a nested type, so `key: 'editor.fontSiz'` (typo) compiles. If you need it, generate a literal-union type for your paths and pass it as the `K` parameter to `SettingDefinitionItem<K>` / `SettingControl<K>`.
+
+## Reacting to changes outside the settings tab
+
+If what your tab displays depends on state that changes elsewhere (vault contents, the list of enabled plugins, a value your plugin computes in the background), the tab can go stale while the user has it open. Call `this.update()` to re-run `getSettingDefinitions()` and rebuild.
+
+Wire the listeners up from the settings tab constructor, since that's where the tab knows what state it depends on. Register them through [[registerEvent|plugin.registerEvent()]] so they're cleaned up when the plugin is disabled or removed.
+
+```ts
+import { App, debounce, PluginSettingTab } from 'obsidian';
+
+export class MyTab extends PluginSettingTab {
+  plugin: MyPlugin;
+
+  constructor(app: App, plugin: MyPlugin) {
+    super(app, plugin);
+    this.plugin = plugin;
+
+    let refresh = debounce(() => this.update(), 200, true);
+    plugin.registerEvent(this.app.vault.on('create', refresh));
+    plugin.registerEvent(this.app.vault.on('delete', refresh));
+    plugin.registerEvent(this.app.vault.on('rename', refresh));
+  }
+}
+```
+
+`update()` is safe to call when the settings modal is closed. It just refreshes the tab's stored definitions and the search index, and the next time the user opens the tab they see fresh content. Debounce bursty events so a folder-wide rename doesn't trigger one re-render per file.
+
+> [!tip] Use `visible` instead when possible
+> Don't reach for external events just to hide a row based on another setting's value; that's what the `visible` predicate is for. External events are for state your plugin doesn't itself own.
 
 ## Groups
 
-A `SettingDefinitionGroup` gives a heading and shared layout to related settings.
-
-### Inline groups
+A `SettingDefinitionGroup` (`type: 'group'`) gives a heading and shared layout to related settings.
 
 ```ts
 {
@@ -348,22 +504,23 @@ A `SettingDefinitionGroup` gives a heading and shared layout to related settings
 }
 ```
 
-### Mod-list (mutable lists)
+Groups also accept a `search` callback (renders a search input in the header), an `extraButtons` array (header-level action buttons), a `cls` (extra CSS class on the group element), and a `visible` predicate to hide the group entirely.
 
-For settings where the user adds, removes, or reorders rows of the same kind — watched folders, tag aliases, blocked patterns — set `cls: 'mod-list'` on the group and provide `onDelete` (always) and `onReorder` (when order matters). The framework adds drag handles, a delete affordance, and Delete/Backspace handling on the focused row.
+For collections where the user can add, remove, or reorder entries, use `type: 'list'` instead. See [[#Lists]].
+
+## Lists
+
+For settings where the user adds, removes, or reorders rows of the same kind (watched folders, tag aliases, blocked patterns), use `type: 'list'` instead of `'group'`. A list is rendered with a denser visual style and supports `onDelete` (always), `onReorder` (when order matters), `emptyState`, and `addItem` (a platform-appropriate add affordance).
 
 ```ts
 {
-  type: 'group',
+  type: 'list',
   heading: 'Watched folders',
-  cls: 'mod-list',
   emptyState: 'No folders being watched yet.',
-  extraButtons: [
-    (btn) => btn
-      .setIcon('lucide-plus')
-      .setTooltip('Add folder')
-      .onClick(() => this.openAddFolderModal()),
-  ],
+  addItem: {
+    name: 'Add folder',
+    action: () => this.openAddFolderModal(),
+  },
   onReorder: async (oldIndex, newIndex) => {
     let folders = this.plugin.settings.folders;
     let [moved] = folders.splice(oldIndex, 1);
@@ -382,13 +539,13 @@ For settings where the user adds, removes, or reorders rows of the same kind —
 }
 ```
 
-<!-- TBD: screenshot of a mod-list group with drag handles and delete buttons -->
+<!-- TBD: screenshot of a list group with drag handles and delete buttons -->
 
 Why each piece:
 
-- `cls: 'mod-list'` applies the visual treatment (drag handle column, delete affordance, denser rows).
+- `type: 'list'` applies the visual treatment (drag handle column, delete affordance, denser rows) and unlocks `emptyState`, `onReorder`, `onDelete`, and `addItem`.
 - `emptyState` is shown when `items` is empty. Plain string or `DocumentFragment`.
-- `extraButtons` are header-level actions — the "add" button belongs here, not in the row list.
+- `addItem` renders a platform-appropriate add affordance: a `+` button in the list header on desktop (with `name` as the tooltip), and a tappable `+ {name}` row appended below the list on mobile. The mobile row is not part of `items`: it doesn't appear in search and doesn't shift `onDelete`/`onReorder` indices.
 - `onReorder` callbacks receive `(oldIndex, newIndex)`. The DOM is already reordered; just update your data and save.
 - `onDelete` wires both the delete button and the Delete/Backspace key. Always call `this.update()` after, since removing an entry changes the items array.
 - `searchable: false` on each item keeps individual rows out of the global settings search.
@@ -407,9 +564,9 @@ items: availableCommands.map((cmd) => ({
 })),
 ```
 
-### Mod-list with a form modal
+### Lists with a form modal
 
-When new entries need a multi-field input or validation beyond a single inline text field, open a [[Modals|Modal]] from the header's add button. On mobile, where header icons are smaller and harder to tap, surface the same modal from a tappable action row at the top of the list. Both routes call the same opener.
+When new entries need a multi-field input or validation beyond a single inline text field, open a [[Modals|Modal]] from `addItem.action`. The same affordance covers both platforms: `addItem` already renders a desktop button and a mobile row from one definition.
 
 ```ts
 let values: string[] = this.plugin.settings.entries ?? [];
@@ -423,47 +580,32 @@ let openAddForm = () => {
   }).open();
 };
 
-let groupItems = [];
-
-if (Platform.isMobile) {
-  groupItems.push({
-    name: 'Add entry',
-    searchable: false,
-    action: openAddForm,
-  });
-}
-
-groupItems.push({
-  type: 'group',
-  cls: 'mod-list',
-  emptyState: 'No entries yet.',
-  extraButtons: Platform.isMobile ? [] : [
-    (btn) => btn
-      .setIcon('lucide-plus')
-      .setTooltip('Add entry')
-      .onClick(openAddForm),
-  ],
-  onDelete: (idx) => {
-    values.splice(idx, 1);
-    void this.plugin.saveData(this.plugin.settings);
-    this.update();
+return [
+  {
+    type: 'list',
+    emptyState: 'No entries yet.',
+    addItem: {
+      name: 'Add entry',
+      action: openAddForm,
+    },
+    onDelete: (idx) => {
+      values.splice(idx, 1);
+      void this.plugin.saveData(this.plugin.settings);
+      this.update();
+    },
+    items: values.map((value) => ({
+      name: value,
+      searchable: false,
+    })),
   },
-  items: values.map((value) => ({
-    name: value,
-    searchable: false,
-  })),
-});
-
-return groupItems;
+];
 ```
-
-The mobile action row sits *above* the mod-list group on purpose: it stays visible when the list is empty (paired with the group's `emptyState`), and it isn't subject to the list's delete affordance.
 
 ## Sub-pages
 
-A `SettingDefinitionPage` is a navigable entry on the parent tab — clicking it slides in a sub-page with a back button. Use sub-pages sparingly: only when the parent tab is too long to scan, or the section has a self-contained scope (a dictionary, a font picker, an ignore list). If a section is just two or three settings, leave them on the parent tab.
+A `SettingDefinitionPage` is a navigable entry on the parent tab; clicking it slides in a sub-page with a back button. Use sub-pages sparingly: only when the parent tab is too long to scan, or the section has a self-contained scope (a dictionary, a font picker, an ignore list). If a section is just two or three settings, leave them on the parent tab.
 
-Pages can nest. Page names must be unique among their siblings at the same depth — the framework logs a console error when duplicates are detected, since path-based navigation breaks otherwise.
+Pages can nest. Page names must be unique among their siblings at the same depth, otherwise path-based navigation breaks. The framework logs a console error when duplicates are detected.
 
 ### Declarative pages
 
@@ -530,7 +672,25 @@ class StatusPage extends SettingPage {
 }
 ```
 
-The factory runs each time the page is opened. `display()` runs whenever the page needs to redraw — call `this.display()` from inside the page itself to refresh after state changes.
+The factory runs each time the page is opened. `display()` runs whenever the page needs to redraw; call `this.display()` from inside the page itself to refresh after state changes.
+
+Override `hide()` to clean up anything that outlives the DOM (observers, timers, registered events). It runs when the user navigates away, the containing tab is switched, or the settings modal is closed. It is not guaranteed to run if the host window is destroyed without going through a normal close.
+
+```ts
+class StatusPage extends SettingPage {
+  private timer: number;
+
+  display() {
+    this.containerEl.empty();
+    this.containerEl.createEl('p', { text: `Last refresh: ${new Date().toLocaleTimeString()}` });
+    this.timer = window.setInterval(() => this.display(), 1000);
+  }
+
+  hide() {
+    window.clearInterval(this.timer);
+  }
+}
+```
 
 `items` and `page` are mutually exclusive. Provide one or the other.
 
@@ -538,7 +698,7 @@ The factory runs each time the page is opened. `display()` runs whenever the pag
 
 ## Render callback
 
-Use a `render` callback when the setting needs anything beyond a simple bind — side effects, conditional visibility, custom UI, or suggesters not covered by `file` and `folder`.
+Use a `render` callback when the setting needs anything beyond a simple bind: side effects, custom UI, or suggesters not covered by `file` and `folder`. For showing or hiding rows based on another setting, use the [[#Conditional visibility and enabling|`visible` predicate]] instead.
 
 ```ts
 {
@@ -558,29 +718,36 @@ Use a `render` callback when the setting needs anything beyond a simple bind —
 > [!warning] `render` does not auto-save
 > The framework only saves automatically for `control` bindings. Inside a `render` callback, always `await this.plugin.saveData(this.plugin.settings)` after mutating settings.
 
-For settings that hide or show others based on another value, call `this.update()` from the parent's `onChange` to rebuild the definitions array. Don't call `this.display()` to refresh declarative content — on Obsidian 1.13.0+, the framework bypasses `display()` whenever `getSettingDefinitions()` returns a non-empty array.
+For settings that hide or show others based on another value, prefer the `visible` predicate documented in [[#Conditional visibility and enabling]]. Use `this.update()` when the *set* of definitions changes (rows added or removed). Don't call `this.display()` to refresh declarative content: on Obsidian 1.13.0+, the framework bypasses `display()` whenever `getSettingDefinitions()` returns a non-empty array.
 
-## Custom elements
+### Cleanup
 
-For banners, info text, or layouts that aren't a `Setting` row at all, use an `element` callback. The framework gives you the list container and otherwise stays out of the way.
+If your `render` callback subscribes to something that outlives the DOM (a `ResizeObserver`, a `MutationObserver`, a `setInterval`, or anything that wouldn't otherwise be garbage-collected when the row is removed), return a cleanup function. The framework invokes it before the row is torn down (re-render, page navigation, tab switch, or modal close).
 
 ```ts
 {
-  name: '',
-  element: (listEl) => {
-    listEl.createDiv({
-      cls: 'callout',
-      text: 'Heads up: this feature is experimental.',
+  name: 'Live preview',
+  render: (setting) => {
+    let previewEl = setting.controlEl.createDiv('preview');
+    let observer = new ResizeObserver(() => {
+      previewEl.setText(`${previewEl.clientWidth}px`);
     });
+    observer.observe(previewEl);
+    return () => observer.disconnect();
   },
 }
 ```
+
+You don't need to clean up plain DOM event listeners attached to elements inside the `Setting` row; they go with the DOM. The return value is only for things the DOM teardown can't reach. For workspace or vault events that should outlive the settings UI, register them on your plugin instead. See [[#Reacting to changes outside the settings tab]].
+
+> [!warning]
+> Cleanup is not guaranteed to run if the host window is destroyed (for example, the OS kills the renderer). For state that *must* be released, register it on the plugin instead. See [[#Reacting to changes outside the settings tab]].
 
 ## Style guide
 
 ### Sentence case for all UI text
 
-Names, descriptions, headings, button labels, placeholders — anything the user reads in your tab. Only the first word and proper nouns are capitalized.
+Use sentence case for names, descriptions, headings, button labels, placeholders, and anything else the user reads in your tab. Only the first word and proper nouns are capitalized.
 
 - ✅ "Template folder location" — ❌ "Template Folder Location"
 - ✅ "Create new note" — ❌ "Create New Note"
@@ -627,9 +794,34 @@ Everything under the tab is settings; saying so in every heading is redundant.
 - ✅ "Advanced" — ❌ "Advanced settings"
 - ✅ "Templates" — ❌ "Settings for templates"
 
+### Save on change, not on submit
+
+A setting in your tab should persist the moment the user changes it. `control` definitions do this automatically; in `render` callbacks, call `await this.plugin.saveData(this.plugin.settings)` from inside `onChange`. The user navigating away should never be a save action.
+
+If a setting is too complex to commit on every keystroke (multiple required fields, cross-field validation, an entry that's only meaningful when fully constructed), that's a signal it doesn't belong directly in the tab. Surface it through a [[Modals|Modal]] with explicit "Save" / "Cancel" buttons, and let the tab store the resulting value or list. Settings tabs and sub-pages aren't designed to act as forms.
+
+### One control per setting row
+
+Each row should have a single mutable control. Avoid putting two text inputs, or a text input next to a dropdown, side by side in one `Setting`.
+
+- ✅ One row → one toggle, one dropdown, one text input.
+- ❌ A row with two text inputs the user fills in together.
+
+Multiple controls per row stack vertically on mobile, which breaks readability and disrupts the visual rhythm of the tab. When you genuinely need to capture multiple values together (a name and a path, a start and end pair), collect them in a [[Modals|Modal]] using the [[#Lists with a form modal]] pattern: the tab shows a list of completed entries, and an "Add" button opens the modal that builds one.
+
+### Avoid textareas in the main tab
+
+A `textarea` is much taller than every other control and disrupts the regular row rhythm of the tab. If you need to collect multi-line text, move it into a form modal (see the [[#Lists with a form modal]] pattern). When the textarea has to live on the tab, push it to the bottom so it doesn't break the flow of the settings above it.
+
+### Keep descriptions short
+
+`desc` is for a single sentence explaining what the setting does, not for warnings or paragraphs of context. Long descriptions push the next row off-screen, disrupt scanning, and aren't guaranteed to be read.
+
+If the user needs to acknowledge a warning before a setting takes effect (a destructive action, an irreversible migration, a feature with non-obvious consequences), put the warning in a [[Modals|Modal]] with an explicit confirm step. If the user needs background context to understand the setting, link to a docs page from `desc` rather than inlining it.
+
 ## Settings inside a modal
 
-The declarative settings API is for `PluginSettingTab` only. If your plugin opens a [[Modals|Modal]] that needs setting rows, construct [[Setting|Setting]] and [[SettingGroup|SettingGroup]] directly against the modal's `contentEl` — modals build their UI imperatively.
+The declarative settings API is for `PluginSettingTab` only. If your plugin opens a [[Modals|Modal]] that needs setting rows, construct [[Setting|Setting]] and [[SettingGroup|SettingGroup]] directly against the modal's `contentEl`; modals build their UI imperatively.
 
 ## Legacy: imperative display() approach
 
@@ -768,7 +960,7 @@ new Setting(containerEl)
 
 #### Progress bar
 
-While a slider allows for numeric input, a progress bar can show the progress of a task running in the background. It can also be used to show a quota — for example, disk space used.
+While a slider allows for numeric input, a progress bar can show the progress of a task running in the background. It can also be used to show a quota; for example, disk space used.
 
 ```ts
 new Setting(containerEl)

@@ -3,7 +3,7 @@ permalink: plugins/guides/migrate-declarative-settings
 aliases:
   - Plugins/Guides/Migrate+to+declarative+settings
 ---
-As of Obsidian 1.13.0, plugin settings tabs can be defined declaratively by overriding `getSettingDefinitions()` on [[PluginSettingTab|PluginSettingTab]]. The framework handles rendering, search indexing, persistence, and validation — you describe the settings, not the DOM.
+As of Obsidian 1.13.0, plugin settings tabs can be defined declaratively by overriding `getSettingDefinitions()` on [[PluginSettingTab|PluginSettingTab]]. The framework handles rendering, search indexing, persistence, and validation. You describe the settings, not the DOM.
 
 This guide walks through converting an existing imperative `display()` tab to the new API.
 
@@ -24,17 +24,17 @@ This guide assumes you have:
 
 - A working plugin with a `PluginSettingTab` subclass that overrides `display()`.
 - Familiarity with [[Settings]] (defining a settings interface, `loadData()`, `saveData()`).
-- A decision on your plugin's `minAppVersion` — see [[#Choosing a path]] below.
+- A decision on your plugin's `minAppVersion`. See [[#Choosing a path]] below.
 
 ## Choosing a path
 
 | Your plugin's `minAppVersion` | What to do |
 | --- | --- |
-| `>= 1.13.0` | [[#Path A: clean 1.13-only migration\|Path A]] — Implement `getSettingDefinitions()` only. Delete `display()`. |
-| `< 1.13.0` and you want to adopt the new API | [[#Path B: dual support\|Path B]] — Keep `display()` and add `getSettingDefinitions()` alongside it. |
+| `>= 1.13.0` | [[#Path A: clean 1.13-only migration\|Path A]]: implement `getSettingDefinitions()` only. Delete `display()`. |
+| `< 1.13.0` and you want to adopt the new API | [[#Path B: dual support\|Path B]]: keep `display()` and add `getSettingDefinitions()` alongside it. |
 | `< 1.13.0` and you don't need the new features | Leave the plugin as-is. The new API is opt-in. |
 
-Prefer Path A whenever you can — it's simpler and avoids maintaining two implementations. Choose Path B only if you have an existing user base on Obsidian < 1.13.0 that you can't drop.
+Prefer Path A whenever you can; it's simpler and avoids maintaining two implementations. Choose Path B only if you have an existing user base on Obsidian < 1.13.0 that you can't drop.
 
 ## Before
 
@@ -108,7 +108,7 @@ This path bumps `minAppVersion` to 1.13.0, deletes `display()`, and writes only 
 2. Add a `getSettingDefinitions()` method that returns an array of definitions.
 3. For each one-key binding, write `{ name, desc, control: { type, key } }`. Each `key` corresponds to a property on `this.plugin.settings`. See [[Settings#Control types]] for every available type.
 4. Move any value-shape validation (regex, range, format) from a custom `onChange` into a `validate` callback on the control. See [[Settings#Validating input]].
-5. Keep `render` for anything that isn't a simple one-key bind — see [[#When to keep render]].
+5. Keep `render` for anything that isn't a simple one-key bind. See [[#When to keep render]].
 6. Delete the `display()` override and any imports that are no longer used (typically `Setting`).
 
 ### After
@@ -257,17 +257,18 @@ In Path A above, the `cacheKey` validation moved from a hand-rolled `onChange` i
 - **Side effects** on change — call a method, update a status bar, refresh another view.
 - **Inverted or derived values** — a toggle that drives a string config, a slider that drives a complex calculation.
 - **Custom suggesters** beyond `file`/`folder` — a command picker, a tag picker, anything that uses [[AbstractInputSuggest]].
-- **Conditional visibility** — show or hide a setting based on another setting's value. Use `render` and call `this.update()` from the parent's `onChange` to rebuild.
 
 For these, a `render` callback gives you full control over the `Setting` row. See [[Settings#Render callback]].
 
+For conditional visibility (showing or hiding a setting based on another setting's value), you don't need `render`. Use the `visible` predicate documented in [[Settings#Conditional visibility and enabling]].
+
 ## Common pitfalls
 
-- `control`, `render`, `element`, and `action` on a definition are mutually exclusive — TypeScript will reject more than one.
-- `getSettingDefinitions()` runs on every `update()` AND once when the tab is registered (for search indexing). Keep it cheap — no I/O, no network calls.
+- `control`, `render`, and `action` on a definition are mutually exclusive; TypeScript will reject more than one.
+- `getSettingDefinitions()` runs on every `update()` AND once when the tab is registered (for search indexing). Keep it cheap: no I/O, no network calls.
 - `desc` accepts a `string` or `DocumentFragment`. For rich descriptions with formatting or links, pass a `DocumentFragment` built with `createFragment(...)`.
 - A `render` callback does **not** auto-save. Always `await this.plugin.saveData(this.plugin.settings)` after mutating settings.
-- To re-render the tab after data changes (interdependent settings, list mutations), call `this.update()`. On 1.13.0+, calling `display()` won't refresh anything declarative — the framework bypasses `display()` when `getSettingDefinitions()` returns a non-empty array.
+- To re-render the tab after data changes (interdependent settings, list mutations), call `this.update()`. On 1.13.0+, calling `display()` won't refresh anything declarative; the framework bypasses `display()` when `getSettingDefinitions()` returns a non-empty array.
 - Page names must be unique among their siblings at the same depth, or path-based navigation will misbehave.
 - `validate` doesn't replace the stored value. If your stored settings might already be invalid (loaded from an older plugin version), validate again when reading them.
 
@@ -279,7 +280,7 @@ After migrating:
 2. Open the plugin's settings tab in Obsidian and walk top to bottom. Every setting should render, every control should reflect the current value, and every change should persist across a reload.
 3. Open the global settings search. Each setting should be findable by name (and `aliases`, if set).
 4. For each `validate` callback, enter invalid input and confirm an inline error appears and the value isn't saved.
-5. For any mod-list groups, add, delete, and reorder rows. Confirm `plugin.settings` is updated after each action.
+5. For any `type: 'list'` groups, add, delete, and reorder rows. Confirm `plugin.settings` is updated after each action.
 6. For any sub-pages, open and navigate back.
 7. If you took Path B, install your plugin on an Obsidian version below 1.13.0 and verify `display()` still renders the settings correctly.
 
@@ -287,8 +288,8 @@ After migrating:
 
 ### Why didn't my `render` callback save?
 
-A `render` callback gives you full control of the `Setting` row, but the framework doesn't know what you're binding — so it doesn't auto-save. Always `await this.plugin.saveData(this.plugin.settings)` at the end of your `onChange`. `control` definitions are different; the framework saves those for you.
+A `render` callback gives you full control of the `Setting` row, but the framework doesn't know what you're binding, so it doesn't auto-save. Always `await this.plugin.saveData(this.plugin.settings)` at the end of your `onChange`. `control` definitions are different; the framework saves those for you.
 
-### My stored data is invalid — how do I clean it up?
+### My stored data is invalid. How do I clean it up?
 
-The `validate` callback is a UI gate. It shows an inline error when the user enters invalid input, but it does not modify or replace stored values. If older versions of your plugin saved data that no longer passes validation, validate again when reading settings — for example, in your plugin's `loadSettings()` method — and either repair or discard the bad value before the settings tab renders.
+The `validate` callback is a UI gate. It shows an inline error when the user enters invalid input, but it does not modify or replace stored values. If older versions of your plugin saved data that no longer passes validation, validate again when reading settings (for example, in your plugin's `loadSettings()` method) and either repair or discard the bad value before the settings tab renders.
