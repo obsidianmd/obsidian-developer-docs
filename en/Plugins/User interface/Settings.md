@@ -135,7 +135,7 @@ export class ExampleSettingTab extends PluginSettingTab {
       {
         name: 'Default value',
         control: {
-          type: 'text' as const,
+          type: 'text',
           key: 'sampleValue',
           placeholder: 'Lorem ipsum',
         },
@@ -320,14 +320,14 @@ getSettingDefinitions() {
   return [
     {
       name: 'Enable advanced mode',
-      control: { type: 'toggle' as const, key: 'advanced' },
+      control: { type: 'toggle', key: 'advanced' },
     },
     {
       name: 'Debug log level',
       desc: 'Only relevant when advanced mode is on.',
       visible: () => this.plugin.settings.advanced,
       control: {
-        type: 'dropdown' as const,
+        type: 'dropdown',
         key: 'logLevel',
         defaultValue: 'info',
         options: { info: 'Info', verbose: 'Verbose' },
@@ -336,7 +336,7 @@ getSettingDefinitions() {
     {
       name: 'Cache size (MB)',
       control: {
-        type: 'number' as const,
+        type: 'number',
         key: 'cacheMb',
         min: 1,
         disabled: () => !this.plugin.settings.advanced,
@@ -432,22 +432,22 @@ class MyTab extends PluginSettingTab {
   getSettingDefinitions() {
     return [
       {
-        type: 'group' as const,
+        type: 'group',
         heading: 'Editor',
         items: [
-          { name: 'Font size', control: { type: 'number' as const, key: 'editor.fontSize', min: 8, max: 32 } },
-          { name: 'Tab size', control: { type: 'number' as const, key: 'editor.tabSize', min: 1, max: 8 } },
+          { name: 'Font size', control: { type: 'number', key: 'editor.fontSize', min: 8, max: 32 } },
+          { name: 'Tab size', control: { type: 'number', key: 'editor.tabSize', min: 1, max: 8 } },
         ],
       },
       {
-        type: 'group' as const,
+        type: 'group',
         heading: 'Sync',
         items: [
-          { name: 'Enable sync', control: { type: 'toggle' as const, key: 'sync.enabled' } },
+          { name: 'Enable sync', control: { type: 'toggle', key: 'sync.enabled' } },
           {
             name: 'Interval (seconds)',
             visible: () => this.plugin.settings.sync.enabled,
-            control: { type: 'number' as const, key: 'sync.interval', min: 5 },
+            control: { type: 'number', key: 'sync.interval', min: 5 },
           },
         ],
       },
@@ -940,19 +940,15 @@ You can also add multiple buttons to the same setting for performing different a
 
 #### Extra button
 
-This button can be added to any other settings type to reset it to the default value, for example.
+An extra button is a compact, icon-only button that sits alongside a setting's main control. Use it for secondary actions on the row: opening a help dialog, revealing a related file, copying a value, resetting to default, or any other ancillary affordance that shouldn't take up the space of a full button.
 
 ```ts
 new Setting(containerEl)
-  .setName('Button')
-  .setDesc('With extra button')
-  .addButton((button) => button
-    .setButtonText('Click me!')
-    .onClick(() => {
-      // ...
-    }))
+  .setName('API endpoint')
+  .addText((text) => text.setValue(this.plugin.settings.endpoint))
   .addExtraButton((button) => button
-    .setIcon('gear')
+    .setIcon('lucide-rotate-ccw')
+    .setTooltip('Reset to default')
     .onClick(() => {
       // ...
     }));

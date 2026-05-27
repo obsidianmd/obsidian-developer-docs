@@ -135,12 +135,12 @@ class MyTab extends PluginSettingTab {
       {
         name: 'Enable feature',
         desc: 'Turns the feature on or off.',
-        control: { type: 'toggle' as const, key: 'enabled' },
+        control: { type: 'toggle', key: 'enabled' },
       },
       {
         name: 'Mode',
         control: {
-          type: 'dropdown' as const,
+          type: 'dropdown',
           key: 'mode',
           defaultValue: 'fast',
           options: { fast: 'Fast', thorough: 'Thorough' },
@@ -150,7 +150,7 @@ class MyTab extends PluginSettingTab {
         name: 'Cache key',
         desc: 'Alphanumeric only.',
         control: {
-          type: 'text' as const,
+          type: 'text',
           key: 'cacheKey',
           placeholder: 'default',
           validate: (value: string) =>
@@ -200,12 +200,12 @@ class MyTab extends PluginSettingTab {
       {
         name: 'Enable feature',
         desc: 'Turns the feature on or off.',
-        control: { type: 'toggle' as const, key: 'enabled' },
+        control: { type: 'toggle', key: 'enabled' },
       },
       {
         name: 'Mode',
         control: {
-          type: 'dropdown' as const,
+          type: 'dropdown',
           key: 'mode',
           defaultValue: 'fast',
           options: { fast: 'Fast', thorough: 'Thorough' },
@@ -215,7 +215,7 @@ class MyTab extends PluginSettingTab {
         name: 'Cache key',
         desc: 'Alphanumeric only.',
         control: {
-          type: 'text' as const,
+          type: 'text',
           key: 'cacheKey',
           placeholder: 'default',
           validate: (value: string) =>
