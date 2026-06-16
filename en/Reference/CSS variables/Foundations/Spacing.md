@@ -17,7 +17,7 @@ Each size variable contains two numbers which represent the base and the multipl
 - `--size-4-2` represents `8px` (4x2)
 - `--size-4-4` represents `16px` (4x4)
 
-In addition to the 4-pixel grid, Obsidan also provides a set of variables that uses a 2-pixel grid. Use these sparingly and only when you need more fine-grained spacing.
+In addition to the 4-pixel grid, Obsidian also provides a set of variables that uses a 2-pixel grid. Use these sparingly and only when you need more fine-grained spacing.
 
 | Variable      | Default value |
 | ------------- | ------------- |
