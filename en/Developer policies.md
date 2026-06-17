@@ -1,10 +1,11 @@
 Our goal for community plugins and themes is to make it easy for users to safely modify and expand the capabilities of Obsidian, while prioritizing private and offline usage of the app.
 
-All community plugins and themes added to the Obsidian directory must respect the following policies. Every plugin and theme is individually vetted before being included in the directory. Plugins and themes that don't follow these policies will be removed from the directory.
+All community plugins and themes added to the Obsidian directory must respect the following policies. Plugins and themes that don't follow these policies will be removed from the directory.
 
-These policies only apply to plugins listed in the official Obsidian directory. These policies do not apply to plugins installed outside of the Obsidian directory, but they are nonetheless good practices to follow.
+These policies only apply to plugins listed in the official [Obsidian Community](https://community.obsidian.md/) directory. These policies do not apply to plugins installed outside of the Obsidian directory, but they are nonetheless good practices to follow.
 
 Also read the [[Submission requirements for plugins]]
+
 ## Policies
 
 ### Not allowed
@@ -49,7 +50,7 @@ We encourage developers to collaborate on fewer high-quality projects than many 
 
 In both cases, the original author must be credited as a contributor to the new project.
 
-If your project diverges from existing options, it should not be a fork. Start fresh with a new repository and your own code. It should inherit no code from the original repo.
+If your project diverges from existing options, it should not be a fork. Start fresh with a new repository and your own code. It should inherit no code from the original repo without explicit permission.
 
 ## Reporting violations
 
