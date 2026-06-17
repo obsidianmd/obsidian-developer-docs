@@ -18,19 +18,6 @@ Plugins and themes must not:
 - Include a mechanism that updates the plugin.
 - Themes may not load assets from the network. To bundle an asset, see [[Embed fonts and images in your theme|this guide]].
 
-### Forks
-
-We encourage developers to collaborate on fewer high-quality projects than many low-quality ones. Consider contributing to existing projects rather than creating new projects that duplicate existing functionality.
-
-[Forks](https://en.wikipedia.org/wiki/Fork_\(software_development\)) are not allowed in the Community directory unless they meet one of the following criteria:
-
-- The fork has received explicit written approval from the original author in a publicly verifiable way.
-- The fork author can show proof that the original author is unreachable and has not updated the project for at least 6 months.
-
-In both cases, the original author must be credited as a contributor to the new project.
-
-If your project diverges from existing options, it should not be a fork. Start fresh with a new repository and your own code. It should inherit no code from the original repo.
-
 ### Disclosures
 
 The following are only allowed if clearly indicated in your README:
@@ -50,6 +37,19 @@ All community plugins and themes must follow these requirements:
 - Include a [LICENSE file](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) and clearly indicate the license of your plugin or theme.
 - Comply with the original licenses of any code your plugin or theme makes use of, including attribution in the README if required.
 - Respect Obsidian's trademark policy. Don't use the "Obsidian" trademark in a way that could confuse users into thinking your plugin or theme is a first-party creation.
+
+### Forks
+
+We encourage developers to collaborate on fewer high-quality projects than many low-quality ones. Consider contributing to existing projects rather than creating new projects that duplicate existing functionality.
+
+[Forks](https://en.wikipedia.org/wiki/Fork_\(software_development\)) are not allowed in the Community directory unless they meet one of the following criteria:
+
+- The fork has received explicit written approval from the original author in a publicly verifiable way.
+- The fork author can show proof that the original author is unreachable and has not updated the project for at least 6 months.
+
+In both cases, the original author must be credited as a contributor to the new project.
+
+If your project diverges from existing options, it should not be a fork. Start fresh with a new repository and your own code. It should inherit no code from the original repo.
 
 ## Reporting violations
 
