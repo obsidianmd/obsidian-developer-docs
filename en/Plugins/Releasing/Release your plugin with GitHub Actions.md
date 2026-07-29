@@ -31,7 +31,7 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
              npm run build
 
          - name: Generate artifact attestation
-           uses: actions/attest-build-provenance@v3
+           uses: actions/attest@v4
            with:
              subject-path: |
                main.js
