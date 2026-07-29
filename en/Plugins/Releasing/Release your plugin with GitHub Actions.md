@@ -15,6 +15,8 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
        runs-on: ubuntu-latest
        permissions:
          contents: write
+         id-token: write
+         attestations: write
        steps:
          - uses: actions/checkout@v3
 
@@ -28,6 +30,14 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
              npm install
              npm run build
 
+         - name: Generate artifact attestation
+           uses: actions/attest-build-provenance@v3
+           with:
+             subject-path: |
+               main.js
+               manifest.json
+               styles.css
+
          - name: Create release
            env:
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -39,6 +49,8 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
                --draft \
                main.js manifest.json styles.css
    ```
+
+   The **Generate artifact attestation** step creates a signed [build provenance attestation](https://docs.github.com/en/actions/security-guides/using-artifact-attestations-to-establish-provenance-for-builds) for your release assets, which is recommended when you submit a plugin to the community directory. If your plugin doesn't ship a `styles.css`, remove that line from both the attestation and the release step.
 
 2. In your terminal, commit the workflow.
 
