@@ -50,7 +50,7 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
                main.js manifest.json styles.css
    ```
 
-   The **Generate artifact attestation** step creates a signed [build provenance attestation](https://docs.github.com/en/actions/security-guides/using-artifact-attestations-to-establish-provenance-for-builds) for your release assets, which is recommended when you submit a plugin to the community directory. If your plugin doesn't ship a `styles.css`, remove that line from both the attestation and the release step.
+   The **Generate artifact attestation** step creates a signed [build provenance attestation](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations) for your release assets, which is recommended when you submit a plugin to the community directory. If your plugin doesn't ship a `styles.css`, remove that line from both the attestation and the release step.
 
 2. In your terminal, commit the workflow.
 
