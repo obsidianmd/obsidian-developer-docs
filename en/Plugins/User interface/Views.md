@@ -60,7 +60,7 @@ export default class ExamplePlugin extends Plugin {
     });
   }
 
-  async onunload() {
+  onunload() {
   }
 
   async activateView() {
