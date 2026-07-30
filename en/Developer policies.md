@@ -15,7 +15,7 @@ Plugins and themes must not:
 - Insert dynamic ads that are loaded over the internet.
 - Insert static ads outside a plugin’s own interface.
 - Include client-side telemetry.
-- Include a mechanism that installs/updates the plugin or its dependencies. All installs/updates should be explicitly done by the end-users using standard Obsidian mechanisms.
+- Install or update themselves or their dependencies.
 - Themes may not load assets from the network. To bundle an asset, see [[Embed fonts and images in your theme|this guide]].
 
 ### Disclosures
