@@ -8,6 +8,8 @@ This page lists CSS variables for [Callouts](https://help.obsidian.md/Editing+an
 
 | Variable                       | Description                                                 |
 | ------------------------------ | ----------------------------------------------------------- |
+| `--callout-color`              | Callout background color. Accepts any valid CSS color, for example a hex code (`#000000`) or an `rgb()` value |
+| `--callout-icon`               | Callout icon. Accepts an icon ID from [lucide.dev](https://lucide.dev), or an SVG element |
 | `--callout-border-width`       | Callout border width                                        |
 | `--callout-border-opacity`     | Callout border opacity                                      |
 | `--callout-padding`            | Callout padding                                             |
