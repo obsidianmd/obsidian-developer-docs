@@ -104,13 +104,13 @@ The user can run commands using a keyboard shortcut, or _hot key_. While they ca
 > [!warning]
 > Avoid setting default hot keys for plugins that you intend for others to use. Hot keys are highly likely to conflict with those defined by other plugins or by the user themselves.
 
-In this example, the user can run the command by pressing and holding Ctrl (or Cmd on Mac) and Shift together, and then pressing the letter `a` on their keyboard.
+In this example, the user can run the command by pressing and holding Ctrl (or Cmd on Mac) and Shift together, and then pressing the letter `A` on their keyboard.
 
 ```ts
 this.addCommand({
   id: 'example-command',
   name: 'Example command',
-  hotkeys: [{ modifiers: ['Mod', 'Shift'], key: 'a' }],
+  hotkeys: [{ modifiers: ['Mod', 'Shift'], key: 'A' }],
   callback: () => {
     console.log('Hey, you!');
   },
@@ -119,3 +119,5 @@ this.addCommand({
 
 > [!note]
 > The Mod key is a special modifier key that becomes Ctrl on Windows and Linux, and Cmd on macOS.
+
+For letter keys, use uppercase values for `key`, such as `A` instead of `a`. Lowercase letter values can cause hot keys to fail when the user uses a non-Latin keyboard layout.
