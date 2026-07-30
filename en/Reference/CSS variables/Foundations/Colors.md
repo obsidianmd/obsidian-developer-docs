@@ -10,17 +10,17 @@ The base colors is a neutral color palette ranging from light to dark. These val
 
 | Variable           | Default value (light mode) | Default value (dark mode) |
 | ------------------ | -------------------------- | ------------------------- |
-| `--color-base-00`  | `#ffffff`                  | `#1e1e1e`                 |
+| `--color-base-00`  | `#ffffff`                  | `#1c1c1c`                 |
 | `--color-base-05`  | `#fcfcfc`                  | `#212121`                 |
-| `--color-base-10`  | `#fafafa`                  | `#242424`                 |
-| `--color-base-20`  | `#f6f6f6`                  | `#262626`                 |
-| `--color-base-25`  | `#e3e3e3`                  | `#2a2a2a`                 |
-| `--color-base-30`  | `#e0e0e0`                  | `#363636`                 |
-| `--color-base-35`  | `#d4d4d4`                  | `#3f3f3f`                 |
+| `--color-base-10`  | `#fafafa`                  | `#232323`                 |
+| `--color-base-20`  | `#f6f6f6`                  | `#282828`                 |
+| `--color-base-25`  | `#efefef`                  | `#2e2e2e`                 |
+| `--color-base-30`  | `#e4e4e4`                  | `#333333`                 |
+| `--color-base-35`  | `#dadada`                  | `#3f3f3f`                 |
 | `--color-base-40`  | `#bdbdbd`                  | `#555555`                 |
 | `--color-base-50`  | `#ababab`                  | `#666666`                 |
 | `--color-base-60`  | `#707070`                  | `#999999`                 |
-| `--color-base-70`  | `#5a5a5a`                  | `#bababa`                 |
+| `--color-base-70`  | `#5c5c5c`                  | `#b3b3b3`                 |
 | `--color-base-100` | `#222222`                  | `#dadada`                 |
 
 ## Accent color
@@ -29,9 +29,17 @@ The accent color is used to draw attention to interactive elements, such as link
 
 | Variable     | Default value | Description       |
 | ------------ | ------------- | ----------------- |
-| `--accent-h` | `254`           | Accent hue        |
-| `--accent-s` | `80%`           | Accent saturation |
-| `--accent-l` | `68%`           | Accent lightness  |
+| `--accent-h` | `258`           | Accent hue        |
+| `--accent-s` | `88%`           | Accent saturation |
+| `--accent-l` | `66%`           | Accent lightness  |
+
+`--accent-h`, `--accent-s`, and `--accent-l` combine into the following accent color variables:
+
+| Variable           | Description                                             |
+| ------------------ | -------------------------------------------------------- |
+| `--color-accent`   | The accent color                                        |
+| `--color-accent-1` | A shifted accent shade, used for hover and active states |
+| `--color-accent-2` | A further-shifted accent shade, used for hover and active states |
 
 > [!tip]
 > You can use [CSS calculations](https://developer.mozilla.org/en-US/docs/Web/CSS/calc) to create a variety of shades based on the accent color.
@@ -68,14 +76,26 @@ background-color: rgba(var(--color-red-rgb), 0.2);
 | `--color-purple-rgb` | `120, 82, 238`             | `168, 130, 255`           |
 | `--color-pink-rgb`   | `213, 57, 132`             | `250, 153, 205`           |
 
+> [!info] Deprecated RGB and HSL variables
+> As of Obsidian 1.13, colors use the OKLCH color space for mixing. The following variables are deprecated and kept only for theme compatibility:
+>
+> - `--color-red-rgb`, `--color-orange-rgb`, `--color-yellow-rgb`, `--color-green-rgb`, `--color-cyan-rgb`, `--color-blue-rgb`, `--color-purple-rgb`, `--color-pink-rgb`
+> - `--color-accent-hsl`
+> - `--mono-rgb-0`, `--mono-rgb-100`
+> - `--interactive-accent-hsl`
+> - `--background-modifier-error-rgb`, `--background-modifier-success-rgb`
+> - `--text-highlight-bg-rgb`
+>
+> Instead of building an `rgba()` or `hsla()` value from one of these, use [`color-mix()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix) with the corresponding color variable. For example, instead of `rgba(var(--color-red-rgb), 0.2)`, use `color-mix(in oklch, var(--color-red) 20%, transparent)`.
+
 ## Black and white
 
 Black and white colors let you create masks with opacity.
 
 | Variable         | Default value (light mode) | Default value (dark mode) |
 | ---------------- | -------------------------- | ------------------------- |
-| `--mono-rgb-0`   | `255, 255, 255`            | `0, 0, 0`                 |
-| `--mono-rgb-100` | `0, 0, 0`                  | `255, 255, 255`           |
+| `--mono-0`       | `white`                    | `black`                   |
+| `--mono-100`     | `black`                    | `white`                   |
 
 > [!warning]
 > Avoid changing the value of black and white variables.
