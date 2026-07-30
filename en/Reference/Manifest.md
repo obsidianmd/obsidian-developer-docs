@@ -21,11 +21,11 @@ The following properties are available for both plugins and themes.
 
 The following properties are only available to plugins.
 
-| Property        | Type      | Required | Description                                                                                                                           |
-| --------------- | --------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `description`   | `string`  | **Yes**  | A description of your plugin.                                                                                                         |
-| `id`            | `string`  | **Yes**  | The ID of your plugin. The ID must contain only lowercase letters and hyphens, can't end with `plugin`, and can't contain `obsidian`. |
-| `isDesktopOnly` | `boolean` | **Yes**  | Whether your plugin uses NodeJS or Electron APIs.                                                                                     |
+| Property        | Type      | Required | Description                                                                                                                            |
+| --------------- | --------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------|
+| `description`   | `string`  | **Yes**  | A description of your plugin.                                                                                                          |
+| `id`            | `string`  | **Yes**  | The ID of your plugin. The ID must contain only lowercase letters and hyphens, can't end with `plugin`, and can't contain `obsidian`.  |
+| `isDesktopOnly` | `boolean` | **Yes**  | Whether the plugin can only be used on the desktop app, for example because it uses NodeJS or Electron APIs.                          |
 
 > [!note]
 > For local development, the `id` should match the plugin's folder name; otherwise some methods, such as `onExternalSettingsChange`, won't be called.
