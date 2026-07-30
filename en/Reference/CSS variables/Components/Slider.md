@@ -15,4 +15,4 @@ This page lists CSS variables for slider controls.
 | `--slider-thumb-y`            | Slider thumb Y position         |
 | `--slider-thumb-radius`       | Slider thumb radius             |
 | `--slider-track-background`   | Slider track background color   |
-| `--slider-track-height`       | Slider track height             |
+| `--slider-track-height`       | Slider track height and border radius |
