@@ -28,7 +28,7 @@ Select **Edit listing** to update the entry's public details:
 - **Short description**: a brief, plain-English summary, up to 200 characters.
 - **Long description**: a more detailed, plain-English description, up to 1000 characters.
 - **Categories**: up to 3 categories that describe the entry. Drag to reorder them; the first category is used as the **Primary** category. Select the trash icon to remove a category.
-- **Payments**: whether the entry is **Free**, **Paid**, or **Optional payment**.
+- **Payments**: whether the entry is **Free**, **Paid**, or **Optional payment**. If you're unsure which applies, refer to [[Frequently asked questions#What's the difference between Free, Optional payment, and Paid?|the FAQ]].
 - **Screenshots**: up to 5 screenshots. Recommended size 1200 by 800px (3:2 ratio). JPEG, PNG, or WebP, up to 5 MB each.
 - **Mobile screenshots**: up to 5 screenshots for mobile. Recommended size 900 by 1600px (9:16 ratio). JPEG, PNG, or WebP, up to 5 MB each.
 
@@ -47,7 +47,7 @@ Plugins and themes go through the same review sections, but the specific checks 
 - **Source code**: issues found in the plugin or theme's source code, such as disallowed packages or vulnerable dependencies.
 - **Build verification**: whether the published release assets were reproduced byte-for-byte from the repository's source, so users can trust they're running the code visible in the repository.
 
-Each result has a severity: **Warning**, **Recommendation**, or **Pass**.
+Each result has a severity: **Warning**, **Recommendation**, or **Pass**. If you see a warning that your repository doesn't have a recognized license despite having one, refer to [[Frequently asked questions#Why do I get a "The repository does not have a recognized license" warning, despite having a valid license?|the FAQ]].
 
 ## Current release
 
@@ -67,4 +67,13 @@ Under **Attribution**, manage public credit for the listing. Attribution doesn't
 
 ## Transfer ownership
 
-Under **Ownership**, select **Transfer ownership** to transfer ownership of the entry to someone else.
+Under **Ownership**, choose who to transfer the entry to:
+
+- An organization you belong to, if listed.
+- **Someone else (by handle)**: enter their community directory handle, not their GitHub handle.
+
+The new owner is credited as an author automatically, since edit rights move with ownership. Optionally, select **Remove the previous owner's author credit** to exclude yourself from the entry's attribution instead.
+
+Select **Transfer**.
+
+This transfers ownership within the community directory only. If you've moved the entry's repository to a different GitHub user, refer to [[Frequently asked questions#How do I transfer my plugin to a different GitHub user?|the FAQ]] instead.

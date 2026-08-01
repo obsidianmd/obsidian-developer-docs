@@ -16,3 +16,4 @@ The [Obsidian Community directory](https://community.obsidian.md) lists communit
 	- [[Submission requirements for plugins]]: plugin-specific requirements for publishing.
 - [[Submit your theme]]: prepare a release and submit your theme for review.
 - [[Organizations]]: share ownership of your plugin and theme entries with a team.
+- [[Frequently asked questions]]: common questions about submitting, owning, and reviewing entries.
