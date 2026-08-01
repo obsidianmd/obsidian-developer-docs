@@ -18,25 +18,30 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
          id-token: write
          attestations: write
        steps:
-         - uses: actions/checkout@v3
+         - uses: actions/checkout@v6
 
          - name: Use Node.js
-           uses: actions/setup-node@v3
+           uses: actions/setup-node@v6
            with:
-             node-version: "18.x"
+             node-version: 24
+             cache: "npm"
 
          - name: Build plugin
            run: |
-             npm install
+             npm ci
              npm run build
 
-         - name: Generate artifact attestation
+         - name: Check for optional styles
+           id: styles
+           run: |
+             [ -f styles.css ] && echo "exists=true" >> "$GITHUB_OUTPUT" || echo "exists=false" >> "$GITHUB_OUTPUT"
+
+         - name: Attest build provenance
            uses: actions/attest@v4
            with:
              subject-path: |
                main.js
-               manifest.json
-               styles.css
+               ${{ steps.styles.outputs.exists == 'true' && 'styles.css' || '' }}
 
          - name: Create release
            env:
@@ -47,10 +52,12 @@ Manually releasing your plugin can be time-consuming and error-prone. In this gu
              gh release create "$tag" \
                --title="$tag" \
                --draft \
-               main.js manifest.json styles.css
+               main.js manifest.json ${{ steps.styles.outputs.exists == 'true' && 'styles.css' || '' }}
    ```
 
-   The **Generate artifact attestation** step creates a signed [build provenance attestation](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations) for your release assets, which is recommended when you submit a plugin to the community directory. If your plugin doesn't ship a `styles.css`, remove that line from both the attestation and the release step.
+   The **Check for optional styles** step detects whether your plugin ships a `styles.css` file, so later steps only reference it when it's present. If your plugin never ships a `styles.css`, you can remove this step and the conditional references to it.
+
+   The **Attest build provenance** step creates a signed [build provenance attestation](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations) for your release assets, which is recommended when you submit a plugin to the community directory.
 
 2. In your terminal, commit the workflow.
 
@@ -84,3 +91,4 @@ You've successfully set up your plugin to automatically create a GitHub release 
 
 - If this is the first release for this plugin, you're now ready to [[Submit your plugin]].
 - If this is an update to an already published plugin, your users can now update to the latest version.
+- To catch build and lint errors before they reach a release, set up [[Check your plugin with GitHub Actions]].
