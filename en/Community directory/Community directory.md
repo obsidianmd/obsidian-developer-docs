@@ -10,8 +10,9 @@ The [Obsidian Community directory](https://community.obsidian.md) lists communit
 
 - [[Getting started]]: sign in, set up your community profile, and claim your plugins and themes.
 - [[Manage your plugin or theme]]: review scanner results, manage releases, edit attribution, and transfer ownership.
+	- [[Public plugin or theme listing]]: what visitors see on an entry's public listing page.
 - [[Developer policies]]: policies all plugins and themes must follow to stay listed in the directory.
-- [[Submission requirements for plugins]]: plugin-specific requirements for publishing.
 - [[Submit your plugin]]: prepare a release and submit your plugin for review.
+	- [[Submission requirements for plugins]]: plugin-specific requirements for publishing.
 - [[Submit your theme]]: prepare a release and submit your theme for review.
 - [[Organizations]]: share ownership of your plugin and theme entries with a team.

@@ -37,6 +37,16 @@ The organization now appears in the list under **Your organizations**, showing i
 
 Under **Funding links**, select **Add funding link** to add links where people can support the organization's work. These links are shown on all of the organization's plugin and theme pages.
 
+## Public organization profile
+
+Select **View public profile** from the organization's **Manage** page to see how it appears to visitors.
+
+The public profile shows:
+
+- The organization's icon, **Name**, and handle.
+- **Elsewhere** links to the organization's **Website** and **Social accounts**, if set.
+- **Plugins** and **Themes** tabs, each showing a count, listing the entries owned by the organization. Each entry shows its icon, name, description, and [[Manage your plugin or theme#Attribution|attributed contributors]].
+
 ## Manage members
 
 Under **Manage** for an organization, the **Members** section lists everyone in the organization and their role.

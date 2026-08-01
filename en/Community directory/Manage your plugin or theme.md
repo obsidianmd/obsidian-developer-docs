@@ -12,7 +12,7 @@ From the **Plugins** or **Themes** page in the sidebar, under **Your entries**, 
 
 At the top of the entry page, you can:
 
-- **View listing**: open the entry's public page in the community directory.
+- **View listing**: open the [[Public plugin or theme listing|entry's public page]] in the community directory.
 - **Edit listing**: edit the entry's public description and details, covered below.
 - Select **...** for more actions:
   - **Check for new releases**: manually check GitHub for a new release.

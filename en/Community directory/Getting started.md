@@ -55,6 +55,17 @@ Select **Save** to apply your changes.
 
 Under **Funding links**, select **Add funding link** to add links where people can support your work. These links are shown on all of your plugin and theme pages.
 
+### Public profile
+
+Go to `community.obsidian.md/users/<handle>` to see how your profile appears to visitors.
+
+Your public profile shows:
+
+- Your icon, **Name**, and handle.
+- Your **Bio**, if set.
+- **Elsewhere** links to your **Website** and **Social accounts**, if set.
+- **Plugins** and **Themes** tabs, each showing a count, listing the entries you own. Each entry shows its icon, name, and description.
+
 ## Claim your plugins and themes
 
 After you authorize the [[#Connect your GitHub account|GitHub connection]], you're prompted to claim any plugins or themes hosted in a repository you own, or in a repository that belongs to a GitHub organization you're a public member of.
