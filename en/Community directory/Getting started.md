@@ -64,7 +64,7 @@ After you authorize the [[#Connect your GitHub account|GitHub connection]], you'
 3. Use the **Claim as** dropdown to choose whether to claim the selected entries as **Myself**, or as an organization you belong to.
 4. Select **Claim**. The button label includes the number of selected entries, for example **Claim 6 selected**.
 
-Claimed entries are added to your personal profile, or to the organization you claimed them as, and you can then manage them from the **Plugins** or **Themes** page in the sidebar.
+Claimed entries are added to your personal profile, or to the organization you claimed them as, and you can then [[Manage your plugin or theme|manage them]] from the **Plugins** or **Themes** page in the sidebar.
 
 ## Add a plugin or theme
 
@@ -90,4 +90,5 @@ Now that you're signed in and set up, you're ready to:
 
 - [[Submit your plugin]]
 - [[Submit your theme]]
+- [[Manage your plugin or theme]] once it's listed.
 - Create or join an [[Organizations|organization]] to share ownership of your entries with a team.
