@@ -54,7 +54,7 @@ We encourage developers to collaborate on fewer high-quality projects than many 
 [Forks](https://en.wikipedia.org/wiki/Fork_\(software_development\)) are not allowed in the Community directory unless they meet one of the following criteria:
 
 - The fork has received explicit written approval from the original author in a publicly verifiable way.
-- The fork author can show proof that the original author is unreachable and has not updated the project for at least 6 months.
+- The fork author can show proof that the original author is unreachable and has not updated the project for at least 6 months. After those 6 months have passed, contact the original author and allow them 30 days to publicly acknowledge your request before proceeding.
 
 In both cases, the original author must be credited as a contributor to the new project.
 
