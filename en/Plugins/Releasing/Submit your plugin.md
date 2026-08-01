@@ -46,7 +46,9 @@ In this step, you'll submit your plugin through the Obsidian Community directory
 1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
 2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
 3. In the sidebar, select **Plugins**, and then select **New plugin**.
-4. Enter the URL of your GitHub repository, for example `https://github.com/your-username/your-repo-name`.
+4. Fill out the submission form:
+   - **GitHub repository URL**: the URL of your repository, for example `https://github.com/your-username/your-repo-name`.
+   - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner.
 5. Review and agree to the [[Developer policies]], and confirm that you'll continue to support your plugin.
 6. Select **Submit**.
 
