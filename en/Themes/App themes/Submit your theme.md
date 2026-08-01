@@ -44,8 +44,12 @@ In this step, you'll submit your theme through the Obsidian Community directory.
 1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
 2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
 3. In the sidebar, select **Themes**, and then select **New theme**.
-4. Enter the URL of your GitHub repository, for example `https://github.com/your-username/your-repo-name`.
-5. Review and agree to the [[Developer policies]], and confirm that you'll continue to support your theme.
+4. Fill out the submission form:
+   - **GitHub repository URL**: the URL of your repository, for example `https://github.com/your-username/your-repo-name`.
+   - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner.
+   - **Screenshot path**: the path to your screenshot, relative to the repository root, for example `screenshot.png`.
+   - **Supported modes**: select Dark and/or Light depending on which your theme supports.
+5. Review and agree to the [[Developer policies]], and confirm that you'll continue to support your theme, or remove or transfer it if you can no longer provide support.
 6. Select **Submit**.
 
 The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting.

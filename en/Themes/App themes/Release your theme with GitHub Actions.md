@@ -15,7 +15,7 @@ Manually releasing your theme can be time-consuming and error-prone. In this gui
        runs-on: ubuntu-latest
 
        steps:
-         - uses: actions/checkout@v3
+         - uses: actions/checkout@v7
 
          - name: Create release
            env:
