@@ -1,3 +1,10 @@
+---
+aliases:
+  - Publish your theme
+description: Prepare a release and submit your theme to the Obsidian Community directory for review and publishing.
+permalink: themes/app-themes/submit-theme
+publish: true
+---
 If you want to share your theme with the Obsidian community, the best way is to submit it to the Obsidian Community directory at [community.obsidian.md](https://community.obsidian.md). Once we've reviewed and published your theme, users can install it directly from within Obsidian. It'll also be featured in the [theme directory](https://community.obsidian.md/themes) on the Obsidian website.
 
 You only need to submit the initial version of your theme. After your theme has been published, users can automatically download new releases from GitHub directly from within Obsidian.
@@ -46,7 +53,7 @@ In this step, you'll submit your theme through the Obsidian Community directory.
 3. In the sidebar, select **Themes**, and then select **New theme**.
 4. Fill out the submission form:
    - **GitHub repository URL**: the URL of your repository, for example `https://github.com/your-username/your-repo-name`.
-   - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner.
+   - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner. Choose yourself, or an [[Organizations|organization]] you belong to.
    - **Screenshot path**: the path to your screenshot, relative to the repository root, for example `screenshots/screenshot.png`.
    - **Supported modes**: select Dark and/or Light depending on which your theme supports.
 5. Review and agree to the [[Developer policies]], and confirm that you'll continue to support your theme, or remove or transfer it if you can no longer provide support.

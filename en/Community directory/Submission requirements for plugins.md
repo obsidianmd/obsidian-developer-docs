@@ -1,3 +1,11 @@
+---
+aliases:
+  - Plugins/Releasing/Submission requirements for plugins
+description: Plugin-specific requirements, beyond the Developer policies, that all plugins must follow to be published.
+permalink: community-directory/submission-requirements-for-plugins
+publish: true
+---
+
 This page lists extends the [[Developer policies]] with plugin-specific requirements that all plugins must follow to be published.
 
 ## Only use `fundingUrl` to link to services for financial support

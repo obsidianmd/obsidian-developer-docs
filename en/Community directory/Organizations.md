@@ -1,3 +1,12 @@
+---
+aliases:
+  - Organizations and administrators
+  - organizations
+description: Create and manage organizations to share ownership of plugin and theme entries in the Obsidian Community directory.
+permalink: community-directory/organizations
+publish: true
+---
+
 Organizations let a team share ownership of plugin and theme entries in the Obsidian Community directory. Members can edit the team's entries, and admins can also edit the organization's public profile and manage its members.
 
 ## Create an organization

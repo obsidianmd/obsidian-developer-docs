@@ -1,3 +1,11 @@
+---
+aliases:
+  - Developer policies
+description: Policies that all community plugins and themes must follow to stay listed in the Obsidian Community directory.
+permalink: community-directory/developer-policies
+publish: true
+---
+
 Our goal for community plugins and themes is to make it easy for users to safely modify and expand the capabilities of Obsidian, while prioritizing private and offline usage of the app.
 
 All community plugins and themes added to the Obsidian directory must respect the following policies. Plugins and themes that don't follow these policies will be removed from the directory.
