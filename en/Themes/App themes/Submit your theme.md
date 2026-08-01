@@ -47,7 +47,7 @@ In this step, you'll submit your theme through the Obsidian Community directory.
 4. Fill out the submission form:
    - **GitHub repository URL**: the URL of your repository, for example `https://github.com/your-username/your-repo-name`.
    - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner.
-   - **Screenshot path**: the path to your screenshot, relative to the repository root, for example `screenshot.png`.
+   - **Screenshot path**: the path to your screenshot, relative to the repository root, for example `screenshots/screenshot.png`.
    - **Supported modes**: select Dark and/or Light depending on which your theme supports.
 5. Review and agree to the [[Developer policies]], and confirm that you'll continue to support your theme, or remove or transfer it if you can no longer provide support.
 6. Select **Submit**.
