@@ -99,7 +99,6 @@ For the full walkthrough, including preparing a release beforehand, refer to [[S
 
 Now that you're signed in and set up, you're ready to:
 
-- [[Submit your plugin]]
-- [[Submit your theme]]
+- Prepare a full release, covered in the walkthroughs linked above.
 - [[Manage your plugin or theme]] once it's listed.
 - Create or join an [[Organizations|organization]] to share ownership of your entries with a team.
