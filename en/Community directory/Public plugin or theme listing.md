@@ -6,7 +6,7 @@ permalink: community-directory/listing
 publish: true
 ---
 
-Each plugin and theme has a public listing page in the community directory, for example `community.obsidian.md/plugins/<id>` or `community.obsidian.md/themes/<id>`. Select **View listing** from [[Manage your plugin or theme|the entry's management page]] to open it.
+Each plugin and theme has a public listing page in the community directory, for example `https://community.obsidian.md/plugins/<id>` or `https://community.obsidian.md/themes/<id>`. Select **View listing** from [[Manage your plugin or theme|the entry's management page]] to open it.
 
 ## Header
 
