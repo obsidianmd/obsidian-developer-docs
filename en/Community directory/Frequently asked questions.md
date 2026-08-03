@@ -16,7 +16,7 @@ Yes. The directory reviews your plugin or theme from its GitHub repository, and 
 
 ### Do I need to resubmit my plugin or theme for every update?
 
-No. You only need to submit the initial version through [[Getting started#Add a plugin or theme|the submission form]]. After that, publishing a new GitHub release with an incremented version is enough for users to receive the update, for the full walkthrough see [[Submit your plugin]] or [[Submit your theme]].
+No. You only need to submit the initial version through [[Getting started#Add a plugin or theme|the submission form]]. After that, making a new release is enough for users to receive the update, for the full walkthrough see [[Submit your plugin]] or [[Submit your theme]].
 
 ### What should I do when I get an "invalid identifier" error?
 
