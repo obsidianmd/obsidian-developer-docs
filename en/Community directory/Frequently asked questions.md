@@ -12,11 +12,11 @@ This page lists some common questions about the [[Community directory]].
 
 ### Do I need a GitHub account to submit a plugin or theme?
 
-Yes. The directory reviews your plugin or theme from its GitHub repository, and you need to [[Getting started#Connect your GitHub account|connect your GitHub account]] before you can submit or claim an entry.
+Yes. The directory reviews your plugin or theme from its GitHub repository, and you need to [[Set up and claim#Connect your GitHub account|connect your GitHub account]] before you can submit or claim an entry.
 
 ### Do I need to resubmit my plugin or theme for every update?
 
-No. You only need to submit the initial version through [[Getting started#Add a plugin or theme|the submission form]]. After that, making a new release is enough for users to receive the update, for the full walkthrough see [[Submit your plugin]] or [[Submit your theme]].
+No. You only need to submit the initial version through [[Set up and claim#Add a plugin or theme|the submission form]]. After that, making a new release is enough for users to receive the update, for the full walkthrough see [[Submit your plugin]] or [[Submit your theme]].
 
 ### What should I do when I get an "invalid identifier" error?
 
@@ -26,7 +26,7 @@ Be aware that changing the identifier resets all downloads for your plugin or th
 
 ### What's the difference between the Owner and a contributor?
 
-The **Owner** is whoever manages the entry, submits releases, and can transfer or delete it. **Attribution** just gives someone public credit on the listing. It doesn't grant edit permissions and never changes who owns the entry. For more information, refer to [[Manage your plugin or theme#Attribution|Attribution]] and [[Manage your plugin or theme#Transfer ownership|Transfer ownership]].
+The **Owner** is whoever manages the entry, submits releases, and can transfer or delete it. **Attribution** just gives someone public credit on the listing. It doesn't grant edit permissions and never changes who owns the entry. For more information, refer to [[Manage your plugin or theme#Credit a contributor|Attribution]] and [[Manage your plugin or theme#Transfer ownership|Transfer ownership]].
 
 ### How do I transfer my plugin to a different GitHub user?
 
@@ -38,11 +38,11 @@ Yes. When you submit or edit an entry, you can set its **Owner** to yourself or 
 
 ### What happens if I archive my plugin or theme?
 
-Archiving removes the entry from the directory and prevents new installations. For more information, refer to [[Manage your plugin or theme#Entry actions|Entry actions]].
+Archiving removes the entry from the directory and prevents new installations. For more information, refer to [[Manage your plugin or theme#Archive your entry|Archive your entry]].
 
 ### Can I keep my plugin's source code private?
 
-Yes. Keep your built release assets in a public repository as usual, and your source code in a separate private repository. For more information, refer to [[Getting started#Private source repository|Private source repository]].
+Yes. Keep your built release assets in a public repository as usual, and your source code in a separate private repository. For more information, refer to [[Manage your plugin or theme#Add a private source repository|Add a private source repository]].
 
 ## Payments
 
@@ -57,13 +57,13 @@ Some common misconceptions:
 - Offering a free alternative to a paid service doesn't make your plugin free. Some people may not be able to use the alternative, or it may not offer similar features. Mark it **Optional payment**.
 - A limited free trial doesn't make your plugin free. If you can't use the plugin without the trial, it's **Paid**.
 
-For more information, refer to [[Manage your plugin or theme#Edit listing|Edit listing]].
+For more information, refer to [[Manage your plugin or theme#Update your listing|Update your listing]].
 
 ## Reviews and scanning
 
 ### What does the automated review check?
 
-Reviews are grouped into sections: **Manifest**, **Releases**, **Source code**, and **Build verification**. Each result is a **Warning**, **Recommendation**, or **Pass**. For more information, refer to [[Manage your plugin or theme#Reviews|Reviews]].
+Reviews are grouped into sections: **Manifest**, **Releases**, **Source code**, and **Build verification**. Each result is an **Error**, **Warning**, **Recommendation**, or **Pass**. For more information, refer to [[Manage your plugin or theme#Fix a failed review|Fix a failed review]].
 
 ### Which build script is used when scanning?
 
@@ -95,19 +95,15 @@ They go through the same review sections, but the specific checks and warnings w
 
 ### Why is my new release not detected by the automated review?
 
-The directory checks for new releases periodically. To request a check manually, select **...** on the entry's management page, then select **Check for new releases**. For more information, refer to [[Manage your plugin or theme#Entry actions|Entry actions]].
+The directory checks for new releases periodically. To request a check manually, select **...** on the entry's management page, then select **Check for new releases**. For more information, refer to [[Manage your plugin or theme#Entry overview|Entry overview]].
 
 ### Can I test a review before publishing a release?
 
-Yes. Select **Review branch** from the entry's management page to preview a scan against any branch, tag, or commit SHA, without requiring a release. For more information, refer to [[Manage your plugin or theme#Reviews|Reviews]].
+Yes. Select **Review branch** from the entry's management page to preview a scan against any branch, tag, or commit SHA, without requiring a release. For more information, refer to [[Manage your plugin or theme#Fix a failed review|Fix a failed review]].
 
 ### How can I run the review checks locally?
 
 Install the official [ESLint plugin](https://github.com/obsidianmd/eslint-plugin). Its README covers how to install and set it up.
-
-### What's the difference between the Health and Review scores on a listing?
-
-**Health** reflects the entry's ongoing hygiene and maintenance, such as recent commits and issue responsiveness. **Review** reflects the result of the latest automated scan of a release. For more information, refer to [[Public plugin or theme listing#Scorecard|Scorecard]].
 
 ## Organizations
 

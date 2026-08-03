@@ -20,7 +20,7 @@ To complete this guide, you'll need:
 
 Before you submit your theme, make sure you have the following files in the root folder of your repository:
 
-- A `README.md` that describes the theme. Its content is shown on your entry's [[Public plugin or theme listing#Overview|listing page]].
+- A `README.md` that describes the theme. An excerpt is shown on your entry's public listing page, with relative links and images (for example `./images/screenshot.png`) automatically rewritten to resolve against your repository.
 - A `LICENSE` that determines how others are allowed to use the theme and its source code. If you need help to pick a license for your theme, refer to [Choose a License](https://choosealicense.com/).
 - A screenshot of your theme to be displayed in the community theme store. Recommended image dimensions: 512 x 288 pixels.
 - A `manifest.json` that describes your theme. For more information, refer to [[Manifest]].
@@ -50,7 +50,7 @@ In this step, you'll submit your theme through the Obsidian Community directory.
 
 1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
 2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
-3. [[Getting started#Add a plugin or theme|Add your theme]] to the directory.
+3. [[Set up and claim#Add a plugin or theme|Add your theme]] to the directory.
 
 The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting.
 
@@ -60,7 +60,7 @@ When a user installs your theme, Obsidian downloads `manifest.json` and `theme.c
 
 After you submit, your theme is reviewed automatically and the directory shows guidance for anything that needs to be corrected. To address feedback, update your repository and publish a new GitHub release with an incremented version.
 
-You can edit the description and select **Publish** at any time, but your theme won't be installable from within Obsidian until the automated review passes.
+You can edit the description and select **Publish** at any time, but your theme won't be installable from within Obsidian until any errors from the automated review are resolved.
 
 ## Next steps
 

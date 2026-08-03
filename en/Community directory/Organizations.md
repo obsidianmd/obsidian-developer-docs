@@ -45,7 +45,7 @@ The public profile shows:
 
 - The organization's icon, **Name**, and handle.
 - **Elsewhere** links to the organization's **Website** and **Social accounts**, if set.
-- **Plugins** and **Themes** tabs, each showing a count, listing the entries owned by the organization. Each entry shows its icon, name, description, and [[Manage your plugin or theme#Attribution|attributed contributors]].
+- **Plugins** and **Themes** tabs, each showing a count, listing the entries owned by the organization. Each entry shows its icon, name, description, and [[Manage your plugin or theme#Credit a contributor|attributed contributors]].
 
 ## Manage members
 
@@ -63,6 +63,8 @@ Under **Manage** for an organization, the **Members** section lists everyone in 
 The invitation appears under **Pending invitations** until the person accepts it.
 
 ## Delete an organization
+
+You can't delete an organization that still owns any plugin or theme entries. [[Manage your plugin or theme#Transfer ownership|Transfer]] or archive them first.
 
 > [!warning] Deleting an organization is permanent
 > This removes the organization, its members, any pending invitations, and its public profile.

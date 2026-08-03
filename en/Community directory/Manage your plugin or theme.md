@@ -6,76 +6,56 @@ permalink: community-directory/manage-entry
 publish: true
 ---
 
-From the **Plugins** or **Themes** page in the sidebar, under **Your entries**, select an entry to manage it.
+From the **Plugins** or **Themes** page in the sidebar, under **Your entries**, select an entry to manage it. From here you can also select **View listing** to open the entry's [public listing page](https://help.obsidian.md/community-directory), or open the **...** menu to view the repository on GitHub.
 
-## Entry actions
+## Entry overview
 
-At the top of the entry page, you can:
+The entry page shows the current version and when it was published, along with the total number of releases and downloads. It also shows the linked GitHub repository, including when it was last pushed, its star count, and its open issue count.
 
-- **View listing**: open the [[Public plugin or theme listing|entry's public page]] in the community directory.
-- **Edit listing**: edit the entry's public description and details, covered below.
-- Select **...** for more actions:
-  - **Check for new releases**: manually check GitHub for a new release.
-  - **Request review**: request a new automated review of the entry.
-  - **View on GitHub**: open the entry's repository on GitHub.
-  - **Archive**: removes the entry from the directory and prevents new installations. Select **Yes, archive** to confirm.
+If a release you've published isn't reflected yet, it may be because the directory check has not yet run since your release. To check immediately, open the **...** menu and select **Check for new releases**.
 
-## Edit listing
+If your plugin uses a [[#Add a private source repository|private source repository]], this section also shows a warning if the GitHub App has lost read access to it, until access is restored.
 
-Select **Edit listing** to update the entry's public details:
+## Fix a failed review
 
-- **Icon**: select **Choose icon** to change the entry's icon, and select a background color from the swatches. Select the trash icon to remove the icon.
-- **Short description**: a brief, plain-English summary, up to 200 characters.
-- **Long description**: a more detailed, plain-English description, up to 1000 characters.
-- **Categories**: up to 3 categories that describe the entry. Drag to reorder them; the first category is used as the **Primary** category. Select the trash icon to remove a category.
-- **Payments**: whether the entry is **Free**, **Paid**, or **Optional payment**. If you're unsure which applies, refer to [[Frequently asked questions#What's the difference between Free, Optional payment, and Paid?|the FAQ]].
-- **Screenshots**: up to 5 screenshots. Recommended size 1200 by 800px (3:2 ratio). JPEG, PNG, or WebP, up to 5 MB each.
-- **Mobile screenshots**: up to 5 screenshots for mobile. Recommended size 900 by 1600px (9:16 ratio). JPEG, PNG, or WebP, up to 5 MB each.
+After each release, the directory scans your `manifest.json`, GitHub release assets, and source code, and verifies that the build matches what's committed. Results are grouped into sections covering the manifest, the release assets, the source code, and build verification, and each result is rated as an error, a warning, a recommendation, or a pass.
 
-Select **Save** to apply your changes, or **Cancel** to discard them.
+Address any error-level items in your repository, then publish a new release to trigger a fresh review. To force an immediate recheck instead of waiting for the periodic check, open the **...** menu and select **Request review**.
 
-## Reviews
+> [!tip] Warnings don't block your submission, but we recommend addressing them where you can.
 
-Select **Review branch** to preview a scan without requiring a release. In **Branch, tag, or commit SHA**, optionally enter what to scan, or leave it blank to use the default branch, then select **Run preview scan**.
+To preview a scan before creating a release, select **Review branch**, optionally enter a branch, tag, or commit SHA, or leave it blank to use the default branch, then select **Run preview scan**.
 
-Each review shows its **Date**, **Version**, **Commit**, and status, for example **Completed**.
+If you see a warning that your repository doesn't have a recognized license despite having one, refer to [[Frequently asked questions#Why do I get a "The repository does not have a recognized license" warning, despite having a valid license?|the FAQ]].
 
-Plugins and themes go through the same review sections, but the specific checks and warnings within each section differ depending on the entry type. Results are grouped into sections, each with a copy icon to copy that section's content:
+## Update your listing
 
-- **Manifest**: issues with `manifest.json`, such as missing fields or formatting.
-- **Releases**: issues with the GitHub release assets, such as unsupported extra files.
-- **Source code**: issues found in the plugin or theme's source code, such as disallowed packages or vulnerable dependencies.
-- **Build verification**: whether the published release assets were reproduced byte-for-byte from the repository's source, or from your linked [[Getting started#Private source repository|private source repository]] if you use one, so users can trust they're running the code visible in the repository.
+Select **Edit listing** to update the entry's icon, short and long description, categories, payment type, and screenshots, then select **Save**.
 
-Each result has a severity: **Warning**, **Recommendation**, or **Pass**. If you see a warning that your repository doesn't have a recognized license despite having one, refer to [[Frequently asked questions#Why do I get a "The repository does not have a recognized license" warning, despite having a valid license?|the FAQ]].
+If you're unsure whether your entry counts as free, paid, or optional payment, refer to [[Frequently asked questions#What's the difference between Free, Optional payment, and Paid?|the FAQ]].
 
-## Current release
+Screenshots can include up to 5 desktop images at 1200 by 800 pixels, and up to 5 mobile images at 900 by 1600 pixels, as JPEG, PNG, or WebP files up to 5 MB each.
 
-Shows the entry's **Version**, when it was **Published**, **Total releases**, and **Total downloads**.
+## Add a private source repository
 
-## Repository
+Plugins can keep their source code in a private repository, and only make a repository with built release assets public. Submit your plugin as usual through [[Set up and claim#Add a plugin or theme|the submission form]], with your public repository as the GitHub repository URL. Then install the [Obsidian Community directory GitHub App](https://github.com/apps/obsidian-community-directory) on your private repository to grant it read access. The GitHub App will walk you through the steps to add the private source repository for scanning.
 
-Shows the linked **GitHub** repository, when it was **Last pushed**, its **Stars**, and **Open issues** count.
+The directory verifies that your public release's build output matches what it reads from the private repository, so users can still trust that the release matches the source. If the GitHub App ever loses read access to the private repository, a warning appears under [[#Entry overview|Entry overview]] until access is restored.
 
-If your plugin uses a [[Getting started#Private source repository|private source repository]], this section also shows a warning if the GitHub App has lost read access to it, until access is restored.
+## Credit a contributor
 
-## Attribution
-
-Under **Attribution**, manage public credit for the listing. Attribution doesn't grant edit permissions, and never changes who owns the entry.
-
-- Select **Add contributor** to credit someone else.
-- Use the up and down arrows to reorder contributors.
-- Select the trash icon to remove a contributor.
+Attribution gives someone public credit on the listing without granting edit access, and never changes who owns the entry. Select **Add contributor** to credit someone, use the up and down arrows to reorder contributors, or select the trash icon to remove one.
 
 ## Transfer ownership
 
-Under **Ownership**, choose who to transfer the entry to:
+Choose who to transfer the entry to, either an organization you belong to or someone else by their community directory handle, not their GitHub handle, then select **Transfer**.
 
-- An organization you belong to, if listed.
-- **Someone else (by handle)**: enter their community directory handle, not their GitHub handle.
-
-The new owner is credited as an author automatically, since edit rights move with ownership. Optionally, select **Remove the previous owner's author credit** to exclude yourself from the entry's attribution instead.
-
-Select **Transfer**.
+The new owner is credited as an author automatically, since edit rights move with ownership. If you'd rather not remain credited, select **Remove the previous owner's author credit** to exclude yourself from the entry's attribution instead.
 
 This transfers ownership within the community directory only. If you've moved the entry's repository to a different GitHub user, refer to [[Frequently asked questions#How do I transfer my plugin to a different GitHub user?|the FAQ]] instead.
+
+## Archive your entry
+
+Archiving removes the entry from the directory and prevents new installations. Open the **...** menu, select **Archive**, then confirm by selecting **Yes, archive**.
+
+To unarchive your entry, go to the same menu and select **Unarchive**.

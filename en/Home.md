@@ -25,7 +25,7 @@ Design beautiful themes and snippets for Obsidian using CSS.
 
 Publish and manage your plugins, themes, and organizations in the [[Community directory]].
 
-- [[Getting started]]
+- [[Set up and claim]]
 - [[Developer policies]]
 - [[Organizations]]
 
