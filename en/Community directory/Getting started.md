@@ -79,7 +79,7 @@ Claimed entries are added to your personal profile, or to the organization you c
 
 ## Add a plugin or theme
 
-If you don't have any plugins or themes yet, go to the **Plugins** or **Themes** page in the sidebar and select **New plugin** or **New theme**.
+Go to the **Plugins** or **Themes** page in the sidebar and select **New plugin** or **New theme**.
 
 Fill out the submission form:
 
