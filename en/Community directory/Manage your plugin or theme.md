@@ -45,7 +45,7 @@ Plugins and themes go through the same review sections, but the specific checks 
 - **Manifest**: issues with `manifest.json`, such as missing fields or formatting.
 - **Releases**: issues with the GitHub release assets, such as unsupported extra files.
 - **Source code**: issues found in the plugin or theme's source code, such as disallowed packages or vulnerable dependencies.
-- **Build verification**: whether the published release assets were reproduced byte-for-byte from the repository's source, so users can trust they're running the code visible in the repository.
+- **Build verification**: whether the published release assets were reproduced byte-for-byte from the repository's source, or from your linked [[Getting started#Private source repository|private source repository]] if you use one, so users can trust they're running the code visible in the repository.
 
 Each result has a severity: **Warning**, **Recommendation**, or **Pass**. If you see a warning that your repository doesn't have a recognized license despite having one, refer to [[Frequently asked questions#Why do I get a "The repository does not have a recognized license" warning, despite having a valid license?|the FAQ]].
 
@@ -56,6 +56,8 @@ Shows the entry's **Version**, when it was **Published**, **Total releases**, an
 ## Repository
 
 Shows the linked **GitHub** repository, when it was **Last pushed**, its **Stars**, and **Open issues** count.
+
+If your plugin uses a [[Getting started#Private source repository|private source repository]], this section also shows a warning if the GitHub App has lost read access to it, until access is restored.
 
 ## Attribution
 

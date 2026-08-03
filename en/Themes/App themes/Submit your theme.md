@@ -20,7 +20,7 @@ To complete this guide, you'll need:
 
 Before you submit your theme, make sure you have the following files in the root folder of your repository:
 
-- A `README.md` that describes the theme.
+- A `README.md` that describes the theme. Its content is shown on your entry's [[Public plugin or theme listing#Overview|listing page]].
 - A `LICENSE` that determines how others are allowed to use the theme and its source code. If you need help to pick a license for your theme, refer to [Choose a License](https://choosealicense.com/).
 - A screenshot of your theme to be displayed in the community theme store. Recommended image dimensions: 512 x 288 pixels.
 - A `manifest.json` that describes your theme. For more information, refer to [[Manifest]].

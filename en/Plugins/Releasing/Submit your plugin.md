@@ -20,7 +20,7 @@ To complete this guide, you'll need:
 
 Before you submit your plugin, make sure you have the following files in the root folder of your repository:
 
-- A `README.md` that describes the purpose of the plugin, and how to use it.
+- A `README.md` that describes the purpose of the plugin, and how to use it. Its content is shown on your entry's [[Public plugin or theme listing#Overview|listing page]].
 - A `LICENSE` that determines how others are allowed to use the plugin and its source code. If you need help to [add a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) for your plugin, refer to [Choose a License](https://choosealicense.com/).
 - A `manifest.json` that describes your plugin. For more information, refer to [[Manifest]].
 

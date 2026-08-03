@@ -86,6 +86,10 @@ Fill out the submission form:
 - **GitHub repository URL**: the URL of your repository, for example `https://github.com/your-username/your-repo-name`.
 - **Owner**: who will own and maintain this entry. This doesn't have to match the repository's GitHub owner. Choose yourself, or an organization you belong to.
 
+Plugins can also set:
+
+- **Private source repository URL** (optional): if your public repository only contains built release assets, enter the URL of the private repository containing your source code. Covered in [[#Private source repository]] below.
+
 Themes also require:
 
 - **Screenshot path**: the path to your screenshot, relative to the repository root, for example `screenshots/screenshot.png`.
@@ -94,6 +98,15 @@ Themes also require:
 Review and agree to the [[Developer policies]], and confirm that you'll continue to support your plugin or theme, or remove or transfer it if you can no longer provide support. Then select **Submit**.
 
 For the full walkthrough, including preparing a release beforehand, refer to [[Submit your plugin]] or [[Submit your theme]].
+
+### Private source repository
+
+Plugins can keep their source code in a private repository, and only make a repository with built release assets public:
+
+1. Install the community directory's GitHub App on the private repository to grant it read access.
+2. When you [[#Add a plugin or theme|submit your plugin]], enter your public repository as usual, and your private repository as the **Private source repository URL**.
+
+The directory verifies that your public release's build output matches what it reads from the private repository, so users can still trust that the release matches the source. If the GitHub App ever loses read access to the private repository, a warning appears on the entry's [[Manage your plugin or theme|management page]] until access is restored.
 
 ## Next steps
 

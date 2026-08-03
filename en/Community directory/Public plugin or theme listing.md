@@ -17,7 +17,9 @@ Each plugin and theme has a public listing page in the community directory, for 
 
 ## Overview
 
-The **Overview** tab shows the entry's screenshots, its long description, and a grid of **Related plugins** or **related themes** in the same category.
+The **Overview** tab shows the entry's screenshots, its long description, an excerpt of its `README.md`, and a grid of **Related plugins** or **related themes** in the same category.
+
+Relative links and images in your README (for example, `./images/screenshot.png`) are automatically rewritten to resolve against your repository, so they display correctly on the listing page.
 
 ## Scorecard
 

@@ -40,6 +40,10 @@ Yes. When you submit or edit an entry, you can set its **Owner** to yourself or 
 
 Archiving removes the entry from the directory and prevents new installations. For more information, refer to [[Manage your plugin or theme#Entry actions|Entry actions]].
 
+### Can I keep my plugin's source code private?
+
+Yes. Keep your built release assets in a public repository as usual, and your source code in a separate private repository. For more information, refer to [[Getting started#Private source repository|Private source repository]].
+
 ## Payments
 
 ### What's the difference between Free, Optional payment, and Paid?
