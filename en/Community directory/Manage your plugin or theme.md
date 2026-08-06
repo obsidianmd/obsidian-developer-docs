@@ -6,7 +6,7 @@ permalink: community-directory/manage-entry
 publish: true
 ---
 
-From the **Plugins** or **Themes** page in the sidebar, under **Your entries**, select an entry to manage it. From here you can also select **View listing** to open the entry's [public listing page](https://help.obsidian.md/community-directory), or open the **...** menu to view the repository on GitHub.
+From the **Plugins** or **Themes** page in the sidebar, under **Your entries**, select an entry to manage it. From here you can also select **View listing** to open the entry's public listing page on the community directory, or open the **...** menu to view the repository on GitHub. For an explanation of what a listing page shows, refer to the [help docs](https://help.obsidian.md/community-directory).
 
 ## Entry overview
 
@@ -20,7 +20,7 @@ If your plugin uses a [[#Add a private source repository|private source reposito
 
 After each release, the directory scans your `manifest.json`, GitHub release assets, and source code, and verifies that the build matches what's committed. Results are grouped into sections covering the manifest, the release assets, the source code, and build verification, and each result is rated as an error, a warning, a recommendation, or a pass.
 
-Address any error-level items in your repository, then publish a new release to trigger a fresh review. To force an immediate recheck instead of waiting for the periodic check, open the **...** menu and select **Request review**.
+Address any items in your repository, then publish a new release to trigger a fresh review. To force an immediate recheck instead of waiting for the periodic check, open the **...** menu and select **Request review**.
 
 > [!tip] Warnings don't block your submission, but we recommend addressing them where you can.
 
