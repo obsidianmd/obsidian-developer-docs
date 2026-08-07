@@ -1,3 +1,10 @@
+---
+aliases:
+  - Publish your theme
+description: Prepare a release and submit your theme to the Obsidian Community directory for review and publishing.
+permalink: themes/app-themes/submit-theme
+publish: true
+---
 If you want to share your theme with the Obsidian community, the best way is to submit it to the Obsidian Community directory at [community.obsidian.md](https://community.obsidian.md). Once we've reviewed and published your theme, users can install it directly from within Obsidian. It'll also be featured in the [theme directory](https://community.obsidian.md/themes) on the Obsidian website.
 
 You only need to submit the initial version of your theme. After your theme has been published, users can automatically download new releases from GitHub directly from within Obsidian.
@@ -13,7 +20,7 @@ To complete this guide, you'll need:
 
 Before you submit your theme, make sure you have the following files in the root folder of your repository:
 
-- A `README.md` that describes the theme.
+- A `README.md` that describes the theme. An excerpt is shown on your entry's public listing page, with relative links and images (for example `./images/screenshot.png`) automatically rewritten to resolve against your repository.
 - A `LICENSE` that determines how others are allowed to use the theme and its source code. If you need help to pick a license for your theme, refer to [Choose a License](https://choosealicense.com/).
 - A screenshot of your theme to be displayed in the community theme store. Recommended image dimensions: 512 x 288 pixels.
 - A `manifest.json` that describes your theme. For more information, refer to [[Manifest]].
@@ -43,10 +50,7 @@ In this step, you'll submit your theme through the Obsidian Community directory.
 
 1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
 2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
-3. In the sidebar, select **Themes**, and then select **New theme**.
-4. Enter the URL of your GitHub repository, for example `https://github.com/your-username/your-repo-name`.
-5. Review and agree to the [[Developer policies]], and confirm that you'll continue to support your theme.
-6. Select **Submit**.
+3. [[Set up and claim#Add a plugin or theme|Add your theme]] to the directory.
 
 The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting.
 
@@ -56,7 +60,7 @@ When a user installs your theme, Obsidian downloads `manifest.json` and `theme.c
 
 After you submit, your theme is reviewed automatically and the directory shows guidance for anything that needs to be corrected. To address feedback, update your repository and publish a new GitHub release with an incremented version.
 
-You can edit the description and select **Publish** at any time, but your theme won't be installable from within Obsidian until the automated review passes.
+You can edit the description and select **Publish** at any time, but your theme won't be installable from within Obsidian until any errors from the automated review are resolved.
 
 ## Next steps
 

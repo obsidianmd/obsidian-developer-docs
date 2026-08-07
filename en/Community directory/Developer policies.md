@@ -1,3 +1,11 @@
+---
+aliases:
+  - Developer policies
+description: Policies that all community plugins and themes must follow to stay listed in the Obsidian Community directory.
+permalink: community-directory/developer-policies
+publish: true
+---
+
 Our goal for community plugins and themes is to make it easy for users to safely modify and expand the capabilities of Obsidian, while prioritizing private and offline usage of the app.
 
 All community plugins and themes added to the Obsidian directory must respect the following policies. Plugins and themes that don't follow these policies will be removed from the directory.
@@ -46,7 +54,7 @@ We encourage developers to collaborate on fewer high-quality projects than many 
 [Forks](https://en.wikipedia.org/wiki/Fork_\(software_development\)) are not allowed in the Community directory unless they meet one of the following criteria:
 
 - The fork has received explicit written approval from the original author in a publicly verifiable way.
-- The fork author can show proof that the original author is unreachable and has not updated the project for at least 6 months.
+- The fork author can show proof that the original author is unreachable and has not updated the project for at least 6 months. After those 6 months have passed, contact the original author and allow them 30 days to publicly acknowledge your request before proceeding.
 
 In both cases, the original author must be credited as a contributor to the new project.
 

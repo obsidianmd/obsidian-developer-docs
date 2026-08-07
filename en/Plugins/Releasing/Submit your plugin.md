@@ -1,3 +1,10 @@
+---
+aliases:
+  - Publish your plugin
+description: Prepare a release and submit your plugin to the Obsidian Community directory for review and publishing.
+permalink: plugins/releasing/submit-plugin
+publish: true
+---
 If you want to share your plugin with the Obsidian community, the best way is to submit it to the Obsidian Community directory at [community.obsidian.md](https://community.obsidian.md). Once we've reviewed and published your plugin, users can install it directly from within Obsidian. It'll also be featured in the [plugin directory](https://community.obsidian.md/plugins) on the Obsidian website.
 
 You only need to submit the initial version of your plugin. After your plugin has been published, users can download new releases from GitHub directly from within Obsidian.
@@ -13,7 +20,7 @@ To complete this guide, you'll need:
 
 Before you submit your plugin, make sure you have the following files in the root folder of your repository:
 
-- A `README.md` that describes the purpose of the plugin, and how to use it.
+- A `README.md` that describes the purpose of the plugin, and how to use it. An excerpt is shown on your entry's public listing page, with relative links and images (for example `./images/screenshot.png`) automatically rewritten to resolve against your repository.
 - A `LICENSE` that determines how others are allowed to use the plugin and its source code. If you need help to [add a license](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository) for your plugin, refer to [Choose a License](https://choosealicense.com/).
 - A `manifest.json` that describes your plugin. For more information, refer to [[Manifest]].
 
@@ -45,10 +52,7 @@ In this step, you'll submit your plugin through the Obsidian Community directory
 
 1. Go to [community.obsidian.md](https://community.obsidian.md) and sign in with your Obsidian account.
 2. Link your GitHub account to your profile. This lets the directory verify that you own the repository you're submitting.
-3. In the sidebar, select **Plugins**, and then select **New plugin**.
-4. Enter the URL of your GitHub repository, for example `https://github.com/your-username/your-repo-name`.
-5. Review and agree to the [[Developer policies]], and confirm that you'll continue to support your plugin.
-6. Select **Submit**.
+3. [[Set up and claim#Add a plugin or theme|Add your plugin]] to the directory.
 
 The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting. The `id` must be unique across all published plugins and can't contain `obsidian`.
 
@@ -58,7 +62,7 @@ When a user installs your plugin, Obsidian downloads `main.js`, `manifest.json`,
 
 After you submit, your plugin is reviewed automatically and the directory shows guidance for anything that needs to be corrected. To address feedback, update your repository and publish a new GitHub release with an incremented version.
 
-You can edit the description and select **Publish** at any time, but your plugin won't be installable from within Obsidian until the automated review passes.
+You can edit the description and select **Publish** at any time, but your plugin won't be installable from within Obsidian until any errors from the automated review are resolved.
 
 ## Next steps
 
