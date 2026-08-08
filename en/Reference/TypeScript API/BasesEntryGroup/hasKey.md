@@ -18,7 +18,7 @@ hasKey(): boolean;
 
 `boolean`
 
-true iff this entry group has a non-null key.
+true if this entry group has a non-null key.
 
  1.10.0
 
