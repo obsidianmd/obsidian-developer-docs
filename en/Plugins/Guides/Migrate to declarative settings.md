@@ -8,7 +8,7 @@ As of Obsidian 1.13.0, plugin settings tabs can be defined declaratively by over
 This guide walks through converting an existing imperative `display()` tab to the new API.
 
 > [!important] Requires Obsidian 1.13.0+
-> The declarative settings API described on this page (`getSettingDefinitions()`) requires Obsidian 1.13.0, which is currently in an insider build. If you need to support older Obsidian versions, see [[#Path B: dual support]].
+> The declarative settings API described on this page (`getSettingDefinitions()`) requires Obsidian 1.13.0. If you need to support older Obsidian versions, see [[#Path B: dual support]].
 
 ## What you'll learn
 
