@@ -5,7 +5,7 @@ In this guide, you'll learn how you can create a settings page like this 👇
 ![[settings.png]]
 
 > [!important] Requires Obsidian 1.13.0+
-> The declarative settings API documented on this page (`getSettingDefinitions()`) requires Obsidian 1.13.0, which is currently in an insider build. If you need to support older Obsidian versions, see [[Migrate to declarative settings#Path B: dual support|the dual-support pattern]]. For the pre-1.13 imperative approach, jump to [[#Legacy: imperative display() approach]].
+> The declarative settings API documented on this page (`getSettingDefinitions()`) requires Obsidian 1.13.0. If you need to support older Obsidian versions, see [[Migrate to declarative settings#Path B: dual support|the dual-support pattern]]. For the pre-1.13 imperative approach, jump to [[#Legacy: imperative display() approach]].
 
 The main reason to add settings to a plugin is to store configuration that persists even after the user quits Obsidian. The following example demonstrates how to save and load settings from disk:
 
