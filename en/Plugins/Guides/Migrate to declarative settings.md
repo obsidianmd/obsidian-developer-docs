@@ -132,7 +132,7 @@ class MySettingTab extends PluginSettingTab {
     this.plugin = plugin;
   }
 
-  getSettingDefinitions() {
+  getSettingDefinitions(): SettingDefinitionItem[] {
     return [
       {
         name: 'Enable feature',
@@ -197,7 +197,7 @@ class MySettingTab extends PluginSettingTab {
 
   // 1.13.0+: Obsidian calls this and skips display().
   // Controls auto-bind to this.plugin.settings[key].
-  getSettingDefinitions() {
+  getSettingDefinitions(): SettingDefinitionItem[] {
     return [
       {
         name: 'Enable feature',
