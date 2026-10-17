@@ -130,5 +130,5 @@ To remove a leaf from the workspace, call [[detach|detach()]] on the leaf you wa
 You can create [linked views](https://help.obsidian.md/User+interface/Tabs#Linked+views) by assigning multiple leaves to the same group, using [[setGroup|setGroup()]].
 
 ```ts
-leaves.forEach((leaf) => leaf.setGroup('group1');
+leaves.forEach((leaf) => leaf.setGroup('group1'));
 ```

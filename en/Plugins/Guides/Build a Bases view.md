@@ -96,7 +96,7 @@ export default class MyPlugin extends Plugin {
       name: "Example",
       icon: 'lucide-graduation-cap',
       factory: (controller, containerEl) => {
-        new MyBasesView(controller, containerEl)
+        return new MyBasesView(controller, containerEl)
       },
       options: () => ([
         {

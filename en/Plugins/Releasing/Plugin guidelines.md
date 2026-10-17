@@ -107,9 +107,9 @@ export default class MyPlugin extends Plugin {
     this.registerEvent(this.app.vault.on('create', this.onCreate));
   }
 
-  onCreate: (file: TAbstractFile) => {
+  onCreate = (file: TAbstractFile) => {
     // ...
-  }
+  };
 }
 ```
 
@@ -178,10 +178,10 @@ Do this instead:
 this.registerView(MY_VIEW_TYPE, () => new MyCustomView());
 ```
 
-To access the view from your plugin, use `Workspace.getActiveLeavesOfType()`:
+To access the view from your plugin, use `Workspace.getLeavesOfType()`:
 
 ```ts
-for (let leaf of app.workspace.getActiveLeavesOfType(MY_VIEW_TYPE)) {
+for (let leaf of app.workspace.getLeavesOfType(MY_VIEW_TYPE)) {
   let view = leaf.view;
   if (view instanceof MyCustomView) {
     // ...
@@ -353,7 +353,7 @@ Recent versions of JavaScript and TypeScript support the `async` and `await` key
 ```ts
 function test(): Promise<string | null> {
   return requestUrl('https://example.com')
-    .then(res => res.text
+    .then(res => res.text)
     .catch(e => {
       console.log(e);
       return null;
@@ -367,7 +367,7 @@ Do this instead:
 async function AsyncTest(): Promise<string | null> {
   try {
     let res = await requestUrl('https://example.com');
-    let text = await r.text;
+    let text = await res.text;
     return text;
   }
   catch (e) {

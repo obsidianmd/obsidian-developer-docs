@@ -64,12 +64,12 @@ If your command needs access to the editor, you can also use the [[editorCallbac
 this.addCommand({
   id: 'example-command',
   name: 'Example command',
-  editorCallback: (editor: Editor, view: MarkdownView) => {
+  editorCallback: (editor: Editor, ctx: MarkdownView | MarkdownFileInfo) => {
     const sel = editor.getSelection()
 
     console.log(`You have selected: ${sel}`);
   },
-}
+});
 ```
 
 > [!note]
@@ -81,7 +81,7 @@ If the editor callback can only run under certain conditions, consider using [[e
 this.addCommand({
   id: 'example-command',
   name: 'Example command',
-  editorCheckCallback: (checking: boolean, editor: Editor, view: MarkdownView) => {
+  editorCheckCallback: (checking: boolean, editor: Editor, ctx: MarkdownView | MarkdownFileInfo) => {
     const value = getRequiredValue();
 
     if (value) {

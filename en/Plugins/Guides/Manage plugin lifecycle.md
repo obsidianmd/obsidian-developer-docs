@@ -318,8 +318,8 @@ Once you have created a custom component, you can add an instance (or multiple!)
 class MyPlugin extends Plugin {
 	private widget: MyWidget;
 
-	constructor(app: App, manifest: PLuginManifest) {
-		super();
+	constructor(app: App, manifest: PluginManifest) {
+		super(app, manifest);
 
 		// Creates the widget component as a child, but it is not initialized yet!
 		// The widget will be loaded once the plugin is fully loaded.
@@ -365,7 +365,7 @@ class MyModal extends Modal {
 
 	onClose() {
 		// Manually unload the component, which removes the listener
-		this.removeChild(this.component);
+		this.component.unload();
 	}
 }
 ```
