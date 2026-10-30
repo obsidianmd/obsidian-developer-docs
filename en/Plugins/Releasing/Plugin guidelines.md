@@ -397,7 +397,7 @@ Set English as the default language for your plugin UI whenever possible.
 
 Do not mix multiple languages within the same UI.
 
-If your plugin offers localized UI strings, ensure it respects [`getLanguage()`](https://docs.obsidian.md/Reference/TypeScript+API/getLanguage) (requires `minAppVersion` to be at least `1.8.7`).
+If your plugin offers localized UI strings, ensure it respects [`getLanguage()`](https://docs.obsidian.md/Reference/TypeScript+API/getLanguage) (requires `minAppVersion` to be at least `1.8.7`). If your plugin has no translation for that language, fall back to English.
 
 Don't add a custom language setting to your plugin; rely on Obsidian's built-in language setting instead.
 
@@ -413,24 +413,32 @@ export const en = {
   'some.key': 'Some value'
 };
 
+// locales/zh_CN.ts
+import type { en } from './en';
+
+export const zhCN: Partial<typeof en> = {
+  'some.key': '某个值'
+};
+
 // i18n.ts
-import en from './locales/en.ts';
-import zhCN from './locales/zh_CN.ts'
 import { getLanguage } from 'obsidian';
+import { en } from './locales/en';
+import { zhCN } from './locales/zh_CN';
 
 const localeMap: { [locale: string]: Partial<typeof en> } = {
-  en: en
+  en,
   zh: zhCN
 };
 
 const userLocale = localeMap[getLanguage()];
 
 export function t(key: keyof typeof en): string {
-  return userLocale?.[key] ?? en[key] ?? key;
+  return userLocale?.[key] ?? en[key];
 }
 
 // main.ts
-import { t } from './i18n.ts';
+import { Notice } from 'obsidian';
+import { t } from './i18n';
 
 new Notice(t('some.key'));
 ```
