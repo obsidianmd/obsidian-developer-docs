@@ -376,3 +376,69 @@ async function AsyncTest(): Promise<string | null> {
   }
 }
 ```
+
+## Language
+
+### English-first
+
+Write the following in English by default:
+
+- `manifest.json`
+  - `id`
+  - `name`
+  - `description`
+- `README.md`
+
+It is not recommended but if you really need it, you may include translations (except for `id`), but the English version must appear first.
+
+### UI localization
+
+Set English as the default language for your plugin UI whenever possible.
+
+Do not mix multiple languages within the same UI.
+
+If your plugin offers localized UI strings, ensure it respects [`getLanguage()`](https://docs.obsidian.md/Reference/TypeScript+API/getLanguage) (requires `minAppVersion` to be at least `1.8.7`). If your plugin has no translation for that language, fall back to English.
+
+Don't add a custom language setting to your plugin; rely on Obsidian's built-in language setting instead.
+
+If your plugin ships without English support, call this out explicitly in both the `description` property in `manifest.json` and the `README.md`.
+
+### Internationalization (i18n) frameworks
+
+If your plugin supports multiple UI languages, consider using frameworks like [i18next](https://www.i18next.com/), or hand-written one, e.g.:
+
+```ts
+// locales/en.ts
+export const en = {
+  'some.key': 'Some value'
+};
+
+// locales/zh_CN.ts
+import type { en } from './en';
+
+export const zhCN: Partial<typeof en> = {
+  'some.key': '某个值'
+};
+
+// i18n.ts
+import { getLanguage } from 'obsidian';
+import { en } from './locales/en';
+import { zhCN } from './locales/zh_CN';
+
+const localeMap: { [locale: string]: Partial<typeof en> } = {
+  en,
+  zh: zhCN
+};
+
+const userLocale = localeMap[getLanguage()];
+
+export function t(key: keyof typeof en): string {
+  return userLocale?.[key] ?? en[key];
+}
+
+// main.ts
+import { Notice } from 'obsidian';
+import { t } from './i18n';
+
+new Notice(t('some.key'));
+```
