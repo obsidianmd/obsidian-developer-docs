@@ -18,13 +18,19 @@ Using the [API Extractor](https://api-extractor.com/), we generate the reference
    cd config
    ```
 
-2. Generate the `.api.json` file. The following command generates `./input/obsidian.api.json`.
+2. Copy the `declare global` block into an exported `Global` namespace, so API Extractor documents it too.
+
+   ```bash
+   node lift-globals.js
+   ```
+
+3. Generate the `.api.json` file. The following command generates `./input/obsidian.api.json`.
 
    ```bash
    api-extractor run --local --verbose
    ```
 
-3. Generate Markdown docs. The following command generates Markdown docs from the `.api.json` file.
+4. Generate Markdown docs. The following command generates Markdown docs from the `.api.json` file.
 
    ```bash
    api-documenter markdown --output ../en/Reference/TypeScript\ API
