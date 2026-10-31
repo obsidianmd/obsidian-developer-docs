@@ -6,6 +6,9 @@ const folderPath = '../en/Reference/TypeScript API/';
 const sourceDir = folderPath;
 const targetDir = folderPath;
 
+// The namespace name lift-globals.js gives the global declarations
+const GLOBAL_SCOPE = 'ObsidianGlobalScope';
+
 // Read the folder contents
 async function updateFileContent(folderPath) {
 	try {
@@ -59,6 +62,12 @@ cssclasses: hide-title
 
 					return `[${x}]${y.slice(0, -4).replaceAll('.', '/')})`;
 				});
+
+				// The global declarations sit in a placeholder namespace (see lift-globals.js).
+				// Show it as (global), and its members without a prefix: createEl(), Math.clamp().
+				newFileContent = newFileContent.replace(new RegExp(`(\\]\\([^)]*?)${GLOBAL_SCOPE}`, 'gi'), '$1%28global%29');
+				newFileContent = newFileContent.replaceAll(`${GLOBAL_SCOPE}.`, '');
+				newFileContent = newFileContent.replace(new RegExp(GLOBAL_SCOPE, 'gi'), '(global)');
 
 				await fs.writeFile(filePath, newFileContent, {encoding: 'utf-8'});
 				console.log(`Updated file content: ${filePath}`);
@@ -208,11 +217,28 @@ async function updateFileLinks(folderPath) {
 	}
 }
 
+// Rename the placeholder namespace's folder and page to (global)
+async function renameGlobalScope(folderPath) {
+	const entries = await fs.readdir(folderPath);
+	for (const entry of entries) {
+		const entryPath = path.join(folderPath, entry);
+		if (await folderExists(entryPath)) {
+			await renameGlobalScope(entryPath);
+		}
+		const newEntry = entry.replace(new RegExp(GLOBAL_SCOPE, 'i'), '(global)');
+		if (newEntry !== entry) {
+			await fs.rename(entryPath, path.join(folderPath, newEntry));
+			console.log('Renamed ', entryPath, ' to ', newEntry);
+		}
+	}
+}
+
 async function main() {
 	await updateFileContent(folderPath);
 	await renameFiles(folderPath);
 	await organizeIntoFolders();
 	await updateFileLinks(folderPath);
+	await renameGlobalScope(folderPath);
 }
 
 main();

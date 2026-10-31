@@ -2,13 +2,15 @@ const fs = require('node:fs/promises');
 
 // API Extractor documents only what obsidian.d.ts exports, and its `declare global` block
 // (createEl, Math.clamp, the DOM helpers...) exports nothing. This copies the block's
-// declarations into an exported `Global` namespace so they get pages of their own.
+// declarations into an exported namespace so they get pages of their own.
 // The original block stays in place, so the file still type-checks the same way.
 // Every declaration in an ambient namespace is exported without the `export` keyword,
 // so the signatures on the pages read the same as in obsidian.d.ts.
+// `(global)` is not an identifier, so the namespace gets a placeholder name, which
+// post-process.js renames to `(global)` in the pages, their folder and their links.
 
 const FILE = './obsidian.d.ts';
-const NAMESPACE = 'Global';
+const NAMESPACE = 'ObsidianGlobalScope';
 
 async function main() {
 	const source = await fs.readFile(FILE, 'utf8');
