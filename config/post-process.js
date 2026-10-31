@@ -64,7 +64,8 @@ cssclasses: hide-title
 				});
 
 				// The global declarations sit in a placeholder namespace (see lift-globals.js).
-				// Show it as (global), and its members without a prefix: createEl(), Math.clamp().
+				// Show it as (global), its signature as `declare global`, and its members without a prefix: createEl(), Math.clamp().
+				newFileContent = newFileContent.replaceAll(`export declare namespace ${GLOBAL_SCOPE}`, 'declare global');
 				newFileContent = newFileContent.replace(new RegExp(`(\\]\\([^)]*?)${GLOBAL_SCOPE}`, 'gi'), '$1%28global%29');
 				newFileContent = newFileContent.replaceAll(`${GLOBAL_SCOPE}.`, '');
 				newFileContent = newFileContent.replace(new RegExp(GLOBAL_SCOPE, 'gi'), '(global)');
