@@ -18,7 +18,7 @@ Using the [API Extractor](https://api-extractor.com/), we generate the reference
    cd config
    ```
 
-2. Copy the `declare global` block into an exported `Global` namespace, so API Extractor documents it too.
+2. Copy the `declare global` block into an exported namespace, so API Extractor documents it too. `post-process.js` shows that namespace as `(global)`.
 
    ```bash
    node lift-globals.js
