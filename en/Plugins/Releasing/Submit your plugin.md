@@ -56,7 +56,7 @@ In this step, you'll submit your plugin through the Obsidian Community directory
 
 The directory processes the `manifest.json` at the HEAD of your repository's default branch, so make sure it's accurate and committed before submitting. The `id` must be unique across all published plugins and can't contain `obsidian`.
 
-When a user installs your plugin, Obsidian downloads `main.js`, `manifest.json`, and `styles.css` from the GitHub release whose tag matches the `version` in your manifest, so the release from Step 2 is required in addition to the committed manifest.
+When a user installs your plugin, Obsidian downloads `main.js`, `manifest.json`, and `styles.css` from the GitHub release whose tag matches the `version` in your manifest, so the release from Step 2 is required in addition to the committed manifest. Obsidian downloads no other files. Refer to [[Plugin files and syncing]].
 
 ## Step 4: Address review feedback
 
