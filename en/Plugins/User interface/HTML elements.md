@@ -1,3 +1,7 @@
+---
+description: Create and style plugin HTML elements, scope DOM queries, and handle events without interfering with other plugins.
+---
+
 Several components in the Obsidian API, such as the [[Settings]], expose _container elements_:
 
 ```ts
@@ -81,3 +85,50 @@ Use the `toggleClass` method if you want to change the style of an element based
 ```ts
 element.toggleClass('danger', status === 'error');
 ```
+
+## Scope DOM queries to your interface
+
+Keep references to the elements you create. If you need to find an element later, query inside the container your plugin owns, rather than searching the whole document. A view can be open more than once, and each instance needs its own elements.
+
+```ts
+const searchEl = containerEl.createEl('input', {
+  type: 'search',
+  cls: 'example-plugin-search',
+});
+
+searchEl.focus();
+```
+
+Avoid using document-wide IDs to find plugin controls. Two instances of the same view can create duplicate IDs in one document, and the global `document` doesn't search pop-out windows. If you need an ID for accessibility, make it unique for each instance and keep the element reference for later access.
+
+For operations that need a document or window, use `el.doc` and `el.win`. For cross-window type checks, use `el.instanceOf(HTMLElement)` instead of `el instanceof HTMLElement`. See [[Support pop-out windows]].
+
+## Cooperate with other event handlers
+
+Attach event handlers to your own controls or container. For plugin commands, use [[Commands]] instead of installing global `keydown` handlers on `document` or `window`. Global handlers can interfere with typing, Obsidian shortcuts, and other plugins, and a listener on the main document doesn't receive events from pop-out windows.
+
+When replacing an event's default behavior, check `event.defaultPrevented` first and return if another handler already handled it. Call `event.preventDefault()` only when your handler takes responsibility for the action. Leave unrelated events unchanged.
+
+`preventDefault()` cancels the default action while allowing other listeners to receive the event. `stopPropagation()` and `stopImmediatePropagation()` control event delivery; they don't cancel the default action and can prevent Obsidian or other plugins from receiving the event. Avoid using them to claim an event. See [Event.preventDefault()](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) for the browser behavior.
+
+For example, the workspace's [[Workspace/on('editor-paste')|editor-paste]] and [[Workspace/on('editor-drop')|editor-drop]] events use `defaultPrevented` to coordinate handlers. This plugin replaces pasted text only when it starts with `note:`:
+
+```ts
+import { Plugin } from 'obsidian';
+
+export default class ExamplePlugin extends Plugin {
+  onload(): void {
+    this.registerEvent(this.app.workspace.on('editor-paste', (event, editor) => {
+      if (event.defaultPrevented) return;
+
+      const text = event.clipboardData?.getData('text/plain');
+      if (!text?.startsWith('note:')) return;
+
+      event.preventDefault();
+      editor.replaceSelection(text.slice('note:'.length));
+    }));
+  }
+}
+```
+
+Make the decision and call `preventDefault()` synchronously, before any `await`. An asynchronous callback doesn't delay the event's default action. For DOM listeners that need lifecycle cleanup, use [[Component/registerDomEvent|registerDomEvent()]] so they are removed when the component unloads.
