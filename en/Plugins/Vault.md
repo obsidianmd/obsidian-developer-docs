@@ -60,6 +60,9 @@ export default class ExamplePlugin extends Plugin {
 }
 ```
 
+> [!info]
+> Obsidian runs every file operation of the Vault and Adapter APIs through one queue, one at a time. A read never overlaps a write, even when another plugin makes it. `Promise.all()` over these calls works, as in the example above, but it doesn't make them faster: they still run one after another. You only gain from running things in parallel when the work isn't file access, such as network requests.
+
 ## Modify files
 
 To write text content to an existing file, use [[modify|Vault.modify()]].
@@ -83,6 +86,8 @@ function emojify(vault: Vault, file: TFile): Promise<string> {
 
 `Vault.process()` is an abstraction on top of [[Reference/TypeScript API/Vault/read|Vault.read()]] and [[modify|Vault.modify()]] that guarantees that the file doesn't change between reading the current content and writing the updated content. Always prefer `Vault.process()` over `Vault.read()`/`Vault.modify()` to avoid unintentional loss of data.
 
+Keep the callback synchronous and free of side effects: compute the new content from `data` and return it. The callback runs while Obsidian holds the file queue, so a file operation you start from it waits until the callback has returned. If the callback returns the content unchanged, Obsidian doesn't write the file.
+
 ### Asynchronous modifications
 
 [[process|Vault.process()]] only supports synchronous modifications. If you need to modify a file asynchronously:
@@ -92,6 +97,12 @@ function emojify(vault: Vault, file: TFile): Promise<string> {
 3. Update the file using [[Reference/TypeScript API/Vault/process|Vault.process()]].
 
 Remember to check that the `data` in the `process()` callback is the same as the data returned by `cachedRead()`. If they aren't the same, that means that the file was changed by a different process, and you may want to ask the user for confirmation, or try again.
+
+### Avoid frequent saves
+
+Obsidian writes a file in place. It doesn't write a temporary file and then rename it over the original. If a write is interrupted, for example because the device shuts down, the file can be left incomplete. Every save also adds a version to the file's history in Obsidian Sync.
+
+Don't write a file on every keystroke or every small change. Debounce the writes, or write once the user is done.
 
 ## Delete files
 
@@ -115,3 +126,41 @@ if (folderOrFile instanceof TFile) {
   console.log('It\'s a folder!');
 }
 ```
+
+## React to changes
+
+Vault events such as [[Reference/TypeScript API/Vault/on('modify')|modify]] fire for every change to a file, whoever made it: your plugin, another plugin, the user, or another app such as a cloud sync client. The API can't tell you where a change came from.
+
+So a handler for `modify`, or for the metadata cache's [[Reference/TypeScript API/MetadataCache/on('changed')|changed]] event, also runs for every file that a sync client downloads, and for the changes your own plugin makes. Keep these handlers cheap. If a handler writes to the file it was called for, make sure the write doesn't trigger the same change again, or your plugin ends up in a loop.
+
+## Read metadata
+
+The [[MetadataCache|metadata cache]] (`app.metadataCache`) holds what Obsidian has parsed from each Markdown file, such as headings, links, tags, and frontmatter. Use [[getFileCache|getFileCache()]] to get the [[CachedMetadata|CachedMetadata]] of a file.
+
+### Check for null
+
+`getFileCache()` returns `null` while a file hasn't been parsed yet. That happens for a moment after every change to a file: Obsidian drops the old metadata and parses the new content in a background worker. It also happens when a large vault is opened for the first time, until the initial index is complete.
+
+Always check the result for `null`. If you need the metadata of a file right after it changed, for example after your plugin wrote to it, wait for the `changed` event for that file instead of reading the cache straight away.
+
+```ts
+this.registerEvent(
+  this.app.metadataCache.on('changed', (file, data, cache) => {
+    // `cache` holds the metadata parsed from the new content of `file`.
+    console.log(file.path, cache.headings?.length ?? 0);
+  })
+);
+```
+
+### Don't modify the cached metadata
+
+`getFileCache()` returns the cached objects themselves, not copies. If you change them, for example by sorting `cache.links` in place, you change the metadata that Obsidian and every other plugin read. Copy an array or object before you change it.
+
+```ts
+const cache = this.app.metadataCache.getFileCache(file);
+const sortedLinks = [...(cache?.links ?? [])].sort((a, b) => a.link.localeCompare(b.link));
+```
+
+### What gets indexed
+
+Obsidian decides which files to parse by their extension: it parses Markdown (`.md`) files only. You can't exclude part of a Markdown file from the index. Links, embeds, and tags inside a comment (`%%...%%`) are indexed on purpose. To keep data out of the index, store it in a file with a different extension.
