@@ -9,13 +9,13 @@ The two come with different promises, and knowing them helps you decide how much
 
 ## Public API
 
-Once an API is public, Obsidian keeps it working for as long as possible, and keeps it backward compatible even when that makes a bug fix or a new feature harder. Accidental breakage is still possible, but it's treated as a bug.
+Once an API is public, Obsidian keeps it working for as long as possible, and keeps it backward compatible even when that makes a bug fix or a new feature harder. Even so, an API can still break by accident.
 
-When a public API has to change, Obsidian deprecates it first. Refer to [[#Deprecation]].
+When a public API has to change, Obsidian usually deprecates it rather than removing it outright. Refer to [[#Deprecation]].
 
 ## Private API
 
-Private API exists to implement Obsidian itself, and it can change or disappear in any release, without notice, whenever that's needed to fix a bug or to add a feature. It can also differ between desktop and mobile.
+Private API exists to implement Obsidian itself, and it can change or disappear in any release, whenever that's needed to fix a bug or to add a feature.
 
 Before a change that might break plugins, the Obsidian team tries to find the plugins that use the API, for example by searching GitHub, and may open issues in their repositories. That's a courtesy, not a guarantee: the search can miss your plugin, and you may not be around to update it in time.
 
@@ -43,6 +43,6 @@ Don't add a removed API back by declaring it in your own type definitions. Once 
 
 ## Plugins that change how Obsidian handles files
 
-Obsidian doesn't accept plugins into the community directory that hook into how it handles the file system, for example to make hidden files and folders visible in the vault. Obsidian Sync and other features rely on that handling, and a plugin of this kind has broken Obsidian Sync and similar services before.
+Obsidian doesn't accept plugins into the community directory that hook into how it handles the file system, for example to make hidden files and folders visible in the vault. A plugin of this kind has broken Obsidian Sync and similar services before.
 
 To work with files, use the [[Plugins/Vault|Vault]] API. To read a file that the Vault API doesn't see, such as one in the config folder, use the [[DataAdapter|Adapter]] API. Refer to [[Plugin guidelines#Prefer the Vault API over the Adapter API]].
