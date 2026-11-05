@@ -86,7 +86,7 @@ function emojify(vault: Vault, file: TFile): Promise<string> {
 
 `Vault.process()` is an abstraction on top of [[Reference/TypeScript API/Vault/read|Vault.read()]] and [[modify|Vault.modify()]] that guarantees that the file doesn't change between reading the current content and writing the updated content. Always prefer `Vault.process()` over `Vault.read()`/`Vault.modify()` to avoid unintentional loss of data.
 
-Keep the callback synchronous and free of side effects: compute the new content from `data` and return it. The callback runs while Obsidian holds the file queue, so a file operation you start from it waits until the callback has returned. If the callback returns the content unchanged, Obsidian doesn't write the file.
+Keep the callback synchronous and free of side effects: compute the new content from `data` and return it. If the callback returns a promise, `process()` fails and the file isn't changed. The callback runs while Obsidian holds the file queue, so a file operation you start from it waits until the callback has returned. If the callback returns the content unchanged, Obsidian doesn't write the file.
 
 ### Asynchronous modifications
 
@@ -100,7 +100,7 @@ Remember to check that the `data` in the `process()` callback is the same as the
 
 ### Avoid frequent saves
 
-Obsidian writes a file in place. It doesn't write a temporary file and then rename it over the original. If a write is interrupted, for example because the device shuts down, the file can be left incomplete. Every save also adds a version to the file's history in Obsidian Sync.
+Obsidian writes a file in place. It doesn't write a temporary file and then rename it over the original. While a write is in progress, the file on disk is incomplete, so another app that reads it at that moment, or a write that is interrupted, for example because the device shuts down, can leave a partial file behind.
 
 Don't write a file on every keystroke or every small change. Debounce the writes, or write once the user is done.
 
@@ -139,9 +139,11 @@ The [[MetadataCache|metadata cache]] (`app.metadataCache`) holds what Obsidian h
 
 ### Check for null
 
-`getFileCache()` returns `null` while a file hasn't been parsed yet. That happens for a moment after every change to a file: Obsidian drops the old metadata and parses the new content in a background worker. It also happens when a large vault is opened for the first time, until the initial index is complete.
+`getFileCache()` returns `null` while a file hasn't been parsed yet. Obsidian parses files in the background, so this happens when a large vault is opened for the first time, until the initial index is complete. It also happens for a moment after a file changes outside Obsidian.
 
-Always check the result for `null`. If you need the metadata of a file right after it changed, for example after your plugin wrote to it, wait for the `changed` event for that file instead of reading the cache straight away.
+Right after your own plugin changes a file, for example once `Vault.modify()` has resolved, `getFileCache()` can still return the metadata of the old content, until the new content has been parsed.
+
+Always check the result for `null`. If you need the metadata of a file right after it changed, wait for the `changed` event for that file instead of reading the cache straight away.
 
 ```ts
 this.registerEvent(
@@ -163,4 +165,4 @@ const sortedLinks = [...(cache?.links ?? [])].sort((a, b) => a.link.localeCompar
 
 ### What gets indexed
 
-Obsidian decides which files to parse by their extension: it parses Markdown (`.md`) files only. You can't exclude part of a Markdown file from the index. Links, embeds, and tags inside a comment (`%%...%%`) are indexed on purpose. To keep data out of the index, store it in a file with a different extension.
+Obsidian decides which files to parse by their extension: it parses Markdown (`.md`) files only. For other files, such as `.txt` or `.canvas` files, `getFileCache()` returns an empty object and their links aren't indexed. Inside a Markdown file, links and tags in a comment (`%%...%%`) are indexed too. To keep data out of the index, store it in a file with a different extension.
