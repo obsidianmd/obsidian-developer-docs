@@ -19,9 +19,9 @@ In your build configuration, you should consider minifying your plugin code. Thi
 
 Next, make sure you aren't doing anything expensive inside your plugin's `onload` function. The `onload` function should only include code necessary for the plugin to initialize. This includes app registrations, like registering commands, view types, and Markdown post-processors. It should not include anything computationally expensive or data fetching.
 
-Don't make `onload` wait for anything it doesn't need. Obsidian loads plugins one at a time and waits for each plugin's `onload` to finish, including the promise an `async` `onload` returns, before it loads the next one. While your `onload` waits for a network request, a timer, or another plugin, every plugin after yours waits too. After a few seconds, the app tells the user that your plugin is taking long to load and offers to disable it.
+Don't make `onload` wait for anything it doesn't need. Obsidian loads plugins one at a time and waits for each plugin's `onload` to finish, including the promise an `async` `onload` returns, before it loads the next one. While your `onload` waits for a network request, a timer, or another plugin, every plugin after yours waits too. After a few seconds, the app tells the user that your plugin is taking long to load.
 
-Moving expensive work to a later point at startup doesn't make it cheaper: the work still freezes the app, just after the startup time has been measured. Where you can, run it only when the user needs it, for example when your view opens or your code block is rendered.
+Moving expensive work to a later point at startup doesn't make it cheaper: the work still blocks the app, just later. Where you can, run it only when the user needs it, for example when your view opens or your code block is rendered.
 
 If your plugin creates any custom views, be mindful of your custom view constructor. When Obsidian opens, it will reopen all the views saved to the user's workspace. If your view is loaded (and not [[Defer views|deferred]]), this will directly impact the app load time.
 
