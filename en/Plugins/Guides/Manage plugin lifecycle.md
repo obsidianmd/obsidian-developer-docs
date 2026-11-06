@@ -371,6 +371,31 @@ class MyModal extends Modal {
 ```
 
 
+## Don't rely on `onunload` to save data
+
+`onunload` runs when your plugin is unloaded, for example when the user disables it. It's not a signal that Obsidian is closing: closing the app window doesn't call it, and Obsidian can also exit without warning, for example when its process is killed.
+
+Obsidian also doesn't wait for `onunload`. If your `onunload` is `async`, nothing waits for the promise it returns, so asynchronous work started there might never finish.
+
+Use `onunload` only to release resources. Save your plugin's data when it changes instead, for example by calling `saveData()` from the code that changes your settings.
+
+### Clean up when the app quits
+
+On desktop, the workspace triggers the [[on('quit')|quit]] event when the app window is about to close. Like `onunload`, it's best effort: it doesn't run when the process is killed, for example.
+
+To ask Obsidian to wait for asynchronous cleanup, add it to the [[Tasks]] object passed to your callback:
+
+```ts
+this.registerEvent(
+	this.app.workspace.on("quit", (tasks) => {
+		tasks.add(() => this.flushPendingChanges());
+	})
+);
+```
+
+Obsidian doesn't guarantee to wait, though: the window can close before a task finishes, and the code after its first `await` might never run. Do anything that must happen synchronously, in the callback itself, and keep the rest short. Avoid changing many files while the app quits, because the work can be cut off part way through.
+
+
 ## Summary
 
 - Use the `Component` class to manage and clean up resources.
@@ -378,3 +403,4 @@ class MyModal extends Modal {
 - Do not pass orphaned `Component` to APIs like `MarkdownRenderer.render`!
 - Organize your plugin into smaller `Component` subclasses to simplify ownership.
 - Remember: if you create a resource, make sure it will be cleaned up by `onunload`.
+- Don't rely on `onunload` or the `quit` event to save data, because neither is guaranteed to run.
