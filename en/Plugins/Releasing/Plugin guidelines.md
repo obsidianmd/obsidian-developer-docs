@@ -13,6 +13,10 @@ Avoid using the global app object, `app` (or `window.app`). Instead, use the ref
 
 The global app object is intended for debugging purposes and might be removed in the future.
 
+### Prefer the public API
+
+Use the API declared in the `obsidian` package wherever you can. Methods and properties that aren't declared there are private API, which can change or be removed in any Obsidian release and break your plugin for its users. Refer to [[Public and private API]].
+
 ### Avoid unnecessary logging to console
 
 Please avoid unnecessary logging.
