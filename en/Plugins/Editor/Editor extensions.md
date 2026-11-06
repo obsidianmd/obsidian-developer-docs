@@ -18,7 +18,7 @@ Building editor extensions can be challenging, so before you start building one,
 
 ## Change the editor through its APIs
 
-CodeMirror manages the editor's DOM from its internal state and only renders part of a large document at a time. Don't modify its managed elements directly or use DOM queries to read the full note. Direct DOM changes can be overwritten by the next update and don't update the document state, selection, or undo history.
+CodeMirror manages the editor's DOM from its internal state and only renders part of a large document at a time. Don't modify its managed elements directly or use DOM queries to read the full note. CodeMirror watches its content for changes: it reads text you write into a line back into the document as if the user had typed it, and it discards other changes, such as added classes or attributes, the next time it redraws the line.
 
 To read or change note text, use Obsidian's [[Editor]] API. To customize the editor's appearance, use [[Decorations]], including widgets for custom HTML. Use [[View plugins]] to respond to editor updates, and CodeMirror keymaps or event handlers for interactions inside the editor. Register plugin commands through [[Commands]] rather than global keyboard listeners.
 
