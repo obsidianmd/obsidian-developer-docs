@@ -63,12 +63,17 @@ export default class ExamplePlugin extends Plugin {
 
     this.registerEvent(
       this.app.workspace.on("editor-menu", (menu, editor, view) => {
+        const file = view.file;
+        if (!file) {
+          return;
+        }
+
         menu.addItem((item) => {
           item
             .setTitle('Print file path 👈')
             .setIcon('document')
             .onClick(async () => {
-              new Notice(view.file.path);
+              new Notice(file.path);
             });
         });
       })

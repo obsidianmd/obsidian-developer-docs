@@ -32,6 +32,7 @@ The following tab has three settings: a toggle, a dropdown with a default, and a
 
 ```ts
 import { App, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import MyPlugin from './main';
 
 interface MySettings {
   enabled: boolean;
@@ -116,7 +117,8 @@ This path bumps `minAppVersion` to 1.13.0, deletes `display()`, and writes only 
 #### After
 
 ```ts
-import { App, PluginSettingTab } from 'obsidian';
+import { App, PluginSettingTab, SettingDefinitionItem } from 'obsidian';
+import MyPlugin from './main';
 
 interface MySettings {
   enabled: boolean;
@@ -132,7 +134,7 @@ class MySettingTab extends PluginSettingTab {
     this.plugin = plugin;
   }
 
-  getSettingDefinitions() {
+  getSettingDefinitions(): SettingDefinitionItem[] {
     return [
       {
         name: 'Enable feature',
@@ -179,7 +181,8 @@ Keep your existing `display()` exactly as it is, and add `getSettingDefinitions(
 - On Obsidian < 1.13.0, `display()` runs as it always has.
 
 ```ts
-import { App, PluginSettingTab, Setting } from 'obsidian';
+import { App, PluginSettingTab, Setting, SettingDefinitionItem } from 'obsidian';
+import MyPlugin from './main';
 
 interface MySettings {
   enabled: boolean;
@@ -197,7 +200,7 @@ class MySettingTab extends PluginSettingTab {
 
   // 1.13.0+: Obsidian calls this and skips display().
   // Controls auto-bind to this.plugin.settings[key].
-  getSettingDefinitions() {
+  getSettingDefinitions(): SettingDefinitionItem[] {
     return [
       {
         name: 'Enable feature',

@@ -22,7 +22,7 @@ While you don't need to use a separate framework to build a plugin, there are a 
 
 3. In `tsconfig.json`, enable JSX support on the `compilerOptions` object:
 
-   ```ts
+   ```json
    {
      "compilerOptions": {
        "jsx": "react-jsx"
@@ -71,7 +71,7 @@ class ExampleView extends ItemView {
 		this.root = createRoot(this.contentEl);
 		this.root.render(
 			<StrictMode>
-				<ReactView />,
+				<ReactView />
 			</StrictMode>,
 		);
 	}
@@ -116,6 +116,7 @@ Another alternative is to create a React context for the app to make it globally
 
    ```tsx title="hooks.ts"
    import { useContext } from 'react';
+   import { App } from 'obsidian';
    import { AppContext } from './context';
 
    export const useApp = (): App | undefined => {
@@ -129,9 +130,13 @@ Another alternative is to create a React context for the app to make it globally
    import { useApp } from './hooks';
 
    export const ReactView = () => {
-     const { vault } = useApp();
+     const app = useApp();
 
-     return <h4>{vault.getName()}</h4>;
+     if (!app) {
+       return null;
+     }
+
+     return <h4>{app.vault.getName()}</h4>;
    };
    ```
 
