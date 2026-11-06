@@ -80,7 +80,7 @@ If you only want to use TypeScript's *type-only* features, you don't need `svelt
 
 In the root directory of the plugin, create a new file called `Counter.svelte`:
 
-```tsx
+```html
 <script lang="ts">
   interface Props {
     startCount: number;

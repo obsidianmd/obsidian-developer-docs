@@ -126,7 +126,7 @@ The final step in creating a new Bases view is to transform the data from proper
 // Add `implements HoverParent` to enable hovering over file links.
 export class MyBasesView extends BasesView implements HoverParent {
 
-  hoverPopover: HoverPopover | null;
+  hoverPopover: HoverPopover | null = null;
 
   // ...
 

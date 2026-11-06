@@ -16,14 +16,14 @@ If your plugin is iterating the workspace (using either `iterateAllLeaves` or `g
 workspace.iterateAllLeaves(leaf => {
     if (leaf.view.getViewType() === 'my-view') {
         let view = leaf.view as MyCustomView;
-        ...
+        // ...
     }
 });
 
 // Good
 workspace.iterateAllLeaves(leaf => {
     if (leaf.view instanceof MyCustomView) {
-        ...
+        // ...
     }
 });
 ```
@@ -34,12 +34,12 @@ let leaf = workspace.getLeavesOfType('my-view').first();
 if (leaf) {
 	let view = leaf.view as MyCustomView;
 }
-...
+// ...
 
 // Good
 let leaf = workspace.getLeavesOfType('my-view').first();
 if (leaf && leaf.view instanceof MyCustomView) {
-    ...
+    // ...
 }
 ```
 

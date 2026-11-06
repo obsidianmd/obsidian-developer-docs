@@ -2,6 +2,7 @@ Several components in the Obsidian API, such as the [[Settings]], expose _contai
 
 ```ts
 import { App, PluginSettingTab } from 'obsidian';
+import ExamplePlugin from './main';
 
 class ExampleSettingTab extends PluginSettingTab {
   plugin: ExamplePlugin;

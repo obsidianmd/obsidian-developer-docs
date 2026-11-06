@@ -24,7 +24,7 @@ The following example displays the current time in the status bar, updated every
 import { moment, Plugin } from 'obsidian';
 
 export default class ExamplePlugin extends Plugin {
-  statusBar: HTMLElement;
+  statusBar!: HTMLElement;
 
   async onload() {
     this.statusBar = this.addStatusBarItem();

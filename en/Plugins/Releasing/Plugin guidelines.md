@@ -84,6 +84,7 @@ The following example builds a DOM element using a string that contains user inp
 ```ts
 function showName(name: string) {
   let containerElement = document.querySelector('.my-container');
+  if (!containerElement) return;
   // DON'T DO THIS
   containerElement.innerHTML = `<div class="my-class"><b>Your name is: </b>${name}</div>`;
 }
@@ -169,19 +170,19 @@ Managing references to custom view can cause memory leaks or unintended conseque
 **Don't** do this:
 
 ```ts
-this.registerView(MY_VIEW_TYPE, () => this.view = new MyCustomView());
+this.registerView(MY_VIEW_TYPE, (leaf) => this.view = new MyCustomView(leaf));
 ```
 
 Do this instead:
 
 ```ts
-this.registerView(MY_VIEW_TYPE, () => new MyCustomView());
+this.registerView(MY_VIEW_TYPE, (leaf) => new MyCustomView(leaf));
 ```
 
 To access the view from your plugin, use `Workspace.getLeavesOfType()`:
 
 ```ts
-for (let leaf of app.workspace.getLeavesOfType(MY_VIEW_TYPE)) {
+for (let leaf of this.app.workspace.getLeavesOfType(MY_VIEW_TYPE)) {
   let view = leaf.view;
   if (view instanceof MyCustomView) {
     // ...
@@ -249,10 +250,10 @@ If you aren't sure if the path provided is for a folder or a file, use:
 ```ts
 const abstractFile = this.app.vault.getAbstractFileByPath(filePath);
 
-if (file instanceof TFile) {
+if (abstractFile instanceof TFile) {
 	// it's a file
 }
-if (file instanceof TFolder) {
+if (abstractFile instanceof TFolder) {
 	// it's a folder
 }
 ```

@@ -12,8 +12,8 @@ The following example recursively prints the paths of all Markdown files in a Va
 ```ts
 const files = this.app.vault.getMarkdownFiles()
 
-for (let i = 0; i < files.length; i++) {
-  console.log(files[i].path);
+for (const file of files) {
+  console.log(file.path);
 }
 ```
 
