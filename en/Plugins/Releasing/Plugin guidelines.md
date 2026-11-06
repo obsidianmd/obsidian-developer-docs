@@ -212,6 +212,10 @@ Instead of extracting the frontmatter of a note, parsing and modifying the YAML 
 `processFrontMatter` runs atomically, so modifying the file will not conflict with other plugins editing the same file.
 It will also ensure a consistent layout of the YAML produced.
 
+### Don't modify objects returned by the metadata cache
+
+[[getFileCache|MetadataCache.getFileCache()]] returns the cached objects themselves, not copies. Sorting or otherwise changing them, such as `cache.links`, changes the metadata for Obsidian and every other plugin. Copy an array or object before you change it. For more information, refer to [[Plugins/Vault#Read metadata|Read metadata]].
+
 ### Prefer the Vault API over the Adapter API
 
 Obsidian exposes two APIs for file operations: the Vault API (`app.vault`) and the Adapter API (`app.vault.adapter`).
