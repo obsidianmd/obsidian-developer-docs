@@ -67,16 +67,16 @@ element.on('click', '.my-css-class', (event) => {
 
 ## Use the element's document and window
 
-When an operation belongs to a particular view or element, use that element's `doc` and `win` getters. For example, use `containerEl.doc` to create nodes or access the selection in that document, and `containerEl.win` for window-specific operations such as `getComputedStyle()`.
+When an operation belongs to a particular view or element, use that element's `doc` and `win` getters. For example, use `containerEl.doc` to access the selection in that document, and `containerEl.win` for window-specific operations such as `getComputedStyle()`.
+
+To create elements, call `createEl()`, `createDiv()`, or `createSpan()` on a parent element, as described in [[HTML elements]]. These helpers insert the new element into the parent, so it belongs to the parent's document and window.
 
 ```ts
 function addDetails(containerEl: HTMLElement): void {
-  const detailsEl = containerEl.doc.createElement('div');
-  detailsEl.textContent = 'Details';
-  containerEl.appendChild(detailsEl);
+  const detailsEl = containerEl.createDiv({ text: 'Details' });
 
   const color = containerEl.win.getComputedStyle(containerEl).color;
-  detailsEl.style.color = color;
+  detailsEl.setCssStyles({ color });
 }
 ```
 
