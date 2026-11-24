@@ -271,12 +271,12 @@ You can also create your own reusable components by extending the `Component` cl
 This is particularly useful when you have some logical unit (such as a widget or view) that manages its own state or resources.
 
 ```ts
-import { Component, MarkdownRenderer } from "obsidian";
+import { App, Component, MarkdownRenderer } from "obsidian";
 import SomeLibrary from "some-library";
 
 class MyWidget extends Component {
 	private widget: HTMLElement;
-	private lib: SomeLibrary;
+	private lib!: SomeLibrary;
 
 	constructor(private app: App) {
 		super();

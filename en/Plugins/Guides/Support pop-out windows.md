@@ -12,7 +12,7 @@ Most importantly, pop-out windows come with a complete different set of globals.
 This means that some of the things you previously had assumed to be global and use only _a single_ definition, will now only work in the main window. Here are some examples:
 
 ```ts
-let myElement: HTMLElement = ...;
+declare const myElement: HTMLElement;
 
 // This will always append to the main window
 document.body.appendChild(myElement);
@@ -27,7 +27,7 @@ element.on('click', '.my-css-class', (event) => {
     if (event instanceof MouseEvent) {
 
     }
-}
+});
 ```
 
 The Obsidian API includes various helper function and accessors to better support pop-out windows:
@@ -40,7 +40,7 @@ The Obsidian API includes various helper function and accessors to better suppor
 Using these APIs, the previous example would look like this:
 
 ```ts
-let myElement: HTMLElement = ...;
+declare const myElement: HTMLElement;
 
 // Bad: myElement would be added to the currently focused document, which is not necessarily the one you want
 activeDocument.body.appendChild(myElement);
@@ -57,5 +57,5 @@ element.on('click', '.my-css-class', (event) => {
     if (event.instanceOf(MouseEvent)) {
 
     }
-}
+});
 ```

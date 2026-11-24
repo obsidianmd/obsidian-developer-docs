@@ -67,20 +67,23 @@ export default class ExamplePlugin extends Plugin {
     const { workspace } = this.app;
 
     let leaf: WorkspaceLeaf | null = null;
-    const leaves = workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE);
+    const existingLeaf = workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE)[0];
 
-    if (leaves.length > 0) {
+    if (existingLeaf) {
       // A leaf with our view already exists, use that
-      leaf = leaves[0];
+      leaf = existingLeaf;
     } else {
       // Our view could not be found in the workspace, create a new leaf
       // in the right sidebar for it
       leaf = workspace.getRightLeaf(false);
+      if (!leaf) {
+        return;
+      }
       await leaf.setViewState({ type: VIEW_TYPE_EXAMPLE, active: true });
     }
 
     // "Reveal" the leaf in case it is in a collapsed sidebar
-    workspace.revealLeaf(leaf);
+    await workspace.revealLeaf(leaf);
   }
 }
 ```

@@ -71,7 +71,7 @@ export class SampleSettingTab extends PluginSettingTab {
       .addComponent(el => new SecretComponent(this.app, el)
         .setValue(this.plugin.settings.mySetting)
         .onChange(value => {
-          this.plugin.settings.mySetting = value;
+          this.plugin.settings.mySetting = value ?? '';
           this.plugin.saveSettings();
         }));
   }
@@ -87,7 +87,7 @@ The `SecretComponent` presents users with an interface to select from existing s
 When your plugin needs the actual secret value, use the `SecretStorage` API:
 
 ```ts
-const secret = app.secretStorage.getSecret(this.settings.mySetting);
+const secret = this.app.secretStorage.getSecret(this.settings.mySetting);
 if (secret) { // secret value might be null
 
 }
@@ -126,7 +126,7 @@ export class SampleSettingTab extends PluginSettingTab {
       .addComponent(el => new SecretComponent(this.app, el)
         .setValue(this.plugin.settings.mySetting)
         .onChange(value => {
-          this.plugin.settings.mySetting = value;
+          this.plugin.settings.mySetting = value ?? '';
           this.plugin.saveSettings();
         }));
   }

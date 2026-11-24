@@ -106,7 +106,7 @@ import {
   EditorView,
   WidgetType,
 } from '@codemirror/view';
-import { EmojiWidget } from 'emoji';
+import { EmojiWidget } from './emoji';
 
 export const emojiListField = StateField.define<DecorationSet>({
   create(state): DecorationSet {
@@ -164,7 +164,7 @@ import {
   ViewUpdate,
   WidgetType,
 } from '@codemirror/view';
-import { EmojiWidget } from 'emoji';
+import { EmojiWidget } from './emoji';
 
 class EmojiListPlugin implements PluginValue {
   decorations: DecorationSet;

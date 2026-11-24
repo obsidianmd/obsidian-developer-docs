@@ -22,7 +22,7 @@ const DEFAULT_SETTINGS: Partial<ExamplePluginSettings> = {
 };
 
 export default class ExamplePlugin extends Plugin {
-  settings: ExamplePluginSettings;
+  settings!: ExamplePluginSettings;
 
   async onload() {
     await this.loadSettings();
@@ -52,7 +52,7 @@ interface ExamplePluginSettings {
 }
 
 export default class ExamplePlugin extends Plugin {
-  settings: ExamplePluginSettings;
+  settings!: ExamplePluginSettings;
 
   // ...
 }
@@ -120,7 +120,7 @@ Here, `ExampleSettingTab` is a class that extends [[PluginSettingTab|PluginSetti
 
 ```ts
 import ExamplePlugin from './main';
-import { App, PluginSettingTab } from 'obsidian';
+import { App, PluginSettingTab, SettingDefinitionItem } from 'obsidian';
 
 export class ExampleSettingTab extends PluginSettingTab {
   plugin: ExamplePlugin;
@@ -130,7 +130,7 @@ export class ExampleSettingTab extends PluginSettingTab {
     this.plugin = plugin;
   }
 
-  getSettingDefinitions() {
+  getSettingDefinitions(): SettingDefinitionItem[] {
     return [
       {
         name: 'Default value',
@@ -316,7 +316,7 @@ Two predicates let you toggle a setting's state without rebuilding the tab:
 Both accept a `boolean` or `() => boolean`. The function form is re-evaluated on every DOM-state refresh. For `control` definitions, Obsidian refreshes automatically after every change, so the example below works without any extra wiring. After mutating dependent state from a `render` callback or any other imperative path, call `this.refreshDomState()` to re-run the predicates without a full re-render.
 
 ```ts
-getSettingDefinitions() {
+getSettingDefinitions(): SettingDefinitionItem[] {
   return [
     {
       name: 'Enable advanced mode',
@@ -386,7 +386,7 @@ For the common case where you just store settings in `this.plugin.settings`, you
 If your plugin already ships nested settings JSON and can't reshape the file without a migration, the same two overrides let you treat a `control` `key` as a dot-notation path (`editor.fontSize`) and walk the nested shape:
 
 ```ts
-interface MySettings {
+type MySettings = {
   editor: { fontSize: number; tabSize: number };
   sync: { enabled: boolean; interval: number };
 }
@@ -432,7 +432,7 @@ class MySettingTab extends PluginSettingTab {
     await this.plugin.saveData(this.plugin.settings);
   }
 
-  getSettingDefinitions() {
+  getSettingDefinitions(): SettingDefinitionItem[] {
     return [
       {
         type: 'group',
@@ -471,6 +471,7 @@ Wire the listeners up from the settings tab constructor, since that's where the 
 
 ```ts
 import { App, debounce, PluginSettingTab } from 'obsidian';
+import MyPlugin from './main';
 
 export class MySettingTab extends PluginSettingTab {
   plugin: MyPlugin;
@@ -526,8 +527,7 @@ For settings where the user adds, removes, or reorders rows of the same kind (wa
   },
   onReorder: async (oldIndex, newIndex) => {
     let folders = this.plugin.settings.folders;
-    let [moved] = folders.splice(oldIndex, 1);
-    folders.splice(newIndex, 0, moved);
+    folders.splice(newIndex, 0, ...folders.splice(oldIndex, 1));
     await this.plugin.saveData(this.plugin.settings);
   },
   onDelete: async (idx) => {
@@ -567,7 +567,7 @@ items: availableCommands.map((cmd) => ({
 })),
 ```
 
-If your action depends on the row's position in the list, use the `index` it receives, read at click time (`action: (index: number) => void`). In a reorderable list, the user can move rows after the definitions are authored, so a position captured from the outer `map` would point at the wrong row:
+If your action depends on the row's position in the list, use the `index` it receives as its second argument, read at click time (`action: (el: HTMLElement, index: number) => void`). In a reorderable list, the user can move rows after the definitions are authored, so a position captured from the outer `map` would point at the wrong row:
 
 ```ts
 {
@@ -576,7 +576,7 @@ If your action depends on the row's position in the list, use the `index` it rec
   items: this.plugin.settings.items.map((item) => ({
     name: item.label,
     searchable: false,
-    action: (index) => this.plugin.doSomething(index),
+    action: (el, index) => this.plugin.doSomething(index),
   })),
 }
 ```
@@ -661,6 +661,7 @@ When the page's UI is computed from runtime state or interleaves rendered conten
 
 ```ts
 import { SettingPage, Setting } from 'obsidian';
+import MyPlugin from './main';
 
 class StatusPage extends SettingPage {
   constructor(private plugin: MyPlugin) {
@@ -685,8 +686,11 @@ class StatusPage extends SettingPage {
         }));
   }
 }
+```
 
-// In getSettingDefinitions():
+In `getSettingDefinitions()`, return a page entry with a factory that creates it:
+
+```ts
 {
   type: 'page',
   name: 'Status',
@@ -700,16 +704,17 @@ Override `hide()` to clean up anything that outlives the DOM (observers, timers,
 
 ```ts
 class StatusPage extends SettingPage {
-  private timer: number;
+  private timer: number | undefined;
 
   display() {
     this.containerEl.empty();
     this.containerEl.createEl('p', { text: `Last refresh: ${new Date().toLocaleTimeString()}` });
-    this.timer = window.setInterval(() => this.display(), 1000);
+    window.clearTimeout(this.timer);
+    this.timer = window.setTimeout(() => this.display(), 1000);
   }
 
   hide() {
-    window.clearInterval(this.timer);
+    window.clearTimeout(this.timer);
   }
 }
 ```

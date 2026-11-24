@@ -61,13 +61,13 @@ export default class ExamplePlugin extends Plugin {
       const table = el.createEl('table');
       const body = table.createEl('tbody');
 
-      for (let i = 0; i < rows.length; i++) {
-        const cols = rows[i].split(',');
+      for (const rowText of rows) {
+        const cols = rowText.split(',');
 
         const row = body.createEl('tr');
 
-        for (let j = 0; j < cols.length; j++) {
-          row.createEl('td', { text: cols[j] });
+        for (const col of cols) {
+          row.createEl('td', { text: col });
         }
       }
     });
