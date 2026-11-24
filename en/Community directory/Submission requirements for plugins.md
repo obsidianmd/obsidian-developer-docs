@@ -53,7 +53,7 @@ If your plugin uses any of these APIs, you **must** set `isDesktopOnly` to `true
 
 ## Choose your plugin ID before you submit
 
-Choose the `id` in your [[Reference/Manifest|Manifest]] before you submit your plugin, and keep it unchanged in every later release. You can't change the ID after the plugin has been published. If you run into a problem with your ID, refer to [[Frequently asked questions#What should I do when I get an "invalid identifier" error?|the FAQ]].
+Choose the `id` in your [[Reference/Manifest|Manifest]] before you submit your plugin, following the requirements for `id` in [[Manifest#Plugin-specific properties|Plugin-specific properties]], and keep it unchanged in every later release. You can't change the ID after the plugin has been published. If you run into a problem with your ID, refer to [[Frequently asked questions#What should I do when I get an "invalid identifier" error?|the FAQ]].
 
 You can still change the plugin's display name later by changing [[Manifest#name|name]] in `manifest.json`.
 
