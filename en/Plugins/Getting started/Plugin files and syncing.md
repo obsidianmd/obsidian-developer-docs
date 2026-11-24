@@ -43,7 +43,7 @@ Obsidian Sync ignores everything else in the plugin folder, including:
 - Any subfolder of the plugin folder.
 - Any file or folder whose name begins with a `.`, and any `node_modules` folder.
 
-Each file is also limited by the maximum file size of the user's [Sync plan](https://help.obsidian.md/sync/plans): 5 MB on the Standard plan, and 199 MB on the Plus plan. A `main.js` or a `data.json` larger than 5 MB doesn't sync for a user on the Standard plan.
+Each file is also limited by the maximum file size of the user's [Sync plan](https://help.obsidian.md/sync/plans): 5 MB on the Standard plan, and 199 MB on the Plus plan. A `main.js`, `styles.css`, or `data.json` larger than 5 MB doesn't sync for a user on the Standard plan.
 
 > [!note] Other sync services
 > These rules apply to Obsidian Sync only. Other services, such as iCloud, Syncthing, or Git, may copy the whole plugin folder, or skip parts of it. Don't rely on any file outside the list above being present, or absent, on another device.
@@ -55,6 +55,6 @@ Obsidian Sync also skips every file and folder in the vault whose name begins wi
 Choose where to store data based on where it needs to be available:
 
 - **Data for every device**: Store it in `data.json` with [[saveData|saveData()]]. When `data.json` changes on disk, for example because Obsidian Sync brought a change from another device, Obsidian calls [[onExternalSettingsChange|onExternalSettingsChange()]], so implement it to reload your settings. Your own `saveData()` calls don't trigger it. If a user changes your settings while **Installed community plugins** is off and then turns it back on, Sync merges `data.json` with the remote copy key by key: keys added on this device are kept, but the remote value replaces a local change to an existing key.
-- **Data for one device**: Store it with [[saveLocalStorage|App.saveLocalStorage()]], which keeps a value for the current vault on the current device and never syncs.
+- **Data for one device**: Store it with [[saveLocalStorage|App.saveLocalStorage()]], which keeps a value for the current vault on the current device and never syncs. Obsidian prefixes the key with the vault ID only, and core Obsidian stores its own values the same way, so prefix your keys with your plugin ID, such as `my-plugin-last-view`. Read the value back with [[loadLocalStorage|App.loadLocalStorage()]], since the key in `localStorage` isn't the one you passed. Saving a falsy value, such as `null`, `false`, `0`, or an empty string, removes the entry.
 - **Secrets**: Store API keys and tokens with [[SecretStorage]]. Refer to [[Store secrets]].
 - **Large data**: Keep `data.json` well below 5 MB so that it syncs on every plan. Store large data in the vault, where the user controls how it syncs, or rebuild it on each device.
