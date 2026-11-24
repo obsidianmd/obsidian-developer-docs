@@ -383,14 +383,29 @@ Use `onunload` only to release resources. Save your plugin's data when it change
 
 On desktop, the workspace triggers the [[on('quit')|quit]] event when the app window is about to close. Like `onunload`, it's best effort: it doesn't run when the process is killed, for example.
 
-To ask Obsidian to wait for asynchronous cleanup, add it to the [[Tasks]] object passed to your callback:
+To ask Obsidian to wait for asynchronous cleanup, add it to the [[Tasks]] object passed to your callback. In this example, the plugin keeps log lines in memory and writes the ones it still holds when the app quits:
 
 ```ts
-this.registerEvent(
-	this.app.workspace.on("quit", (tasks) => {
-		tasks.add(() => this.flushPendingChanges());
-	})
-);
+class MyPlugin extends Plugin {
+	pendingLogLines: string[] = [];
+
+	onload() {
+		this.registerEvent(
+			this.app.workspace.on("quit", (tasks) => {
+				tasks.add(() => this.writePendingLogLines());
+			})
+		);
+	}
+
+	async writePendingLogLines() {
+		if (this.pendingLogLines.length === 0) {
+			return;
+		}
+		const text = this.pendingLogLines.join("\n") + "\n";
+		this.pendingLogLines = [];
+		await this.app.vault.adapter.append("my-plugin.log", text);
+	}
+}
 ```
 
 Obsidian doesn't guarantee to wait, though: the window can close before a task finishes, and the code after its first `await` might never run. Do anything that must happen synchronously, in the callback itself, and keep the rest short. Avoid changing many files while the app quits, because the work can be cut off part way through.
