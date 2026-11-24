@@ -43,6 +43,6 @@ Don't add a removed API back by declaring it in your own type definitions. Once 
 
 ## Plugins that change how Obsidian handles files
 
-Obsidian doesn't accept plugins into the community directory that hook into how it handles the file system, for example to make hidden files and folders visible in the vault. A plugin of this kind has broken Obsidian Sync and similar services before.
+Some plugins hook into how Obsidian handles the file system, for example to make hidden files and folders visible in the vault. To do that, they patch adapter methods that aren't in the type definitions, so it's private API, and a change in any release can break it. A plugin of this kind has broken Obsidian Sync and similar services before.
 
-To work with files, use the [[Plugins/Vault|Vault]] API. To read a file that the Vault API doesn't see, such as one in the config folder, use the [[DataAdapter|Adapter]] API. Refer to [[Plugin guidelines#Prefer the Vault API over the Adapter API]].
+To work with files, use the [[Plugins/Vault|Vault]] API. To read a file that the Vault API doesn't see, such as one in your plugin's own folder, `this.manifest.dir`, use the [[DataAdapter|Adapter]] API. Refer to [[Plugin guidelines#Prefer the Vault API over the Adapter API]].
