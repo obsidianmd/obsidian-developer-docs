@@ -165,4 +165,4 @@ const sortedLinks = [...(cache?.links ?? [])].sort((a, b) => a.link.localeCompar
 
 ### What gets indexed
 
-Obsidian decides which files to parse by their extension: it parses Markdown (`.md`) files only. For other files, such as `.txt` or `.canvas` files, `getFileCache()` returns an empty object and their links aren't indexed. Inside a Markdown file, links and tags in a comment (`%%...%%`) are indexed too. To keep data out of the index, store it in a file with a different extension.
+Obsidian decides which files to parse by their extension: it parses Markdown (`.md`) files only. It doesn't read other files, such as `.txt` or `.canvas` files, for the cache. It only records their size and modification time, and `getFileCache()` returns an empty object for them. Links in a `.canvas` file still appear in `resolvedLinks` and `unresolvedLinks` while the Canvas core plugin is enabled, because the plugin reads them itself, but `getFileCache()` doesn't return them. Inside a Markdown file, links and tags in a comment (`%%...%%`) are indexed too. To keep data out of the index, store it in a file with a different extension.
