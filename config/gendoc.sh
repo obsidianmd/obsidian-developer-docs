@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # 1. Run api-extractor
+node lift-globals.js
 api-extractor run --local --verbose
 node pre-process.js
 
