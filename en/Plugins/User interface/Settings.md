@@ -182,6 +182,7 @@ A `control` definition reads and writes one key on your settings object. Obsidia
 | `file` | `string` (path) | Optional `filter: (file: TFile) => boolean`, `placeholder`. |
 | `folder` | `string` (path) | Optional `filter: (folder: TFolder) => boolean`, `includeRoot` (default `false`), `placeholder`. |
 | `color` | `string` (hex) | |
+| `secret` | `string` (secret name) | Requires Obsidian 1.13.2. Stores the name of a secret in [[SecretStorage]], not the secret itself. |
 
 Every control also accepts an optional `defaultValue` (the fallback when the stored value is `undefined` or `null`) and an optional `validate` callback (see [[#Validating input]]).
 
@@ -268,6 +269,14 @@ Every control also accepts an optional `defaultValue` (the fallback when the sto
 ```ts
 { name: 'Accent color', control: { type: 'color', key: 'accent' } }
 ```
+
+### Secret
+
+```ts
+{ name: 'API key', control: { type: 'secret', key: 'apiKeySecret' } }
+```
+
+The user links a secret from [[SecretStorage]], and your setting stores its name. Read the value with `this.app.secretStorage.getSecret()`. See [[Store secrets]].
 
 ### What's not yet a first-class control
 
