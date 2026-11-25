@@ -20,7 +20,7 @@ Also read the [[Submission requirements for plugins]]
 
 Plugins and themes must not:
 
-- Obfuscate code to hide its purpose.
+- Obfuscate code to hide its purpose. Minifying your bundle is allowed and recommended, because it makes your plugin load faster. For more information, refer to [[Optimize plugin load time#How do I improve my plugin's load time?|Optimize plugin load time]].
 - Insert dynamic ads that are loaded over the internet.
 - Insert static ads outside a plugin’s own interface.
 - Include client-side telemetry.

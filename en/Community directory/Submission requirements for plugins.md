@@ -51,6 +51,12 @@ If your plugin uses any of these APIs, you **must** set `isDesktopOnly` to `true
 > - [`SubtleCrypto`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) instead of [`crypto`](https://nodejs.org/api/crypto.html).
 > - `navigator.clipboard.readText()` and `navigator.clipboard.writeText()` to access clipboard contents.
 
+## Choose your plugin ID before you submit
+
+Choose the `id` in your [[Reference/Manifest|Manifest]] before you submit your plugin, following the requirements for `id` in [[Manifest#Plugin-specific properties|Plugin-specific properties]], and keep it unchanged in every later release. You can't change the ID after the plugin has been published. If you run into a problem with your ID, refer to [[Frequently asked questions#What should I do when I get an "invalid identifier" error?|the FAQ]].
+
+You can still change the plugin's display name later by changing [[Manifest#name|name]] in `manifest.json`.
+
 ## Don't include the plugin ID in the command ID
 
 Obsidian automatically prefixes command IDs with your plugin ID.
