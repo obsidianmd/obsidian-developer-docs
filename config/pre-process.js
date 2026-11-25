@@ -17,10 +17,30 @@ async function each(members) {
 			}
 		}
 
+		if(member.kind === 'Interface') {
+			showCallSignatures(member);
+		}
+
 		if(member.members) {
 			each(member.members);
 		}
 	})
+}
+
+// API Documenter lists no call or construct signatures, so an interface such as
+// MarkdownPostProcessor would show only its properties. Put them in its signature block instead:
+// export interface MarkdownPostProcessor {
+//     (el: HTMLElement, ctx: MarkdownPostProcessorContext): Promise<any> | void;
+// }
+function showCallSignatures(member) {
+	const signatures = member.members
+		.filter(child => child.kind === 'CallSignature' || child.kind === 'ConstructSignature')
+		.map(child => child.excerptTokens.map(token => token.text).join(''));
+	if (signatures.length === 0) {
+		return;
+	}
+	const body = signatures.map(signature => `    ${signature}\n`).join('');
+	member.excerptTokens.push({ kind: 'Content', text: `{\n${body}}` });
 }
 
 async function main() {
