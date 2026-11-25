@@ -130,7 +130,7 @@ export class ExampleSettingTab extends PluginSettingTab {
     this.plugin = plugin;
   }
 
-  getSettingDefinitions() {
+  getSettingDefinitions(): SettingDefinitionItem[] {
     return [
       {
         name: 'Default value',
@@ -316,7 +316,7 @@ Two predicates let you toggle a setting's state without rebuilding the tab:
 Both accept a `boolean` or `() => boolean`. The function form is re-evaluated on every DOM-state refresh. For `control` definitions, Obsidian refreshes automatically after every change, so the example below works without any extra wiring. After mutating dependent state from a `render` callback or any other imperative path, call `this.refreshDomState()` to re-run the predicates without a full re-render.
 
 ```ts
-getSettingDefinitions() {
+getSettingDefinitions(): SettingDefinitionItem[] {
   return [
     {
       name: 'Enable advanced mode',
@@ -370,7 +370,7 @@ class MySettingTab extends PluginSettingTab {
     await this.plugin.saveData(/* your settings */);
   }
 
-  getSettingDefinitions() { /* … */ }
+  getSettingDefinitions(): SettingDefinitionItem[] { /* … */ }
 }
 ```
 
@@ -432,7 +432,7 @@ class MySettingTab extends PluginSettingTab {
     await this.plugin.saveData(this.plugin.settings);
   }
 
-  getSettingDefinitions() {
+  getSettingDefinitions(): SettingDefinitionItem[] {
     return [
       {
         type: 'group',
