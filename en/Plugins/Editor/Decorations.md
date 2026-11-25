@@ -58,15 +58,11 @@ Widgets are custom HTML elements that you can add to the editor. You can either 
 The following example defines a widget that returns an HTML element, `<span>👉</span>`. You'll use this widget later on.
 
 ```ts
-import { EditorView, WidgetType } from '@codemirror/view';
+import { WidgetType } from '@codemirror/view';
 
 export class EmojiWidget extends WidgetType {
-  toDOM(view: EditorView): HTMLElement {
-    const div = document.createElement('span');
-
-    div.innerText = '👉';
-
-    return div;
+  toDOM(): HTMLElement {
+    return createSpan({ text: '👉' });
   }
 }
 ```
