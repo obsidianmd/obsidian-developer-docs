@@ -120,6 +120,10 @@ export default class MyPlugin extends Plugin {
 
 When the user updates your plugin, any open leaves will be reinitialized at their original position, regardless of where the user had moved them.
 
+### Don't rely on `onunload` to save data
+
+Obsidian can exit without calling `onunload`, and it doesn't wait for an `async` `onunload` to finish. The workspace `quit` event is best effort too: the window can close before asynchronous cleanup finishes. Save data when it changes instead. Refer to [[Manage plugin lifecycle#Don't rely on `onunload` to save data|Manage plugin lifecycle]].
+
 ## Commands
 
 ### Avoid setting a default hotkey for commands
